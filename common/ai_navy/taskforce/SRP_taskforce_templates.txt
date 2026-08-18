@@ -1,0 +1,122 @@
+SRP_small_patrol_destroyers = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+
+	ai_will_do = {
+		factor = 6
+	}
+
+	mission = { naval_patrol }
+	min_composition = {
+		destroyer = { amount = 1 }
+	}
+	optimal_composition = {
+		destroyer = { amount = 3 }
+	}
+}
+
+SRP_convoy_escort_destroyers = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	mission = { convoy_escort }
+	min_composition = {
+		destroyer = { amount = 1 }
+	}
+	optimal_composition = {
+		destroyer = { amount = 4 }
+	}
+}
+
+SRP_sub_raider_wolfpack = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	mission = { convoy_raiding }
+	min_composition = {
+		submarine = { amount = 1 }
+	}
+	optimal_composition = {
+		submarine = { amount = 6 }
+	}
+}
+
+IRS_devourer_raiding_pack = {
+	allowed = {
+		original_tag = IRS
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+
+	mission = { convoy_raiding }
+	min_composition = {
+		devourer_submarine = { amount = 1 }
+	}
+	optimal_composition = {
+		devourer_submarine = { amount = 8 }
+	}
+}
+
+IRS_devourer_patrol_pack = {
+	allowed = {
+		original_tag = IRS
+	}
+
+	ai_will_do = {
+		factor = 6
+	}
+
+	mission = { naval_patrol }
+	min_composition = {
+		devourer_submarine = { amount = 1 }
+	}
+	optimal_composition = {
+		devourer_submarine = { amount = 6 }
+	}
+}

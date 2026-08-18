@@ -1,0 +1,50 @@
+add_namespace = infestation_crisis
+
+country_event = {
+	id = infestation_crisis.1
+	title = infestation_crisis.1.t
+	desc = infestation_crisis.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = infestation_crisis.1.a
+		add_war_support = 0.02
+	}
+
+	option = {
+		name = infestation_crisis.1.b
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = infestation_crisis.2
+	title = infestation_crisis.2.t
+	desc = infestation_crisis.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = infestation_crisis.2.a
+		add_stability = -0.03
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = infestation_crisis.3
+	title = infestation_crisis.3.t
+	desc = infestation_crisis.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = infestation_crisis.3.a
+		add_stability = -0.02
+		add_war_support = 0.02
+	}
+}

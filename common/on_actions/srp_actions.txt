@@ -1,0 +1,626 @@
+on_actions = {
+    on_monthly_IRS = {
+        effect = {
+            if = {
+                limit = { has_country_flag = IRS_phase_0_active }
+                set_variable = { var = IRS_ep_gain_tmp value = 5 }
+                IRS_grant_scaled_ep = yes
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        any_owned_state = {
+                            is_controlled_by = ROOT
+                            NOT = { has_state_flag = IRS_ascension_nexus }
+                        }
+                    }
+                    NOT = { has_country_flag = IRS_recovery_pending }
+                }
+                set_country_flag = IRS_recovery_pending
+                country_event = { id = IRS_recovery.1 days = 14 }
+            }
+        }
+    }
+
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = { tag = IRS }
+                IRS = {
+                    every_state = {
+                        limit = { is_core_of = IRS }
+                        transfer_state_to = IRS
+                    }
+                    add_manpower = 500000
+                    load_oob = "IRS_emergency_respawn"
+                }
+            }
+        }
+    }
+    on_daily_IRS = {
+        effect = {
+            every_state = {
+                if = {
+                    limit = {
+                        OR = {
+                            check_variable = { iris_infestation_level > 0 }
+                            state_is_iris_bloc_controlled = yes
+                            is_controlled_by = KNX
+                        }
+                    }
+
+                    set_variable = { var = infest_growth_delta value = 0 }
+
+                    if = {
+                        limit = {
+                            beckon_cluster > 0
+                            state_is_iris_bloc_owned = yes
+                        }
+                        add_to_variable = { var = infest_growth_delta value = 1 }
+                    }
+                    if = {
+                        limit = {
+                            beckon_cluster > 0
+                            is_owned_by = KNX
+                        }
+                        add_to_variable = { var = infest_growth_delta value = 0.5 }
+                    }
+
+                    if = {
+                        limit = {
+                            beckon_cluster > 0
+                            NOT = { state_is_iris_bloc_owned = yes }
+                            NOT = { is_owned_by = KNX }
+                        }
+                        add_to_variable = { var = infest_growth_delta value = 0.25 }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                        }
+                        add_to_variable = { var = infest_growth_delta value = 0.1 }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                            NOT = { state_is_iris_bloc_owned = yes }
+                            NOT = { is_owned_by = KNX }
+                        }
+                        add_to_variable = { var = infest_growth_delta value = 2.4 }
+                    }
+
+                    multiply_variable = { var = infest_growth_delta value = global.srp_infest_growth_mult }
+                    add_to_variable = { var = iris_infestation_level value = infest_growth_delta }
+
+                    if = {
+                        limit = {
+                            NOT = {
+                                OR = {
+                                    state_is_iris_bloc_controlled = yes
+                                    is_controlled_by = KNX
+                                }
+                            }
+                            OR = {
+                                NOT = { beckon_cluster > 0 }
+                                NOT = {
+                                    OR = {
+                                        state_is_iris_bloc_owned = yes
+                                        is_owned_by = KNX
+                                    }
+                                }
+                            }
+                            NOT = { has_dynamic_modifier = { modifier = spore_burst_contamination } }
+                            check_variable = { iris_infestation_level > 0 }
+                        }
+                        set_variable = { var = infest_decay_delta value = 0 }
+
+                        if = {
+                            limit = { controller = { has_idea = dirty_bomb_doctrine } }
+                            add_to_variable = { var = infest_decay_delta value = -5.5 }
+                        }
+                        if = {
+                            limit = { controller = { has_idea = chemical_suppression_doctrine } }
+                            add_to_variable = { var = infest_decay_delta value = -3.5 }
+                        }
+                        if = {
+                            limit = { controller = { has_idea = controlled_burns_doctrine } }
+                            add_to_variable = { var = infest_decay_delta value = -2.0 }
+                        }
+                        if = {
+                            limit = {
+                                NOT = { controller = { has_idea = dirty_bomb_doctrine } }
+                                NOT = { controller = { has_idea = chemical_suppression_doctrine } }
+                                NOT = { controller = { has_idea = controlled_burns_doctrine } }
+                            }
+                            add_to_variable = { var = infest_decay_delta value = -1.5 }
+                        }
+                        if = {
+                            limit = { srp_containment_node > 0 }
+                            add_to_variable = { var = infest_decay_delta value = -1.0 }
+                        }
+
+                        if = {
+                            limit = { check_variable = { global.srp_containment_mult > 0 } }
+                            multiply_variable = { var = infest_decay_delta value = global.srp_containment_mult }
+                        }
+                        add_to_variable = { var = iris_infestation_level value = infest_decay_delta }
+                    }
+
+                    if = {
+                        limit = {
+                            has_dynamic_modifier = { modifier = spore_burst_contamination }
+                            NOT = { state_is_iris_bloc_controlled = yes }
+                            NOT = { is_controlled_by = KNX }
+                        }
+                        add_to_variable = { var = iris_infestation_level value = 0.5 }
+                    }
+
+                    clamp_variable = {
+                        var = iris_infestation_level
+                        min = 0
+                        max = 100
+                    }
+
+                    set_variable      = { var = iris_infestation_bonus value = iris_infestation_level }
+                    multiply_variable = { var = iris_infestation_bonus value = 0.005 }
+
+                    set_variable      = { var = iris_infestation_biomass value = iris_infestation_level }
+                    multiply_variable = { var = iris_infestation_biomass value = 0.05 }
+
+                    set_variable      = { var = iris_infestation_penalty value = iris_infestation_level }
+                    multiply_variable = { var = iris_infestation_penalty value = -0.003 }
+
+                    set_variable      = { var = iris_infestation_attrition value = iris_infestation_level }
+                    multiply_variable = { var = iris_infestation_attrition value = 0.002 }
+
+                    set_variable      = { var = iris_infestation_upkeep value = iris_infestation_level }
+                    multiply_variable = { var = iris_infestation_upkeep value = 0.25 }
+                }
+
+                if = {
+                    limit = {
+                        OR = {
+                            state_is_iris_bloc_controlled = yes
+                            is_controlled_by = KNX
+                        }
+                        check_variable = { iris_infestation_level > 0 }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
+                        remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
+                        remove_dynamic_modifier = { modifier = beckon_iris_buff }
+                    }
+                    add_dynamic_modifier = {
+                        modifier = beckon_iris_buff
+                        days = 2
+                    }
+                }
+
+                if = {
+                    limit = {
+                        NOT = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                        }
+                        check_variable = { iris_infestation_level > 0 }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
+                        remove_dynamic_modifier = { modifier = beckon_iris_buff }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
+                        remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+                    }
+                    add_dynamic_modifier = {
+                        modifier = beckon_hostile_debuff
+                        days = 2
+                    }
+                }
+
+                if = {
+                    limit = {
+                        NOT = { check_variable = { iris_infestation_level > 0 } }
+                        has_dynamic_modifier = { modifier = beckon_iris_buff }
+                    }
+                    remove_dynamic_modifier = { modifier = beckon_iris_buff }
+                }
+
+                if = {
+                    limit = {
+                        NOT = { check_variable = { iris_infestation_level > 0 } }
+                        has_dynamic_modifier = { modifier = beckon_hostile_debuff }
+                    }
+                    remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+                }
+
+                if = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = knx_consumed_state }
+                        is_controlled_by = KNX
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = knx_integrated_ground_resistance } }
+                        remove_dynamic_modifier = { modifier = knx_integrated_ground_resistance }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = knx_integrated_ground_buff } }
+                        remove_dynamic_modifier = { modifier = knx_integrated_ground_buff }
+                    }
+                    add_dynamic_modifier = {
+                        modifier = knx_integrated_ground_buff
+                        days = 2
+                    }
+                }
+
+                if = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = knx_consumed_state }
+                        NOT = { is_controlled_by = KNX }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = knx_integrated_ground_buff } }
+                        remove_dynamic_modifier = { modifier = knx_integrated_ground_buff }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = knx_integrated_ground_resistance } }
+                        remove_dynamic_modifier = { modifier = knx_integrated_ground_resistance }
+                    }
+                    add_dynamic_modifier = {
+                        modifier = knx_integrated_ground_resistance
+                        days = 2
+                    }
+                }
+
+                if = {
+                    limit = {
+                        NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = knx_integrated_ground_buff } }
+                        remove_dynamic_modifier = { modifier = knx_integrated_ground_buff }
+                    }
+                    if = {
+                        limit = { has_dynamic_modifier = { modifier = knx_integrated_ground_resistance } }
+                        remove_dynamic_modifier = { modifier = knx_integrated_ground_resistance }
+                    }
+                }
+            }
+        }
+    }
+    on_daily_IRS = {
+            effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            has_dynamic_modifier = { modifier = irs_consumed_state }
+                            has_dynamic_modifier = { modifier = knx_consumed_state }
+                        }
+                    }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 1 } }
+                    add_manpower = -10000
+                }
+                if = {
+                    limit = {
+                        NOT = { check_variable = { global.srp_attrition_tier = 1 } }
+                        NOT = { check_variable = { global.srp_attrition_tier = 3 } }
+                    }
+                    add_manpower = -20000
+                }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 3 } }
+                    add_manpower = -30000
+                }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            every_state = {
+                limit = {
+                    OR = {
+                        has_dynamic_modifier = { modifier = fallout_thermonuclear }
+                        has_dynamic_modifier = { modifier = fallout_atomic }
+                    }
+                }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 1 } }
+                    add_manpower = -1000
+                }
+                if = {
+                    limit = {
+                        NOT = { check_variable = { global.srp_attrition_tier = 1 } }
+                        NOT = { check_variable = { global.srp_attrition_tier = 3 } }
+                    }
+                    add_manpower = -2000
+                }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 3 } }
+                    add_manpower = -3000
+                }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+                every_state = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = beckon_iris_buff }
+                    }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 1 } }
+                    add_manpower = -40
+                }
+                if = {
+                    limit = {
+                        NOT = { check_variable = { global.srp_attrition_tier = 1 } }
+                        NOT = { check_variable = { global.srp_attrition_tier = 3 } }
+                    }
+                    add_manpower = -75
+                }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 3 } }
+                    add_manpower = -110
+                }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+                every_state = {
+                    limit = {
+                        has_dynamic_modifier = { modifier = beckon_hostile_debuff }
+                    }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 1 } }
+                    add_manpower = -10
+                }
+                if = {
+                    limit = {
+                        NOT = { check_variable = { global.srp_attrition_tier = 1 } }
+                        NOT = { check_variable = { global.srp_attrition_tier = 3 } }
+                    }
+                    add_manpower = -20
+                }
+                if = {
+                    limit = { check_variable = { global.srp_attrition_tier = 3 } }
+                    add_manpower = -30
+                }
+            }
+        }
+    }
+
+    on_daily_IRS = {
+        effect = {
+            add_to_variable = { IRS_spread_day_counter = 1 }
+            if = {
+                limit = { check_variable = { IRS_spread_day_counter > 9 } }
+                set_variable = { IRS_spread_day_counter = 0 }
+                if = {
+                limit = { check_variable = { global.srp_spread_mult > 0 } }
+                every_state = {
+                    limit = {
+                        NOT = { state_is_iris_bloc_controlled = yes }
+                        NOT = { is_controlled_by = KNX }
+                        NOT = { controller = { has_idea = dirty_bomb_doctrine } }
+                        any_neighbor_state = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                            check_variable = { iris_infestation_level > 24 }
+                        }
+                    }
+
+                    set_variable = { var = infest_spread_delta value = 0 }
+
+                    every_neighbor_state = {
+                        limit = { state_is_iris_bloc_controlled = yes }
+                        if = {
+                            limit = { check_variable = { iris_infestation_level > 74 } }
+                            PREV = { add_to_variable = { infest_spread_delta = 12 } }
+                        }
+                        if = {
+                            limit = {
+                                check_variable = { iris_infestation_level > 49 }
+                                NOT = { check_variable = { iris_infestation_level > 74 } }
+                            }
+                            PREV = { add_to_variable = { infest_spread_delta = 8 } }
+                        }
+                        if = {
+                            limit = {
+                                check_variable = { iris_infestation_level > 24 }
+                                NOT = { check_variable = { iris_infestation_level > 49 } }
+                            }
+                            PREV = { add_to_variable = { infest_spread_delta = 4 } }
+                        }
+                    }
+                    every_neighbor_state = {
+                        limit = { is_controlled_by = KNX }
+                        if = {
+                            limit = { check_variable = { iris_infestation_level > 74 } }
+                            PREV = { add_to_variable = { infest_spread_delta = 6 } }
+                        }
+                        if = {
+                            limit = {
+                                check_variable = { iris_infestation_level > 49 }
+                                NOT = { check_variable = { iris_infestation_level > 74 } }
+                            }
+                            PREV = { add_to_variable = { infest_spread_delta = 4 } }
+                        }
+                        if = {
+                            limit = {
+                                check_variable = { iris_infestation_level > 24 }
+                                NOT = { check_variable = { iris_infestation_level > 49 } }
+                            }
+                            PREV = { add_to_variable = { infest_spread_delta = 2 } }
+                        }
+                    }
+
+                    multiply_variable = { var = infest_spread_delta value = global.srp_spread_mult }
+                    add_to_variable = { var = iris_infestation_level value = infest_spread_delta }
+                }
+                }
+            }
+        }
+    }
+
+    on_daily_IRS = {
+        effect = {
+            every_state = {
+                if = {
+                    limit = {
+                        OR = {
+                            state_is_iris_bloc_controlled = yes
+                            is_controlled_by = KNX
+                        }
+                        NOT = { state_is_iris_bloc_owned = yes }
+                        NOT = { is_owned_by = KNX }
+                        check_variable = {
+                            var = global.srp_occupation_flip_threshold
+                            value = 0
+                            compare = greater_than
+                        }
+                        check_variable = {
+                            var = iris_infestation_level
+                            value = global.srp_occupation_flip_threshold
+                            compare = greater_than
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            owner = { NOT = { has_country_flag = srp_occupation_flip_seen } }
+                        }
+                        owner = {
+                            set_country_flag = srp_occupation_flip_seen
+                            country_event = { id = infestation_crisis.3 }
+                        }
+                    }
+
+                    controller = { save_event_target_as = occupation_flip_claimant }
+                    transfer_state_to = event_target:occupation_flip_claimant
+                }
+
+                if = {
+                    limit = {
+                        check_variable = { global.srp_handover_enabled > 0 }
+                        check_variable = { iris_infestation_level > 99 }
+                        NOT = { state_is_iris_bloc_controlled = yes }
+                        NOT = { is_controlled_by = KNX }
+                        NOT = { state_is_iris_bloc_owned = yes }
+                        NOT = { is_owned_by = KNX }
+                        NOT = { has_state_flag = irs_100_crisis_warned }
+                        any_neighbor_state = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                            check_variable = { iris_infestation_level > 24 }
+                        }
+                    }
+                    set_state_flag = irs_100_crisis_warned
+                    if = {
+                        limit = { check_variable = { global.srp_handover_grace_days = 90 } }
+                        set_state_flag = { flag = irs_crisis_fighting_back value = 1 days = 90 }
+                    }
+                    if = {
+                        limit = { check_variable = { global.srp_handover_grace_days = 7 } }
+                        set_state_flag = { flag = irs_crisis_fighting_back value = 1 days = 7 }
+                    }
+                    if = {
+                        limit = {
+                            NOT = { check_variable = { global.srp_handover_grace_days = 90 } }
+                            NOT = { check_variable = { global.srp_handover_grace_days = 7 } }
+                        }
+                        set_state_flag = { flag = irs_crisis_fighting_back value = 1 days = 30 }
+                    }
+                    save_event_target_as = infestation_crisis_state
+                    controller = { country_event = { id = infestation_crisis.1 } }
+                }
+
+                if = {
+                    limit = {
+                        has_state_flag = irs_100_crisis_warned
+                        NOT = { has_state_flag = irs_crisis_fighting_back }
+                        check_variable = { iris_infestation_level > 99 }
+                        NOT = { state_is_iris_bloc_controlled = yes }
+                        NOT = { is_controlled_by = KNX }
+                        NOT = { state_is_iris_bloc_owned = yes }
+                        NOT = { is_owned_by = KNX }
+                        any_neighbor_state = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                            check_variable = { iris_infestation_level > 24 }
+                        }
+                    }
+                    save_event_target_as = infestation_crisis_state
+                    controller = { country_event = { id = infestation_crisis.2 } }
+
+                    set_variable = { crisis_best_infestation = 24 }
+                    set_variable = { crisis_claim_found = 0 }
+                    every_neighbor_state = {
+                        limit = {
+                            OR = {
+                                state_is_iris_bloc_controlled = yes
+                                is_controlled_by = KNX
+                            }
+                            check_variable = { iris_infestation_level > PREV.crisis_best_infestation }
+                        }
+                        controller = { save_event_target_as = crisis_claimant }
+                        PREV = {
+                            set_variable = { crisis_best_infestation = PREV.iris_infestation_level }
+                            set_variable = { crisis_claim_found = 1 }
+                        }
+                    }
+                    if = {
+                        limit = { check_variable = { crisis_claim_found > 0 } }
+                        transfer_state_to = event_target:crisis_claimant
+                        set_state_controller_to = event_target:crisis_claimant
+                        if = {
+                            limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
+                            remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+                        }
+                        if = {
+                            limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
+                            remove_dynamic_modifier = { modifier = beckon_iris_buff }
+                        }
+                        add_dynamic_modifier = {
+                            modifier = beckon_iris_buff
+                            days = 2
+                        }
+                    }
+                    clr_state_flag = irs_100_crisis_warned
+                }
+
+                if = {
+                    limit = {
+                        has_state_flag = irs_100_crisis_warned
+                        OR = {
+                            NOT = { check_variable = { iris_infestation_level > 99 } }
+                            state_is_iris_bloc_owned = yes
+                            is_owned_by = KNX
+                        }
+                    }
+                    clr_state_flag = irs_100_crisis_warned
+                }
+            }
+        }
+    }
+}

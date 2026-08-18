@@ -1,0 +1,186 @@
+TET_tethysic_mio = {
+	icon = GFX_idea_generic_navy_organization
+
+	allowed = { original_tag = TET }
+	available = {
+		TET = { has_country_flag = TET_tethysic_lineage }
+	}
+
+	equipment_type = { IRS_devourer_hull IRS_abyssant_hull }
+	research_categories = { srp_iris_tech }
+
+	initial_trait = {
+		name = TET_tethysic_initial
+		equipment_bonus = {
+			torpedo_attack = 0.03
+			reliability = 0.03
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+	}
+
+	trait = {
+		token = TET_tethysic_genome_core
+		name = TET_tethysic_genome_core
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 2 y = 0 }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.06
+		}
+		equipment_bonus = {
+			torpedo_attack = 0.06
+			sub_visibility = -0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = TET_tethysic_feeding_frenzy
+		name = TET_tethysic_feeding_frenzy
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = -1 y = 1 }
+		relative_position_id = TET_tethysic_genome_core
+		all_parents = { TET_tethysic_genome_core }
+
+		equipment_bonus = {
+			torpedo_attack = 0.10
+			max_strength = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = TET_tethysic_deep_adaptation
+		name = TET_tethysic_deep_adaptation
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = TET_tethysic_genome_core
+		all_parents = { TET_tethysic_genome_core }
+
+		equipment_bonus = {
+			sub_visibility = -0.10
+			naval_range = 0.12
+			reliability = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = TET_tethysic_swarm_hunger
+		name = TET_tethysic_swarm_hunger
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = TET_tethysic_feeding_frenzy
+		all_parents = { TET_tethysic_feeding_frenzy }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			torpedo_attack = 0.12
+			max_strength = 0.10
+		}
+		production_bonus = {
+			production_cost_factor = -0.06
+		}
+
+		on_complete = {
+			TET = { set_country_flag = TET_swarm_hunger_completed }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = TET_tethysic_ocean_mastery
+		name = TET_tethysic_ocean_mastery
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = TET_tethysic_deep_adaptation
+		all_parents = { TET_tethysic_deep_adaptation }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			sub_visibility = -0.12
+			naval_range = 0.18
+			naval_speed = 0.06
+		}
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = TET_tethysic_abyssal_descent
+		name = TET_tethysic_abyssal_descent
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = TET_tethysic_swarm_hunger
+		all_parents = { TET_tethysic_swarm_hunger }
+
+		equipment_bonus = {
+			sub_visibility = -0.10
+			naval_range = 0.12
+			torpedo_attack = 0.08
+		}
+		ai_will_do = { base = 2 }
+	}
+
+	trait = {
+		token = TET_tethysic_genome_devotion
+		name = TET_tethysic_genome_devotion
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = TET_tethysic_ocean_mastery
+		all_parents = { TET_tethysic_ocean_mastery }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			max_strength = 0.10
+			reliability = 0.06
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+		ai_will_do = { base = 2 }
+	}
+
+	trait = {
+		token = TET_tethysic_abyssant_genesis
+		name = TET_tethysic_abyssant_genesis
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = TET_tethysic_abyssal_descent
+		any_parent = { TET_tethysic_abyssal_descent TET_tethysic_genome_devotion }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			torpedo_attack = 0.10
+			max_strength = 0.12
+			sub_visibility = -0.08
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			set_global_flag = global_tethysic_genome_proven
+			TET = { set_technology = { abyssant_genesis = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}

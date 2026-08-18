@@ -1,0 +1,85 @@
+set_country_flag = is_parasite_nation
+set_rule = { can_join_factions = no }
+recruit_character = KNX_vagrant_one
+recruit_character = KNX_sci_land
+set_research_slots = 3
+
+create_corps_commander = {
+	name = "Unit Designation K-4"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Unit Designation K-9"
+	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Unit Designation K-OV"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Unit Designation K-2"
+	gfx = "GFX_Portrait_Europe_Generic_navy_1"
+	traits = { navy_career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+capital = 369
+
+add_ideas = KNX_hidden_reserve
+add_ideas = KNX_minimal_strain
+add_ideas = KNX_complete_isolation
+add_equipment_to_stockpile = { type = parasite_supply_swarm_1 amount = 500 producer = KNX }
+add_equipment_to_stockpile = { type = parasite_bio_rail_1 amount = 50 producer = KNX }
+
+set_technology = {
+	parasite_buildings = 1
+	inborn_parasites = 1
+	parasite_equipment_access = 1
+	knx_vagrant_one_manifestation = 1
+	assimilated_predators = 1
+	parasite_autonomic_sustenance = 1
+	early_primitive_parasites = 1
+	primitive_support_forms = 1
+	late_primitive_parasites = 1
+	biomass_cultivation = 1
+	early_pure_parasites = 1
+	advanced_pure_parasites = 1
+	nexus_flesh_refinement = 1
+}
+oob = "KNX_2020"
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2020.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}

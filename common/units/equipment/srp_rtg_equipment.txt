@@ -1,0 +1,54 @@
+equipments = {
+	srp_rtg_infantry_equipment = {
+		year = 2022
+
+		is_archetype = yes
+		is_buildable = no
+		picture = archetype_infantry_equipment
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+
+		active = yes
+
+		reliability = 0.9
+		maximum_speed = 4
+
+		defense = 20
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		soft_attack = 3
+		hard_attack = 0.5
+		ap_attack = 1
+		air_attack = 0
+
+		lend_lease_cost = 1
+
+		build_cost_ic = 4
+		resources = {
+			fissile_material = 1
+		}
+	}
+	srp_rtg_infantry_equipment_1 = {
+		year = 2022
+
+		archetype = srp_rtg_infantry_equipment
+		priority = 10
+		visual_level = 1
+
+		defense = 26
+		breakthrough = 4
+
+		soft_attack = 8
+		hard_attack = 3
+		ap_attack = 18
+		air_attack = 0
+
+		build_cost_ic = 4
+		resources = {
+			fissile_material = 1
+		}
+	}
+}

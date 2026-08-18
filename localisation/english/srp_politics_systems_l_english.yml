@@ -1,0 +1,782 @@
+﻿l_english:
+
+ economy: "Economic Posture"
+ trade_laws: "Trade & Supply"
+ mobilization_laws: "Military Commitment"
+
+ srp_peacetime_economy: "Peacetime Economy"
+ srp_peacetime_economy_desc: "The state operates under standard market conditions. Defence spending is restrained, consumer goods are freely available, and the private sector remains the primary driver of production."
+
+ srp_crisis_mobilization: "Crisis Mobilisation"
+ srp_crisis_mobilization_desc: "With the threat clearly visible, the government begins redirecting resources toward national defence. Emergency procurement channels are opened and arms production receives priority funding."
+
+ srp_wartime_direction: "Wartime Direction"
+ srp_wartime_direction_desc: "The state exercises direct authority over industrial output. Factory capacity is reoriented toward military production, and civilian-to-military conversion costs are reduced across the board."
+
+ srp_total_war_production: "Total War Production"
+ srp_total_war_production_desc: "Every available factory is subordinated to the war effort. Consumer goods are heavily rationed, but arms output reaches levels previously thought impossible. Morale at home begins to fray."
+
+ srp_emergency_command_economy: "Emergency Command Economy"
+ srp_emergency_command_economy_desc: "The state assumes direct control of all productive capacity. Civilian construction halts. Every ton of steel, every factory floor, every shift worker feeds a single purpose: military output. The social contract is suspended indefinitely."
+
+ srp_open_global_market: "Open Global Market"
+ srp_open_global_market_desc: "The country participates fully in international trade."
+
+ srp_managed_imports: "Managed Imports"
+ srp_managed_imports_desc: "The government begins exercising selective control over trade flows, prioritising strategic imports while moderating export dependency. Economic efficiency is maintained at a moderate cost."
+
+ srp_strategic_protectionism: "Strategic Protectionism"
+ srp_strategic_protectionism_desc: "Exports are sharply curtailed and domestic industry is shielded from foreign competition. The economy turns inward. Construction and production are redirected toward self-sufficiency."
+
+ srp_emergency_rationing: "Emergency Rationing"
+ srp_emergency_rationing_desc: "With global supply chains disrupted or severed, the state imposes strict rationing on goods and materials."
+
+ srp_total_supply_lockdown: "Total Supply Lockdown"
+ srp_total_supply_lockdown_desc: "All exports cease. The country operates in complete economic isolation, drawing entirely on domestic resources."
+
+ srp_national_policy: "National Policy"
+ srp_national_policy_desc: "Manage the state's governing posture and economic philosophy. These policies apply additional modifiers on top of your core laws."
+ srp_crisis_authority: "CRISIS AUTHORITY"
+ srp_fiscal_policy: "FISCAL POLICY"
+
+ srp_civil_society_intact: "Civil Society Intact"
+ srp_civil_society_intact_desc: "Democratic institutions, civil liberties, and the rule of law function without significant restriction. Political capital flows freely and public trust in government remains high, though urgency is limited."
+
+ srp_emergency_legislation: "Emergency Legislation"
+ srp_emergency_legislation_desc: "Parliament grants the executive expanded powers to respond to the crisis. Emergency procurement is streamlined and public construction is accelerated. Civil liberties remain largely intact."
+
+ srp_security_state: "Security State"
+ srp_security_state_desc: "Surveillance is expanded, movement is monitored, and internal security services are given broad authority. Public morale hardens in some quarters and softens in others. Political opposition finds less room to manoeuvre."
+
+ srp_martial_law: "Martial Law"
+ srp_martial_law_desc: "Military authority supersedes civilian governance in many regions. Curfews, censorship, and conscription enforcement are placed in the hands of the armed forces. The population accepts hardship, and so does the economy."
+
+ srp_total_emergency_regime: "Total Emergency Regime"
+ srp_total_emergency_regime_desc: "The government has assumed near-total control of daily life. Civil institutions are suspended, dissent is suppressed, and the entire apparatus of the state is bent toward survival. What emerges from the crisis, if anything does, may not resemble what entered it."
+
+ srp_laissez_faire: "Laissez-Faire"
+ srp_laissez_faire_desc: "The government refrains from heavy intervention in the economy. Low taxation and minimal regulation allow the private sector to operate efficiently. Political power flows easily, though inequality deepens and social stability is fragile."
+
+ srp_keynesian_intervention: "Keynesian Intervention"
+ srp_keynesian_intervention_desc: "The state uses targeted spending and fiscal stimulus to manage the economy. Infrastructure investment is favoured and the government acts as a stabilising force during downturns, without fully directing production."
+
+ srp_social_democracy: "Social Democracy"
+ srp_social_democracy_desc: "A broad welfare state, funded by progressive taxation, provides social stability and invests in education and research."
+
+ srp_austerity_measures: "Austerity Measures"
+ srp_austerity_measures_desc: "Emergency budget cuts slash civilian spending and redirect resources toward industry. Welfare programmes are curtailed, public services stripped back."
+
+ srp_war_socialism: "War Socialism"
+ srp_war_socialism_desc: "The state nationalises key industries and directs the full weight of the economy toward the war effort. Consumer goods nearly vanish."
+
+ srp_professional_force: "Professional Force"
+ srp_professional_force_desc: "The military is composed entirely of volunteers. Smaller in size, it compensates with intensive training and high unit cohesion. Organisation is excellent, but manpower numbers remain limited."
+
+ srp_selective_service: "Selective Service"
+ srp_selective_service_desc: "The state introduces a limited draft, expanding the manpower pool while retaining a professional core. Basic training is maintained and overall military cohesion sees only a modest reduction."
+
+ srp_national_service_requirement: "National Service Requirement"
+ srp_national_service_requirement_desc: "All eligible citizens are required to complete a period of national service. The armed forces grow substantially. Some citizens chafe under the obligation, creating mild domestic tension."
+
+ srp_universal_conscription: "Universal Conscription"
+ srp_universal_conscription_desc: "The state calls every available adult to arms. Manpower numbers surge dramatically. Training time is compressed and organisation begins to suffer, but the sheer weight of numbers becomes the nation's primary military asset."
+
+ srp_desperate_enlistment: "Desperate Enlistment"
+ srp_desperate_enlistment_desc: "With losses mounting and options exhausted, the state lowers every recruitment threshold. The untrained, the unfit, and those previously exempted are pressed into service. Numbers are enormous. Quality is not."
+
+ IRS_passive_accumulation: "Passive Accumulation"
+ IRS_passive_accumulation_desc: "The hive directs biomass toward building its infrastructure base. Beckons spread deeper, biomass pools accumulate reserves, and the nexus network expands. Military production is secondary for now."
+
+ IRS_cultivation_focus: "Cultivation Focus"
+ IRS_cultivation_focus_desc: "A balanced posture. Infrastructure growth continues at pace while military output is not sacrificed. The hive builds steadily across all fronts."
+
+ IRS_surge_directive: "Surge Directive"
+ IRS_surge_directive_desc: "The Iris redirects biomass flow toward military production. Beckons receive less, factories for parasite forms receive more. Infrastructure expansion slows as the swarm prepares for war."
+
+ IRS_apex_consumption: "Apex Consumption"
+ IRS_apex_consumption_desc: "All biomass is consumed in the production of combat forms. Infrastructure is stripped and stockpiles burned. The military machine runs at maximum capacity. The hive is spending what it built."
+
+ IRS_dormant_emergence: "Dormant Emergence"
+ IRS_dormant_emergence_desc: "The swarm moves slowly and with minimal aggression, conserving energy and maintaining a defensive posture. Organisation is reduced, but the hive holds its ground well."
+
+ IRS_coordinated_brood: "Coordinated Brood"
+ IRS_coordinated_brood_desc: "The hive operates with standard coherence. Broods act in concert and combat units maintain good formation discipline."
+
+ IRS_hive_convergence: "Hive Convergence"
+ IRS_hive_convergence_desc: "The Iris pushes greater unity across all active broods. The hive mind speaks more clearly."
+
+ IRS_total_swarm_state: "Total Swarm State"
+ IRS_total_swarm_state_desc: "The Iris commits the full weight of its consciousness to military coordination. Every form acts as one. The strain on the hive mind is severe. The output justifies it."
+
+ IRS_measured_digestion: "Measured Digestion"
+ IRS_measured_digestion_desc: "The hive draws from its territory carefully, sustaining long-term supply efficiency without over-consuming. A patient approach."
+
+ IRS_aggressive_absorption: "Aggressive Absorption"
+ IRS_aggressive_absorption_desc: "The Iris extracts more aggressively from controlled states, improving supply and lending an edge to its combat forms."
+
+ IRS_total_assimilation: "Total Assimilation"
+ IRS_total_assimilation_desc: "Everything under the hive's control is drawn into the biological economy. Supply lines run lean, combat forms hit harder, but the strain of rapid assimilation introduces internal friction."
+
+ IRS_ecological_dominion: "Ecological Dominion"
+ IRS_ecological_dominion_desc: "The Iris asserts full ecological authority over its territory. The ground is no longer being competed for."
+
+ KNX_hidden_reserve: "Hidden Reserve"
+ KNX_hidden_reserve_desc: "Knox keeps its capabilities concealed. No flag is raised, no territory claimed publicly. Political capital accumulates quietly while the rest of the world remains uncertain what it is dealing with."
+
+ KNX_opportunist_footing: "Opportunist Footing"
+ KNX_opportunist_footing_desc: "The Vagrant's forces are positioned to respond quickly to openings. Political capital is maintained at a solid level, and combat effectiveness begins to sharpen."
+
+ KNX_active_expansion: "Active Expansion"
+ KNX_active_expansion_desc: "Knox County commits to visible growth. Construction accelerates and combat forces press outward. Political discretion is spent in exchange for tangible territorial and military gains."
+
+ KNX_open_campaign: "Open Campaign"
+ KNX_open_campaign_desc: "The Vagrant declares openly and moves decisively."
+
+ KNX_minimal_strain: "Minimal Strain"
+ KNX_minimal_strain_desc: "Only a core force of proven strains is maintained. Numbers are limited and cohesion is exceptional. A force this small only works because none of it is wasted."
+
+ KNX_selective_cultivation: "Selective Cultivation"
+ KNX_selective_cultivation_desc: "Additional strains are brought into service through careful selection."
+
+ KNX_full_brood_expansion: "Full Brood Expansion"
+ KNX_full_brood_expansion_desc: "Knox commits to a significant expansion of its parasite forces. A larger pool of strains enters active service."
+
+ KNX_emergency_spawning: "Emergency Spawning"
+ KNX_emergency_spawning_desc: "With reserves drawn low, Knox accelerates spawning beyond sustainable rates. Numbers surge dramatically at the cost of cohesion and internal stability. A gamble the Vagrant may not be able to undo."
+
+ KNX_complete_isolation: "Complete Isolation"
+ KNX_complete_isolation_desc: "No contact with outside powers. Knox shares nothing and receives nothing. Research suffers from the absence of external input, but the faction remains perfectly hidden."
+
+ KNX_silent_observation: "Silent Observation"
+ KNX_silent_observation_desc: "Knox observes the world without engaging it."
+
+ KNX_selective_dialogue: "Selective Dialogue"
+ KNX_selective_dialogue_desc: "Carefully chosen contacts are opened with specific outside parties. Political opportunities present themselves, and research access expands. Knox remains selective about who knows it exists."
+
+ KNX_strategic_alignment: "Strategic Alignment"
+ KNX_strategic_alignment_desc: "Knox commits to meaningful engagement with allied powers. The Vagrant has decided the world must know where it stands."
+
+ modifier_production_speed_beckon_cluster_factor: "Beckon Cluster Production Speed"
+ modifier_production_speed_biomass_pool_factor: "Biomass Pool Production Speed"
+ modifier_production_speed_nexus_hive_factor: "Nexus Hive Production Speed"
+
+ srp_panic_tt_any: "Public Panic: [?ROOT.public_panic] / 1000"
+ srp_panic_tt_100: "Public Panic: [?ROOT.public_panic] / 1000 (requires 100+)"
+ srp_panic_tt_150: "Public Panic: [?ROOT.public_panic] / 1000 (requires 150+)"
+ srp_panic_tt_200: "Public Panic: [?ROOT.public_panic] / 1000 (requires 200+)"
+ srp_panic_tt_300: "Public Panic: [?ROOT.public_panic] / 1000 (requires 300+)"
+ srp_panic_tt_800: "Public Panic: [?ROOT.public_panic] / 1000 (requires 800+)"
+ srp_panic_tt_below_900: "Public Panic: [?ROOT.public_panic] / 1000 (must be below 900)"
+
+ public_panic_modifier: "Public Panic"
+ public_panic_modifier_desc: "A measure of how the civilian population is responding to the parasite crisis. Elevated panic reduces stability, political power generation, and war support as the scale of the threat becomes harder to suppress."
+
+ srp_public_confidence: "Public Confidence"
+ srp_public_confidence_desc: "Current panic level: [?ROOT.public_panic] / 1000.\n\nElevated public panic reduces stability, political power generation, and war support. Infestation of major population centres will drive panic higher. Use the decisions below to manage it."
+
+ srp_emergency_broadcast: "Emergency Public Address"
+ srp_emergency_broadcast_desc: "Direct government communication channels to issue guidance and reassure the civilian population. Accurate information, delivered with authority, can contain the spread of fear. Reduces panic by 80."
+
+ srp_civilian_resilience: "Civilian Resilience Programme"
+ srp_civilian_resilience_desc: "A structured programme to establish community emergency networks, distribute response protocols, and train civilian response teams. More resource-intensive than a public address, but the effect is more durable. Reduces panic by 120."
+
+ srp_impose_information_control: "Emergency Information Controls"
+ srp_impose_information_control_desc: "Suppress unverified parasite sighting reports, restrict civilian communications in contested areas, and centralise crisis reporting through official channels. A significant reduction in panic, but the stability cost reflects growing civilian distrust of official accounts. Reduces panic by 200. Costs 3% stability. Requires Emergency Legislation or higher."
+
+ srp_military_readiness_display: "Armed Forces Readiness Exercise"
+ srp_military_readiness_display_desc: "A coordinated demonstration of military capability across major population centres. Visible armour on the streets and aircraft overhead carry a message that panic-stricken media cannot: the government is prepared, armed, and present. Reduces panic by 60."
+
+ srp_civil_defense_act: "Emergency Civil Defence Legislation"
+ srp_civil_defense_act_desc: "Establish a formal civilian defence framework. Community shelters are designated, response chains are codified, and the civilian sector is partially reorganised toward defence production. The structural changes drive a short-term efficiency boost alongside the panic reduction. Reduces panic by 150. Requires baseline stability. Grants 90 days of improved factory efficiency."
+
+ srp_civil_defense_bonus: "Civil Defence Mobilisation"
+ srp_civil_defense_bonus_desc: "Emergency civil defence legislation has reorganised part of the civilian sector toward defence production and shelter logistics. The structural efficiency improvements persist for the duration of the programme."
+
+ EFH_federal_solidarity_protocol: "EU Federal Solidarity Declaration"
+ EFH_federal_solidarity_protocol_desc: "Invoke the Federal Union's emergency communications framework. Brussels issues a unified public statement, coordinated across all member state channels, affirming institutional control and continued federal response capacity. The scale of the coordinated message carries authority that no individual government address can match. Reduces panic by 180."
+
+ EFH_emergency_authority_decree: "Federal Emergency Authority Decree"
+ EFH_emergency_authority_decree_desc: "The Federal Council invokes emergency executive authority, granting the federal government direct override powers over member state crisis communications, civil movement, and resource allocation. A significant reduction in public panic, but the suspension of normal governance procedures carries its own political cost. Reduces panic by 250. Imposes emergency powers for 90 days: reduced stability and political power generation."
+
+ EFH_emergency_powers_active: "Emergency Federal Authority"
+ EFH_emergency_powers_active_desc: "The Federal Emergency Authority Decree is in effect. The suspension of normal governance procedures and the concentration of power in Brussels is producing friction with member state governments, reflected in reduced stability and political throughput."
+
+ EFH_continental_threat_briefing: "Issue Continental Threat Briefing"
+ EFH_continental_threat_briefing_desc: "The monitoring network compiles its case data into a classified briefing for the response services and the member state governments. The material feeds the laboratories and the intelligence directorates for a time. Requires the parasite threat assessment to have been completed."
+
+ EFH_parasite_containment_sweep: "Coordinated Containment Sweep"
+ EFH_parasite_containment_sweep_desc: "The Federal Emergency Mandate directs a coordinated sweep across the affected member states, drawing on the standing response apparatus rather than an ad hoc appeal. A competent institutional response reads to the public as control. Reduces panic by 160. Requires the Federal Emergency Mandate."
+
+ EFH_joint_command_readiness_exercise: "Run Joint Readiness Exercise"
+ EFH_joint_command_readiness_exercise_desc: "The Joint Anti-Parasite Command rotates formations from across the member states through a shared readiness exercise. Doctrine is rehearsed against the current threat picture. Grants army experience and a period of heightened readiness against the parasite. Requires the Joint Anti-Parasite Command."
+
+ EFH_federalize_parasite_response: "Federalise the Parasite Response"
+ EFH_federalize_parasite_response_desc: "Brussels consolidates the assessment, monitoring, emergency, and command structures into a single permanent continental body under direct federal authority. The response stops being a set of programmes and becomes an institution. Shifts the balance of power toward the federal government."
+
+ EFH_declare_armageddon: "Declare Armageddon"
+ EFH_declare_armageddon_desc: "The Federal Union formally designates the parasite crisis as an existential threat to human civilisation and declares a state of permanent emergency. All federal institutions are subordinated to the war effort.\n\nRequires: public panic at 800 or above. At least 5 major world cities at 50% infestation or beyond."
+
+ EFH_armageddon_state: "Armageddon Declaration"
+ EFH_armageddon_state_desc: "The Federal Union has declared total civilisational war. All civilian and institutional priorities have been subordinated to the parasite response. Political power generation is severely constrained by the cost of running an emergency state, and stability reflects a society operating under permanent crisis governance. The mobilisation bonuses are real, but the political framework holding them together is under constant strain."
+
+ EFH_armageddon_cities_tt: "At least 5 major world cities are infested"
+ EFH_armageddon_irreversible_tt: "This declaration is §RPERMANENT§! and cannot be reversed. The Federal Union will be locked into a permanent emergency state. Public panic will be §Rlocked at 1000§!.\n§9This will have dire consequences later on.§!"
+
+ srp_armageddon.1.t: "Armageddon Declared"
+ srp_armageddon.1.d: "In an address broadcast simultaneously across all Federal Union member states and international emergency channels, the President of the Federal Council has formally declared a state of Armageddon. The parasite crisis, the statement reads, has crossed the threshold of conventional crisis management. The Federal Union will devote the entirety of its institutional capacity to the elimination of the parasite presence on Earth. There is no timeline for the lifting of the declaration. There is no precedent for what comes next."
+ srp_armageddon.1.a: "The world watches."
+
+ srp_armageddon.2.t: "Europe Has Broken"
+ srp_armageddon.2.d: "The Federal Union has declared Armageddon. Their civilian population is at the edge of collapse. Their institutions are on a war footing that cannot be sustained indefinitely. The declaration leaves us unnamed. The meaning is obvious.\n\nPressure applied. Response recorded."
+ srp_armageddon.2.a: "Let them be afraid."
+
+ USA_congressional_emergency_resolution: "Congressional Emergency Resolution"
+ USA_congressional_emergency_resolution_desc: "Bring a formal resolution before Congress authorising expanded federal crisis communications and emergency public information programmes. Congressional backing lends the government's public messaging a legitimacy that executive action alone cannot. Reduces panic by 150. Requires stable public trust in federal institutions."
+
+ USA_presidential_address: "Presidential Address to the Nation"
+ USA_presidential_address_desc: "A direct presidential address on national emergency broadcasting, framing the parasite crisis within the American tradition of resilience under threat. Effective only when public confidence in the presidency is high enough that the address will be received as authoritative rather than defensive. Reduces panic by 220. Requires high public trust. Costs credibility."
+
+ CHN_state_media_reassurance: "State Media Reassurance Campaign"
+ CHN_state_media_reassurance_desc: "Direct state broadcast networks to run a coordinated public reassurance programme. Control over information infrastructure means this can be deployed faster and more efficiently than equivalent measures in open-media societies. Reduces panic by 100."
+
+ CHN_social_stability_enforcement: "Social Stability Enforcement Directive"
+ CHN_social_stability_enforcement_desc: "Issue directives restricting the spread of unverified parasite incident reporting. Party committees at the local level are authorised to enforce information discipline, redirect civilian concern, and suppress destabilising narratives. Highly effective at controlling the panic signal, but the consolidation of enforcement authority creates its own friction. Reduces panic by 200. Costs 4% stability."
+
+ CHN_peoples_war_mobilization: "People's War Doctrine Declaration"
+ CHN_peoples_war_mobilization_desc: "Frame the parasite crisis as a People's War, turning public fear into organised mobilisation. State media pivots from reassurance to mobilisation, channeling panic into enlistment, labour, and research. Citizens understand the scale of the threat and respond accordingly. Increases panic by 200. Grants 120 days of mobilisation bonuses: weekly manpower and accelerated research."
+
+ CHN_peoples_war_spirit: "People's War Spirit"
+ CHN_peoples_war_spirit_desc: "The People's War Doctrine is in effect. The state has deliberately elevated public awareness of the parasite crisis to drive voluntary mobilisation. Civilian enlistment and research participation are running above normal, but the psychological cost of maintaining a society in permanent emergency footing will accumulate."
+
+ EFH_nuclear_war_rally: "For Europe"
+ EFH_nuclear_war_rally_desc: "The Federation struck first. Whatever comes next, the people have answered. Recruitment halls are full and front-line commanders are asking for more."
+ EFH_nuclear_war_blowback: "International Outcry"
+ EFH_nuclear_war_blowback_desc: "The first strike drew near-universal condemnation. Embassies are closing. Trade partners are reassessing. The Federation fights on, but it does so alone."
+ USA_nuclear_war_shock: "Nuclear Shock"
+ USA_nuclear_war_shock_desc: "Cities are gone. The government is scrambling for answers. The public is in panic and the political class is tearing itself apart over who to blame and what to do next."
+
+ world.2.t: "Unusual Reports from Ile-de-France"
+ world.2.d: "Metro infrastructure in multiple arrondissements has gone dark. Municipal maintenance teams sent to investigate have not returned. H&A Containment is reviewing satellite imagery. The readings are not consistent with known outbreak signatures."
+ world.2.a: "Flag it. Send a team."
+ world.2.b: "Growth proceeds."
+
+ world.3.t: "Paris Containment Declared"
+ world.3.d: "The French military has established a cordon at the city periphery. Civilian evacuation of central arrondissements is underway. H&A Containment reports that the growth is coherent and structured, anchored around a fixed source."
+ world.3.a: "Hold the perimeter."
+ world.3.b: "The city is learning a new function."
+
+ world.4.t: "Paris: No Response"
+ world.4.d: "The last organised transmission from central Paris came from a field hospital in the 12th arrondissement. Aerial observation since then has recorded only canopy spread across the riverbanks and the upper floors of Haussmann buildings. The perimeter is still held. What it is containing is no longer a city."
+ world.4.a: "The loss is recorded."
+ world.4.b: "A deep site. It will hold long after the stone wears."
+
+ world.5.t: "Anomalous Readings Along the Thames"
+ world.5.d: "Environmental monitoring stations on the Thames embankment have returned unexplained biological readings for the third consecutive week. Underground infrastructure surveys in several districts have been suspended pending investigation. The reports have not yet reached public channels."
+ world.5.a: "Send the containment unit."
+ world.5.b: "The river is already working for us."
+
+ world.6.t: "London Underground Sealed"
+ world.6.d: "Transport for London has suspended service across eleven lines following the discovery of root growth in tunnel infrastructure. A military cordon is operational around central districts. H&A Containment reports the growth is following the Underground network outward from the centre."
+ world.6.a: "The surface is still ours. Hold it."
+ world.6.b: "Infrastructure follows the root. Efficient."
+
+ world.7.t: "London: Signal Lost"
+ world.7.d: "The BBC emergency broadcast relay ceased transmission at 03:22. A transmission from Westminster was received fourteen minutes later and has not been repeated. Signals Corps confirms that what remains of the city's communication network is routing somewhere."
+ world.7.a: "Document everything received."
+ world.7.b: "A relay node now. More efficient than the original."
+
+ world.8.t: "Seismic Anomaly Below Brandenburg"
+ world.8.d: "The Federal Institute for Geosciences has flagged subsurface anomalies beneath the Tiergarten district and the Spree riverbed. The readings do not match geological records. Field assessment teams are being assembled. H&A Structural Division has been informed."
+ world.8.a: "Get eyes underground."
+ world.8.b: "Old foundations hold the spores well."
+
+ world.9.t: "Berlin: Contamination Zone Established"
+ world.9.d: "The German government has declared a biological contamination zone across central Berlin. The Reichstag is operating from an emergency facility. H&A Containment estimates the growth rate in Berlin's urban substrate is faster than any previously recorded European site."
+ world.9.a: "The government must not collapse."
+ world.9.b: "Industrial substrate gives much."
+
+ world.10.t: "Berlin Designated Lost, Reichstag Relocates"
+ world.10.d: "An emergency session of the Bundestag voted to formally designate central Berlin as a hazard zone beyond recovery threshold. Personnel have been evacuated. Canopy growth is visible from satellite imagery above the former governmental district. The Tiergarten is unrecognizable."
+ world.10.a: "History will record this day."
+ world.10.b: "Let it grow."
+
+ world.11.t: "Infrastructure Failures in Moscow's Outer Districts"
+ world.11.d: "Russian state media has not acknowledged the reports. H&A intelligence has confirmed that maintenance crews sent to the Lyublino and Pechatniki districts have been unreachable for eleven days. Rail access to the outer ring road has been suspended without announced reason."
+ world.11.a: "The blackout is itself information."
+ world.11.b: "Silence tells us more than the signal would."
+
+ world.12.t: "Red Square Access Restricted"
+ world.12.d: "Corroborated reports from Moscow indicate that Kremlin district access has been suspended for all non-essential personnel. Metro service is partially halted. H&A Containment's estimate, based on satellite thermal imagery, places the infestation depth at multiple city blocks. The Russian government has not confirmed."
+ world.12.a: "An unacknowledged crisis is still a crisis."
+ world.12.b: "The centre is always the last to admit it."
+
+ world.13.t: "Moscow: Government Communications Offline"
+ world.13.d: "H&A Intelligence received its last confirmed communication from a Russian government contact at 11:41. Subsequent signals have not been authenticated. Thermal satellite imagery of the central district shows heat signatures inconsistent with human infrastructure. Emergency broadcasts from eastern regions are advising inland movement."
+ world.13.a: "We are watching an end."
+ world.13.b: "The capital feeds the root structure well."
+
+ world.14.t: "Shinjuku District Readings Disputed"
+ world.14.d: "The Tokyo Metropolitan Government has classified internal reports regarding biological anomalies in the Shinjuku and Shibuya ward perimeters. H&A's Tokyo monitoring team reports that foot traffic patterns changed three weeks before the classification order."
+ world.14.a: "Pressure for transparency now, while there is still time."
+ world.14.b: "Dense cities read cleanly from above."
+
+ world.15.t: "Yamanote Line Suspended, Tokyo Wards Under Evacuation"
+ world.15.d: "The Japan Self-Defence Forces have issued an evacuation order for eleven central Tokyo wards. The Yamanote Line loop has been suspended. Growth structures have been documented above ground in the Asakusa and Akihabara areas. H&A Containment has issued a Category Three regional alert."
+ world.15.a: "Coordinate with JSDF on population logistics."
+ world.15.b: "Density accelerates the take."
+
+ world.16.t: "Tokyo: Final JSDF Transmission"
+ world.16.d: "The last authenticated communication from JSDF Tokyo Command came by radio relay from Shibuya at 08:15. The SkyTree broadcast relay has been offline for forty hours. Aerial observation shows canopy coverage above the former central wards. No communication has been received from north of Shinjuku."
+ world.16.a: "The loss is immense. We keep moving."
+ world.16.b: "A node this size will anchor regional expansion for years."
+
+ world.17.t: "CDC Preliminary Alert: New York"
+ world.17.d: "The U.S. Centers for Disease Control has issued a restricted preliminary alert regarding biological anomalies in the Staten Island and Queens boroughs. The alert cites unexplained root-like growth in storm drain infrastructure. H&A received a copy through secondary channels."
+ world.17.a: "Get ahead of this before the press does."
+ world.17.b: "The harbor infrastructure is already useful to us."
+
+ world.18.t: "Manhattan Access Restricted"
+ world.18.d: "Bridge and tunnel access to Manhattan has been restricted to emergency vehicles. Below-ground assessments of the subway system have been suspended after multiple teams lost contact. H&A's northeastern logistics hub has been relocated to Philadelphia."
+ world.18.a: "The city must not be written off."
+ world.18.b: "The financial centre is no longer functioning as one."
+
+ world.19.t: "UN Emergency Session: New York Dark"
+ world.19.d: "The United Nations General Assembly has gone into indefinite recess. A final communique was released at 14:00 calling for a coordinated global response. Aerial observation of Manhattan shows growth extending above the roofline of buildings across the lower island. There is no further communication from within the cordon."
+ world.19.a: "Then the world responds without a centre."
+ world.19.b: "The infrastructure holds. The people were the variable."
+
+ world.20.t: "Unusual Growth Near Northern Beijing"
+ world.20.d: "Intelligence sources indicate that construction teams working in the northern district have encountered growth structures inconsistent with any known biological category. The Chinese government has placed a news blackout on the region. H&A has two assets in Beijing. One has not reported in nine days."
+ world.20.a: "The other asset is more valuable now."
+ world.20.b: "Northern approach vectors are always productive."
+
+ world.21.t: "Forbidden City District Under Military Lockdown"
+ world.21.d: "Satellite imagery has confirmed military vehicle concentrations around Zhongnanhai and the Forbidden City perimeter. Communications from the central government district are now routed exclusively through secured military channels. H&A Containment estimates the growth has reached the palace grounds."
+ world.21.a: "Thousands of years. It ends this way."
+ world.21.b: "Old power centres absorb well. The roots remember the depth."
+
+ world.22.t: "Beijing Central District: Communications Terminated"
+ world.22.d: "H&A has lost all contact with its remaining Beijing assets. Chinese state media has ceased broadcasting from the capital. Emergency government functions are being routed from Chongqing. Thermal imaging of the Zhongnanhai compound shows no heat signatures consistent with human activity."
+ world.22.a: "The world is smaller tonight."
+ world.22.b: "The eastern network begins here."
+
+ world.30.t: "An Arrival, Confirmed"
+ world.30.d: "Six observatories confirmed it within the same hour, and amateur astronomers had it a day earlier: a body has entered a stable solar orbit, and it did not fall into one. It decelerated. Size estimates are being revised upward by teams who first assumed their instruments were broken. Every government on Earth has convened an emergency session. Every broadcast carries the same photograph, a faint green point of light that was not there last month."
+ world.30.a: "The sky is wrong."
+ world.30.b: "It is here."
+ world.31.t: "Landfall in West Africa"
+ world.31.d: "Something came down along the Gulf of Guinea coast, and the footage leaving the region does not agree with itself: growth where growth should not be, whole districts gone silent, roads closed by things the cameras never quite hold in frame. Foreign desks run the story below the fold. It is a long way away, and the object in the sky has used up the world's alarm for now. Governments issue statements of concern and schedule follow-up briefings. Somewhere else, it is somebody else's problem."
+ world.31.a: "A tragedy, somewhere else."
+ world.31.b: "It is not somewhere else."
+ world.31.c: "Landfall."
+ world.32.t: "The Coast Goes Quiet"
+ world.32.d: "The reports from the Bight coast stopped contradicting each other three days ago, which is worse than when they disagreed. Seven states of coastline and interior have stopped answering. Reconnaissance flights bring back imagery of structured growth, green-lit and spreading, and columns of people walking out of it who do not all arrive. The capitals abroad have sent condolences and observers. Whatever this is, it begins here, and no one else is coming."
+ world.32.a: "Mobilise. Now."
+ world.32.b: "Contain the panic first."
+
+ srp_moon.1.t: "Lunar Programme Launched"
+ srp_moon.1.d: "The procurement tranche is cleared and the programme directors have their mandate. Engineers are being pulled from every parallel project. The lunar programme is open. Whether it outlasts the crisis is a question for whoever survives it."
+ srp_moon.1.a: "Let nothing slow us down."
+
+ srp_moon.2.t: "First Lunar Touchdown"
+ srp_moon.2.d: "The probe has confirmed its landing site in the crater basin. The surveying equipment is live. For the first time since Apollo, we have broken the lunar surface with something built to stay. The landing zone is marked and ready for the first structural delivery."
+ srp_moon.2.a: "Begin the construction phases."
+
+ srp_moon.4.t: "Procurement Irregularity Flagged"
+ srp_moon.4.d: "An internal audit has identified a gap between a third-party contractor's billing records and their delivery manifests. The discrepancy runs into eight figures. The subcontractor's legal team has been informed. They are not cooperating."
+ srp_moon.4.a: "Open a quiet investigation."
+
+ srp_moon.5.t: "Survey Data Exceeds Projections"
+ srp_moon.5.d: "The processing array's first surface survey has returned helium-3 concentration readings substantially above baseline. It appears we selected a better crater than the initial orbital data suggested. The extraction phase looks more viable than originally modelled."
+ srp_moon.5.a: "Reallocate to capitalise on this."
+
+ srp_moon.6.t: "Launch Vehicle Acquired"
+ srp_moon.6.d: "One of our procurement officers has arranged the acquisition of an unattended commercial launch vehicle from a storage depot. The ownership paperwork is still in transit. The booster is already in transit as well, just in a different direction. The programme timeline has been updated accordingly."
+ srp_moon.6.a: "What they don't know won't hurt them."
+
+ srp_moon.7.t: "Rival Alleges Supply Chain Incident"
+ srp_moon.7.d: "Intelligence intercepts indicate our rival is tracking missing components from their own supply chain back toward our acquisition network. They have not issued a public statement. What they have done is begin an internal investigation with our programme's contractors named as persons of interest."
+ srp_moon.7.a: "Deny everything through back channels."
+
+ srp_moon.8.t: "Procurement Scandal in Press"
+ srp_moon.8.d: "Documents alleging systematic financial misconduct in our lunar programme have reached international media. The story is running on every major network and the attribution is detailed. Someone with access handed these to a journalist deliberately. The timing is impeccable."
+ srp_moon.8.a: "Issue a denial. Restructure quietly."
+
+ srp_moon.9.t: "Anomalous Regolith Reading"
+ srp_moon.9.d: "The research complex's deep-core survey unit has returned an unusual composition reading from the northern crater wall. The sample does not match any known lunar geological layer. The team flagged it immediately. A follow-up core extraction has been scheduled to determine whether this is a calibration error or something that needs to be classified."
+ srp_moon.9.a: "Schedule the follow-up survey."
+
+ srp_moon.10.t: "Lunar Base: Operational"
+ srp_moon.10.d: "Final integration is complete. The lunar base is operational. We have built a permanent human outpost beyond Earth during the worst sustained crisis in recorded history. The research support it provides, the helium-3 supply chain, the strategic positioning: none of it was possible before today. The war council has begun mapping what changes."
+ srp_moon.10.a: "History is watching."
+ srp_moon.10.b: "And what was found in the northern wall?"
+
+ srp_moon.11.t: "Rival Lunar Base Complete"
+ srp_moon.11.d: "Our programme is still active. Theirs is finished. They have established a permanent lunar base and are already drawing operational benefit from it. We are behind. The gap in research capacity, resource access, and strategic positioning will widen until we close this."
+ srp_moon.11.a: "Accelerate. There is no alternative."
+
+ SRP_lunar_anomaly_insight: "Anomaly Analysis: Ongoing"
+ SRP_lunar_anomaly_insight_desc: "The deep-core sample from the lunar crater wall does not match any known geological layer. The composition analysis is running in parallel with active programme operations. Whatever it is, studying it is producing unexpected side results across multiple research disciplines."
+
+ RULE_GROUP_SRP_LAST_DECADE: "The Last Decade"
+
+ RULE_OPTION_SRP_OFF: "Off"
+ RULE_OPTION_SRP_SLOW: "Slow"
+ RULE_OPTION_SRP_NORMAL: "Normal"
+ RULE_OPTION_SRP_FAST: "Fast"
+ RULE_OPTION_SRP_INTENSE: "Intense"
+ RULE_OPTION_SRP_DISABLED: "Disabled"
+ RULE_OPTION_SRP_ENABLED: "Enabled"
+ RULE_OPTION_SRP_PASSIVE: "Passive"
+ RULE_OPTION_SRP_RELENTLESS: "Relentless"
+ RULE_OPTION_SRP_LEAN: "Lean"
+ RULE_OPTION_SRP_ABUNDANT: "Abundant"
+ RULE_OPTION_SRP_NEVER: "Never"
+ RULE_OPTION_SRP_DESPERATE: "When Desperate"
+ RULE_OPTION_SRP_FREELY: "Freely"
+ RULE_OPTION_SRP_WEAK: "Weak"
+ RULE_OPTION_SRP_STRONG: "Strong"
+ RULE_OPTION_SRP_LOW: "Low"
+ RULE_OPTION_SRP_MEDIUM: "Medium"
+ RULE_OPTION_SRP_HIGH: "High"
+ RULE_OPTION_SRP_LIGHT: "Light"
+ RULE_OPTION_SRP_SEVERE: "Severe"
+
+ RULE_SRP_INFESTATION_GROWTH: "Infestation Growth"
+ RULE_SRP_INFESTATION_GROWTH_DESC: "How fast infestation deepens on parasite held and Beckon ground. This scales parasite growth only. Human containment and cleanup are never affected."
+ RULE_SRP_INFESTATION_GROWTH_OFF_DESC: "Infestation never rises on its own. Existing infestation can still be cleared, but Beckons will not deepen it. The gentlest possible world."
+ RULE_SRP_INFESTATION_GROWTH_SLOW_DESC: "Infestation grows at half the normal rate. Humanity has more room to hold the line."
+ RULE_SRP_INFESTATION_GROWTH_NORMAL_DESC: "The intended rate. Beckons deepen infestation steadily and the map slips a little further every day."
+ RULE_SRP_INFESTATION_GROWTH_FAST_DESC: "Infestation grows half again as fast. Containment becomes a losing race."
+
+ RULE_SRP_STATE_HANDOVER: "State Handover"
+ RULE_SRP_STATE_HANDOVER_DESC: "Whether fully overwhelmed human states are seized outright by the parasites, and how long the grace window lasts before the claim lands."
+ RULE_SRP_STATE_HANDOVER_OFF_DESC: "No state is ever taken by infestation alone. A region can sit fully overwhelmed and suffer for it, but it stays in human hands until lost on the battlefield."
+ RULE_SRP_STATE_HANDOVER_SLOW_DESC: "Overwhelmed states are seized, but only after a long grace window. There is time to fight back before the claim lands."
+ RULE_SRP_STATE_HANDOVER_NORMAL_DESC: "The intended timing. A fully overwhelmed state has a short grace window, then it is claimed by the bordering parasite power."
+ RULE_SRP_STATE_HANDOVER_FAST_DESC: "The grace window is brief. Once a state is overwhelmed it is lost almost at once."
+
+ RULE_SRP_OCCUPATION_FLIP: "Occupied Ground"
+ RULE_SRP_OCCUPATION_FLIP_DESC: "Whether ground the parasites occupy eventually becomes ground they own, and how deeply infested it has to be first. Territory absorbed this way never comes back through a peace settlement."
+ RULE_SRP_OCCUPATION_FLIP_OFF_DESC: "Occupied territory stays on its owner's books no matter how long the parasites sit on it. Ground only changes hands through capitulation and the usual terms."
+ RULE_SRP_OCCUPATION_FLIP_SLOW_DESC: "Occupied territory is absorbed, but only once it is very heavily infested. There is a long window to push the parasites back off it first."
+ RULE_SRP_OCCUPATION_FLIP_NORMAL_DESC: "The intended setting. Ground the parasites hold is absorbed once it is halfway consumed, which takes a few weeks of unbroken occupation."
+ RULE_SRP_OCCUPATION_FLIP_FAST_DESC: "Ground is absorbed while it is still only lightly infested. A breakthrough becomes permanent almost as soon as it happens."
+
+ RULE_SRP_CRISIS_LAYER: "Crisis Layer"
+ RULE_SRP_CRISIS_LAYER_DESC: "Proto-Supreme sites and the directed spore burst. Sites still appear through IRS focuses, so this changes their severity and availability, not how often they are seeded."
+ RULE_SRP_CRISIS_LAYER_OFF_DESC: "No Proto-Supreme sites form and the directed spore burst is unavailable. The slow infestation grind remains, but its sharpest crises do not."
+ RULE_SRP_CRISIS_LAYER_NORMAL_DESC: "The intended setting. Proto-Supreme sites and spore bursts behave as designed."
+ RULE_SRP_CRISIS_LAYER_INTENSE_DESC: "Spore bursts hit harder, each Proto-Supreme site darkens the sky twice as fast, and the bulbs are harder to destroy."
+
+ RULE_SRP_CONTAINMENT_EFFICIENCY: "Containment Efficiency"
+ RULE_SRP_CONTAINMENT_EFFICIENCY_DESC: "How much ground humanity wins back per day of cleanup. Scales the suppression doctrine decay rates and the Containment Node bonus. Infestation Growth never touches decay, so this is the other half of that dial."
+ RULE_SRP_CONTAINMENT_EFFICIENCY_WEAK_DESC: "Cleanup runs at half rate. Ground that has been infested once tends to stay infested, and the doctrines buy time rather than territory."
+ RULE_SRP_CONTAINMENT_EFFICIENCY_NORMAL_DESC: "The intended rate. A committed containment effort can hold a region and slowly push the infestation back out of it."
+ RULE_SRP_CONTAINMENT_EFFICIENCY_STRONG_DESC: "Cleanup runs half again as fast. Quarantine actually works, and the war becomes a question of whether you can reach the ground in time."
+
+ RULE_SRP_INFESTATION_SPREAD: "Border Spread"
+ RULE_SRP_INFESTATION_SPREAD_DESC: "How hard infestation bleeds out of parasite held ground into the states next to it. Separate from Infestation Growth, which only ever governed ground the parasites already hold."
+ RULE_SRP_INFESTATION_SPREAD_OFF_DESC: "Infestation does not cross borders at all. It appears only where a Beckon is planted or a directed burst puts it, which makes the front line the only thing that matters."
+ RULE_SRP_INFESTATION_SPREAD_LOW_DESC: "Borders bleed at half rate. A single infested neighbour is no real threat, and it takes a deep salient to lose ground this way."
+ RULE_SRP_INFESTATION_SPREAD_MEDIUM_DESC: "The intended rate. One infested neighbour can be held with routine cleanup. Two or more, and the state starts slipping."
+ RULE_SRP_INFESTATION_SPREAD_HIGH_DESC: "Borders bleed half again as fast. Anything bordering the tide is already losing, and pockets rot from the inside before anyone reaches them."
+
+ RULE_SRP_PARASITE_ATTRITION: "Attrition"
+ RULE_SRP_PARASITE_ATTRITION_DESC: "How much manpower infested, consumed and irradiated ground costs per day. This is what makes losing territory hurt instead of just recolouring the map."
+ RULE_SRP_PARASITE_ATTRITION_LIGHT_DESC: "Half the daily bleed. Losing a region is a strategic problem rather than a demographic one, and reserves last."
+ RULE_SRP_PARASITE_ATTRITION_NORMAL_DESC: "The intended cost. Ground lost keeps taking people long after the fighting there has stopped."
+ RULE_SRP_PARASITE_ATTRITION_SEVERE_DESC: "Half again as much. Every region that falls takes a generation with it, and manpower becomes the war's real limit."
+
+ RULE_SRP_PARASITE_AGGRESSION: "Parasite Aggression"
+ RULE_SRP_PARASITE_AGGRESSION_DESC: "How hard the parasite AI presses a war it is already fighting, and how much its appetite for divisions grows with each nation it takes. Nothing is added or removed by this, only the weight behind the push."
+ RULE_SRP_PARASITE_AGGRESSION_PASSIVE_DESC: "The tide advances, but without urgency. Fronts stall, offensives peter out, and a defending nation gets time to reorganize between pushes."
+ RULE_SRP_PARASITE_AGGRESSION_NORMAL_DESC: "The intended pressure. Every war a parasite enters becomes a war of conquest, and each victory makes the next army larger."
+ RULE_SRP_PARASITE_AGGRESSION_RELENTLESS_DESC: "Twice the drive and twice the hunger. The tide does not pause to consolidate, and a nation that falls anywhere feeds the push everywhere."
+
+ RULE_SRP_EVOLUTION_ECONOMY: "Evolution Economy"
+ RULE_SRP_EVOLUTION_ECONOMY_DESC: "How quickly the Iris earns the evolution points it spends on new genomes. This scales its renewable income only. One time focus rewards are a fixed budget and are never affected."
+ RULE_SRP_EVOLUTION_ECONOMY_LEAN_DESC: "Half income. The Iris climbs its genome ladder slowly and has to choose what it becomes instead of taking everything."
+ RULE_SRP_EVOLUTION_ECONOMY_NORMAL_DESC: "The intended pace. New forms arrive steadily through the decade, roughly in step with what the front demands."
+ RULE_SRP_EVOLUTION_ECONOMY_ABUNDANT_DESC: "Half again as much income. The Iris fields organisms humanity has no answer to, years before humanity expected to need one."
+
+ RULE_SRP_SCORCHED_EARTH: "Scorched Earth"
+ RULE_SRP_SCORCHED_EARTH_DESC: "How willing the AI is to poison its own territory to stop an infestation. This weights AI decisions only. Every suppression doctrine stays available to you at every setting."
+ RULE_SRP_SCORCHED_EARTH_NEVER_DESC: "No AI nation will irradiate its own ground, whatever the infestation reaches. Containment stays conventional, and it stays slower."
+ RULE_SRP_SCORCHED_EARTH_DESPERATE_DESC: "The intended behaviour. Governments hold the line with conventional means until a region is far gone, then reach for whatever is left."
+ RULE_SRP_SCORCHED_EARTH_FREELY_DESC: "Chemicals go down at the first sign of spread and radiological containment follows soon after. The infestation is held back, and the map is ruined either way."
+
+ RULE_SRP_LETHAL_EVENTS: "Telotic Events"
+ RULE_SRP_LETHAL_EVENTS_DESC: "Whether story critical figures can die. Enabling this opens outcomes that reshape the endgame and make it far harder. The most punishing way to play."
+ RULE_SRP_LETHAL_EVENTS_DISABLED_DESC: "Story critical figures cannot be killed by events."
+ RULE_SRP_LETHAL_EVENTS_ENABLED_DESC: "Story critical figures can be lost. What follows is harder, and there is no taking it back."
+
+ EFH_USA_escalation: "EF-US Escalation"
+ EFH_USA_escalation_desc: "The temperature of the rivalry between the European Federation and the United States. Cooperation frees both powers to fight the parasites. Confrontation bleeds them both, and at the brink it turns to open war."
+
+ SRP_escalation_cooperation_side: "Cooperation"
+ SRP_escalation_confrontation_side: "Confrontation"
+
+ SRP_escalation_neutral_range: "Wary Coexistence"
+ SRP_escalation_detente_range: "Detente"
+ SRP_escalation_entente_range: "Entente"
+ SRP_escalation_rivalry_range: "Renewed Rivalry"
+ SRP_escalation_coldwar_range: "Cold War Footing"
+ SRP_escalation_brink_range: "The Brink"
+
+ SRP_escalation_detente_idea: "Detente"
+ SRP_escalation_detente_idea_desc: "Open channels with Washington keep the rivalry quiet. Resources that would feed a standoff are spent on the real war instead."
+ SRP_escalation_entente_idea: "Entente"
+ SRP_escalation_entente_idea_desc: "Working cooperation with the United States holds. Both governments concentrate on the parasite emergency rather than on each other. While the parasites are active and the rivalry stays this cool, the two powers may sit in the same alliance."
+ SRP_escalation_standoff_idea: "Wary Coexistence"
+ SRP_escalation_standoff_idea_desc: "No crisis and no agreement. Both governments budget for the other, maintain the postings, and read each other's exercises closely. The arrangement costs a little and settles nothing."
+ SRP_escalation_rivalry_idea: "Renewed Rivalry"
+ SRP_escalation_rivalry_idea_desc: "The old hostility has resurfaced. Posturing on both sides draws attention away from the containment effort."
+ SRP_escalation_coldwar_idea: "Cold War Footing"
+ SRP_escalation_coldwar_idea_desc: "Proxy pressure, embargo and counter-intelligence consume industry and patience. The standoff is expensive long before it turns to shooting."
+ SRP_escalation_brink_idea: "On the Brink"
+ SRP_escalation_brink_idea_desc: "One incident away from open war. Mobilisation, fear and propaganda run hot, and the parasite front pays the price."
+
+ SRP_escalation_category: "EF-US Standoff"
+ SRP_escalation_category_desc: "Current EF-US Escalation: [?EFH_USA_escalation|0] / 100. Below 30 the powers cooperate and free resources for the parasite war. Below 16, with the parasites already out, they may share a faction. Above 80 the next Canadian summit ends in open, nuclear war."
+
+ SRP_diplomatic_outreach: "Quiet Diplomacy"
+ SRP_diplomatic_outreach_desc: "Open a back channel and lower the temperature. Spends political capital to ease the standoff a step toward cooperation."
+ SRP_proxy_theater: "Fund a Proxy Theatre"
+ SRP_proxy_theater_desc: "Arm and bankroll a distant proxy against the rival. Sharpens the army and stiffens resolve, and nudges the rivalry hotter."
+ SRP_economic_pressure: "Economic Pressure Campaign"
+ SRP_economic_pressure_desc: "Squeeze the rival's markets and supply lines. Inflicts a lasting economic penalty on them and drives the standoff sharply toward confrontation."
+
+ srp_flashpoint.1.t: "Intercept Over the North Atlantic"
+ srp_flashpoint.1.d: "An American interceptor pair closed to within thirty metres of a Federation maritime patrol aircraft over the North Atlantic and held position there for eleven minutes. The patrol crew's recording is clear, time-stamped, and already on the desk of every relevant ministry. Washington has said nothing."
+ srp_flashpoint.1.a: "Protest through the attache channel."
+ srp_flashpoint.1.b: "Release the recording to the press."
+ srp_flashpoint.1.c: "Escorts hold course next time."
+
+ srp_flashpoint.2.t: "Freighters Held in American Ports"
+ srp_flashpoint.2.d: "United States customs authorities have impounded three Federation-flagged freighters over sanctions paperwork that was, by every prior reading, in order. The cargo is industrial and the legal case is thin. The signal is not subtle."
+ srp_flashpoint.2.a: "Negotiate the release quietly."
+ srp_flashpoint.2.b: "Begin reciprocal inspections of American shipping."
+
+ srp_flashpoint.3.t: "Contact in the Exercise Area"
+ srp_flashpoint.3.d: "A Federation submarine has been tracked inside the boundary of an active United States Navy exercise area for six hours. It is not hiding particularly well, which the analysts read as the point. The carrier group commander is requesting instructions."
+ srp_flashpoint.3.a: "Shadow it and log everything."
+ srp_flashpoint.3.b: "Force it to the surface."
+ srp_flashpoint.3.c: "Lodge a public protest."
+
+ srp_flashpoint.4.t: "Expulsions from Federation Capitals"
+ srp_flashpoint.4.d: "The European Federation has expelled four American military attaches over what its interior ministry calls collection activity incompatible with diplomatic status. The four are already in the air. State and Defence disagree, as usual, about whether the charge was accurate. It was."
+ srp_flashpoint.4.a: "Reciprocate in kind."
+ srp_flashpoint.4.b: "Let it pass."
+ srp_flashpoint.4.c: "Expel twice as many."
+
+ SRP_goal_ep_anti_parasite_front: "Open the Anti-Parasite Front"
+ SRP_goal_ep_anti_parasite_front_desc: "The European Pact takes the field against the Hive. Federal forces, and those of its partners, commit to the war the rest of the world is still pretending to ignore."
+ SRP_goal_ep_war_industry: "Continental War Industry"
+ SRP_goal_ep_war_industry_desc: "Convert the Federation's factories to a war footing. The parasite war will be won by output, or it will not be won at all."
+ SRP_goal_ep_outlast_america: "Outlast the United States"
+ SRP_goal_ep_outlast_america_desc: "The old rival will exhaust itself on its own ambitions. The Pact need only still be standing when it does."
+
+ SRP_goal_wa_hemisphere: "Reassert the Hemisphere"
+ SRP_goal_wa_hemisphere_desc: "From the Arctic to the Horn, the Americas answer to Washington. No European foothold will be tolerated in the New World."
+ SRP_goal_wa_arsenal: "Arsenal of the Hemisphere"
+ SRP_goal_wa_arsenal_desc: "American industry, mobilised. Enough steel and shells to arm the Western Alliance twice over."
+ SRP_goal_wa_break_efh: "Break the European Federation"
+ SRP_goal_wa_break_efh_desc: "The Federation is the obstacle, not the parasites. Break it and the century is American again."
+
+ SRP_goal_ph_proliferate: "Proliferate"
+ SRP_goal_ph_proliferate_desc: "The presence becomes endemic. What was anomaly is now ecology."
+ SRP_goal_ph_assimilate: "Assimilate"
+ SRP_goal_ph_assimilate_desc: "The boundary between prey and parasite dissolves. The continents are feeding ground."
+ SRP_goal_ph_dominion: "Global Dominion"
+ SRP_goal_ph_dominion_desc: "The signal reaches every shore. There is no clean soil left to defend."
+ SRP_manifest_european_pact: "In Varietate Concordia"
+ SRP_manifest_western_alliance: "Pax Americana"
+ SRP_manifest_parasite_hive: "Harbor The End"
+ SRP_manifest_european_pact_desc: "United in diversity. The Federation binds a continent of old rivals into a single shield against what is coming."
+ SRP_manifest_western_alliance_desc: "The peace of American power. The hemisphere, and the trade that runs through it, kept in order from Washington."
+ SRP_manifest_parasite_hive_desc: "Every shore, every field, every body. The Iris does not conquer. It digests."
+ SRP_goal_ep_exploit_parasites: "Exploit the Parasites"
+ SRP_goal_ep_exploit_parasites_desc: "Hybrid biology is not only a threat. Contained beckons, harnessed, can feed the Federation's industry as readily as they once fed the enemy."
+ SRP_consortium: "Research Consortium"
+ SRP_consortium_desc: "Coordinate anti-parasite research with allied nations."
+
+ SRP_establish_consortium: "Establish Anti-Parasite Consortium"
+ SRP_establish_consortium_desc: "Formalise joint research cooperation between nations fighting the parasite threat. The Consortium pools scientific knowledge, accelerating breakthroughs against the Iris."
+
+ SRP_join_consortium: "Join the Anti-Parasite Consortium"
+ SRP_join_consortium_desc: "Apply to join the existing research framework. Consortium members gain shared research progress when any member achieves a major breakthrough."
+
+ SRP_leave_consortium: "Withdraw from Consortium"
+ SRP_leave_consortium_desc: "End participation in the joint research programme. All shared research bonuses are lost."
+
+ SRP_consortium_tier_1: "Research Consortium (Small)"
+ SRP_consortium_tier_1_desc: "A small coalition of nations sharing anti-parasite research."
+
+ SRP_consortium_tier_2: "Research Consortium (Established)"
+ SRP_consortium_tier_2_desc: "An established multi-nation research framework."
+
+ SRP_consortium_tier_3: "Research Consortium (Full Coalition)"
+ SRP_consortium_tier_3_desc: "A broad coalition of nations pooling the full scope of their anti-parasite research."
+
+ srp_consortium.1.t: "Anti-Parasite Research Consortium Established"
+ srp_consortium.1.d: "[ROOT.GetName] has established the Anti-Parasite Research Consortium, a framework for sharing scientific data on parasite weaknesses. Member nations gain access to shared research breakthroughs and joint combat intelligence."
+ srp_consortium.1.a: "We will monitor this development."
+
+ srp_consortium.3.t: "Expelled from the Consortium"
+ srp_consortium.3.d: "By declaring war on a fellow member state, we have violated the core principle of the Anti-Parasite Research Consortium. Our membership has been revoked, and access to shared research data is cut off."
+ srp_consortium.3.a: "A costly mistake."
+
+ srp_consortium.10.t: "Consortium Breakthrough: STBN Tank Munitions"
+ srp_consortium.10.d: "A Consortium member has completed the STBN tank shell project. Key findings on sulfur hexafluoride warhead integration have been shared with all member states, allowing our researchers to apply the results to their own armour programmes."
+ srp_consortium.10.a: "Our engineers will study these findings."
+
+ srp_consortium.11.t: "Consortium Breakthrough: STBN Naval Compatibility"
+ srp_consortium.11.d: "A Consortium member has achieved STBN shell compatibility for naval guns. Fleet integration data has been distributed to all members, providing a head start for our own naval research."
+ srp_consortium.11.a: "Forward the data to the admiralty."
+
+ srp_consortium.12.t: "Consortium Breakthrough: Fusion Drive Technology"
+ srp_consortium.12.d: "A Consortium member has successfully developed a viable carrier fusion drive. The magnetic confinement specifications have been shared, giving our naval engineers a significant research advantage."
+ srp_consortium.12.a: "Remarkable. Our engineers will begin at once."
+
+ srp_consortium.13.t: "Consortium Breakthrough: SF6 Jet Engine"
+ srp_consortium.13.d: "A Consortium member has cracked SF6 combustion cycle engine design. Flight test data and thrust specifications have been distributed, accelerating our own aerospace research."
+ srp_consortium.13.a: "Our pilots will benefit from this."
+
+ srp_consortium.14.t: "Consortium Breakthrough: Parasite Weak-Point Analysis"
+ srp_consortium.14.d: "A Consortium member has completed the parasite weak-point targeting algorithm. Combat analysis data on parasite physiology and armour vulnerabilities has been shared across all members."
+ srp_consortium.14.a: "Distribute the findings to our armoured divisions."
+
+ srp_consortium.15.t: "Consortium Breakthrough: Onboard Fuel Synthesis"
+ srp_consortium.15.d: "A Consortium member has developed carrier-based electrolytic fuel synthesis. The design specifications have been shared, giving our naval engineers a foundation to build from."
+ srp_consortium.15.a: "Our shipyards will review the data."
+
+ srp_consortium.16.t: "Consortium Breakthrough: Tactical Nuclear Artillery"
+ srp_consortium.16.d: "A Consortium member has completed development of tactical nuclear gun batteries. Yield calibration data and warhead integration specs have been shared, accelerating our own nuclear artillery research."
+ srp_consortium.16.a: "A grim but necessary development."
+
+ LD_containment_failure: "Containment Failure"
+ LD_containment_failure_desc: "Contested states: §R[?LD_contested_states|0]§!\nStanding: [GetLDContainmentTier]\n\nTwo or more states are past the threshold at which the infestation seeds its own neighbours. The ministry has ninety days to bring that count back under two. If it does not, the standing falls another step, and the count starts again from where it is now."
+
+ LD_containment_tier_0: "§GContained§!"
+ LD_containment_tier_1: "§YZones Surrendered§!"
+ LD_containment_tier_2: "§YThe Cordon Is A Line On A Map§!"
+ LD_containment_tier_3: "§RContainment In Name Only§!"
+
+ LD_containment_strain_1: "Zones Surrendered"
+ LD_containment_strain_1_desc: "Ground has been given up where the public can count it. The word used in the briefing is consolidation."
+
+ LD_containment_strain_2: "The Cordon Is A Line On A Map"
+ LD_containment_strain_2_desc: "The perimeter is drawn where the ministry can hold it rather than where the infestation stops. Everyone inside the room knows the difference."
+
+ LD_containment_strain_3: "Containment In Name Only"
+ LD_containment_strain_3_desc: "Containment remains the official posture. There is no longer any operation that corresponds to it."
+
+ LD_PARASITE_DIPLO_BLOCKED_TT: "Parasite entities do not engage in agreements with human nations."
+ LD_PARASITE_FACTION_BLOCKED_TT: "Parasite entities cannot participate in human military alliances."
+ LD_EFH_USA_FACTION_BLOCKED_TT: "Deep strategic rivalries prevent these blocs from entering the same alliance."
+ LD_EFH_USA_GUARANTEE_BLOCKED_TT: "The European Federation and the United States do not extend security guarantees to each other."
+ LD_parasite_isolation: "Parasite Isolation"
+ LD_efh_usa_friction: "Ongoing kaltkrieg"
+ LD_rsf_hostile_to_efh: "Geopolitical Tension"
+ LD_rsf_hostile_to_chn: "Eastern Rivalry"
+ SRP_testing: "Testing"
+ SRP_testing_desc: "Out-of-character switchboard. Turns unfinished features on and off, and provides shortcuts for reaching a testable state. Not part of the game."
+ SRP_testing_toggle_national_policy_on: "Enable National Policy"
+ SRP_testing_toggle_national_policy_on_desc: "Shows the National Policy tab, where Crisis Authority and Fiscal Policy are set. Off by default while the design is being decided. Your country keeps whichever policy ideas it started with either way."
+ SRP_testing_toggle_national_policy_off: "Disable National Policy"
+ SRP_testing_toggle_national_policy_off_desc: "Hides the National Policy tab again. Policy ideas already in effect stay in effect, you just cannot change them while this is off."
+ SRP_testing_grant_evolution_points: "Grant 100 Evolution Points"
+ SRP_testing_grant_evolution_points_desc: "Adds 100 to the hive's evolution point total. The economy, trade and mobilisation postures unlock at 50, 150 and 300, so three clicks reaches the top of every ladder."
+ SRP_testing_clear_evolution_points: "Reset Evolution Points"
+ SRP_testing_clear_evolution_points_desc: "Sets the hive's evolution point total back to zero, relocking every gated posture."
+
+ generic_sentinel_arms: "Sentinel Arms Co."
+ generic_sentinel_arms_desc: "A mid-tier defence contractor specialising in infantry weapons and support equipment. Sentinel Arms has no cutting-edge research to sell, but its platforms are reliable, affordable, and consistently available. In a collapsing world, that counts for more than prestige."
+
+ generic_sentinel_initial: "Standard Issue Programme"
+ generic_sentinel_initial_desc: "Sentinel Arms enforces baseline quality standards across all production runs. Weapons leaving the factory are slightly more effective than the baseline average."
+
+ generic_sentinel_root: "Component Standardisation"
+ generic_sentinel_root_desc: "Sentinel Arms consolidates its parts suppliers into a single approved list. Weapons become easier to repair in the field and cheaper to produce at scale."
+
+ generic_sentinel_t2a: "Assault Configuration"
+ generic_sentinel_t2a_desc: "Sentinel Arms optimises its weapons platform for offensive operations. Lighter weight, faster rate of fire, and improved ergonomics increase lethality in contact."
+
+ generic_sentinel_t2b: "Defensive Loadout"
+ generic_sentinel_t2b_desc: "Reinforced stocks, improved barrel profiles, and ruggedized receivers. Sentinel Arms builds weapons for soldiers who need to hold a position and keep holding it."
+
+ generic_sentinel_t3: "Combat-Proven Doctrine"
+ generic_sentinel_t3_desc: "Sentinel Arms incorporates feedback from active combat zones into its production line. The result is a weapons family that performs consistently under the worst possible conditions."
+
+ generic_rampart_heavy: "Rampart Heavy Industries"
+ generic_rampart_heavy_desc: "An armored vehicle manufacturer that builds for durability over innovation. Rampart's tanks prioritise long service life over impressive specifications, staying useful after newer platforms have been stripped for parts."
+
+ generic_rampart_initial: "Armor Fundamentals Programme"
+ generic_rampart_initial_desc: "Rampart Heavy Industries applies its core engineering philosophy to every vehicle: build it tough, build it simple, build it so the crew can keep it fighting."
+
+ generic_rampart_root: "Integrated Drive Train"
+ generic_rampart_root_desc: "Rampart standardises its powertrain components across all vehicle variants. Vehicles become more reliable in the field and incrementally cheaper to produce."
+
+ generic_rampart_t2a: "Hardened Armor Package"
+ generic_rampart_t2a_desc: "Rampart applies additional composite layers to its standard hull configuration. Vehicles survive heavier contacts before requiring withdrawal for repair."
+
+ generic_rampart_t2b: "Fire Control Systems"
+ generic_rampart_t2b_desc: "Rampart integrates third-party targeting computers into its production line. Gunnery accuracy and armor penetration at combat range improve substantially."
+
+ generic_rampart_t3: "Battlefield Supremacy"
+ generic_rampart_t3_desc: "Rampart combines its protection and firepower research into a unified platform upgrade. The resulting vehicle outperforms every earlier production run."
+
+ generic_meridian_aerospace: "Meridian Aerospace"
+ generic_meridian_aerospace_desc: "A mid-sized aerospace manufacturer with contracts in several countries. Meridian Aerospace builds practical jets that work, can be maintained outside of a factory environment, and keep the confidence of their pilots."
+
+ generic_meridian_initial: "Aerodynamic Baseline"
+ generic_meridian_initial_desc: "Meridian Aerospace applies consistent aerodynamic standards to every airframe it produces. Pilots notice a modest improvement in handling across the board."
+
+ generic_meridian_root: "Aerodynamic Refinement"
+ generic_meridian_root_desc: "Meridian Aerospace refines its manufacturing tolerances on control surfaces and fuselage profiles. Aircraft become more responsive and cheaper per unit to produce."
+
+ generic_meridian_t2a: "Air Superiority Package"
+ generic_meridian_t2a_desc: "Meridian Aerospace optimises its airframe for high-altitude maneuvering. Improved control authority and structural rigidity give pilots an edge in turning engagements."
+
+ generic_meridian_t2b: "Extended Operations"
+ generic_meridian_t2b_desc: "Improved fuel systems and more efficient engine tuning. Meridian Aerospace aircraft can patrol further from their bases and sustain longer operational cycles."
+
+ generic_meridian_t3: "Theatre Dominance"
+ generic_meridian_t3_desc: "Meridian Aerospace incorporates lessons from deployed operations into a comprehensive airframe upgrade. The result is a faster, more agile aircraft with improved survivability in contested airspace."
+
+ generic_trident_naval: "Trident Naval Group"
+ generic_trident_naval_desc: "A naval shipbuilder with experience in destroyer escorts, submarine design, and carrier modifications. Trident Naval Group has never built the most advanced fleet in the world, but it has built reliable hulls for clients who cannot afford to wait for cutting-edge vessels."
+
+ generic_trident_initial: "Hull Integrity Standards"
+ generic_trident_initial_desc: "Trident Naval Group applies rigorous hull testing to all vessels before delivery. Ships are more reliable and require less emergency maintenance at sea."
+
+ generic_trident_root: "Hull Reinforcement Programme"
+ generic_trident_root_desc: "Trident Naval Group redesigns its core hull sections with reinforced framing. Ships become harder to sink and incrementally cheaper to commission."
+
+ generic_trident_t2a: "Anti-Submarine Suite"
+ generic_trident_t2a_desc: "Trident Naval Group installs improved sonar arrays and active detection systems across its destroyer and escort variants. Hunting submarines and defending convoys becomes substantially more effective."
+
+ generic_trident_t2b: "Fleet Endurance"
+ generic_trident_t2b_desc: "Extended fuel storage, improved propulsion efficiency, and better damage control systems. Trident Naval Group builds ships that can stay at sea longer and absorb more punishment before going down."
+
+ generic_trident_t3: "Blue-Water Capability"
+ generic_trident_t3_desc: "Trident Naval Group consolidates its endurance and survivability research into a unified hull upgrade programme. The resulting vessels are capable of sustained deep-ocean operations against any threat."
+
+ generic_ironwall_munitions: "Ironwall Munitions"
+ generic_ironwall_munitions_desc: "An artillery and ordnance manufacturer serving states that need reliable indirect fire capability without the cost of a premium contractor. Ironwall Munitions builds shells, howitzers, and rocket systems that do what they are supposed to do, every time."
+
+ generic_ironwall_initial: "Propellant Quality Control"
+ generic_ironwall_initial_desc: "Ironwall Munitions enforces strict propellant and casing standards across its production lines. Every shell that leaves the factory performs to specification."
+
+ generic_ironwall_root: "Reliable Platforms"
+ generic_ironwall_root_desc: "Ironwall Munitions standardises its artillery chassis and carriage components. Systems become easier to maintain in the field and cheaper to produce at volume."
+
+ generic_ironwall_t2a: "Extended Range"
+ generic_ironwall_t2a_desc: "Ironwall Munitions improves barrel profiles and introduces a line of extended-range propellant charges. Artillery platforms reach further and penetrate hardened targets more effectively."
+
+ generic_ironwall_t2b: "Rapid Production"
+ generic_ironwall_t2b_desc: "Ironwall Munitions streamlines its manufacturing process and reduces component lead times. Artillery systems reach the front faster and in larger numbers."
+
+ generic_ironwall_t3: "Saturation Fire"
+ generic_ironwall_t3_desc: "Ironwall Munitions combines its range and production improvements into a unified fire support doctrine. Artillery concentrations get larger and last longer."

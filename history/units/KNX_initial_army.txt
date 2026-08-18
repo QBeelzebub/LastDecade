@@ -1,0 +1,148 @@
+division_template = {
+	name = "Knox Irregular"
+	force_allow_recruiting = yes
+	regiments = {
+		rupter_pack = { x = 0 y = 0 }
+		rupter_pack = { x = 0 y = 1 }
+		rupter_pack = { x = 0 y = 2 }
+		rupter_pack = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 3 y = 0 }
+		rupter_pack = { x = 3 y = 1 }
+		rupter_pack = { x = 3 y = 2 }
+		rupter_pack = { x = 3 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Knox Vanguard"
+	force_allow_recruiting = yes
+	regiments = {
+		rupter_pack = { x = 0 y = 0 }
+		rupter_pack = { x = 0 y = 1 }
+		rupter_pack = { x = 0 y = 2 }
+		rupter_pack = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Knox Striker"
+	force_allow_recruiting = yes
+	regiments = {
+		vigilante_battery = { x = 0 y = 0 }
+		vigilante_battery = { x = 0 y = 1 }
+		vigilante_battery = { x = 0 y = 2 }
+		vigilante_battery = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Knox Phantom"
+	force_allow_recruiting = yes
+	regiments = {
+		primitive_manducater = { x = 0 y = 0 }
+		primitive_manducater = { x = 0 y = 1 }
+		primitive_manducater = { x = 0 y = 2 }
+		primitive_manducater = { x = 0 y = 3 }
+		primitive_manducater = { x = 1 y = 0 }
+		primitive_manducater = { x = 1 y = 1 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "First Nest"
+		division_template = "Knox Irregular"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Second Nest"
+		division_template = "Knox Irregular"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Third Nest"
+		division_template = "Knox Irregular"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Fourth Nest"
+		division_template = "Knox Irregular"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Fifth Nest"
+		division_template = "Knox Irregular"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Alpha"
+		division_template = "Knox Vanguard"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Beta"
+		division_template = "Knox Vanguard"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Gamma"
+		division_template = "Knox Vanguard"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Strike Force"
+		division_template = "Knox Striker"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Phantom Pack"
+		division_template = "Knox Phantom"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+}

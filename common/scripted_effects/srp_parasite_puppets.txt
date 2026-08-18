@@ -1,0 +1,32 @@
+IRS_release_tethysic_puppet = {
+	335 = { add_core_of = TET }
+	672 = { add_core_of = TET }
+	1055 = { add_core_of = TET }
+	1022 = { add_core_of = TET }
+
+	release_puppet = TET
+
+	335 = { transfer_state_to = TET }
+	672 = { transfer_state_to = TET }
+	1055 = { transfer_state_to = TET }
+	1022 = { transfer_state_to = TET }
+
+	set_autonomy = {
+		target = TET
+		autonomy_state = autonomy_srp_integrated_brood
+	}
+
+	TET = {
+		set_country_flag = is_parasite_nation
+		set_country_flag = TET_tethysic_lineage
+
+		set_technology = {
+			parasite_buildings = 1
+			inborn_parasites = 1
+			tethysic_devourer_genome = 1
+			devourer_emergence = 1
+			adapted_devourer_strain = 1
+			popup = no
+		}
+	}
+}

@@ -1,0 +1,46 @@
+parasite_no_human_buildings = {
+	allowed = {
+		is_full_parasite = yes
+	}
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_strategy = { type = building_target id = industrial_complex value = 0 }
+	ai_strategy = { type = building_target id = arms_factory value = 0 }
+	ai_strategy = { type = building_target id = infrastructure value = 0 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = building_target id = synthetic_refinery value = 0 }
+	ai_strategy = { type = building_target id = fuel_silo value = 0 }
+	ai_strategy = { type = building_target id = radar_station value = 0 }
+	ai_strategy = { type = building_target id = rocket_site value = 0 }
+	ai_strategy = { type = building_target id = rail_way value = 0 }
+	ai_strategy = { type = building_target id = energy_infrastructure value = 0 }
+	ai_strategy = { type = building_target id = industrial_infrastructure value = 0 }
+	ai_strategy = { type = building_target id = naval_supply_hub value = 0 }
+	ai_strategy = { type = building_target id = naval_headquarters value = 0 }
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 3 }
+}
+
+parasite_wartime_beckon_push = {
+	allowed = {
+		is_full_parasite = yes
+	}
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 6 }
+}
+
+IRS_phase2_beckon_saturation = {
+	allowed = { tag = IRS }
+	enable = {
+		has_country_flag = IRS_phase_2_full_complete
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 10 }
+}

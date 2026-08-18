@@ -1,0 +1,40 @@
+state = {
+	id = 558
+	name = "STATE_558"
+	manpower = 19757000
+	state_category = rural
+
+	resources = {
+		rubber = 2.000
+	}
+
+	history = {
+
+		owner = AFR
+		add_core_of = AFR
+
+		2020.1.1 = {
+			owner = IRS
+			controller = IRS
+			add_core_of = IRS
+		}
+
+		buildings = {
+			2050 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			2050 5
+		}
+
+	}
+
+	provinces = {
+		2050 4952 12731 12817 12900
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

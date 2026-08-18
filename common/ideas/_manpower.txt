@@ -1,0 +1,416 @@
+ideas = {
+
+	mobilization_laws = {
+		law = yes
+		use_list_view = yes
+
+		srp_professional_force = {
+			cost = 150
+			removal_cost = -1
+			default = yes
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = volunteer_only
+
+			modifier = {
+				conscription = 0.015
+				training_time_factor = -0.10
+				army_org_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0
+					has_war = yes
+					has_war_support > 0.25
+				}
+			}
+		}
+
+		srp_selective_service = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				has_war_support > 0.10
+			}
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = limited_conscription
+
+			modifier = {
+				conscription = 0.03
+				training_time_factor = -0.05
+				army_org_factor = 0.02
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 10
+					has_war = yes
+					NOT = { has_war_support > 0.40 }
+				}
+				modifier = {
+					add = 5
+					has_war_support > 0.15
+					NOT = { has_war = yes }
+				}
+			}
+		}
+
+		srp_national_service_requirement = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				has_war_support > 0.25
+			}
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = extensive_conscription
+
+			modifier = {
+				conscription = 0.05
+				stability_factor = -0.03
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 12
+					has_war = yes
+					has_war_support > 0.30
+					NOT = { has_war_support > 0.55 }
+				}
+			}
+		}
+
+		srp_universal_conscription = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				has_war_support > 0.40
+			}
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = service_by_requirement
+
+			modifier = {
+				conscription = 0.10
+				stability_factor = -0.05
+				training_time_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 10
+					has_war = yes
+					is_major = yes
+					has_war_support > 0.50
+					NOT = { has_war_support > 0.65 }
+				}
+			}
+		}
+
+		srp_desperate_enlistment = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				has_war_support > 0.60
+			}
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = all_adults_serve
+
+			modifier = {
+				conscription = 0.20
+				stability_factor = -0.10
+				training_time_factor = 0.15
+				army_org_factor = -0.10
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 8
+					has_war = yes
+					is_major = yes
+					has_war_support > 0.65
+				}
+			}
+		}
+
+		IRS_dormant_emergence = {
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				tag = IRS
+			}
+
+			picture = volunteer_only
+
+			modifier = {
+				conscription = 0.015
+				army_org_factor = -0.08
+				army_defence_factor = 0.08
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0
+					check_variable = { IRS_evolution_points > 49 }
+				}
+			}
+		}
+
+		IRS_coordinated_brood = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				check_variable = { IRS_evolution_points > 49 }
+			}
+
+			allowed = {
+				tag = IRS
+			}
+
+			picture = limited_conscription
+
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.03
+				conscription = 0.03
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 10
+					check_variable = { IRS_evolution_points > 49 }
+					NOT = { check_variable = { IRS_evolution_points > 149 } }
+				}
+			}
+		}
+
+		IRS_hive_convergence = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				check_variable = { IRS_evolution_points > 149 }
+			}
+
+			allowed = {
+				tag = IRS
+			}
+
+			picture = service_by_requirement
+
+			modifier = {
+				army_org_factor = 0.10
+				army_attack_factor = 0.07
+				breakthrough_factor = 0.05
+				conscription = 0.05
+				stability_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 10
+					check_variable = { IRS_evolution_points > 149 }
+					NOT = { check_variable = { IRS_evolution_points > 299 } }
+				}
+			}
+		}
+
+		IRS_total_swarm_state = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				check_variable = { IRS_evolution_points > 299 }
+			}
+
+			allowed = {
+				tag = IRS
+			}
+
+			picture = all_adults_serve
+
+			modifier = {
+				army_org_factor = 0.15
+				army_attack_factor = 0.12
+				breakthrough_factor = 0.10
+				conscription = 0.10
+				stability_factor = -0.10
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 8
+					check_variable = { IRS_evolution_points > 299 }
+				}
+			}
+		}
+
+		KNX_minimal_strain = {
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				tag = KNX
+			}
+
+			picture = volunteer_only
+
+			modifier = {
+				conscription = 0.015
+				army_org_factor = 0.08
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0
+					has_war = yes
+					has_war_support > 0.25
+				}
+			}
+		}
+
+		KNX_selective_cultivation = {
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				tag = KNX
+			}
+
+			picture = limited_conscription
+
+			modifier = {
+				conscription = 0.03
+				army_org_factor = 0.05
+				army_attack_factor = 0.03
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 10
+					has_war = yes
+					NOT = { has_war_support > 0.45 }
+				}
+			}
+		}
+
+		KNX_full_brood_expansion = {
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				tag = KNX
+			}
+
+			picture = service_by_requirement
+
+			modifier = {
+				conscription = 0.07
+				army_org_factor = 0.02
+				army_attack_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 10
+					has_war = yes
+					has_war_support > 0.35
+					NOT = { has_war_support > 0.60 }
+				}
+			}
+		}
+
+		KNX_emergency_spawning = {
+			cost = 150
+			removal_cost = -1
+
+			available = {
+				has_war_support > 0.40
+			}
+
+			allowed = {
+				tag = KNX
+			}
+
+			picture = all_adults_serve
+
+			modifier = {
+				conscription = 0.12
+				army_org_factor = -0.05
+				army_attack_factor = 0.08
+				stability_factor = -0.08
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 8
+					has_war = yes
+					has_war_support > 0.55
+				}
+			}
+		}
+	}
+}

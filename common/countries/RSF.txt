@@ -1,0 +1,3 @@
+color = { 0.65 0.08 0.08 }
+graphical_culture = eastern_european_gfx
+graphical_culture_2d = eastern_european_2d

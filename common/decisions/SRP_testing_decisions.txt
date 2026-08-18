@@ -1,0 +1,71 @@
+SRP_testing = {
+
+	SRP_testing_toggle_national_policy_on = {
+		icon = GFX_decision_generic_political_discourse
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+
+		visible = {
+			NOT = { has_country_flag = SRP_testing_national_policy }
+		}
+
+		ai_will_do = { factor = 0 }
+
+		complete_effect = {
+			set_country_flag = SRP_testing_national_policy
+		}
+	}
+
+	SRP_testing_toggle_national_policy_off = {
+		icon = GFX_decision_generic_political_discourse
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = SRP_testing_national_policy
+		}
+
+		ai_will_do = { factor = 0 }
+
+		complete_effect = {
+			clr_country_flag = SRP_testing_national_policy
+		}
+	}
+
+	SRP_testing_grant_evolution_points = {
+		icon = GFX_decision_generic_research
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+
+		visible = {
+			is_parasite_nation = yes
+		}
+
+		ai_will_do = { factor = 0 }
+
+		complete_effect = {
+			add_to_variable = { IRS_evolution_points = 100 }
+		}
+	}
+
+	SRP_testing_clear_evolution_points = {
+		icon = GFX_decision_generic_research
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+
+		visible = {
+			is_parasite_nation = yes
+			check_variable = { IRS_evolution_points > 0 }
+		}
+
+		ai_will_do = { factor = 0 }
+
+		complete_effect = {
+			set_variable = { IRS_evolution_points = 0 }
+		}
+	}
+}

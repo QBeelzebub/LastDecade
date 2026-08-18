@@ -1,0 +1,125 @@
+infestation_suppression_policy = {
+
+	adopt_controlled_burns = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			NOT = { has_country_flag = is_parasite_nation }
+		}
+
+		available = {
+			NOT = { has_idea = controlled_burns_doctrine }
+			hidden_trigger = { NOT = { has_country_flag = SRP_suppression_doctrine_locked } }
+			custom_trigger_tooltip = {
+				tooltip = SRP_suppression_lockout_tt
+				NOT = { has_country_flag = SRP_suppression_doctrine_locked }
+			}
+		}
+
+		cost = 50
+		fire_only_once = no
+
+		complete_effect = {
+			remove_ideas = chemical_suppression_doctrine
+			remove_ideas = dirty_bomb_doctrine
+			add_ideas = controlled_burns_doctrine
+			set_country_flag = { flag = SRP_suppression_doctrine_locked value = 1 days = 90 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				any_controlled_state = { check_variable = { iris_infestation_level > 20 } }
+			}
+		}
+	}
+
+	adopt_chemical_suppression = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			NOT = { has_country_flag = is_parasite_nation }
+			has_tech = srp_chemical_suppression
+		}
+
+		available = {
+			NOT = { has_idea = chemical_suppression_doctrine }
+			check_variable = { public_panic > 149 }
+			hidden_trigger = { NOT = { has_country_flag = SRP_suppression_doctrine_locked } }
+			custom_trigger_tooltip = {
+				tooltip = SRP_suppression_lockout_tt
+				NOT = { has_country_flag = SRP_suppression_doctrine_locked }
+			}
+		}
+
+		cost = 75
+		fire_only_once = no
+
+		complete_effect = {
+			remove_ideas = controlled_burns_doctrine
+			remove_ideas = dirty_bomb_doctrine
+			add_ideas = chemical_suppression_doctrine
+			set_country_flag = { flag = SRP_suppression_doctrine_locked value = 1 days = 90 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 8
+				any_controlled_state = { check_variable = { iris_infestation_level > 40 } }
+			}
+			modifier = {
+				add = 12
+				check_variable = { global.srp_scorched_earth = 2 }
+				any_controlled_state = { check_variable = { iris_infestation_level > 19 } }
+			}
+		}
+	}
+
+	adopt_dirty_bomb_protocol = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			NOT = { has_country_flag = is_parasite_nation }
+			has_tech = srp_rtg_program
+		}
+
+		available = {
+			NOT = { has_idea = dirty_bomb_doctrine }
+			check_variable = { public_panic > 299 }
+			hidden_trigger = { NOT = { has_country_flag = SRP_suppression_doctrine_locked } }
+			custom_trigger_tooltip = {
+				tooltip = SRP_suppression_lockout_tt
+				NOT = { has_country_flag = SRP_suppression_doctrine_locked }
+			}
+		}
+
+		cost = 100
+		fire_only_once = no
+
+		complete_effect = {
+			remove_ideas = controlled_burns_doctrine
+			remove_ideas = chemical_suppression_doctrine
+			add_ideas = dirty_bomb_doctrine
+			set_country_flag = { flag = SRP_suppression_doctrine_locked value = 1 days = 90 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				any_controlled_state = { check_variable = { iris_infestation_level > 60 } }
+			}
+			modifier = {
+				add = 15
+				check_variable = { global.srp_scorched_earth = 2 }
+				any_controlled_state = { check_variable = { iris_infestation_level > 29 } }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { global.srp_scorched_earth = 0 }
+			}
+		}
+	}
+}

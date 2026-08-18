@@ -1,0 +1,87 @@
+SRP_initiate_escalation_effect = {
+	set_variable = { EFH_USA_escalation = 35 }
+	SRP_recalc_escalation_idea = yes
+}
+
+SRP_recalc_escalation_idea = {
+	clamp_variable = { var = EFH_USA_escalation min = 0 max = 100 }
+	remove_ideas = {
+		SRP_escalation_entente_idea
+		SRP_escalation_detente_idea
+		SRP_escalation_standoff_idea
+		SRP_escalation_rivalry_idea
+		SRP_escalation_coldwar_idea
+		SRP_escalation_brink_idea
+	}
+	if = { limit = { check_variable = { EFH_USA_escalation < 16 } } add_ideas = SRP_escalation_entente_idea }
+	if = { limit = { check_variable = { EFH_USA_escalation > 15 } check_variable = { EFH_USA_escalation < 31 } } add_ideas = SRP_escalation_detente_idea }
+	if = { limit = { check_variable = { EFH_USA_escalation > 30 } check_variable = { EFH_USA_escalation < 50 } } add_ideas = SRP_escalation_standoff_idea }
+	if = { limit = { check_variable = { EFH_USA_escalation > 49 } check_variable = { EFH_USA_escalation < 65 } } add_ideas = SRP_escalation_rivalry_idea }
+	if = { limit = { check_variable = { EFH_USA_escalation > 64 } check_variable = { EFH_USA_escalation < 80 } } add_ideas = SRP_escalation_coldwar_idea }
+	if = { limit = { check_variable = { EFH_USA_escalation > 79 } } add_ideas = SRP_escalation_brink_idea }
+
+	if = {
+		limit = {
+			has_global_flag = parasites_emerged
+			check_variable = { EFH_USA_escalation < 16 }
+		}
+		set_country_flag = efh_usa_cooperation_unlocked
+	}
+	if = {
+		limit = {
+			has_global_flag = parasites_emerged
+			has_country_flag = USA_efh_war_averted
+			check_variable = { EFH_USA_escalation < 31 }
+		}
+		set_country_flag = efh_usa_cooperation_unlocked
+	}
+	if = {
+		limit = { check_variable = { EFH_USA_escalation > 30 } }
+		clr_country_flag = efh_usa_cooperation_unlocked
+	}
+
+	if = {
+		limit = {
+			tag = EFH
+			has_country_flag = efh_usa_cooperation_unlocked
+			NOT = { has_country_flag = EFH_kaltkrieg_concluded_granted }
+		}
+		set_country_flag = EFH_kaltkrieg_concluded_granted
+		add_ideas = EFH_kaltkrieg_concluded
+	}
+}
+
+SRP_escalate_low_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = 6 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = 6 } SRP_recalc_escalation_idea = yes }
+}
+
+SRP_escalate_medium_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = 12 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = 12 } SRP_recalc_escalation_idea = yes }
+}
+
+SRP_escalate_high_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = 20 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = 20 } SRP_recalc_escalation_idea = yes }
+}
+
+SRP_escalate_drift_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = 3 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = 3 } SRP_recalc_escalation_idea = yes }
+}
+
+SRP_deescalate_low_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = -6 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = -6 } SRP_recalc_escalation_idea = yes }
+}
+
+SRP_deescalate_medium_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = -12 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = -12 } SRP_recalc_escalation_idea = yes }
+}
+
+SRP_deescalate_high_effect = {
+	EFH = { add_to_variable = { EFH_USA_escalation = -20 } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = -20 } SRP_recalc_escalation_idea = yes }
+}

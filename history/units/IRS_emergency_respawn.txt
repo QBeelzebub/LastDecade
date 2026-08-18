@@ -1,0 +1,23 @@
+units = {
+	division = {
+		name = "Resurgent Brood"
+		division_template = "Inborn Swarm"
+		location = 8039
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Resurgent Brood"
+		division_template = "Inborn Swarm"
+		location = 1951
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Resurgent Brood"
+		division_template = "Inborn Swarm"
+		location = 10919
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

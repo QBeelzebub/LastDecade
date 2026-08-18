@@ -1,0 +1,3488 @@
+@EFH_HNA_autonomous_time_tier_1 = 20
+
+@EFH_HA_hyper_founded_weeks = 4
+@EFH_HA_research_fund_weeks = 6
+@EFH_HA_laytheo_weeks = 9
+@EFH_HA_initial_findings_weeks = 9
+
+focus_tree = {
+
+	id = EFH_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = EFH
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = EFH_end_of_long_peace
+		icon = GFX_goal_generic_national_unity
+		x = 18
+		y = -7
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 15 }
+		completion_reward = {
+			add_political_power = 30
+			hidden_effect = {
+				EFH_gov_long_peace = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.60 days = 2 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_federal_state_of_the_union
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_end_of_long_peace
+		x = 10
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_end_of_long_peace }
+		completion_reward = {
+			add_political_power = 40
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_consolidate_federal_authority
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = EFH_federal_state_of_the_union
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_federal_state_of_the_union }
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = { var = EFH_party_continuity value = 5 }
+			add_to_variable = { var = EFH_party_volt value = 3 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -4 }
+			add_to_variable = { var = EFH_separatist_pressure value = -8 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_the_federal_question
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_consolidate_federal_authority
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_consolidate_federal_authority }
+		completion_reward = {
+			add_political_power = 30
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.50 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_federalist_coalition
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_the_federal_question
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 12 }
+		prerequisite = { focus = EFH_the_federal_question }
+		mutually_exclusive = { focus = EFH_sovereigntist_bloc }
+		completion_reward = {
+			add_political_power = 30
+			add_to_variable = { var = EFH_party_volt value = 6 }
+			add_to_variable = { var = EFH_party_continuity value = 4 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -6 }
+			add_to_variable = { var = EFH_separatist_pressure value = -12 }
+			EFH_party_clamp_support_effect = yes
+			EFH_bop_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.51 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_sovereigntist_bloc
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_the_federal_question
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 6 }
+		prerequisite = { focus = EFH_the_federal_question }
+		mutually_exclusive = { focus = EFH_federalist_coalition }
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.05
+			add_to_variable = { var = EFH_party_ave value = 5 }
+			add_to_variable = { var = EFH_party_sovereigntist value = 5 }
+			add_to_variable = { var = EFH_party_volt value = -3 }
+			add_to_variable = { var = EFH_party_continuity value = -3 }
+			add_to_variable = { var = EFH_separatist_pressure value = 10 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.52 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_govern_the_federation
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_federalist_coalition
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_federalist_coalition focus = EFH_sovereigntist_bloc }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.05
+			EFH_bop_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.77 days = 2 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_member_state_accord
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_govern_the_federation
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_govern_the_federation }
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.05
+			add_to_variable = { var = EFH_separatist_pressure value = -10 }
+			add_to_variable = { var = EFH_party_ave value = 2 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_long_peace_dividend
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_federal_state_of_the_union
+		x = -3
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 5 }
+		allow_branch = { has_global_flag = before_the_storm }
+		prerequisite = { focus = EFH_federal_state_of_the_union }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_long_peace_dividend = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			country_event = { id = efh.102 days = 5 }
+		}
+	}
+
+	focus = {
+		id = EFH_continental_defense_review
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = EFH_end_of_long_peace
+		x = 14
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_end_of_long_peace }
+		completion_reward = {
+			army_experience = 40
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_standing_force_reform
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = EFH_continental_defense_review
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_continental_defense_review }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_standing_force_reform = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			army_experience = 25
+			add_stability = 0.03
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_force_structure_debate
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = EFH_standing_force_reform
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_standing_force_reform }
+		completion_reward = {
+			army_experience = 25
+			add_political_power = 25
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.72 days = 2 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_professional_army
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = EFH_force_structure_debate
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_force_structure_debate }
+		mutually_exclusive = { focus = EFH_mass_mobilization_base }
+		completion_reward = {
+			army_experience = 25
+			hidden_effect = {
+				EFH_mil_professional_army = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			set_country_flag = EFH_doctrine_professional
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_mass_mobilization_base
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = EFH_force_structure_debate
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_force_structure_debate }
+		mutually_exclusive = { focus = EFH_professional_army }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_mass_mobilization = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			set_country_flag = EFH_doctrine_mass
+			add_manpower = 25000
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_modern_federal_army
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = EFH_professional_army
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_professional_army focus = EFH_mass_mobilization_base }
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_combined_arms_command
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = EFH_modern_federal_army
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_modern_federal_army }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_combined_arms_command = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			add_command_power = 100
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.73 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_atlantic_rivalry_doctrine
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_end_of_long_peace
+		x = -17
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_end_of_long_peace }
+		completion_reward = {
+			add_political_power = 25
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				news_event = { id = efh.66 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_the_standoff
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_atlantic_rivalry_doctrine
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_atlantic_rivalry_doctrine }
+		completion_reward = {
+			add_political_power = 25
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_nuclear_brinkmanship
+		icon = GFX_focus_EFH_nuclear_deterrence_posture
+		relative_position_id = EFH_the_standoff
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_the_standoff }
+		mutually_exclusive = { focus = EFH_conventional_primacy }
+		completion_reward = {
+			hidden_effect = {
+				EFH_nuc_nuclear_brinkmanship = yes
+			}
+			custom_effect_tooltip = EFH_nuclear_program_tt
+			mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 3000 }
+			set_country_flag = EFH_standoff_nuclear
+			SRP_escalate_medium_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.53 days = 30 }
+		}
+	}
+
+	focus = {
+		id = EFH_conventional_primacy
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = EFH_the_standoff
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_the_standoff }
+		mutually_exclusive = { focus = EFH_nuclear_brinkmanship }
+		completion_reward = {
+			army_experience = 30
+			hidden_effect = {
+				EFH_mil_conventional_primacy = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			mio:EFH_ha_land_mio = { add_mio_funds = 3000 }
+			set_country_flag = EFH_standoff_conventional
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.67 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_brinkmanship_posture
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_nuclear_brinkmanship
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_nuclear_brinkmanship focus = EFH_conventional_primacy }
+		completion_reward = {
+			add_political_power = 30
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_northern_intelligence_posture
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = EFH_brinkmanship_posture
+		x = 2
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 6 }
+		prerequisite = { focus = EFH_brinkmanship_posture }
+		completion_reward = {
+			add_political_power = 20
+			set_country_flag = EFH_northern_intel_groundwork
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			custom_effect_tooltip = EFH_northern_intelligence_posture_tt
+			country_event = { id = efh.82 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_canal_zone_watch
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = EFH_brinkmanship_posture
+		x = -2
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 6 }
+		prerequisite = { focus = EFH_brinkmanship_posture }
+		completion_reward = {
+			add_political_power = 20
+			set_country_flag = EFH_canal_zone_watch_active
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			custom_effect_tooltip = EFH_canal_zone_watch_tt
+			news_event = { id = efh.83 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_war_readiness_directive
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = EFH_brinkmanship_posture
+		x = 0
+		y = 2
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_brinkmanship_posture }
+		completion_reward = {
+			army_experience = 25
+			hidden_effect = {
+				EFH_mil_war_readiness = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.68 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_alignment_initiative
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_end_of_long_peace
+		x = 24
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_end_of_long_peace }
+		completion_reward = {
+			add_political_power = 40
+			hidden_effect = {
+				EFH_gov_alignment_initiative = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.69 days = 3 }
+		}
+	}
+
+	focus = {
+		id = EFH_tokyo_dialogue
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_alignment_initiative
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_alignment_initiative }
+		completion_reward = {
+			add_political_power = 25
+			set_country_flag = EFH_japan_early_contact
+			EFH_bop_very_low_ef_effect = yes
+			custom_effect_tooltip = EFH_tokyo_dialogue_tt
+			country_event = { id = efh.70 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_pacific_security_cooperation
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = EFH_tokyo_dialogue
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 9 }
+		prerequisite = { focus = EFH_tokyo_dialogue }
+		mutually_exclusive = { focus = EFH_techno_industrial_compact }
+		completion_reward = {
+			hidden_effect = {
+				EFH_nav_pacific_security = yes
+			}
+			custom_effect_tooltip = EFH_naval_command_tt
+			set_country_flag = EFH_japan_security_path
+			navy_experience = 50
+			SRP_escalate_low_effect = yes
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_techno_industrial_compact
+		icon = GFX_focus_research
+		relative_position_id = EFH_tokyo_dialogue
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 9 }
+		prerequisite = { focus = EFH_tokyo_dialogue }
+		mutually_exclusive = { focus = EFH_pacific_security_cooperation }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_techno_industrial = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			set_country_flag = EFH_japan_techno_path
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_efh_japan_axis
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_pacific_security_cooperation
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 9 }
+		prerequisite = { focus = EFH_pacific_security_cooperation focus = EFH_techno_industrial_compact }
+		completion_reward = {
+			add_political_power = 30
+			set_country_flag = EFH_japan_axis_formed
+			EFH_bop_low_ef_effect = yes
+			country_event = { id = efh.54 days = 1 }
+			custom_effect_tooltip = EFH_efh_japan_axis_tt
+		}
+	}
+
+	focus = {
+		id = EFH_eastern_outreach
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_alignment_initiative
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 9 }
+		prerequisite = { focus = EFH_alignment_initiative }
+		completion_reward = {
+			add_political_power = 25
+			set_country_flag = EFH_sac_early_contact
+			set_country_flag = EFH_china_early_contact
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			EFH_bop_very_low_ef_effect = yes
+			custom_effect_tooltip = EFH_eastern_outreach_tt
+			country_event = { id = efh.71 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_federation_on_the_eve
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_govern_the_federation
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_govern_the_federation }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			hidden_effect = {
+				EFH_gov_prepared_federation = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			set_country_flag = EFH_federation_consolidated
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				country_event = { id = efh.78 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_federal_war_college
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = EFH_modern_federal_army
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_modern_federal_army }
+		completion_reward = {
+			army_experience = 40
+			hidden_effect = {
+				EFH_mil_war_college = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.79 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_continental_war_plan
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = EFH_brinkmanship_posture
+		x = -4
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_brinkmanship_posture }
+		completion_reward = {
+			army_experience = 25
+			add_ideas = EFH_continental_war_plan_spirit
+			set_country_flag = EFH_us_war_plan_drawn
+			add_war_support = 0.05
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.80 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_pacific_framework
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_efh_japan_axis
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_efh_japan_axis }
+		completion_reward = {
+			add_political_power = 25
+			hidden_effect = {
+				EFH_gov_pacific_framework = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			set_country_flag = EFH_pacific_framework_set
+			5 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			EFH_bop_very_low_ef_effect = yes
+			news_event = { id = efh.81 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_the_brittle_hegemon
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_end_of_long_peace
+		x = 4
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 9 }
+		prerequisite = { focus = EFH_end_of_long_peace }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.03
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.55 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_a_continental_demos
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_the_brittle_hegemon
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_the_brittle_hegemon }
+		mutually_exclusive = { focus = EFH_a_union_of_homelands }
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = { var = EFH_party_volt value = 5 }
+			add_to_variable = { var = EFH_party_astra value = 3 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -5 }
+			add_to_variable = { var = EFH_separatist_pressure value = -12 }
+			set_country_flag = EFH_civic_path_demos
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_low_ef_effect = yes
+			country_event = { id = efh.56 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_a_union_of_homelands
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_the_brittle_hegemon
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_the_brittle_hegemon }
+		mutually_exclusive = { focus = EFH_a_continental_demos }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.03
+			add_to_variable = { var = EFH_party_continuity value = 5 }
+			add_to_variable = { var = EFH_party_ave value = 3 }
+			add_to_variable = { var = EFH_party_volt value = -2 }
+			add_to_variable = { var = EFH_separatist_pressure value = -6 }
+			set_country_flag = EFH_civic_path_homelands
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.57 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_the_prosperity_dividend
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_a_continental_demos
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_a_continental_demos focus = EFH_a_union_of_homelands }
+		completion_reward = {
+			add_political_power = 20
+			hidden_effect = {
+				EFH_ind_prosperity_dividend = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			1 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			5 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_public_institutions_first
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_the_prosperity_dividend
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_the_prosperity_dividend }
+		mutually_exclusive = { focus = EFH_the_corporate_commons }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.04
+			hidden_effect = {
+				EFH_gov_public_institutions = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_the_corporate_commons
+		icon = GFX_focus_research
+		relative_position_id = EFH_the_prosperity_dividend
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_the_prosperity_dividend }
+		mutually_exclusive = { focus = EFH_public_institutions_first }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_corporate_commons = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			add_research_slot = 1
+			EFH_bop_low_ha_effect = yes
+			country_event = { id = efh.58 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_a_society_on_the_eve
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_public_institutions_first
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_public_institutions_first focus = EFH_the_corporate_commons }
+		completion_reward = {
+			add_political_power = 30
+			hidden_effect = {
+				EFH_gov_society_on_the_eve = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			set_country_flag = EFH_civil_society_prepared
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { has_country_flag = EFH_civic_path_demos }
+				custom_effect_tooltip = EFH_civic_echo_demos_tt
+				add_war_support = 0.03
+			}
+			if = {
+				limit = { has_country_flag = EFH_civic_path_homelands }
+				custom_effect_tooltip = EFH_civic_echo_homelands_tt
+				add_stability = 0.03
+			}
+			country_event = { id = efh.59 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_federal_health_security
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_end_of_long_peace
+		x = -12
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 7 }
+		prerequisite = { focus = EFH_end_of_long_peace }
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.03
+			EFH_bop_very_low_ef_effect = yes
+			news_event = { id = efh.91 days = 3 }
+		}
+	}
+
+	focus = {
+		id = EFH_continental_disease_surveillance
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = EFH_federal_health_security
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 7 }
+		prerequisite = { focus = EFH_federal_health_security }
+		completion_reward = {
+			hidden_effect = {
+				EFH_gov_biosecurity = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			set_country_flag = EFH_biosecurity_prepared
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.92 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_strategic_biocontainment
+		icon = GFX_goal_generic_defence
+		relative_position_id = EFH_continental_disease_surveillance
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		ai_will_do = { base = 7 }
+		prerequisite = { focus = EFH_continental_disease_surveillance }
+		completion_reward = {
+			add_political_power = 25
+			hidden_effect = {
+				EFH_gov_biocontainment = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.93 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_kaltkrieg_opening_posture
+		icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = EFH_war_readiness_directive
+		x = 0
+		y = 1
+		ai_will_do = {
+			base = 10
+		}
+		cost = 3.75
+		available = {
+			has_country_flag = EFH_prologue_closed
+		}
+		completion_reward = {
+			add_ideas = EFH_kaltkrieg_posture
+			add_to_variable = { var = EFH_party_continuity value = 2 }
+			add_to_variable = { var = EFH_party_ave value = 1 }
+			add_to_variable = { var = EFH_party_social_green value = -1 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -2 }
+			EFH_party_clamp_support_effect = yes
+			news_event = { id = efh.84 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_summit_position
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_kaltkrieg_opening_posture
+		x = 1
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_kaltkrieg_opening_posture }
+		completion_reward = {
+			remove_ideas = EFH_kaltkrieg_posture
+			add_ideas = EFH_kaltkrieg_posture_subdued
+			add_to_variable = { var = EFH_party_volt value = 2 }
+			add_to_variable = { var = EFH_party_continuity value = 1 }
+			add_to_variable = { var = EFH_party_ave value = -1 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -2 }
+			EFH_party_clamp_support_effect = yes
+			set_country_flag = EFH_summit_decision_active
+			SRP_deescalate_low_effect = yes
+			custom_effect_tooltip = EFH_summit_decision_unlocked_tt
+		}
+	}
+
+	focus = {
+		id = EFH_summit_failure_response
+		icon = GFX_focus_EFH_summit_failure_response
+		relative_position_id = EFH_summit_position
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_summit_position }
+		available = {
+			has_country_flag = EFH_summit_collapsed
+		}
+		completion_reward = {
+			remove_ideas = EFH_kaltkrieg_posture_subdued
+			add_ideas = EFH_kaltkrieg_posture
+			add_political_power = 15
+			set_country_flag = EFH_us_intel_ops_unlocked
+			custom_effect_tooltip = EFH_intel_ops_unlocked_tt
+			country_event = { id = efh.103 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_northern_theater_preparation
+		icon = GFX_focus_EFH_northern_theater_preparation
+		relative_position_id = EFH_summit_failure_response
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_summit_failure_response }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_canadian_commitment = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			army_experience = 25
+			SRP_escalate_medium_effect = yes
+			set_country_flag = EFH_second_summit_incident
+			custom_effect_tooltip = EFH_canadian_divisions_deploy_tt
+			if = {
+				limit = { has_country_flag = EFH_us_war_plan_drawn }
+				custom_effect_tooltip = EFH_groundwork_war_plan_tt
+				army_experience = 25
+				add_war_support = 0.03
+			}
+			if = {
+				limit = { has_country_flag = EFH_doctrine_professional }
+				custom_effect_tooltip = EFH_groundwork_doctrine_professional_tt
+				army_experience = 25
+				hidden_effect = {
+					EFH_mil_northern_professional_edge = yes
+				}
+				custom_effect_tooltip = EFH_military_focus_tt
+			}
+			if = {
+				limit = { has_country_flag = EFH_doctrine_mass }
+				custom_effect_tooltip = EFH_groundwork_doctrine_mass_tt
+				add_manpower = 20000
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_northern_war_authorization
+		icon = GFX_focus_EFH_northern_war_authorization
+		relative_position_id = EFH_northern_theater_preparation
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_northern_theater_preparation }
+		available = {
+			has_country_flag = EFH_second_summit_incident
+		}
+		completion_reward = {
+			news_event = { id = efh.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_northern_air_campaign
+		icon = GFX_focus_EFH_northern_air_campaign
+		relative_position_id = EFH_northern_war_authorization
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_northern_war_authorization }
+		completion_reward = {
+			air_experience = 50
+			hidden_effect = {
+				EFH_air_air_northern_commitment = yes
+			}
+			custom_effect_tooltip = EFH_air_command_tt
+			custom_effect_tooltip = EFH_air_deploy_tt
+			hidden_effect = { country_event = { id = efh.24 days = 14 } }
+		}
+	}
+
+	focus = {
+		id = EFH_northern_air_doctrine
+		icon = GFX_focus_EFH_northern_air_doctrine
+		relative_position_id = EFH_northern_air_campaign
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_northern_air_campaign }
+		available = {
+			has_country_flag = EFH_air_battle_of_boston_fired
+		}
+		completion_reward = {
+			remove_ideas = EFH_boston_air_doctrine_review
+			hidden_effect = {
+				EFH_air_post_boston_doctrine = yes
+			}
+			custom_effect_tooltip = EFH_air_command_tt
+		}
+	}
+
+	focus = {
+		id = EFH_kaltkrieg_doctrine_reform
+		icon = GFX_focus_EFH_kaltkrieg_doctrine_reform
+		relative_position_id = EFH_kaltkrieg_opening_posture
+		x = -1
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_kaltkrieg_opening_posture }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_kaltkrieg_doctrine = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			add_to_variable = { var = EFH_party_ave value = 2 }
+			add_to_variable = { var = EFH_party_continuity value = 1 }
+			add_to_variable = { var = EFH_party_volt value = -1 }
+			add_to_variable = { var = EFH_party_social_green value = -1 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+			EFH_party_clamp_support_effect = yes
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = EFH_nuclear_deterrence_posture
+		icon = GFX_focus_EFH_nuclear_deterrence_posture
+		relative_position_id = EFH_kaltkrieg_doctrine_reform
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_kaltkrieg_doctrine_reform }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EFH_gate_escalation_coldwar_tt
+				check_variable = { EFH_USA_escalation > 64 }
+			}
+			check_variable = { EFH_USA_escalation > 64 }
+		}
+		completion_reward = {
+			hidden_effect = {
+				EFH_nuc_nuclear_deterrence = yes
+			}
+			custom_effect_tooltip = EFH_nuclear_program_tt
+				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 3000 }
+			if = {
+				limit = { has_country_flag = EFH_standoff_nuclear }
+				custom_effect_tooltip = EFH_groundwork_standoff_nuclear_tt
+				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 2000 }
+			}
+			if = {
+				limit = { has_country_flag = EFH_standoff_conventional }
+				custom_effect_tooltip = EFH_groundwork_standoff_conventional_tt
+				add_command_power = 50
+				army_experience = 20
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_sphere_retention_japan
+		icon = GFX_focus_EFH_sphere_retention_japan
+		relative_position_id = EFH_kaltkrieg_opening_posture
+		x = 5
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_kaltkrieg_opening_posture }
+		completion_reward = {
+			hidden_effect = {
+				EFH_nav_japan_sphere_anchor = yes
+			}
+			custom_effect_tooltip = EFH_naval_command_tt
+			if = {
+				limit = { has_country_flag = EFH_japan_axis_formed }
+				custom_effect_tooltip = EFH_groundwork_japan_axis_tt
+				add_political_power = 25
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_trade_bloc_offensive
+		icon = GFX_focus_EFH_trade_bloc_offensive
+		relative_position_id = EFH_sphere_retention_japan
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_sphere_retention_japan }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EFH_gate_escalation_rivalry_tt
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			check_variable = { EFH_USA_escalation > 49 }
+		}
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_trade_bloc_expansion = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			add_political_power = 15
+			country_event = { id = efh.85 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_economic_pressure_campaign
+		icon = GFX_focus_EFH_economic_pressure_campaign
+		relative_position_id = EFH_trade_bloc_offensive
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_trade_bloc_offensive }
+		completion_reward = {
+			add_political_power = 25
+			USA = {
+				add_timed_idea = {
+					idea = EFH_usa_market_exclusion
+					days = 730
+				}
+			}
+			SRP_escalate_medium_effect = yes
+			custom_effect_tooltip = EFH_economic_pressure_tt
+			country_event = { id = efh.86 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_africa_resources
+		icon = GFX_focus_EFH_africa_resources
+		relative_position_id = EFH_economic_pressure_campaign
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_economic_pressure_campaign }
+		completion_reward = {
+			add_political_power = 20
+			set_country_flag = EFH_africa_resource_competition_active
+			custom_effect_tooltip = EFH_africa_resources_tt
+		}
+	}
+
+	focus = {
+		id = EFH_panama_pressure
+		icon = GFX_focus_EFH_panama_pressure
+		relative_position_id = EFH_northern_theater_preparation
+		x = 2
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_northern_theater_preparation }
+		completion_reward = {
+			add_political_power = 15
+			set_country_flag = EFH_panama_diplomatic_contact
+			SRP_escalate_low_effect = yes
+			if = {
+				limit = { has_country_flag = EFH_canal_zone_watch_active }
+				custom_effect_tooltip = EFH_groundwork_canal_tt
+				add_political_power = 15
+				navy_experience = 10
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_panama_deals
+		icon = GFX_focus_EFH_panama_deals
+		relative_position_id = EFH_panama_pressure
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_panama_pressure }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_panama_economic_presence = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			SRP_escalate_low_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_panama_cores
+		icon = GFX_focus_EFH_panama_cores
+		relative_position_id = EFH_panama_deals
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_panama_deals }
+		completion_reward = {
+			set_country_flag = EFH_panama_cores_established
+			685 = {
+				add_core_of = EFH
+			}
+			SRP_escalate_medium_effect = yes
+			custom_effect_tooltip = EFH_panama_cores_tt
+			country_event = { id = efh.89 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_panama_resistance
+		icon = GFX_focus_EFH_panama_resistance
+		relative_position_id = EFH_panama_cores
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_panama_cores }
+		completion_reward = {
+			set_country_flag = EFH_panama_resistance_active
+			685 = {
+				add_core_of = EFH
+				force_enable_resistance = {
+					clear = no
+					occupier = USA
+					occupied = EFH
+				}
+				start_resistance = EFH
+				set_resistance = 30
+				add_resistance_target = {
+					amount = 50
+					occupier = USA
+					occupied = EFH
+				}
+			}
+			SRP_escalate_medium_effect = yes
+			custom_effect_tooltip = EFH_panama_resistance_tt
+			country_event = { id = efh.90 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_second_space_race
+		icon = GFX_focus_EFH_second_space_race
+		x = 10
+		y = 0
+		cost = 5
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_orbital_competitive_pressure = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			add_to_variable = { var = EFH_party_astra value = 3 }
+			add_to_variable = { var = EFH_party_volt value = 1 }
+			add_to_variable = { var = EFH_party_continuity value = -2 }
+			add_to_variable = { var = EFH_party_social_green value = -1 }
+			add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+			EFH_party_clamp_support_effect = yes
+			country_event = { id = efh.74 days = 3 }
+		}
+	}
+
+	focus = {
+		id = EFH_runway_to_orbit_feasibility
+		icon = GFX_focus_EFH_runway_to_orbit_feasibility
+		relative_position_id = EFH_second_space_race
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_second_space_race }
+		completion_reward = {
+			add_timed_idea = {
+				idea = EFH_spaceplane_feasibility_study
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_laytheo_prototype_authorization
+		icon = GFX_focus_EFH_laytheo_prototype_authorization
+		relative_position_id = EFH_runway_to_orbit_feasibility
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_runway_to_orbit_feasibility }
+		available = {
+			has_country_flag = EFH_laytheo_contractor_selected
+		}
+		completion_reward = {
+			add_ideas = EFH_laytheo_in_development
+			country_event = { id = efh.2 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_laytheo_first_flight
+		icon = GFX_focus_EFH_laytheo_first_flight
+		relative_position_id = EFH_laytheo_prototype_authorization
+		x = 0
+		y = 1
+		cost = 15
+		prerequisite = { focus = EFH_laytheo_prototype_authorization }
+		completion_reward = {
+			remove_ideas = EFH_laytheo_in_development
+			remove_ideas = EFH_haa_timeline_compression
+			remove_ideas = EFH_esa_timeline_penalty
+			hidden_effect = {
+				EFH_lay_laytheo_operational = yes
+			}
+			custom_effect_tooltip = EFH_laytheo_program_tt
+			country_event = { id = efh.3 days = 1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = EFH_HA_hyperbiology_founded
+						NOT = { has_country_flag = EFH_HA_laytheo_integration_started }
+					}
+					country_event = { id = efh_hna.24 days = 1 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_laytheo_surveillance_network
+		icon = GFX_focus_EFH_laytheo_surveillance_network
+		relative_position_id = EFH_laytheo_first_flight
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_laytheo_first_flight }
+		mutually_exclusive = { focus = EFH_laytheo_orbital_logistics }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			hidden_effect = {
+				EFH_lay_laytheo_surveillance = yes
+			}
+			custom_effect_tooltip = EFH_laytheo_program_tt
+			set_country_flag = EFH_laytheo_beckon_detection_active
+			custom_effect_tooltip = EFH_laytheo_beckon_detection_tt
+			country_event = { id = efh.75 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_laytheo_orbital_logistics
+		icon = GFX_focus_EFH_laytheo_military_integration
+		relative_position_id = EFH_laytheo_first_flight
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_laytheo_first_flight }
+		mutually_exclusive = { focus = EFH_laytheo_surveillance_network }
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			air_experience = 25
+			hidden_effect = {
+				EFH_lay_laytheo_orbital_logistics = yes
+			}
+			custom_effect_tooltip = EFH_laytheo_program_tt
+			set_country_flag = EFH_laytheo_orbital_access
+			set_country_flag = HA_lunar_programme_approved
+			custom_effect_tooltip = EFH_laytheo_orbital_logistics_tt
+			country_event = { id = efh.76 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_HA_hyperbiology_founded
+		icon = GFX_focus_EFH_HA_hyperbiology_founded
+		x = 14
+		y = 0
+		cost = @EFH_HA_hyper_founded_weeks
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = parasites_emerged_focus_tt
+				has_global_flag = parasites_emerged
+			}
+			has_global_flag = parasites_emerged
+			if = {
+				limit = { has_country_flag = EFH_HA_hyper_founded_in_progress }
+				set_temp_variable = { temp_focus_days = @EFH_HA_hyper_founded_weeks }
+				multiply_temp_variable = { temp_focus_days = 7 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = EFH_HNA_working_on_focus_tt
+						FLAG_DAYS = [?EFH_HA_hyper_founded_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = EFH_HNA_focus_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			set_country_flag = EFH_hyperbiology_founded
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = srp_parasite_tech
+			}
+			EFH_bop_low_ha_effect = yes
+			news_event = { id = efh_hna.4 days = 1 }
+			hidden_effect = {
+				country_event = { id = efh_hna.22 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_HA_hyperbiology_research_fund
+		icon = GFX_focus_EFH_HA_hyperbiology_research_fund
+		relative_position_id = EFH_HA_hyperbiology_founded
+		x = 0
+		y = 1
+		cost = @EFH_HA_research_fund_weeks
+		prerequisite = { focus = EFH_HA_hyperbiology_founded }
+		available = {
+			if = {
+				limit = { has_country_flag = EFH_HA_research_fund_in_progress }
+				set_temp_variable = { temp_focus_days = @EFH_HA_research_fund_weeks }
+				multiply_temp_variable = { temp_focus_days = 7 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = EFH_HNA_working_on_focus_tt
+						FLAG_DAYS = [?EFH_HA_research_fund_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = EFH_HNA_focus_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 40
+			mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 5000 }
+			add_research_slot = 1
+			EFH_bop_low_ha_effect = yes
+			custom_effect_tooltip = EFH_HA_hyperbiology_research_fund_tt
+			hidden_effect = {
+				country_event = { id = efh_hna.26 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_HA_laytheo_ha_integration
+		icon = GFX_focus_EFH_HA_laytheo_ha_integration
+		relative_position_id = EFH_laytheo_first_flight
+		x = 3
+		y = 1
+		cost = @EFH_HA_laytheo_weeks
+		prerequisite = { focus = EFH_HA_hyperbiology_founded }
+		prerequisite = { focus = EFH_laytheo_first_flight }
+		available = {
+			if = {
+				limit = { has_country_flag = EFH_HA_laytheo_in_progress }
+				set_temp_variable = { temp_focus_days = @EFH_HA_laytheo_weeks }
+				multiply_temp_variable = { temp_focus_days = 7 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = EFH_HNA_working_on_focus_tt
+						FLAG_DAYS = [?EFH_HA_laytheo_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = EFH_HNA_focus_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = srp_parasite_tech
+			}
+			EFH_bop_low_ha_effect = yes
+			custom_effect_tooltip = EFH_HA_laytheo_ha_integration_tt
+		}
+	}
+
+	focus = {
+		id = EFH_HA_hyperbiology_initial_findings
+		icon = GFX_focus_EFH_HA_hyperbiology_initial_findings
+		relative_position_id = EFH_HA_hyperbiology_research_fund
+		x = 0
+		y = 1
+		cost = @EFH_HA_initial_findings_weeks
+		prerequisite = { focus = EFH_HA_hyperbiology_research_fund }
+		available = {
+			if = {
+				limit = { has_country_flag = EFH_HA_initial_findings_in_progress }
+				set_temp_variable = { temp_focus_days = @EFH_HA_initial_findings_weeks }
+				multiply_temp_variable = { temp_focus_days = 7 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = EFH_HNA_working_on_focus_tt
+						FLAG_DAYS = [?EFH_HA_initial_findings_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = EFH_HNA_focus_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				EFH_mil_hyperbiology_findings = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			add_ideas = EFH_first_beckon_confidence
+			EFH_bop_very_low_ha_effect = yes
+			custom_effect_tooltip = EFH_HA_hyperbiology_initial_findings_tt
+		}
+	}
+
+	focus = {
+		id = EFH_expand_hyperbiology
+		icon = GFX_focus_EFH_expand_hyperbiology
+		relative_position_id = EFH_HA_hyperbiology_initial_findings
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_HA_hyperbiology_initial_findings }
+		available = {
+			date > 2023.1.1
+		}
+		completion_reward = {
+			set_country_flag = EFH_hyperbiology_expanded
+			custom_effect_tooltip = EFH_expand_hyperbiology_tt
+			if = {
+				limit = { has_idea = EFH_integration_agreement_full }
+				mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 8000 }
+				add_tech_bonus = { bonus = 0.5 uses = 1 category = srp_parasite_tech }
+				EFH_bop_low_ha_effect = yes
+			}
+			if = {
+				limit = { NOT = { has_idea = EFH_integration_agreement_full } }
+				mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 4000 }
+				add_tech_bonus = { bonus = 0.25 uses = 1 category = srp_parasite_tech }
+				EFH_bop_very_low_ha_effect = yes
+			}
+			if = {
+				limit = { has_idea = EFH_integration_agreement_oversight }
+				hidden_effect = {
+					EFH_gov_hyperbiology_oversight_drag = yes
+				}
+				custom_effect_tooltip = EFH_federal_authority_tt
+			}
+			country_event = { id = efh.104 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_hyperbiology_facilities
+		icon = GFX_focus_EFH_hyperbiology_facilities
+		relative_position_id = EFH_expand_hyperbiology
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_expand_hyperbiology }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_hyperbiology_facilities = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			EFH_bop_very_low_ha_effect = yes
+			country_event = { id = efh.105 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_live_specimen_acquisition
+		icon = GFX_focus_EFH_live_specimen_acquisition
+		relative_position_id = EFH_expand_hyperbiology
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_expand_hyperbiology }
+		completion_reward = {
+			set_country_flag = EFH_harvesting_groundwork
+			hidden_effect = {
+				EFH_res_live_specimen_program = yes
+			}
+			custom_effect_tooltip = EFH_research_directorate_tt
+			mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 3000 }
+			EFH_bop_low_ha_effect = yes
+			country_event = { id = efh.106 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_branch_parasite_study
+		icon = GFX_focus_EFH_branch_parasite_study
+		relative_position_id = EFH_expand_hyperbiology
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = EFH_hyperbiology_facilities }
+		prerequisite = { focus = EFH_live_specimen_acquisition }
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = srp_parasite_tech }
+			hidden_effect = {
+				EFH_para_branch_doctrine = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+			EFH_bop_very_low_ha_effect = yes
+			country_event = { id = efh.107 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_terms_of_appointment
+		icon = GFX_focus_EFH_terms_of_appointment
+		relative_position_id = EFH_branch_parasite_study
+		x = 0
+		y = 1
+		cost = 7
+		prerequisite = { focus = EFH_branch_parasite_study }
+		available = {
+			has_idea = EFH_ashley_woods
+		}
+		completion_reward = {
+			custom_effect_tooltip = EFH_terms_of_appointment_tt
+			EFH_bop_medium_ha_effect = yes
+			hidden_effect = {
+				set_country_flag = EFH_directorate_formed
+				activate_advisor = EFH_reinhard_voss
+				set_can_be_fired_in_advisor_role = {
+					character = EFH_ashley_woods
+					slot = political_advisor
+					value = no
+				}
+				set_can_be_fired_in_advisor_role = {
+					character = EFH_reinhard_voss
+					slot = political_advisor
+					value = no
+				}
+				country_event = { id = efh_directorate.1 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_HNA_independence
+		icon = GFX_focus_EFH_HNA_independence
+		relative_position_id = EFH_HA_hyperbiology_founded
+		x = 2
+		y = 1
+		cost = 0.75
+		prerequisite = { focus = EFH_HA_hyperbiology_founded }
+		completion_reward = {
+			custom_effect_tooltip = EFH_HNA_independence_tt
+			hidden_effect = {
+				set_country_flag = EFH_HNA_independence_granted
+				country_event = { id = efh_hna.1 days = 7 }
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_HNA_autonomous_placeholder
+		icon = GFX_focus_HA_base
+		relative_position_id = EFH_HNA_independence
+		text_icon = GER_inner_circle_focus_style
+		x = 0
+		y = 1
+		cost = @EFH_HNA_autonomous_time_tier_1
+		prerequisite = { focus = EFH_HNA_independence }
+		available = {
+			if = {
+				limit = { has_country_flag = EFH_HNA_autonomous_placeholder_in_progress_flag }
+				set_temp_variable = { temp_focus_days = @EFH_HNA_autonomous_time_tier_1 }
+				multiply_temp_variable = { temp_focus_days = 7 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = EFH_HNA_working_on_focus_tt
+						FLAG_DAYS = [?EFH_HNA_autonomous_placeholder_in_progress_flag:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = EFH_HNA_focus_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			set_country_flag = HA_lunar_programme_approved
+			random_list = {
+				35 = {
+					set_country_flag = EFH_HNA_lunar_policy_public
+					custom_effect_tooltip = EFH_HNA_lunar_policy_public_tt
+				}
+				40 = {
+					set_country_flag = EFH_HNA_lunar_policy_corporate
+					custom_effect_tooltip = EFH_HNA_lunar_policy_corporate_tt
+				}
+				25 = {
+					set_country_flag = EFH_HNA_lunar_policy_procurement
+					custom_effect_tooltip = EFH_HNA_lunar_policy_procurement_tt
+				}
+			}
+			custom_effect_tooltip = EFH_HNA_lunar_programme_approved_tt
+		}
+	}
+
+	focus = {
+		id = EFH_eter_completion
+		icon = GFX_focus_EFH_eter_completion
+		x = 20
+		y = 0
+		cost = 5
+		completion_reward = {
+			7 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = srp_fusion_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_fusion_regulatory_framework
+		icon = GFX_focus_EFH_eter_completion
+		relative_position_id = EFH_eter_completion
+		x = -2
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_eter_completion }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = EFH_fusion_licensing_act
+		icon = GFX_focus_EFH_eter_completion
+		relative_position_id = EFH_eter_completion
+		x = -2
+		y = 2
+		cost = 3.75
+		prerequisite = { focus = EFH_fusion_regulatory_framework }
+		completion_reward = {
+			set_technology = {
+				srp_fusion_reactor_1 = 1
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = EFH_industrial_surge
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_eter_completion
+		x = 1
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_eter_completion }
+		completion_reward = {
+			1 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			5 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			42 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = EFH_construction_acceleration
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_eter_completion
+		x = 1
+		y = 2
+		cost = 3.75
+		prerequisite = { focus = EFH_industrial_surge }
+		completion_reward = {
+			1 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			5 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			6 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = EFH_defense_conversion
+		icon = GFX_focus_EFH_defense_conversion
+		relative_position_id = EFH_eter_completion
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = EFH_construction_acceleration }
+		completion_reward = {
+			1 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			5 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = EFH_research_coordination
+		icon = GFX_focus_research
+		x = 16
+		y = -5
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_industrial_rnd
+		icon = GFX_focus_research
+		relative_position_id = EFH_research_coordination
+		x = 0
+		y = 1
+		cost = 3.75
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		prerequisite = { focus = EFH_research_coordination }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_doctrine_investment
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = EFH_industrial_rnd
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		prerequisite = { focus = EFH_industrial_rnd }
+		mutually_exclusive = { focus = EFH_parasite_early_research }
+		ai_will_do = {
+			factor = 55
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_parasite_early_research
+		icon = GFX_focus_EFH_parasite_early_research
+		relative_position_id = EFH_industrial_rnd
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_industrial_rnd }
+		mutually_exclusive = { focus = EFH_doctrine_investment }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = parasites_emerged_focus_tt
+				has_global_flag = parasites_emerged
+			}
+			has_global_flag = parasites_emerged
+		}
+		ai_will_do = {
+			factor = 45
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = srp_parasite_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_joint_training_command
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = EFH_doctrine_investment
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
+			custom_trigger_tooltip = {
+				tooltip = EFH_prologue_closed_tt
+				NOT = { has_country_flag = EFH_prologue_closed }
+			}
+		}
+		prerequisite = { focus = EFH_doctrine_investment }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_training_command = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_xenobiology_directorate
+		icon = GFX_focus_research
+		relative_position_id = EFH_parasite_early_research
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_parasite_early_research }
+		completion_reward = {
+			hidden_effect = {
+				EFH_para_xenobiology_directorate = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_federal_research_institute
+		icon = GFX_focus_research
+		relative_position_id = EFH_xenobiology_directorate
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_joint_training_command focus = EFH_xenobiology_directorate }
+		completion_reward = {
+			add_research_slot = 1
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_industrial_procurement_strategy
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_member_state_accord
+		x = -3
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 8 }
+		available = {
+			has_country_flag = EFH_prologue_closed
+		}
+		completion_reward = {
+			add_political_power = 15
+			set_country_flag = EFH_ha_procurement_open
+			country_event = { id = efh.61 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_ha_research_consortium
+		icon = GFX_goal_generic_research_tech
+		relative_position_id = EFH_industrial_procurement_strategy
+		x = -1
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 12 }
+		prerequisite = { focus = EFH_industrial_procurement_strategy }
+		mutually_exclusive = { focus = EFH_ha_supply_dominance }
+		completion_reward = {
+			add_political_power = -30
+			add_research_slot = 1
+			set_country_flag = EFH_procurement_ha_path
+			EFH_bop_low_ha_effect = yes
+			country_event = { id = efh.62 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_ha_supply_dominance
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_industrial_procurement_strategy
+		x = 1
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_industrial_procurement_strategy }
+		mutually_exclusive = { focus = EFH_ha_research_consortium }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_supply_chain_leadership = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			set_country_flag = EFH_procurement_ef_path
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.63 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_market_resource_agreements
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_ha_supply_dominance
+		x = -1
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = EFH_ha_research_consortium focus = EFH_ha_supply_dominance }
+		completion_reward = {
+			add_political_power = 20
+			custom_effect_tooltip = EFH_market_resource_agreements_tt
+			hidden_effect = {
+				capital_scope = {
+					add_resource = { type = steel amount = 100 }
+					add_resource = { type = chromium amount = 50 }
+					add_resource = { type = aluminium amount = 50 }
+				}
+			}
+			country_event = { id = efh.64 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_standing_procurement_framework
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_market_resource_agreements
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = EFH_market_resource_agreements }
+		completion_reward = {
+			add_political_power = 25
+			hidden_effect = {
+				EFH_ind_procurement_framework = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			set_country_flag = EFH_procurement_framework_set
+			if = {
+				limit = { has_country_flag = EFH_procurement_ha_path }
+				custom_effect_tooltip = EFH_procurement_framework_ha_tt
+				EFH_bop_low_ha_effect = yes
+			}
+			if = {
+				limit = { has_country_flag = EFH_procurement_ef_path }
+				custom_effect_tooltip = EFH_procurement_framework_ef_tt
+				EFH_bop_low_ef_effect = yes
+			}
+			country_event = { id = efh.65 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_federal_mandate
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = EFH_member_state_accord
+		x = 0
+		y = 1
+		cost = 3.75
+		available = {
+			has_country_flag = EFH_prologue_closed
+		}
+		completion_reward = {
+			add_political_power = 75
+			if = {
+				limit = { has_country_flag = EFH_federation_consolidated }
+				custom_effect_tooltip = EFH_groundwork_federation_tt
+				add_political_power = 25
+				add_stability = 0.02
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_centralize_emergency_powers
+		icon = GFX_focus_EFH_parliamentary_reform
+		relative_position_id = EFH_federal_mandate
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_federal_mandate }
+		mutually_exclusive = { focus = EFH_member_state_compact }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+			hidden_effect = {
+				EFH_mil_civil_mobilization = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			add_to_variable = { var = EFH_separatist_pressure value = 6 }
+			EFH_party_check_separatist_thresholds_effect = yes
+			if = {
+				limit = { has_country_flag = EFH_federation_consolidated }
+				add_political_power = 25
+				add_stability = 0.02
+			}
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_member_state_compact
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_federal_mandate
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_federal_mandate }
+		mutually_exclusive = { focus = EFH_centralize_emergency_powers }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.06
+			hidden_effect = {
+				EFH_gov_member_state_compact = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			add_to_variable = { var = EFH_separatist_pressure value = -10 }
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_parliamentary_consolidation
+		icon = GFX_focus_generic_manpower
+		relative_position_id = EFH_federal_mandate
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = EFH_centralize_emergency_powers focus = EFH_member_state_compact }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EFH_gate_panic_elevated_tt
+				check_variable = { public_panic > 149 }
+			}
+			check_variable = { public_panic > 149 }
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = EFH_arsenal_of_regulation
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_federal_mandate
+		x = -2
+		y = 3
+		cost = 5
+		ai_will_do = { base = 5 }
+		prerequisite = { focus = EFH_parliamentary_consolidation }
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				EFH_gov_arsenal_of_regulation = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+		}
+	}
+
+	focus = {
+		id = EFH_parasite_threat_assessment
+		icon = GFX_focus_EFH_parasite_threat_assessment
+		x = 0
+		y = 3
+		cost = 3.75
+		prerequisite = { focus = EFH_HA_hyperbiology_initial_findings }
+		relative_position_id = EFH_HA_hyperbiology_initial_findings
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = parasites_emerged_focus_tt
+				has_global_flag = parasites_emerged
+			}
+			has_global_flag = parasites_emerged
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = srp_parasite_tech
+			}
+			hidden_effect = {
+				set_country_flag = EFH_parasite_threat_assessed
+			}
+			country_event = { id = efh.96 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_continental_monitoring_network
+		icon = GFX_focus_EFH_continental_monitoring_network
+		relative_position_id = EFH_parasite_threat_assessment
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_parasite_threat_assessment }
+		completion_reward = {
+			hidden_effect = {
+				EFH_res_parasite_monitoring = yes
+			}
+			custom_effect_tooltip = EFH_research_directorate_tt
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { has_country_flag = EFH_biosecurity_prepared }
+				custom_effect_tooltip = EFH_groundwork_biosecurity_tt
+				add_political_power = 25
+				add_tech_bonus = {
+					bonus = 0.25
+					uses = 1
+					category = srp_parasite_tech
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_federal_emergency_protocols
+		icon = GFX_focus_EFH_federal_emergency_protocols
+		relative_position_id = EFH_parasite_threat_assessment
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = EFH_continental_monitoring_network }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			hidden_effect = {
+				EFH_gov_federal_emergency_protocols = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			country_event = { id = efh.97 days = 1 }
+			hidden_effect = {
+				add_to_variable = { var = public_panic value = -150 }
+				SRP_recalculate_public_panic_effect = yes
+			}
+			if = {
+				limit = { has_country_flag = EFH_civil_society_prepared }
+				custom_effect_tooltip = EFH_groundwork_civil_society_tt
+				add_stability = 0.03
+				hidden_effect = {
+					add_to_variable = { var = public_panic value = -100 }
+					SRP_recalculate_public_panic_effect = yes
+				}
+			}
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_joint_anti_parasite_command
+		icon = GFX_focus_EFH_joint_anti_parasite_command
+		relative_position_id = EFH_parasite_threat_assessment
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = EFH_federal_emergency_protocols }
+		completion_reward = {
+			army_experience = 50
+			hidden_effect = {
+				EFH_para_anti_parasite_command = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.98 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_federal_cordon_doctrine
+		icon = GFX_goal_generic_defence
+		relative_position_id = EFH_joint_anti_parasite_command
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_joint_anti_parasite_command }
+		mutually_exclusive = { focus = EFH_contracted_field_response }
+		completion_reward = {
+			set_country_flag = EFH_cordon_path
+			hidden_effect = {
+				EFH_para_federal_cordon = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+			hidden_effect = {
+				add_to_variable = { var = public_panic value = -75 }
+				SRP_recalculate_public_panic_effect = yes
+			}
+			EFH_bop_low_ef_effect = yes
+			news_event = { id = efh.108 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_contracted_field_response
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = EFH_joint_anti_parasite_command
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_joint_anti_parasite_command }
+		mutually_exclusive = { focus = EFH_federal_cordon_doctrine }
+		completion_reward = {
+			set_country_flag = EFH_contracted_path
+			hidden_effect = {
+				EFH_para_contracted_response = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+			mio:EFH_ha_land_mio = { add_mio_funds = 3000 }
+			EFH_bop_low_ha_effect = yes
+			country_event = { id = efh.109 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_continental_containment_exercise
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = EFH_joint_anti_parasite_command
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = EFH_federal_cordon_doctrine focus = EFH_contracted_field_response }
+		completion_reward = {
+			add_war_support = 0.02
+			army_experience = 25
+			set_country_flag = EFH_containment_exercise_authorized
+			custom_effect_tooltip = EFH_containment_exercise_unlock_tt
+			if = {
+				limit = { has_country_flag = EFH_cordon_path }
+				custom_effect_tooltip = EFH_exercise_cordon_echo_tt
+				add_stability = 0.02
+				EFH_bop_very_low_ef_effect = yes
+			}
+			if = {
+				limit = { has_country_flag = EFH_contracted_path }
+				custom_effect_tooltip = EFH_exercise_contracted_echo_tt
+				mio:EFH_ha_land_mio = { add_mio_funds = 2000 }
+				EFH_bop_very_low_ha_effect = yes
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_modernization_program
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = EFH_combined_arms_command
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			has_country_flag = EFH_prologue_closed
+		}
+		completion_reward = {
+			army_experience = 75
+			hidden_effect = {
+				EFH_mil_joint_exercise = yes
+				EFH_mil_equipment_standard = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+		}
+	}
+
+	focus = {
+		id = EFH_board_reorientation
+		icon = GFX_focus_EFH_board_reorientation
+		x = -3
+		y = 1
+		cost = 3.75
+		relative_position_id = EFH_parasite_threat_assessment
+		prerequisite = { focus = EFH_parasite_threat_assessment }
+		completion_reward = {
+			add_political_power = 30
+			add_ideas = EFH_board_reorientation_spirit
+			EFH_bop_low_ha_effect = yes
+			if = {
+				limit = { has_country_flag = EFH_procurement_framework_set }
+				custom_effect_tooltip = EFH_groundwork_procurement_tt
+				mio:EFH_ha_logistics_mio = { add_mio_funds = 2000 }
+				if = {
+					limit = { has_country_flag = EFH_procurement_ha_path }
+					custom_effect_tooltip = EFH_groundwork_procurement_ha_tt
+					mio:EFH_ha_logistics_mio = { add_mio_funds = 2000 }
+					add_political_power = 25
+				}
+			}
+			country_event = { id = efh.31 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_thermonuclear_priority
+		icon = GFX_focus_EFH_nuclear_deterrence_posture
+		relative_position_id = EFH_board_reorientation
+		x = -1
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_board_reorientation }
+		completion_reward = {
+			hidden_effect = {
+				EFH_nuc_thermonuclear_priority = yes
+			}
+			custom_effect_tooltip = EFH_nuclear_program_tt
+				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 4000 }
+			army_experience = 15
+			EFH_bop_very_low_ha_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_logistics_militarization
+		icon = GFX_focus_EFH_logistics_militarization
+		relative_position_id = EFH_board_reorientation
+		x = 1
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = EFH_board_reorientation }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_logistics_militarization = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+				mio:EFH_ha_logistics_mio = { add_mio_funds = 4000 }
+			EFH_bop_very_low_ha_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_governance_suspension
+		icon = GFX_focus_EFH_governance_suspension
+		relative_position_id = EFH_board_reorientation
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = EFH_thermonuclear_priority focus = EFH_logistics_militarization }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EFH_gate_panic_high_tt
+				check_variable = { public_panic > 199 }
+			}
+			check_variable = { public_panic > 199 }
+		}
+		completion_reward = {
+			add_political_power = 40
+			hidden_effect = {
+				EFH_gov_governance_suspension = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_low_ha_effect = yes
+			country_event = { id = efh.99 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_rtg_penetrator_program
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = EFH_board_reorientation
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = EFH_governance_suspension }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_parasite_tech
+			}
+			hidden_effect = {
+				EFH_para_rtg_penetrator = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 5000 }
+			EFH_bop_very_low_ha_effect = yes
+			country_event = { id = efh.100 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_integration_agreement
+		icon = GFX_focus_EFH_integration_agreement
+		relative_position_id = EFH_board_reorientation
+		x = 0
+		y = 4
+		cost = 5
+		prerequisite = { focus = EFH_rtg_penetrator_program }
+		available = {
+			date > 2022.1.1
+		}
+		completion_reward = {
+			country_event = { id = efh.30 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_dispatcher_identified
+		icon = GFX_focus_EFH_dispatcher_identified
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = EFH_parasite_threat_assessment
+		prerequisite = { focus = EFH_parasite_threat_assessment }
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = efh.32 days = 1 }
+			create_intelligence_agency = {
+				name = "Federal Intelligence Directorate"
+				icon = GFX_intelligence_agency_logo_generic_4
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_root_network_revision
+		icon = GFX_focus_EFH_root_network_revision
+		relative_position_id = EFH_dispatcher_identified
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_dispatcher_identified }
+		available = {
+			date > 2022.1.1
+		}
+		completion_reward = {
+			remove_ideas = EFH_first_beckon_confidence
+			hidden_effect = {
+				EFH_para_root_burning = yes
+			}
+			custom_effect_tooltip = EFH_parasite_warfare_tt
+			news_event = { id = efh.33 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_defensible_lines
+		icon = GFX_goal_generic_defence
+		relative_position_id = EFH_dispatcher_identified
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = EFH_root_network_revision }
+		completion_reward = {
+			hidden_effect = {
+				EFH_mil_defensible_lines = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			add_stability = 0.03
+			country_event = { id = efh.101 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_naval_modernization
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = EFH_modernization_program
+		x = -2
+		y = 3
+		cost = 5
+		prerequisite = { focus = EFH_modernization_program }
+		completion_reward = {
+			7 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
+			1 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			5 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_naval_tech
+			}
+			hidden_effect = {
+				EFH_nav_atlantic_fleet = yes
+			}
+			custom_effect_tooltip = EFH_naval_command_tt
+		}
+	}
+
+	focus = {
+		id = EFH_blue_water_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = EFH_naval_modernization
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_naval_modernization }
+		mutually_exclusive = { focus = EFH_ha_naval_integration }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = srp_naval_tech
+			}
+			hidden_effect = {
+				EFH_nav_naval_doctrine = yes
+			}
+			custom_effect_tooltip = EFH_naval_command_tt
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_ha_naval_integration
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = EFH_naval_modernization
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_naval_modernization }
+		mutually_exclusive = { focus = EFH_blue_water_doctrine }
+		completion_reward = {
+			mio:EFH_ha_naval_mio = { add_mio_funds = 4000 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_naval_tech
+			}
+			EFH_bop_very_low_ha_effect = yes
+			country_event = { id = efh.94 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_air_force_modernization
+		icon = GFX_goal_generic_air_doctrine
+		relative_position_id = EFH_modernization_program
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = EFH_modernization_program }
+		completion_reward = {
+			air_experience = 50
+			1 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+			5 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_air_tech
+			}
+			hidden_effect = {
+				EFH_air_tactical_air = yes
+			}
+			custom_effect_tooltip = EFH_air_command_tt
+		}
+	}
+
+	focus = {
+		id = EFH_strategic_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		relative_position_id = EFH_air_force_modernization
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_air_force_modernization }
+		mutually_exclusive = { focus = EFH_ha_aerospace_integration }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = srp_air_tech
+			}
+			hidden_effect = {
+				EFH_air_strategic_air = yes
+			}
+			custom_effect_tooltip = EFH_air_command_tt
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_ha_aerospace_integration
+		icon = GFX_goal_generic_air_doctrine
+		relative_position_id = EFH_air_force_modernization
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_air_force_modernization }
+		mutually_exclusive = { focus = EFH_strategic_air_doctrine }
+		completion_reward = {
+			mio:EFH_ha_aerospace_mio = { add_mio_funds = 4000 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_air_tech
+			}
+			EFH_bop_very_low_ha_effect = yes
+			country_event = { id = efh.95 days = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_industrial_core_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_eter_completion
+		x = 1
+		y = 4
+		cost = 5
+		prerequisite = { focus = EFH_defense_conversion }
+		completion_reward = {
+			1 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			6 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_timed_idea = { idea = EFH_industrial_core_surge days = 365 }
+		}
+	}
+
+	focus = {
+		id = EFH_fissile_foundation
+		icon = GFX_focus_EFH_eter_completion
+		relative_position_id = EFH_eter_completion
+		x = 1
+		y = 5
+		cost = 5
+		prerequisite = { focus = EFH_industrial_core_expansion }
+		completion_reward = {
+			7 = { add_extra_state_shared_building_slots = 2 }
+			5 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+
+	focus = {
+		id = EFH_fissile_plant_program
+		icon = GFX_focus_EFH_eter_completion
+		relative_position_id = EFH_fissile_foundation
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_fissile_foundation }
+		mutually_exclusive = { focus = EFH_civil_expansion }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			7 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
+			42 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
+			hidden_effect = {
+				EFH_nuc_fissile_industry = yes
+			}
+			custom_effect_tooltip = EFH_nuclear_program_tt
+		}
+	}
+
+	focus = {
+		id = EFH_civil_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_fissile_foundation
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_fissile_foundation }
+		mutually_exclusive = { focus = EFH_fissile_plant_program }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			1 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			5 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			hidden_effect = {
+				EFH_ind_civil_expansion = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+		}
+	}
+
+	focus = {
+		id = EFH_nuclear_fuel_cycle
+		icon = GFX_focus_EFH_eter_completion
+		relative_position_id = EFH_fissile_plant_program
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_fissile_plant_program }
+		completion_reward = {
+			7 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
+			hidden_effect = {
+				EFH_nuc_nuclear_fuel_cycle = yes
+			}
+			custom_effect_tooltip = EFH_nuclear_program_tt
+		}
+	}
+
+	focus = {
+		id = EFH_reconstruction_bureau
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_civil_expansion
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_civil_expansion }
+		completion_reward = {
+			6 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			42 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			hidden_effect = {
+				EFH_ind_reconstruction_bureau = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+		}
+	}
+
+	focus = {
+		id = EFH_global_positioning
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_alignment_initiative
+		x = -4
+		y = 6
+		cost = 5
+		available = {
+			has_country_flag = EFH_prologue_closed
+		}
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				EFH_gov_global_posture = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_pacific_partnership
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = EFH_global_positioning
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_global_positioning }
+		mutually_exclusive = { focus = EFH_beijing_channel }
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				EFH_gov_japan_sphere_deepened = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_very_low_ef_effect = yes
+			custom_effect_tooltip = EFH_japan_sphere_tt
+			if = {
+				limit = { has_country_flag = EFH_japan_early_contact }
+				custom_effect_tooltip = EFH_groundwork_japan_contact_tt
+				add_political_power = 20
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_japan_tech_exchange
+		icon = GFX_focus_research
+		relative_position_id = EFH_pacific_partnership
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_pacific_partnership }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+			hidden_effect = {
+				EFH_res_japan_tech_coop = yes
+			}
+			custom_effect_tooltip = EFH_research_directorate_tt
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_pacific_defense_pact
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_japan_tech_exchange
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_japan_tech_exchange }
+		available = {
+			date > 2022.6.1
+		}
+		completion_reward = {
+			set_country_flag = EFH_japan_aligned
+			hidden_effect = {
+				EFH_gov_pacific_defense_pact = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			SRP_escalate_medium_effect = yes
+			EFH_bop_low_ef_effect = yes
+			news_event = { id = efh_geo.1 days = 1 }
+			if = {
+				limit = { has_country_flag = EFH_pacific_framework_set }
+				custom_effect_tooltip = EFH_groundwork_pacific_framework_tt
+				add_political_power = 25
+				add_war_support = 0.03
+			}
+			if = {
+				limit = { has_country_flag = EFH_japan_security_path }
+				custom_effect_tooltip = EFH_groundwork_japan_security_tt
+				navy_experience = 25
+				air_experience = 25
+			}
+			if = {
+				limit = { has_country_flag = EFH_japan_techno_path }
+				custom_effect_tooltip = EFH_groundwork_japan_techno_tt
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_south_american_outreach
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_global_positioning
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = EFH_global_positioning }
+		completion_reward = {
+			add_political_power = 30
+			set_country_flag = EFH_SAC_sphere
+			hidden_effect = {
+				EFH_ind_sac_economic_presence = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.87 days = 2 }
+			if = {
+				limit = { has_country_flag = EFH_sac_early_contact }
+				custom_effect_tooltip = EFH_groundwork_sac_tt
+				add_political_power = 20
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_SAC_infrastructure_program
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = EFH_south_american_outreach
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_south_american_outreach }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_sac_infrastructure = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			set_country_flag = EFH_SAC_infrastructure_built
+			USA = { set_country_flag = EFH_SAC_sphere_detected }
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_hemispheric_challenge
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = EFH_SAC_infrastructure_program
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_SAC_infrastructure_program }
+		available = {
+			date > 2022.1.1
+		}
+		completion_reward = {
+			set_country_flag = EFH_hemispheric_claim_asserted
+			hidden_effect = {
+				EFH_gov_hemispheric_doctrine = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			SRP_escalate_high_effect = yes
+			EFH_bop_low_ef_effect = yes
+			news_event = { id = efh_geo.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_beijing_channel
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = EFH_global_positioning
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_global_positioning }
+		mutually_exclusive = { focus = EFH_pacific_partnership }
+		completion_reward = {
+			add_political_power = 25
+			set_country_flag = EFH_china_contact
+			hidden_effect = {
+				EFH_gov_beijing_channel = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			EFH_bop_very_low_ef_effect = yes
+			country_event = { id = efh.88 days = 2 }
+			if = {
+				limit = { has_country_flag = EFH_china_early_contact }
+				custom_effect_tooltip = EFH_groundwork_china_tt
+				add_political_power = 20
+			}
+		}
+	}
+
+	focus = {
+		id = EFH_trade_normalization
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = EFH_beijing_channel
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_beijing_channel }
+		completion_reward = {
+			hidden_effect = {
+				EFH_ind_sino_efh_trade = yes
+			}
+			custom_effect_tooltip = EFH_industrial_base_tt
+			set_country_flag = EFH_china_trade_active
+			USA = { set_country_flag = EFH_china_trade_detected }
+			SRP_escalate_low_effect = yes
+			EFH_bop_very_low_ef_effect = yes
+		}
+	}
+
+	focus = {
+		id = EFH_eurasian_buffer_doctrine
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = EFH_trade_normalization
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_trade_normalization }
+		completion_reward = {
+			set_country_flag = EFH_eurasian_buffer_active
+			hidden_effect = {
+				EFH_gov_eurasian_buffer = yes
+			}
+			custom_effect_tooltip = EFH_federal_authority_tt
+			SRP_escalate_low_effect = yes
+			EFH_bop_low_ef_effect = yes
+			country_event = { id = efh_geo.2 days = 1 }
+		}
+	}
+
+}

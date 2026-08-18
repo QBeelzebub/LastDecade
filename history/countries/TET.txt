@@ -1,0 +1,19 @@
+set_country_flag = is_parasite_nation
+set_rule = { can_join_factions = no }
+
+set_research_slots = 2
+capital = 335
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2020.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}

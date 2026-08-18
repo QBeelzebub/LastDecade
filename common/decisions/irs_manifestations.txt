@@ -1,0 +1,75 @@
+irs_manifestation_decisions = {
+	manifest_overlord_wake = {
+		icon = GFX_goal_generic_construct_civ_factory
+
+		visible = {
+			tag = IRS
+			has_tech = ancient_manifestation
+		}
+
+		available = {
+			tag = IRS
+			has_tech = ancient_manifestation
+			num_of_available_civilian_factories > 3
+			any_owned_state = {
+				beckon_cluster > 1
+				dispatcher > 0
+				nexus_hive > 0
+			}
+			NOT = { has_idea = overlord_wake_presence }
+		}
+
+		fire_only_once = no
+		days_remove = 45
+		cost = 150
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			add_ideas = overlord_wake_presence
+		}
+
+		ai_will_do = {
+			base = 40
+		}
+	}
+
+	manifest_dreadnaut_wake = {
+		icon = GFX_decision_generic_air
+
+		visible = {
+			tag = IRS
+			has_tech = ancient_manifestation
+		}
+
+		available = {
+			tag = IRS
+			has_tech = ancient_manifestation
+			num_of_available_civilian_factories > 3
+			any_owned_state = {
+				beckon_cluster > 2
+				dispatcher > 0
+				nexus_hive > 0
+			}
+			NOT = { has_idea = dreadnaut_wake_presence }
+		}
+
+		fire_only_once = no
+		days_remove = 45
+		cost = 150
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			add_ideas = dreadnaut_wake_presence
+		}
+
+		ai_will_do = {
+			base = 40
+		}
+	}
+}

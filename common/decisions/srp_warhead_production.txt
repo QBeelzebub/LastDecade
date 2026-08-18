@@ -1,0 +1,62 @@
+srp_warhead_production = {
+
+	SRP_deploy_warhead_to_active = {
+		icon = generic_industry
+
+		visible = {
+			OR = { original_tag = EFH original_tag = USA }
+		}
+
+		available = {
+			check_variable = { var = SRP_nuclear_warheads value = 0 compare = greater_than }
+		}
+
+		fire_only_once = no
+		days_remove = 0
+		days_re_enable = 1
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SRP_deploy_warhead_to_active_tt
+			hidden_effect = {
+				subtract_from_variable = { var = SRP_nuclear_warheads value = 1 }
+				clamp_variable = { var = SRP_nuclear_warheads min = 0 max = 999 }
+				add_nuclear_bombs = 1
+			}
+		}
+
+		ai_will_do = {
+			base = 20
+		}
+	}
+
+	SRP_return_nuke_to_stockpile = {
+		icon = generic_industry
+
+		visible = {
+			OR = { original_tag = EFH original_tag = USA }
+		}
+
+		available = {
+			num_of_nukes > 0
+		}
+
+		fire_only_once = no
+		days_remove = 0
+		days_re_enable = 1
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SRP_return_nuke_to_stockpile_tt
+			hidden_effect = {
+				add_nuclear_bombs = -1
+				add_to_variable = { var = SRP_nuclear_warheads value = 1 }
+				clamp_variable = { var = SRP_nuclear_warheads min = 0 max = 999 }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

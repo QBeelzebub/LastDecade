@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "EF Atlantic Fleet"
+		naval_base = 9498
+		task_force = {
+			name = "EF Atlantic Task Force"
+			location = 9498
+			ship = { name = "EFS Charles de Gaulle" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = EFH version_name = "Charles de Gaulle Class" } } }
+			ship = { name = "EFS Forbin" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Horizon Class" } } }
+			ship = { name = "EFS Chevalier Paul" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Horizon Class" } } }
+			ship = { name = "EFS Aquitaine" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Aquitaine Class" } } }
+			ship = { name = "EFS Normandie" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Aquitaine Class" } } }
+			ship = { name = "EFS Suffren" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = EFH version_name = "Suffren Class" } } }
+			ship = { name = "EFS Tourville" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = EFH version_name = "Suffren Class" } } }
+		}
+	}
+	fleet = {
+		name = "EF North Sea Fleet"
+		naval_base = 9498
+		task_force = {
+			name = "EF North Sea Task Force"
+			location = 9498
+			ship = { name = "EFS Rhine" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Baden-Wurttemberg Class" } } }
+			ship = { name = "EFS Elbe" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Baden-Wurttemberg Class" } } }
+			ship = { name = "EFS Weser" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = EFH version_name = "Baden-Wurttemberg Class" } } }
+			ship = { name = "EFS Danube" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = EFH version_name = "Suffren Class" } } }
+		}
+	}
+}

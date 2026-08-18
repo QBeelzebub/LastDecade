@@ -1,0 +1,472 @@
+generic_sentinel_arms = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = {
+		NOT = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+				is_full_parasite = yes
+			}
+		}
+	}
+
+	equipment_type = { mio_cat_eq_all_infantry_and_support_equipment }
+	research_categories = { srp_land_tech }
+
+	initial_trait = {
+		name = generic_sentinel_initial
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_sentinel_root
+		name = generic_sentinel_root
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_sentinel_t2a
+		name = generic_sentinel_t2a
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_sentinel_root
+		all_parents = { generic_sentinel_root }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_sentinel_t2b
+		name = generic_sentinel_t2b
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_sentinel_root
+		all_parents = { generic_sentinel_root }
+
+		equipment_bonus = {
+			defense = 0.05
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_sentinel_t3
+		name = generic_sentinel_t3
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_sentinel_t2a
+		any_parent = { generic_sentinel_t2a generic_sentinel_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+}
+
+generic_rampart_heavy = {
+	icon = GFX_idea_generic_armor_organization
+
+	allowed = {
+		NOT = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+				is_full_parasite = yes
+			}
+		}
+	}
+
+	equipment_type = { mio_cat_eq_all_light_tank }
+	research_categories = { srp_armor_tech srp_motorized_tech }
+
+	initial_trait = {
+		name = generic_rampart_initial
+		equipment_bonus = {
+			hard_attack = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_rampart_root
+		name = generic_rampart_root
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_rampart_t2a
+		name = generic_rampart_t2a
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_rampart_root
+		all_parents = { generic_rampart_root }
+
+		equipment_bonus = {
+			armor_value = 0.06
+			defense = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_rampart_t2b
+		name = generic_rampart_t2b
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_rampart_root
+		all_parents = { generic_rampart_root }
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_rampart_t3
+		name = generic_rampart_t3
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_rampart_t2a
+		any_parent = { generic_rampart_t2a generic_rampart_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			breakthrough = 0.05
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+}
+
+generic_meridian_aerospace = {
+	icon = GFX_idea_generic_air_organization
+
+	allowed = {
+		NOT = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+				is_full_parasite = yes
+			}
+		}
+	}
+
+	equipment_type = { mio_cat_eq_all_small_plane }
+	research_categories = { srp_air_tech srp_fighter_tech }
+
+	initial_trait = {
+		name = generic_meridian_initial
+		equipment_bonus = {
+			air_agility = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_meridian_root
+		name = generic_meridian_root
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+		equipment_bonus = {
+			air_superiority = 0.04
+			build_cost_ic = -0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_meridian_t2a
+		name = generic_meridian_t2a
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_meridian_root
+		all_parents = { generic_meridian_root }
+
+		equipment_bonus = {
+			air_agility = 0.05
+			air_defence = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_meridian_t2b
+		name = generic_meridian_t2b
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_meridian_root
+		all_parents = { generic_meridian_root }
+
+		equipment_bonus = {
+			air_range = 0.05
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_meridian_t3
+		name = generic_meridian_t3
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_meridian_t2a
+		any_parent = { generic_meridian_t2a generic_meridian_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_agility = 0.05
+			maximum_speed = 0.04
+			air_defence = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+}
+
+generic_trident_naval = {
+	icon = GFX_idea_generic_navy_organization
+
+	allowed = {
+		NOT = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+				is_full_parasite = yes
+			}
+		}
+	}
+
+	equipment_type = { srp_carrier_hull srp_submarine_hull srp_destroyer_hull srp_battleship_hull }
+	research_categories = { naval_equipment }
+
+	initial_trait = {
+		name = generic_trident_initial
+		equipment_bonus = {
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_trident_root
+		name = generic_trident_root
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+		equipment_bonus = {
+			naval_speed = 0.03
+			build_cost_ic = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_trident_t2a
+		name = generic_trident_t2a
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_trident_root
+		all_parents = { generic_trident_root }
+
+		equipment_bonus = {
+			sub_detection = 0.07
+			anti_air_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_trident_t2b
+		name = generic_trident_t2b
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_trident_root
+		all_parents = { generic_trident_root }
+
+		equipment_bonus = {
+			max_strength = 0.06
+			naval_speed = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_trident_t3
+		name = generic_trident_t3
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_trident_t2a
+		any_parent = { generic_trident_t2a generic_trident_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			naval_speed = 0.05
+			max_strength = 0.07
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+}
+
+generic_ironwall_munitions = {
+	icon = GFX_idea_generic_research_organization
+
+	allowed = {
+		NOT = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+				is_full_parasite = yes
+			}
+		}
+	}
+
+	equipment_type = { mio_cat_eq_all_artillery }
+	research_categories = { srp_artillery_tech srp_land_tech }
+
+	initial_trait = {
+		name = generic_ironwall_initial
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_ironwall_root
+		name = generic_ironwall_root
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_ironwall_t2a
+		name = generic_ironwall_t2a
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = generic_ironwall_root
+		all_parents = { generic_ironwall_root }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			ap_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_ironwall_t2b
+		name = generic_ironwall_t2b
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_ironwall_root
+		all_parents = { generic_ironwall_root }
+
+		production_bonus = {
+			production_cost_factor = -0.06
+			production_efficiency_gain_factor = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = generic_ironwall_t3
+		name = generic_ironwall_t3
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_ironwall_t2a
+		any_parent = { generic_ironwall_t2a generic_ironwall_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+}

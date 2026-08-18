@@ -1,0 +1,61 @@
+branch_operative = {
+
+	upgrade_commando_training = {
+		picture = GFX_agency_commando_training
+		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
+		ai_will_do = { factor = 1 }
+		modifiers_during_progress = { civilian_factory_use = 5 }
+		level = { modifier = { commando_trait_chance_factor = 1 } }
+	}
+
+	upgrade_LD_sleeper_network = {
+		picture = GFX_agency_localized_training_center
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+		ai_will_do = { factor = 2 }
+		available = { is_parasite_nation = yes }
+		modifiers_during_progress = { civilian_factory_use = 5 }
+		level = { modifier = { new_operative_slot_bonus = 1 } }
+		level = { modifier = { new_operative_slot_bonus = 1 } }
+	}
+
+	upgrade_LD_parasite_hunters = {
+		picture = GFX_agency_anti_partisan
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+		ai_will_do = { factor = 2 }
+		available = { NOT = { is_full_parasite = yes } }
+		modifiers_during_progress = { civilian_factory_use = 5 }
+		level = {
+			modifier = {
+				intelligence_agency_defense = 1
+				enemy_operative_recruitment_chance = -0.2
+			}
+		}
+		level = { modifier = { intelligence_agency_defense = 0.5 } }
+	}
+}
+
+branch_crypto = {
+
+	upgrade_LD_hive_signals = {
+		picture = GFX_agency_cryptology_1
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		ai_will_do = { factor = 1 }
+		available = { is_parasite_nation = yes }
+		modifiers_during_progress = { civilian_factory_use = 5 }
+		level = {
+			modifier = {
+				decryption_power = 20
+				intel_network_gain_factor = 0.15
+			}
+		}
+	}
+
+	upgrade_LD_field_decryption = {
+		picture = GFX_agency_cryptology_2
+		sound = Spy_Agency_Cryptology_Upgrades_Confirm
+		ai_will_do = { factor = 1 }
+		available = { NOT = { is_full_parasite = yes } }
+		modifiers_during_progress = { civilian_factory_use = 8 }
+		level = { modifier = { decryption_power = 25 } }
+	}
+}

@@ -1,0 +1,83 @@
+RSF_emergency_decrees = {
+
+	RSF_emergency_industrial_push = {
+		icon = generic_industry
+		available = {
+			has_country_flag = RSF_emergency_decrees_unlocked
+		}
+		visible = {
+			has_country_flag = RSF_emergency_decrees_unlocked
+		}
+		cost = 75
+		days_re_enable = 90
+		ai_will_do = {
+			base = 0
+			modifier = { add = 5 has_war = yes }
+		}
+		complete_effect = {
+			add_timed_idea = { idea = RSF_emergency_output days = 60 }
+		}
+	}
+
+	RSF_emergency_conscription_decree = {
+		icon = generic_manpower
+		available = {
+			has_country_flag = RSF_emergency_decrees_unlocked
+		}
+		visible = {
+			has_country_flag = RSF_emergency_decrees_unlocked
+		}
+		cost = 75
+		days_re_enable = 120
+		ai_will_do = {
+			base = 0
+			modifier = { add = 5 has_war = yes }
+		}
+		complete_effect = {
+			add_manpower = 25000
+			add_stability = -0.03
+		}
+	}
+}
+
+RSF_military_ops = {
+
+	RSF_scorch_eastern_infrastructure = {
+		icon = generic_army_support
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		target_trigger = {
+			FROM = { is_controlled_by = ROOT }
+		}
+
+		available = {
+			has_country_flag = RSF_eastern_deployed
+			FROM = { is_controlled_by = ROOT }
+		}
+		visible = {
+			has_country_flag = RSF_eastern_deployed
+		}
+		cost = 50
+		days_re_enable = 30
+		ai_will_do = {
+			base = 0
+			modifier = { add = 5 has_war = yes }
+		}
+		complete_effect = {
+			add_war_support = 0.03
+			FROM = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+		}
+	}
+}

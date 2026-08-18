@@ -1,0 +1,96 @@
+EFH_balance_of_power_category = {
+
+	EFH_assert_federal_authority = {
+		priority = 60
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			NOT = {
+				power_balance_value = {
+					id = EFH_power_balance
+					value < -0.90
+				}
+			}
+		}
+
+		available = {
+			NOT = { has_country_flag = EFH_bop_ef_assert_cooldown }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			EFH_bop_low_ef_effect = yes
+			set_country_flag = { flag = EFH_bop_ef_assert_cooldown value = 1 days = 180 }
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = EFH_power_balance
+					value > 0.10
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = EFH_power_balance
+					value < -0.60
+				}
+			}
+		}
+	}
+
+	EFH_ha_lobby_parliament = {
+		priority = 55
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			NOT = {
+				power_balance_value = {
+					id = EFH_power_balance
+					value > 0.90
+				}
+			}
+		}
+
+		available = {
+			NOT = { has_country_flag = EFH_bop_ha_lobby_cooldown }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			EFH_bop_low_ha_effect = yes
+			set_country_flag = { flag = EFH_bop_ha_lobby_cooldown value = 1 days = 180 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = EFH_power_balance
+					value < -0.10
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = EFH_power_balance
+					value > 0.40
+				}
+			}
+		}
+	}
+}

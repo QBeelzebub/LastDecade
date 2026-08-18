@@ -1,0 +1,18 @@
+on_actions = {
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { has_country_flag = SRP_consortium_member }
+					FROM = { has_country_flag = SRP_consortium_member }
+				}
+				ROOT = {
+					SRP_consortium_eject_self_effect = yes
+					country_event = { id = srp_consortium.3 }
+				}
+			}
+		}
+	}
+
+}

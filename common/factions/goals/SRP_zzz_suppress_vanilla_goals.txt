@@ -1,0 +1,98 @@
+faction_goal_the_atomic_race = {
+	name = the_atomic_race_goal_name
+	description = the_atomic_race_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_RESEARCH
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_defeating_our_enemies = {
+	name = defeating_our_enemies_goal_name
+	description = defeating_our_enemies_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_a_great_fortress = {
+	name = a_great_fortress_goal_name
+	description = a_great_fortress_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_CONSOLIDATION
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_mexican_oil = {
+	name = develop_mexican_oil_goal_name
+	description = develop_mexican_oil_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_curacao_oil = {
+	name = develop_curacao_oil_goal_name
+	description = develop_curacao_oil_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_guyanan_bauxite = {
+	name = develop_guyanan_bauxite_goal_name
+	description = develop_guyanan_bauxite_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_ploiesti_oil_fields = {
+	name = develop_ploiesti_oil_fields_goal_name
+	description = develop_ploiesti_oil_fields_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_persian_oil = {
+	name = develop_persian_oil_goal_name
+	description = develop_persian_oil_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_chinese_metals = {
+	name = develop_chinese_metals_goal_name
+	description = develop_chinese_metals_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_malayan_riches = {
+	name = develop_malayan_riches_goal_name
+	description = develop_malayan_riches_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_develop_indonesian_riches = {
+	name = develop_indonesian_riches_goal_name
+	description = develop_indonesian_riches_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = no }
+}

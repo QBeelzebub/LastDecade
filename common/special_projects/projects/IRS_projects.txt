@@ -1,0 +1,259 @@
+sp_land_IRS_adapted_beckon_cultivation = {
+	specialization = specialization_land
+
+	allowed = {
+		OR = {
+			tag = IRS
+			tag = KNX
+		}
+	}
+
+	project_tags = sp_tag_biological
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { is_major = yes }
+		}
+	}
+
+	available = {
+		FROM = {
+			is_parasite_nation = yes
+			has_tech = advanced_biomass_synthesis
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+	complexity     = sp_complexity.large
+
+	breakthrough_cost = {
+		specialization_land = 3
+	}
+
+	resource_cost = {
+		resources = {
+			parasite_biomass = 10
+			steel            = 4
+		}
+	}
+
+	project_output = {
+		country_effects = {
+			add_ideas = IRS_adapted_beckon_cultivation
+			set_country_flag = IRS_cultivated_beckon_strain
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_adapted_beckon_growth_choice = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 90
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_land_reward_option_adapted_beckon_growth_choice_density
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience     = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_adapted_beckon_growth_choice_caution
+				iteration_output = {
+					country_effects = {
+						add_stability = 0.01
+					}
+				}
+			}
+		}
+
+		sp_land_reward_adapted_beckon_overgrowth = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 10
+				max = 60
+			}
+
+			weight = {
+				base = 3
+			}
+
+			option = {
+				token = sp_land_reward_option_adapted_beckon_overgrowth_contain
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+					scientist_effects = {
+						injure_scientist_for_days = 30
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_adapted_beckon_overgrowth_release
+				iteration_output = {
+					facility_state_effects = {
+						damage_building = {
+							tags = facility
+							damage = 0.15
+							province = var:facility_province_id
+						}
+					}
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_air_IRS_aerial_genome_calibration = {
+	specialization = specialization_air
+
+	allowed = {
+		tag = IRS
+	}
+
+	project_tags = sp_tag_aircraft
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 4
+			FROM = { has_tech = adapted_yelloweye_tech }
+		}
+	}
+
+	available = {
+		FROM = {
+			tag = IRS
+			has_tech = adapted_yelloweye_tech
+		}
+	}
+
+	prototype_time = sp_time.prototype.medium
+	complexity     = sp_complexity.medium
+
+	breakthrough_cost = {
+		specialization_air = 2
+	}
+
+	resource_cost = {
+		resources = {
+			parasite_biomass = 8
+			chromium         = 2
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_yelloweye_calibration_node
+		}
+		country_effects = {
+			add_timed_idea = {
+				idea = IRS_calibrated_swarm_protocols
+				days = 60
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+	}
+
+	unique_prototype_rewards = {
+		sp_air_reward_aerial_genome_calibration_drift = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 90
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_air_reward_option_aerial_genome_calibration_drift_accuracy
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_air_aerial_genome_calibration_accuracy
+							bonus = {
+								srp_yelloweye_airframe = {
+									air_ground_attack = 0.04
+								}
+							}
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_air_reward_option_aerial_genome_calibration_drift_resilience
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_air_aerial_genome_calibration_resilience
+							bonus = {
+								srp_yelloweye_airframe = {
+									reliability = 0.04
+								}
+							}
+						}
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+				}
+			}
+		}
+	}
+}

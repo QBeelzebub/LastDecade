@@ -1,0 +1,307 @@
+LD_operation_laytheo = {
+
+	LD_laytheo_status = {
+		icon = generic_research
+		priority = 100
+
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = LD_laytheo_authorized }
+		available = { always = no }
+
+		fire_only_once = no
+		cost = 0
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_authorization_window = {
+		icon = generic_prepare_civil_war
+		priority = 99
+
+		allowed = { original_tag = EFH }
+
+		activation = {
+			tag = EFH
+			has_country_flag = LD_broadcast_delivered
+			NOT = { has_country_flag = LD_laytheo_authorized }
+			NOT = { has_country_flag = LD_laytheo_window_lapsed }
+		}
+
+		available = { always = no }
+
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 120
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			set_country_flag = LD_laytheo_window_lapsed
+			country_event = { id = laytheo.1 days = 1 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_authorize = {
+		icon = generic_research
+		priority = 98
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_country_flag = LD_broadcast_delivered
+			NOT = { has_country_flag = LD_laytheo_authorized }
+		}
+
+		available = {
+			has_completed_focus = EFH_laytheo_first_flight
+			command_power > 24
+		}
+
+		fire_only_once = yes
+		cost = 75
+		days_remove = 30
+
+		complete_effect = {
+			set_country_flag = LD_laytheo_authorized
+			set_variable = { var = LD_laytheo_assembly value = 0 }
+			if = {
+				limit = { has_country_flag = LD_laytheo_window_lapsed }
+				set_variable = { var = LD_laytheo_climb_margin value = 1 }
+			}
+			if = {
+				limit = { NOT = { has_country_flag = LD_laytheo_window_lapsed } }
+				set_variable = { var = LD_laytheo_climb_margin value = 3 }
+			}
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_assemble_airframe = {
+		icon = generic_construction
+		priority = 90
+
+		allowed = { original_tag = EFH }
+		visible = {
+			has_country_flag = LD_laytheo_authorized
+			NOT = { has_country_flag = LD_laytheo_airframe_done }
+		}
+		available = { NOT = { has_equipment = { infantry_equipment < 1000 } } }
+
+		fire_only_once = yes
+		cost = 40
+		days_remove = 45
+
+		complete_effect = {
+			set_country_flag = LD_laytheo_airframe_done
+			add_to_variable = { var = LD_laytheo_assembly value = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_assemble_propellant = {
+		icon = generic_industry
+		priority = 90
+
+		allowed = { original_tag = EFH }
+		visible = {
+			has_country_flag = LD_laytheo_authorized
+			NOT = { has_country_flag = LD_laytheo_propellant_done }
+		}
+		available = { num_of_civilian_factories > 4 }
+
+		fire_only_once = yes
+		cost = 40
+		days_remove = 45
+
+		complete_effect = {
+			set_country_flag = LD_laytheo_propellant_done
+			add_to_variable = { var = LD_laytheo_assembly value = 1 }
+			add_political_power = -50
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_assemble_element = {
+		icon = generic_operation
+		priority = 90
+
+		allowed = { original_tag = EFH }
+		visible = {
+			has_country_flag = LD_laytheo_authorized
+			NOT = { has_country_flag = LD_laytheo_element_done }
+		}
+		available = { has_manpower > 4999 }
+
+		fire_only_once = yes
+		cost = 25
+		days_remove = 30
+
+		complete_effect = {
+			set_country_flag = LD_laytheo_element_done
+			add_to_variable = { var = LD_laytheo_assembly value = 1 }
+			add_manpower = -5000
+			add_stability = -0.05
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_launch_window = {
+		icon = generic_air
+
+		allowed = { original_tag = EFH }
+
+		activation = {
+			tag = EFH
+			has_country_flag = LD_laytheo_authorized
+			check_variable = { var = LD_laytheo_assembly value = 3 compare = greater_than_or_equals }
+			NOT = { has_country_flag = LD_laytheo_launched }
+		}
+
+		available = { always = no }
+
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 60
+		is_good = no
+		fire_only_once = no
+
+		timeout_effect = {
+			add_to_variable = { var = LD_laytheo_climb_margin value = -1 }
+			clamp_variable = { var = LD_laytheo_climb_margin min = 0 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_launch = {
+		icon = generic_air
+		priority = 95
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_country_flag = LD_laytheo_authorized
+			NOT = { has_country_flag = LD_laytheo_launched }
+		}
+
+		available = {
+			check_variable = { var = LD_laytheo_assembly value = 3 compare = greater_than_or_equals }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = LD_laytheo_launched
+			set_variable = { var = LD_laytheo_climb_stage value = 0 }
+			country_event = { id = laytheo.2 days = 3 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_climb_window = {
+		icon = generic_operation
+
+		allowed = { original_tag = EFH }
+
+		activation = {
+			tag = EFH
+			has_country_flag = LD_laytheo_in_orbit
+			NOT = { has_country_flag = LD_iris_killed }
+		}
+
+		available = { always = no }
+
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 11
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			set_country_flag = LD_laytheo_climb_stalled
+			country_event = { id = laytheo.4 days = 1 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_climb_advance = {
+		icon = generic_operation
+		priority = 95
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_country_flag = LD_laytheo_in_orbit
+			NOT = { has_country_flag = LD_iris_killed }
+			NOT = { has_country_flag = LD_laytheo_climb_stalled }
+			check_variable = { var = LD_laytheo_climb_stage value = 3 compare = less_than }
+		}
+
+		available = { always = yes }
+
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 2
+
+		complete_effect = {
+			add_to_variable = { var = LD_laytheo_climb_stage value = 1 }
+			add_to_variable = { var = LD_laytheo_climb_margin value = -1 }
+			clamp_variable = { var = LD_laytheo_climb_margin min = 0 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_strike_the_bulb = {
+		icon = generic_nuclear
+		priority = 100
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_country_flag = LD_laytheo_in_orbit
+			NOT = { has_country_flag = LD_iris_killed }
+			check_variable = { var = LD_laytheo_climb_stage value = 3 compare = greater_than_or_equals }
+		}
+
+		available = { always = yes }
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = LD_iris_killed
+			country_event = { id = laytheo.3 hours = 4 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_laytheo_debug_open = {
+		icon = generic_research
+		priority = 1
+
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = LD_laytheo_debug }
+		available = { always = yes }
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = { set_country_flag = LD_broadcast_delivered }
+
+		ai_will_do = { base = 0 }
+	}
+}

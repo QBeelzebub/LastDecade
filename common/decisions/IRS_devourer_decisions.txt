@@ -1,0 +1,268 @@
+IRS_devourer_operations = {
+
+	IRS_seed_feeding_grounds = {
+		icon = GFX_decision_generic_political_actions
+
+		visible = {
+			original_tag = IRS
+			has_tech = devourer_emergence
+		}
+
+		available = {
+			original_tag = IRS
+			has_tech = devourer_emergence
+		}
+
+		cost = 75
+		days_re_enable = 120
+		fire_only_once = no
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = IRS_devourer_feeding_grounds
+				days = 180
+			}
+		}
+
+		ai_will_do = { base = 15 }
+	}
+
+	IRS_establish_colony_pacific = {
+		icon = GFX_decision_generic_political_actions
+
+		visible = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			NOT = { has_country_flag = IRS_sea_colony_pacific }
+		}
+
+		available = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			any_controlled_state = {
+				is_coastal = yes
+				is_on_continent = asia
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = IRS_sea_colony_pacific
+			if = {
+				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
+				add_ideas = IRS_sea_colony_tier_1
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+			}
+		}
+
+		ai_will_do = { base = 20 }
+	}
+
+	IRS_establish_colony_indian_ocean = {
+		icon = GFX_decision_generic_political_actions
+
+		visible = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			NOT = { has_country_flag = IRS_sea_colony_indian_ocean }
+		}
+
+		available = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			any_controlled_state = {
+				is_coastal = yes
+				is_on_continent = asia
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = IRS_sea_colony_indian_ocean
+			if = {
+				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
+				add_ideas = IRS_sea_colony_tier_1
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+			}
+		}
+
+		ai_will_do = { base = 20 }
+	}
+
+	IRS_establish_colony_mediterranean = {
+		icon = GFX_decision_generic_political_actions
+
+		visible = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			NOT = { has_country_flag = IRS_sea_colony_mediterranean }
+		}
+
+		available = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			OR = {
+				any_controlled_state = { is_coastal = yes is_on_continent = europe }
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = IRS_sea_colony_mediterranean
+			if = {
+				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
+				add_ideas = IRS_sea_colony_tier_1
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+			}
+		}
+
+		ai_will_do = { base = 20 }
+	}
+
+	IRS_establish_colony_north_atlantic = {
+		icon = GFX_decision_generic_political_actions
+
+		visible = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			NOT = { has_country_flag = IRS_sea_colony_north_atlantic }
+		}
+
+		available = {
+			original_tag = IRS
+			has_country_flag = IRS_swarm_hunger_completed
+			any_controlled_state = {
+				is_coastal = yes
+				is_on_continent = europe
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = IRS_sea_colony_north_atlantic
+			if = {
+				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
+				add_ideas = IRS_sea_colony_tier_1
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
+			}
+			if = {
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+			}
+		}
+
+		ai_will_do = { base = 20 }
+	}
+
+	IRS_breach_south_american_coast = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_coastal = yes
+				is_on_continent = south_america
+				is_owned_by = SAC
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = IRS
+			has_country_flag = IRS_sac_breach_unlocked
+			has_tech = devourer_emergence
+		}
+
+		target_trigger = {
+			FROM = {
+				is_coastal = yes
+				is_on_continent = south_america
+				is_owned_by = SAC
+			}
+		}
+
+		visible = {
+			original_tag = IRS
+			has_country_flag = IRS_sac_breach_unlocked
+		}
+
+		available = {
+			original_tag = IRS
+			has_tech = devourer_emergence
+			FROM = {
+				is_coastal = yes
+				is_on_continent = south_america
+				is_owned_by = SAC
+			}
+		}
+
+		cost = 150
+		days_remove = 21
+		fire_only_once = yes
+
+		remove_effect = {
+			FROM = {
+				transfer_state_to = IRS
+				add_core_of = IRS
+				set_variable = { iris_infestation_level = 60 }
+				add_building_construction = {
+					type = beckon_cluster
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = irs.2 days = 1 }
+		}
+
+		ai_will_do = { base = 10 }
+	}
+}

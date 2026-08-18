@@ -1,0 +1,66 @@
+ideas = {
+
+	country = {
+
+		SRP_consortium_tier_1 = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.03
+			}
+
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.03
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.03
+			}
+		}
+
+		SRP_consortium_tier_2 = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.05
+			}
+		}
+
+		SRP_consortium_tier_3 = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.08
+			}
+
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.05
+			}
+		}
+
+	}
+
+}

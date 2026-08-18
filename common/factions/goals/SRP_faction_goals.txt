@@ -1,0 +1,173 @@
+SRP_goal_ep_anti_parasite_front = {
+	name = SRP_goal_ep_anti_parasite_front
+	description = SRP_goal_ep_anti_parasite_front_desc
+	category = short_term
+	group = FOCUS_FILTER_WAR_SUPPORT
+	visible = { FROM = { original_tag = EFH } }
+	completed = {
+		OR = { has_war_with = IRS has_war_with = KNX }
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		add_faction_initiative = 1
+		every_faction_member = { add_war_support = 0.05 }
+	}
+	ai_will_do = { base = 5 }
+}
+
+SRP_goal_ep_war_industry = {
+	name = SRP_goal_ep_war_industry
+	description = SRP_goal_ep_war_industry_desc
+	category = medium_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { FROM = { original_tag = EFH } }
+	completed = {
+		num_of_controlled_factories > 150
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		add_faction_initiative = 1
+		every_faction_member = { add_stability = 0.05 }
+	}
+	ai_will_do = { base = 5 }
+}
+
+SRP_goal_ep_outlast_america = {
+	name = SRP_goal_ep_outlast_america
+	description = SRP_goal_ep_outlast_america_desc
+	category = long_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = { FROM = { original_tag = EFH } }
+	completed = {
+		USA = { OR = { has_capitulated = yes is_in_faction_with = ROOT exists = no } }
+	}
+	complete_effect = {
+		add_faction_power_projection = 300
+		add_faction_initiative = 1
+		every_faction_member = { add_political_power = 100 }
+	}
+	ai_will_do = { base = 1 }
+}
+
+SRP_goal_ep_exploit_parasites = {
+	name = SRP_goal_ep_exploit_parasites
+	description = SRP_goal_ep_exploit_parasites_desc
+	category = long_term
+	group = FOCUS_FILTER_RESEARCH
+	visible = { FROM = { original_tag = EFH has_country_flag = is_hybrid_nation } }
+	completed = {
+		any_owned_state = { EFH_contained_beckon_cluster > 1 }
+	}
+	complete_effect = {
+		add_faction_power_projection = 300
+		add_faction_initiative = 1
+		every_faction_member = {
+			add_tech_bonus = {
+				name = SRP_exploit_parasites_bonus
+				bonus = 0.5
+				uses = 1
+				category = srp_parasite_tech
+			}
+		}
+	}
+	ai_will_do = { base = 1 }
+}
+
+SRP_goal_wa_hemisphere = {
+	name = SRP_goal_wa_hemisphere
+	description = SRP_goal_wa_hemisphere_desc
+	category = short_term
+	group = FOCUS_FILTER_CONSOLIDATION
+	visible = { FROM = { original_tag = USA } }
+	completed = {
+		has_country_flag = USA_hemisphere_claimed
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		add_faction_initiative = 1
+		every_faction_member = { add_war_support = 0.05 }
+	}
+	ai_will_do = { base = 5 }
+}
+
+SRP_goal_wa_arsenal = {
+	name = SRP_goal_wa_arsenal
+	description = SRP_goal_wa_arsenal_desc
+	category = medium_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { FROM = { original_tag = USA } }
+	completed = {
+		num_of_controlled_factories > 200
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		add_faction_initiative = 1
+		every_faction_member = { add_stability = 0.05 }
+	}
+	ai_will_do = { base = 5 }
+}
+
+SRP_goal_wa_break_efh = {
+	name = SRP_goal_wa_break_efh
+	description = SRP_goal_wa_break_efh_desc
+	category = long_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = { FROM = { original_tag = USA } }
+	completed = {
+		EFH = { OR = { has_capitulated = yes is_in_faction_with = ROOT exists = no } }
+	}
+	complete_effect = {
+		add_faction_power_projection = 300
+		add_faction_initiative = 1
+		every_faction_member = { add_political_power = 100 }
+	}
+	ai_will_do = { base = 1 }
+}
+
+SRP_goal_ph_proliferate = {
+	name = SRP_goal_ph_proliferate
+	description = SRP_goal_ph_proliferate_desc
+	category = short_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = { FROM = { original_tag = IRS } }
+	completed = {
+		check_variable = { IRS_evolution_points > 49 }
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		add_faction_initiative = 1
+	}
+	ai_will_do = { base = 5 }
+}
+
+SRP_goal_ph_assimilate = {
+	name = SRP_goal_ph_assimilate
+	description = SRP_goal_ph_assimilate_desc
+	category = medium_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = { FROM = { original_tag = IRS } }
+	completed = {
+		check_variable = { IRS_evolution_points > 149 }
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		add_faction_initiative = 1
+	}
+	ai_will_do = { base = 5 }
+}
+
+SRP_goal_ph_dominion = {
+	name = SRP_goal_ph_dominion
+	description = SRP_goal_ph_dominion_desc
+	category = long_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = { FROM = { original_tag = IRS } }
+	completed = {
+		check_variable = { IRS_evolution_points > 299 }
+	}
+	complete_effect = {
+		add_faction_power_projection = 300
+		add_faction_initiative = 1
+	}
+	ai_will_do = { base = 1 }
+}

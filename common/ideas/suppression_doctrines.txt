@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		controlled_burns_doctrine = {
+			picture = generic_economic_increase
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+
+		chemical_suppression_doctrine = {
+			picture = generic_economic_increase
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -2000
+				stability_factor = -0.05
+			}
+		}
+
+		dirty_bomb_doctrine = {
+			picture = generic_economic_increase
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.05
+				supply_consumption_factor = 0.10
+			}
+		}
+	}
+}

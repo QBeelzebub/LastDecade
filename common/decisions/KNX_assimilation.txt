@@ -1,0 +1,246 @@
+knx_assimilation = {
+	knx_absorb_state = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = KNX
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+				NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+			}
+		}
+
+		target_root_trigger = {
+			tag = KNX
+			any_owned_state = {
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+				NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = KNX
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+				NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+			}
+		}
+
+		visible = {
+			tag = KNX
+		}
+
+		available = {
+			tag = KNX
+			FROM = {
+				is_owned_by = KNX
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+				NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					NOT = { is_owned_by = KNX }
+					check_variable = {
+						var = iris_infestation_level
+						value = 50
+						compare = less_than
+					}
+				}
+			}
+		}
+
+		cost = 100
+		days_remove = 14
+
+		remove_effect = {
+			FROM = {
+				remove_core_of = IRS
+				remove_dynamic_modifier = { modifier = irs_consumed_state }
+				clr_state_flag = irs_state_consumed
+				add_core_of = KNX
+				add_dynamic_modifier = { modifier = knx_consumed_state }
+				set_state_flag = knx_state_consumed
+			}
+		}
+
+		ai_will_do = {
+			base = 80
+		}
+	}
+
+	knx_override_iris_state = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = KNX
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				has_dynamic_modifier = { modifier = irs_consumed_state }
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+			}
+		}
+
+		target_root_trigger = {
+			tag = KNX
+			any_owned_state = {
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				has_dynamic_modifier = { modifier = irs_consumed_state }
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = KNX
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				has_dynamic_modifier = { modifier = irs_consumed_state }
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+			}
+		}
+
+		visible = {
+			tag = KNX
+		}
+
+		available = {
+			tag = KNX
+			FROM = {
+				is_owned_by = KNX
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = greater_than
+				}
+				has_dynamic_modifier = { modifier = irs_consumed_state }
+				NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					NOT = { is_owned_by = KNX }
+					NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+					check_variable = {
+						var = iris_infestation_level
+						value = 50
+						compare = less_than
+					}
+				}
+			}
+		}
+
+		cost = 200
+		days_remove = 28
+
+		remove_effect = {
+			FROM = {
+				remove_core_of = IRS
+				remove_dynamic_modifier = { modifier = irs_consumed_state }
+				clr_state_flag = irs_state_consumed
+				add_core_of = KNX
+				add_dynamic_modifier = { modifier = knx_consumed_state }
+				set_state_flag = knx_state_consumed
+			}
+		}
+
+		ai_will_do = {
+			base = 80
+		}
+	}
+}
+
+knx_nexus_relocation = {
+	knx_relocate_nexus = {
+		icon = GFX_decision_generic_political_discourse
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = KNX
+				has_state_flag = knx_state_consumed
+				NOT = { is_capital = yes }
+			}
+		}
+
+		target_root_trigger = {
+			tag = KNX
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = KNX
+				has_state_flag = knx_state_consumed
+				NOT = { is_capital = yes }
+			}
+		}
+
+		visible = {
+			tag = KNX
+		}
+
+		available = {
+			tag = KNX
+			FROM = {
+				is_owned_by = KNX
+				has_state_flag = knx_state_consumed
+				NOT = { is_capital = yes }
+			}
+		}
+
+		fire_only_once = no
+		days_re_enable = 90
+		cost = 150
+
+		complete_effect = {
+			set_capital = { state = FROM }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

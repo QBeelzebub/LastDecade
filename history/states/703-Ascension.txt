@@ -1,0 +1,28 @@
+state={
+	id=703
+	name="STATE_703"
+	manpower=10000000
+	buildings_max_level_factor = 10
+	state_category = tiny_island
+	history= {
+		owner = IRS
+		add_core_of = IRS
+		buildings = {
+			anti_air_building = 5
+		}
+		victory_points = {
+			13013 5000
+		}
+		set_state_flag = IRS_ascension_nexus
+		strategic_state_location = {
+			favorable_approach = 13013
+		}
+	}
+
+	provinces={
+		13013
+	}
+	impassable = yes
+
+	local_supplies=0.0
+}

@@ -1,0 +1,141 @@
+music_station = "srp"
+
+music = {
+	song = "the_call"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "prey"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "parasite"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "relentless"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "unsteady"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "coagulation"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "adaptation"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "from_below"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "insanity"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "irreversible"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "chants_of_the_beckons"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "grounded"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "tying_veins"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "hive_mind"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "anguish"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "restless"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "dominion"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "fathomless"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "sorrow"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "serenity"
+	chance = {
+		factor = 1
+	}
+}

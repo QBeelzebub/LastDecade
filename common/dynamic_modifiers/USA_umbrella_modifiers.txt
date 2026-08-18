@@ -1,0 +1,53 @@
+USA_armed_forces = {
+	icon = "GFX_idea_generic_army_war_college"
+	army_attack_factor = USA_mil_army_attack_factor
+	army_defence_factor = USA_mil_army_defence_factor
+	army_morale_factor = USA_mil_army_morale_factor
+	army_org_factor = USA_mil_army_org_factor
+	consumer_goods_factor = USA_mil_consumer_goods_factor
+	equipment_capture_factor = USA_mil_equipment_capture_factor
+	experience_gain_army_factor = USA_mil_experience_gain_army_factor
+	mobilization_speed = USA_mil_mobilization_speed
+	supply_consumption_factor = USA_mil_supply_consumption_factor
+}
+
+USA_industrial_might = {
+	icon = "GFX_idea_generic_improved_industries"
+	consumer_goods_factor = USA_ind_consumer_goods_factor
+	industrial_capacity_factory = USA_ind_industrial_capacity_factory
+	line_change_production_efficiency_factor = USA_ind_line_change_production_efficiency_factor
+	local_resources_oil_factor = USA_ind_local_resources_oil_factor
+	nuclear_production_factor = USA_ind_nuclear_production_factor
+	production_speed_arms_factory_factor = USA_ind_production_speed_arms_factory_factor
+	production_speed_buildings_factor = USA_ind_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = USA_ind_production_speed_industrial_complex_factor
+	production_speed_srp_fissile_extractor_factor = USA_ind_production_speed_srp_fissile_extractor_factor
+	research_speed_factor = USA_ind_research_speed_factor
+	war_support_factor = USA_ind_war_support_factor
+}
+
+USA_domestic_order = {
+	icon = "GFX_idea_generic_political_support"
+	political_power_gain = USA_dom_political_power_gain
+	production_speed_buildings_factor = USA_dom_production_speed_buildings_factor
+	research_speed_factor = USA_dom_research_speed_factor
+	resistance_growth = USA_dom_resistance_growth
+	stability_factor = USA_dom_stability_factor
+	trade_opinion_factor = USA_dom_trade_opinion_factor
+	war_support_factor = USA_dom_war_support_factor
+}
+
+USA_hemispheric_posture = {
+	icon = "GFX_idea_generic_flexible_foreign_policy"
+	army_org_factor = USA_for_army_org_factor
+	political_power_gain = USA_for_political_power_gain
+	research_speed_factor = USA_for_research_speed_factor
+	war_support_factor = USA_for_war_support_factor
+}
+
+USA_technical_directorate = {
+	icon = "GFX_idea_generic_research_bonus"
+	experience_gain_army_factor = USA_res_experience_gain_army_factor
+	intel_network_gain_factor = USA_res_intel_network_gain_factor
+	research_speed_factor = USA_res_research_speed_factor
+}

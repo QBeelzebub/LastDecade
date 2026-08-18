@@ -1,0 +1,52 @@
+capital = 64
+set_research_slots = 3
+recruit_character = GER_Restoration_Council
+
+create_corps_commander = {
+	name = "Friedrich Wagner"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Klaus Müller"
+	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Erika Schmidt"
+	gfx = "GFX_Portrait_Europe_Generic_navy_1"
+	traits = { navy_career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2023.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 75
+	neutrality = 25
+}
+starting_train_buffer = 2
+set_technology = {
+    ld_civilian_train = 1
+    ld_military_train = 1
+}

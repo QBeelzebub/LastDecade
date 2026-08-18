@@ -1,0 +1,294 @@
+on_actions = {
+    on_daily_IRS = {
+        effect = {
+
+            if = {
+                limit = {
+                    16 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_paris_25 }
+                }
+                set_country_flag = IRS_milestone_paris_25
+                news_event = { id = world.2 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    16 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_paris_50 }
+                }
+                set_country_flag = IRS_milestone_paris_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.3 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    16 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_paris_75 }
+                }
+                set_country_flag = IRS_milestone_paris_75
+                news_event = { id = world.4 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+            if = {
+                limit = {
+                    126 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_london_25 }
+                }
+                set_country_flag = IRS_milestone_london_25
+                news_event = { id = world.5 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    126 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_london_50 }
+                }
+                set_country_flag = IRS_milestone_london_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.6 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    126 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_london_75 }
+                }
+                set_country_flag = IRS_milestone_london_75
+                news_event = { id = world.7 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+            if = {
+                limit = {
+                    64 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_berlin_25 }
+                }
+                set_country_flag = IRS_milestone_berlin_25
+                news_event = { id = world.8 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    64 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_berlin_50 }
+                }
+                set_country_flag = IRS_milestone_berlin_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.9 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    64 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_berlin_75 }
+                }
+                set_country_flag = IRS_milestone_berlin_75
+                news_event = { id = world.10 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+            if = {
+                limit = {
+                    219 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_moscow_25 }
+                }
+                set_country_flag = IRS_milestone_moscow_25
+                news_event = { id = world.11 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    219 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_moscow_50 }
+                }
+                set_country_flag = IRS_milestone_moscow_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.12 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    219 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_moscow_75 }
+                }
+                set_country_flag = IRS_milestone_moscow_75
+                news_event = { id = world.13 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+            if = {
+                limit = {
+                    282 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_tokyo_25 }
+                }
+                set_country_flag = IRS_milestone_tokyo_25
+                news_event = { id = world.14 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    282 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_tokyo_50 }
+                }
+                set_country_flag = IRS_milestone_tokyo_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.15 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    282 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_tokyo_75 }
+                }
+                set_country_flag = IRS_milestone_tokyo_75
+                news_event = { id = world.16 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+            if = {
+                limit = {
+                    358 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_newyork_25 }
+                }
+                set_country_flag = IRS_milestone_newyork_25
+                news_event = { id = world.17 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    358 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_newyork_50 }
+                }
+                set_country_flag = IRS_milestone_newyork_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.18 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    358 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_newyork_75 }
+                }
+                set_country_flag = IRS_milestone_newyork_75
+                news_event = { id = world.19 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+            if = {
+                limit = {
+                    608 = { check_variable = { iris_infestation_level > 24 } }
+                    NOT = { has_country_flag = IRS_milestone_beijing_25 }
+                }
+                set_country_flag = IRS_milestone_beijing_25
+                news_event = { id = world.20 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 50 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    608 = { check_variable = { iris_infestation_level > 49 } }
+                    NOT = { has_country_flag = IRS_milestone_beijing_50 }
+                }
+                set_country_flag = IRS_milestone_beijing_50
+                add_to_variable = { var = IRS_milestone_50_count value = 1 }
+                news_event = { id = world.21 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 100 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    608 = { check_variable = { iris_infestation_level > 74 } }
+                    NOT = { has_country_flag = IRS_milestone_beijing_75 }
+                }
+                set_country_flag = IRS_milestone_beijing_75
+                news_event = { id = world.22 days = 1 }
+                every_country = {
+                    limit = { NOT = { is_full_parasite = yes } }
+                    add_to_variable = { var = public_panic value = 150 }
+                    SRP_recalculate_public_panic_effect = yes
+                }
+            }
+
+        }
+    }
+}

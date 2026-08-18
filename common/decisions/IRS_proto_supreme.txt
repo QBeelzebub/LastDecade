@@ -1,0 +1,66 @@
+proto_supreme_raid_decisions = {
+
+	raid_proto_supreme = {
+		icon = GFX_decision_generic_army_attack
+
+		state_target = yes
+		targets = { 529 }
+		target_trigger = {
+			FROM = { has_state_flag = proto_supreme_site }
+		}
+
+		allowed = {
+			NOT = { is_parasite_nation = yes }
+		}
+
+		visible = {
+			NOT = { is_parasite_nation = yes }
+		}
+
+		available = {
+			num_of_nukes > 1
+			has_equipment = { srp_strategic_bomber_airframe > 19 }
+			has_equipment = { srp_fighter_airframe > 39 }
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 300
+
+		complete_effect = {
+			add_nuclear_bombs = -2
+			add_equipment_to_stockpile = { type = srp_strategic_bomber_airframe amount = -20 }
+			add_equipment_to_stockpile = { type = srp_fighter_airframe amount = -40 }
+
+			FROM = {
+				random_list = {
+					10 = {
+						modifier = { add = -3 check_variable = { global.srp_crisis_intensity > 1 } }
+						modifier = { add = 10 check_variable = { proto_supreme_raid_attempts > 0 } }
+						modifier = { add = 10 check_variable = { proto_supreme_raid_attempts > 1 } }
+						modifier = { add = 15 check_variable = { proto_supreme_raid_attempts > 2 } }
+						modifier = { add = 20 check_variable = { proto_supreme_raid_attempts > 3 } }
+						modifier = { add = 30 check_variable = { proto_supreme_raid_attempts > 4 } }
+
+						proto_supreme_destroy_site = yes
+						subtract_from_variable = { global.proto_supreme_count = 1 }
+						ROOT = {
+							proto_supreme_refresh_global_debuff = yes
+							country_event = { id = proto_supreme.4 }
+						}
+						IRS = {
+							add_ideas = proto_supreme_setback
+							country_event = { id = proto_supreme.5 days = 180 }
+						}
+					}
+					90 = {
+						add_to_variable = { proto_supreme_raid_attempts = 1 }
+						ROOT = { country_event = { id = proto_supreme.3 } }
+					}
+				}
+			}
+		}
+
+		ai_will_do = { base = 50 }
+	}
+}

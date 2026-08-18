@@ -1,0 +1,240 @@
+technologies = {
+
+	parasite_industry_basics = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 1.0
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		path = {
+			leads_to_tech = biological_construction_methods
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = biomass_processing
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = parasite_production_efficiency
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	biological_construction_methods = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 1.5
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		production_speed_buildings_factor = 0.05
+
+		path = {
+			leads_to_tech = advanced_biological_construction
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	advanced_biological_construction = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 2.0
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		production_speed_buildings_factor = 0.10
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 4 y = 0 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	biomass_processing = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 1.5
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		local_resources_factor = 0.10
+
+		path = {
+			leads_to_tech = advanced_biomass_synthesis
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	advanced_biomass_synthesis = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 2.0
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		local_resources_factor = 0.10
+
+		path = {
+			leads_to_tech = biomass_pool_expansion
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 4 y = 4 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	biomass_pool_expansion = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 2.5
+		start_year = 2025
+		force_use_small_tech_layout = yes
+
+		production_speed_biomass_pool_factor = 0.15
+		local_resources_factor = 0.10
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 6 y = 4 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	parasite_production_efficiency = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 1.5
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		production_factory_efficiency_gain_factor = 0.05
+
+		path = {
+			leads_to_tech = nexus_industrial_coordination
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	nexus_industrial_coordination = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 2.0
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+
+		enable_building = {
+			building = srp_genome_archive
+			level = 3
+		}
+
+		folder = {
+			name = parasite_industry_folder
+			position = { x = 4 y = 8 }
+		}
+
+		categories = {
+			srp_parasite_industry
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+}

@@ -1,0 +1,246 @@
+ideas = {
+	country = {
+		KNX_anomalous_infestation = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				defence = 0.10
+				decryption_factor = 0.10
+			}
+		}
+
+		KNX_transactional_logic = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+
+		KNX_civilization_project = {
+			picture = idea_MAN
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		KNX_dug_in_homeland = {
+			picture = idea_MAN
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.25
+				land_reinforce_rate = 0.06
+				max_dig_in = 5
+				production_speed_buildings_factor = 0.15
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.20
+			}
+		}
+
+		KNX_dispatcher_inheritance_ns = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain = 0.10
+				decryption_factor = 0.10
+			}
+		}
+
+		KNX_perimeter_reading = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_intel_factor = 0.05
+				civilian_intel_factor = 0.05
+			}
+		}
+
+		KNX_hive_construction_phase_1_ns = {
+			picture = idea_MAN
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.20
+			}
+		}
+
+		KNX_us_invisibility = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.10
+				resistance_growth = -0.05
+			}
+		}
+
+		EFH_knox_intelligence_summary = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+
+		USA_knox_exclusion_zone = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.02
+				decryption_factor = -0.05
+			}
+		}
+
+		KNX_loyal_strain_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				army_attack_factor = 0.05
+			}
+		}
+
+		KNX_loyal_strain_matured_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.04
+				army_org_regain = 0.05
+			}
+		}
+
+		KNX_personal_guard_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.08
+			}
+		}
+
+		KNX_brood_expansion_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 500
+				army_org_factor = 0.05
+			}
+		}
+
+		KNX_hive_phase_2_ns = {
+			picture = idea_MAN
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		KNX_food_sovereignty_ns = {
+			picture = idea_MAN
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		KNX_appalachian_claim_ns = {
+			picture = idea_MAN
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		KNX_first_accord_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		KNX_ef_formal_recognition_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		EFH_knx_partner_ns = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				army_attack_factor = 0.03
+			}
+		}
+
+		EFH_knx_resource_exchange = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		EFH_knx_deep_intelligence = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+
+		EFH_knx_hyperbiology_exchange = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		EFH_knx_strain_data = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+	}
+}

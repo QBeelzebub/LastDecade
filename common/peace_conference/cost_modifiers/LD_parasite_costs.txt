@@ -1,0 +1,15 @@
+peace_action_modifiers = {
+
+	ld_puppet_parasite_impossible = {
+		peace_action_type = puppet
+
+		enable = {
+			FROM.FROM = {
+				is_full_parasite = yes
+			}
+		}
+
+		cost_multiplier = 999
+	}
+
+}

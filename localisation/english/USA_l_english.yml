@@ -1,0 +1,650 @@
+﻿l_english:
+
+ USA_continental_sovereignty: "Continental Sovereignty"
+ USA_continental_sovereignty_desc: "A new decade is upon us. But that doesn't mean we need a new approach."
+
+ USA_summit_skepticism: "Summit Skepticism"
+ USA_summit_skepticism_desc: "The European Federation wants a summit. Washington will attend with files prepared, language checked, and very little faith that Europe is negotiating in good faith."
+
+ USA_summit_acceptance: "Accept the Summit Track"
+ USA_summit_acceptance_desc: "The object in solar orbit is larger than the old rivalry. For now, the United States will pay the political cost of treating the summit as real."
+
+ USA_domestic_stability: "Continuity Directives"
+ USA_domestic_stability_desc: "The public sees a strange sky and competing briefings. The state sees communications protocols, agency responsibilities, and continuity plans that need to keep working."
+
+ USA_cold_war_extension: "Extend the Cold War"
+ USA_cold_war_extension_desc: "The summit has not changed the old facts. Europe remains the central strategic competitor. The new crisis will be handled without abandoning the map that already exists."
+
+ USA_fire_protocol_adoption: "Adopt the Fire Protocol"
+ USA_fire_protocol_adoption_desc: "Early organisms burn. Training circulars are updated, procurement orders are revised, and the first field successes are filed as evidence that the problem is containable."
+
+ USA_incendiary_stockpile_program: "Incendiary Stockpile Program"
+ USA_incendiary_stockpile_program_desc: "Containment doctrine needs material behind it. Fuel, munitions, and field manuals are moved into the same procurement lane before local failures become theater failures."
+
+ USA_continental_incident_reporting: "Continental Incident Reporting"
+ USA_continental_incident_reporting_desc: "Reports from Tennessee and other interior zones are consolidated under domestic security review. The incidents are biological, local, and not yet understood as strategic."
+
+ USA_joint_containment_boards: "Joint Containment Boards"
+ USA_joint_containment_boards_desc: "The agencies disagree on terms, jurisdiction, and risk. The board exists so the disagreement at least happens in the same room."
+
+ USA_canadian_theater_pre_positioning: "Canadian Theater Pre-Positioning"
+ USA_canadian_theater_pre_positioning_desc: "Supplies, airframes, and ready formations move north under defensive language. If the frontier becomes active, the United States will not arrive late."
+
+ USA_northern_logistics_command: "Northern Logistics Command"
+ USA_northern_logistics_command_desc: "The northern routes are mapped, staffed, and stocked before anyone admits how likely it is that they will be used."
+
+ USA_canadian_theater_future_tt: "Hardens American planning for the future Canadian theater."
+ USA_anomalous_infestation_tt: "Begins tracking interior biological incidents as anomalous local infestations. This does not identify their source."
+ USA_canadian_theater_preposition_tt: "Pre-positions American forces for a future Canadian theater conflict."
+
+ USA_victor_harlan_desc: "Rose through state governorship on a platform of security and order. His response to the parasite outbreak was effective. His response to the political opposition was also effective."
+
+ USA_rosa_delgado_desc: "Labor organizer from Chicago who spent twenty years arguing that the system would break under its own weight. She is currently watching it break under its own weight."
+
+ USA_james_thornton_desc: "A retired senator who believes the United States has spent a century fighting other people's wars. He may be right. He is certainly consistent."
+
+ USA_janet_yellen: "Janet Yellen"
+ USA_janet_yellen_desc: "Former Fed chair, former Treasury Secretary. Has managed more crises than most economists have modeled. Runs on coffee and institutional memory."
+
+ USA_kamala_harris: "Kamala Harris"
+ USA_kamala_harris_desc: "Vice President. Comfortable in front of a camera and in a room where nobody wants her there. Both skills have proven useful."
+
+ USA_nancy_pelosi: "Nancy Pelosi"
+ USA_nancy_pelosi_desc: "Knows where every vote is, who owes what, and how long they have to decide. The most dangerous person in any building she walks into is usually her."
+
+ USA_pete_buttigieg: "Pete Buttigieg"
+ USA_pete_buttigieg_desc: "Former mayor, former presidential candidate, Secretary of Transportation. Makes complex policy sound reasonable and unreasonable policy sound inevitable. Has not yet decided if this is a talent or a problem."
+
+ USA_marco_rubio: "Marco Rubio"
+ USA_marco_rubio_desc: "Has spent his career arguing that America's adversaries are the main threat to American stability. The parasite outbreak has not changed this view. He has adapted it."
+
+ USA_elon_musk: "Elon Musk"
+ USA_elon_musk_desc: "Runs more companies than any one person should. In a crisis, industrial scale matters more than anyone wants to admit, which is the only reason anyone returns his calls."
+
+ USA_bernie_sanders: "Bernie Sanders"
+ USA_bernie_sanders_desc: "Has been saying the same things for fifty years. Most of them turned out to be correct. He finds no comfort in this."
+
+ USA_john_bolton: "John Bolton"
+ USA_john_bolton_desc: "Believes that most problems have a military solution and the rest have a more aggressive military solution. Has been wrong about some things. Has not updated his priors."
+
+ USA_lloyd_austin: "Lloyd Austin"
+ USA_lloyd_austin_desc: "Secretary of Defense. Spent thirty years running operations and now runs budgets. The transition has not softened his view of what it takes to field an army."
+
+ USA_mark_milley: "Mark Milley"
+ USA_mark_milley_desc: "Chairman of the Joint Chiefs. Has briefed four presidents on things none of them wanted to hear. Believes a military that cannot adapt its doctrine mid-war has already lost."
+
+ USA_cq_brown: "CQ Brown"
+ USA_cq_brown_desc: "Air Force Chief of Staff. Came up as a fighter pilot and never lost the pilot's habit of thinking about the terrain under him. His air doctrine accounts for a world where the ground is contested."
+
+ USA_michael_gilday: "Michael Gilday"
+ USA_michael_gilday_desc: "Chief of Naval Operations. The Navy is the branch that fights the longest fights in the loneliest places. He has not forgotten this."
+
+ USA_paul_lacamera: "Paul LaCamera"
+ USA_paul_lacamera_desc: "Has spent his career in the Pacific and the Middle East, usually in the places where the situation was described as manageable. He specializes in making it so."
+
+ USA_christopher_cavoli: "Christopher Cavoli"
+ USA_christopher_cavoli_desc: "SACEUR. Runs the alliance's eastern flank and has been doing so since before the outbreak made it urgent. His troop rotation schedules are works of logistical art."
+
+ USA_michael_kurilla: "Michael Kurilla"
+ USA_michael_kurilla_desc: "CENTCOM commander. His theater is the most complicated on the planet and has been for thirty years. The parasites made it more complicated. He adjusted."
+
+ USA_james_foggo: "James Foggo"
+ USA_james_foggo_desc: "Former NAVEUR commander. Spent his career thinking about what happens when an adversary controls the sea lanes you assumed were yours. Now the adversary is something else entirely."
+
+ USA_daryl_caudle: "Daryl Caudle"
+ USA_daryl_caudle_desc: "SUBLANT commander. Submarines are the force that shapes a conflict before anyone admits a conflict has started. He has made this argument to every committee that will listen."
+
+ USA_david_allvin: "David Allvin"
+ USA_david_allvin_desc: "Air Force Chief of Staff. His doctrine integrates air power into ground operations earlier and more completely than any of his predecessors. The parasite front is testing every assumption in it."
+
+ USA_james_hecker: "James Hecker"
+ USA_james_hecker_desc: "USAFE commander. Operates over terrain that changes hands faster than maps can be printed. His pilots train for conditions that doctrine said were impossible."
+
+ USA_james_mcconville: "James McConville"
+ USA_james_mcconville_desc: "Army Chief of Staff. Has spent years making the argument that infantry is not obsolete. The parasite war is the last argument he will ever need to make."
+
+ USA_austin_scott_miller: "Austin Scott Miller"
+ USA_austin_scott_miller_desc: "Ran US forces in Afghanistan longer than anyone expected anyone to. Learned things about armored operations in asymmetric terrain that are not in any manual."
+
+ USA_john_richardson: "John Richardson"
+ USA_john_richardson_desc: "Former CNO. Spent his career in submarines, which means he spent his career thinking about what the enemy does not know. He has not stopped thinking about it."
+
+ USA_kenneth_wilsbach: "Kenneth Wilsbach"
+ USA_kenneth_wilsbach_desc: "PACAF commander. Runs air operations across the largest theater on earth with the fewest forward bases. For him economy of force is a daily constraint."
+
+ USA_lockheed_f35_wing_upgrade: "F-35 Low-Observable Wing"
+
+ USA_lockheed_f35_lo_wing: "F-35 Low-Observable Wing"
+ USA_lockheed_f35_lo_wing_desc: "Lockheed Martin's signature stealth-optimized wing. The compound-swept low-observable geometry improves survivability and agility at the cost of a heavier, more expensive airframe."
+
+ USA_lockheed_mio: "Lockheed Martin"
+ USA_lockheed_mio_desc: "The world's largest defense contractor, Lockheed Martin dominates the stealth fighter and multi-role platform markets. Their F-35 program remains the backbone of Western air power."
+ USA_lockheed_initial: "Advanced Composite Fabrication"
+ USA_lockheed_initial_desc: "Shared composite fabrication standards across every Lockheed contract. Reduces baseline production cost and improves reliability."
+ USA_lockheed_root: "Skunk Works Program"
+ USA_lockheed_root_desc: "Lockheed's advanced projects division consolidates its fighter work under a single contract. Early investment improves research throughput and air-superiority performance while lowering unit cost."
+ USA_lockheed_t2a: "Air Superiority Division"
+ USA_lockheed_t2a_desc: "Refinements to flight controls and avionics tighten dogfight performance and survivability for fighter airframes."
+ USA_lockheed_t2b: "Strike Systems Division"
+ USA_lockheed_t2b_desc: "Adapts the multirole platform for the strike role, improving air-to-ground and anti-ship attack."
+ USA_lockheed_t3a: "Stealth Integration"
+ USA_lockheed_t3a_desc: "Low-observable shaping and sensor fusion sharpen the air-superiority edge, improving both engagement and agility."
+ USA_lockheed_t3c: "Airframe Efficiency Program"
+ USA_lockheed_t3c_desc: "Production-line refinements cut airframe cost, raise reliability, and accelerate factory efficiency gains."
+ USA_lockheed_t3b: "Precision Strike Package"
+ USA_lockheed_t3b_desc: "Precision munitions integration and extended reach for deep strike, improving ground attack and range."
+ USA_lockheed_t4: "Fifth Generation Integration"
+ USA_lockheed_t4_desc: "Unifies stealth, sensor fusion, and strike capability into a single fifth-generation standard with balanced gains across the air mission set."
+ USA_lockheed_t4b: "F-35 Full Rate Production"
+ USA_lockheed_t4b_desc: "Full-rate F-35 manufacturing raises sustained output and improves range, reliability, and speed across the fleet."
+
+ USA_boeing_mio: "Boeing Defense & Space"
+ USA_boeing_mio_desc: "Boeing's defense division fields the full spectrum of large airframes, from tactical strike platforms to long-range patrol aircraft. Nobody else can build large airframes at that rate, and everybody's logistics plan assumes they will."
+ USA_boeing_initial: "Modular Airframe Standards"
+ USA_boeing_initial_desc: "Common modular standards across Boeing's large airframes. Reduces production cost and improves reliability."
+ USA_boeing_root: "Integrated Defense Systems"
+ USA_boeing_root_desc: "Boeing's defense division consolidates its large-platform work, improving research throughput and bombing baseline while lowering unit cost."
+ USA_boeing_t2a: "Tactical Strike Division"
+ USA_boeing_t2a_desc: "Optimizes large airframes for the tactical strike role, improving ground attack and bombing."
+ USA_boeing_t2b: "Extended Range Operations"
+ USA_boeing_t2b_desc: "Long-endurance airframes for sustained patrol and strike, improving range and reliability."
+ USA_boeing_t3a: "Strategic Bombing Doctrine"
+ USA_boeing_t3a_desc: "Heavy-payload doctrine maximizes area bombing, with a secondary gain to ground attack."
+ USA_boeing_t3b: "Maritime Patrol & Strike"
+ USA_boeing_t3b_desc: "Maritime patrol airframes equipped for anti-ship work over long distances, improving naval strike and range."
+ USA_boeing_t4: "Integrated Air Power Platform"
+ USA_boeing_t4_desc: "Combines strike, range, and maritime capability into a single platform standard, with a higher production efficiency ceiling."
+
+ USA_northrop_mio: "Northrop Grumman"
+ USA_northrop_mio_desc: "Northrop Grumman's dominance in stealth strategic bomber development makes them the cornerstone of America's nuclear and deep-strike deterrence posture."
+ USA_northrop_initial: "Low-Observable Fabrication"
+ USA_northrop_initial_desc: "Stealth fabrication methods applied across the bomber line. Improves bombing baseline and reduces production cost."
+ USA_northrop_root: "Global Strike Architecture"
+ USA_northrop_root_desc: "Northrop's deep-strike program improves research throughput and bombing baseline while lowering airframe cost."
+ USA_northrop_t2a: "Stealth Penetration Systems"
+ USA_northrop_t2a_desc: "Low-observable systems for survivable deep penetration, improving defense and range."
+ USA_northrop_t2b: "Strategic Payload Capacity"
+ USA_northrop_t2b_desc: "Heavier ordnance loads and faster transit, improving bombing and top speed."
+ USA_northrop_t3a: "B-21 Raider Program"
+ USA_northrop_t3a_desc: "Next-generation stealth bomber with intercontinental reach and high survivability, improving range and defense."
+ USA_northrop_t3b: "Penetrating Strike Doctrine"
+ USA_northrop_t3b_desc: "Doctrine for high-confidence strikes deep in contested airspace, improving bombing and reliability."
+ USA_northrop_t4: "Global Strike Command Integration"
+ USA_northrop_t4_desc: "Networks the strategic bomber fleet for global reach, with balanced gains and a higher production efficiency ceiling."
+
+ USA_raytheon_mio: "Raytheon Technologies"
+ USA_raytheon_mio_desc: "Raytheon Technologies is the premier supplier of air defense systems, guided munitions, and precision anti-armour weapons. The Patriot battery and Javelin missile are their signature products."
+ USA_raytheon_initial: "Precision Manufacturing Standards"
+ USA_raytheon_initial_desc: "Precision manufacturing standards across the munitions line reduce production cost."
+ USA_raytheon_root: "Fire Control Technology"
+ USA_raytheon_root_desc: "Raytheon's targeting backbone improves research throughput and reliability while lowering production cost."
+ USA_raytheon_t2a: "Air Defense Systems"
+ USA_raytheon_t2a_desc: "Ground-based air defense batteries, improving anti-air attack and defensive performance."
+ USA_raytheon_t2b: "Precision Guided Munitions"
+ USA_raytheon_t2b_desc: "Guided anti-armour munitions, improving armour penetration and hard attack."
+ USA_raytheon_t3a: "Patriot Battery Upgrade"
+ USA_raytheon_t3a_desc: "Upgraded interceptor batteries for high-altitude defense, improving anti-air attack and reliability."
+ USA_raytheon_t3b: "Javelin Program"
+ USA_raytheon_t3b_desc: "Fire-and-forget top-attack anti-armour missiles, improving penetration, defense, and breakthrough."
+ USA_raytheon_t4: "Integrated Fire Control Network"
+ USA_raytheon_t4_desc: "Networks air defense and precision fires under unified control, with balanced gains and a higher production efficiency ceiling."
+
+ USA_general_dynamics_mio: "General Dynamics Land Systems"
+ USA_general_dynamics_mio_desc: "General Dynamics Land Systems is the manufacturer of the M1 Abrams and the Bradley fighting vehicle. Their ground platform research drives the cutting edge of American armoured warfare."
+ USA_general_dynamics_initial: "Abrams Production Baseline"
+ USA_general_dynamics_initial_desc: "Established Abrams tooling and supply lines reduce armour production cost."
+ USA_general_dynamics_root: "Platform Integration Division"
+ USA_general_dynamics_root_desc: "Ground platform integration improves research throughput and reliability while lowering production cost."
+ USA_general_dynamics_t2a: "Abrams Armor Initiative"
+ USA_general_dynamics_t2a_desc: "Heavy frontal protection for main battle tanks, improving armour and defense."
+ USA_general_dynamics_t2b: "Powertrain & Mobility"
+ USA_general_dynamics_t2b_desc: "Improved drivetrain for mobility and exploitation, raising speed and breakthrough."
+ USA_general_dynamics_t3a: "Composite Armor Program"
+ USA_general_dynamics_t3a_desc: "Layered composite protection, improving armour, defense, and hardness."
+ USA_general_dynamics_t3b: "High-Velocity Gun System"
+ USA_general_dynamics_t3b_desc: "High-velocity main gun for anti-armour work, improving hard attack, penetration, and breakthrough."
+ USA_general_dynamics_t4: "M1A3 Platform Integration"
+ USA_general_dynamics_t4_desc: "Integrates protection, firepower, and mobility into a single MBT standard, with a higher production efficiency ceiling."
+
+ USA_hii_mio: "Huntington Ingalls Industries"
+ USA_hii_mio_desc: "Huntington Ingalls is America's largest military shipbuilder, responsible for every nuclear-powered carrier and the majority of its attack submarines. Their Newport News and Ingalls yards are irreplaceable."
+ USA_hii_initial: "Modular Naval Construction"
+ USA_hii_initial_desc: "Modular shipbuilding techniques improve hull reliability across the yards."
+ USA_hii_root: "Naval Architecture Division"
+ USA_hii_root_desc: "HII's design backbone improves research throughput, hull reliability, and speed while lowering construction cost."
+ USA_hii_t2a: "Carrier Strike Group Development"
+ USA_hii_t2a_desc: "Durable, fast surface combatants and carriers, improving hull strength and speed."
+ USA_hii_t2b: "Submarine Warfare Program"
+ USA_hii_t2b_desc: "Quieter, more reliable attack submarines, lowering surfaced visibility and improving reliability."
+ USA_hii_t3a: "Ford-Class Carrier Integration"
+ USA_hii_t3a_desc: "Next-generation supercarrier with stronger hulls and integral air defense, improving strength, anti-air, and speed."
+ USA_hii_t3b: "Virginia-Class Submarine"
+ USA_hii_t3b_desc: "Stealthy attack submarines with heavy torpedo armament, lowering visibility and improving torpedo attack."
+ USA_hii_t4: "Naval Supremacy Platform"
+ USA_hii_t4_desc: "A fleet-wide standard combining survivability, reliability, and speed, with a higher production efficiency ceiling."
+
+ USA_public_trust: "Public Trust"
+ USA_government_distrust_side: "Government Distrust"
+ USA_public_confidence_side: "Public Confidence"
+
+ USA_trust_neutral_range: "Strained Normal"
+ USA_trust_strain_range: "Growing Skepticism"
+ USA_trust_crisis_range: "Crisis of Legitimacy"
+ USA_trust_collapse_range: "Government in Freefall"
+ USA_trust_stable_range: "Stable Ground"
+ USA_trust_confident_range: "Public Confidence"
+ USA_trust_national_unity_range: "National Unity"
+
+ USA_trust_strain_idea: "Growing Skepticism"
+ USA_trust_strain_idea_desc: "Public confidence in the federal government is slipping. Missteps and mixed messaging have left citizens uncertain about who is in charge."
+
+ USA_trust_crisis_idea: "Crisis of Legitimacy"
+ USA_trust_crisis_idea_desc: "A significant portion of the population no longer trusts federal institutions to manage the parasite crisis. Political gridlock and visible failures have taken their toll."
+
+ USA_trust_collapse_idea: "Government in Freefall"
+ USA_trust_collapse_idea_desc: "Federal authority has effectively collapsed. The government cannot enforce policy, raise armies, or direct resources without open defiance from states and citizens alike."
+
+ USA_trust_stable_idea: "Stable Ground"
+ USA_trust_stable_idea_desc: "The public broadly accepts federal leadership, if not enthusiastically. Enough trust remains to keep institutions functional."
+
+ USA_trust_confident_idea: "Public Confidence"
+ USA_trust_confident_idea_desc: "Americans are rallying behind federal leadership. Decisions are being made and enforced. The government is seen as capable of handling the threat."
+
+ USA_trust_national_unity_idea: "National Unity"
+ USA_trust_national_unity_idea_desc: "The country is unified behind its government in a way rarely seen. The parasite threat has dissolved partisan divisions and produced genuine national solidarity."
+
+ USA_public_trust_category: "Public Trust"
+ USA_public_trust_category_desc: "Manage the relationship between the federal government and the American public. Trust is earned through competent crisis response and lost through failure, scandal, or mishandling."
+
+ USA_federal_address: "Address the Nation"
+ USA_federal_address_desc: "Prime time, all networks, twenty minutes. The office still commands the airwaves even when it commands very little else."
+
+ USA_emergency_relief_appropriation: "Emergency Relief Appropriation"
+ USA_emergency_relief_appropriation_desc: "Direct funding to the affected states: housing, food, medical, replacement of what the response destroyed. The money leaves the civilian economy immediately and the public does not notice for a season."
+
+ USA_congressional_oversight: "Submit to Congressional Oversight"
+ USA_congressional_oversight_desc: "Open the files. Testify under oath. Let the committee run as long as it wants and answer what it asks. The administration will lose authority it cannot spare and several careers will not survive the transcript, and it is still the fastest way back from a legitimacy crisis that anyone has found."
+
+ USA_manage_the_reporting: "Manage the Reporting"
+ USA_manage_the_reporting_desc: "Classify the assessments, brief the friendly outlets, and let the casualty figures come out in pieces small enough to absorb. It buys confidence now against a larger correction later, when the full numbers surface and the gap between them and the briefings is the story. Take it if the next two hundred days matter more than the two hundred after that."
+
+ usa.1.t: "The Federal Government Has Lost All Credibility"
+ usa.1.d: "Years of mismanagement, broken promises, and visible failures in the face of the parasite crisis have destroyed what remained of public trust in Washington. Power is already moving out of Washington's hands, and factions within the military, the private sector, and the political fringe are competing to claim it."
+
+ usa.1.a: "Let Harlan restore order."
+ usa.1.b: "The military must take the helm."
+ usa.1.c: "We hold. Whatever it costs."
+
+ USA_fossil_fuel_expansion: "Energy Extraction Act"
+ USA_fossil_fuel_expansion_desc: "The administration signs the Energy Extraction and Independence Act, opening new federal land to oil and gas development and fast-tracking permits for Gulf of Mexico operations."
+
+ USA_wartime_mobilization: "Wartime Mobilization"
+ USA_wartime_mobilization_desc: "The administration puts the economy on a war footing: arms plants run extra shifts and civilian goods take second place. Production soars. The public feels the squeeze."
+
+ USA_civilian_resilience: "Civilian Resilience"
+ USA_civilian_resilience_desc: "Rather than militarize the economy, the administration invests in everyday industrial and civic capacity. Slower to arm, but the public stays confident and the home front stays stable."
+
+ USA_federal_research_grants: "Federal Research Initiative"
+ USA_federal_research_grants_desc: "The National Science Foundation and partner agencies receive expanded funding mandates, with particular emphasis on electronics, computing, and applied sciences."
+
+ USA_darpa_programs: "Advanced Weapons Research"
+ USA_darpa_programs_desc: "DARPA expands its portfolio of armour and vehicle research programs, seeking next-generation capabilities to maintain the American technological edge over peer competitors."
+
+ USA_cyber_dominance: "Cyber Command Expansion"
+ USA_cyber_dominance_desc: "The NSA and US Cyber Command receive expanded authority and resources, accelerating both offensive and defensive digital operations capacity. The infrastructure for information dominance is quietly being built."
+
+ USA_incendiary_doctrine: "Incendiary Systems Investment"
+ USA_incendiary_doctrine_desc: "Army research programs into advanced incendiary munitions and delivery systems receive a significant funding boost, driven by early threat assessments from Africa. Most of the relevant reports are still classified."
+
+ USA_deregulation_act: "Deregulation Act"
+ USA_deregulation_act_desc: "The administration pushes through a sweeping deregulation package, reducing federal oversight of industry, finance, and energy in the name of economic freedom. It is the largest rollback of business regulation in thirty years."
+
+ USA_populist_economics: "Economic Nationalism"
+ USA_populist_economics_desc: "Tariffs, buy-American mandates, and protection for domestic labor. If the populists hold the country, it is exactly what the base wanted. If they do not, Washington reads it as a betrayal of principle."
+
+ USA_market_liberalization: "Market Liberalization"
+ USA_market_liberalization_desc: "Open markets, lower taxes, and minimal interference. If the establishment holds the country, it is sound and expected governance. If it does not, it lands as a gift to the donor class."
+
+ USA_economic_freedom_mandate: "Economic Freedom Mandate"
+ USA_economic_freedom_mandate_desc: "A series of executive orders codify the administration's governing philosophy, cementing deregulation as standing policy and stabilizing the political consensus around it. Washington is, for now, aligned."
+
+ USA_defense_budget_expansion: "Defense Budget Expansion"
+ USA_defense_budget_expansion_desc: "The Pentagon budget receives its largest single-year increase in decades. Exercises increase in frequency and ambition. Contractors begin building ahead of procurement."
+
+ USA_fissile_energy_program: "Fissile Energy Program"
+ USA_fissile_energy_program_desc: "New Mexico and Tennessee host the first purpose-built fissile extraction facilities. The United States' nuclear energy capacity stops being a legacy inheritance and starts being a strategic asset."
+
+ USA_manufacturing_surge: "Manufacturing Surge"
+ USA_manufacturing_surge_desc: "A government-directed production surge drives output across arms manufacturers. The effect is temporary but the infrastructure remains."
+
+ USA_american_century: "The American Century"
+ USA_american_century_desc: "The Cold War with the European Federation never ended, and the United States entered the decade as it entered the last: the strongest power on Earth and certain of it. The administration takes stock of an order it assumes will hold."
+
+ USA_atlantic_vigilance: "Atlantic Vigilance"
+ USA_atlantic_vigilance_desc: "The Federation sits across the Atlantic as it always has: a rival the United States never defeated and never trusted. The standing watch on Europe is renewed, funded, and taken for granted."
+
+ USA_the_european_question: "The European Question"
+ USA_the_european_question_desc: "Washington has never settled what to do about a federated Europe it could not break. The question is reopened, and the answer leans toward strength."
+
+ USA_nuclear_superiority: "Nuclear Superiority"
+ USA_nuclear_superiority_desc: "Make the strategic arsenal the foundation of the standoff. The United States intends to hold a margin over the Federation that leaves no doubt, and to be seen holding it."
+
+ USA_conventional_overmatch: "Conventional Overmatch"
+ USA_conventional_overmatch_desc: "Win the standoff with conventional weight instead of warheads. If the Atlantic rivalry turns hot, the United States means to field the heavier hand."
+
+ USA_containment_posture: "Containment Posture"
+ USA_containment_posture_desc: "Settle into a stable containment of the Federation: pressure short of war, maintained for as long as Washington chooses to maintain it."
+
+ USA_atlantic_intelligence: "Atlantic Intelligence"
+ USA_atlantic_intelligence_desc: "Stand up the intelligence apparatus aimed across the Atlantic. The Federation keeps its secrets well, and Washington intends to keep fewer of its own from being read."
+
+ USA_strategic_readiness: "Strategic Readiness"
+ USA_strategic_readiness_desc: "Raise the readiness of the forces that would carry any Atlantic confrontation, quietly and without the public alarm that would come of saying so plainly."
+
+ USA_cold_war_footing: "Cold War Footing"
+ USA_cold_war_footing_desc: "The United States places itself, deliberately, on a long-war footing toward the Federation. Nobody intends to start it and everybody is now prepared to fight it."
+
+ USA_state_of_the_union: "State of the Union"
+ USA_state_of_the_union_desc: "The annual accounting before Congress and the country: the economy, the armed forces, the rivalry abroad, and the temper of a public that is more restless than the confident speeches admit."
+
+ USA_the_national_mood: "The National Mood"
+ USA_the_national_mood_desc: "Beneath the superpower's confidence the country is arguing with itself about who it is for. The administration can ride that argument or try to settle it."
+
+ USA_populist_surge: "The Populist Surge"
+ USA_populist_surge_desc: "Ride the nationalist-populist wave rising through the country. It fills rallies and hardens resolve, and it brings figures like Harlan closer to the center of power than the establishment finds comfortable."
+
+ USA_establishment_consensus: "The Establishment Consensus"
+ USA_establishment_consensus_desc: "Hold the line with the governing establishment: the institutions, the long professionals, the consensus that has run the republic through the long Cold War. Steady, credible, and increasingly resented."
+
+ USA_govern_the_union: "Govern the Union"
+ USA_govern_the_union_desc: "Whatever the country decided about itself, it must still be governed. The administration takes its mandate and gets on with running a continental republic."
+
+ USA_federal_authority: "Federal Authority"
+ USA_federal_authority_desc: "Consolidate the authority of the federal government over a sprawling and contentious union. The reach of Washington grows, as it always does in a country that believes itself at risk."
+
+ USA_domestic_agenda: "The Domestic Agenda"
+ USA_domestic_agenda_desc: "Turn the administration's attention to the home front: the economy, the states, and the long list of things a confident superpower assumes it has time to fix."
+
+ USA_pentagon_review: "Pentagon Posture Review"
+ USA_pentagon_review_desc: "A full review of the United States military posture. The world's largest defense establishment looks itself over and, predictably, concludes that it needs more."
+
+ USA_defense_appropriations: "Defense Appropriations"
+ USA_defense_appropriations_desc: "The appropriations move through Congress with the usual friction and the usual outcome. The defense budget grows, and the contractors with it."
+
+ USA_procurement_debate: "The Procurement Debate"
+ USA_procurement_debate_desc: "The Pentagon and its contractors divide over what the next decade of American arms should look like: a smaller force built around a technological edge, or the mass industrial base the country has always fallen back on."
+
+ USA_technological_edge: "Technological Edge"
+ USA_technological_edge_desc: "Bet on technology: precision, electronics, and the research establishment that keeps American arms a generation ahead. Fewer systems, each one harder to match."
+
+ USA_arsenal_of_democracy: "Arsenal of Democracy"
+ USA_arsenal_of_democracy_desc: "Bet on mass: the industrial base that out-produced every rival the country ever had. If quality will not decide it, quantity will, and America can still make more of almost everything."
+
+ USA_modern_us_military: "A Modern Military"
+ USA_modern_us_military_desc: "Whichever way the procurement fight broke, the United States brings its land forces up to a modern standard: current doctrine, current equipment, and the command to use them."
+
+ USA_force_projection_command: "Force Projection Command"
+ USA_force_projection_command_desc: "Stand up the command structure for projecting American power wherever Washington decides it is needed, which is, historically, almost everywhere."
+
+ USA_peace_dividend: "The Peace Dividend"
+ USA_peace_dividend_desc: "Decades of cold war without a shot fired across the Atlantic have left the United States rich and its industry pointed at consumption. While the long peace holds, the surplus can be spent on the country itself."
+
+ USA_homeland_exercise_program: "Homeland Exercise Program"
+ USA_homeland_exercise_program_desc: "A season of large domestic exercises: the National Guard, the reserves, and the agencies that would manage a continental emergency none of the planners actually expect. The drills go well. The reports are filed."
+
+ USA_national_war_college: "The War College Class of 2019"
+ USA_national_war_college_desc: "The war colleges turn out the officer generation that will run the next decade. Their coursework assumes the enemy is the European Federation. Most of what they learn will transfer. Some of it will not."
+
+ USA_war_plan_north: "War Plan North"
+ USA_war_plan_north_desc: "The contingency planning staffs complete a full revision of the war plan for a northern conflict with the Federation: Canadian geography, Atlantic approaches, mobilization tables. It is a plan for a war nobody has scheduled. It will not stay theoretical."
+
+ USA_union_on_the_eve: "The Union on the Eve"
+ USA_union_on_the_eve_desc: "However the political argument settled, the republic enters the new decade solvent and governed. The budget for next year assumes the one after it looks the same."
+
+ USA_war_plan_north_spirit: "War Plan North"
+ USA_war_plan_north_spirit_desc: "A standing, current war plan for the northern theater: better organization and an edge against Federation forces."
+
+ USA_groundwork_war_plan_tt: "War Plan North guides the deployment: +25 Army Experience, +3% War Support."
+ USA_groundwork_union_tt: "The union was consolidated before the crisis: +25 Political Power, +2% Stability."
+
+ usa.50.t: "The National Mood"
+ usa.50.d: "The polling tells two stories at once: a public proud of its country's strength and deeply unsure it is being governed for them. The administration reads the same numbers the rivals abroad are reading, and likes them less."
+ usa.50.a: "The country is restless."
+
+ usa.51.t: "The Populist Surge"
+ usa.51.d: "The rallies are larger than the establishment wants to admit, the rhetoric harder, the names rising through them less concerned with the old consensus. The country has found a louder voice. Whether it has found a wiser one is a question for later."
+ usa.51.a: "Let it run."
+
+ usa.52.t: "The Establishment Holds"
+ usa.52.d: "The institutions absorb the shock, as they were built to. The professionals keep their desks, the consensus keeps its grip, and the republic carries on much as before. The resentment stays where it is and waits."
+ usa.52.a: "Steady as she goes."
+
+ usa.53.t: "Nuclear Close Call"
+ usa.53.d: "A flight of bombers misrouted, a radar return misread, an exercise that ran closer to the line than either capital meant it to. The moment passed inside a few hours and was filed away in records the public will never see."
+ usa.53.a: "We blinked first, and lived."
+ usa.53.b: "They blinked. Let them remember it."
+
+ usa.54.t: "The American Century"
+ usa.54.d: "The phrase is older than anyone using it, and the United States says it the way a man says a thing he is no longer quite sure of: loudly. The century was supposed to be American, and by most measures it still is, the largest economy, the longest reach, the deepest certainty that the future is a thing Washington authors and the rest of the world receives. That a federation of old European rivals has quietly grown into a peer is a fact the briefings acknowledge and the speeches do not. The United States enters the decade convinced of its own primacy, which is a strength, and incapable of imagining the loss of it, which is not."
+ usa.54.a: "The century is still ours."
+ usa.55.t: "The Atlantic Vigil"
+ usa.55.d: "Washington names the thing it has spent twenty years not naming: the European Federation is a rival that arrived. The vigil is set across the Atlantic, the analysts reassigned, the assumptions rewritten."
+ usa.55.a: "Watch the old world."
+ usa.56.t: "Overmatch"
+ usa.56.d: "The United States chooses to win the standoff the American way: with more of everything. More divisions, more tonnage, more of the industrial weight that won the last great war and is assumed, without much examination, to win the next. The war it rehearses is the war it expects."
+ usa.56.a: "Out-build them all."
+ usa.57.t: "Cold War Footing"
+ usa.57.d: "The United States settles into the long confrontation with the satisfaction of a country that knows how to do this. Cold war is familiar ground, almost comfortable, a known game with known moves against a rival who can be out-spent and out-waited. The footing is sure. The only thing it does not account for is that the next great threat to the American century will not arrive across the Atlantic, will not negotiate, and will not be impressed by the size of the arsenal pointed the wrong way."
+ usa.57.a: "We know this game."
+
+ usa.58.t: "The Union Governs"
+ usa.58.d: "Whichever way the national mood broke, someone now has to run the country, and the United States discovers again that governing is harder than winning. The coalition holds, the appropriations pass, the cable channels keep score. It is a republic doing the loud, slow, contentious work it was built for. The machine is messy and it is running."
+ usa.58.a: "Make the system work."
+ usa.59.t: "The Union on the Eve"
+ usa.59.d: "The domestic settlement is as firm as American politics ever gets, which is to say firm enough and not a day longer. The country is prosperous, armed, and sure of itself, and underneath the confidence runs a current no one campaigns on: the sense that the long American holiday from existential threat is ending, and that the threat, when it comes, will not be the one the country spent two decades arming against. The eve is quiet. The United States mistakes quiet for safety, as it has before."
+ usa.59.a: "We are ready for anything."
+ usa.60.t: "The Procurement Debate"
+ usa.60.d: "The Pentagon argues, as it always does, between the silicon and the steel: the high-technology edge that wins on capability against the mass industrial arsenal that wins on weight. It is a good argument between two correct answers, and the United States can afford to be wrong about it in a way few nations can. What no one in the room argues for is the thing the decade will actually demand, because no requirements document has ever been written for an enemy that grows."
+ usa.60.a: "Buy the future we expect."
+ usa.61.t: "Force Projection"
+ usa.61.d: "The reforms converge into the instrument the United States has perfected over a century: a military that can put decisive force anywhere on Earth on short notice. It is genuinely magnificent, the most capable expeditionary force the world has ever seen, and it is built around a single unexamined assumption, that the enemy will be somewhere else, reachable, and willing to be found. The decade is preparing to violate all three."
+ usa.61.a: "Reach anywhere, win anywhere."
+ usa.62.t: "The National War College"
+ usa.62.d: "The country's finest military minds are gathered to think hardest about the next war, and they think about it with brilliance and rigor and a quiet, total certainty about who the enemy will be. Every wargame has a European flag on the other side. Every scenario assumes a thinking adversary that can be deterred, negotiated with, or defeated. The curriculum is excellent. It is also, in a way no one in the building can yet see, an education in exactly the wrong war."
+ usa.62.a: "Teach the next war."
+ usa.63.t: "War Plan North"
+ usa.63.d: "The plan is drawn for the war Washington considers most likely: a continental campaign northward, against the Federation's reach into the Americas, fought over the cold ground between the great powers. It is thorough, professional, and updated on schedule. It goes into the safe alongside every other assumption of the age."
+ usa.63.a: "Plan for the likely war."
+
+ usa.64.t: "Burn It"
+ usa.64.d: "Faced with something it does not understand, the United States reaches for the answer it has never once doubted: overwhelming force, applied with fire. The fire-protocol doctrine is adopted with a confidence that the Federation's careful institutionalists would find reckless and the men who write it would call decisive. There is a brutal clarity to it that works, for a while, on the things it can reach. It does not occur to anyone drafting it that an enemy which can be burned can also be one that learns what burning costs, and adapts."
+ usa.64.a: "When in doubt, burn it down."
+ usa.65.t: "A Security Incident"
+ usa.65.d: "The crisis is real, and the United States files it under a heading it can manage. The outbreaks become security incidents, the containment becomes a law-enforcement matter, the unprecedented becomes a string of precedented things stacked carefully so that no single agency has to admit it is facing the end of the world. The framing buys calm and buys time and buys, most of all, the comfort of not having to say the true thing out loud."
+ usa.65.a: "Keep it contained, keep it quiet."
+
+ usa.66.t: "No Deal"
+ usa.66.d: "The Federation extends a hand across the table and the United States, after a decent interval of pretending to consider it, declines. There are good reasons, and they are recited well: trust must be earned, the rival's motives are suspect, a superpower does not need permission. They are also, underneath, the simplest reason of all, which is that Washington cannot picture itself as the junior partner in anything and would rather face the future alone than admit it might need the company. The hand goes unshaken. Both capitals tell themselves it was the other's fault."
+ usa.66.a: "We deal from strength or not at all."
+ usa.67.t: "A Wary Handshake"
+ usa.67.d: "Against the instincts of half its government, the United States takes the Federation's hand. It costs political capital at home, where cooperation with the great rival reads as weakness to the people who measure strength in defiance. But the men who sign it have seen the same classified pages the Federation has, and have concluded that whatever is coming is bigger than the rivalry, and that two superpowers facing it apart is a luxury the century can no longer afford. The handshake is real."
+ usa.67.a: "Just this once, together."
+
+ usa.68.t: "Guns Over Butter"
+ usa.68.d: "The United States puts the economy on a war footing and asks the public to feel the difference. Factories that made cars make other things now. The shelves thin in places they have not thinned in living memory. The word sacrifice reappears in speeches after a long absence. The arsenal grows."
+ usa.68.a: "The war comes first."
+ usa.69.t: "Butter Over Guns"
+ usa.69.d: "The United States bets that a country which keeps the lights on and the shelves full fights better in the long run than one bled white to feed the front. The investment goes into resilience, into the dull civilian capacity that lets a society absorb a blow and keep standing. The generals grumble that it is softness. The people, who have to live in the thing being defended, quietly disagree. It is a slower road to the same war, and it leaves the home worth coming back to."
+ usa.69.a: "A nation worth defending."
+
+ usa.70.t: "The Northern Front"
+ usa.70.d: "American forces move quietly into position across the Canadian theater, the long cold border that would be the front line of any war with the Federation. The logistics are laid in, the staffs rehearse, the war that War Plan North imagined begins to acquire roads and depots and timetables. It is competent, deliberate, and aimed with total precision at the wrong enemy."
+ usa.70.a: "Hold the northern line."
+
+ usa.71.t: "The Cyber Edge"
+ usa.71.d: "The United States bets on the war of the unseen: networks, code, the quiet sabotage of an enemy's nervous system before a shot is fired. It is the most American kind of advantage, leverage without exposure, decisive results delivered from a chair in Maryland. Against a rival state it is genuinely formidable. Against an enemy with no networks to hack, no command to decapitate, and nothing that can be turned off, it is a magnificent key cut for a lock the decade is about to stop using."
+ usa.71.a: "Win it in the wires."
+ usa.72.t: "Fire Doctrine"
+ usa.72.d: "The United States doubles down on what it already trusts: fire, in quantity, delivered with industrial efficiency. The doctrine is refined into something almost elegant, a whole science of burning, and it is the one answer the coming enemy genuinely respects. The grim joke in the briefing rooms is that the most advanced military on Earth has rediscovered the flamethrower and found it to be its best idea in years. They are not entirely joking, and they are not entirely wrong."
+ usa.72.a: "Burn it, and keep burning."
+
+ usa.73.t: "Economic Nationalism"
+ usa.73.d: "The administration plants its flag on the factory floor: tariffs, buy-American mandates, the promise that the wealth of the country will be made by and for the people who live in it. It is popular where it is meant to be and infuriating where it is meant to be, and it pulls the industrial base home at exactly the moment the decade is about to need every plant on American soil. Whether by foresight or luck, the country that turns inward now will find, when the supply lines burn, that it kept the means of its own survival."
+ usa.73.a: "Build it here, keep it here."
+ usa.74.t: "The Open Market"
+ usa.74.d: "The administration bets on openness: free trade, light regulation, the confident old faith that a market left alone grows faster than one fenced in. It is good economics in a normal decade and this will not be one. The efficiency it buys is the efficiency of long, lean, global supply chains, magnificent until the day a link burns and there is no slack anywhere in the system. For now the markets are happy and the growth is real, and the bill for the fragility will not arrive until the worst possible moment to pay it."
+ usa.74.a: "Let the market run."
+
+ USA_groundwork_standoff_nuclear_tt: "The nuclear-superiority posture carries into the footing as deterrent confidence: +3% War Support and +50 Command Power."
+ USA_groundwork_standoff_conventional_tt: "The conventional-overmatch posture carries into the footing as a readier, harder-drilled force: +25 Army Experience."
+ USA_groundwork_procurement_tech_tt: "The technology-edge procurement choice projects as a smarter force: an electronics research bonus."
+ USA_groundwork_procurement_mass_tt: "The mass-arsenal procurement choice projects as a deeper force: +20,000 Manpower."
+
+ usa.75.t: "The Peace Dividend"
+ usa.75.d: "The long absence of a real war has made the country rich and comfortable and a little soft, and the United States enjoys the dividend without examining it too closely. The economy hums, the malls are full, the military is a thing that happens to other people in other countries. It is the American good life at its zenith, and there is no reason on the calendar to think it is anything but permanent. The country banks the peace and spends the dividend and does not, on this pleasant and unremarkable day, look up."
+ usa.75.a: "Enjoy the good years."
+
+ usa.76.t: "Continental Sovereignty"
+ usa.76.d: "Whatever the summit was, it is behind them now, and the United States reaffirms the principle it never really set aside: this hemisphere is American, the decisions that shape it are made in Washington, and no transatlantic federation gets a vote in the affairs of the New World. It is stated with the easy confidence of a country that has never had to defend the claim against a serious challenger. The doctrine is old, popular, and about to meet a decade that does not care what continent a threat is supposed to respect."
+ usa.76.a: "This hemisphere is ours."
+
+ USA_stand_up_containment_command: "Stand Up the Containment Command"
+ USA_stand_up_containment_command_desc: "The Joint Containment Boards have argued their way into a working structure. Give it a mandate, a budget, and a chain of command, and the standing federal apparatus for domestic containment stops being a series of meetings and becomes an institution. It will not make the incidents stop. It will make the response to them routine."
+ USA_continental_containment_sweep: "Coordinated Containment Sweep"
+ USA_continental_containment_sweep_desc: "Task the Containment Command with a full domestic sweep: shared reporting, agreed jurisdiction, quiet cordons where the interior incidents cluster. Handled by the standing institution rather than improvised each time, it costs less to calm the public than a broadcast or a legislative push. Reduces panic by 140."
+ USA_northern_perimeter_rotation: "Rotate the Northern Perimeter"
+ USA_northern_perimeter_rotation_desc: "Cycle fresh formations through the Northern Logistics Command, exercising the routes that were mapped and stocked before anyone would say out loud why. The units come back knowing the ground. Grants army experience and a period of improved defensive readiness in the northern theater."
+ USA_expand_incident_network: "Widen the Incident Network"
+ USA_expand_incident_network_desc: "Extend the anomalous-incident reporting network into counties that were not filing before. More eyes means earlier reports, and earlier reports mean the researchers have data before the situation does. Grants political power and a period of faster research."
+
+ USA_continental_containment_command: "Continental Containment Command"
+ USA_continental_containment_command_desc: "A standing federal institution for domestic biological containment. It coordinates the boards, the reporting network, and the response chains that used to be assembled from scratch every time. The routine holds where improvisation would not."
+ USA_northern_perimeter_ready: "Northern Perimeter Ready"
+ USA_northern_perimeter_ready_desc: "Fresh formations have cycled through the northern routes and know the ground. Defensive readiness in the theater is high while the rotation holds."
+ USA_field_reporting_data: "Field Reporting Data"
+ USA_field_reporting_data_desc: "The widened incident network is feeding structured field data to the research establishment. The work moves faster with real cases to study."
+ USA_gate_escalation_rivalry_tt: "The standoff with the European Federation has hardened into open rivalry."
+ USA_armed_forces: "United States Armed Forces"
+ USA_armed_forces_desc: "The condition of the standing army: how it trains, how it holds a line, and how quickly it can be brought up to strength. Built for a war against another country, and being asked to fight something else."
+ USA_armed_forces_tt: "§GUnited States Armed Forces improve§!"
+ USA_industrial_might: "American Industrial Might"
+ USA_industrial_might_desc: "Factory floor, oil, and the fissile and warhead work running on top of both. The one advantage the United States has never had to argue for."
+ USA_industrial_might_tt: "§GAmerican Industrial Might grows§!"
+ USA_domestic_order: "Domestic Order"
+ USA_domestic_order_desc: "How much government the country will accept, and how much of it there is. Every emergency power taken, every consensus held together, every argument settled by an appeal to the situation."
+ USA_domestic_order_tt: "§GDomestic Order shifts§!"
+ USA_hemispheric_posture: "Hemispheric Posture"
+ USA_hemispheric_posture_desc: "The Monroe line, the Pacific commitments and the running argument in Washington over what the hemisphere is owed and who is allowed to be in it."
+ USA_hemispheric_posture_tt: "§GHemispheric Posture hardens§!"
+ USA_technical_directorate: "Technical Directorate"
+ USA_technical_directorate_desc: "Research programmes and the collection apparatus behind them, including a careful record of what it still cannot see."
+ USA_technical_directorate_tt: "§GTechnical Directorate improves§!"
+
+ USA_hemispheric_primacy: "Hemispheric Primacy"
+ USA_hemispheric_primacy_desc: "The United States enters the decade dominant in the Americas, formidable in the Pacific, and culturally isolated from Europe. The doctrine writes itself. Secure the hemisphere, hold the rivalry with the Federation, and let the rest of the world manage its own contamination."
+ USA_secure_the_approaches: "Secure the Approaches"
+ USA_secure_the_approaches_desc: "Northern border, Caribbean basin, Pacific approaches. The forces that would have deployed against the parasite ecology are positioned against the European Federation instead. Both commitments are described as continental defense."
+ USA_pan_american_pressure: "Pan-American Pressure"
+ USA_pan_american_pressure_desc: "The South American Confederation is courted and pressured in the same memoranda. Washington prefers a hemisphere that defers to it over one that survives well. The distinction is not yet visible."
+ USA_domestic_containment_doctrine: "Anomalous Infestation Protocol"
+ USA_domestic_containment_doctrine_desc: "Domestic parasite activity is logged as anomalous local infestation and handled by civil authority. The framing keeps the public calm and the budgets intact."
+ USA_federal_quarantine_authority: "Federal Quarantine Authority"
+ USA_federal_quarantine_authority_desc: "Where local containment fails, federal quarantine authority steps in. Exclusion zones are drawn, supplied, and not discussed. The protocol is effective and quietly enormous."
+ USA_continental_defense_command: "Continental Defense Command"
+ USA_continental_defense_command_desc: "The hemispheric and domestic programs are folded into one command. On paper it is the most capable continental defense apparatus on Earth. What it is pointed at is the question it does not ask."
+
+ USA_approaches_secured_tt: "Forces redeploy to the northern and maritime approaches."
+
+ usa.3.t: "The Hemisphere First"
+ usa.3.d: "The arrival of the Iris produced six weeks of cooperation with the European Federation and then a return to form. The United States is dominant in the Americas, formidable in the Pacific, and done pretending the Federation is a partner. The hemisphere is the priority. The rest of the world will manage."
+ usa.3.a: "The hemisphere is the priority."
+
+ usa.2.t: "Anomalous Contamination Reports"
+ usa.2.d: "Soil sampling along several coastlines returns bacterial anomalies that match no catalogued organism. The reports are filed as industrial contamination and routed to the relevant state authorities. The samples are not flagged for federal review."
+ usa.2.a: "File them locally."
+
+ USA_doctrine_reckoning: "The Organisms Adapted"
+ USA_doctrine_reckoning_desc: "The parasite activity logged through 2021 as anomalous and manageable stops being either. Across the continental theaters the organisms now counter the tactics that worked last year. The Fire Protocol still helps. It is no longer enough. The doctrine is rebuilt under fire."
+ USA_own_the_failure: "Own the Failure"
+ USA_own_the_failure_desc: "The administration goes public: the 2021 doctrine was wrong, the early optimism was misplaced, and people died for it. The admission costs confidence in the short term, but it lets the doctrine be rebuilt honestly and stands up a dedicated threat-intelligence office in the open."
+
+ USA_bury_the_findings: "Bury the Findings"
+ USA_bury_the_findings_desc: "The failure is managed rather than confronted. Reports are reclassified, the narrative held steady, and the public spared a scandal. Confidence holds for now, but the doctrine is rebuilt on half-truths and never quite catches up."
+ USA_root_clearance_doctrine: "Burn the Roots"
+ USA_root_clearance_doctrine_desc: "Clearance doctrine is rewritten around the root systems. Incendiary stockpiles built for the Fire Protocol find their real use. Sectors are not declared secure until the ground beneath them is dead."
+
+ USA_root_clearance_doctrine_spirit: "Root Clearance"
+ USA_root_clearance_doctrine_spirit_desc: "Sectors are not secure until the ground beneath them is dead."
+
+ usa.4.t: "The Organisms Adapted"
+ usa.4.d: "The infestations logged as local incidents through 2021 were weak and predictable. They are neither now. The reports converging on Washington describe organisms that counter fire, counter fortification, and counter command. The framing that kept the public calm has run out of room. The doctrine has to change, and the budget that funded the calm was not built for this."
+ usa.4.a: "Rebuild the doctrine."
+
+ USA_establish_transatlantic_desk: "Stand Up the Transatlantic Desk"
+ USA_establish_transatlantic_desk_desc: "A permanent collection section aimed at the European Federation, staffed out of existing budget lines so it does not require a public authorization. Grants standing civilian and army intelligence on the Federation and opens the sweep program."
+ USA_transatlantic_desk_protest_tt: "§YThe formal protest already put a file on every relevant desk. The section opens with a head start.§!"
+
+ USA_answer_the_hemispheric_claim: "Answer the Hemispheric Claim"
+ USA_answer_the_hemispheric_claim_desc: "Brussels has put its own security guarantee over the southern half of the Americas. Washington restates the older one in writing, in the same week, with force posture attached. The public reads it as the government doing its job."
+ USA_hemispheric_answer_sovereignty_tt: "§YContinental sovereignty was already reaffirmed, so the language is on file and the statement writes itself.§!"
+
+ USA_pacific_counterweight: "Pacific Counterweight"
+ USA_pacific_counterweight_desc: "The Federation's pact with Tokyo is answered with basing, patrol schedules and a collection effort aimed at Federation naval and air movements. Nothing in it is announced."
+ USA_pacific_counterweight_pressure_tt: "§YTokyo has already been leaned on once. The naval staff know what they are asking for this time.§!"
+
+ USA_eastern_corridor_tariffs: "Tariff the Eastern Corridor"
+ USA_eastern_corridor_tariffs_desc: "Federation trade running east is taxed at the American end. The measure is defended as protecting domestic production. Consumers pay part of it and are told so in small print."
+ USA_eastern_corridor_narrow_tt: "§YChina stayed out of the Federation's orbit, so the corridor is narrow and the measure stays quiet.§!"
+ USA_eastern_corridor_wide_tt: "§RChina leaned toward Brussels. The corridor is worth closing properly, and the Federation will feel it.§!"
+
+ USA_counterintelligence_sweep: "Run a Counterintelligence Sweep"
+ USA_counterintelligence_sweep_desc: "The desk is run against Federation research and procurement programs. Material comes back useful. Sometimes the operation comes back visible."
+ USA_counterintel_sweep_risk_tt: "§RRisk of exposure. A blown sweep hardens the standoff and hands Brussels a domestic argument.§!"
+
+ USA_hemispheric_answer_idea: "Hemispheric Answer"
+ USA_hemispheric_answer_idea_desc: "The Federation's claim on the southern hemisphere was answered in public and in force posture. The domestic argument for the defense budget writes itself now."
+ USA_pacific_counterweight_idea: "Pacific Counterweight"
+ USA_pacific_counterweight_idea_desc: "Basing, patrol schedules and a standing collection effort against Federation movements in the Pacific. The picture of what Brussels has out there is much better than it was."
+ USA_eastern_corridor_tariffs_idea: "Eastern Corridor Tariffs"
+ USA_eastern_corridor_tariffs_idea_desc: "Federation trade running east is taxed at the American end. Domestic construction benefits, trading partners take note, and the shelves cost a little more."
+
+ USA_knox_county_response: "The Knox County Problem"
+ USA_knox_county_response_desc: "Knox County is no longer deniable. Something is building in eastern Kentucky that answers to no one in Washington, holds ground it was never ceded, and grows toward the states around it. It has only ever moved in one direction, and that direction is inward. There will be no recognition and no negotiation. The question is how the ground gets taken back."
+ USA_knox_owned_record_tt: "Because the doctrine failures were owned publicly, the government meets Knox with credibility intact."
+ USA_knox_buried_record_tt: "Because the doctrine failures were buried, Knox proves the coverup wrong in public. The government pays for it."
+ USA_appalachian_cordon: "The Appalachian Cordon"
+ USA_appalachian_cordon_desc: "Ring the county. Roads, ridgelines, and river crossings, held by rotating formations dug in for a long stay. The cordon does not take ground back. It stops the ground from moving, and it buys the time the clearance operations need. Knox is patient and well sited, so the cordon is built to outlast it."
+ USA_knox_backchannel: "A Quiet Word (Non-Canon)"
+ USA_knox_backchannel_desc: "Someone in Knox County has been trying to talk. This path is not what happened: it is an alternate line where Washington takes the call instead of the county, and Knox enters the Western Alliance rather than being burned out of it. It contradicts the historical record. Choose it only to explore the road not taken."
+ USA_incendiary_clearance_push: "Incendiary Clearance"
+ USA_incendiary_clearance_push_desc: "Fire still works where nothing else does, and the clearance teams are told to use it without restraint inside the cordon. It is slow, it is expensive in materiel, and it does not always hold. But every acre burned is an acre Knox has to grow back before it can grow forward."
+ USA_burn_knox_county: "Burn Knox County"
+ USA_burn_knox_county_desc: "The cordon holds and the clearance teams have proven the ground can be taken. Now take all of it. This is a declared war of eradication against the Knox County hive, and the planners know what the planners always know: Knox is dug in, sited to be held, and favored on every defensive metric that matters. The order goes out anyway. There is no version of this where Knox is left standing."
+
+ USA_incendiary_clearance_spirit: "Incendiary Clearance Doctrine"
+ USA_incendiary_clearance_spirit_desc: "Fire used without restraint inside the cordon. A harder edge against Knox organisms."
+ USA_knox_offensive_doctrine: "War of Eradication"
+ USA_knox_offensive_doctrine_desc: "A declared campaign to burn the Knox County hive out of existence. Strong bonuses against Knox, which will still not come easily."
+
+ USA_knox_clearance_category: "Knox County Clearance"
+ USA_knox_clearance_category_desc: "State-targeted operations against Knox-controlled ground."
+ USA_knox_containment_strike: "Containment Strike"
+ USA_knox_containment_strike_desc: "Burn back the infestation on a Knox-controlled state. Reduces the infestation level on the target."
+ USA_knox_incendiary_raid: "Incendiary Raid"
+ USA_knox_incendiary_raid_desc: "A heavier clearance raid, available once the cordon is established. Cuts deeper into the infestation and damages a Beckon cluster."
+
+ usa.77.t: "Eastern Kentucky"
+ usa.77.d: "The reports stop being anomalies and start being a map. Knox County and the ground around it no longer answer to the state government, the National Guard units sent in do not report back, and the perimeter is expanding on a schedule. Whatever is running it is deliberate and unhurried. Washington stops calling it a containment incident. It is a hostile power on American soil, and it started here to grow outward."
+ usa.77.a: "Draw the line at the cordon."
+ usa.78.t: "The Call (Non-Canon)"
+ usa.78.d: "In the record, this call was never taken. Here it is. Someone speaks for Knox County, asks for a specific person, and offers terms instead of expansion. It is not what happened, and everyone in the room knows it. But the Western Alliance has an empty chair, and for once the thing across the table is willing to sit in it."
+ usa.78.a: "Take the call."
+ usa.79.t: "Ridgelines and River Crossings"
+ usa.79.d: "The cordon goes up. Roads blocked, crossings held, formations dug into the ridgelines for a stay measured in seasons. It does not push inward, not yet. It holds the shape of the problem in place so the clearance teams can work, and it waits out an enemy that was built to wait."
+ usa.79.a: "Hold the ring."
+ usa.80.t: "Inside the Wire"
+ usa.80.d: "The clearance teams move in under the cordon. Fire leads, because fire is the only thing that reliably works, and restraint is not in the orders. Progress is measured in acres and paid for in materiel. Knox grows it back slower than it is burned, which is the entire theory of the operation, and the theory holds as long as the fire does."
+ usa.80.a: "Keep burning."
+ usa.81.t: "No Version Where It Stands"
+ usa.81.d: "The cordon held. The clearance held. The planners deliver the assessment they have delivered since the first briefing: Knox County is dug in, sited to be defended, and favored on every metric that decides a ground campaign. It will cost more than it should and it may not be enough. The order is signed anyway. Whatever else this decade becomes, it does not include a standing Knox County hive."
+ usa.81.a: "Give the order."

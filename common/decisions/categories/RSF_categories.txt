@@ -1,0 +1,17 @@
+RSF_emergency_decrees = {
+	icon = generic_crisis
+	priority = 80
+	visible_when_empty = no
+	allowed = {
+		original_tag = RSF
+	}
+}
+
+RSF_military_ops = {
+	icon = generic_army_support
+	priority = 70
+	visible_when_empty = no
+	allowed = {
+		original_tag = RSF
+	}
+}

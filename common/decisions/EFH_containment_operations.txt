@@ -1,0 +1,198 @@
+EFH_containment_operations = {
+
+	EFH_standing_threat_estimate = {
+		icon = generic_political_actions
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_parasite_threat_assessed
+		}
+
+		available = {
+			has_country_flag = EFH_parasite_threat_assessed
+			country_exists = IRS
+			NOT = { has_idea = EFH_threat_estimate_current }
+		}
+
+		cost = 40
+		fire_only_once = no
+		days_re_enable = 120
+
+		complete_effect = {
+			add_intel = {
+				target = IRS
+				army_intel = 10
+			}
+			add_timed_idea = {
+				idea = EFH_threat_estimate_current
+				days = 120
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	EFH_joint_command_exercises = {
+		icon = generic_political_actions
+
+		visible = {
+			original_tag = EFH
+			has_completed_focus = EFH_joint_anti_parasite_command
+		}
+
+		available = {
+			has_completed_focus = EFH_joint_anti_parasite_command
+			NOT = { has_idea = EFH_joint_exercise_readiness }
+		}
+
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 90
+
+		complete_effect = {
+			army_experience = 15
+			add_timed_idea = {
+				idea = EFH_joint_exercise_readiness
+				days = 120
+			}
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = {
+				add = 4
+				has_war = yes
+			}
+		}
+	}
+
+	EFH_sac_industrial_dividend = {
+		icon = generic_industry
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_SAC_infrastructure_built
+		}
+
+		available = {
+			has_country_flag = EFH_SAC_infrastructure_built
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 180
+
+		complete_effect = {
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 4
+					days = 180
+				}
+				add_resource = {
+					type = aluminium
+					amount = 2
+					days = 180
+				}
+			}
+			if = {
+				limit = { has_country_flag = EFH_hemispheric_claim_asserted }
+				custom_effect_tooltip = EFH_sac_dividend_hemispheric_tt
+				add_political_power = 20
+			}
+		}
+
+		ai_will_do = {
+			base = 4
+		}
+	}
+
+	EFH_run_containment_exercise = {
+		icon = generic_political_actions
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_containment_exercise_authorized
+		}
+
+		available = {
+			has_country_flag = EFH_containment_exercise_authorized
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 150
+
+		complete_effect = {
+			custom_effect_tooltip = EFH_containment_exercise_risk_tt
+			hidden_effect = {
+				random_list = {
+					75 = {
+						country_event = { id = efh.110 days = 3 }
+					}
+					25 = {
+						country_event = { id = efh.111 days = 3 }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				add = 3
+				check_variable = { public_panic > 300 }
+			}
+		}
+	}
+
+	EFH_accelerated_specimen_studies = {
+		icon = generic_research
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_harvesting_groundwork
+		}
+
+		available = {
+			has_country_flag = EFH_harvesting_groundwork
+		}
+
+		cost = 35
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 150
+
+		modifier = {
+			civilian_factory_use = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = EFH_specimen_studies_risk_tt
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					70 = {
+						country_event = { id = efh.112 days = 1 }
+					}
+					30 = {
+						country_event = { id = efh.113 days = 1 }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				factor = 0
+				check_variable = { public_panic > 500 }
+			}
+		}
+	}
+
+}

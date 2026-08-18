@@ -1,0 +1,188 @@
+﻿l_english:
+
+ IRS_iris_beckon_mio: "The Iris"
+ IRS_iris_beckon_mio_desc: "The supreme organism. The Iris sits at the centre of the whole system. Its genome is the final and most complete expression of parasite evolution, refined across planetary timescales."
+
+ IRS_iris_genome_core: "Iris Genome: Foundation"
+ IRS_iris_genome_core_desc: "The base expression of the Iris genome. Even its most primitive form produces organisms measurably more capable than anything that evolved without its direction."
+
+ IRS_iris_biomass_synthesis: "Biomass Synthesis"
+ IRS_iris_biomass_synthesis_desc: "Optimised metabolic cycles reduce the raw material cost of organism production. The Iris lineage wastes nothing."
+
+ IRS_iris_combat_strain: "Combat Strain"
+ IRS_iris_combat_strain_desc: "A divergent expression of the Iris genome focused on aggression and mass. Organisms bred through this line are built to push through whatever is in front of them."
+
+ IRS_iris_nexus_refinement: "Nexus Refinement"
+ IRS_iris_nexus_refinement_desc: "Deep nexus biomass integration produces organisms of extreme mass and endurance. The Haunter-class emerges from this process."
+
+ IRS_iris_dense_brood: "Dense Brood Cultivation"
+ IRS_iris_dense_brood_desc: "High-density organism batching. Output per production cycle increases while resource draw remains flat."
+
+ IRS_iris_apex_strain: "Apex Strain"
+ IRS_iris_apex_strain_desc: "The combat genome pushed to its aggressive limit. Organisms of this line punch through hardened targets. The Monarch Hunter lineage begins here."
+
+ IRS_iris_sovereign_genome: "Sovereign Genome"
+ IRS_iris_sovereign_genome_desc: "The Iris genome at full expression. What it produces sits in a different category from everything before it. The Bogle and Wraith lines are authorised."
+
+ IRS_vitreous_beckon_mio: "Vitreous"
+ IRS_vitreous_beckon_mio_desc: "A sub-surface supreme organism in orbit of the Iris. Vitreous does not operate on the surface. Its genome specialises in underground root architecture and the organisms that sustain the network from below."
+
+ IRS_vitreous_genome_core: "Vitreous Genome: Foundation"
+ IRS_vitreous_genome_core_desc: "The baseline expression of the Vitreous genome. Its organisms are built for staying power and endurance rather than raw aggression."
+
+ IRS_vitreous_root_network: "Root Network Optimisation"
+ IRS_vitreous_root_network_desc: "Deeper root integration accelerates the growth cycle. Beckons under Vitreous direction produce and sustain organisms at lower cost."
+
+ IRS_vitreous_subsurface_strain: "Subsurface Strain"
+ IRS_vitreous_subsurface_strain_desc: "Organisms adapted for underground approach. They emerge already oriented for contact, carrying acidic secretions refined for surface targets."
+
+ IRS_vitreous_beckon_growth: "Beckon Growth Directive"
+ IRS_vitreous_beckon_growth_desc: "Vitreous extends its root architecture further into production coordination. The Tozoon genus becomes viable for surface deployment."
+
+ IRS_vitreous_acid_genome: "Acid Genome"
+ IRS_vitreous_acid_genome_desc: "Concentrated acid secretion, refined through multiple underground generations. The Host genus emerges: a summons-capable organism with armor-melting projectors."
+
+ IRS_vitreous_deep_emergence: "Deep Emergence"
+ IRS_vitreous_deep_emergence_desc: "The Vitreous genome at its deepest expression. The Herd genus, evolved from Hosts, can sustain prolonged surface engagement and coordinate further organisms from below."
+
+ IRS_tromos_beckon_mio: "Tromos"
+ IRS_tromos_beckon_mio_desc: "The Tromos supreme organism developed its genome consuming a civilisation slightly less advanced than humanity. Its organisms reflect that heritage: structured, siege-capable, built for systematic clearance of fortified positions."
+
+ IRS_tromos_genome_core: "Tromos Genome: Foundation"
+ IRS_tromos_genome_core_desc: "The baseline expression of the Tromos genome. Unlike organisms of purely biological lineage, Tromos organisms carry an inherited instinct for organised assault."
+
+ IRS_tromos_siege_adaptation: "Siege Adaptation"
+ IRS_tromos_siege_adaptation_desc: "Organisms bred to dismantle hardened structures. The Tromos genome retains some memory of what fortification looks like, and builds around it."
+
+ IRS_tromos_assault_strain: "Assault Strain"
+ IRS_tromos_assault_strain_desc: "A faster, more aggressive breed optimised for rapid position clearance. Speed and forward pressure over durability."
+
+ IRS_tromos_fortification_breach: "Fortification Breach"
+ IRS_tromos_fortification_breach_desc: "The siege lineage reaches its functional peak. Hollowers emerge from this genome: organisms built to hollow through armored positions from the outside in."
+
+ IRS_tromos_rapid_clearance: "Rapid Clearance"
+ IRS_tromos_rapid_clearance_desc: "The assault strain matures into a doctrine of fast sweeping pressure. The Vigilante-class gains production authorisation through the Tromos network."
+
+ IRS_tromos_civilization_strain: "Civilisation Strain"
+ IRS_tromos_civilization_strain_desc: "The full Tromos genome carries echoes of the civilisation it consumed. The Scourer genus is fast, heavy, indiscriminate, and shaped by that inherited pattern."
+
+ IRS_boreic_mio: "Boreic"
+ IRS_boreic_mio_desc: "A root beckon embedded in cold-climate territory. Its genome has drifted over successive generations toward thermal endurance and predatory efficiency in low-temperature environments."
+
+ IRS_boreic_genome_core: "Boreic Genome: Foundation"
+ IRS_boreic_genome_core_desc: "The baseline expression of a cold-adapted root genome. Organisms are slower to produce but more durable against attrition in hostile environments."
+
+ IRS_boreic_cold_adaptation: "Cold Adaptation"
+ IRS_boreic_cold_adaptation_desc: "Deeper thermal tolerance throughout the organism line. Losses from environmental attrition decrease."
+
+ IRS_boreic_predator_instinct: "Predator Instinct"
+ IRS_boreic_predator_instinct_desc: "Cold-climate hunting patterns encoded into the genome. Organisms stalk and strike rather than swarming."
+
+ IRS_boreic_endurance_strain: "Endurance Strain"
+ IRS_boreic_endurance_strain_desc: "Peak thermal endurance. The Mangler genus becomes viable at this latitude, its mass better suited to cold terrain than to the temperate zones where it first appeared."
+
+ IRS_boreic_apex_predator: "Apex Predator"
+ IRS_boreic_apex_predator_desc: "The predator instinct reaches its evolved limit. Reekers are authorised: fast, cold-adapted, built for aggressive forward motion."
+
+ IRS_boreic_glacier_genome: "Glacier Genome"
+ IRS_boreic_glacier_genome_desc: "The Boreic genome at full expression. The Yelloweye genus emerges as a cold predator with awareness extending upward, capable of tracking aerial movement."
+
+ IRS_alclidic_mio: "Alclidic"
+ IRS_alclidic_mio_desc: "A root beckon adapted to arid and high-temperature environments. Its organisms are built for sustained aggression and metabolic efficiency under heat stress. They do badly in a long defensive hold."
+
+ IRS_alclidic_genome_core: "Alclidic Genome: Foundation"
+ IRS_alclidic_genome_core_desc: "The baseline expression of a heat-adapted root genome. Aggressive by default, these organisms push forward even under conditions that slow most biological systems."
+
+ IRS_alclidic_aggression: "Heat Aggression"
+ IRS_alclidic_aggression_desc: "The forward-pressure instinct deepens. Heat-line organisms break through positions at a rate that outpaces comparable cold-climate breeds."
+
+ IRS_alclidic_resilience: "Heat Resilience"
+ IRS_alclidic_resilience_desc: "Organisms that survive the heat conditions of their origin are structurally tougher than those from temperate lines. Losses drop."
+
+ IRS_alclidic_voracious_strain: "Voracious Strain"
+ IRS_alclidic_voracious_strain_desc: "The aggression line reaches its peak. Manducaters are authorised: large, fast, built entirely for devouring whatever stands between them and movement."
+
+ IRS_alclidic_durability_strain: "Durability Strain"
+ IRS_alclidic_durability_strain_desc: "The resilience line matures into something capable of sustained operations under fire. Longarms are authorised: wide-body organisms that hold ground in environments most cannot."
+
+ IRS_alclidic_furnace_genome: "Furnace Genome"
+ IRS_alclidic_furnace_genome_desc: "The Alclidic genome fully expressed. Every organism in the line performs above its temperate equivalent across every combat metric."
+
+ IRS_sinic_mio: "Sinic"
+ IRS_sinic_mio_desc: "A root beckon embedded in dense human settlement. Its genome has specialised over years of close-contact infestation for coordination in tight spaces, sustained pressure against defended structures, and rapid adaptation to built environments."
+
+ IRS_sinic_genome_core: "Sinic Genome: Foundation"
+ IRS_sinic_genome_core_desc: "The baseline expression of an urban-adapted genome. Organisms navigate built environments by instinct and attack from multiple axes simultaneously."
+
+ IRS_sinic_coordinator_strain: "Coordinator Strain"
+ IRS_sinic_coordinator_strain_desc: "Urban organisms evolved alongside a coordination instinct. They operate in tighter formation and hold together under fire better than open-terrain breeds."
+
+ IRS_sinic_siege_adaptation: "Siege Adaptation"
+ IRS_sinic_siege_adaptation_desc: "Years of forcing through barricaded positions have produced organisms with specific instincts for structural penetration. Armor and reinforced walls slow them less than expected."
+
+ IRS_sinic_swarm_coordination: "Swarm Coordination"
+ IRS_sinic_swarm_coordination_desc: "The coordinator strain reaches operational maturity. Summoners are authorised: organisms capable of drawing others toward a target simultaneously across multiple approach vectors."
+
+ IRS_sinic_vigilance_strain: "Vigilance Strain"
+ IRS_sinic_vigilance_strain_desc: "Fortification expertise consolidated into a specialised genus. Vigilante-class organisms are authorised as living artillery within the Sinic root network."
+
+ IRS_sinic_city_genome: "City Genome"
+ IRS_sinic_city_genome_desc: "The Sinic genome fully expressed. The organisms it produces are built for the last environments humanity still defends: dense, fortified, and expensive to hold."
+
+ IRS_ferritic_mio: "Ferritic"
+ IRS_ferritic_mio_desc: "A root beckon expressed through extreme membrane density. Its organisms trade speed for mass, layering themselves against anything the surviving militaries can still bring to bear."
+
+ IRS_ferritic_genome_core: "Ferritic Genome: Foundation"
+ IRS_ferritic_genome_core_desc: "The baseline expression of the ferritic line. Even unmodified organisms in this network carry noticeably denser membrane than their counterparts elsewhere."
+
+ IRS_ferritic_membrane_hardening: "Membrane Hardening"
+ IRS_ferritic_membrane_hardening_desc: "The membrane thickens further, a defensive trait that compounds across every organism the network produces."
+
+ IRS_ferritic_crushing_musculature: "Crushing Musculature"
+ IRS_ferritic_crushing_musculature_desc: "Beneath the membrane, muscle and tendon mass increases. Organisms hit harder and push further into contested ground."
+
+ IRS_ferritic_bastion_genome: "Bastion Genome"
+ IRS_ferritic_bastion_genome_desc: "The hardening line reaches operational maturity. The Adapted Bolster becomes viable: slow, thickly membraned, and able to hold ground other lines cannot."
+
+ IRS_ferritic_siege_genome: "Siege Genome"
+ IRS_ferritic_siege_genome_desc: "The musculature line matures into a dedicated breaching capability. The Adapted Warden is authorised: built to crack armor and fortifications that stop lighter organisms outright."
+
+ IRS_ferritic_apex_plating: "Apex Plating"
+ IRS_ferritic_apex_plating_desc: "The Ferritic genome at full expression. The Dreadnaut and the Overlord become viable: apex organisms built around the same membrane and musculature that define the entire line, scaled to a size nothing in the old world's arsenals was built to stop."
+
+ IRS_tethysic_mio: "Tethysic"
+ IRS_tethysic_mio_desc: "A root beckon submerged in coastal and aquatic territory. Its genome has adapted along a path entirely separate from the land-based lineages, producing organisms suited to water and the edges where land ends."
+
+ IRS_tethysic_genome_core: "Tethysic Genome: Foundation"
+ IRS_tethysic_genome_core_desc: "The first mapped expression of the Tethysic genome. Its organism line is not yet well understood. The Devourer genus is believed to originate here."
+
+ irs_root_beckon_discovery: "Root Beckon Discovery"
+
+ IRS_discover_boreic: "Birth of the Boreic"
+ IRS_discover_boreic_desc: "A root beckon has taken hold in consumed cold-climate territory. From the consumed ground a new genome rises, cold-adapted and distinct from the primary Iris lineage. It is designated Boreic."
+
+ IRS_discover_alclidic: "Birth of the Alclidic"
+ IRS_discover_alclidic_desc: "A root beckon has taken hold in consumed arid territory. The heat and the consumed land have produced a genome shaped by pressure, aggression, and high-temperature survival. The Alclidic is born."
+
+ IRS_discover_sinic: "Birth of the Sinic"
+ IRS_discover_sinic_desc: "A root beckon has taken hold in consumed urban territory. Decades of infestation inside built infrastructure have produced a genome shaped by corridors and pressure points. The line is catalogued as Sinic."
+
+ IRS_discover_tethysic: "Birth of the Tethysic"
+ IRS_discover_tethysic_desc: "A root beckon has taken hold in consumed coastal territory. The water and the consumed land have produced a genome unlike anything catalogued before. Devourer-class organisms are believed to originate here."
+
+ IRS_discover_ferritic: "Birth of the Ferritic"
+ IRS_discover_ferritic_desc: "A root beckon has taken hold in consumed mining territory. Generations of growth through mineral-rich, heavily worked ground have produced a genome defined by mass and density rather than speed. The line takes the name Ferritic."
+
+ IRS_iris_beckon_initial: "Iris Genome: Baseline"
+ IRS_vitreous_beckon_initial: "Vitreous Network: Efficiency"
+ IRS_tromos_beckon_initial: "Tromos Genome: Aggression"
+ IRS_boreic_initial: "Boreic Genome: Endurance"
+ IRS_alclidic_initial: "Alclidic Genome: Aggression"
+ IRS_sinic_initial: "Sinic Genome: Coordination"
+ IRS_tethysic_initial: "Tethysic Genome: Baseline"
+ IRS_ferritic_initial: "Ferritic Genome: Plating"
+
+ IRS_mio_funding: "Beckon Genome Investment"
+ IRS_mio_funding_desc: "Decisions to advance Beckon genome research."
+ IRS_fund_beckon_genome: "Invest in Iris Beckon Genome"
+ IRS_fund_beckon_genome_desc: "Expend 50 evolution points and 100 units of biomass to drive a new cycle of Iris Beckon genome development."

@@ -1,0 +1,501 @@
+characters = {
+    EFH_ursula_von_der_leyen = {
+        name = EFH_URSULA
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = socialism
+            traits = {}
+            desc = EFH_URSULA_DESC
+        }
+    }
+    Iris_Leader = {
+        name = "The Iris"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            desc = IRS_iris_desc
+            traits = { IRS_Leader_Trait }
+        }
+    }
+    KNX_vagrant_one = {
+        name = KNX_VAGRANT_ONE
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            desc = KNX_VAGRANT_ONE_DESC
+            traits = {}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = KNX_vagrant_one_advisor
+            allowed = {
+                original_tag = KNX
+                has_country_flag = KNX_vagrant_1_advisory_duty
+            }
+            traits = { vagrant_1_nest_builder }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer trait_engineer }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 4
+            logistics_skill = 5
+        }
+    }
+
+    KNX_vagrant_one_reborn = {
+        name = KNX_VAGRANT_ONE
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            desc = KNX_VAGRANT_ONE_DESC
+            traits = {}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = KNX_vagrant_one_b_advisor
+            allowed = {
+                original_tag = KNX
+                has_country_flag = KNX_vagrant_1_advisory_duty
+            }
+            traits = { vagrant_1_nest_builder }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer trait_engineer }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 4
+            logistics_skill = 5
+        }
+    }
+
+    EFH_vagrant_2 = {
+        name = EFH_VAGRANT_2_NAME
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = EFH_vagrant_2_advisor
+            allowed = {
+                original_tag = EFH
+                has_country_flag = EFH_vagrant_2_advisory_duty
+            }
+            traits = { vagrant_2_combat_liaison }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer panzer_leader }
+            skill = 5
+            attack_skill = 6
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+
+    EFH_vagrant_2_reborn = {
+        name = EFH_VAGRANT_2_NAME
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = EFH_vagrant_2_b_advisor
+            allowed = {
+                original_tag = EFH
+                has_country_flag = EFH_vagrant_2_advisory_duty
+            }
+            traits = { vagrant_2_combat_liaison }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer panzer_leader }
+            skill = 5
+            attack_skill = 6
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+
+    EFH_vagrant_3 = {
+        name = EFH_VAGRANT_3_NAME
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = EFH_vagrant_3_advisor
+            ledger = army
+            allowed = {
+                original_tag = EFH
+                has_country_flag = EFH_vagrant_3_advisory_duty
+            }
+            traits = { vagrant_3_hyperbiology_researcher }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer trait_engineer }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 5
+            logistics_skill = 5
+        }
+    }
+
+    EFH_vagrant_3_reborn = {
+        name = EFH_VAGRANT_3_NAME
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = EFH_vagrant_3_b_advisor
+            ledger = army
+            allowed = {
+                original_tag = EFH
+                has_country_flag = EFH_vagrant_3_advisory_duty
+            }
+            traits = { vagrant_3_hyperbiology_researcher }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer trait_engineer }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 5
+            logistics_skill = 5
+        }
+    }
+
+    IRS_vagrant_4 = {
+        name = IRS_VAGRANT_4_NAME
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = IRS_vagrant_4_advisor
+            allowed = {
+                original_tag = IRS
+                has_country_flag = IRS_vagrant_4_advisory_duty
+            }
+            traits = { vagrant_4_iris_coordinator }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer infantry_leader }
+            skill = 6
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+        }
+    }
+
+    IRS_vagrant_4_reborn = {
+        name = IRS_VAGRANT_4_NAME
+        can_be_captured = no
+        portraits = {
+            army = {
+                small = "GFX_portrait_europe_generic_4"
+            }
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = IRS_vagrant_4_b_advisor
+            allowed = {
+                original_tag = IRS
+                has_country_flag = IRS_vagrant_4_advisory_duty
+            }
+            traits = { vagrant_4_iris_coordinator }
+            cost = 0
+            ai_will_do = { base = 10 }
+        }
+        corps_commander = {
+            traits = { career_officer infantry_leader }
+            skill = 6
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+        }
+    }
+
+    SWR_Leader = {
+        name = "Honaaa Trotsky"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = marxism
+            traits = {}
+            desc = TROTSKY_DESC
+        }
+    }
+    AFR_Leader = {
+        name = "John Africa"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            traits = {}
+            desc = AFR_Leader_DESC
+        }
+    }
+    CHN_Leader = {
+        name = "Xi Jin Penis"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = marxism
+            traits = {}
+            desc = CHN_Leader_DESC
+        }
+    }
+    OCE_Leader = {
+        name = "John Ocena"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = OCE_Leader_DESC
+        }
+    }
+    SAC_Leader = {
+        name = "John South Murica"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = SAC_Leader_DESC
+        }
+    }
+    USA_Leader = {
+        name = "Donald J. Trump"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = USA_Leader_DESC
+        }
+    }
+    JAP_Leader = {
+        name = "Japane Jane"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = JAP_Leader_DESC
+        }
+    }
+    FRA_Restoration_Council = {
+        name = FRA_RESTORATION_COUNCIL
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = FRA_RESTORATION_COUNCIL_DESC
+        }
+    }
+    GER_Restoration_Council = {
+        name = GER_RESTORATION_COUNCIL
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = GER_RESTORATION_COUNCIL_DESC
+        }
+    }
+    ITA_Restoration_Council = {
+        name = ITA_RESTORATION_COUNCIL
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = ITA_RESTORATION_COUNCIL_DESC
+        }
+    }
+    ESP_Restoration_Council = {
+        name = ESP_RESTORATION_COUNCIL
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = ESP_RESTORATION_COUNCIL_DESC
+        }
+    }
+    POL_Restoration_Council = {
+        name = POL_RESTORATION_COUNCIL
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_europe_generic_4"
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            desc = POL_RESTORATION_COUNCIL_DESC
+        }
+    }
+
+    IRS_sci_land = {
+        name = "Dr. Robert Hayes"
+        portraits = {
+            army = {
+                large = "GFX_portrait_europe_generic_4"
+                small = "GFX_portrait_europe_generic_4"
+            }
+        }
+        scientist = {
+            traits = { scientist_trait_fast_learner }
+            skills = {
+                specialization_land = 2
+            }
+        }
+    }
+
+    IRS_sci_air = {
+        name = "Dr. Helen Brooks"
+        gender = female
+        portraits = {
+            army = {
+                large = "GFX_portrait_europe_generic_4"
+                small = "GFX_portrait_europe_generic_4"
+            }
+        }
+        scientist = {
+            traits = { scientist_trait_fast_learner }
+            skills = {
+                specialization_air = 2
+            }
+        }
+    }
+
+    KNX_sci_land = {
+        name = "Dr. Walter Greene"
+        portraits = {
+            army = {
+                large = "GFX_portrait_europe_generic_4"
+                small = "GFX_portrait_europe_generic_4"
+            }
+        }
+        scientist = {
+            traits = { scientist_trait_fast_learner }
+            skills = {
+                specialization_land = 2
+            }
+        }
+    }
+}

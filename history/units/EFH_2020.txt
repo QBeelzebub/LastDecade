@@ -1,0 +1,456 @@
+division_template = {
+	name = "EF Infantry Brigade"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "EF Armoured Group"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "EF Rapid Reaction Force"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "EF Garrison Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "EF Marine Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 6000
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 25000
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = srp_truck_equipment_1
+		amount = 5000
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = srp_ifv_equipment_1
+		amount = 4000
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = srp_mbt_chassis1
+		amount = 1500
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2500
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_2
+		amount = 2000
+		producer = EFH
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = srp_truck_equipment_1
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = srp_mbt_chassis1
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = srp_destroyer_hull_1
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = srp_fighter_gen4_airframe
+			creator = "EFH"
+		}
+		requested_factories = 2
+		progress = 0.50
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = srp_strategic_bomber_1_airframe
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_2
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment0
+			creator = "EFH"
+		}
+		requested_factories = 2
+		progress = 0.50
+		efficiency = 70
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+	add_equipment_to_stockpile = {
+		type = srp_fighter_gen4_airframe
+		amount = 80
+		producer = EFH
+	}
+	add_equipment_to_stockpile = {
+		type = srp_strategic_bomber_1_airframe
+		amount = 20
+		producer = EFH
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_carrier_hull_1
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_submarine_hull_1
+			creator = "EFH"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+}
+
+units = {
+	division = {
+		name = "1st Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 68
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 542
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 519
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 656
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 276
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 596
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 68
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 519
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 542
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st Rapid Reaction Force"
+		division_template = "EF Rapid Reaction Force"
+		location = 68
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st EF Garrison"
+		division_template = "EF Garrison Battalion"
+		location = 276
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "7th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 541
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 541
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 596
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 541
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 596
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 541
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 596
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Rapid Reaction Force"
+		division_template = "EF Rapid Reaction Force"
+		location = 541
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 656
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 596
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "18th Infantry Brigade"
+		division_template = "EF Infantry Brigade"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7th Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 684
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8th Armoured Group"
+		division_template = "EF Armoured Group"
+		location = 656
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st EF Marine Battalion"
+		division_template = "EF Marine Battalion"
+		location = 596
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd EF Garrison"
+		division_template = "EF Garrison Battalion"
+		location = 656
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}

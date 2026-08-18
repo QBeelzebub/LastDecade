@@ -1,0 +1,17 @@
+USA_public_trust_category = {
+	icon = generic_political_actions
+	priority = 80
+	visible_when_empty = no
+	allowed = {
+		original_tag = USA
+	}
+}
+
+USA_knox_clearance_category = {
+	icon = generic_operation
+	priority = 75
+	visible_when_empty = no
+	allowed = {
+		original_tag = USA
+	}
+}

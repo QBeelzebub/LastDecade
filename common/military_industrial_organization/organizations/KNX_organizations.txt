@@ -1,0 +1,148 @@
+KNX_vagrant_genome_mio = {
+	icon = GFX_idea_generic_research_organization
+
+	allowed = { original_tag = KNX }
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = KNX_vagrant_genome_initial
+		equipment_bonus = {
+			soft_attack = 0.03
+			defense = 0.03
+		}
+	}
+
+	trait = {
+		token = KNX_vagrant_genome_core
+		name = KNX_vagrant_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.06
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			defense = 0.05
+			hard_attack = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = KNX_vagrant_dual_target
+		name = KNX_vagrant_dual_target
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = KNX_vagrant_genome_core
+		all_parents = { KNX_vagrant_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			hard_attack = 0.06
+			ap_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = KNX_vagrant_adaptive_resilience
+		name = KNX_vagrant_adaptive_resilience
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = KNX_vagrant_genome_core
+		all_parents = { KNX_vagrant_genome_core }
+
+		equipment_bonus = {
+			defense = 0.07
+			max_strength = 0.06
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = KNX_vagrant_arbiter_release
+		name = KNX_vagrant_arbiter_release
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = KNX_vagrant_dual_target
+		all_parents = { KNX_vagrant_dual_target }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.08
+			ap_attack = 0.05
+		}
+
+		on_complete = {
+			KNX = { set_technology = { KNX_vagrant_unlock_arbiter = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = KNX_vagrant_culler_protocol
+		name = KNX_vagrant_culler_protocol
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = KNX_vagrant_adaptive_resilience
+		all_parents = { KNX_vagrant_adaptive_resilience }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.08
+			max_strength = 0.10
+			reliability = 0.04
+		}
+
+		on_complete = {
+			KNX = { set_technology = { KNX_vagrant_unlock_culler = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = KNX_vagrant_sovereignty
+		name = KNX_vagrant_sovereignty
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = KNX_vagrant_arbiter_release
+		any_parent = { KNX_vagrant_arbiter_release KNX_vagrant_culler_protocol }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.10
+			hard_attack = 0.08
+			defense = 0.08
+			max_strength = 0.10
+			ap_attack = 0.06
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.06
+			production_cost_factor = -0.06
+		}
+
+		on_complete = {
+			KNX = { set_technology = { KNX_vagrant_unlock_magistrate = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}

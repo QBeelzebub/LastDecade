@@ -1,0 +1,175 @@
+ideas = {
+
+	country = {
+
+		IRS_active_emergence = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_attack_factor = 0.10
+				army_org_factor = 0.05
+				army_morale_factor = 0.10
+				max_planning = 0.10
+				supply_consumption_factor = -0.10
+			}
+		}
+
+		IRS_archetype_iris_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+
+		IRS_archetype_vitreous_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = limited_conscription
+			modifier = {
+				army_defence_factor = 0.12
+				production_speed_beckon_cluster_factor = 0.10
+				army_attack_factor = -0.05
+				army_speed_factor = -0.05
+			}
+		}
+
+		IRS_archetype_tromos_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_attack_factor = 0.12
+				army_morale_factor = 0.10
+				army_defence_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		IRS_archetype_adaptive_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = volunteer_only
+			modifier = {
+				army_speed_factor = 0.10
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+				army_org_factor = 0.04
+			}
+		}
+
+		IRS_archetype_unchecked_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = free_trade
+			modifier = {
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				army_org_factor = -0.15
+				army_morale_factor = -0.10
+				supply_consumption_factor = 0.10
+			}
+		}
+
+		IRS_archetype_telotic_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_org_factor = 0.08
+				army_speed_factor = 0.06
+				army_morale_factor = 0.08
+			}
+		}
+
+		IRS_vector_north_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_recon_bonus
+			modifier = {
+				attrition = -0.10
+				army_speed_factor = 0.05
+			}
+		}
+
+		IRS_vector_continental_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_beckon_cluster_factor = 0.08
+				army_org_factor = 0.04
+			}
+		}
+
+		IRS_vector_atlantic_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		IRS_lineage_iris_refined_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+			}
+		}
+
+		IRS_lineage_vitreous_refined_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = limited_conscription
+			modifier = {
+				army_defence_factor = 0.06
+				production_speed_beckon_cluster_factor = 0.05
+			}
+		}
+
+		IRS_lineage_tromos_refined_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_attack_factor = 0.06
+				army_morale_factor = 0.04
+			}
+		}
+
+		IRS_lineage_adaptive_refined_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = volunteer_only
+			modifier = {
+				army_speed_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		IRS_lineage_unchecked_refined_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = free_trade
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = -0.05
+			}
+		}
+
+	}
+}

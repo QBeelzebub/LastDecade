@@ -1,0 +1,286 @@
+focus_tree = {
+	id = RSF_focus
+	country = {
+		factor = 0
+		modifier = { add = 10  tag = RSF }
+	}
+	continuous_focus_position = { x = 50 y = 1800 }
+
+	focus = {
+		id = RSF_iron_grip
+		icon = GFX_focus_RSF_iron_grip
+		x = 6  y = 0
+		cost = 7.5
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = RSF_iron_grip_idea
+		}
+	}
+
+	focus = {
+		id = RSF_the_billionaires_table
+		icon = GFX_focus_generic_oligarchies_of_eastern_europe
+		relative_position_id = RSF_iron_grip
+		x = -4  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_iron_grip }
+		completion_reward = {
+			country_event = { id = rsf.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = RSF_state_seizure
+		icon = GFX_focus_generic_communist_industry
+		relative_position_id = RSF_the_billionaires_table
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_the_billionaires_table }
+		mutually_exclusive = { focus = RSF_managed_oligarchy }
+		available = {
+			has_country_flag = RSF_nationalized
+		}
+		completion_reward = {
+			add_political_power = -30
+			add_stability = -0.03
+			add_ideas = RSF_nationalization_idea
+			set_country_flag = RSF_emergency_decrees_unlocked
+		}
+	}
+
+	focus = {
+		id = RSF_managed_oligarchy
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = RSF_the_billionaires_table
+		x = 2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_the_billionaires_table }
+		mutually_exclusive = { focus = RSF_state_seizure }
+		available = {
+			has_country_flag = RSF_compromised
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_ideas = RSF_oligarch_compact_idea
+		}
+	}
+
+	focus = {
+		id = RSF_inner_circle
+		icon = GFX_focus_generic_self_focus
+		relative_position_id = RSF_managed_oligarchy
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_state_seizure focus = RSF_managed_oligarchy }
+		completion_reward = {
+			activate_advisor = RSF_marenkov_token
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = RSF_voices_in_the_factories
+		icon = GFX_focus_generic_war_communism
+		relative_position_id = RSF_inner_circle
+		x = 0  y = 2
+		cost = 7.5
+		prerequisite = { focus = RSF_inner_circle }
+		completion_reward = {
+			country_event = { id = rsf.7 days = 1 }
+		}
+	}
+
+	focus = {
+		id = RSF_emergency_economics
+		icon = GFX_focus_generic_economy
+		relative_position_id = RSF_iron_grip
+		x = 0  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_iron_grip }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 20
+			set_country_flag = RSF_emergency_decrees_unlocked
+		}
+	}
+
+	focus = {
+		id = RSF_sanctions_response
+		icon = GFX_focus_generic_foreign_policy
+		relative_position_id = RSF_emergency_economics
+		x = 0  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_emergency_economics }
+		completion_reward = {
+			country_event = { id = rsf.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = RSF_pivot_east
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = RSF_sanctions_response
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_sanctions_response }
+		mutually_exclusive = { focus = RSF_autarky }
+		ai_will_do = {
+			factor = 65
+		}
+		completion_reward = {
+			country_event = { id = rsf.5 days = 1 }
+		}
+	}
+
+	focus = {
+		id = RSF_autarky
+		icon = GFX_focus_generic_self_focus
+		relative_position_id = RSF_sanctions_response
+		x = 2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_sanctions_response }
+		mutually_exclusive = { focus = RSF_pivot_east }
+		ai_will_do = {
+			factor = 35
+		}
+		completion_reward = {
+			add_ideas = RSF_fortress_russia_idea
+			set_country_flag = RSF_autarky_mode
+		}
+	}
+
+	focus = {
+		id = RSF_military_posture
+		icon = GFX_focus_generic_army_b
+		relative_position_id = RSF_iron_grip
+		x = 4  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_iron_grip }
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = RSF_eastern_deployment
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = RSF_military_posture
+		x = 0  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_military_posture }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 20000
+			set_country_flag = RSF_eastern_deployed
+			create_corps_commander = {
+				name = "Piotr Voronov"
+				traits = { trickster }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+
+	focus = {
+		id = RSF_parasite_shock
+		icon = GFX_focus_RSF_parasite_shock
+		relative_position_id = RSF_eastern_deployment
+		x = -4  y = 2
+		cost = 7.5
+		prerequisite = { focus = RSF_eastern_deployment }
+		prerequisite = { focus = RSF_pivot_east focus = RSF_autarky }
+		completion_reward = {
+			add_stability = -0.08
+			add_war_support = -0.05
+			add_ideas = RSF_parasite_shock_idea
+			add_manpower = -15000
+			country_event = { id = rsf.6 days = 1 }
+		}
+	}
+
+	focus = {
+		id = RSF_desperate_measures
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = RSF_parasite_shock
+		x = 0  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_parasite_shock }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = -0.05
+			add_political_power = -30
+		}
+	}
+
+	focus = {
+		id = RSF_peoples_council
+		icon = GFX_focus_generic_war_communism
+		relative_position_id = RSF_desperate_measures
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_desperate_measures }
+		prerequisite = { focus = RSF_voices_in_the_factories }
+		mutually_exclusive = { focus = RSF_federal_suppression }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = -0.05
+			add_ideas = RSF_peoples_council_nascent_idea
+			set_country_flag = RSF_peoples_path
+		}
+	}
+
+	focus = {
+		id = RSF_federal_suppression
+		icon = GFX_focus_generic_political_support
+		relative_position_id = RSF_desperate_measures
+		x = 2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_desperate_measures }
+		mutually_exclusive = { focus = RSF_peoples_council }
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_stability = -0.08
+			add_war_support = 0.05
+			add_ideas = RSF_federal_last_stand_idea
+			set_country_flag = RSF_suppression_path
+		}
+	}
+
+	focus = {
+		id = RSF_the_fall
+		icon = GFX_focus_RSF_the_fall
+		relative_position_id = RSF_federal_suppression
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_peoples_council focus = RSF_federal_suppression }
+		available = {
+			date > 2022.12.31
+		}
+		completion_reward = {
+			country_event = { id = rsf.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = RSF_nuclear_deterrent
+		icon = GFX_focus_generic_nuclear
+		relative_position_id = RSF_eastern_deployment
+		x = 0  y = 1
+		cost = 7.5
+		prerequisite = { focus = RSF_eastern_deployment }
+		completion_reward = {
+			add_ideas = RSF_nuclear_deterrent_idea
+			add_war_support = 0.05
+		}
+	}
+}

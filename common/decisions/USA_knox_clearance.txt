@@ -1,0 +1,138 @@
+USA_knox_clearance_category = {
+
+	USA_knox_containment_strike = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = KNX
+				check_variable = { iris_infestation_level > 0 }
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+			has_country_flag = USA_knox_campaign_active
+		}
+
+		target_trigger = {
+			FROM = {
+				is_controlled_by = KNX
+				check_variable = { iris_infestation_level > 0 }
+			}
+		}
+
+		visible = {
+			original_tag = USA
+			has_country_flag = USA_knox_campaign_active
+		}
+
+		available = {
+			FROM = {
+				is_controlled_by = KNX
+			}
+		}
+
+		cancel_trigger = {
+			FROM = { NOT = { is_controlled_by = KNX } }
+		}
+
+		cost = 50
+		days_remove = 5
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		remove_effect = {
+			FROM = {
+				add_to_variable = { var = iris_infestation_level value = -8 }
+				clamp_variable = {
+					var = iris_infestation_level
+					min = 0
+					max = 100
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 20
+			modifier = {
+				add = 20
+				FROM = { check_variable = { iris_infestation_level > 49 } }
+			}
+		}
+	}
+
+	USA_knox_incendiary_raid = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = KNX
+				check_variable = { iris_infestation_level > 0 }
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+			has_country_flag = USA_knox_cordon_active
+		}
+
+		target_trigger = {
+			FROM = {
+				is_controlled_by = KNX
+				check_variable = { iris_infestation_level > 0 }
+			}
+		}
+
+		visible = {
+			original_tag = USA
+			has_country_flag = USA_knox_cordon_active
+		}
+
+		available = {
+			FROM = {
+				is_controlled_by = KNX
+			}
+		}
+
+		cancel_trigger = {
+			FROM = { NOT = { is_controlled_by = KNX } }
+		}
+
+		cost = 90
+		days_remove = 7
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		remove_effect = {
+			FROM = {
+				add_to_variable = { var = iris_infestation_level value = -16 }
+				clamp_variable = {
+					var = iris_infestation_level
+					min = 0
+					max = 100
+				}
+				damage_building = { type = beckon_cluster damage = 1 }
+			}
+		}
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = 25
+				FROM = { check_variable = { iris_infestation_level > 49 } }
+			}
+		}
+	}
+
+}

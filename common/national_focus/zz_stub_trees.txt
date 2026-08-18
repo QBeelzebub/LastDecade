@@ -1,0 +1,329 @@
+focus_tree = {
+	id = british_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_british_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = bulgarian_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_bulgarian_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = china_communist_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_china_communist_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = china_communist_warlord_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_china_communist_warlord_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = china_nationalist_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_china_nationalist_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = china_nationalist_warlord_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_china_nationalist_warlord_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = estonia_tree
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_estonia_tree
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = finnish_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_finnish_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = french_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_french_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = german_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_german_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = indian_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_indian_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = italian_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_italian_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = japan_wtt_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_japan_wtt_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = latvia_tree
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_latvia_tree
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = lithuania_tree
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_lithuania_tree
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = mexico_focus_tree
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_mexico_focus_tree
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = polish_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_polish_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = portuguese_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_portuguese_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = south_african_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_south_african_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = soviet_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_soviet_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = usa_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_usa_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = yugoslavian_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = stub_yugoslavian_focus
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}

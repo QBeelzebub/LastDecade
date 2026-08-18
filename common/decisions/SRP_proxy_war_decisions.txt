@@ -1,0 +1,454 @@
+SRP_political_interference_category = {
+
+	USA_stoke_ef_separatism = {
+		priority = 58
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+
+		available = {
+			NOT = { has_country_flag = USA_ef_separatism_cd }
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = { flag = USA_ef_separatism_cd value = 1 days = 120 }
+			EFH = {
+				add_to_variable = { var = EFH_separatist_pressure value = 5 }
+				add_to_variable = { var = EFH_party_sovereigntist value = 3 }
+				EFH_party_clamp_support_effect = yes
+				EFH_party_check_separatist_thresholds_effect = yes
+			}
+			custom_effect_tooltip = USA_stoke_ef_separatism_tt
+			if = {
+				limit = { has_country_flag = USA_atlantic_intel_groundwork }
+				custom_effect_tooltip = USA_groundwork_separatism_tt
+				EFH = {
+					add_to_variable = { var = EFH_separatist_pressure value = 3 }
+					add_to_variable = { var = EFH_party_sovereigntist value = 2 }
+					EFH_party_clamp_support_effect = yes
+					EFH_party_check_separatist_thresholds_effect = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 4
+				power_balance_value = { id = EFH_power_balance value > 0.10 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	USA_fund_ha_lobbying_external = {
+		priority = 57
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+			has_country_flag = USA_summit_cooperative_posture
+		}
+
+		available = {
+			NOT = { has_country_flag = USA_ha_lobby_external_cd }
+			has_country_flag = USA_summit_cooperative_posture
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = { flag = USA_ha_lobby_external_cd value = 1 days = 150 }
+			EFH_bop_low_ha_effect = yes
+			custom_effect_tooltip = USA_fund_ha_lobbying_external_tt
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				power_balance_value = { id = EFH_power_balance value < -0.20 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = USA_summit_cooperative_posture }
+			}
+		}
+	}
+
+	EFH_back_us_credibility = {
+		priority = 58
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			original_tag = EFH
+			country_exists = USA
+			NOT = { has_war_with = USA }
+			has_country_flag = USA_summit_cooperative_posture
+		}
+
+		available = {
+			NOT = { has_country_flag = EFH_back_us_credibility_cd }
+			has_country_flag = USA_summit_cooperative_posture
+			country_exists = USA
+			NOT = { has_war_with = USA }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = { flag = EFH_back_us_credibility_cd value = 1 days = 120 }
+			USA_trust_low_gain_effect = yes
+			custom_effect_tooltip = EFH_back_us_credibility_tt
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				power_balance_value = { id = USA_public_trust value < -0.30 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = USA_summit_cooperative_posture }
+			}
+		}
+	}
+
+	EFH_undermine_us_narrative = {
+		priority = 57
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			original_tag = EFH
+			country_exists = USA
+			NOT = { has_war_with = USA }
+			NOT = { has_country_flag = USA_summit_cooperative_posture }
+		}
+
+		available = {
+			NOT = { has_country_flag = EFH_undermine_us_narrative_cd }
+			NOT = { has_country_flag = USA_summit_cooperative_posture }
+			country_exists = USA
+			NOT = { has_war_with = USA }
+			check_variable = { EFH_USA_escalation > 19 }
+		}
+
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = { flag = EFH_undermine_us_narrative_cd value = 1 days = 180 }
+			USA_trust_low_loss_effect = yes
+			SRP_escalate_low_effect = yes
+			custom_effect_tooltip = EFH_undermine_us_narrative_tt
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 45 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	EFH_establish_atlantic_network = {
+		priority = 56
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_us_intel_ops_unlocked
+			country_exists = USA
+		}
+
+		available = {
+			country_exists = USA
+		}
+
+		fire_only_once = yes
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = EFH_atlantic_network_active
+			add_intel = {
+				target = USA
+				civilian_intel = 15
+				army_intel = 10
+			}
+			EFH_bop_very_low_ef_effect = yes
+			if = {
+				limit = { has_country_flag = EFH_northern_intel_groundwork }
+				custom_effect_tooltip = EFH_atlantic_network_groundwork_tt
+				add_political_power = 25
+				add_intel = {
+					target = USA
+					army_intel = 10
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	EFH_intel_procurement_espionage = {
+		priority = 55
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_atlantic_network_active
+			country_exists = USA
+		}
+
+		available = {
+			NOT = { has_country_flag = EFH_procurement_espionage_cd }
+			country_exists = USA
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = { flag = EFH_procurement_espionage_cd value = 1 days = 120 }
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = electronics
+			}
+			army_experience = 10
+			custom_effect_tooltip = EFH_procurement_espionage_risk_tt
+			hidden_effect = {
+				random_list = {
+					75 = {
+						add_political_power = 10
+					}
+					25 = {
+						SRP_escalate_low_effect = yes
+						USA = { add_war_support = 0.02 }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	EFH_intel_canadian_listening_posts = {
+		priority = 54
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = EFH
+		}
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = EFH_atlantic_network_active
+			has_country_flag = EFH_northern_intel_groundwork
+			country_exists = USA
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		complete_effect = {
+			add_ideas = EFH_canadian_listening_posts_idea
+			add_intel = {
+				target = USA
+				navy_intel = 10
+				airforce_intel = 10
+			}
+			SRP_escalate_low_effect = yes
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+		}
+	}
+}
+
+SRP_escalation_category = {
+
+	SRP_diplomatic_outreach = {
+		priority = 60
+		icon = generic_political_actions
+
+		allowed = {
+			OR = { original_tag = EFH original_tag = USA }
+		}
+
+		available = {
+			NOT = { has_country_flag = SRP_outreach_cd }
+			check_variable = { EFH_USA_escalation > 6 }
+			OR = {
+				AND = { original_tag = EFH country_exists = USA NOT = { has_war_with = USA } }
+				AND = { original_tag = USA country_exists = EFH NOT = { has_war_with = EFH } }
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			SRP_deescalate_medium_effect = yes
+			add_stability = 0.02
+			set_country_flag = { flag = SRP_outreach_cd value = 1 days = 45 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 4
+				check_variable = { EFH_USA_escalation > 65 }
+			}
+			modifier = {
+				factor = 0
+				check_variable = { EFH_USA_escalation < 35 }
+			}
+		}
+	}
+
+	SRP_proxy_theater = {
+		priority = 60
+		icon = generic_political_actions
+
+		allowed = {
+			OR = { original_tag = EFH original_tag = USA }
+		}
+
+		available = {
+			date > 2021.1.1
+			NOT = { has_country_flag = SRP_proxy_theater_cd }
+			check_variable = { EFH_USA_escalation < 95 }
+			OR = {
+				AND = { original_tag = EFH country_exists = USA NOT = { has_war_with = USA } }
+				AND = { original_tag = USA country_exists = EFH NOT = { has_war_with = EFH } }
+			}
+		}
+
+		cost = 60
+
+		complete_effect = {
+			SRP_escalate_low_effect = yes
+			add_war_support = 0.02
+			army_experience = 10
+			set_country_flag = { flag = SRP_proxy_theater_cd value = 1 days = 45 }
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 2
+				check_variable = { EFH_USA_escalation > 45 }
+			}
+		}
+	}
+
+	SRP_economic_pressure = {
+		priority = 60
+		icon = generic_political_actions
+
+		allowed = {
+			OR = { original_tag = EFH original_tag = USA }
+		}
+
+		available = {
+			date > 2021.1.1
+			NOT = { has_country_flag = SRP_economic_pressure_cd }
+			check_variable = { EFH_USA_escalation < 95 }
+			OR = {
+				AND = { original_tag = EFH country_exists = USA NOT = { has_war_with = USA } }
+				AND = { original_tag = USA country_exists = EFH NOT = { has_war_with = EFH } }
+			}
+		}
+
+		cost = 100
+
+		complete_effect = {
+			SRP_escalate_medium_effect = yes
+			if = {
+				limit = { original_tag = EFH }
+				USA = { add_timed_idea = { idea = EFH_usa_market_exclusion days = 365 } }
+			}
+			if = {
+				limit = { original_tag = USA }
+				EFH = { add_timed_idea = { idea = USA_efh_market_exclusion days = 365 } }
+			}
+			set_country_flag = { flag = SRP_economic_pressure_cd value = 1 days = 90 }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 55 }
+			}
+		}
+	}
+}

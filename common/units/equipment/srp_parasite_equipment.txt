@@ -1,0 +1,957 @@
+equipments = {
+	basic_parasite_equipment = {
+		year = 2022
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.0
+
+		defense = 9
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+
+		soft_attack = 1.5
+		hard_attack = 0.25
+		ap_attack = 0.25
+		air_attack = 0
+
+		lend_lease_cost = 1
+		build_cost_ic = 0.8
+		resources = {
+			parasite_biomass = 1
+		}
+	}
+
+	basic_parasite_equipment_1 = {
+		year = 2022
+
+		archetype = basic_parasite_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	pure_parasite_equipment = {
+		year = 2022
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+		reliability = 0.82
+		maximum_speed = 1.0
+
+		defense = 10
+		breakthrough = 2
+		hardness = 0
+		armor_value = 4
+
+		soft_attack = 2.5
+		hard_attack = 0.5
+		ap_attack = 0.5
+		air_attack = 0
+
+		lend_lease_cost = 1
+		build_cost_ic = 3
+		resources = {
+			parasite_biomass = 2
+		}
+	}
+
+	pure_parasite_equipment_1 = {
+		year = 2022
+
+		archetype = pure_parasite_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	preeminent_parasite_equipment = {
+		year = 2024
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+		reliability = 0.8
+		maximum_speed = 1.0
+
+		defense = 11
+		breakthrough = 3.5
+		hardness = 0
+		armor_value = 8
+
+		soft_attack = 4.5
+		hard_attack = 1.25
+		ap_attack = 1.0
+		air_attack = 0.25
+
+		lend_lease_cost = 2
+		build_cost_ic = 7
+		resources = {
+			parasite_biomass = 2
+			nexus_biomass = 1
+		}
+	}
+
+	preeminent_parasite_equipment_1 = {
+		year = 2024
+
+		archetype = preeminent_parasite_equipment
+		priority = 10
+		visual_level = 0
+	}
+
+	vagrant_1_core = {
+		year = 2018
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 1.0
+		maximum_speed = 2.0
+		defense = 20
+		breakthrough = 25
+		soft_attack = 30
+		hard_attack = 10
+		build_cost_ic = 0
+	}
+
+	vagrant_1_core_1 = {
+		year = 2018
+		archetype = vagrant_1_core
+		is_buildable = no
+		active = yes
+		priority = 0
+		visual_level = 0
+	}
+
+	vagrant_2_core = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 1.0
+		maximum_speed = 2.5
+		defense = 15
+		breakthrough = 35
+		soft_attack = 40
+		hard_attack = 15
+		build_cost_ic = 0
+	}
+
+	vagrant_2_core_1 = {
+		year = 2024
+		archetype = vagrant_2_core
+		is_buildable = no
+		active = yes
+		priority = 0
+		visual_level = 0
+	}
+
+	vagrant_3_core = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 1.0
+		maximum_speed = 2.0
+		defense = 30
+		breakthrough = 20
+		soft_attack = 25
+		hard_attack = 10
+		build_cost_ic = 0
+	}
+
+	vagrant_3_core_1 = {
+		year = 2024
+		archetype = vagrant_3_core
+		is_buildable = no
+		active = yes
+		priority = 0
+		visual_level = 0
+	}
+
+	vagrant_4_core = {
+		year = 2025
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 1.0
+		maximum_speed = 2.0
+		defense = 25
+		breakthrough = 30
+		soft_attack = 45
+		hard_attack = 18
+		build_cost_ic = 0
+	}
+
+	vagrant_4_core_1 = {
+		year = 2025
+		archetype = vagrant_4_core
+		is_buildable = no
+		active = yes
+		priority = 0
+		visual_level = 0
+	}
+
+	parasite_supply_swarm = {
+		year = 2018
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment
+		is_buildable = no
+		type = {
+			motorized
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+		supply_truck = yes
+
+		maximum_speed = 6
+		reliability = 0.9
+		hardness = 0
+		breakthrough = 0
+
+		lend_lease_cost = 1
+
+		build_cost_ic = 1.5
+		resources = {
+			parasite_biomass = 1
+		}
+	}
+
+	parasite_supply_swarm_1 = {
+		year = 2018
+
+		archetype = parasite_supply_swarm
+		priority = 30
+	}
+
+	parasite_bio_rail = {
+		year = 2018
+
+		is_archetype = yes
+		picture = archetype_train
+		is_buildable = no
+		type = train
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+
+		armor_value = 0
+
+		lend_lease_cost = 5
+
+		build_cost_ic = 30
+		resources = {
+			parasite_biomass = 2
+		}
+	}
+
+	parasite_bio_rail_1 = {
+		year = 2018
+
+		archetype = parasite_bio_rail
+		priority = 10
+	}
+
+	rupter_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 3
+		defense = 2
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+		soft_attack = 2
+		hard_attack = 0.3
+		ap_attack = 0.3
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 2.0
+		resources = { parasite_biomass = 1 }
+	}
+	rupter_equipment_1 = {
+		year = 2022
+		archetype = rupter_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	mangler_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.0
+		defense = 3
+		breakthrough = 1.5
+		hardness = 0.03
+		armor_value = 1
+		soft_attack = 2.5
+		hard_attack = 0.5
+		ap_attack = 0.4
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 2.5
+		resources = { parasite_biomass = 1 }
+	}
+	mangler_equipment_1 = {
+		year = 2022
+		archetype = mangler_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	primitive_longarms_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 0.8
+		defense = 6
+		breakthrough = 2
+		hardness = 0.04
+		armor_value = 2
+		soft_attack = 4
+		hard_attack = 0.6
+		ap_attack = 0.5
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 3.0
+		resources = { parasite_biomass = 1 }
+	}
+	primitive_longarms_equipment_1 = {
+		year = 2022
+		archetype = primitive_longarms_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	primitive_reeker_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.3
+		defense = 5
+		breakthrough = 3
+		hardness = 0.03
+		armor_value = 1
+		soft_attack = 4
+		hard_attack = 0.5
+		ap_attack = 0.4
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 2.8
+		resources = { parasite_biomass = 1 }
+	}
+	primitive_reeker_equipment_1 = {
+		year = 2022
+		archetype = primitive_reeker_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	primitive_summoner_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 0.8
+		defense = 5
+		breakthrough = 1.5
+		hardness = 0.02
+		armor_value = 1
+		soft_attack = 2.5
+		hard_attack = 0.3
+		ap_attack = 0.3
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 2.5
+		resources = { parasite_biomass = 1 }
+	}
+	primitive_summoner_equipment_1 = {
+		year = 2022
+		archetype = primitive_summoner_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	primitive_manducater_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.2
+		defense = 5
+		breakthrough = 3
+		hardness = 0.03
+		armor_value = 1
+		soft_attack = 4
+		hard_attack = 0.5
+		ap_attack = 0.4
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 3.0
+		resources = { parasite_biomass = 1 }
+	}
+	primitive_manducater_equipment_1 = {
+		year = 2022
+		archetype = primitive_manducater_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	primitive_tozoon_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.1
+		defense = 6
+		breakthrough = 3
+		hardness = 0.04
+		armor_value = 2
+		soft_attack = 4
+		hard_attack = 0.6
+		ap_attack = 0.5
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 3.2
+		resources = { parasite_biomass = 1 }
+	}
+	primitive_tozoon_equipment_1 = {
+		year = 2022
+		archetype = primitive_tozoon_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	dyadic_striker_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.0
+		defense = 5
+		breakthrough = 2
+		hardness = 0.02
+		armor_value = 1
+		soft_attack = 3.5
+		hard_attack = 0.6
+		ap_attack = 1.0
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 2.8
+		resources = { parasite_biomass = 1 }
+	}
+	dyadic_striker_equipment_1 = {
+		year = 2022
+		archetype = dyadic_striker_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	paragon_equipment = {
+		year = 2027
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 0.9
+		defense = 30
+		breakthrough = 26
+		hardness = 0.30
+		armor_value = 16
+		soft_attack = 36
+		hard_attack = 11
+		ap_attack = 5
+		air_attack = 0
+		lend_lease_cost = 3
+		build_cost_ic = 18
+		resources = { parasite_biomass = 3 }
+	}
+	paragon_equipment_1 = {
+		year = 2027
+		archetype = paragon_equipment
+		priority = 12
+		visual_level = 0
+	}
+
+	vigilante_battery_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.82
+		maximum_speed = 0.7
+		defense = 14
+		breakthrough = 4
+		hardness = 0.05
+		armor_value = 3
+		soft_attack = 9
+		hard_attack = 1.2
+		ap_attack = 0.8
+		air_attack = 0.25
+		lend_lease_cost = 1
+		build_cost_ic = 7
+		resources = { parasite_biomass = 2 }
+	}
+	vigilante_battery_equipment_1 = {
+		year = 2022
+		archetype = vigilante_battery_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	monarch_hunter_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.82
+		maximum_speed = 1.3
+		defense = 10
+		breakthrough = 9
+		hardness = 0.05
+		armor_value = 3
+		soft_attack = 7
+		hard_attack = 1.2
+		ap_attack = 0.8
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 8
+		resources = { parasite_biomass = 2 }
+	}
+	monarch_hunter_equipment_1 = {
+		year = 2022
+		archetype = monarch_hunter_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	host_parasite_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.82
+		maximum_speed = 1.0
+		defense = 12
+		breakthrough = 5
+		hardness = 0.04
+		armor_value = 3
+		soft_attack = 6
+		hard_attack = 1.3
+		ap_attack = 1.0
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 7
+		resources = { parasite_biomass = 2 }
+	}
+	host_parasite_equipment_1 = {
+		year = 2022
+		archetype = host_parasite_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	hollower_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.82
+		maximum_speed = 0.7
+		defense = 11
+		breakthrough = 8
+		hardness = 0.07
+		armor_value = 4
+		soft_attack = 6
+		hard_attack = 1.5
+		ap_attack = 1.1
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 7.5
+		resources = { parasite_biomass = 2 }
+	}
+	hollower_equipment_1 = {
+		year = 2022
+		archetype = hollower_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	arbiter_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.82
+		maximum_speed = 1.0
+		defense = 11
+		breakthrough = 6
+		hardness = 0.04
+		armor_value = 3
+		soft_attack = 6
+		hard_attack = 1.3
+		ap_attack = 0.9
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 6.5
+		resources = { parasite_biomass = 2 }
+	}
+	arbiter_equipment_1 = {
+		year = 2022
+		archetype = arbiter_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	carrier_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 0.9
+		defense = 3
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+		soft_attack = 1.5
+		hard_attack = 0.2
+		ap_attack = 0.2
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 2.0
+		resources = { parasite_biomass = 1 }
+	}
+	carrier_equipment_1 = {
+		year = 2022
+		archetype = carrier_equipment
+		priority = 5
+		visual_level = 0
+	}
+
+	overseer_caller_equipment = {
+		year = 2022
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.82
+		maximum_speed = 0.9
+		defense = 10
+		breakthrough = 4
+		hardness = 0.04
+		armor_value = 2
+		soft_attack = 5
+		hard_attack = 1.0
+		ap_attack = 0.75
+		air_attack = 0
+		lend_lease_cost = 1
+		build_cost_ic = 7
+		resources = { parasite_biomass = 2 }
+	}
+	overseer_caller_equipment_1 = {
+		year = 2022
+		archetype = overseer_caller_equipment
+		priority = 7
+		visual_level = 0
+	}
+
+	haunter_titan_equipment = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.8
+		maximum_speed = 0.8
+		defense = 30
+		breakthrough = 18
+		hardness = 0.25
+		armor_value = 14
+		soft_attack = 20
+		hard_attack = 6
+		ap_attack = 4
+		air_attack = 0.5
+		lend_lease_cost = 2
+		build_cost_ic = 17
+		resources = { parasite_biomass = 2 nexus_biomass = 2 }
+	}
+	haunter_titan_equipment_1 = {
+		year = 2024
+		archetype = haunter_titan_equipment
+		priority = 10
+		visual_level = 0
+	}
+
+	herd_parasite_equipment = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.8
+		maximum_speed = 0.9
+		defense = 24
+		breakthrough = 12
+		hardness = 0.14
+		armor_value = 11
+		soft_attack = 18
+		hard_attack = 4
+		ap_attack = 2.5
+		air_attack = 0.25
+		lend_lease_cost = 2
+		build_cost_ic = 14
+		resources = { parasite_biomass = 2 nexus_biomass = 1 }
+	}
+	herd_parasite_equipment_1 = {
+		year = 2024
+		archetype = herd_parasite_equipment
+		priority = 10
+		visual_level = 0
+	}
+
+	scourer_equipment = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.8
+		maximum_speed = 1.4
+		defense = 18
+		breakthrough = 22
+		hardness = 0.13
+		armor_value = 9
+		soft_attack = 22
+		hard_attack = 3.5
+		ap_attack = 2.5
+		air_attack = 0.25
+		lend_lease_cost = 2
+		build_cost_ic = 14
+		resources = { parasite_biomass = 2 nexus_biomass = 1 }
+	}
+	scourer_equipment_1 = {
+		year = 2024
+		archetype = scourer_equipment
+		priority = 10
+		visual_level = 0
+	}
+
+	culler_equipment = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.8
+		maximum_speed = 1.2
+		defense = 18
+		breakthrough = 14
+		hardness = 0.11
+		armor_value = 8
+		soft_attack = 19
+		hard_attack = 4.5
+		ap_attack = 3
+		air_attack = 0.25
+		lend_lease_cost = 2
+		build_cost_ic = 13
+		resources = { parasite_biomass = 2 nexus_biomass = 1 }
+	}
+	culler_equipment_1 = {
+		year = 2024
+		archetype = culler_equipment
+		priority = 10
+		visual_level = 0
+	}
+
+	magistrate_equipment = {
+		year = 2027
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.1
+		defense = 32
+		breakthrough = 22
+		hardness = 0.24
+		armor_value = 15
+		soft_attack = 30
+		hard_attack = 10
+		ap_attack = 5
+		air_attack = 0.3
+		lend_lease_cost = 3
+		build_cost_ic = 17
+		resources = { parasite_biomass = 3 nexus_biomass = 2 }
+	}
+	magistrate_equipment_1 = {
+		year = 2027
+		archetype = magistrate_equipment
+		priority = 11
+		visual_level = 0
+	}
+
+	srp_marauder_equipment = {
+		year = 2024
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = yes
+		reliability = 0.8
+		maximum_speed = 1.0
+		defense = 25
+		breakthrough = 24
+		hardness = 0.20
+		armor_value = 13
+		soft_attack = 26
+		hard_attack = 7
+		ap_attack = 4
+		air_attack = 0.25
+		lend_lease_cost = 2
+		build_cost_ic = 18
+		resources = { parasite_biomass = 2 nexus_biomass = 2 }
+	}
+	srp_marauder_equipment_1 = {
+		year = 2024
+		archetype = srp_marauder_equipment
+		priority = 10
+		visual_level = 0
+	}
+
+}

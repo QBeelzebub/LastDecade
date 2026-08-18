@@ -1,0 +1,18 @@
+technologies = {
+
+	parasite_equipment_access = {
+		allow = {
+			always = no
+		}
+		research_cost = 1
+
+		enable_equipments = {
+			basic_parasite_equipment_1
+			pure_parasite_equipment_1
+			preeminent_parasite_equipment_1
+			parasite_supply_swarm_1
+			parasite_bio_rail_1
+		}
+	}
+
+}

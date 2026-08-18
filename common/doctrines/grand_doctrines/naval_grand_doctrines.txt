@@ -1,0 +1,196 @@
+ld_convoy_survival_doctrine = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_CONVOY_SURVIVAL_DOCTRINE
+	description = LD_GRAND_DOCTRINE_CONVOY_SURVIVAL_DOCTRINE_DESC
+	icon = GFX_integrated_convoy_defence_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 2 }
+	tracks = { submarines screens carriers capital_ships }
+	convoy_escort_efficiency = 0.20
+	naval_detection = 0.05
+	milestones = {
+		{ naval_torpedo_reveal_chance_factor = -0.05 }
+		{ convoy_escort_efficiency = 0.15 navy_anti_air_attack_factor = 0.05 }
+		{ sortie_efficiency = 0.10 }
+		{ strike_force_movement_org_loss = -0.10 }
+	}
+}
+
+ld_littoral_containment_doctrine = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_LITTORAL_CONTAINMENT_DOCTRINE
+	description = LD_GRAND_DOCTRINE_LITTORAL_CONTAINMENT_DOCTRINE_DESC
+	icon = GFX_convoy_escorts_bs_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	naval_detection = 0.10
+	mines_planting_by_fleets_factor = 0.10
+	milestones = {
+		{ submarine_attack = 0.05 }
+		{ convoy_escort_efficiency = 0.10 naval_detection = 0.05 }
+		{ naval_strike_targetting_factor = 0.10 }
+		{ navy_capital_ship_attack_factor = 0.05 }
+	}
+}
+
+ld_mobile_sea_bastions = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_MOBILE_SEA_BASTIONS
+	description = LD_GRAND_DOCTRINE_MOBILE_SEA_BASTIONS_DESC
+	icon = GFX_floating_airfield_bs_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	carrier = { max_organisation = 15 }
+	navy_capital_ship_defence_factor = 0.05
+	milestones = {
+		{ naval_torpedo_reveal_chance_factor = -0.05 }
+		{ navy_anti_air_attack_factor = 0.10 }
+		{ sortie_efficiency = 0.25 navy_carrier_air_agility_factor = 0.05 }
+		{ strike_force_movement_org_loss = -0.15 }
+	}
+}
+
+ld_silent_transit_doctrine = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_SILENT_TRANSIT_DOCTRINE
+	description = LD_GRAND_DOCTRINE_SILENT_TRANSIT_DOCTRINE_DESC
+	icon = GFX_submarine_operations_bs_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	submarine = {
+		max_organisation = 10
+		surface_detection = 0.05
+	}
+	convoy_raiding_efficiency_factor = 0.10
+	milestones = {
+		{ submarine_attack = 0.10 naval_torpedo_reveal_chance_factor = -0.10 }
+		{ naval_detection = 0.10 }
+		{ naval_strike_targetting_factor = 0.05 }
+		{ convoy_escort_efficiency = 0.05 }
+	}
+}
+
+ld_sea_control_doctrine = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_SEA_CONTROL_DOCTRINE
+	description = LD_GRAND_DOCTRINE_SEA_CONTROL_DOCTRINE_DESC
+	icon = GFX_floating_airfield_bs_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	carrier = { max_organisation = 15 }
+	sortie_efficiency = 0.15
+	navy_carrier_air_agility_factor = 0.08
+	milestones = {
+		{ naval_strike_targetting_factor = 0.08 }
+		{ navy_anti_air_attack_factor = 0.10 sortie_efficiency = 0.10 }
+		{ strike_force_movement_org_loss = -0.15 }
+		{ navy_capital_ship_attack_factor = 0.05 navy_capital_ship_defence_factor = 0.05 }
+	}
+}
+
+ld_sea_denial_doctrine = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_SEA_DENIAL_DOCTRINE
+	description = LD_GRAND_DOCTRINE_SEA_DENIAL_DOCTRINE_DESC
+	icon = GFX_submarine_operations_bs_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	submarine_attack = 0.10
+	mines_planting_by_fleets_factor = 0.15
+	naval_torpedo_reveal_chance_factor = -0.10
+	milestones = {
+		{ convoy_raiding_efficiency_factor = 0.10 naval_detection = 0.05 }
+		{ submarine = { max_organisation = 10 } }
+		{ naval_torpedo_reveal_chance_factor = -0.10 strike_force_movement_org_loss = -0.10 }
+		{ submarine_attack = 0.10 naval_detection = 0.05 }
+	}
+}
+
+ld_parasite_naval_tide = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_PARASITE_NAVAL_TIDE
+	description = LD_GRAND_DOCTRINE_PARASITE_NAVAL_TIDE_DESC
+	icon = GFX_convoy_escorts_bs_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 2 }
+	tracks = { submarines screens carriers capital_ships }
+	mines_planting_by_fleets_factor = 0.20
+	convoy_raiding_efficiency_factor = 0.15
+	naval_detection = 0.05
+	milestones = {
+		{ convoy_raiding_efficiency_factor = 0.10 }
+		{ mines_planting_by_fleets_factor = 0.10 naval_detection = 0.05 }
+		{ naval_torpedo_reveal_chance_factor = -0.10 }
+		{ convoy_raiding_efficiency_factor = 0.10 strike_force_movement_org_loss = -0.10 }
+	}
+}
+
+ld_parasite_naval_few = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_PARASITE_NAVAL_FEW
+	description = LD_GRAND_DOCTRINE_PARASITE_NAVAL_FEW_DESC
+	icon = GFX_submarine_operations_bs_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	submarine_attack = 0.10
+	naval_torpedo_reveal_chance_factor = -0.15
+	submarine = { max_organisation = 10 }
+	milestones = {
+		{ submarine_attack = 0.05 }
+		{ naval_torpedo_reveal_chance_factor = -0.10 naval_detection = 0.05 }
+		{ navy_capital_ship_attack_factor = 0.05 }
+		{ submarine_attack = 0.05 sortie_efficiency = 0.05 }
+	}
+}
+
+ld_parasite_naval_network = {
+	folder = naval
+	name = LD_GRAND_DOCTRINE_PARASITE_NAVAL_NETWORK
+	description = LD_GRAND_DOCTRINE_PARASITE_NAVAL_NETWORK_DESC
+	icon = GFX_integrated_convoy_defence_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = navy
+	ai_will_do = { base = 1 }
+	tracks = { submarines screens carriers capital_ships }
+	naval_detection = 0.10
+	sortie_efficiency = 0.10
+	strike_force_movement_org_loss = -0.10
+	milestones = {
+		{ naval_strike_targetting_factor = 0.10 }
+		{ naval_detection = 0.05 sortie_efficiency = 0.05 }
+		{ navy_capital_ship_defence_factor = 0.05 }
+		{ strike_force_movement_org_loss = -0.10 naval_detection = 0.05 }
+	}
+}

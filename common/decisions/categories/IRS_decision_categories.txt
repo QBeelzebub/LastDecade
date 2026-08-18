@@ -1,0 +1,142 @@
+IRS_phase0_operations = {
+	icon = generic_prepare_offensive
+	priority = 65
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+		OR = {
+			has_country_flag = IRS_seeding_ops_phase0_active
+			has_country_flag = IRS_emergence_ops_phase0_active
+		}
+	}
+}
+
+irs_root_beckon_discovery = {
+	icon = generic_prepare_offensive
+	priority = 55
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+	}
+}
+
+IRS_evolution_points_category = {
+	icon = generic_political_actions
+	priority = 70
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+		has_country_flag = IRS_phase_0_active
+	}
+}
+
+IRS_devourer_operations = {
+	icon = GFX_decision_cat_generic_navy
+	priority = 80
+
+	allowed = {
+		original_tag = IRS
+	}
+
+	visible = {
+		original_tag = IRS
+		has_tech = devourer_emergence
+	}
+}
+
+irs_assimilation = {
+	icon = generic_crisis
+	priority = 80
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+		any_owned_state = {
+			check_variable = {
+				var = iris_infestation_level
+				value = 99
+				compare = greater_than
+			}
+			NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+			NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+		}
+	}
+}
+
+irs_nexus_relocation = {
+	icon = generic_political_actions
+	priority = 70
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+		any_owned_state = { has_state_flag = irs_state_consumed }
+	}
+}
+
+irs_manifestation_decisions = {
+	icon = generic_prepare_offensive
+	priority = 60
+	visible_when_empty = yes
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+		has_tech = ancient_manifestation
+	}
+}
+
+IRS_mio_funding = {
+	icon = generic_prepare_offensive
+	priority = 65
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+	}
+}
+
+IRS_emergence_operations = {
+	icon = generic_prepare_offensive
+	priority = 100
+	visible_when_empty = no
+
+	allowed = {
+		tag = IRS
+	}
+
+	visible = {
+		tag = IRS
+		NOT = { has_country_flag = IRS_emerged }
+	}
+}

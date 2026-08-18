@@ -1,0 +1,104 @@
+scripted_gui = {
+
+	srp_national_laws_ui = {
+		context_type = decision_category
+		window_name = "srp_national_laws_ui_window"
+
+		visible = {
+			NOT = { is_full_parasite = yes }
+			has_country_flag = SRP_testing_national_policy
+		}
+
+		triggers = {
+			ca_opt1_sel_visible = { has_idea = srp_civil_society_intact }
+			ca_opt2_sel_visible = { has_idea = srp_emergency_legislation }
+			ca_opt3_sel_visible = { has_idea = srp_security_state }
+			ca_opt4_sel_visible = { has_idea = srp_martial_law }
+			ca_opt5_sel_visible = { has_idea = srp_total_emergency_regime }
+
+			fp_opt1_sel_visible = { has_idea = srp_laissez_faire }
+			fp_opt2_sel_visible = { has_idea = srp_keynesian_intervention }
+			fp_opt3_sel_visible = { has_idea = srp_social_democracy }
+			fp_opt4_sel_visible = { has_idea = srp_austerity_measures }
+			fp_opt5_sel_visible = { has_idea = srp_war_socialism }
+
+			ca_opt1_click_enabled = { NOT = { has_idea = srp_civil_society_intact } }
+			ca_opt2_click_enabled = { NOT = { has_idea = srp_emergency_legislation } }
+			ca_opt3_click_enabled = { NOT = { has_idea = srp_security_state } }
+			ca_opt4_click_enabled = { NOT = { has_idea = srp_martial_law } }
+			ca_opt5_click_enabled = { NOT = { has_idea = srp_total_emergency_regime } }
+
+			fp_opt1_click_enabled = { NOT = { has_idea = srp_laissez_faire } }
+			fp_opt2_click_enabled = { NOT = { has_idea = srp_keynesian_intervention } }
+			fp_opt3_click_enabled = { NOT = { has_idea = srp_social_democracy } }
+			fp_opt4_click_enabled = { NOT = { has_idea = srp_austerity_measures } }
+			fp_opt5_click_enabled = { NOT = { has_idea = srp_war_socialism } }
+		}
+
+		effects = {
+			ca_opt1_click = {
+				hidden_effect = {
+					srp_clear_crisis_authority = yes
+					add_ideas = srp_civil_society_intact
+				}
+			}
+			ca_opt2_click = {
+				hidden_effect = {
+					srp_clear_crisis_authority = yes
+					add_ideas = srp_emergency_legislation
+				}
+			}
+			ca_opt3_click = {
+				hidden_effect = {
+					srp_clear_crisis_authority = yes
+					add_ideas = srp_security_state
+				}
+			}
+			ca_opt4_click = {
+				hidden_effect = {
+					srp_clear_crisis_authority = yes
+					add_ideas = srp_martial_law
+				}
+			}
+			ca_opt5_click = {
+				hidden_effect = {
+					srp_clear_crisis_authority = yes
+					add_ideas = srp_total_emergency_regime
+				}
+			}
+
+			fp_opt1_click = {
+				hidden_effect = {
+					srp_clear_fiscal_policy = yes
+					add_ideas = srp_laissez_faire
+				}
+			}
+			fp_opt2_click = {
+				hidden_effect = {
+					srp_clear_fiscal_policy = yes
+					add_ideas = srp_keynesian_intervention
+				}
+			}
+			fp_opt3_click = {
+				hidden_effect = {
+					srp_clear_fiscal_policy = yes
+					add_ideas = srp_social_democracy
+				}
+			}
+			fp_opt4_click = {
+				hidden_effect = {
+					srp_clear_fiscal_policy = yes
+					add_ideas = srp_austerity_measures
+				}
+			}
+			fp_opt5_click = {
+				hidden_effect = {
+					srp_clear_fiscal_policy = yes
+					add_ideas = srp_war_socialism
+				}
+			}
+		}
+
+		ai_enabled = { always = no }
+	}
+}

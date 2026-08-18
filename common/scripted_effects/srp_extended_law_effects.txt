@@ -1,0 +1,15 @@
+srp_clear_crisis_authority = {
+	if = { limit = { has_idea = srp_civil_society_intact }   remove_ideas = srp_civil_society_intact }
+	if = { limit = { has_idea = srp_emergency_legislation }  remove_ideas = srp_emergency_legislation }
+	if = { limit = { has_idea = srp_security_state }         remove_ideas = srp_security_state }
+	if = { limit = { has_idea = srp_martial_law }            remove_ideas = srp_martial_law }
+	if = { limit = { has_idea = srp_total_emergency_regime } remove_ideas = srp_total_emergency_regime }
+}
+
+srp_clear_fiscal_policy = {
+	if = { limit = { has_idea = srp_laissez_faire }          remove_ideas = srp_laissez_faire }
+	if = { limit = { has_idea = srp_keynesian_intervention } remove_ideas = srp_keynesian_intervention }
+	if = { limit = { has_idea = srp_social_democracy }       remove_ideas = srp_social_democracy }
+	if = { limit = { has_idea = srp_austerity_measures }     remove_ideas = srp_austerity_measures }
+	if = { limit = { has_idea = srp_war_socialism }          remove_ideas = srp_war_socialism }
+}

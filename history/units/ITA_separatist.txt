@@ -1,0 +1,103 @@
+division_template = {
+	name = "Italian National Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 25000
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2000
+		producer = ITA
+	}
+}
+
+units = {
+	division = {
+		name = "1a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 9904
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 9904
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 3780
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 3780
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 819
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 819
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 9907
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 9907
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 11584
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10a Divisione di Fanteria"
+		division_template = "Italian National Guard"
+		location = 11584
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

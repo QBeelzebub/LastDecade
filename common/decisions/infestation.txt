@@ -1,0 +1,91 @@
+infestation_decision = {
+	uproot_beckon_cluster = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+			}
+		}
+
+		target_root_trigger = {
+			NOT = { is_full_parasite = yes }
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+			}
+		}
+
+		visible = {
+			NOT = { is_full_parasite = yes }
+		}
+
+		available = {
+			NOT = { is_full_parasite = yes }
+			FROM = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					NOT = { is_controlled_by = ROOT }
+					NOT = { beckon_cluster > 0 }
+				}
+			}
+		}
+
+		cost = 75
+		days_remove = 3
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 15
+				FROM = { check_variable = { iris_infestation_level > 29 } }
+			}
+			modifier = {
+				add = 25
+				FROM = { check_variable = { iris_infestation_level > 59 } }
+			}
+		}
+
+		modifier = {
+			political_power_gain = -0.10
+		}
+
+		remove_effect = {
+			FROM = {
+				remove_building = { type = beckon_cluster level = 1 }
+
+				add_to_variable = { var = iris_infestation_level value = -10 }
+				clamp_variable = {
+					var = iris_infestation_level
+					min = 0
+					max = 100
+				}
+
+				set_variable = { var = iris_infestation_bonus value = iris_infestation_level }
+				multiply_variable = { var = iris_infestation_bonus value = 0.005 }
+
+				set_variable = { var = iris_infestation_penalty value = iris_infestation_level }
+				multiply_variable = { var = iris_infestation_penalty value = -0.003 }
+
+				set_variable = { var = iris_infestation_attrition value = iris_infestation_level }
+				multiply_variable = { var = iris_infestation_attrition value = 0.002 }
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+bookmarks = {
+	bookmark = {
+		name = "Last Decade"
+		desc = "LAST_DECADE_DESC"
+		date = 2020.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "EFH"
+		default = yes
+
+		filters = { label }
+
+		EFH = {
+			history = "EFH_LAST_DECADE_DESC"
+			ideology = democratic
+			label = { label_human_nations }
+		}
+		USA = {
+			history = "USA_LAST_DECADE_DESC"
+			ideology = democratic
+			label = { label_human_nations }
+		}
+		RSF = {
+			history = "RSF_LAST_DECADE_DESC"
+			ideology = neutrality
+			label = { label_human_nations }
+			minor = yes
+		}
+		IRS = {
+			history = "IRS_LAST_DECADE_DESC"
+			ideology = neutrality
+			label = { label_parasite_factions }
+		}
+		SWR = {
+			history = "SWR_LAST_DECADE_DESC"
+			ideology = communism
+			label = { label_human_nations }
+			minor = yes
+		}
+		effect = {
+			randomize_weather = 22345
+		}
+	}
+	bookmark = {
+		name = "BEFORE_THE_STORM"
+		desc = "BEFORE_THE_STORM_DESC"
+		date = 2018.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "EFH"
+
+		filters = { label }
+
+		EFH = {
+			history = "EFH_LAST_DECADE_DESC"
+			ideology = democratic
+			label = { label_human_nations }
+		}
+		USA = {
+			history = "USA_LAST_DECADE_DESC"
+			ideology = democratic
+			label = { label_human_nations }
+		}
+		RSF = {
+			history = "RSF_LAST_DECADE_DESC"
+			ideology = neutrality
+			label = { label_human_nations }
+			minor = yes
+		}
+		IRS = {
+			history = "IRS_BTS_DESC"
+			ideology = neutrality
+			label = { label_parasite_factions }
+		}
+		SWR = {
+			history = "SWR_LAST_DECADE_DESC"
+			ideology = communism
+			label = { label_human_nations }
+			minor = yes
+		}
+		effect = {
+			randomize_weather = 22345
+		}
+	}
+}

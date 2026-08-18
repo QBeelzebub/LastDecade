@@ -1,0 +1,71 @@
+ideas = {
+	country = {
+		SRP_orbital_surveillance_tier_1 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain_factor = 0.05
+				intelligence_agency_defense = 0.02
+			}
+		}
+
+		SRP_orbital_surveillance_tier_2 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain_factor = 0.08
+				intelligence_agency_defense = 0.03
+				army_intel_factor = 0.02
+				airforce_intel_factor = 0.02
+				navy_intel_factor = 0.02
+			}
+		}
+
+		SRP_orbital_surveillance_tier_3 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain_factor = 0.12
+				intelligence_agency_defense = 0.05
+				army_intel_factor = 0.03
+				airforce_intel_factor = 0.03
+				navy_intel_factor = 0.03
+				civilian_intel_factor = 0.03
+				research_speed_factor = 0.01
+			}
+		}
+
+		SRP_orbital_surveillance_tier_4 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain_factor = 0.16
+				intelligence_agency_defense = 0.07
+				army_intel_factor = 0.04
+				airforce_intel_factor = 0.04
+				navy_intel_factor = 0.04
+				civilian_intel_factor = 0.04
+				research_speed_factor = 0.015
+			}
+		}
+
+		SRP_orbital_surveillance_tier_5 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain_factor = 0.20
+				intelligence_agency_defense = 0.10
+				army_intel_factor = 0.05
+				airforce_intel_factor = 0.05
+				navy_intel_factor = 0.05
+				civilian_intel_factor = 0.05
+				research_speed_factor = 0.02
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+on_actions = {
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = IRS }
+					FROM = { tag = AFR }
+				}
+				every_country = {
+					limit = {
+						exists = yes
+						NOT = { is_full_parasite = yes }
+						NOT = { tag = AFR }
+						NOT = { has_war_with = IRS }
+					}
+					country_event = { id = geo_volunteers.1 days = 2 }
+				}
+			}
+		}
+	}
+}

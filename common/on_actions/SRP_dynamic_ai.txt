@@ -1,0 +1,72 @@
+on_actions = {
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = { ROOT = { is_full_parasite = yes } }
+				ROOT = {
+					if = {
+						limit = { check_variable = { global.srp_parasite_aggression = 1 } }
+						add_ai_strategy = { type = conquer  id = FROM  value = 100 }
+					}
+					if = {
+						limit = {
+							NOT = { check_variable = { global.srp_parasite_aggression = 1 } }
+							NOT = { check_variable = { global.srp_parasite_aggression = 3 } }
+						}
+						add_ai_strategy = { type = conquer  id = FROM  value = 200 }
+					}
+					if = {
+						limit = { check_variable = { global.srp_parasite_aggression = 3 } }
+						add_ai_strategy = { type = conquer  id = FROM  value = 400 }
+					}
+				}
+			}
+			if = {
+				limit = { FROM = { is_full_parasite = yes } }
+				FROM = {
+					if = {
+						limit = { check_variable = { global.srp_parasite_aggression = 1 } }
+						add_ai_strategy = { type = conquer  id = ROOT  value = 100 }
+					}
+					if = {
+						limit = {
+							NOT = { check_variable = { global.srp_parasite_aggression = 1 } }
+							NOT = { check_variable = { global.srp_parasite_aggression = 3 } }
+						}
+						add_ai_strategy = { type = conquer  id = ROOT  value = 200 }
+					}
+					if = {
+						limit = { check_variable = { global.srp_parasite_aggression = 3 } }
+						add_ai_strategy = { type = conquer  id = ROOT  value = 400 }
+					}
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { FROM = { is_full_parasite = yes } }
+				FROM = {
+					if = {
+						limit = { check_variable = { global.srp_parasite_aggression = 1 } }
+						add_ai_strategy = { type = ai_wanted_divisions_factor  value = 25 }
+					}
+					if = {
+						limit = {
+							NOT = { check_variable = { global.srp_parasite_aggression = 1 } }
+							NOT = { check_variable = { global.srp_parasite_aggression = 3 } }
+						}
+						add_ai_strategy = { type = ai_wanted_divisions_factor  value = 50 }
+					}
+					if = {
+						limit = { check_variable = { global.srp_parasite_aggression = 3 } }
+						add_ai_strategy = { type = ai_wanted_divisions_factor  value = 100 }
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+EFH_directorate_clear_posture_effect = {
+	if = {
+		limit = { check_variable = { EFH_directorate_posture = 1 } }
+		remove_trait = { character = EFH_ashley_woods trait = EFH_ha_ashley_unimpeded slot = political_advisor }
+		remove_trait = { character = EFH_reinhard_voss trait = EFH_ha_voss_covering slot = political_advisor }
+	}
+	if = {
+		limit = { check_variable = { EFH_directorate_posture = 2 } }
+		remove_trait = { character = EFH_ashley_woods trait = EFH_ha_ashley_under_audit slot = political_advisor }
+		remove_trait = { character = EFH_reinhard_voss trait = EFH_ha_voss_overruled slot = political_advisor }
+	}
+	if = {
+		limit = { check_variable = { EFH_directorate_posture = 3 } }
+		remove_trait = { character = EFH_ashley_woods trait = EFH_ha_ashley_sole_custody slot = political_advisor }
+		remove_trait = { character = EFH_reinhard_voss trait = EFH_ha_voss_entrenched slot = political_advisor }
+	}
+}
+
+EFH_directorate_posture_1_effect = {
+	set_variable = { EFH_directorate_posture = 1 }
+	add_trait = { character = EFH_ashley_woods trait = EFH_ha_ashley_unimpeded slot = political_advisor }
+	add_trait = { character = EFH_reinhard_voss trait = EFH_ha_voss_covering slot = political_advisor }
+}
+
+EFH_directorate_posture_2_effect = {
+	set_variable = { EFH_directorate_posture = 2 }
+	add_trait = { character = EFH_ashley_woods trait = EFH_ha_ashley_under_audit slot = political_advisor }
+	add_trait = { character = EFH_reinhard_voss trait = EFH_ha_voss_overruled slot = political_advisor }
+}
+
+EFH_directorate_posture_3_effect = {
+	set_variable = { EFH_directorate_posture = 3 }
+	add_trait = { character = EFH_ashley_woods trait = EFH_ha_ashley_sole_custody slot = political_advisor }
+	add_trait = { character = EFH_reinhard_voss trait = EFH_ha_voss_entrenched slot = political_advisor }
+}
+
+EFH_directorate_roll_posture_effect = {
+	set_temp_variable = { EFH_directorate_posture_prev = EFH_directorate_posture }
+	EFH_directorate_clear_posture_effect = yes
+	if = {
+		limit = { check_variable = { EFH_directorate_posture_prev = 1 } }
+		random_list = {
+			50 = { EFH_directorate_posture_2_effect = yes }
+			50 = { EFH_directorate_posture_3_effect = yes }
+		}
+	}
+	if = {
+		limit = { check_variable = { EFH_directorate_posture_prev = 2 } }
+		random_list = {
+			50 = { EFH_directorate_posture_1_effect = yes }
+			50 = { EFH_directorate_posture_3_effect = yes }
+		}
+	}
+	if = {
+		limit = { check_variable = { EFH_directorate_posture_prev = 3 } }
+		random_list = {
+			50 = { EFH_directorate_posture_1_effect = yes }
+			50 = { EFH_directorate_posture_2_effect = yes }
+		}
+	}
+}

@@ -1,0 +1,19 @@
+units = {
+	fleet = {
+		name = "Northern Fleet"
+		naval_base = 3151
+		task_force = {
+			name = "43rd Missile Ship Division"
+			location = 3151
+			ship = { name = "RFS Admiral Gorshkov" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = RSF version_name = "Admiral Gorshkov Class" } } }
+			ship = { name = "RFS Sovremenny" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = RSF version_name = "Sovremenny Class" } } }
+			ship = { name = "RFS Udaloy" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = RSF version_name = "Udaloy Class" } } }
+		}
+		task_force = {
+			name = "24th Submarine Division"
+			location = 3151
+			ship = { name = "RFS Gepard" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = RSF version_name = "Akula Class" } } }
+			ship = { name = "RFS Vepr" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = RSF version_name = "Akula Class" } } }
+		}
+	}
+}

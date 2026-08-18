@@ -1,0 +1,163 @@
+add_namespace = srp_consortium
+
+country_event = {
+	id = srp_consortium.1
+	title = srp_consortium.1.t
+	desc = srp_consortium.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.1.a
+	}
+}
+
+country_event = {
+	id = srp_consortium.3
+	title = srp_consortium.3.t
+	desc = srp_consortium.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.3.a
+	}
+}
+
+country_event = {
+	id = srp_consortium.16
+	title = srp_consortium.16.t
+	desc = srp_consortium.16.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.16.a
+		add_tech_bonus = {
+			name = srp_consortium_nuclear_artillery_bonus
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
+	}
+}
+
+country_event = {
+	id = srp_consortium.15
+	title = srp_consortium.15.t
+	desc = srp_consortium.15.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.15.a
+		add_tech_bonus = {
+			name = srp_consortium_carrier_fuel_bonus
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+	}
+}
+
+country_event = {
+	id = srp_consortium.14
+	title = srp_consortium.14.t
+	desc = srp_consortium.14.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.14.a
+		add_tech_bonus = {
+			name = srp_consortium_weakpoint_bonus_armor
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+		add_tech_bonus = {
+			name = srp_consortium_weakpoint_bonus_doctrine
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+country_event = {
+	id = srp_consortium.13
+	title = srp_consortium.13.t
+	desc = srp_consortium.13.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.13.a
+		add_tech_bonus = {
+			name = srp_consortium_sf6_bonus
+			bonus = 0.5
+			uses = 1
+			category = air_equipment
+		}
+	}
+}
+
+country_event = {
+	id = srp_consortium.12
+	title = srp_consortium.12.t
+	desc = srp_consortium.12.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.12.a
+		add_tech_bonus = {
+			name = srp_consortium_fusion_engine_bonus
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+	}
+}
+
+country_event = {
+	id = srp_consortium.11
+	title = srp_consortium.11.t
+	desc = srp_consortium.11.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.11.a
+		add_tech_bonus = {
+			name = srp_consortium_stbn_naval_bonus
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+	}
+}
+
+country_event = {
+	id = srp_consortium.10
+	title = srp_consortium.10.t
+	desc = srp_consortium.10.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_consortium.10.a
+		add_tech_bonus = {
+			name = srp_consortium_stbn_tank_bonus_armor
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+		add_tech_bonus = {
+			name = srp_consortium_stbn_tank_bonus_doctrine
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}

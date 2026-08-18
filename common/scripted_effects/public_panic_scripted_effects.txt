@@ -1,0 +1,44 @@
+SRP_recalculate_public_panic_effect = {
+    clamp_variable = { var = public_panic min = 0 max = 1000 }
+
+    set_variable = { var = public_panic_stab_factor value = 0 }
+    add_to_variable = { var = public_panic_stab_factor value = public_panic }
+    multiply_variable = { var = public_panic_stab_factor value = -0.0002 }
+
+    set_variable = { var = public_panic_pp_factor value = 0 }
+    add_to_variable = { var = public_panic_pp_factor value = public_panic }
+    multiply_variable = { var = public_panic_pp_factor value = -0.00015 }
+
+    set_variable = { var = public_panic_ws_factor value = 0 }
+    add_to_variable = { var = public_panic_ws_factor value = public_panic }
+    multiply_variable = { var = public_panic_ws_factor value = -0.00012 }
+
+    set_variable = { var = public_panic_above_threshold value = public_panic }
+    add_to_variable = { var = public_panic_above_threshold value = -300 }
+    clamp_variable = { var = public_panic_above_threshold min = 0 max = 700 }
+
+    set_variable = { var = public_panic_research_factor value = 0 }
+    add_to_variable = { var = public_panic_research_factor value = public_panic_above_threshold }
+    multiply_variable = { var = public_panic_research_factor value = 0.001 }
+    multiply_variable = { var = public_panic_research_factor value = 0.2143 }
+
+    set_variable = { var = public_panic_production_factor value = 0 }
+    add_to_variable = { var = public_panic_production_factor value = public_panic_above_threshold }
+    multiply_variable = { var = public_panic_production_factor value = 0.001 }
+    multiply_variable = { var = public_panic_production_factor value = 0.1429 }
+
+    set_variable = { var = public_panic_manpower_factor value = 0 }
+    add_to_variable = { var = public_panic_manpower_factor value = public_panic_above_threshold }
+    multiply_variable = { var = public_panic_manpower_factor value = 0.5 }
+
+    set_variable = { var = public_panic_resistance_factor value = 0 }
+    add_to_variable = { var = public_panic_resistance_factor value = public_panic_above_threshold }
+    multiply_variable = { var = public_panic_resistance_factor value = 0.001 }
+    multiply_variable = { var = public_panic_resistance_factor value = 4.286 }
+
+    if = {
+        limit = { has_dynamic_modifier = { modifier = public_panic_modifier } }
+        remove_dynamic_modifier = { modifier = public_panic_modifier }
+    }
+    add_dynamic_modifier = { modifier = public_panic_modifier }
+}

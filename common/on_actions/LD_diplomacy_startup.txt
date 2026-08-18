@@ -1,0 +1,89 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			if = {
+				limit = { date < 2020.1.1 }
+				set_global_flag = before_the_storm
+
+				IRS = {
+					country_event = { id = irs_transit.1 days = 30 }
+					country_event = { id = irs_transit.2 days = 240 }
+					country_event = { id = irs_transit.3 days = 470 }
+					country_event = { id = irs_transit.4 days = 660 }
+				}
+			}
+
+			if = {
+				limit = { date > 2019.12.31 }
+
+				IRS = {
+					load_oob = IRS_2020
+				}
+
+				IRS = {
+					complete_national_focus = IRS_phase_0_arrival
+				}
+
+				IRS = {
+					every_country = {
+						limit = {
+							NOT = { has_country_flag = is_parasite_nation }
+						}
+						IRS = {
+							add_opinion_modifier = { target = PREV modifier = LD_parasite_isolation }
+						}
+						add_opinion_modifier = { target = IRS modifier = LD_parasite_isolation }
+					}
+				}
+
+				KNX = {
+					every_country = {
+						limit = {
+							NOT = { has_country_flag = is_parasite_nation }
+						}
+						KNX = {
+							add_opinion_modifier = { target = PREV modifier = LD_parasite_isolation }
+						}
+						add_opinion_modifier = { target = KNX modifier = LD_parasite_isolation }
+					}
+				}
+			}
+
+			EFH = {
+				add_opinion_modifier = { target = USA modifier = LD_efh_usa_friction }
+			}
+			USA = {
+				add_opinion_modifier = { target = EFH modifier = LD_efh_usa_friction }
+			}
+
+			RSF = {
+				add_opinion_modifier = { target = EFH modifier = LD_rsf_hostile_to_efh }
+				add_opinion_modifier = { target = CHN modifier = LD_rsf_hostile_to_chn }
+			}
+
+			USA = {
+				create_faction_from_template = {
+					template = SRP_western_alliance_template
+					name = SRP_western_alliance_name
+				}
+			}
+			EFH = {
+				create_faction_from_template = {
+					template = SRP_european_pact_template
+					name = SRP_european_pact_name
+				}
+			}
+			if = {
+				limit = { date > 2019.12.31 }
+				IRS = {
+					create_faction_from_template = {
+						template = SRP_parasite_hive_template
+						name = SRP_parasite_hive_name
+					}
+				}
+			}
+		}
+	}
+}

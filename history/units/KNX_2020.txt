@@ -1,0 +1,38 @@
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 100
+		producer = KNX
+	}
+	add_equipment_to_stockpile = {
+		type = basic_parasite_equipment_1
+		amount = 4000
+		producer = KNX
+	}
+	add_equipment_to_stockpile = {
+		type = pure_parasite_equipment_1
+		amount = 500
+		producer = KNX
+	}
+	add_equipment_to_stockpile = { type = rupter_equipment_1              amount = 6000 producer = KNX }
+	add_equipment_to_stockpile = { type = vigilante_battery_equipment_1   amount = 800  producer = KNX }
+	add_equipment_to_stockpile = { type = primitive_manducater_equipment_1 amount = 800 producer = KNX }
+	add_equipment_production = {
+		equipment = {
+			type = basic_parasite_equipment_1
+			creator = "KNX"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = rupter_equipment_1
+			creator = "KNX"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+}

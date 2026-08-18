@@ -1,0 +1,251 @@
+add_namespace = vagrant
+
+country_event = {
+	id = vagrant.9
+	title = vagrant.9.t
+	desc = vagrant.9.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.9.a
+	}
+}
+
+country_event = {
+	id = vagrant.8
+	title = vagrant.8.t
+	desc = vagrant.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.8.a
+		set_technology = { vagrant_manifestation = 1 popup = no }
+		recruit_character = IRS_vagrant_4
+		activate_advisor = IRS_vagrant_4_advisor
+		set_country_flag = IRS_vagrant_4_active
+		set_country_flag = IRS_vagrant_4_advisory_duty
+		clr_country_flag = IRS_vagrant_4_field_duty
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = vagrant.7
+	title = vagrant.7.t
+	desc = vagrant.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.7.a
+		if = {
+			limit = { has_country_flag = KNX_vagrant_1_recruit_b }
+			recruit_character = KNX_vagrant_one_reborn
+			promote_character = KNX_vagrant_one_reborn
+			set_country_flag = KNX_vagrant_1_copy_b
+			clr_country_flag = KNX_vagrant_1_recruit_b
+		}
+		if = {
+			limit = { has_country_flag = KNX_vagrant_1_recruit_a }
+			recruit_character = KNX_vagrant_one
+			promote_character = KNX_vagrant_one
+			clr_country_flag = KNX_vagrant_1_copy_b
+			clr_country_flag = KNX_vagrant_1_recruit_a
+		}
+		clr_country_flag = KNX_vagrant_1_recovering
+		clr_country_flag = KNX_vagrant_1_fallen
+		set_country_flag = KNX_vagrant_1_active
+		set_country_flag = KNX_vagrant_1_advisory_duty
+		clr_country_flag = KNX_vagrant_1_field_duty
+		activate_advisor = KNX_vagrant_one_advisor
+		activate_advisor = KNX_vagrant_one_b_advisor
+	}
+}
+
+country_event = {
+	id = vagrant.6
+	title = vagrant.6.t
+	desc = vagrant.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.6.a
+		if = {
+			limit = { has_country_flag = IRS_vagrant_4_recruit_b }
+			recruit_character = IRS_vagrant_4_reborn
+			activate_advisor = IRS_vagrant_4_b_advisor
+			set_country_flag = IRS_vagrant_4_copy_b
+			clr_country_flag = IRS_vagrant_4_recruit_b
+		}
+		if = {
+			limit = { has_country_flag = IRS_vagrant_4_recruit_a }
+			recruit_character = IRS_vagrant_4
+			activate_advisor = IRS_vagrant_4_advisor
+			clr_country_flag = IRS_vagrant_4_copy_b
+			clr_country_flag = IRS_vagrant_4_recruit_a
+		}
+		clr_country_flag = IRS_vagrant_4_recovering
+		clr_country_flag = IRS_vagrant_4_fallen
+		set_country_flag = IRS_vagrant_4_active
+		set_country_flag = IRS_vagrant_4_advisory_duty
+		clr_country_flag = IRS_vagrant_4_field_duty
+	}
+}
+
+country_event = {
+	id = vagrant.5
+	title = vagrant.5.t
+	desc = vagrant.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.5.a
+		if = {
+			limit = { has_country_flag = EFH_vagrant_3_recruit_b }
+			recruit_character = EFH_vagrant_3_reborn
+			activate_advisor = EFH_vagrant_3_b_advisor
+			set_country_flag = EFH_vagrant_3_copy_b
+			clr_country_flag = EFH_vagrant_3_recruit_b
+		}
+		if = {
+			limit = { has_country_flag = EFH_vagrant_3_recruit_a }
+			recruit_character = EFH_vagrant_3
+			activate_advisor = EFH_vagrant_3_advisor
+			clr_country_flag = EFH_vagrant_3_copy_b
+			clr_country_flag = EFH_vagrant_3_recruit_a
+		}
+		clr_country_flag = EFH_vagrant_3_recovering
+		clr_country_flag = EFH_vagrant_3_fallen
+		set_country_flag = EFH_vagrant_3_active
+		set_country_flag = EFH_vagrant_3_advisory_duty
+		clr_country_flag = EFH_vagrant_3_field_duty
+	}
+}
+
+country_event = {
+	id = vagrant.4
+	title = vagrant.4.t
+	desc = vagrant.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.4.a
+		if = {
+			limit = { has_country_flag = EFH_vagrant_2_recruit_b }
+			recruit_character = EFH_vagrant_2_reborn
+			activate_advisor = EFH_vagrant_2_b_advisor
+			set_country_flag = EFH_vagrant_2_copy_b
+			clr_country_flag = EFH_vagrant_2_recruit_b
+		}
+		if = {
+			limit = { has_country_flag = EFH_vagrant_2_recruit_a }
+			recruit_character = EFH_vagrant_2
+			activate_advisor = EFH_vagrant_2_advisor
+			clr_country_flag = EFH_vagrant_2_copy_b
+			clr_country_flag = EFH_vagrant_2_recruit_a
+		}
+		clr_country_flag = EFH_vagrant_2_recovering
+		clr_country_flag = EFH_vagrant_2_fallen
+		set_country_flag = EFH_vagrant_2_active
+		set_country_flag = EFH_vagrant_2_advisory_duty
+		clr_country_flag = EFH_vagrant_2_field_duty
+	}
+}
+
+country_event = {
+	id = vagrant.3
+	title = vagrant.3.t
+	desc = vagrant.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.3.a
+		if = {
+			limit = { has_country_flag = EFH_vagrant_3_recruit_b }
+			recruit_character = EFH_vagrant_3_reborn
+			activate_advisor = EFH_vagrant_3_b_advisor
+			set_country_flag = EFH_vagrant_3_copy_b
+			clr_country_flag = EFH_vagrant_3_recruit_b
+		}
+		if = {
+			limit = { has_country_flag = EFH_vagrant_3_recruit_a }
+			recruit_character = EFH_vagrant_3
+			activate_advisor = EFH_vagrant_3_advisor
+			clr_country_flag = EFH_vagrant_3_copy_b
+			clr_country_flag = EFH_vagrant_3_recruit_a
+		}
+		clr_country_flag = EFH_vagrant_3_recovering
+		clr_country_flag = EFH_vagrant_3_fallen
+		set_country_flag = EFH_vagrant_3_active
+		set_country_flag = EFH_vagrant_3_advisory_duty
+		clr_country_flag = EFH_vagrant_3_field_duty
+	}
+}
+
+country_event = {
+	id = vagrant.2
+	title = vagrant.2.t
+	desc = vagrant.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.2.a
+		if = {
+			limit = { has_country_flag = EFH_vagrant_2_recruit_b }
+			recruit_character = EFH_vagrant_2_reborn
+			activate_advisor = EFH_vagrant_2_b_advisor
+			set_country_flag = EFH_vagrant_2_copy_b
+			clr_country_flag = EFH_vagrant_2_recruit_b
+		}
+		if = {
+			limit = { has_country_flag = EFH_vagrant_2_recruit_a }
+			recruit_character = EFH_vagrant_2
+			activate_advisor = EFH_vagrant_2_advisor
+			clr_country_flag = EFH_vagrant_2_copy_b
+			clr_country_flag = EFH_vagrant_2_recruit_a
+		}
+		clr_country_flag = EFH_vagrant_2_recovering
+		clr_country_flag = EFH_vagrant_2_fallen
+		set_country_flag = EFH_vagrant_2_active
+		set_country_flag = EFH_vagrant_2_advisory_duty
+		clr_country_flag = EFH_vagrant_2_field_duty
+	}
+}
+
+country_event = {
+	id = vagrant.1
+	title = vagrant.11.t
+	desc = vagrant.11.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = vagrant.11.a
+		set_technology = { efh_vagrant_accord = 1 popup = no }
+		recruit_character = EFH_vagrant_2
+		recruit_character = EFH_vagrant_3
+		activate_advisor = EFH_vagrant_2_advisor
+		activate_advisor = EFH_vagrant_3_advisor
+		set_country_flag = EFH_vagrant_2_active
+		set_country_flag = EFH_vagrant_3_active
+		set_country_flag = EFH_vagrant_2_advisory_duty
+		set_country_flag = EFH_vagrant_3_advisory_duty
+		clr_country_flag = EFH_vagrant_2_field_duty
+		clr_country_flag = EFH_vagrant_3_field_duty
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = vagrant.99
+	is_triggered_only = yes
+	hidden = yes
+	option = { name = vagrant.99.a }
+}

@@ -1,0 +1,225 @@
+KNX_reading_group = {
+	KNX_passive_listening = {
+		icon = generic_research
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_passive_listening_unlocked
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_passive_listening_unlocked
+		}
+
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 25
+
+		complete_effect = {
+			add_political_power = 35
+			add_command_power = 5
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+}
+
+KNX_transactional_diplomacy = {
+	KNX_send_intelligence_summary_to_EFH = {
+		icon = generic_political_actions
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_efh_channel_open
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_efh_channel_open
+			EFH = { exists = yes }
+		}
+
+		fire_only_once = no
+		days_re_enable = 90
+		cost = 50
+
+		complete_effect = {
+			add_political_power = 75
+			EFH = {
+				add_timed_idea = {
+					idea = EFH_knox_intelligence_summary
+					days = 120
+				}
+			}
+			country_event = { id = knx.3 days = 1 }
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	KNX_propose_resource_exchange = {
+		icon = generic_political_actions
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_resource_exchange_terms_set
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_resource_exchange_terms_set
+			EFH = { exists = yes }
+		}
+
+		fire_only_once = no
+		days_re_enable = 120
+		cost = 40
+
+		complete_effect = {
+			add_political_power = 50
+			add_stability = 0.02
+			EFH = {
+				add_timed_idea = {
+					idea = EFH_knx_resource_exchange
+					days = 150
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	KNX_expanded_disclosure = {
+		icon = generic_research
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_selective_disclosure_active
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_selective_disclosure_active
+			EFH = { exists = yes }
+		}
+
+		fire_only_once = no
+		days_re_enable = 100
+		cost = 50
+
+		complete_effect = {
+			add_political_power = 25
+			add_command_power = 10
+			EFH = {
+				add_timed_idea = {
+					idea = EFH_knx_deep_intelligence
+					days = 120
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	KNX_formalize_hyperbiology_exchange = {
+		icon = generic_research
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_efh_strategic_partner
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_efh_strategic_partner
+			EFH = { exists = yes }
+			NOT = { has_country_flag = KNX_hyperbiology_exchange_active }
+		}
+
+		fire_only_once = yes
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = KNX_hyperbiology_exchange_active
+			add_political_power = 25
+			EFH = {
+				add_ideas = EFH_knx_hyperbiology_exchange
+				EFH_bop_very_low_ha_effect = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	KNX_share_strain_research = {
+		icon = generic_research
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_hyperbiology_exchange_active
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_hyperbiology_exchange_active
+			EFH = { exists = yes }
+		}
+
+		fire_only_once = no
+		days_re_enable = 120
+		cost = 60
+
+		complete_effect = {
+			add_political_power = 40
+			EFH = {
+				add_timed_idea = {
+					idea = EFH_knx_strain_data
+					days = 150
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	KNX_request_materiel_support = {
+		icon = generic_political_actions
+
+		visible = {
+			tag = KNX
+			has_country_flag = KNX_efh_strategic_partner
+		}
+
+		available = {
+			tag = KNX
+			has_country_flag = KNX_efh_strategic_partner
+			EFH = { exists = yes }
+		}
+
+		fire_only_once = no
+		days_re_enable = 120
+		cost = 50
+
+		complete_effect = {
+			army_experience = 20
+			add_manpower = 10000
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

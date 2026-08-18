@@ -1,0 +1,41 @@
+ideas = {
+
+	country = {
+
+		LD_containment_strain_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.15
+			}
+		}
+
+		LD_containment_strain_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				political_power_gain = -0.30
+			}
+		}
+
+		LD_containment_strain_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_army_problems
+
+			modifier = {
+				stability_factor = -0.18
+				war_support_factor = -0.10
+				political_power_gain = -0.50
+				production_speed_buildings_factor = -0.10
+			}
+		}
+	}
+}

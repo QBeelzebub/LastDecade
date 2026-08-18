@@ -1,0 +1,55 @@
+ideas = {
+	country = {
+
+		IRS_west_african_hold_idea = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+
+		IRS_continental_assault_idea = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		IRS_african_resource_harvest_idea = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		IRS_devourer_vanguard_idea = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				navy_submarine_attack_factor = 0.10
+				navy_max_range_factor = 0.10
+			}
+		}
+
+		IRS_transoceanic_vectors_idea = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				navy_max_range_factor = 0.15
+				navy_submarine_attack_factor = 0.05
+			}
+		}
+
+	}
+}

@@ -1,0 +1,115 @@
+focus_tree = {
+	id = SWR_focus
+	country = {
+		factor = 0
+		modifier = { add = 10  tag = SWR }
+	}
+
+	focus = {
+		id = SWR_council_of_twelve
+		icon = GFX_focus_SWR_council_of_twelve
+		x = 4  y = 0
+		cost = 7.5
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_ideas = SWR_council_authority_idea
+		}
+	}
+
+	focus = {
+		id = SWR_peoples_defense_force
+		icon = GFX_focus_generic_manpower
+		relative_position_id = SWR_council_of_twelve
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_council_of_twelve }
+		completion_reward = {
+			add_ideas = SWR_peoples_defense_force_idea
+			add_manpower = 30000
+		}
+	}
+
+	focus = {
+		id = SWR_propaganda_machine
+		icon = GFX_focus_generic_political_support
+		relative_position_id = SWR_council_of_twelve
+		x = 2  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_council_of_twelve }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.05
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = SWR_volunteer_recruitment
+		icon = GFX_focus_generic_manpower
+		relative_position_id = SWR_peoples_defense_force
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_peoples_defense_force }
+		completion_reward = {
+			add_manpower = 50000
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SWR_strategic_redoubt
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = SWR_propaganda_machine
+		x = -2  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_peoples_defense_force focus = SWR_propaganda_machine }
+		completion_reward = {
+			add_ideas = SWR_tactical_redoubt_idea
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = SWR_revolutionary_courts
+		icon = GFX_focus_generic_war_communism
+		relative_position_id = SWR_propaganda_machine
+		x = 0  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_propaganda_machine }
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = 0.07
+			add_ideas = SWR_revolutionary_fervor_idea
+		}
+	}
+
+	focus = {
+		id = SWR_iron_solidarity
+		icon = GFX_focus_SWR_iron_solidarity
+		relative_position_id = SWR_volunteer_recruitment
+		x = 2  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_volunteer_recruitment }
+		prerequisite = { focus = SWR_revolutionary_courts }
+		completion_reward = {
+			add_ideas = SWR_iron_solidarity_idea
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SWR_against_all_fronts
+		icon = GFX_focus_SWR_against_all_fronts
+		relative_position_id = SWR_strategic_redoubt
+		x = 2  y = 1
+		cost = 7.5
+		prerequisite = { focus = SWR_strategic_redoubt }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.05
+			army_experience = 50
+			add_political_power = 50
+		}
+	}
+}

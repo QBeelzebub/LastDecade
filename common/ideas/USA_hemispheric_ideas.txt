@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+
+		USA_root_clearance_doctrine_spirit = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		USA_hemispheric_answer_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				army_defence_factor = 0.03
+			}
+		}
+
+		USA_pacific_counterweight_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				navy_intel_factor = 0.10
+				airforce_intel_factor = 0.10
+				navy_max_range_factor = 0.05
+			}
+		}
+
+		USA_eastern_corridor_tariffs_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = -0.20
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+	}
+}

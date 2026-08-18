@@ -1,0 +1,228 @@
+ideas = {
+
+	country = {
+
+		RSF_iron_grip_idea = {
+			picture = generic_political_support
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		RSF_nationalization_idea = {
+			picture = generic_communist_industry
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		RSF_oligarch_compact_idea = {
+			picture = generic_foreign_policy
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.07
+				stability_factor = -0.02
+			}
+		}
+
+		RSF_efh_ceasefire_idea = {
+			picture = generic_trade_deal
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		RSF_efh_hostility_idea = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.07
+				army_attack_factor = 0.03
+			}
+		}
+
+		RSF_chinese_investment_idea = {
+			picture = generic_trade_deal
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		RSF_eastern_self_reliance_idea = {
+			picture = generic_self_focus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		RSF_fortress_russia_idea = {
+			picture = generic_wall_south_asia
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.08
+				war_support_factor = 0.08
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		RSF_nuclear_deterrent_idea = {
+			picture = generic_deterrence
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				nuclear_production_factor = 0.15
+			}
+		}
+
+		RSF_parasite_shock_idea = {
+			picture = generic_pp_unity_low
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.05
+			}
+		}
+
+		RSF_peoples_council_nascent_idea = {
+			picture = generic_democratic_drift_communism
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.10
+			}
+		}
+
+		RSF_federal_last_stand_idea = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		RSF_emergency_output = {
+			picture = generic_production
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		SWR_council_authority_idea = {
+			picture = generic_political_support
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.03
+			}
+		}
+
+		SWR_peoples_defense_force_idea = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				weekly_manpower = 250
+			}
+		}
+
+		SWR_revolutionary_fervor_idea = {
+			picture = generic_war_communism
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+
+		SWR_iron_solidarity_idea = {
+			picture = generic_communism_drift
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		SWR_ef_weapon_research_access = {
+			picture = generic_research
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				army_attack_factor = 0.05
+			}
+		}
+
+		SWR_efh_diplomatic_freeze = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				research_speed_factor = -0.05
+			}
+		}
+
+		SWR_tactical_redoubt_idea = {
+			picture = generic_fortify_the_borders
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				defence = 0.10
+				max_dig_in = 5
+			}
+		}
+	}
+}

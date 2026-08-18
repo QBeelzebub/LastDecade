@@ -1,0 +1,529 @@
+characters = {
+
+	EFH_ashley_woods = {
+		name = "Ashley Woods"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_POL_maria_koszutska }
+			army = { small = GFX_idea_CZE_milada_horakova }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_ashley_woods
+			allowed = { original_tag = EFH }
+			traits = { EFH_ha_controversial_researcher }
+			cost = 150
+			ai_will_do = { base = 0 }
+		}
+	}
+
+	EFH_reinhard_voss = {
+		name = "Reinhard Voss"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_3 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_reinhard_voss
+			allowed = { original_tag = EFH }
+			available = { has_country_flag = EFH_directorate_formed }
+			traits = { EFH_ha_institutional_shield }
+			cost = 150
+			ai_will_do = { base = 0 }
+		}
+	}
+
+	EFH_henrik_jorgensen = {
+		name = "Henrik Jørgensen"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_1 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_henrik_jorgensen
+			allowed = { original_tag = EFH }
+			traits = { EFH_honorable_socdem }
+			cost = 100
+			ai_will_do = { base = 0 }
+		}
+	}
+
+	EFH_guy_verhofstadt = {
+		name = "Guy Verhofstadt"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_2 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_guy_verhofstadt
+			allowed = { original_tag = EFH }
+			traits = { smooth_talking_charmer }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_roberta_metsola = {
+		name = "Roberta Metsola"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_idea_ENG_sylvia_pankhurst }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_roberta_metsola
+			allowed = { original_tag = EFH }
+			traits = { popular_figurehead }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_manon_aubry = {
+		name = "Manon Aubry"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_idea_dolores_ibarruri }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_manon_aubry
+			allowed = { original_tag = EFH }
+			traits = { ideological_crusader }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	EFH_charles_michel = {
+		name = "Charles Michel"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_3 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_charles_michel
+			allowed = { original_tag = EFH }
+			traits = { backroom_backstabber }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	EFH_margrethe_vestager = {
+		name = "Margrethe Vestager"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_idea_POR_maria_lamas }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_margrethe_vestager
+			allowed = { original_tag = EFH }
+			traits = { financial_expert }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_thierry_breton = {
+		name = "Thierry Breton"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_4 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_thierry_breton
+			allowed = { original_tag = EFH }
+			traits = { captain_of_industry }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_daniel_freund = {
+		name = "Daniel Freund"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_5 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_daniel_freund
+			allowed = { original_tag = EFH }
+			traits = { democratic_reformer }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	EFH_jens_stoltenberg = {
+		name = "Jens Stoltenberg"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_6 }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = EFH_jens_stoltenberg
+			ledger = navy
+			allowed = { original_tag = EFH }
+			traits = { naval_theorist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_josep_borrell = {
+		name = "Josep Borrell"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_land_2 }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = EFH_josep_borrell
+			ledger = army
+			allowed = { original_tag = EFH }
+			traits = { military_theorist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_ska_keller = {
+		name = "Ska Keller"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_portrait_GER_leni_riefenstahl_small }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = EFH_ska_keller
+			ledger = air
+			allowed = { original_tag = EFH }
+			traits = { air_warfare_theorist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_thierry_burkhard = {
+		name = "Thierry Burkhard"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_1
+				small = GFX_idea_europe_generic_land_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = EFH_thierry_burkhard
+			allowed = { original_tag = EFH }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_eberhard_zorn = {
+		name = "Eberhard Zorn"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_3
+				small = GFX_idea_europe_generic_land_3
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = EFH_eberhard_zorn
+			allowed = { original_tag = EFH }
+			traits = { army_chief_maneuver_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_claudio_graziano = {
+		name = "Claudio Graziano"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_4
+				small = GFX_idea_europe_generic_land_4
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = EFH_claudio_graziano
+			allowed = { original_tag = EFH }
+			traits = { army_chief_defensive_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_pierre_vandier = {
+		name = "Pierre Vandier"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_1
+				small = GFX_idea_europe_generic_navy_1
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = EFH_pierre_vandier
+			allowed = { original_tag = EFH }
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_kay_achim_schoenbach = {
+		name = "Kay-Achim Schönbach"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_2
+				small = GFX_idea_europe_generic_navy_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = EFH_kay_achim_schoenbach
+			allowed = { original_tag = EFH }
+			traits = { navy_chief_commerce_raiding_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_stephane_mille = {
+		name = "Stéphane Mille"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_5
+				small = GFX_idea_europe_generic_land_5
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = EFH_stephane_mille
+			allowed = { original_tag = EFH }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_ingo_gerhartz = {
+		name = "Ingo Gerhartz"
+		portraits = {
+			army = {
+				large = GFX_portrait_europe_generic_land_13
+				small = GFX_idea_europe_generic_land_13
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = EFH_ingo_gerhartz
+			allowed = { original_tag = EFH }
+			traits = { air_chief_all_weather_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_alfons_mais = {
+		name = "Alfons Mais"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_2
+				small = GFX_idea_europe_generic_land_2
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = EFH_alfons_mais
+			ledger = army
+			allowed = { original_tag = EFH }
+			traits = { army_infantry_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_robert_brieger = {
+		name = "Robert Brieger"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_3
+				small = GFX_idea_europe_generic_land_19
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = EFH_robert_brieger
+			ledger = army
+			allowed = { original_tag = EFH }
+			traits = { army_armored_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_margarita_robles = {
+		name = "Margarita Robles"
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_eva_braun
+				small = GFX_idea_SPR_antonia_adroher_i_pascual
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = EFH_margarita_robles
+			ledger = army
+			allowed = { original_tag = EFH }
+			traits = { army_logistics_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_henrique_gouveia = {
+		name = "Henrique Gouveia e Melo"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_3
+				small = GFX_idea_europe_generic_navy_3
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = EFH_henrique_gouveia
+			ledger = navy
+			allowed = { original_tag = EFH }
+			traits = { navy_submarine_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_clara_font = {
+		name = "Clara Font i Arnau"
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_eva_braun
+				small = GFX_idea_SPR_federica_montseny
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = EFH_clara_font
+			ledger = air
+			allowed = { original_tag = EFH }
+			traits = { air_air_superiority_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_friedrich_haas = {
+		name = "Friedrich Haas"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			desc = EFH_friedrich_haas_desc
+		}
+	}
+
+	EFH_giulia_russo = {
+		name = "Giulia Russo"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {}
+			desc = EFH_giulia_russo_desc
+		}
+	}
+
+	EFH_edvard_lindstrom = {
+		name = "Edvard Lindström"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			desc = EFH_edvard_lindstrom_desc
+		}
+	}
+
+	EFH_sci_land = {
+		name = "Dr. Miriam Haugen"
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_4
+				small = GFX_idea_europe_generic_land_4
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+
+	EFH_sci_naval = {
+		name = "Dr. Rolf Andersen"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_5
+				small = GFX_idea_europe_generic_land_5
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
+	EFH_sci_air = {
+		name = "Dr. Isabelle Fontaine"
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_3
+				small = GFX_idea_europe_generic_land_3
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+}

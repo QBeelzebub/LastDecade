@@ -1,0 +1,515 @@
+EFH_spaceplane = {
+	EFH_laytheo_contractor_selection = {
+		icon = generic_research
+
+		visible = {
+			original_tag = EFH
+			has_completed_focus = EFH_runway_to_orbit_feasibility
+			NOT = { has_country_flag = EFH_laytheo_contractor_selected }
+		}
+
+		available = {
+			has_completed_focus = EFH_runway_to_orbit_feasibility
+			NOT = { has_country_flag = EFH_laytheo_contractor_selected }
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		complete_effect = {
+			country_event = { id = efh.1 days = 3 }
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+}
+
+EFH_summit = {
+	EFH_summit_convene = {
+		icon = generic_political_actions
+
+		visible = {
+			original_tag = EFH
+			has_completed_focus = EFH_summit_position
+			NOT = { has_country_flag = EFH_summit_collapsed }
+			NOT = { has_country_flag = EFH_summit_convened }
+		}
+
+		available = {
+			has_completed_focus = EFH_summit_position
+			NOT = { has_country_flag = EFH_summit_collapsed }
+			NOT = { has_country_flag = EFH_summit_convened }
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = EFH_summit_convened
+			news_event = { id = efh.10 days = 1 }
+		}
+
+		ai_will_do = {
+			base = 50
+		}
+	}
+
+	EFH_propose_research_accord = {
+		icon = generic_research
+
+		visible = {
+			original_tag = EFH
+			has_country_flag = USA_summit_cooperative_posture
+			NOT = { has_war_with = USA }
+			NOT = { has_country_flag = EFH_research_accord_proposed }
+		}
+
+		available = {
+			has_country_flag = USA_summit_cooperative_posture
+			country_exists = USA
+			NOT = { has_war_with = USA }
+			NOT = { has_country_flag = EFH_research_accord_proposed }
+		}
+
+		fire_only_once = yes
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = EFH_research_accord_proposed
+			USA = { country_event = { id = efh_geo.4 days = 5 } }
+			add_timed_idea = { idea = EFH_joint_research_accord days = 180 }
+			custom_effect_tooltip = EFH_propose_research_accord_tt
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = USA_summit_cooperative_posture }
+			}
+		}
+	}
+}
+
+EFH_civilian_measures = {
+
+	EFH_long_peace_public_works = {
+		icon = generic_construction
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_completed_focus = EFH_end_of_long_peace
+			NOT = { has_war = yes }
+		}
+
+		available = {
+			NOT = { has_war = yes }
+			has_political_power > 74
+		}
+
+		cost = 75
+		fire_only_once = no
+		days_re_enable = 150
+
+		complete_effect = {
+			capital_scope = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.02
+			EFH_bop_very_low_ef_effect = yes
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	EFH_reservist_readiness_drill = {
+		icon = generic_political_actions
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_completed_focus = EFH_end_of_long_peace
+			NOT = { has_war = yes }
+		}
+
+		available = {
+			NOT = { has_war = yes }
+			has_political_power > 49
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 120
+
+		complete_effect = {
+			army_experience = 15
+			add_manpower = 5000
+		}
+
+		ai_will_do = { base = 1 }
+	}
+
+	EFH_put_boomers_into_fissile_plants = {
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				srp_fissile_extractor > 0
+			}
+		}
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				srp_fissile_extractor > 0
+			}
+		}
+
+		cost = 50
+		fire_only_once = no
+
+		days_remove = 180
+		days_re_enable = 180
+
+		modifier = {
+			stability_factor = -0.05
+			industrial_capacity_factory = 0.10
+		}
+
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.03
+			}
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					srp_fissile_extractor > 0
+				}
+				add_dynamic_modifier = {
+					modifier = EFH_boomer_fissile_plant_shift
+					days = 180
+				}
+			}
+		}
+
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = EFH_boomer_fissile_plant_shift }
+				}
+				remove_dynamic_modifier = { modifier = EFH_boomer_fissile_plant_shift }
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	EFH_congo_fissile_concessions = {
+		icon = generic_industry
+
+		visible = {
+			has_country_flag = EFH_africa_resource_competition_active
+		}
+
+		available = {
+			has_country_flag = EFH_africa_resource_competition_active
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 180
+
+		complete_effect = {
+			capital_scope = {
+				add_resource = {
+					type = fissile_material
+					amount = 3
+					days = 180
+				}
+			}
+			custom_effect_tooltip = EFH_congo_fissile_concessions_tt
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+}
+
+srp_public_confidence = {
+
+    EFH_federal_solidarity_protocol = {
+        icon = generic_political_actions
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = EFH_solidarity_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 8
+                check_variable = { public_panic > 199 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { public_panic > 399 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = EFH_solidarity_cd days = 60 }
+            add_to_variable = { var = public_panic value = -180 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+        }
+    }
+
+    EFH_emergency_authority_decree = {
+        icon = generic_political_actions
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = EFH_emergency_decree_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_200
+                check_variable = { public_panic > 200 }
+            }
+        }
+
+        cost = 75
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 8
+                check_variable = { public_panic > 399 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { public_panic > 599 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = EFH_emergency_decree_cd days = 120 }
+            add_to_variable = { var = public_panic value = -250 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_timed_idea = { idea = EFH_emergency_powers_active days = 90 }
+        }
+    }
+
+    EFH_declare_armageddon = {
+        icon = generic_political_actions
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { has_country_flag = EFH_armageddon_declared }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_800
+                check_variable = { public_panic > 799 }
+            }
+            has_war_with = IRS
+            surrender_progress > 0.30
+            custom_trigger_tooltip = {
+                tooltip = EFH_armageddon_cities_tt
+                SRP_five_cities_50_infested = yes
+            }
+            NOT = { has_country_flag = EFH_armageddon_declared }
+        }
+
+        fire_only_once = yes
+        cost = 0
+
+        ai_will_do = { factor = 0 }
+
+        complete_effect = {
+            custom_effect_tooltip = EFH_armageddon_irreversible_tt
+            set_country_flag = EFH_armageddon_declared
+            set_variable = { var = public_panic value = 1000 }
+            add_ideas = EFH_armageddon_state
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            every_military_industrial_organization = {
+                add_mio_size = 3
+            }
+            every_military_industrial_organization = {
+                limit = { has_mio_research_category = srp_parasite_tech }
+                add_mio_size = 5
+            }
+            every_country = {
+                limit = {
+                    NOT = { tag = EFH }
+                    NOT = { is_full_parasite = yes }
+                    exists = yes
+                }
+                add_to_variable = { var = public_panic value = 75 }
+                hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            }
+            news_event = { id = srp_armageddon.1 days = 1 }
+            IRS = { country_event = { id = srp_armageddon.2 days = 2 } }
+        }
+    }
+
+    EFH_continental_threat_briefing = {
+        icon = generic_political_actions
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { is_full_parasite = yes }
+            has_country_flag = EFH_parasite_threat_assessed
+        }
+
+        available = {
+            NOT = { has_country_flag = EFH_threat_briefing_cd }
+        }
+
+        cost = 30
+        fire_only_once = no
+
+        ai_will_do = { base = 3 }
+
+        complete_effect = {
+            set_country_flag = { flag = EFH_threat_briefing_cd days = 90 }
+            add_political_power = 20
+            add_timed_idea = { idea = EFH_threat_briefing_data days = 120 }
+        }
+    }
+
+    EFH_parasite_containment_sweep = {
+        icon = generic_political_actions
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { is_full_parasite = yes }
+            has_completed_focus = EFH_federal_emergency_protocols
+        }
+
+        available = {
+            NOT = { has_country_flag = EFH_containment_sweep_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 15
+                check_variable = { public_panic > 149 }
+            }
+            modifier = {
+                add = 15
+                check_variable = { public_panic > 349 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = EFH_containment_sweep_cd days = 60 }
+            add_to_variable = { var = public_panic value = -160 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_stability = 0.01
+        }
+    }
+
+    EFH_joint_command_readiness_exercise = {
+        icon = generic_army_support
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { is_full_parasite = yes }
+            has_completed_focus = EFH_joint_anti_parasite_command
+        }
+
+        available = {
+            NOT = { has_country_flag = EFH_joint_readiness_cd }
+        }
+
+        cost = 30
+        fire_only_once = no
+
+        ai_will_do = { base = 3 }
+
+        complete_effect = {
+            set_country_flag = { flag = EFH_joint_readiness_cd days = 90 }
+            army_experience = 15
+            add_timed_idea = { idea = EFH_joint_command_ready days = 120 }
+        }
+    }
+
+    EFH_federalize_parasite_response = {
+        icon = generic_political_actions
+
+        allowed = { tag = EFH }
+
+        visible = {
+            tag = EFH
+            NOT = { is_full_parasite = yes }
+            has_completed_focus = EFH_joint_anti_parasite_command
+        }
+
+        available = {
+            NOT = { has_idea = EFH_joint_parasite_command_standing }
+        }
+
+        cost = 75
+        fire_only_once = yes
+
+        ai_will_do = { base = 10 }
+
+        complete_effect = {
+            add_ideas = EFH_joint_parasite_command_standing
+            EFH_bop_low_ef_effect = yes
+        }
+    }
+}

@@ -1,0 +1,581 @@
+equipments = {
+
+	srp_burrower_chassis = {
+		year = 2025
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_burrower_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_burrower_locomotion
+					srp_adapted_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					srp_parasite_support_organ
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					srp_burrower_special
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_burrower_mandible_strike
+			armor_type_slot = srp_carapace_plating_1
+			engine_type_slot = srp_burrower_tunneling_claws_1
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 4.5
+		build_cost_ic = 6
+		reliability = 0.9
+		armor_value = 8
+		defense = 6
+		breakthrough = 4
+		soft_attack = 4
+		hard_attack = 1
+		ap_attack = 1
+		hardness = 0.15
+		resources = {
+			parasite_biomass = 3
+		}
+		lend_lease_cost = 8
+		manpower = 1
+	}
+
+	srp_burrower_chassis_1 = {
+		abbreviation = "abur"
+		derived_variant_name = adapted_burrower_equipment_1
+		visual_level = 0
+		year = 2025
+		archetype = srp_burrower_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+
+	srp_bolster_chassis = {
+		year = 2025
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_bolster_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_adapted_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					srp_bolster_signal_organ
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					srp_parasite_support_organ
+					srp_bolster_special
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_bolster_crushing_limbs
+			armor_type_slot = srp_carapace_plating_1
+			engine_type_slot = srp_adapted_limb_cluster_1
+			special_type_slot_1 = srp_bolster_signal_node_1
+			special_type_slot_2 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 4.0
+		build_cost_ic = 7
+		reliability = 1.0
+		armor_value = 24
+		defense = 22
+		breakthrough = 2
+		soft_attack = 3
+		hard_attack = 2
+		ap_attack = 1
+		hardness = 0.5
+		resources = {
+			parasite_biomass = 4
+		}
+		lend_lease_cost = 11
+		manpower = 2
+	}
+
+	srp_bolster_chassis_1 = {
+		abbreviation = "abol"
+		derived_variant_name = adapted_bolster_equipment_1
+		visual_level = 0
+		year = 2025
+		archetype = srp_bolster_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+
+	srp_warden_chassis = {
+		year = 2025
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_warden_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_pure_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					srp_parasite_support_organ
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					srp_warden_special
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_warden_impact_spike
+			armor_type_slot = srp_carapace_plating_1
+			engine_type_slot = srp_pure_propulsion_mass_1
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 4.0
+		build_cost_ic = 7
+		reliability = 1.0
+		armor_value = 28
+		defense = 16
+		breakthrough = 2
+		soft_attack = 2
+		hard_attack = 4
+		ap_attack = 4
+		hardness = 0.85
+		resources = {
+			parasite_biomass = 4
+		}
+		lend_lease_cost = 11
+		manpower = 2
+	}
+
+	srp_warden_chassis_1 = {
+		abbreviation = "awrd"
+		derived_variant_name = adapted_warden_equipment_1
+		visual_level = 0
+		year = 2025
+		archetype = srp_warden_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+
+	srp_summoner_support_chassis = {
+		year = 2025
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = { infantry support }
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_summoner_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_adapted_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					srp_summoner_special
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_summoner_call_organ
+			armor_type_slot = srp_carapace_plating_1
+			engine_type_slot = srp_adapted_limb_cluster_1
+			special_type_slot_1 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 4.5
+		build_cost_ic = 8
+		reliability = 0.9
+		armor_value = 12
+		defense = 8
+		breakthrough = 1
+		soft_attack = 1
+		hard_attack = 0
+		ap_attack = 0
+		hardness = 0.3
+		resources = {
+			parasite_biomass = 4
+		}
+		lend_lease_cost = 9
+		manpower = 2
+	}
+
+	srp_summoner_support_chassis_1 = {
+		abbreviation = "asum"
+		derived_variant_name = adapted_summoner_equipment_1
+		visual_level = 0
+		year = 2025
+		archetype = srp_summoner_support_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+
+	srp_colony_carrier_chassis = {
+		year = 2026
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_colony_carrier_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_pure_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					srp_colony_carrier_spawner_organ
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					srp_parasite_support_organ
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					srp_bolster_signal_organ
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_colony_carrier_mandible_claws
+			armor_type_slot = srp_carapace_plating_1
+			engine_type_slot = srp_pure_propulsion_mass_1
+			special_type_slot_1 = srp_colony_spawner_node_1
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 4.0
+		build_cost_ic = 9
+		reliability = 0.95
+		armor_value = 26
+		defense = 16
+		breakthrough = 3
+		soft_attack = 5
+		hard_attack = 2
+		ap_attack = 1
+		hardness = 0.6
+		resources = {
+			parasite_biomass = 5
+			nexus_biomass = 1
+		}
+		lend_lease_cost = 14
+		manpower = 3
+	}
+
+	srp_colony_carrier_chassis_1 = {
+		abbreviation = "ccar"
+		derived_variant_name = colony_carrier_equipment_1
+		visual_level = 0
+		year = 2026
+		archetype = srp_colony_carrier_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+
+	srp_dreadnaut_chassis = {
+		year = 2027
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_dreadnaut_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_apex_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					srp_parasite_support_organ
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					srp_dreadnaut_special
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_dreadnaut_impact_organ
+			armor_type_slot = srp_carapace_plating_2
+			engine_type_slot = srp_apex_locomotion_1
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 5.0
+		build_cost_ic = 12
+		reliability = 1.05
+		armor_value = 30
+		defense = 18
+		breakthrough = 6
+		soft_attack = 4
+		hard_attack = 3
+		ap_attack = 3
+		hardness = 0.7
+		resources = {
+			parasite_biomass = 5
+			nexus_biomass = 2
+		}
+		lend_lease_cost = 16
+		manpower = 3
+	}
+
+	srp_dreadnaut_chassis_1 = {
+		abbreviation = "drdn"
+		derived_variant_name = dreadnaut_equipment_1
+		visual_level = 0
+		year = 2027
+		archetype = srp_dreadnaut_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+
+	srp_overlord_chassis = {
+		year = 2027
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_modern_tank_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_overlord_strike_organ
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_parasite_carapace
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					srp_apex_locomotion
+				}
+			}
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					srp_overlord_command_organ
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					srp_bolster_signal_organ
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					srp_parasite_support_organ
+				}
+			}
+		}
+
+		default_modules = {
+			main_armament_slot = srp_overlord_crushing_organ
+			armor_type_slot = srp_carapace_plating_2
+			engine_type_slot = srp_apex_locomotion_1
+			special_type_slot_1 = srp_overlord_command_node_1
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+		}
+
+		fuel_consumption = 0
+		maximum_speed = 4.0
+		build_cost_ic = 12
+		reliability = 1.0
+		armor_value = 36
+		defense = 30
+		breakthrough = 8
+		soft_attack = 5
+		hard_attack = 4
+		ap_attack = 4
+		hardness = 0.8
+		resources = {
+			parasite_biomass = 6
+			nexus_biomass = 3
+		}
+		lend_lease_cost = 19
+		manpower = 4
+	}
+
+	srp_overlord_chassis_1 = {
+		abbreviation = "ovld"
+		derived_variant_name = overlord_equipment_1
+		visual_level = 0
+		year = 2027
+		archetype = srp_overlord_chassis
+		priority = 2000
+		module_slots = inherit
+	}
+}

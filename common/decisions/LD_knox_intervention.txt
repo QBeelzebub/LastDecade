@@ -1,0 +1,91 @@
+SRP_escalation_category = {
+
+	LD_knox_intervention_window = {
+		icon = generic_political_actions
+
+		allowed = { original_tag = EFH }
+
+		activation = {
+			has_country_flag = LD_knox_intervention_offered
+			NOT = { has_country_flag = LD_knox_intervened }
+			NOT = { has_country_flag = LD_knox_window_resolved }
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		visible = {
+			has_country_flag = LD_knox_intervention_offered
+			NOT = { has_country_flag = LD_knox_intervened }
+			NOT = { has_country_flag = LD_knox_window_resolved }
+		}
+
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 90
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			set_country_flag = LD_knox_window_resolved
+			country_event = { id = ldwar.32 days = 1 }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_intervene_for_knox = {
+		icon = generic_political_actions
+		priority = 61
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_country_flag = LD_knox_intervention_offered
+			NOT = { has_country_flag = LD_knox_intervened }
+			NOT = { has_country_flag = LD_knox_window_resolved }
+			country_exists = USA
+			country_exists = KNX
+		}
+
+		available = {
+			country_exists = USA
+			country_exists = KNX
+			USA = { has_war_with = KNX }
+			NOT = { has_war_with = USA }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = LD_knox_intervened
+			set_country_flag = LD_knox_window_resolved
+			set_global_flag = LD_second_atlantic_war_open
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			add_ideas = LD_joint_offensive
+			if = {
+				limit = { country_exists = KNX }
+				KNX = { add_ideas = LD_joint_offensive }
+			}
+			USA = { country_event = { id = ldwar.33 days = 1 } }
+			news_event = { id = ldwar.34 days = 1 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			modifier = {
+				factor = 0.2
+				check_variable = { EFH_USA_escalation < 25 }
+			}
+		}
+	}
+}

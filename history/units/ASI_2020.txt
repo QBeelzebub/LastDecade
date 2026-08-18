@@ -1,0 +1,113 @@
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 100
+		producer = ASI
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 2000
+		producer = ASI
+	}
+	add_equipment_to_stockpile = {
+		type = srp_truck_equipment_1
+		amount = 300
+		producer = ASI
+	}
+	add_equipment_to_stockpile = {
+		type = srp_mbt_chassis1
+		amount = 240
+		producer = ASI
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 300
+		producer = ASI
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 200
+		producer = ASI
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment0
+			creator = "ASI"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 40
+	}
+	add_equipment_to_stockpile = {
+		type = srp_fighter_gen4_airframe
+		amount = 40
+		producer = ASI
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_fighter_gen4_airframe
+			creator = "ASI"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 45
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_destroyer_hull_1
+			creator = "ASI"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 40
+	}
+}
+
+air_wings = {
+	601 = {
+		srp_fighter_gen4_airframe = {
+			owner = ASI
+			amount = 40
+		}
+	}
+}

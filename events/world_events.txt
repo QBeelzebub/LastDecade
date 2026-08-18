@@ -1,0 +1,468 @@
+add_namespace = world
+
+country_event = {
+	id = world.1
+	title = world.1.t
+	desc = world.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = world.1.a
+		add_to_war = {
+			targeted_alliance = EFH
+			enemy = USA
+		}
+	}
+
+	option = {
+		name = world.1.b
+		add_political_power = -50
+	}
+}
+
+news_event = {
+	id = world.2
+	title = world.2.t
+	desc = world.2.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.2.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.2.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.3
+	title = world.3.t
+	desc = world.3.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.3.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.3.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.4
+	title = world.4.t
+	desc = world.4.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.4.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.4.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.5
+	title = world.5.t
+	desc = world.5.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.5.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.5.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.6
+	title = world.6.t
+	desc = world.6.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.6.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.6.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.7
+	title = world.7.t
+	desc = world.7.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.7.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.7.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.8
+	title = world.8.t
+	desc = world.8.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.8.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.8.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.9
+	title = world.9.t
+	desc = world.9.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.9.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.9.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.10
+	title = world.10.t
+	desc = world.10.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.10.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.10.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.11
+	title = world.11.t
+	desc = world.11.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.11.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.11.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.12
+	title = world.12.t
+	desc = world.12.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.12.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.12.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.13
+	title = world.13.t
+	desc = world.13.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.13.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.13.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.14
+	title = world.14.t
+	desc = world.14.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.14.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.14.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.15
+	title = world.15.t
+	desc = world.15.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.15.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.15.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.16
+	title = world.16.t
+	desc = world.16.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.16.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.16.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.17
+	title = world.17.t
+	desc = world.17.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.17.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.17.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.18
+	title = world.18.t
+	desc = world.18.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.18.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.18.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.19
+	title = world.19.t
+	desc = world.19.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.19.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.19.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.20
+	title = world.20.t
+	desc = world.20.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.20.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.20.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.21
+	title = world.21.t
+	desc = world.21.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.21.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.21.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.22
+	title = world.22.t
+	desc = world.22.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.22.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.22.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.30
+	title = world.30.t
+	desc = world.30.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.30.a
+		trigger = { NOT = { tag = IRS } }
+	}
+	option = {
+		name = world.30.b
+		trigger = { tag = IRS }
+	}
+}
+
+news_event = {
+	id = world.31
+	title = world.31.t
+	desc = world.31.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = world.31.a
+		trigger = {
+			NOT = { tag = IRS }
+			NOT = { tag = AFR }
+		}
+	}
+	option = {
+		name = world.31.b
+		trigger = { tag = AFR }
+	}
+	option = {
+		name = world.31.c
+		trigger = { tag = IRS }
+	}
+}
+
+country_event = {
+	id = world.32
+	title = world.32.t
+	desc = world.32.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = world.32.a
+		ai_chance = { base = 70 }
+		add_war_support = 0.05
+		add_political_power = 50
+		add_to_variable = { var = public_panic value = 80 }
+		hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+	}
+
+	option = {
+		name = world.32.b
+		ai_chance = { base = 30 }
+		add_stability = 0.05
+		add_to_variable = { var = public_panic value = 40 }
+		hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+	}
+}

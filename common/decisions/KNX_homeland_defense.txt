@@ -1,0 +1,64 @@
+KNX_homeland_defense = {
+
+	KNX_fortify_root_stronghold = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_owned_by = KNX
+				NOT = { has_dynamic_modifier = { modifier = knx_root_stronghold } }
+			}
+		}
+
+		target_root_trigger = {
+			tag = KNX
+			has_country_flag = KNX_emerged
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = KNX
+				NOT = { has_dynamic_modifier = { modifier = knx_root_stronghold } }
+			}
+		}
+
+		visible = {
+			tag = KNX
+			FROM = {
+				is_owned_by = KNX
+			}
+		}
+
+		available = {
+			FROM = {
+				is_owned_by = KNX
+				is_controlled_by = KNX
+			}
+		}
+
+		cancel_trigger = {
+			FROM = { NOT = { is_owned_by = KNX } }
+		}
+
+		cost = 100
+		days_remove = 30
+
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = { modifier = knx_root_stronghold }
+			}
+		}
+
+		ai_will_do = {
+			base = 30
+			modifier = {
+				add = 40
+				has_war = yes
+			}
+		}
+	}
+
+}

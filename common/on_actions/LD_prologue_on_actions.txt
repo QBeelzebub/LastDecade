@@ -1,0 +1,140 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = { date > 2019.12.31 }
+				EFH = {
+					set_country_flag = EFH_legacy_2020_baseline
+
+					complete_national_focus = EFH_end_of_long_peace
+					complete_national_focus = EFH_atlantic_rivalry_doctrine
+					complete_national_focus = EFH_the_standoff
+					complete_national_focus = EFH_conventional_primacy
+					complete_national_focus = EFH_brinkmanship_posture
+					complete_national_focus = EFH_war_readiness_directive
+
+					complete_national_focus = EFH_federal_state_of_the_union
+					complete_national_focus = EFH_consolidate_federal_authority
+					complete_national_focus = EFH_the_federal_question
+					complete_national_focus = EFH_federalist_coalition
+					complete_national_focus = EFH_govern_the_federation
+					complete_national_focus = EFH_member_state_accord
+					complete_national_focus = EFH_federation_on_the_eve
+
+					complete_national_focus = EFH_continental_defense_review
+					complete_national_focus = EFH_standing_force_reform
+					complete_national_focus = EFH_force_structure_debate
+					complete_national_focus = EFH_professional_army
+					complete_national_focus = EFH_modern_federal_army
+					complete_national_focus = EFH_combined_arms_command
+
+					set_country_flag = EFH_prologue_closed
+				}
+
+				EFH = {
+					SRP_escalate_drift_effect = yes
+					SRP_escalate_drift_effect = yes
+					SRP_escalate_drift_effect = yes
+					SRP_escalate_drift_effect = yes
+					SRP_escalate_drift_effect = yes
+				}
+
+				set_global_flag = LD_prologue_drift_1
+				set_global_flag = LD_prologue_drift_2
+				set_global_flag = LD_prologue_drift_3
+				set_global_flag = LD_prologue_drift_4
+				set_global_flag = LD_prologue_drift_5
+			}
+		}
+	}
+
+	on_monthly_EFH = {
+		effect = {
+
+			if = {
+				limit = {
+					date > 2020.4.1
+					NOT = { has_country_flag = EFH_prologue_closed }
+				}
+				set_country_flag = EFH_prologue_closed
+				country_event = { id = ldpro.10 days = 1 }
+			}
+
+			if = {
+				limit = {
+					date > 2018.4.1
+					NOT = { has_global_flag = LD_prologue_drift_1 }
+				}
+				set_global_flag = LD_prologue_drift_1
+				SRP_escalate_drift_effect = yes
+				country_event = { id = ldpro.1 days = 2 }
+				USA = { country_event = { id = ldpro.1 days = 2 } }
+			}
+
+			if = {
+				limit = {
+					date > 2018.9.1
+					NOT = { has_global_flag = LD_prologue_drift_2 }
+				}
+				set_global_flag = LD_prologue_drift_2
+				SRP_escalate_drift_effect = yes
+				country_event = { id = ldpro.2 days = 2 }
+				USA = { country_event = { id = ldpro.2 days = 2 } }
+			}
+
+			if = {
+				limit = {
+					date > 2019.2.1
+					NOT = { has_global_flag = LD_prologue_drift_3 }
+				}
+				set_global_flag = LD_prologue_drift_3
+				SRP_escalate_drift_effect = yes
+				country_event = { id = ldpro.3 days = 2 }
+				USA = { country_event = { id = ldpro.3 days = 2 } }
+			}
+
+			if = {
+				limit = {
+					date > 2019.7.1
+					NOT = { has_global_flag = LD_prologue_drift_4 }
+				}
+				set_global_flag = LD_prologue_drift_4
+				SRP_escalate_drift_effect = yes
+				country_event = { id = ldpro.4 days = 2 }
+				USA = { country_event = { id = ldpro.4 days = 2 } }
+			}
+
+			if = {
+				limit = {
+					date > 2019.11.1
+					NOT = { has_global_flag = LD_prologue_drift_5 }
+				}
+				set_global_flag = LD_prologue_drift_5
+				SRP_escalate_drift_effect = yes
+				country_event = { id = ldpro.5 days = 2 }
+				USA = { country_event = { id = ldpro.5 days = 2 } }
+			}
+
+			if = {
+				limit = {
+					date > 2019.5.1
+					NOT = { has_global_flag = LD_prologue_contamination }
+					has_country_flag = EFH_biosecurity_prepared
+				}
+				set_global_flag = LD_prologue_contamination
+				country_event = { id = ldpro.20 days = 3 }
+			}
+
+			if = {
+				limit = {
+					date > 2019.5.1
+					NOT = { has_global_flag = LD_prologue_contamination }
+					NOT = { has_country_flag = EFH_biosecurity_prepared }
+				}
+				set_global_flag = LD_prologue_contamination
+				country_event = { id = ldpro.21 days = 3 }
+			}
+		}
+	}
+}

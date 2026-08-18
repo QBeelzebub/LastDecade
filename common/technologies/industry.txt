@@ -1,0 +1,530 @@
+technologies = {
+
+	srp_fusion_economy = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2017
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = { srp_industry_tech srp_construction_tech }
+
+		industrial_capacity_factory = 0.10
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.03
+
+		path = {
+			leads_to_tech = srp_advanced_construction
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_advanced_construction = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2018
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 1 }
+		}
+
+		categories = { srp_industry_tech srp_construction_tech }
+
+		production_speed_buildings_factor = 0.10
+		global_building_slots = 1
+
+		path = {
+			leads_to_tech = srp_modular_industry
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_modular_industry = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = { srp_industry_tech srp_construction_tech }
+
+		industrial_capacity_factory = 0.08
+		consumer_goods_factor = -0.02
+		production_speed_buildings_factor = 0.05
+
+		enable_building = {
+			building = srp_fabrication_yard
+			level = 4
+		}
+
+		path = {
+			leads_to_tech = srp_dispersed_industry
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_dispersed_industry = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2025
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 3 }
+		}
+
+		categories = { srp_industry_tech srp_construction_tech }
+
+		industrial_capacity_factory = 0.06
+		production_speed_buildings_factor = 0.08
+		global_building_slots = 1
+
+		path = {
+			leads_to_tech = srp_underground_mfg
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_underground_mfg = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.5
+		start_year = 2028
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = { srp_industry_tech srp_construction_tech }
+
+		industrial_capacity_factory = 0.10
+		consumer_goods_factor = -0.03
+		production_speed_buildings_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_crisis_construction
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_crisis_construction = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.5
+		start_year = 2031
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 5 }
+		}
+
+		categories = { srp_industry_tech srp_construction_tech }
+
+		production_speed_buildings_factor = 0.12
+		global_building_slots = 2
+		industrial_capacity_factory = 0.06
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_precision_mfg = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = { srp_industry_tech }
+
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_automated_mfg
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_automated_mfg = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 1 }
+		}
+
+		categories = { srp_industry_tech }
+
+		industrial_capacity_factory = 0.10
+		consumer_goods_factor = -0.01
+
+		path = {
+			leads_to_tech = srp_full_automation
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_full_automation = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2025
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+
+		categories = { srp_industry_tech }
+
+		industrial_capacity_factory = 0.12
+		consumer_goods_factor = -0.02
+		production_speed_buildings_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_crisis_automation
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_crisis_automation = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.5
+		start_year = 2028
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 3 }
+		}
+
+		categories = { srp_industry_tech }
+
+		industrial_capacity_factory = 0.10
+		consumer_goods_factor = -0.02
+		production_lack_of_resource_penalty_factor = -0.05
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_logistics_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 0 }
+		}
+
+		categories = { srp_industry_tech }
+
+		land_reinforce_rate = 0.05
+		supply_node_range = 0.05
+
+		path = {
+			leads_to_tech = srp_logistics_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_logistics_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 1 }
+		}
+
+		categories = { srp_industry_tech }
+
+		land_reinforce_rate = 0.04
+		supply_node_range = 0.05
+		supply_consumption_factor = -0.03
+
+		enable_building = {
+			building = srp_distribution_hub
+			level = 4
+		}
+
+		path = {
+			leads_to_tech = srp_logistics_3
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_logistics_3 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2026
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+
+		categories = { srp_industry_tech }
+
+		land_reinforce_rate = 0.04
+		supply_node_range = 0.08
+		out_of_supply_factor = -0.05
+
+		path = {
+			leads_to_tech = srp_logistics_4
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_logistics_4 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2029
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 3 }
+		}
+
+		categories = { srp_industry_tech }
+
+		land_reinforce_rate = 0.05
+		supply_node_range = 0.08
+		supply_consumption_factor = -0.04
+		out_of_supply_factor = -0.06
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_fissile_extraction_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 0 }
+		}
+
+		categories = { srp_industry_tech }
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = srp_fissile_extractor
+				resource = fissile_material
+				amount = 1
+			}
+			modify_building_resources = {
+				building = commercial_nuclear_reactor
+				resource = fissile_material
+				amount = 1
+			}
+			modify_building_resources = {
+				building = srp_fusion_reactor
+				resource = fissile_material
+				amount = 2
+			}
+		}
+		path = {
+			leads_to_tech = srp_fissile_extraction_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = srp_fusion_reactor_1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_fissile_extraction_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2026
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 1 }
+		}
+
+		categories = { srp_industry_tech }
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = srp_fissile_extractor
+				resource = fissile_material
+				amount = 2
+			}
+		}
+
+		path = {
+			leads_to_tech = srp_fissile_extraction_3
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_fissile_extraction_3 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.5
+		start_year = 2029
+
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 2 }
+		}
+
+		categories = { srp_industry_tech }
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = srp_fissile_extractor
+				resource = fissile_material
+				amount = 2
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_fusion_reactor_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 0 }
+		}
+
+		categories = { srp_industry_tech }
+
+		enable_building = {
+			building = srp_fusion_reactor
+			level = 5
+		}
+		production_speed_srp_fusion_reactor_factor = 0.10
+		industrial_capacity_factory = 0.02
+
+		path = {
+			leads_to_tech = srp_fusion_reactor_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_fusion_reactor_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.5
+		start_year = 2023
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 1 }
+		}
+
+		categories = { srp_industry_tech }
+
+		production_speed_srp_fusion_reactor_factor = 0.15
+
+		path = {
+			leads_to_tech = srp_fusion_reactor_3
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_fusion_reactor_3 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 3.0
+		start_year = 2025
+
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 2 }
+		}
+
+		categories = { srp_industry_tech }
+
+		production_speed_srp_fusion_reactor_factor = 0.20
+		industrial_capacity_factory = 0.04
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

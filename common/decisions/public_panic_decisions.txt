@@ -1,0 +1,202 @@
+srp_public_confidence = {
+
+    srp_emergency_broadcast = {
+        icon = generic_political_actions
+
+        allowed = { NOT = { is_full_parasite = yes } }
+
+        visible = {
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = srp_broadcast_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 20
+                check_variable = { public_panic > 49 }
+            }
+            modifier = {
+                add = 25
+                check_variable = { public_panic > 199 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = srp_broadcast_cd days = 30 }
+            add_to_variable = { var = public_panic value = -80 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+        }
+    }
+
+    srp_civilian_resilience = {
+        icon = generic_political_actions
+
+        allowed = { NOT = { is_full_parasite = yes } }
+
+        visible = {
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = srp_resilience_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+        }
+
+        cost = 75
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 18
+                check_variable = { public_panic > 149 }
+            }
+            modifier = {
+                add = 22
+                check_variable = { public_panic > 349 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = srp_resilience_cd days = 45 }
+            add_to_variable = { var = public_panic value = -120 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+        }
+    }
+
+    srp_military_readiness_display = {
+        icon = generic_army_support
+
+        allowed = { NOT = { is_full_parasite = yes } }
+
+        visible = {
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = srp_military_display_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_150
+                check_variable = { public_panic > 150 }
+            }
+        }
+
+        cost = 25
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 15
+                check_variable = { public_panic > 150 }
+            }
+            modifier = {
+                add = 15
+                check_variable = { public_panic > 299 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = srp_military_display_cd days = 60 }
+            add_to_variable = { var = public_panic value = -60 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+        }
+    }
+
+    srp_civil_defense_act = {
+        icon = generic_political_actions
+
+        allowed = { NOT = { is_full_parasite = yes } }
+
+        visible = {
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = srp_civil_defense_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_300
+                check_variable = { public_panic > 300 }
+            }
+            has_stability > 0.4
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 20
+                check_variable = { public_panic > 399 }
+            }
+            modifier = {
+                add = 15
+                check_variable = { public_panic > 599 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = srp_civil_defense_cd days = 90 }
+            add_to_variable = { var = public_panic value = -150 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_timed_idea = { idea = srp_civil_defense_bonus days = 90 }
+        }
+    }
+
+    srp_impose_information_control = {
+        icon = generic_political_actions
+
+        allowed = { NOT = { is_full_parasite = yes } }
+
+        visible = {
+            NOT = { is_full_parasite = yes }
+            NOT = { has_idea = srp_civil_society_intact }
+        }
+
+        available = {
+            NOT = { has_country_flag = srp_info_control_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+            NOT = { has_idea = srp_civil_society_intact }
+        }
+
+        cost = 75
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 18
+                check_variable = { public_panic > 499 }
+            }
+            modifier = {
+                add = 12
+                check_variable = { public_panic > 699 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = srp_info_control_cd days = 60 }
+            add_to_variable = { var = public_panic value = -200 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_stability = -0.03
+        }
+    }
+}

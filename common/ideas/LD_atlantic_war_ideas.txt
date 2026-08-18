@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+
+		LD_canal_zone_agitation = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				subversive_activites_upkeep = -0.15
+			}
+		}
+
+		LD_opportunist_offensive = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.15
+				stability_factor = -0.05
+			}
+		}
+
+		LD_war_before_the_ground = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.08
+			}
+		}
+
+		LD_armed_truce = {
+			picture = generic_economic_increase
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.10
+				experience_gain_army = 0.10
+				experience_gain_air = 0.10
+				consumer_goods_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		LD_joint_offensive = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.20
+				max_planning = 0.10
+				army_org_factor = 0.05
+				land_reinforce_rate = 0.02
+			}
+		}
+
+		LD_second_war_mobilisation = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				conscription_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+
+		LD_let_knox_burn = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.10
+				war_support_factor = -0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+equipments = {
+
+	srp_warhead_component = {
+		year = 2018
+
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = no
+		can_license = no
+
+		type = artillery
+		group_by = archetype
+		sprite = artillery_2
+		type = {
+			nuclear_missile
+		}
+		picture = archetype_artillery_equipment
+
+		interface_category = interface_category_land
+		air_map_icon_frame = 23
+		active = yes
+
+		reliability = 1.0
+		build_cost_ic = 10
+	}
+
+	srp_warhead_component_1 = {
+		year = 2018
+		archetype = srp_warhead_component
+		is_buildable = yes
+		priority = 0
+		visual_level = 0
+		type = {
+			nuclear_missile
+		}
+		build_cost_ic = 2000
+		resources = {
+			fissile_material = 4
+		}
+	}
+}

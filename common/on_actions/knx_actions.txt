@@ -1,0 +1,17 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					date > 2023.2.24
+					NOT = { has_global_flag = KNX_silent_emergence_fired }
+					369 = { NOT = { is_owned_by = KNX } }
+				}
+				set_global_flag = KNX_silent_emergence_fired
+				369 = {
+					owner = { country_event = { id = knx.1 days = 1 } }
+				}
+			}
+		}
+	}
+}

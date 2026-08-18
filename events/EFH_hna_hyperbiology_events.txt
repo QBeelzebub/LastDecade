@@ -1,0 +1,295 @@
+add_namespace = efh_hna
+
+@EFH_HA_hyper_founded_time = 30
+@EFH_HA_hyper_founded_flag = 31
+@EFH_HA_research_fund_time = 45
+@EFH_HA_research_fund_flag = 46
+@EFH_HA_laytheo_time = 60
+@EFH_HA_laytheo_flag = 61
+@EFH_HA_initial_findings_time = 60
+@EFH_HA_initial_findings_flag = 62
+
+country_event = {
+	id = efh_hna.27
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = EFH_HA_initial_findings_in_progress
+		NOT = { has_completed_focus = EFH_HA_hyperbiology_initial_findings }
+	}
+
+	immediate = {
+		complete_national_focus = EFH_HA_hyperbiology_initial_findings
+	}
+}
+
+country_event = {
+	id = efh_hna.26
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = EFH_HA_hyperbiology_research_fund
+		NOT = { has_completed_focus = EFH_HA_hyperbiology_initial_findings }
+		NOT = { has_country_flag = EFH_HA_initial_findings_in_progress }
+	}
+
+	immediate = {
+		activate_shine_on_focus = EFH_HA_hyperbiology_initial_findings
+		set_country_flag = {
+			flag = EFH_HA_initial_findings_in_progress
+			days = @EFH_HA_initial_findings_flag
+			value = 1
+		}
+		country_event = { id = efh_hna.27 days = @EFH_HA_initial_findings_time }
+	}
+}
+
+country_event = {
+	id = efh_hna.25
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = EFH_HA_laytheo_in_progress
+		NOT = { has_completed_focus = EFH_HA_laytheo_ha_integration }
+	}
+
+	immediate = {
+		complete_national_focus = EFH_HA_laytheo_ha_integration
+	}
+}
+
+country_event = {
+	id = efh_hna.24
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = EFH_sf6_lawsuit_active
+		has_completed_focus = EFH_laytheo_first_flight
+		has_completed_focus = EFH_HA_hyperbiology_founded
+		NOT = { has_completed_focus = EFH_HA_laytheo_ha_integration }
+		NOT = { has_country_flag = EFH_HA_laytheo_integration_started }
+	}
+
+	immediate = {
+		set_country_flag = EFH_HA_laytheo_integration_started
+		activate_shine_on_focus = EFH_HA_laytheo_ha_integration
+		set_country_flag = {
+			flag = EFH_HA_laytheo_in_progress
+			days = @EFH_HA_laytheo_flag
+			value = 1
+		}
+		country_event = { id = efh_hna.25 days = @EFH_HA_laytheo_time }
+	}
+}
+
+country_event = {
+	id = efh_hna.23
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = EFH_HA_research_fund_in_progress
+		NOT = { has_completed_focus = EFH_HA_hyperbiology_research_fund }
+	}
+
+	immediate = {
+		complete_national_focus = EFH_HA_hyperbiology_research_fund
+	}
+}
+
+country_event = {
+	id = efh_hna.22
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = EFH_HA_hyperbiology_founded
+		NOT = { has_completed_focus = EFH_HA_hyperbiology_research_fund }
+		NOT = { has_country_flag = EFH_HA_research_fund_in_progress }
+	}
+
+	immediate = {
+		activate_shine_on_focus = EFH_HA_hyperbiology_research_fund
+		set_country_flag = {
+			flag = EFH_HA_research_fund_in_progress
+			days = @EFH_HA_research_fund_flag
+			value = 1
+		}
+		country_event = { id = efh_hna.23 days = @EFH_HA_research_fund_time }
+	}
+}
+
+country_event = {
+	id = efh_hna.21
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = EFH_HA_hyper_founded_in_progress
+		NOT = { has_completed_focus = EFH_HA_hyperbiology_founded }
+	}
+
+	immediate = {
+		complete_national_focus = EFH_HA_hyperbiology_founded
+	}
+}
+
+country_event = {
+	id = efh_hna.20
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = EFH_sf6_lawsuit_active
+		NOT = { has_completed_focus = EFH_HA_hyperbiology_founded }
+		NOT = { has_country_flag = EFH_HA_hyper_founded_in_progress }
+	}
+
+	immediate = {
+		activate_shine_on_focus = EFH_HA_hyperbiology_founded
+		set_country_flag = {
+			flag = EFH_HA_hyper_founded_in_progress
+			days = @EFH_HA_hyper_founded_flag
+			value = 1
+		}
+		country_event = { id = efh_hna.21 days = @EFH_HA_hyper_founded_time }
+	}
+}
+
+country_event = {
+	id = efh_hna.8
+	title = efh_hna.8.t
+	desc = efh_hna.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_hna.8.a
+		set_country_flag = parasite_global_disclosure
+	}
+}
+
+country_event = {
+	id = efh_hna.7
+	title = efh_hna.7.t
+	desc = efh_hna.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_hna.7.a
+		trigger = { has_country_flag = EFH_hyperbiology_sf6_case_built }
+		set_country_flag = parasite_global_disclosure
+		EFH_bop_low_ha_effect = yes
+		add_tech_bonus = {
+			name = EFH_hyperbiology_disclosure_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = srp_parasite_tech
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { NOT = { tag = EFH } }
+				country_event = { id = efh_hna.8 days = 3 }
+			}
+		}
+	}
+
+	option = {
+		name = efh_hna.7.b
+		trigger = { NOT = { has_country_flag = EFH_hyperbiology_sf6_case_built } }
+		set_country_flag = parasite_global_disclosure
+		add_stability = -0.05
+		hidden_effect = {
+			every_country = {
+				limit = { NOT = { tag = EFH } }
+				country_event = { id = efh_hna.8 days = 3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = efh_hna.6
+	title = efh_hna.6.t
+	desc = efh_hna.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_hna.6.a
+		trigger = { has_country_flag = EFH_hyperbiology_sf6_case_built }
+		hidden_effect = {
+			country_event = { id = efh_hna.7 days = 7 }
+		}
+	}
+
+	option = {
+		name = efh_hna.6.b
+		trigger = { NOT = { has_country_flag = EFH_hyperbiology_sf6_case_built } }
+		hidden_effect = {
+			country_event = { id = efh_hna.7 days = 7 }
+		}
+	}
+}
+
+country_event = {
+	id = efh_hna.5
+	title = efh_hna.5.t
+	desc = efh_hna.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_hna.5.a
+		ai_chance = { base = 80 }
+		EFH_bop_very_low_ha_effect = yes
+		hidden_effect = {
+			country_event = { id = efh_hna.6 days = 90 }
+		}
+	}
+
+	option = {
+		name = efh_hna.5.b
+		ai_chance = { base = 20 }
+		add_political_power = -30
+		hidden_effect = {
+			country_event = { id = efh_hna.6 days = 150 }
+		}
+	}
+}
+
+news_event = {
+	id = efh_hna.4
+	title = efh_hna.4.t
+	desc = efh_hna.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_hna.4.a
+		hidden_effect = {
+			country_event = { id = efh_hna.5 days = 120 }
+		}
+	}
+}
+
+country_event = {
+	id = efh_hna.3
+	title = efh_hna.3.t
+	desc = efh_hna.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = { id = efh_hna.20 days = 3 }
+	}
+
+	option = {
+		name = efh_hna.3.a
+	}
+}

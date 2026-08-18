@@ -1,0 +1,665 @@
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = LIMITED
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_FACTION
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_FACTION_TT
+			is_in_faction_with = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_BLOCKED_TT
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+			FROM = { NOT = { has_country_flag = is_parasite_nation } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = is_parasite_nation }
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = LIMITED
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = SAME_FACTION
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_SAME_FACTION_TT
+			is_in_faction_with = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_lend_lease
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEND_LEASE_BLOCKED_TT
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+			FROM = { NOT = { has_country_flag = is_parasite_nation } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = is_parasite_nation }
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_MILACC_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+			FROM = { NOT = { has_country_flag = is_parasite_nation } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = is_parasite_nation }
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+			FROM = { NOT = { has_country_flag = is_parasite_nation } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = is_parasite_nation }
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+			FROM = { NOT = { has_country_flag = is_parasite_nation } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = is_parasite_nation }
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_access
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+			FROM = { NOT = { has_country_flag = is_parasite_nation } }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = is_parasite_nation }
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			original_tag = DEN
+			has_country_flag = DEN_is_protectorate_flag
+			is_subject = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = IRS
+				AND = {
+					tag = KNX
+					NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_FACTION_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			tag = EFH
+			NOT = { has_country_flag = efh_usa_cooperation_unlocked }
+			FROM = { tag = USA  is_faction_leader = yes }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_EFH_USA_FACTION_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			tag = USA
+			NOT = { has_country_flag = efh_usa_cooperation_unlocked }
+			FROM = { tag = EFH  is_faction_leader = yes }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_EFH_USA_FACTION_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = IRS
+					AND = {
+						tag = KNX
+						NOT = { has_country_flag = KNX_human_diplomacy_unlocked }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_FACTION_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			tag = EFH
+			is_faction_leader = yes
+			NOT = { has_country_flag = efh_usa_cooperation_unlocked }
+			FROM = { tag = USA }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_EFH_USA_FACTION_BLOCKED_TT
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			tag = USA
+			is_faction_leader = yes
+			NOT = { has_country_flag = efh_usa_cooperation_unlocked }
+			FROM = { tag = EFH }
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_EFH_USA_FACTION_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+is_diplomatic_action_valid_puppet = {
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = IRS
+					tag = KNX
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_PARASITE_DIPLO_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = ALWAYS_FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = LIMITED
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = SAME_IDEOLOGY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_GUARANTEES_SAME_IDEOLOGY_TOOLTIP
+			has_government = FROM
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_guarantees
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_GUARANTEES_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+
+	if = {
+		limit = {
+			OR = { tag = EFH  tag = USA }
+			NOT = { has_country_flag = efh_usa_cooperation_unlocked }
+			FROM = {
+				OR = { tag = EFH  tag = USA }
+				NOT = { tag = ROOT }
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = LD_EFH_USA_GUARANTEE_BLOCKED_TT
+			always = no
+		}
+	}
+}

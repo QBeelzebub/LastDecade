@@ -1,0 +1,1535 @@
+focus_tree = {
+	id = USA_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = USA
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 4400 }
+
+	focus = {
+		id = USA_american_century
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = -7
+		cost = 3.75
+		ai_will_do = { base = 15 }
+		completion_reward = {
+			add_political_power = 30
+			hidden_effect = {
+				USA_dom_american_century = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.54 days = 2 }
+		}
+	}
+
+	focus = {
+		id = USA_atlantic_vigilance
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_american_century
+		x = -8
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_american_century }
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.03
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.55 days = 3 }
+		}
+	}
+
+	focus = {
+		id = USA_the_european_question
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_atlantic_vigilance
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_atlantic_vigilance }
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = USA_nuclear_superiority
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_the_european_question
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = USA_the_european_question }
+		mutually_exclusive = { focus = USA_conventional_overmatch }
+		completion_reward = {
+			hidden_effect = {
+				USA_ind_nuclear_superiority = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			set_country_flag = USA_standoff_nuclear
+			add_war_support = 0.05
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.53 days = 30 }
+		}
+	}
+
+	focus = {
+		id = USA_conventional_overmatch
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_the_european_question
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_the_european_question }
+		mutually_exclusive = { focus = USA_nuclear_superiority }
+		completion_reward = {
+			army_experience = 30
+			hidden_effect = {
+				USA_mil_conventional_overmatch = yes
+			}
+			custom_effect_tooltip = USA_armed_forces_tt
+			set_country_flag = USA_standoff_conventional
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.56 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_containment_posture
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_nuclear_superiority
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_nuclear_superiority focus = USA_conventional_overmatch }
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.05
+			USA_trust_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_atlantic_intelligence
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = USA_containment_posture
+		x = 2
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 6 }
+		prerequisite = { focus = USA_containment_posture }
+		completion_reward = {
+			add_political_power = 20
+			set_country_flag = USA_atlantic_intel_groundwork
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_strategic_readiness
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = USA_containment_posture
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_containment_posture }
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = USA_cold_war_footing
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_strategic_readiness
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_strategic_readiness }
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.05
+			USA_trust_very_low_gain_effect = yes
+			if = {
+				limit = { has_country_flag = USA_standoff_nuclear }
+				custom_effect_tooltip = USA_groundwork_standoff_nuclear_tt
+				add_war_support = 0.03
+				add_command_power = 50
+			}
+			if = {
+				limit = { has_country_flag = USA_standoff_conventional }
+				custom_effect_tooltip = USA_groundwork_standoff_conventional_tt
+				army_experience = 25
+			}
+			country_event = { id = usa.57 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_state_of_the_union
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_american_century
+		x = 4
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_american_century }
+		completion_reward = {
+			add_political_power = 40
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_the_national_mood
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = USA_state_of_the_union
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_state_of_the_union }
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = usa.50 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_populist_surge
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_the_national_mood
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_the_national_mood }
+		mutually_exclusive = { focus = USA_establishment_consensus }
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.08
+			add_stability = -0.03
+			hidden_effect = {
+				USA_dom_populist_surge = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			set_country_flag = USA_populist_ascendant
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.51 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_establishment_consensus
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_the_national_mood
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_the_national_mood }
+		mutually_exclusive = { focus = USA_populist_surge }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			hidden_effect = {
+				USA_dom_establishment_consensus = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			set_country_flag = USA_establishment_ascendant
+			USA_trust_low_gain_effect = yes
+			country_event = { id = usa.52 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_govern_the_union
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = USA_populist_surge
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_populist_surge focus = USA_establishment_consensus }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+			USA_trust_low_gain_effect = yes
+			country_event = { id = usa.58 days = 2 }
+		}
+	}
+
+	focus = {
+		id = USA_federal_authority
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_govern_the_union
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_govern_the_union }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.03
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_domestic_agenda
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = USA_federal_authority
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_federal_authority }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = USA_pentagon_review
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_american_century
+		x = 8
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_american_century }
+		completion_reward = {
+			army_experience = 40
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_defense_appropriations
+		icon = GFX_focus_USA_defense_budget_expansion
+		relative_position_id = USA_pentagon_review
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_pentagon_review }
+		completion_reward = {
+			add_political_power = 25
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = USA_procurement_debate
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_defense_appropriations
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_defense_appropriations }
+		completion_reward = {
+			army_experience = 25
+			add_political_power = 25
+			country_event = { id = usa.60 days = 2 }
+		}
+	}
+
+	focus = {
+		id = USA_technological_edge
+		icon = GFX_focus_USA_darpa_programs
+		relative_position_id = USA_procurement_debate
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_procurement_debate }
+		mutually_exclusive = { focus = USA_arsenal_of_democracy }
+		completion_reward = {
+			hidden_effect = {
+				USA_res_technological_edge = yes
+			}
+			custom_effect_tooltip = USA_technical_directorate_tt
+			set_country_flag = USA_procurement_tech
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_arsenal_of_democracy
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = USA_procurement_debate
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_procurement_debate }
+		mutually_exclusive = { focus = USA_technological_edge }
+		completion_reward = {
+			hidden_effect = {
+				USA_ind_arsenal_of_democracy = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			set_country_flag = USA_procurement_mass
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_modern_us_military
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_technological_edge
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_technological_edge focus = USA_arsenal_of_democracy }
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			USA_trust_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_force_projection_command
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = USA_modern_us_military
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = { base = 10 }
+		prerequisite = { focus = USA_modern_us_military }
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+			if = {
+				limit = { has_country_flag = USA_procurement_tech }
+				custom_effect_tooltip = USA_groundwork_procurement_tech_tt
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+			}
+			if = {
+				limit = { has_country_flag = USA_procurement_mass }
+				custom_effect_tooltip = USA_groundwork_procurement_mass_tt
+				add_manpower = 20000
+			}
+			country_event = { id = usa.61 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_peace_dividend
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = USA_state_of_the_union
+		x = -2
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 5 }
+		allow_branch = { has_global_flag = before_the_storm }
+		prerequisite = { focus = USA_state_of_the_union }
+		completion_reward = {
+			hidden_effect = {
+				USA_ind_peace_dividend = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			country_event = { id = usa.75 days = 5 }
+		}
+	}
+
+	focus = {
+		id = USA_homeland_exercise_program
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_defense_appropriations
+		x = 2
+		y = 1
+		cost = 3.75
+		ai_will_do = { base = 5 }
+		allow_branch = { has_global_flag = before_the_storm }
+		prerequisite = { focus = USA_defense_appropriations }
+		completion_reward = {
+			army_experience = 25
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = USA_national_war_college
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_modern_us_military
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = USA_modern_us_military }
+		completion_reward = {
+			army_experience = 40
+			hidden_effect = {
+				USA_mil_war_college = yes
+			}
+			custom_effect_tooltip = USA_armed_forces_tt
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.62 days = 2 }
+		}
+	}
+
+	focus = {
+		id = USA_war_plan_north
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = USA_containment_posture
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = USA_containment_posture }
+		completion_reward = {
+			army_experience = 25
+			add_ideas = USA_war_plan_north_spirit
+			set_country_flag = USA_war_plan_north_drawn
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.63 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_union_on_the_eve
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = USA_govern_the_union
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = { base = 8 }
+		prerequisite = { focus = USA_govern_the_union }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			hidden_effect = {
+				USA_dom_prepared_union = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			set_country_flag = USA_union_consolidated
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.59 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_continental_sovereignty
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = USA_cold_war_footing
+		x = 0
+		y = 1
+		cost = 0.75
+		prerequisite = { focus = USA_cold_war_footing }
+		completion_reward = {
+			hidden_effect = {
+				USA_dom_cold_war_posture = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			set_country_flag = USA_continental_sovereignty_reaffirmed
+			add_political_power = 25
+			country_event = { id = usa.76 days = 2 }
+		}
+	}
+
+	focus = {
+		id = USA_summit_skepticism
+		icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = USA_continental_sovereignty
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = { focus = USA_continental_sovereignty }
+		mutually_exclusive = { focus = USA_summit_acceptance }
+		completion_reward = {
+			set_country_flag = USA_summit_skeptical_posture
+			add_political_power = 15
+			add_war_support = 0.03
+			EFH = {
+				set_country_flag = USA_summit_skeptical_posture
+			}
+			country_event = { id = usa.66 days = 1 }
+		}
+		ai_will_do = {
+			base = 70
+		}
+	}
+
+	focus = {
+		id = USA_summit_acceptance
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = USA_continental_sovereignty
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = USA_continental_sovereignty }
+		mutually_exclusive = { focus = USA_summit_skepticism }
+		completion_reward = {
+			set_country_flag = USA_summit_cooperative_posture
+			add_stability = 0.03
+			add_political_power = -25
+			EFH = {
+				set_country_flag = USA_summit_cooperative_posture
+			}
+			country_event = { id = usa.67 days = 1 }
+		}
+		ai_will_do = {
+			base = 30
+		}
+	}
+
+	focus = {
+		id = USA_domestic_stability
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_continental_sovereignty
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = USA_continental_sovereignty }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			hidden_effect = {
+				USA_dom_domestic_continuity = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			if = {
+				limit = { has_country_flag = USA_union_consolidated }
+				custom_effect_tooltip = USA_groundwork_union_tt
+				add_political_power = 25
+				add_stability = 0.02
+			}
+		}
+	}
+
+	focus = {
+		id = USA_cold_war_extension
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_domestic_stability
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_domestic_stability }
+		available = {
+			OR = {
+				has_completed_focus = USA_summit_skepticism
+				has_completed_focus = USA_summit_acceptance
+			}
+			custom_trigger_tooltip = {
+				tooltip = USA_gate_escalation_rivalry_tt
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			check_variable = { EFH_USA_escalation > 49 }
+		}
+		completion_reward = {
+			set_country_flag = USA_cold_war_extended
+			add_war_support = 0.05
+			army_experience = 15
+			custom_effect_tooltip = USA_canadian_theater_future_tt
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 30
+				has_completed_focus = USA_summit_skepticism
+			}
+		}
+	}
+
+	focus = {
+		id = USA_fire_protocol_adoption
+		icon = GFX_focus_research
+		relative_position_id = USA_cold_war_extension
+		x = -1
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = USA_cold_war_extension }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = parasites_emerged_focus_tt
+				has_global_flag = parasites_emerged
+			}
+			has_global_flag = parasites_emerged
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = USA_fire_protocol_confidence
+				days = 365
+			}
+			add_tech_bonus = {
+				name = USA_fire_protocol_bonus
+				bonus = 0.5
+				uses = 1
+				category = srp_incendiary
+			}
+			country_event = { id = usa.64 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_continental_incident_reporting
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = USA_fire_protocol_adoption
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_fire_protocol_adoption }
+		completion_reward = {
+			set_country_flag = USA_anomalous_infestation_reporting
+			add_political_power = 25
+			hidden_effect = {
+				USA_dom_security_incident_framing = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_anomalous_infestation_tt
+			country_event = { id = usa.65 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_incendiary_stockpile_program
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = USA_fire_protocol_adoption
+		x = -2
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_fire_protocol_adoption }
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_incendiary_stockpile_bonus
+				bonus = 0.5
+				uses = 1
+				category = srp_incendiary
+			}
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = USA_joint_containment_boards
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = USA_continental_incident_reporting
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_continental_incident_reporting }
+		completion_reward = {
+			set_country_flag = USA_joint_containment_boards_active
+			add_political_power = 35
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = USA_canadian_theater_pre_positioning
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = USA_cold_war_extension
+		x = 1
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = USA_cold_war_extension }
+		completion_reward = {
+			set_country_flag = USA_canadian_theater_pre_positioned
+			hidden_effect = {
+				USA_mil_canadian_theater_posture = yes
+			}
+			custom_effect_tooltip = USA_armed_forces_tt
+			army_experience = 25
+			custom_effect_tooltip = USA_canadian_theater_preposition_tt
+			country_event = { id = usa.70 days = 2 }
+			if = {
+				limit = { has_country_flag = USA_war_plan_north_drawn }
+				custom_effect_tooltip = USA_groundwork_war_plan_tt
+				army_experience = 25
+				add_war_support = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = USA_northern_logistics_command
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = USA_canadian_theater_pre_positioning
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_canadian_theater_pre_positioning }
+		completion_reward = {
+			set_country_flag = USA_northern_logistics_command_active
+			add_political_power = 25
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = USA_fossil_fuel_expansion
+		icon = GFX_focus_USA_fossil_fuel_expansion
+		x = 7
+		y = 0
+		cost = 5.25
+		completion_reward = {
+			375 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			371 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			375 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			378 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			hidden_effect = {
+				USA_ind_fossil_economy = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+		}
+	}
+
+	focus = {
+		id = USA_wartime_mobilization
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = USA_fossil_fuel_expansion
+		x = -1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_fossil_fuel_expansion }
+		mutually_exclusive = { focus = USA_civilian_resilience }
+		completion_reward = {
+			378 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			362 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			hidden_effect = {
+				USA_ind_war_economy = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			add_timed_idea = { idea = USA_manufacturing_surge days = 365 }
+			USA_trust_very_low_loss_effect = yes
+			country_event = { id = usa.68 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_civilian_resilience
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = USA_fossil_fuel_expansion
+		x = 1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_fossil_fuel_expansion }
+		mutually_exclusive = { focus = USA_wartime_mobilization }
+		completion_reward = {
+			375 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			371 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			375 = { add_extra_state_shared_building_slots = 2 }
+			hidden_effect = {
+				USA_ind_industrial_capacity = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			add_stability = 0.05
+			USA_trust_very_low_gain_effect = yes
+			country_event = { id = usa.69 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_fissile_energy_program
+		icon = GFX_focus_research
+		relative_position_id = USA_fossil_fuel_expansion
+		x = 0
+		y = 2
+		cost = 5.25
+		prerequisite = { focus = USA_wartime_mobilization focus = USA_civilian_resilience }
+		completion_reward = {
+			376 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
+			368 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
+			378 = { add_extra_state_shared_building_slots = 2 }
+			358 = { add_extra_state_shared_building_slots = 2 }
+			hidden_effect = {
+				USA_ind_fissile_energy = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+		}
+	}
+
+	focus = {
+		id = USA_federal_research_grants
+		icon = GFX_focus_research
+		x = 10
+		y = 0
+		cost = 3.75
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = USA_darpa_programs
+		icon = GFX_focus_USA_darpa_programs
+		relative_position_id = USA_federal_research_grants
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_federal_research_grants }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = USA_cyber_dominance
+		icon = GFX_focus_USA_cyber_dominance
+		relative_position_id = USA_darpa_programs
+		x = -1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_darpa_programs }
+		mutually_exclusive = { focus = USA_incendiary_doctrine }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = srp_cyber_tech
+			}
+			country_event = { id = usa.71 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_incendiary_doctrine
+		icon = GFX_focus_USA_incendiary_doctrine
+		relative_position_id = USA_darpa_programs
+		x = 1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_darpa_programs }
+		mutually_exclusive = { focus = USA_cyber_dominance }
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = srp_incendiary
+			}
+			country_event = { id = usa.72 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_deregulation_act
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = USA_domestic_agenda
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_domestic_agenda }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_populist_economics
+		icon = GFX_focus_USA_corporate_tax_reform
+		relative_position_id = USA_deregulation_act
+		x = -1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_deregulation_act }
+		mutually_exclusive = { focus = USA_market_liberalization }
+		completion_reward = {
+			hidden_effect = {
+				USA_dom_economic_nationalism = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			country_event = { id = usa.73 days = 1 }
+			if = {
+				limit = { has_country_flag = USA_populist_ascendant }
+				add_political_power = 50
+				USA_trust_low_gain_effect = yes
+			}
+			if = {
+				limit = { NOT = { has_country_flag = USA_populist_ascendant } }
+				USA_trust_very_low_loss_effect = yes
+			}
+		}
+	}
+
+	focus = {
+		id = USA_market_liberalization
+		icon = GFX_focus_USA_economic_freedom_mandate
+		relative_position_id = USA_deregulation_act
+		x = 1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_deregulation_act }
+		mutually_exclusive = { focus = USA_populist_economics }
+		completion_reward = {
+			hidden_effect = {
+				USA_ind_economic_freedom = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			country_event = { id = usa.74 days = 1 }
+			if = {
+				limit = { has_country_flag = USA_establishment_ascendant }
+				add_political_power = 50
+				USA_trust_low_gain_effect = yes
+			}
+			if = {
+				limit = { NOT = { has_country_flag = USA_establishment_ascendant } }
+				USA_trust_very_low_loss_effect = yes
+			}
+		}
+	}
+
+	focus = {
+		id = USA_economic_freedom_mandate
+		icon = GFX_focus_USA_economic_freedom_mandate
+		relative_position_id = USA_deregulation_act
+		x = 0
+		y = 2
+		cost = 5.25
+		prerequisite = { focus = USA_populist_economics focus = USA_market_liberalization }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_defense_budget_expansion
+		icon = GFX_focus_USA_defense_budget_expansion
+		relative_position_id = USA_force_projection_command
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = USA_force_projection_command }
+		completion_reward = {
+			army_experience = 75
+			hidden_effect = {
+				USA_ind_defense_spending = yes
+			}
+			custom_effect_tooltip = USA_industrial_might_tt
+			378 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			362 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			hidden_effect = {
+				USA_mil_mil_standard = yes
+			}
+			custom_effect_tooltip = USA_armed_forces_tt
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_hemispheric_primacy
+		icon = GFX_focus_USA_hemispheric_primacy
+		relative_position_id = USA_joint_containment_boards
+		x = -1
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_joint_containment_boards }
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				USA_for_hemispheric_primacy = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			country_event = { id = usa.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_secure_the_approaches
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = USA_hemispheric_primacy
+		x = -1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_hemispheric_primacy }
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.03
+			set_country_flag = USA_approaches_secured
+			custom_effect_tooltip = USA_approaches_secured_tt
+		}
+	}
+
+	focus = {
+		id = USA_pan_american_pressure
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_hemispheric_primacy
+		x = -1
+		y = 2
+		cost = 5.25
+		prerequisite = { focus = USA_secure_the_approaches }
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				USA_dom_pan_american_bloc = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+		}
+	}
+
+	focus = {
+		id = USA_domestic_containment_doctrine
+		icon = GFX_focus_USA_domestic_containment_doctrine
+		relative_position_id = USA_hemispheric_primacy
+		x = 1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_hemispheric_primacy }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = parasites_emerged_focus_tt
+				has_global_flag = parasites_emerged
+			}
+			has_global_flag = parasites_emerged
+		}
+		completion_reward = {
+			hidden_effect = {
+				USA_dom_domestic_containment_doctrine = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			country_event = { id = usa.2 days = 1 }
+			hidden_effect = {
+				add_to_variable = { var = public_panic value = -120 }
+				SRP_recalculate_public_panic_effect = yes
+			}
+		}
+	}
+
+	focus = {
+		id = USA_federal_quarantine_authority
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = USA_hemispheric_primacy
+		x = 1
+		y = 2
+		cost = 5.25
+		prerequisite = { focus = USA_domestic_containment_doctrine }
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				USA_dom_quarantine_authority = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			set_country_flag = USA_quarantine_authority_active
+		}
+	}
+
+	focus = {
+		id = USA_continental_defense_command
+		icon = GFX_focus_USA_continental_defense_command
+		relative_position_id = USA_hemispheric_primacy
+		x = 0
+		y = 3
+		cost = 7.5
+		prerequisite = { focus = USA_pan_american_pressure focus = USA_federal_quarantine_authority }
+		completion_reward = {
+			army_experience = 50
+			hidden_effect = {
+				USA_mil_continental_defense_command = yes
+			}
+			custom_effect_tooltip = USA_armed_forces_tt
+		}
+	}
+
+	focus = {
+		id = USA_doctrine_reckoning
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_joint_containment_boards
+		x = 3
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = USA_joint_containment_boards }
+		available = {
+			date > 2022.1.1
+		}
+		completion_reward = {
+			hidden_effect = {
+				USA_for_doctrine_reckoning = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			country_event = { id = usa.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_own_the_failure
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = USA_doctrine_reckoning
+		x = -1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_doctrine_reckoning }
+		mutually_exclusive = { focus = USA_bury_the_findings }
+		completion_reward = {
+			hidden_effect = {
+				USA_res_dispatcher_blindspot = yes
+			}
+			custom_effect_tooltip = USA_technical_directorate_tt
+			create_intelligence_agency = {
+				name = "Office of Special Threat Intelligence"
+				icon = GFX_intelligence_agency_logo_usa
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = srp_incendiary
+			}
+			set_country_flag = USA_owned_doctrine_failure
+			if = {
+				limit = { has_country_flag = USA_quarantine_authority_active }
+				USA_trust_very_low_loss_effect = yes
+			}
+			if = {
+				limit = { NOT = { has_country_flag = USA_quarantine_authority_active } }
+				USA_trust_medium_loss_effect = yes
+			}
+		}
+	}
+
+	focus = {
+		id = USA_bury_the_findings
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = USA_doctrine_reckoning
+		x = 1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_doctrine_reckoning }
+		mutually_exclusive = { focus = USA_own_the_failure }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_incendiary
+			}
+			set_country_flag = USA_buried_doctrine_failure
+			USA_trust_very_low_gain_effect = yes
+		}
+	}
+
+	focus = {
+		id = USA_root_clearance_doctrine
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = USA_doctrine_reckoning
+		x = 0
+		y = 2
+		cost = 5.25
+		prerequisite = { focus = USA_own_the_failure focus = USA_bury_the_findings }
+		completion_reward = {
+			add_ideas = USA_root_clearance_doctrine_spirit
+			army_experience = 25
+			if = {
+				limit = { has_country_flag = USA_owned_doctrine_failure }
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = srp_incendiary
+				}
+				USA_trust_medium_gain_effect = yes
+			}
+		}
+	}
+
+	focus = {
+		id = USA_knox_county_response
+		icon = GFX_focus_USA_knox_county_response
+		relative_position_id = USA_root_clearance_doctrine
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_root_clearance_doctrine }
+		available = {
+			has_global_flag = KNX_silent_emergence_fired
+			country_exists = KNX
+		}
+		completion_reward = {
+			set_country_flag = USA_knox_campaign_active
+			add_political_power = 40
+			army_experience = 20
+			if = {
+				limit = { has_country_flag = USA_owned_doctrine_failure }
+				custom_effect_tooltip = USA_knox_owned_record_tt
+				USA_trust_very_low_gain_effect = yes
+			}
+			if = {
+				limit = { has_country_flag = USA_buried_doctrine_failure }
+				custom_effect_tooltip = USA_knox_buried_record_tt
+				USA_trust_very_low_loss_effect = yes
+			}
+			country_event = { id = usa.77 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_appalachian_cordon
+		icon = GFX_focus_USA_appalachian_cordon
+		relative_position_id = USA_knox_county_response
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_knox_county_response }
+		mutually_exclusive = { focus = USA_knox_backchannel }
+		completion_reward = {
+			set_country_flag = USA_knox_cordon_active
+			hidden_effect = {
+				USA_mil_appalachian_cordon = yes
+			}
+			custom_effect_tooltip = USA_armed_forces_tt
+			army_experience = 25
+			country_event = { id = usa.79 days = 1 }
+		}
+		ai_will_do = { base = 100 }
+	}
+
+	focus = {
+		id = USA_knox_backchannel
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = USA_knox_county_response
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_knox_county_response }
+		mutually_exclusive = { focus = USA_appalachian_cordon }
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = KNX
+					NOT = { has_war_with = KNX }
+				}
+				add_to_faction = KNX
+			}
+			add_political_power = 50
+			country_event = { id = usa.78 days = 1 }
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	focus = {
+		id = USA_incendiary_clearance_push
+		icon = GFX_focus_USA_incendiary_clearance_push
+		relative_position_id = USA_knox_county_response
+		x = -1
+		y = 2
+		cost = 5
+		prerequisite = { focus = USA_appalachian_cordon }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = srp_incendiary
+			}
+			add_ideas = USA_incendiary_clearance_spirit
+			country_event = { id = usa.80 days = 1 }
+		}
+		ai_will_do = { base = 100 }
+	}
+
+	focus = {
+		id = USA_burn_knox_county
+		icon = GFX_focus_USA_burn_knox_county
+		relative_position_id = USA_knox_county_response
+		x = -1
+		y = 3
+		cost = 6
+		prerequisite = { focus = USA_incendiary_clearance_push }
+		available = {
+			date > 2023.6.1
+			country_exists = KNX
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = KNX
+					NOT = { has_war_with = KNX }
+				}
+				declare_war_on = {
+					target = KNX
+					type = annex_everything
+				}
+			}
+			add_ideas = USA_knox_offensive_doctrine
+			add_war_support = 0.05
+			country_event = { id = usa.81 days = 1 }
+		}
+		ai_will_do = { base = 100 }
+	}
+
+	focus = {
+		id = USA_great_power_doctrine
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 0
+		cost = 3.75
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				USA_for_great_power_doctrine = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_monroe_doctrine_reassertion
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = USA_great_power_doctrine
+		x = -2
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_great_power_doctrine }
+		available = {
+			OR = {
+				has_country_flag = EFH_SAC_sphere_detected
+				has_country_flag = EFH_SAC_sphere
+			}
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.05
+			hidden_effect = {
+				USA_for_monroe_doctrine = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			country_event = { id = usa_efh_war.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = USA_expel_EFH_influence
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_monroe_doctrine_reassertion
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = USA_monroe_doctrine_reassertion }
+		completion_reward = {
+			hidden_effect = {
+				USA_dom_efh_exclusion = yes
+			}
+			custom_effect_tooltip = USA_domestic_order_tt
+			EFH = { add_timed_idea = { idea = USA_efh_market_exclusion days = 730 } }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_western_hemisphere_bloc
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_expel_EFH_influence
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = USA_expel_EFH_influence }
+		completion_reward = {
+			set_country_flag = USA_hemisphere_claimed
+			add_war_support = 0.08
+			hidden_effect = {
+				USA_for_western_hemisphere_bloc = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						EFH = { has_country_flag = EFH_hemispheric_claim_asserted }
+					}
+					country_event = { id = usa_efh_war.3 days = 3 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_pacific_containment
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = USA_great_power_doctrine
+		x = 2
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_great_power_doctrine }
+		completion_reward = {
+			add_political_power = 25
+			hidden_effect = {
+				USA_for_pacific_containment = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_pacific_containment_tt
+		}
+	}
+
+	focus = {
+		id = USA_beijing_confrontation
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_pacific_containment
+		x = 0
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = USA_pacific_containment }
+		completion_reward = {
+			set_country_flag = USA_china_embargo_active
+			hidden_effect = {
+				USA_for_beijing_confrontation = yes
+			}
+			custom_effect_tooltip = USA_hemispheric_posture_tt
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_pacific_war_authorization
+		icon = GFX_goal_generic_major_war
+		relative_position_id = USA_beijing_confrontation
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = USA_beijing_confrontation }
+		available = {
+			EFH = { has_country_flag = EFH_japan_aligned }
+		}
+		completion_reward = {
+			set_country_flag = USA_pacific_war_authorized
+			add_war_support = 0.10
+			hidden_effect = {
+				country_event = { id = usa_efh_war.3 days = 3 }
+			}
+		}
+	}
+
+}

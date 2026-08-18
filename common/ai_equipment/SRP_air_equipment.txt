@@ -1,0 +1,267 @@
+SRP_human_fighter_multirole = {
+	category = air
+
+	available_for = {
+		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+	}
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 120
+	}
+
+	srp_gen4_fighter = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_fighter_gen4
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = srp_fighter_gen4_airframe
+			modules = {
+				fixed_main_weapon_slot = IRMissile
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				fixed_auxiliary_weapon_slot_2 = IRMissile
+				fixed_auxiliary_weapon_slot_3 = bomb_locks
+				fixed_auxiliary_weapon_slot_4 = IRMissile
+				engine_type_slot = srp_afterburner
+				special_type_slot_1 = srp_wing_delta
+				special_type_slot_2 = srp_aesa_radar
+				special_type_slot_3 = srp_stealth_coating
+			}
+		}
+
+		allowed_modules = {
+			IRMissile
+			srp_lraam
+			basic_cannon
+			bomb_locks
+			small_bomb_bay
+			basic_jet_engine
+			srp_afterburner
+			srp_wing_delta
+			srp_wing_conventional
+			srp_wing_canard_delta
+			air_air_radar_1
+			air_air_radar_2
+			srp_aesa_radar
+			srp_ew_suite
+			srp_stealth_coating
+			drop_tanks
+		}
+	}
+
+	srp_gen45_fighter = {
+		priority = {
+			factor = 140
+		}
+
+		enable = {
+			has_tech = srp_fighter_gen45
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 120
+			type = srp_fighter_gen45_airframe
+			modules = {
+				fixed_main_weapon_slot = IRMissile
+				fixed_auxiliary_weapon_slot_1 = IRMissile
+				fixed_auxiliary_weapon_slot_2 = IRMissile
+				fixed_auxiliary_weapon_slot_3 = IRMissile
+				fixed_auxiliary_weapon_slot_4 = IRMissile
+				engine_type_slot = srp_afterburner
+				special_type_slot_1 = srp_wing_canard_delta
+				special_type_slot_2 = srp_aesa_radar
+				special_type_slot_3 = srp_stealth_coating
+			}
+		}
+
+		allowed_modules = {
+			IRMissile
+			srp_lraam
+			basic_cannon
+			bomb_locks
+			basic_jet_engine
+			srp_afterburner
+			srp_wing_delta
+			srp_wing_canard_delta
+			srp_aesa_radar
+			srp_ew_suite
+			srp_stealth_coating
+			drop_tanks
+		}
+	}
+}
+
+SRP_human_cas_multirole = {
+	category = air
+
+	available_for = {
+		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+	}
+
+	roles = {
+		air_cas
+	}
+
+	priority = {
+		factor = 70
+	}
+
+	srp_gen4_cas = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_fighter_gen4
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 90
+			type = srp_fighter_gen4_airframe
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				fixed_auxiliary_weapon_slot_2 = IRMissile
+				fixed_auxiliary_weapon_slot_3 = bomb_locks
+				fixed_auxiliary_weapon_slot_4 = IRMissile
+				engine_type_slot = srp_afterburner
+				special_type_slot_1 = srp_wing_delta
+				special_type_slot_2 = srp_aesa_radar
+				special_type_slot_3 = drop_tanks
+			}
+		}
+
+		allowed_modules = {
+			IRMissile
+			bomb_locks
+			small_bomb_bay
+			basic_jet_engine
+			srp_afterburner
+			srp_wing_delta
+			srp_wing_canard_delta
+			srp_aesa_radar
+			srp_ew_suite
+			drop_tanks
+		}
+	}
+}
+
+SRP_human_naval_strike_multirole = {
+	category = air
+
+	available_for = {
+		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+	}
+
+	roles = {
+		air_naval_bomber
+	}
+
+	priority = {
+		factor = 35
+	}
+
+	srp_gen4_naval_strike = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_fighter_gen4
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 90
+			type = srp_fighter_gen4_airframe
+			modules = {
+				fixed_main_weapon_slot = srp_torpedo
+				fixed_auxiliary_weapon_slot_1 = IRMissile
+				fixed_auxiliary_weapon_slot_2 = bomb_locks
+				fixed_auxiliary_weapon_slot_3 = IRMissile
+				fixed_auxiliary_weapon_slot_4 = bomb_locks
+				engine_type_slot = srp_afterburner
+				special_type_slot_1 = srp_wing_delta
+				special_type_slot_2 = srp_aesa_radar
+				special_type_slot_3 = drop_tanks
+			}
+		}
+
+		allowed_modules = {
+			IRMissile
+			bomb_locks
+			srp_torpedo
+			srp_anti_ship_missile
+			basic_jet_engine
+			srp_afterburner
+			srp_wing_delta
+			srp_wing_canard_delta
+			srp_aesa_radar
+			srp_ew_suite
+			drop_tanks
+		}
+	}
+}
+
+SRP_major_strategic_bomber = {
+	category = air
+
+	available_for = {
+		CHN EFH JAP RSF USA
+	}
+
+	roles = {
+		air_strategic_bomber
+	}
+
+	priority = {
+		factor = 45
+	}
+
+	srp_strategic_bomber = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_bomber_1
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = srp_strategic_bomber_1_airframe
+			modules = {
+				fixed_main_weapon_slot = srp_bomb_bay
+				engine_type_slot = srp_strategic_engine
+				special_type_slot_1 = srp_wing_delta
+				special_type_slot_2 = srp_bomb_sights
+				special_type_slot_3 = srp_stealth_coating
+			}
+		}
+
+		allowed_modules = {
+			srp_bomb_bay
+			srp_nuclear_bomb_bay
+			srp_strategic_engine
+			srp_wing_delta
+			srp_wing_conventional
+			srp_bomb_sights
+			srp_ground_radar
+			srp_countermeasures
+			srp_stealth_coating
+		}
+	}
+}

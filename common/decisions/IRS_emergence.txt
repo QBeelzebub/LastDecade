@@ -1,0 +1,184 @@
+IRS_emergence_operations = {
+
+	IRS_emerge_to_mainland = {
+		icon = GFX_decision_generic_prepare_civil_war
+
+		fire_only_once = yes
+
+		visible = {
+			tag = IRS
+			is_ai = yes
+			NOT = { has_country_flag = IRS_emerged }
+			NOT = { has_country_flag = IRS_archetype_iris }
+			NOT = { has_country_flag = IRS_archetype_vitreous }
+			NOT = { has_country_flag = IRS_archetype_tromos }
+			NOT = { has_country_flag = IRS_archetype_adaptive }
+			NOT = { has_country_flag = IRS_archetype_unchecked }
+		}
+
+		available = {
+			tag = IRS
+			date > 2020.1.1
+			NOT = { has_country_flag = IRS_emerged }
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			complete_national_focus = IRS_phase_0_arrival
+		}
+	}
+
+	IRS_vector_northward = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			tag = IRS
+			has_global_flag = before_the_storm
+			NOT = { has_country_flag = IRS_emerged }
+		}
+
+		available = {
+			tag = IRS
+			NOT = { has_country_flag = IRS_vector_continental }
+			NOT = { has_country_flag = IRS_vector_atlantic }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_vector_north
+			add_ideas = IRS_vector_north_spirit
+		}
+
+		ai_will_do = { base = 10 }
+	}
+
+	IRS_vector_continental = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			tag = IRS
+			has_global_flag = before_the_storm
+			NOT = { has_country_flag = IRS_emerged }
+		}
+
+		available = {
+			tag = IRS
+			NOT = { has_country_flag = IRS_vector_north }
+			NOT = { has_country_flag = IRS_vector_atlantic }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_vector_continental
+			add_ideas = IRS_vector_continental_spirit
+		}
+
+		ai_will_do = { base = 10 }
+	}
+
+	IRS_vector_atlantic = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			tag = IRS
+			has_global_flag = before_the_storm
+			NOT = { has_country_flag = IRS_emerged }
+		}
+
+		available = {
+			tag = IRS
+			NOT = { has_country_flag = IRS_vector_north }
+			NOT = { has_country_flag = IRS_vector_continental }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_vector_atlantic
+			add_ideas = IRS_vector_atlantic_spirit
+		}
+
+		ai_will_do = { base = 10 }
+	}
+
+	IRS_cultivate_lineage = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			tag = IRS
+			has_global_flag = before_the_storm
+			NOT = { has_country_flag = IRS_emerged }
+			OR = {
+				has_country_flag = IRS_archetype_iris
+				has_country_flag = IRS_archetype_vitreous
+				has_country_flag = IRS_archetype_tromos
+				has_country_flag = IRS_archetype_adaptive
+				has_country_flag = IRS_archetype_unchecked
+			}
+		}
+
+		available = {
+			tag = IRS
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = IRS_archetype_vitreous }
+				add_ideas = IRS_lineage_vitreous_refined_spirit
+			}
+			else_if = {
+				limit = { has_country_flag = IRS_archetype_tromos }
+				add_ideas = IRS_lineage_tromos_refined_spirit
+			}
+			else_if = {
+				limit = { has_country_flag = IRS_archetype_adaptive }
+				add_ideas = IRS_lineage_adaptive_refined_spirit
+			}
+			else_if = {
+				limit = { has_country_flag = IRS_archetype_unchecked }
+				add_ideas = IRS_lineage_unchecked_refined_spirit
+			}
+			else_if = {
+				limit = { has_country_flag = IRS_archetype_iris }
+				add_ideas = IRS_lineage_iris_refined_spirit
+			}
+		}
+
+		ai_will_do = { base = 20 }
+	}
+
+	IRS_listen_signal_traffic = {
+		icon = GFX_decision_generic_political_discourse
+
+		visible = {
+			tag = IRS
+			has_global_flag = before_the_storm
+			NOT = { has_country_flag = IRS_emerged }
+		}
+
+		available = {
+			tag = IRS
+		}
+
+		cost = 25
+		days_re_enable = 60
+
+		complete_effect = {
+			custom_effect_tooltip = IRS_ep_gain_5_tt
+			add_to_variable = { IRS_evolution_points = 5 }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}

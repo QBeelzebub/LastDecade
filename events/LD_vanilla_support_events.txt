@@ -1,0 +1,28 @@
+add_namespace = lar_fake_intel_units
+
+country_event = {
+	id = lar_fake_intel_units.1
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = fake_intel_template_created
+	}
+
+	immediate = {
+		delete_units = {
+			division_template = "Fake Intel Division"
+			disband = no
+		}
+	}
+}
+
+country_event = {
+	id = lar_fake_intel_units.99
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+	}
+}

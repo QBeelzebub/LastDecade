@@ -1,0 +1,29 @@
+change_leader_rule_industry = {
+	type = change_leader_rules
+
+	trigger = {
+		has_industry_to_become_leader = yes
+	}
+
+	ai_will_do = { base = 1 }
+}
+
+change_leader_rule_manpower = {
+	type = change_leader_rules
+
+	trigger = {
+		has_manpower_to_become_leader = yes
+	}
+
+	ai_will_do = { base = 1 }
+}
+
+change_leader_rule_influence = {
+	type = change_leader_rules
+
+	trigger = {
+		faction_influence_rank < 2
+	}
+
+	ai_will_do = { base = 1 }
+}

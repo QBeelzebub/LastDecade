@@ -1,0 +1,279 @@
+technology_categories = {
+	light_air
+	medium_air
+	heavy_air
+	armor
+	cat_light_armor
+	cat_medium_armor
+	cat_heavy_armor
+	artillery
+	cat_anti_tank
+	cat_anti_air
+	naval_air
+	infantry_weapons
+	motorized_equipment
+	cat_mechanized_equipment
+	naval_equipment
+	rocketry
+	nuclear
+	industry
+	electronics
+	cat_fortification
+	land_doctrine
+	air_doctrine
+	naval_doctrine
+	strategic_destruction_tree
+	battlefield_support_tree
+	operational_integrity_tree
+	jet_technology
+	trade_interdiction_tree
+	convoy_defense_tree
+	light_fighter
+	cat_heavy_fighter
+	tactical_bomber
+	cat_strategic_bomber
+	naval_bomber
+	cas_bomber
+	ship_modules_tech
+	dd_tech
+	ca_tech
+	cv_tech
+	bc_tech
+	bb_tech
+	shbb_tech
+	ss_tech
+	tp_tech
+	synth_resources
+	fleet_in_being_tree
+	encryption_tech
+	decryption_tech
+	computing_tech
+	radar_tech
+	infantry_tech
+	marine_tech
+	construction_tech
+	excavation_tech
+	submarine_doctrine
+	air_equipment
+	cat_mobile_warfare
+	cat_superior_firepower
+	cat_grand_battle_plan
+	cat_mass_assault
+	cat_deep_battle
+	cat_mass_mobilization
+	cat_base_strike
+	cat_trade_interdiction
+	cat_fleet_in_being
+	cat_strategic_destruction
+	cat_battlefield_support
+	cat_operational_integrity
+	night_vision
+	base_strike_main
+	mot_rockets
+	support_tech
+	para_tech
+	engineers_tech
+	recon_tech
+	mountaineers_tech
+	rangers_tech_cat
+	military_police_tech
+	hospital_tech
+	logistics_tech
+	signal_company_tech
+	maintenance_company_tech
+	naval_mines
+	concentrated_industry_category
+	dispersed_industry_category
+	asw_tech
+	naval_minesweeping
+	naval_minelaying
+	cat_scout_plane
+	train_tech
+	cat_production
+	cat_synth_rubber
+	cat_synth_oil
+	cat_armored_cars
+	cat_special_forces_generic
+	cat_torpedoes
+	cat_ship_light_battery
+	cat_ship_medium_battery
+	cat_ship_heavy_battery
+	air_equipment
+	plane_modules_tech
+	cat_air_guns
+	cat_air_engine
+	cat_air_bombs
+	special_forces_doctrine
+	cat_maritime_patrol
+	cat_mountaineers_doctrine
+	cat_marines_doctrine
+	cat_paratroopers_doctrine
+	cat_rangers_doctrine
+	naval_armor
+	naval_artillery
+	helicopter_tech
+	pykrete_tech
+	transport_planes_cat
+
+	mio_cat_tech_all_armor_and_modules
+	mio_cat_tech_light_armor_and_modules
+	mio_cat_tech_medium_armor_and_modules
+	mio_cat_tech_heavy_armor_and_modules
+	mio_cat_all_artillery_equipment
+	mio_cat_all_light_fighter_and_modules
+	mio_cat_all_cas_and_modules
+	mio_cat_all_naval_bomber_and_modules
+	mio_cat_all_light_aircraft_and_modules
+	mio_cat_all_medium_aircraft_and_modules
+	mio_cat_all_heavy_aircraft_and_modules
+	mio_cat_tech_all_capital_ship_and_modules
+	mio_cat_tech_all_screen_ship_and_modules
+	mio_cat_tech_all_submarine_and_modules
+	mio_cat_tech_all_carrier_and_modules
+	mio_cat_tech_all_cruiser_and_modules
+	mio_cat_tech_all_destroyer_and_modules
+	mio_cat_tech_all_motorized_mechanized
+	mio_cat_artillery
+	srp_parasite_industry
+	srp_incendiary
+	srp_parasite_tech
+	srp_parasite_support_tech
+	srp_air_tech
+	srp_fighter_tech
+	srp_cas_tech
+	srp_bomber_tech
+	srp_helicopter_tech
+	srp_iris_tech
+	basic_parasites
+	parasite_buildings
+	srp_land_tech
+	srp_armor_tech
+	srp_motorized_tech
+	srp_artillery_tech
+	srp_industry_tech
+	srp_construction_tech
+	srp_electronics_tech
+	srp_radar_tech
+	srp_cyber_tech
+	srp_compute_tech
+	srp_armor
+	srp_naval_tech
+}
+
+technology_folders = {
+	infantry_folder = {
+		ledger = army
+		available = {
+			is_full_parasite = no
+		}
+	}
+	support_folder = {
+		ledger = army
+		available = {
+			is_full_parasite = no
+		}
+	}
+	armour_folder = {
+		ledger = army
+		available = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+			is_full_parasite = no
+		}
+	}
+	nsb_armour_folder = {
+		ledger = army
+		available = {
+			has_dlc = "No Step Back"
+			is_full_parasite = no
+		}
+	}
+	artillery_folder = {
+		ledger = army
+		available = {
+			is_full_parasite = no
+		}
+	}
+	air_techs_folder = {
+		available = {
+			NOT = { has_dlc = "By Blood Alone" }
+			is_full_parasite = no
+		}
+		ledger = air
+	}
+	bba_air_techs_folder = {
+		available = {
+			has_dlc = "By Blood Alone"
+			is_full_parasite = no
+		}
+		ledger = air
+	}
+	naval_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+			is_full_parasite = no
+		}
+		ledger = navy
+	}
+	mtgnavalfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+			is_full_parasite = no
+		}
+		ledger = navy
+	}
+	mtgnavalsupportfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+			is_full_parasite = no
+		}
+		ledger = navy
+	}
+	industry_folder = {
+		ledger = civilian
+		available = {
+			is_full_parasite = no
+		}
+	}
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+	special_forces_doctrine_folder = {
+		available = {
+                        OR = {
+                                has_dlc = "Arms Against Tyranny"
+                                has_dlc = "No Compromise, No Surrender"
+                        }
+		}
+		ledger = hidden
+		doctrine = yes
+	}
+	electronics_folder = {
+		ledger = civilian
+		available = {
+			is_full_parasite = no
+		}
+	}
+	parasite_folder = {
+		ledger = army
+		available = {
+			is_parasite_nation = yes
+		}
+	}
+	parasite_industry_folder = {
+		ledger = army
+		available = {
+			is_parasite_nation = yes
+		}
+	}
+}

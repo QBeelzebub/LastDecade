@@ -1,0 +1,448 @@
+types = {
+	SRP_orbital_nuclear_strike = {
+		starting_point = {
+		    types = { rocket_site }
+		}
+		category = SRP_orbital_strikes
+		target_loc_key = SRP_orbital_nuclear_strike_target
+
+		unit_icon = GFX_focus_generic_nuclear_development
+		equipment_icon = GFX_focus_generic_nuclear_development
+		target_icon = GFX_other_target_icon
+
+		unit_requirements = {
+			equipment = {
+				type = { srp_orbital_delivery_vehicle_equipment }
+				amount = { min = 1 }
+			}
+		}
+
+		arrow = {
+			type = ballistic
+		}
+
+		fire_only_once = no
+		days_re_enable = 30
+		days_to_prepare = 14
+		speed_multiplier = 2.0
+		command_power = 25
+
+		allowed = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+			}
+		}
+
+		visible = {
+			check_variable = { var = SRP_orbital_regular_warheads value = 0 compare = greater_than }
+		}
+
+		show_target = {
+			has_war_with = FROM
+		}
+		available = {
+			check_variable = { var = SRP_orbital_regular_warheads value = 0 compare = greater_than }
+			has_war_with = FROM
+		}
+
+		launchable = {
+			has_war_with = FROM
+		}
+
+		launch_sound = raid_launch_nuclear_missile
+
+		unit_model = {
+			scale = 0.5
+		}
+
+		target_type = {
+			province = any
+		}
+
+		success_factors = {
+			success = {
+				base = 0.85
+				intel = {
+					reference = 50
+					weight = 0.10
+				}
+				anti_air = {
+					reference = 5
+					weight = -0.05
+				}
+			}
+			critical = {
+				base = 0.15
+				intel = {
+					reference = 50
+					weight = 0.10
+				}
+			}
+			disaster = {
+				base = 0.02
+				anti_air = {
+					reference = 5
+					weight = 0.05
+				}
+			}
+		}
+
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_available_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_warhead_consumed_tt
+						add_war_support = -0.01
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_available_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_warhead_consumed_tt
+					}
+				}
+				victim_effects = {
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
+					var:target_state = {
+						bathe_in_hellfire_nuclear = yes
+						custom_effect_tooltip = raid_nuclear_strike_tt
+						add_dynamic_modifier = {
+							modifier = fallout_atomic
+							days = 180
+						}
+					}
+					var:actor_country = {
+						custom_effect_tooltip = raid_nuclear_secondary_target_tt
+						launch_nuke = {
+							state = var:ROOT.target_state
+							use_nuke = no
+						}
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				custom_sound = raid_result_success_nuclear
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_available_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_warhead_consumed_tt
+					}
+				}
+				victim_effects = {
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
+					var:target_state = {
+						bathe_in_hellfire_nuclear = yes
+						custom_effect_tooltip = raid_nuclear_strike_tt
+						add_dynamic_modifier = {
+							modifier = fallout_atomic
+							days = 365
+						}
+					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+						}
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				custom_sound = raid_result_critical_success_nuclear
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_available_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_warhead_consumed_tt
+					}
+				}
+				victim_effects = {
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
+					var:target_state = {
+						bathe_in_hellfire_nuclear = yes
+						custom_effect_tooltip = raid_nuclear_strike_tt
+						add_dynamic_modifier = {
+							modifier = fallout_atomic
+							days = 730
+						}
+					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+						}
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+	SRP_orbital_thermonuclear_strike = {
+		starting_point = {
+		    types = { rocket_site }
+		}
+		category = SRP_orbital_strikes
+		target_loc_key = SRP_orbital_thermonuclear_strike_target
+
+		unit_icon = GFX_focus_generic_nuclear_development
+		equipment_icon = GFX_focus_generic_nuclear_development
+		target_icon = GFX_other_target_icon
+
+		unit_requirements = {
+			equipment = {
+				type = {
+					srp_orbital_delivery_vehicle_equipment
+				}
+				amount = { min = 1 }
+			}
+		}
+
+		arrow = {
+			type = ballistic
+		}
+
+		fire_only_once = no
+		days_re_enable = 45
+		days_to_prepare = 14
+		speed_multiplier = 2.0
+		command_power = 35
+
+		allowed = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+			}
+		}
+
+		visible = {
+			check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than }
+		}
+
+		show_target = {
+			has_war_with = FROM
+		}
+
+		available = {
+			check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than }
+			has_war_with = FROM
+		}
+
+		launchable = {
+			has_war_with = FROM
+		}
+
+		launch_sound = raid_launch_nuclear_missile
+
+		unit_model = {
+			scale = 0.5
+		}
+
+		target_type = {
+			province = any
+		}
+
+		success_factors = {
+			success = {
+				base = 0.85
+				intel = {
+					reference = 50
+					weight = 0.10
+				}
+				anti_air = {
+					reference = 5
+					weight = -0.05
+				}
+			}
+			critical = {
+				base = 0.15
+				intel = {
+					reference = 50
+					weight = 0.10
+				}
+			}
+			disaster = {
+				base = 0.02
+				anti_air = {
+					reference = 5
+					weight = 0.05
+				}
+			}
+		}
+
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_thermo_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_thermo_warhead_consumed_tt
+						add_war_support = -0.02
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_thermo_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_thermo_warhead_consumed_tt
+					}
+				}
+				victim_effects = {
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
+					var:target_state = {
+						bathe_in_hellfire_thermonuclear = yes
+						custom_effect_tooltip = raid_nuclear_strike_tt
+						hidden_effect = {
+							if = {
+								limit = { has_dynamic_modifier = { modifier = fallout_atomic } }
+								remove_dynamic_modifier = { modifier = fallout_atomic }
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = fallout_thermonuclear
+							days = 365
+						}
+					}
+					var:actor_country = {
+						launch_nuke = {
+							state = var:ROOT.target_state
+							use_nuke = no
+							nuke_type = thermonuclear_bomb
+						}
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				custom_sound = raid_result_success_nuclear
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_thermo_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_thermo_warhead_consumed_tt
+					}
+				}
+				victim_effects = {
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
+					var:target_state = {
+						bathe_in_hellfire_thermonuclear = yes
+						custom_effect_tooltip = raid_nuclear_strike_tt
+						hidden_effect = {
+							if = {
+								limit = { has_dynamic_modifier = { modifier = fallout_atomic } }
+								remove_dynamic_modifier = { modifier = fallout_atomic }
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = fallout_thermonuclear
+							days = 730
+						}
+					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+							nuke_type = thermonuclear_bomb
+						}
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				custom_sound = raid_result_critical_success_nuclear
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1
+						ratio = no
+					}
+					var:actor_country = {
+						SRP_orbital_consume_thermo_warhead_effect = yes
+						custom_effect_tooltip = SRP_orbital_thermo_warhead_consumed_tt
+					}
+				}
+				victim_effects = {
+					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }
+					var:target_state = {
+						bathe_in_hellfire_thermonuclear = yes
+						custom_effect_tooltip = raid_nuclear_strike_tt
+						hidden_effect = {
+							if = {
+								limit = { has_dynamic_modifier = { modifier = fallout_atomic } }
+								remove_dynamic_modifier = { modifier = fallout_atomic }
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = fallout_thermonuclear
+							days = 730
+						}
+					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+							nuke_type = thermonuclear_bomb
+						}
+					}
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+on_actions = {
+
+    on_startup = {
+        effect = {
+            IRS = { set_variable = { var = IRS_milestone_50_count value = 0 } }
+            every_country = {
+                limit = {
+                    exists = yes
+                    NOT = { is_full_parasite = yes }
+                }
+                set_variable = { var = public_panic value = 20 }
+                SRP_recalculate_public_panic_effect = yes
+            }
+        }
+    }
+
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    exists = yes
+                    NOT = { is_full_parasite = yes }
+                }
+                SRP_recalculate_public_panic_effect = yes
+            }
+        }
+    }
+
+    on_monthly = {
+        effect = {
+            if = {
+                limit = {
+                    exists = yes
+                    tag = EFH
+                    has_country_flag = EFH_armageddon_declared
+                }
+                set_variable = { var = public_panic value = 1000 }
+                SRP_recalculate_public_panic_effect = yes
+            }
+            if = {
+                limit = {
+                    exists = yes
+                    NOT = { is_full_parasite = yes }
+                    NOT = { has_country_flag = EFH_armageddon_declared }
+                    check_variable = { public_panic > 0 }
+                }
+                add_to_variable = { var = public_panic value = -10 }
+                SRP_recalculate_public_panic_effect = yes
+            }
+        }
+    }
+}

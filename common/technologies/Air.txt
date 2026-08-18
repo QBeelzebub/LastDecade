@@ -1,0 +1,436 @@
+technologies = {
+
+	srp_fighter_gen4 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		enable_equipments = {
+			srp_fighter_gen4_airframe
+		}
+		enable_equipment_modules = {
+			basic_cannon
+			basic_jet_engine
+			bomb_locks
+			IRMissile
+			srp_wing_conventional
+			srp_wing_canard_delta
+			srp_wing_delta
+			srp_wing_tandem
+			air_air_radar_1
+			air_air_radar_2
+			srp_prop_engine
+			srp_twin_prop
+			srp_twin_jet
+			srp_recon_camera
+			srp_radio_navigation
+			drop_tanks
+		}
+
+		path = {
+			leads_to_tech = srp_fighter_gen45
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			srp_air_tech
+			srp_fighter_tech
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_fighter_gen45 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2021
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		enable_equipments = {
+			srp_fighter_gen45_airframe
+		}
+		enable_equipment_modules = {
+			srp_aesa_radar
+			srp_ew_suite
+			srp_afterburner
+			srp_stealth_coating
+			srp_rocket_engine
+		}
+
+		categories = { srp_air_tech srp_fighter_tech }
+
+		air_attack_factor = 0.05
+		air_superiority_detect_factor = 0.05
+		air_defence_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_tandem_wing
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_tandem_wing = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+		categories = { srp_air_tech srp_fighter_tech }
+
+		air_agility_factor = 0.10
+		air_attack_factor = 0.07
+		air_range_factor = 0.08
+		air_maximum_speed_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_fighter_gen5
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_fighter_gen5 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 3.0
+		start_year = 2025
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		enable_equipments = {
+			srp_fighter_gen5_airframe
+		}
+		enable_equipment_modules = {
+			srp_lraam
+			srp_internal_bay_weapon
+			srp_thrust_vectoring
+			srp_fusion_microcore
+			srp_distributed_aperture
+		}
+
+		categories = { srp_air_tech srp_fighter_tech }
+
+		air_attack_factor = 0.10
+		air_superiority_detect_factor = 0.08
+		air_defence_factor = 0.05
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_cas_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 0 }
+		}
+
+		enable_equipment_modules = {
+			srp_torpedo
+			srp_kamikaze_charge
+			srp_mine_pod
+			dive_brakes_small
+			small_bomb_bay
+		}
+
+		categories = { srp_air_tech srp_cas_tech }
+
+		air_close_air_support_org_damage_factor = 0.05
+		ground_attack_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_cas_drone
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_cas_drone = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 2 }
+		}
+
+		enable_equipment_modules = {
+			srp_anti_ship_missile
+		}
+
+		categories = { srp_air_tech srp_cas_tech }
+
+		ground_attack_factor = 0.08
+		air_close_air_support_org_damage_factor = 0.05
+		air_accidents_factor = -0.10
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_bomber_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2018
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 0 }
+		}
+
+		enable_equipments = {
+			srp_strategic_bomber_1_airframe
+			srp_orbital_delivery_vehicle_equipment_1
+		}
+		enable_equipment_modules = {
+			srp_strategic_engine
+			srp_bomb_bay
+			srp_bomb_sights
+			srp_ground_radar
+			srp_countermeasures
+			srp_wing_conventional
+			srp_defense_turret
+			srp_nuclear_bomb_bay
+			nuclear_bomb_locks
+		}
+
+		categories = { srp_air_tech srp_bomber_tech }
+
+		air_strategic_bomber_bombing_factor = 0.06
+		strategic_bomb_visibility = -0.05
+		air_range_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_bomber_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	srp_bomber_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2025
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 2 }
+		}
+
+		categories = { srp_air_tech srp_bomber_tech }
+
+		air_strategic_bomber_bombing_factor = 0.08
+		strategic_bomb_visibility = -0.10
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	srp_transport_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 6 y = 0 }
+		}
+
+		categories = { srp_air_tech }
+
+		transport_capacity = 0.05
+		air_range_factor = 0.03
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	srp_helicopter_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 8 y = 0 }
+		}
+
+		enable_equipments = {
+			srp_helicopter_legacy_airframe
+		}
+		enable_equipment_modules = {
+			srp_turboshaft_1
+			srp_rotor_single
+			srp_rotor_coaxial
+			srp_helo_chaingun
+			srp_helo_rocket_pods
+			srp_helo_dipping_sonar
+			srp_helo_recon_pod
+			srp_helo_troop_bay
+			srp_helo_aux_tank
+		}
+
+		categories = { srp_air_tech srp_helicopter_tech }
+
+		air_close_air_support_org_damage_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_helicopter_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_helicopter_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2021
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 8 y = 2 }
+		}
+
+		enable_equipments = {
+			srp_helicopter_modern_airframe
+		}
+		enable_equipment_modules = {
+			srp_turboshaft_2
+			srp_helo_atgm
+			srp_helo_lw_torpedo
+			srp_helo_longbow_radar
+			srp_helo_dircm
+			srp_helo_armor_plating
+		}
+
+		categories = { srp_air_tech srp_helicopter_tech }
+
+		air_close_air_support_org_damage_factor = 0.05
+		ground_attack_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_helicopter_3
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_helicopter_3 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.5
+		start_year = 2025
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 8 y = 4 }
+		}
+
+		enable_equipments = {
+			srp_helicopter_tiltrotor_airframe
+		}
+		enable_equipment_modules = {
+			srp_tiltrotor_engine
+			srp_rotor_tiltrotor
+		}
+
+		categories = { srp_air_tech srp_helicopter_tech }
+
+		air_range_factor = 0.10
+		air_maximum_speed_factor = 0.05
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	EFH_ha_aero_canard_delta_upgrade = {
+		research_cost = 1.0
+		start_year = 2018
+
+		allow = {
+			always = no
+		}
+
+		enable_equipment_modules = {
+			EFH_ha_wing_canard_delta
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	USA_lockheed_f35_wing_upgrade = {
+		research_cost = 1.0
+		start_year = 2018
+
+		allow = {
+			always = no
+		}
+
+		enable_equipment_modules = {
+			USA_lockheed_f35_lo_wing
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	SRP_orbital_delivery_vehicle = {
+		research_cost = 1.0
+		start_year = 2018
+
+		allow = {
+			always = no
+		}
+
+		enable_equipments = {
+			srp_orbital_delivery_vehicle_equipment_1
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

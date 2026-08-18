@@ -1,0 +1,601 @@
+ideas = {
+	country = {
+		overlord_wake_presence = {
+			picture = generic_army_tank
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				breakthrough_factor = 0.10
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		dreadnaut_wake_presence = {
+			picture = generic_air_fighter
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.05
+				air_superiority_efficiency = 0.05
+				land_night_attack = 0.10
+			}
+		}
+
+		IRS_evolution_0 = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.02
+			}
+		}
+
+		IRS_evolution_1 = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.07
+				army_org_factor = 0.06
+				production_speed_buildings_factor = 0.05
+				supply_consumption_factor = -0.05
+				attrition = -0.08
+				planning_speed = 0.10
+			}
+		}
+
+		IRS_evolution_2 = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.07
+				army_org_factor = 0.06
+				production_speed_buildings_factor = 0.10
+				supply_consumption_factor = -0.08
+				attrition = -0.21
+				planning_speed = 0.10
+				land_night_attack = 0.10
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.03
+				research_speed_factor = 0.05
+				army_speed_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+
+		IRS_evolution_3 = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.12
+				army_org_factor = 0.10
+				production_speed_buildings_factor = 0.12
+				supply_consumption_factor = -0.14
+				attrition = -0.30
+				planning_speed = 0.15
+				land_night_attack = 0.15
+				breakthrough_factor = 0.13
+				army_attack_factor = 0.10
+				research_speed_factor = 0.10
+				army_speed_factor = 0.08
+				army_defence_factor = 0.10
+				navy_submarine_attack_factor = 0.05
+			}
+		}
+
+		IRS_phase0_construction_surge = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_speed_beckon_cluster_factor = 0.10
+			}
+		}
+
+		IRS_phase0_biomass_pulse = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_beckon_cluster_factor = 0.15
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		IRS_early_biomass_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		IRS_root_network_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.05
+				attrition = -0.03
+			}
+		}
+
+		IRS_pheromone_sync_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				army_org_factor = 0.03
+			}
+		}
+
+		IRS_soil_contamination_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				attrition = -0.05
+			}
+		}
+
+		IRS_rupter_assault_doctrine = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				land_night_attack = 0.15
+				army_org_regain = 0.08
+				army_attack_factor = 0.03
+			}
+		}
+
+		IRS_wartime_surge = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.20
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
+
+		IRS_spore_drive_idea = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_beckon_cluster_factor = 0.25
+				production_speed_buildings_factor = 0.08
+			}
+		}
+
+		IRS_hive_resonance_idea = {
+			picture = generic_research
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				military_industrial_organization_research_bonus = 1
+			}
+		}
+
+		IRS_calibrated_swarm_protocols = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				military_industrial_organization_research_bonus = 1
+				air_attack_factor = 0.05
+			}
+		}
+
+		IRS_nocturnal_hunter_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				land_night_attack = 0.10
+				attrition = -0.03
+			}
+		}
+
+		IRS_rupter_drive_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+
+		IRS_spore_dispersal_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+			}
+		}
+
+		IRS_adaptive_strain_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				attrition = -0.10
+			}
+		}
+
+		IRS_territorial_drive_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.03
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		IRS_african_campaign_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.04
+				breakthrough_factor = 0.04
+			}
+		}
+
+		IRS_consumption_pace_idea = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_speed_beckon_cluster_factor = 0.12
+				attrition = -0.05
+			}
+		}
+
+		IRS_consumption_wave_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				attrition = -0.06
+				supply_consumption_factor = -0.04
+			}
+		}
+
+		IRS_coastal_seeding_idea = {
+			picture = generic_naval_production
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.03
+				navy_submarine_attack_factor = 0.05
+			}
+		}
+
+		IRS_hive_signal_idea = {
+			picture = generic_research
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				army_org_factor = 0.04
+			}
+		}
+
+		IRS_distributed_will_idea = {
+			picture = generic_research
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.05
+				army_morale_factor = 0.04
+				military_industrial_organization_research_bonus = 1
+			}
+		}
+
+		IRS_assimilation_directive_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				breakthrough_factor = 0.10
+				army_defence_factor = 0.05
+			}
+		}
+
+		IRS_vector_mapping_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.02
+				supply_consumption_factor = -0.02
+			}
+		}
+
+		IRS_dormant_transit_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				land_night_attack = 0.05
+				attrition = -0.04
+			}
+		}
+
+		IRS_sac_foothold_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				breakthrough_factor = 0.04
+				army_defence_factor = 0.03
+			}
+		}
+
+		IRS_devourer_feeding_grounds = {
+			picture = generic_naval_production
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				navy_submarine_attack_factor = 0.20
+			}
+		}
+
+		IRS_sea_colony_tier_1 = {
+			picture = generic_naval_production
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.08
+			}
+		}
+
+		IRS_sea_colony_tier_2 = {
+			picture = generic_naval_production
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.16
+			}
+		}
+
+		IRS_sea_colony_tier_3 = {
+			picture = generic_naval_production
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.24
+			}
+		}
+
+		IRS_sea_colony_tier_4 = {
+			picture = generic_naval_production
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.32
+			}
+		}
+
+		IRS_west_african_mobilization_idea = {
+			picture = generic_army_tank
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+			}
+		}
+
+		IRS_phase3_expansion_idea = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				supply_consumption_factor = -0.05
+				research_speed_factor = 0.03
+			}
+		}
+
+		IRS_south_american_vectors_idea = {
+			picture = generic_naval_production
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				navy_max_range_factor = 0.15
+				navy_submarine_attack_factor = 0.05
+				army_speed_factor = 0.03
+			}
+		}
+
+		IRS_transoceanic_breach_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		IRS_vitreous_root_lattice = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				production_speed_beckon_cluster_factor = 0.12
+				military_industrial_organization_funds_gain = 5
+			}
+		}
+
+		IRS_vitreous_subterranean_web = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.06
+				attrition = -0.06
+				production_speed_beckon_cluster_factor = 0.10
+			}
+		}
+
+		IRS_vitreous_the_emergence = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				planning_speed = 0.05
+				military_industrial_organization_research_bonus = 1
+			}
+		}
+
+		IRS_tromos_hollow_networks = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.05
+				army_speed_factor = 0.04
+				military_industrial_organization_funds_gain = 5
+			}
+		}
+
+		IRS_tromos_structural_memory = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				breakthrough_factor = 0.07
+				army_attack_factor = 0.04
+			}
+		}
+
+		IRS_tromos_the_template = {
+			picture = generic_research
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				army_morale_factor = 0.03
+				military_industrial_organization_research_bonus = 1
+			}
+		}
+
+		IRS_deep_inland_surge = {
+			picture = generic_production_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.12
+				production_speed_beckon_cluster_factor = 0.15
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		IRS_global_signal_idea = {
+			picture = generic_research
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		IRS_full_assimilation_idea = {
+			picture = generic_army_tank
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				breakthrough_factor = 0.12
+				army_defence_factor = 0.08
+				army_morale_factor = 0.08
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.05
+				navy_submarine_attack_factor = 0.10
+			}
+		}
+
+		IRS_predation_doctrine_idea = {
+			picture = generic_morale_bonus
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				army_morale_factor = 0.05
+				production_speed_beckon_cluster_factor = 0.05
+			}
+		}
+
+		IRS_dispatcher_surge_idea = {
+			picture = generic_intel_agency
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain_factor = 0.10
+				decryption_factor = 0.08
+			}
+		}
+
+		IRS_manifestation_primer_idea = {
+			picture = generic_research
+			allowed = { tag = IRS }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.06
+			}
+		}
+
+		IRS_vagrant_4_surge_idea = {
+			picture = generic_army_war_college
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				army_morale_factor = 0.08
+				army_org_factor = 0.06
+			}
+		}
+
+		IRS_adapted_beckon_cultivation = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_beckon_cluster_factor = 0.10
+			}
+		}
+
+		parasite_autonomic_sustenance_idea = {
+			picture = generic_army_tank
+			allowed = { is_parasite_nation = yes }
+			removal_cost = -1
+			modifier = {
+				no_supply_grace = 7
+				supply_consumption_factor = -0.10
+			}
+		}
+	}
+}

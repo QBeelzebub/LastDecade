@@ -1,0 +1,7 @@
+state_categories = {
+	srp_megaregion = {
+		local_building_slots = 18
+
+		color = { 0 255 255 }
+	}
+}

@@ -1,0 +1,39 @@
+infestation_decision = {
+
+	LD_containment_failure = {
+		icon = generic_crisis
+
+		allowed = { always = yes }
+
+		activation = {
+			NOT = { is_full_parasite = yes }
+			check_variable = { LD_contested_states > 1 }
+		}
+
+		available = {
+			check_variable = { LD_contested_states < 2 }
+		}
+
+		visible = {
+			NOT = { is_full_parasite = yes }
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 90
+		is_good = no
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			LD_lower_containment_strain_effect = yes
+			add_political_power = 25
+			add_stability = 0.02
+		}
+
+		timeout_effect = {
+			LD_raise_containment_strain_effect = yes
+			activate_mission = LD_containment_failure
+		}
+
+		ai_will_do = { base = 0 }
+	}
+}

@@ -1,0 +1,19 @@
+defined_text = {
+	name = GetLDContainmentTier
+
+	text = {
+		trigger = { check_variable = { LD_containment_strain > 2 } }
+		localization_key = LD_containment_tier_3
+	}
+	text = {
+		trigger = { check_variable = { LD_containment_strain > 1 } }
+		localization_key = LD_containment_tier_2
+	}
+	text = {
+		trigger = { check_variable = { LD_containment_strain > 0 } }
+		localization_key = LD_containment_tier_1
+	}
+	text = {
+		localization_key = LD_containment_tier_0
+	}
+}

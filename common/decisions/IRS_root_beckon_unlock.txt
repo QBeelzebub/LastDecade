@@ -1,0 +1,147 @@
+irs_root_beckon_discovery = {
+
+	IRS_discover_boreic = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			original_tag = IRS
+			NOT = { has_country_flag = IRS_boreic_discovered }
+		}
+
+		available = {
+			original_tag = IRS
+			owns_state = 683
+			683 = { has_state_flag = irs_state_consumed }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_boreic_discovered
+		}
+
+		ai_will_do = { base = 50 }
+	}
+
+	IRS_discover_alclidic = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			original_tag = IRS
+			NOT = { has_country_flag = IRS_alclidic_discovered }
+		}
+
+		available = {
+			original_tag = IRS
+			owns_state = 285
+			285 = { has_state_flag = irs_state_consumed }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_alclidic_discovered
+		}
+
+		ai_will_do = { base = 50 }
+	}
+
+	IRS_discover_sinic = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			original_tag = IRS
+			NOT = { has_country_flag = IRS_sinic_discovered }
+		}
+
+		available = {
+			original_tag = IRS
+			owns_state = 1035
+			1035 = { has_state_flag = irs_state_consumed }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_sinic_discovered
+		}
+
+		ai_will_do = { base = 50 }
+	}
+
+	IRS_discover_tethysic = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			original_tag = IRS
+			NOT = { has_country_flag = IRS_tethysic_discovered }
+		}
+
+		available = {
+			original_tag = IRS
+			owns_state = 335
+			335 = { has_state_flag = irs_state_consumed }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_tethysic_discovered
+			set_technology = { tethysic_devourer_genome = 1 popup = no }
+		}
+
+		ai_will_do = { base = 50 }
+	}
+
+	IRS_discover_ferritic = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			original_tag = IRS
+			NOT = { has_country_flag = IRS_ferritic_discovered }
+		}
+
+		available = {
+			original_tag = IRS
+			owns_state = 506
+			506 = { has_state_flag = irs_state_consumed }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_ferritic_discovered
+		}
+
+		ai_will_do = { base = 50 }
+	}
+
+	IRS_discover_plutonic = {
+		icon = GFX_decision_generic_construction
+
+		visible = {
+			original_tag = IRS
+			NOT = { has_country_flag = IRS_plutonic_discovered }
+		}
+
+		available = {
+			original_tag = IRS
+			owns_state = 100
+			100 = { has_state_flag = irs_state_consumed }
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = IRS_plutonic_discovered
+		}
+
+		ai_will_do = { base = 50 }
+	}
+}

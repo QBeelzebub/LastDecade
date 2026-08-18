@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+
+		EFH_board_reorientation_spirit = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+
+		EFH_integration_agreement_full = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				supply_consumption_factor = -0.08
+				political_power_factor = -0.10
+			}
+		}
+
+		EFH_integration_agreement_oversight = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				supply_consumption_factor = -0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		EFH_first_beckon_confidence = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+
+	}
+}

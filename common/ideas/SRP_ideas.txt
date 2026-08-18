@@ -1,0 +1,160 @@
+ideas = {
+    country = {
+        EFH_fusion_economy = {
+            picture = generic_economic_increase
+            modifier = {
+                industrial_capacity_factory = 0.10
+                production_speed_buildings_factor = 0.05
+            }
+            removal_cost = -1
+        }
+        SRP_lunar_race_pressure = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.02
+                consumer_goods_factor = 0.02
+            }
+        }
+        SRP_moon_base_active_base = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+                war_support_factor = 0.05
+            }
+        }
+        SRP_moon_base_he3_partial = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.03
+            }
+        }
+        SRP_moon_base_he3_full = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.07
+                research_speed_factor = 0.05
+            }
+        }
+        SRP_moon_base_research = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        SRP_moon_base_complete = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.2
+                research_speed_factor = 0.25
+                political_power_gain = 1.25
+            }
+        }
+        SRP_moon_base_procurement_scandal = {
+            picture = generic_economic_increase
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.03
+                political_power_gain = -0.10
+            }
+        }
+        SRP_lunar_anomaly_insight = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        srp_weakpoint_targeting_idea = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            targeted_modifier = {
+                tag = IRS
+                attack_bonus_against = 0.10
+                defense_bonus_against = 0.10
+            }
+            targeted_modifier = {
+                tag = KNX
+                attack_bonus_against = 0.10
+                defense_bonus_against = 0.10
+            }
+        }
+
+        srp_rtg_doctrine_idea = {
+            picture = generic_research_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            targeted_modifier = {
+                tag = IRS
+                attack_bonus_against = 0.15
+            }
+            targeted_modifier = {
+                tag = KNX
+                attack_bonus_against = 0.15
+            }
+        }
+
+        SRP_volunteers_to_africa_idea = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.03
+                army_morale_factor = 0.02
+            }
+        }
+
+        srp_civil_defense_bonus = {
+            picture = generic_industry
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+
+        CHN_peoples_war_spirit = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                weekly_manpower = 500
+                research_speed_factor = 0.10
+            }
+        }
+
+        EFH_emergency_powers_active = {
+            picture = generic_political_actions
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.05
+                political_power_factor = -0.05
+            }
+        }
+
+        srp_critical_nuclear_reserve = {
+            picture = generic_industry
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                nuclear_production_factor = -0.25
+                political_power_cost = 0.20
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "Atlantic Fleet"
+		naval_base = 10980
+		task_force = {
+			name = "1st Surface Squadron"
+			location = 10980
+			ship = { name = "SAS Atlantico" definition = carrier start_experience_factor = 0.2 equipment = { srp_carrier_hull_1 = { amount = 1 owner = SAC version_name = "Atlantico Class" } } }
+			ship = { name = "SAS Niteroi" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = SAC version_name = "Niteroi Class" } } }
+			ship = { name = "SAS Independencia" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = SAC version_name = "Niteroi Class" } } }
+		}
+		task_force = {
+			name = "1st Submarine Squadron"
+			location = 10980
+			ship = { name = "SAS Riachuelo" definition = submarine start_experience_factor = 0.2 equipment = { srp_submarine_hull_1 = { amount = 1 owner = SAC version_name = "Riachuelo Class" } } }
+			ship = { name = "SAS Humaita" definition = submarine start_experience_factor = 0.2 equipment = { srp_submarine_hull_1 = { amount = 1 owner = SAC version_name = "Riachuelo Class" } } }
+		}
+	}
+	fleet = {
+		name = "Southern Fleet"
+		naval_base = 12364
+		task_force = {
+			name = "2nd Surface Squadron"
+			location = 12364
+			ship = { name = "SAS Almirante Brown" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = SAC version_name = "Almirante Brown Class" } } }
+			ship = { name = "SAS La Argentina" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = SAC version_name = "Almirante Brown Class" } } }
+		}
+	}
+}

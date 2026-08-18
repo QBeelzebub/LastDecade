@@ -1,0 +1,66 @@
+LD_update_containment_effect = {
+	set_variable = { LD_contested_states = 0 }
+	every_controlled_state = {
+		limit = {
+			check_variable = { iris_infestation_level > 24 }
+		}
+		PREV = { add_to_variable = { LD_contested_states = 1 } }
+	}
+}
+
+LD_raise_containment_strain_effect = {
+	add_to_variable = { LD_containment_strain = 1 }
+	clamp_variable = {
+		var = LD_containment_strain
+		min = 0
+		max = 3
+	}
+	LD_apply_containment_strain_effect = yes
+}
+
+LD_lower_containment_strain_effect = {
+	add_to_variable = { LD_containment_strain = -1 }
+	clamp_variable = {
+		var = LD_containment_strain
+		min = 0
+		max = 3
+	}
+	LD_apply_containment_strain_effect = yes
+}
+
+LD_apply_containment_strain_effect = {
+
+	if = {
+		limit = { check_variable = { LD_containment_strain < 1 } }
+		if = { limit = { has_idea = LD_containment_strain_1 } remove_ideas = LD_containment_strain_1 }
+		if = { limit = { has_idea = LD_containment_strain_2 } remove_ideas = LD_containment_strain_2 }
+		if = { limit = { has_idea = LD_containment_strain_3 } remove_ideas = LD_containment_strain_3 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { LD_containment_strain > 0 }
+			check_variable = { LD_containment_strain < 2 }
+		}
+		if = { limit = { NOT = { has_idea = LD_containment_strain_1 } } add_ideas = LD_containment_strain_1 }
+		if = { limit = { has_idea = LD_containment_strain_2 } remove_ideas = LD_containment_strain_2 }
+		if = { limit = { has_idea = LD_containment_strain_3 } remove_ideas = LD_containment_strain_3 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { LD_containment_strain > 1 }
+			check_variable = { LD_containment_strain < 3 }
+		}
+		if = { limit = { NOT = { has_idea = LD_containment_strain_2 } } add_ideas = LD_containment_strain_2 }
+		if = { limit = { has_idea = LD_containment_strain_1 } remove_ideas = LD_containment_strain_1 }
+		if = { limit = { has_idea = LD_containment_strain_3 } remove_ideas = LD_containment_strain_3 }
+	}
+
+	if = {
+		limit = { check_variable = { LD_containment_strain > 2 } }
+		if = { limit = { NOT = { has_idea = LD_containment_strain_3 } } add_ideas = LD_containment_strain_3 }
+		if = { limit = { has_idea = LD_containment_strain_1 } remove_ideas = LD_containment_strain_1 }
+		if = { limit = { has_idea = LD_containment_strain_2 } remove_ideas = LD_containment_strain_2 }
+	}
+}

@@ -1,0 +1,52 @@
+IRS_spawn_proto_supreme_hiroshima = {
+	if = {
+		limit = { check_variable = { global.srp_crisis_enabled > 0 } }
+		529 = {
+			set_building_level = {
+				type = proto_supreme_beckon
+				province = { id = 1092 }
+				level = 1
+				instant_build = yes
+			}
+			set_state_flag = proto_supreme_site
+			set_variable = { proto_supreme_raid_attempts = 0 }
+		}
+		add_to_variable = { global.proto_supreme_count = 1 }
+		if = {
+			limit = { check_variable = { global.srp_crisis_intensity > 1 } }
+			add_to_variable = { global.proto_supreme_count = 1 }
+		}
+		proto_supreme_refresh_global_debuff = yes
+		every_country = {
+			limit = {
+				is_major = yes
+				NOT = { is_parasite_nation = yes }
+			}
+			country_event = { id = proto_supreme.1 days = 1 }
+		}
+	}
+}
+
+proto_supreme_destroy_site = {
+	set_building_level = {
+		type = proto_supreme_beckon
+		province = { all_provinces = yes }
+		level = 0
+	}
+	clr_state_flag = proto_supreme_site
+	set_variable = { proto_supreme_raid_attempts = 0 }
+}
+
+proto_supreme_refresh_global_debuff = {
+	every_country = {
+		limit = { NOT = { is_parasite_nation = yes } }
+		if = { limit = { has_idea = proto_supreme_atmospheric_collapse_1 } remove_ideas = proto_supreme_atmospheric_collapse_1 }
+		if = { limit = { has_idea = proto_supreme_atmospheric_collapse_2 } remove_ideas = proto_supreme_atmospheric_collapse_2 }
+		if = { limit = { has_idea = proto_supreme_atmospheric_collapse_3 } remove_ideas = proto_supreme_atmospheric_collapse_3 }
+		if = { limit = { has_idea = proto_supreme_atmospheric_collapse_4 } remove_ideas = proto_supreme_atmospheric_collapse_4 }
+		if = { limit = { check_variable = { global.proto_supreme_count = 1 } } add_ideas = proto_supreme_atmospheric_collapse_1 }
+		if = { limit = { check_variable = { global.proto_supreme_count = 2 } } add_ideas = proto_supreme_atmospheric_collapse_2 }
+		if = { limit = { check_variable = { global.proto_supreme_count = 3 } } add_ideas = proto_supreme_atmospheric_collapse_3 }
+		if = { limit = { check_variable = { global.proto_supreme_count > 3 } } add_ideas = proto_supreme_atmospheric_collapse_4 }
+	}
+}

@@ -1,0 +1,55 @@
+add_namespace = efh_directorate
+
+country_event = {
+	id = efh_directorate.2
+	title = efh_directorate.2.t
+	desc = {
+		text = efh_directorate.2.d.protected
+		trigger = { check_variable = { EFH_directorate_posture = 1 } }
+	}
+	desc = {
+		text = efh_directorate.2.d.review
+		trigger = { check_variable = { EFH_directorate_posture = 2 } }
+	}
+	desc = {
+		text = efh_directorate.2.d.entrenched
+		trigger = { check_variable = { EFH_directorate_posture = 3 } }
+	}
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	trigger = {
+		has_idea = EFH_ashley_woods
+		has_idea = EFH_reinhard_voss
+	}
+
+	immediate = {
+		hidden_effect = {
+			EFH_directorate_roll_posture_effect = yes
+			country_event = { id = efh_directorate.2 days = 730 }
+		}
+	}
+
+	option = {
+		name = efh_directorate.2.a
+	}
+}
+
+country_event = {
+	id = efh_directorate.1
+	title = efh_directorate.1.t
+	desc = efh_directorate.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			EFH_directorate_posture_1_effect = yes
+			country_event = { id = efh_directorate.2 days = 730 }
+		}
+	}
+
+	option = {
+		name = efh_directorate.1.a
+	}
+}

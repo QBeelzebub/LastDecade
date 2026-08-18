@@ -1,0 +1,28 @@
+units = {
+	fleet = {
+		name = "Mediterranean Fleet"
+		naval_base = 4076
+		task_force = {
+			name = "Northern Surface Squadron"
+			location = 4076
+			ship = { name = "AFS Gamal Abdel Nasser" definition = carrier start_experience_factor = 0.2 equipment = { srp_carrier_hull_1 = { amount = 1 owner = AFR version_name = "Nasser Class" } } }
+			ship = { name = "AFS Tahya Misr" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = AFR version_name = "Tahya Misr Class" } } }
+			ship = { name = "AFS Al Galala" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = AFR version_name = "Tahya Misr Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron"
+			location = 4076
+			ship = { name = "AFS Suez" definition = submarine start_experience_factor = 0.2 equipment = { srp_submarine_hull_1 = { amount = 1 owner = AFR version_name = "Suez Class" } } }
+		}
+	}
+	fleet = {
+		name = "Western Fleet"
+		naval_base = 9994
+		task_force = {
+			name = "Western Surface Squadron"
+			location = 9994
+			ship = { name = "AFS Carthage" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = AFR version_name = "Carthage Class" } } }
+			ship = { name = "AFS Numidia" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = AFR version_name = "Carthage Class" } } }
+		}
+	}
+}

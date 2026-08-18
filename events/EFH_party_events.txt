@@ -1,0 +1,246 @@
+add_namespace = efh_party
+
+country_event = {
+	id = efh_party.1
+	title = efh_party.1.t
+	desc = efh_party.1.d
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = EFH
+		has_country_flag = EFH_party_system_initialized
+		NOT = { has_country_flag = EFH_old_nations_released }
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = EFH_federal_election_in_progress
+			EFH_party_clamp_support_effect = yes
+			if = {
+				limit = {
+					check_variable = { var = EFH_party_astra value = EFH_party_volt compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_astra value = EFH_party_ave compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_astra value = EFH_party_continuity compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_astra value = EFH_party_social_green compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_astra value = EFH_party_sovereigntist compare = greater_than_or_equals }
+				}
+				EFH_party_apply_astra_win_effect = yes
+				news_event = { id = efh_party.2 days = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = EFH_party_volt value = EFH_party_ave compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_volt value = EFH_party_continuity compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_volt value = EFH_party_social_green compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_volt value = EFH_party_sovereigntist compare = greater_than_or_equals }
+				}
+				EFH_party_apply_volt_win_effect = yes
+				news_event = { id = efh_party.3 days = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = EFH_party_ave value = EFH_party_continuity compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_ave value = EFH_party_social_green compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_ave value = EFH_party_sovereigntist compare = greater_than_or_equals }
+				}
+				EFH_party_apply_ave_win_effect = yes
+				news_event = { id = efh_party.4 days = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = EFH_party_continuity value = EFH_party_social_green compare = greater_than_or_equals }
+					check_variable = { var = EFH_party_continuity value = EFH_party_sovereigntist compare = greater_than_or_equals }
+				}
+				EFH_party_apply_continuity_win_effect = yes
+				news_event = { id = efh_party.5 days = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = EFH_party_social_green value = EFH_party_sovereigntist compare = greater_than_or_equals }
+				}
+				EFH_party_apply_social_green_win_effect = yes
+				news_event = { id = efh_party.6 days = 1 }
+			}
+			if = {
+				limit = {
+					check_variable = { var = EFH_party_sovereigntist value = EFH_party_social_green compare = greater_than }
+				}
+				EFH_party_apply_sovereigntist_win_effect = yes
+				news_event = { id = efh_party.7 days = 1 }
+			}
+			set_country_flag = EFH_regular_federal_elections_active
+		}
+	}
+}
+
+news_event = {
+	id = efh_party.2
+	major = yes
+	title = efh_party.2.t
+	desc = efh_party.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.2.a }
+}
+
+news_event = {
+	id = efh_party.3
+	major = yes
+	title = efh_party.3.t
+	desc = efh_party.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.3.a }
+}
+
+news_event = {
+	id = efh_party.4
+	major = yes
+	title = efh_party.4.t
+	desc = efh_party.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.4.a }
+}
+
+news_event = {
+	id = efh_party.5
+	major = yes
+	title = efh_party.5.t
+	desc = efh_party.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.5.a }
+}
+
+news_event = {
+	id = efh_party.6
+	major = yes
+	title = efh_party.6.t
+	desc = efh_party.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.6.a }
+}
+
+news_event = {
+	id = efh_party.7
+	major = yes
+	title = efh_party.7.t
+	desc = efh_party.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.7.a }
+}
+
+country_event = {
+	id = efh_party.20
+	title = efh_party.20.t
+	desc = efh_party.20.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.20.a }
+}
+
+country_event = {
+	id = efh_party.21
+	title = efh_party.21.t
+	desc = efh_party.21.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.21.a }
+}
+
+country_event = {
+	id = efh_party.22
+	title = efh_party.22.t
+	desc = efh_party.22.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.22.a }
+}
+
+country_event = {
+	id = efh_party.23
+	title = efh_party.23.t
+	desc = efh_party.23.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh_party.23.a }
+}
+
+country_event = {
+	id = efh_party.30
+	title = efh_party.30.t
+	desc = efh_party.30.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_party.30.a
+		ai_chance = { base = 20 }
+		EFH_release_old_nations_effect = yes
+		set_country_flag = EFH_old_nations_released
+		add_stability = -0.10
+		add_political_power = -150
+	}
+
+	option = {
+		name = efh_party.30.b
+		ai_chance = { base = 80 }
+		EFH_release_old_nations_effect = yes
+		set_country_flag = EFH_old_nations_released
+		set_country_flag = EFH_old_nations_suppressed
+		country_event = { id = efh_party.31 days = 1 }
+		add_stability = -0.15
+		add_war_support = 0.10
+	}
+}
+
+country_event = {
+	id = efh_party.31
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = EFH
+		has_country_flag = EFH_old_nations_suppressed
+	}
+
+	immediate = {
+		hidden_effect = {
+			EFH_war_old_nations_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = efh_party.40
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = EFH
+		has_country_flag = EFH_party_system_initialized
+		NOT = { has_country_flag = EFH_old_nations_released }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_stability < 0.40 }
+			add_to_variable = { var = EFH_separatist_pressure value = 1 }
+		}
+		if = {
+			limit = { has_war = yes }
+			add_to_variable = { var = EFH_separatist_pressure value = 1 }
+		}
+		if = {
+			limit = { has_country_flag = EFH_party_sovereigntist_incumbent }
+			add_to_variable = { var = EFH_separatist_pressure value = 1 }
+		}
+		EFH_party_clamp_support_effect = yes
+		EFH_party_check_separatist_thresholds_effect = yes
+		country_event = { id = efh_party.40 days = 30 }
+	}
+}

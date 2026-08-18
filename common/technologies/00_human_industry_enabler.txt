@@ -1,0 +1,104 @@
+technologies = {
+
+	human_industry_access = {
+		allow = {
+			always = no
+		}
+		research_cost = 1
+
+		enable_equipments = {
+			infantry_equipment0
+			srp_warhead_component_1
+		}
+
+		enable_building = {
+			building = arms_factory
+			level = 20
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 20
+		}
+		enable_building = {
+			building = naval_facility
+			level = 1
+		}
+		enable_building = {
+			building = dockyard
+			level = 20
+		}
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+		enable_building = {
+			building = fuel_silo
+			level = 20
+		}
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+		enable_building = {
+			building = mega_gun_emplacement
+			level = 1
+		}
+		enable_building = {
+			building = rocket_site
+			level = 3
+		}
+		enable_building = {
+			building = naval_supply_hub
+			level = 1
+		}
+		enable_building = {
+			building = naval_headquarters
+			level = 1
+		}
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+		enable_building = {
+			building = nuclear_reactor_heavy_water
+			level = 1
+		}
+		enable_building = {
+			building = commercial_nuclear_reactor
+			level = 1
+		}
+		enable_building = {
+			building = nuclear_facility
+			level = 1
+		}
+		enable_building = {
+			building = air_facility
+			level = 1
+		}
+		enable_building = {
+			building = land_facility
+			level = 1
+		}
+		enable_building = {
+			building = energy_infrastructure
+			level = 1
+		}
+		enable_building = {
+			building = industrial_infrastructure
+			level = 1
+		}
+		enable_building = {
+			building = srp_fissile_extractor
+			level = 1
+		}
+		enable_building = {
+			building = srp_containment_node
+			level = 5
+		}
+		enable_building = {
+			building = stronghold_network
+			level = 1
+		}
+	}
+
+}

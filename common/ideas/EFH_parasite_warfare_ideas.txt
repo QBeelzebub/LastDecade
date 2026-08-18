@@ -1,0 +1,116 @@
+ideas = {
+	country = {
+		EFH_parasite_warfare_1 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.06
+				defense_bonus_against = 0.06
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.06
+				defense_bonus_against = 0.06
+			}
+		}
+
+		EFH_parasite_warfare_2 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.11
+				defense_bonus_against = 0.11
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.11
+				defense_bonus_against = 0.11
+			}
+		}
+
+		EFH_parasite_warfare_3 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.17
+				defense_bonus_against = 0.17
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.17
+				defense_bonus_against = 0.17
+			}
+		}
+
+		EFH_parasite_warfare_4 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.23
+				defense_bonus_against = 0.23
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.23
+				defense_bonus_against = 0.23
+			}
+		}
+
+		EFH_parasite_warfare_5 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.29
+				defense_bonus_against = 0.29
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.29
+				defense_bonus_against = 0.29
+			}
+		}
+
+		EFH_parasite_warfare_6 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.34
+				defense_bonus_against = 0.34
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.34
+				defense_bonus_against = 0.34
+			}
+		}
+
+		EFH_parasite_warfare_7 = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.40
+				defense_bonus_against = 0.40
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.40
+				defense_bonus_against = 0.40
+			}
+		}
+
+	}
+}

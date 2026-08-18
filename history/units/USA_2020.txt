@@ -1,0 +1,436 @@
+division_template = {
+	name = "US Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "US Armored Division"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "US Marine Expeditionary Force"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "US Garrison Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "US Marine Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 2000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 20000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = srp_truck_equipment_1
+		amount = 5000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = srp_ifv_equipment_1
+		amount = 3000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = srp_mbt_chassis1
+		amount = 1200
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_2
+		amount = 1500
+		producer = USA
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment0
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.50
+		efficiency = 70
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_truck_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_ifv_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_mbt_chassis1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_2
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_fighter_gen4_airframe
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 60
+	}
+	add_equipment_to_stockpile = {
+		type = srp_fighter_gen4_airframe
+		amount = 80
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = srp_strategic_bomber_1_airframe
+		amount = 20
+		producer = USA
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_strategic_bomber_1_airframe
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_destroyer_hull_1
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_submarine_hull_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_carrier_hull_1
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 40
+	}
+}
+
+units = {
+	division = {
+		name = "1st Infantry Division"
+		division_template = "US Infantry Division"
+		location = 598
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Infantry Division"
+		division_template = "US Infantry Division"
+		location = 598
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Infantry Division"
+		division_template = "US Infantry Division"
+		location = 3957
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 3957
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 1453
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st Armored Division"
+		division_template = "US Armored Division"
+		location = 598
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Armored Division"
+		division_template = "US Armored Division"
+		location = 3957
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Armored Division"
+		division_template = "US Armored Division"
+		location = 1453
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st Marine Expeditionary Force"
+		division_template = "US Marine Expeditionary Force"
+		location = 598
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st Marine Battalion"
+		division_template = "US Marine Battalion"
+		location = 3957
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 868
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 868
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 1972
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 1972
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 868
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Armored Division"
+		division_template = "US Armored Division"
+		location = 868
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Armored Division"
+		division_template = "US Armored Division"
+		location = 1972
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st National Guard"
+		division_template = "US Garrison Battalion"
+		location = 1965
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd National Guard"
+		division_template = "US Garrison Battalion"
+		location = 4904
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Marine Expeditionary Force"
+		division_template = "US Marine Expeditionary Force"
+		location = 4180
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Marine Expeditionary Force"
+		division_template = "US Marine Expeditionary Force"
+		location = 4180
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Marine Battalion"
+		division_template = "US Marine Battalion"
+		location = 4180
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd Marine Battalion"
+		division_template = "US Marine Battalion"
+		location = 4180
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 4180
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Infantry Division"
+		division_template = "US Infantry Division"
+		location = 4180
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Armored Division"
+		division_template = "US Armored Division"
+		location = 4180
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}
+
+air_wings = {
+	358 = {
+		srp_fighter_gen4_airframe = {
+			owner = USA
+			amount = 80
+		}
+		srp_strategic_bomber_1_airframe = {
+			owner = USA
+			amount = 20
+		}
+	}
+}

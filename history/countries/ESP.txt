@@ -1,0 +1,52 @@
+capital = 41
+set_research_slots = 3
+recruit_character = ESP_Restoration_Council
+
+create_corps_commander = {
+	name = "Carlos García"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Elena López"
+	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	traits = { urban_assault_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Miguel Fernández"
+	gfx = "GFX_Portrait_Europe_Generic_navy_1"
+	traits = { navy_career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2023.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 70
+	neutrality = 30
+}
+starting_train_buffer = 2
+set_technology = {
+    ld_civilian_train = 1
+    ld_military_train = 1
+}

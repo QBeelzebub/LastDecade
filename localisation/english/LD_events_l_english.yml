@@ -1,0 +1,268 @@
+﻿l_english:
+
+ ldwar.1.t: "Chinese Money in the Canal Zone"
+ ldwar.1.d: "Three port concessions on the Pacific side of the Canal have changed hands this quarter. The paperwork is European. The capital behind it is not, and the Federation's trade normalisation with Beijing is why it moves at all.\n\nNobody in Brussels arranged this. Everybody in Brussels understands what it is worth. Washington administers the locks and does not own the ledger any more, and the Zone's own population has noticed which flag the wages come under."
+ ldwar.1.a: "Press it. The Zone is a pressure point now."
+ ldwar.1.b: "Keep it commercial. The option keeps."
+
+ ldwar.2.t: "European Paper, Chinese Money"
+ ldwar.2.d: "Commerce and Treasury agree on the finding and disagree on the response. Federation-flagged concessions in the Canal Zone are being financed out of Beijing through European intermediaries, and the arrangement is legal in every jurisdiction it touches.\n\nThe locks are still American. The economy around them is being bought in a currency Washington does not set."
+ ldwar.2.a: "Tighten the Zone. This stops here."
+ ldwar.2.b: "Let it ride. A crackdown is what they want."
+
+ ldwar.10.t: "The Federation Is Busy"
+ ldwar.10.d: "Europe is at war across the Atlantic. Its western garrisons are thin, its air is committed north, and its attention has not been this far from our border in forty years.\n\nThe eastern front is still burning. The General Staff is aware. It is also aware that a chance like this does not come back, and that Russia has never once been forgiven for the last time it waited."
+ ldwar.10.a: "Move west. Now, while they cannot look at us."
+ ldwar.10.b: "Hold. We cannot carry two fronts and we know it."
+
+ ldwar.11.t: "Russia Moves West"
+ ldwar.11.d: "Russian formations have crossed into the Federation's eastern approaches while the bulk of the army is committed to the Atlantic theatre. The timing is not a coincidence and the intelligence directorate will spend a decade explaining why it was not anticipated.\n\nThe Federation is now fighting two wars in opposite directions, and a third one is growing in the soil of a continent nobody is defending."
+ ldwar.11.a: "Two fronts, then. Hold the east."
+
+ ldwar.20.t: "The Ground Will Not Wait"
+ ldwar.20.d: "The joint assessment arrived through the health directorate rather than the general staff, which is itself the point. While the Federation and the United States have been spending divisions on each other, the infestation has taken ground that neither of them contested.\n\nThe recommendation is unsigned and unambiguous. Stop. Not a settlement, not a treaty, not an apology. Stop shooting at the Americans long enough that somebody is still holding the continent when this is over.\n\nWashington's health directorate is reading a document with the same conclusions in it."
+ ldwar.20.a: "Open the channel. Nothing is conceded."
+ ldwar.20.b: "Finish it first. The ecology can wait."
+
+ ldwar.21.t: "The Federation Has Asked for Silence"
+ ldwar.21.d: "Brussels is proposing a cessation with no territorial component, no recognition of anything, and no signature above the level of a service chief. Every disputed line stays exactly where the fighting left it.\n\nState reads it as capitulation dressed as prudence. The Surgeon General's office reads it as the only sane paragraph produced by either government this year. Both of them are in the room."
+ ldwar.21.a: "Accept. We fight the ground, not each other."
+ ldwar.21.b: "Refuse. They opened this."
+
+ ldwar.22.t: "The Guns Stop"
+ ldwar.22.d: "The European Federation and the United States have ceased hostilities without a treaty, a settlement, or a stated reason. No territory changes hands. No delegation signs anything. The communiques on both sides use the word 'suspension' and neither uses the word 'peace'.\n\nEvery ministry on both sides of the Atlantic is now redirecting to the same problem, and every general staff on both sides of the Atlantic is now planning for the same enemy it was planning for a month ago."
+ ldwar.22.a: "A suspension. Nothing more."
+
+ ldwar.23.t: "Washington Refuses"
+ ldwar.23.d: "The American answer came back inside seventy-two hours and did not address the assessment at all. The war continues, and the ground the assessment described continues doing what it has been doing while both governments were busy."
+ ldwar.23.a: "Then we finish it."
+
+ ldwar.30.t: "The Second Front Is Offered"
+ ldwar.30.d: "Knox County has been a recognised counterparty for long enough that its offers now arrive as staff papers rather than as fragments. This one is a map.\n\nIt shows the Appalachian corridor, the American formations along it, their rotation schedule, and a date. What Knox proposes is a simultaneous opening: the Federation across the northern approaches, Knox out of the mountains, in the same week, against a country that has never had to fight in both places at once.\n\nThe suspension holds until somebody ends it. Knox is asking the Federation to be the one who does."
+ ldwar.30.a: "Both offensives open together."
+ ldwar.30.b: "Not yet. The corridor keeps."
+
+ ldwar.31.t: "They Are Burning the County"
+ ldwar.31.d: "The American clearance operation in Knox County has stopped being a clearance operation. It is an eradication campaign against a partner the Federation has an accord with, and the accord does not contain the word 'defence' anywhere in it, which both parties understood when they signed it.\n\nThe corridor will not hold indefinitely. Whatever the Federation intends to do about this, it has a season to decide in, and Knox is capable of counting the days as accurately as anyone in Brussels."
+ ldwar.31.a: "Intervene. Now, while there is a county left."
+ ldwar.31.b: "Hold. Let the staff work the window."
+
+ ldwar.32.t: "The County Burned Without Us"
+ ldwar.32.d: "The window closed. The Federation issued four statements of concern, tabled two motions, and did not move a formation.\n\nWhat is left of the Knox network is not talking to Brussels, and the parts of the Federation's own apparatus that argued for intervention are not going to forget which way the vote went. An accord that cannot be invoked is a document about the past."
+ ldwar.32.a: "It is on the record now."
+
+ ldwar.33.t: "The Suspension Ends"
+ ldwar.33.d: "The Federation has resumed hostilities, and it has not come alone. American formations committed to the Appalachian operation are now the wrong forces in the wrong place, and the northern approaches are active again for the first time since the guns stopped.\n\nThe country spent the suspension rearming. So did they."
+ ldwar.33.a: "Then we finish what we suspended."
+
+ ldwar.34.t: "The Atlantic War Resumes"
+ ldwar.34.d: "The suspension between the European Federation and the United States has ended. Neither government describes it as a new war, because neither government ever described the last one as finished.\n\nThe difference this time is that the fighting is happening on a continent where the ground itself is hostile to both armies, and that a third party in the Appalachians is coordinating its offensives with Brussels."
+ ldwar.34.a: "The decade continues."
+
+ LD_panama_track_opened_tt: "§YThe Canal Zone resistance track opens now. Bolster and suppress decisions become available to both powers under EF-US Standoff.§!"
+ LD_truce_offered_tt: "§YThe offer goes to Washington. If it is refused, the channel closes for 120 days.§!"
+ LD_knox_window_running_tt: "§RThe Knox window runs for 90 days. If it expires, the county falls without the Federation and the accord is dead.§!"
+
+ LD_canal_zone_agitation: "Canal Zone Agitation"
+ LD_canal_zone_agitation_desc: "European contracts, Chinese capital, and a population that has worked out whose wages it is living on. The Zone is no longer a chokepoint the Americans merely hold. It is a chokepoint they have to keep."
+
+ LD_opportunist_offensive: "The Western Opportunity"
+ LD_opportunist_offensive_desc: "The army moved west because the west was undefended, not because it was ready. Planning is fast and morale is high, and nobody at the top is willing to say aloud how thin the eastern line has become to pay for it."
+
+ LD_war_before_the_ground: "The War Comes First"
+ LD_war_before_the_ground_desc: "The assessment was read, filed, and overruled. The Atlantic war continues and the containment effort is told to hold with what it has. The industry likes the decision. The public is beginning not to."
+
+ LD_armed_truce: "The Armed Truce"
+ LD_armed_truce_desc: "No treaty, no settlement, no signature worth framing. The guns stopped because the ground demanded it, and both general staffs spent the pause doing exactly what the other one was doing. Plants run, formations train, and nobody on either side of the Atlantic believes this is over."
+
+ LD_joint_offensive: "Coordinated Offensive"
+ LD_joint_offensive_desc: "Two commands, one timetable. The offensives open in the same week against a country that has to answer both, and the planning cells have had the suspension to rehearse it."
+
+ LD_second_war_mobilisation: "The Suspension Ends"
+ LD_second_war_mobilisation_desc: "The country was told the war was over and then told it was not. What that costs in patience it returns in mobilisation, and the plants never actually stopped."
+
+ LD_let_knox_burn: "An Accord Not Invoked"
+ LD_let_knox_burn_desc: "The Federation signed an accord with Knox County and then watched it burn from the other side of an ocean. The legal position is defensible. Nothing else about it is, and every partner the Federation approaches for the rest of the decade has read the same reporting."
+
+ LD_knox_intervention_window: "The Knox Window"
+ LD_knox_intervention_window_desc: "The American eradication campaign in Knox County is running. The Federation has 90 days to intervene before the corridor is gone. If this expires, the accord dies with the county."
+
+ LD_intervene_for_knox: "Intervene in Knox County"
+ LD_intervene_for_knox_desc: "Break the suspension and enter the war on Knox County's side. The northern approaches open, Knox coordinates its offensive with the Federation's, and the Atlantic war resumes on the Federation's initiative."
+
+ ldpro.1.t: "Tariff Schedule Revision"
+ ldpro.1.d: "Washington has moved fourteen categories of Federation aerospace component from the standing schedule onto the discretionary one. The effect on trade is about two hundred million a year. Discretionary listings are reviewed by the executive rather than the joint commission, which has arbitrated that schedule since 1994.\n\nThe Commerce Directorate recommends a proportionate response, the Foreign Secretariat none. Both notes have been filed."
+ ldpro.1.a: "File both."
+
+ ldpro.2.t: "Standing Separation Reduced"
+ ldpro.2.d: "Two Federation frigates and an American destroyer group spent nine days in company south of the Grand Banks. Nothing occurred. The vessels observed the separation agreed under the 1998 incidents-at-sea protocol throughout.\n\nOn the tenth day the American naval staff notified ours that they consider two thousand metres excessive for peacetime shadowing and will be working to one thousand. Our staff has replied that the Federation will match whatever distance is kept."
+ ldpro.2.a: "Match the distance."
+
+ ldpro.3.t: "Verification Window Missed"
+ ldpro.3.d: "The winter inspection of the Thule and Keflavik installations did not take place. The American side gave thirty days notice of a scheduling conflict, which is within their rights, and proposed a replacement window in the spring.\n\nThe replacement window has been proposed at ninety days notice rather than thirty. Our inspectorate notes, without recommendation, that ninety days is sufficient time to move anything that a thirty day window was designed to find. They have accepted the spring date."
+ ldpro.3.a: "Accept the spring date."
+
+ ldpro.4.t: "Intercept Over the Denmark Strait"
+ ldpro.4.d: "A Federation maritime patrol aircraft on a scheduled track was intercepted and escorted for forty minutes. The escort was conducted correctly. Both crews filed routine reports and neither commander has requested action.\n\nThe patrol track has been flown monthly since 2003 and has not previously been intercepted. When our attache asked what had changed, he was told that nothing had changed and that the track had simply not been escorted before."
+ ldpro.4.a: "Note it and continue the track."
+
+ ldpro.5.t: "Orbital Notifications Discontinued"
+ ldpro.5.d: "Since 1991 both powers have given seventy-two hours notice of imaging passes over the other's territory. The notice was never verifiable and was never really believed. It was given anyway, every week, for twenty-eight years.\n\nThe American State Department has informed the Secretariat that the practice is being discontinued as redundant. It was the last thing on the calendar that required the two governments to speak."
+ ldpro.5.a: "Strike it from the calendar."
+
+ ldpro.10.t: "The Preparatory Programme Is Concluded"
+ ldpro.10.d: "The continental works programme that has run since 2018 is closed. Its appropriations lapse at the end of the accounting period and will not be renewed, because the Federation now has an emergency to fund and emergencies are funded from somewhere.\n\nWhat was drafted, costed, argued over and left unfunded goes back into the archive, and the Secretariat has no intention of reopening it.\n\nEverything the Federation carries into what follows, it is carrying now."
+ ldpro.10.a: "Close the file."
+
+ ldpro.20.t: "Contamination Event, Upper Rhone"
+ ldpro.20.d: "A chlorinated solvent plume was detected in the upper Rhone at eleven times the permitted concentration. The continental surveillance network flagged it on the second day, before any clinical case.\n\nThe source was a decommissioned degreasing plant with a failed containment sump. Abstraction was suspended for nine days across four member states and the operator referred for prosecution.\n\nThe Health Directorate has asked that this be recorded, since a surveillance system working is not usually recorded."
+ ldpro.20.a: "Record it."
+
+ ldpro.21.t: "Contamination Event, Upper Rhone"
+ ldpro.21.d: "A chlorinated solvent plume reached the upper Rhone from a decommissioned degreasing plant with a failed sump. A municipal water authority identified it on the forty-third day, after two cantons had attributed clinical presentations to seasonal illness.\n\nThe Federation has no continental sampling programme. Each member state tests to its own schedule and reports to its own ministry, and the four concerned did not compare figures until the press did.\n\nEleven people are dead."
+ ldpro.21.a: "There is nothing to appeal."
+
+ EFH_mishandled_contamination: "The Rhone Inquiry"
+ EFH_mishandled_contamination_desc: "The inquiry found no individual at fault and recommended a continental sampling programme, which is the programme the Federation had declined to fund. Public health advisories issued from Brussels are now read as political documents."
+
+ EFH_prologue_closed_tt: "The preparatory programme is closed. This was 2018 work and it is no longer 2018."
+
+ LD_operation_laytheo: "Operation Laytheo"
+
+ LD_laytheo_status: "Operation Laytheo"
+ LD_laytheo_status_desc: "The spaceplane exists. Everything else is a question of how much is left to put in it."
+
+ LD_laytheo_authorization_window: "The Authorisation Window"
+ LD_laytheo_authorization_window_desc: "The Broadcast has been delivered. The Federation still has the industrial base to build and fuel a Laytheo airframe, and the assessment is that it will not have one for much longer. The programme has to be authorised while there is a programme to authorise."
+ LD_laytheo_window_running_tt: "§RThe window runs for 120 days. If it expires the operation can still be authorised, but it launches with no margin.§!"
+
+ LD_laytheo_authorize: "Authorise Operation Laytheo"
+ LD_laytheo_authorize_desc: "One airframe, one launch, one landing. Nobody in the room argues that it is a good plan. The argument is over whether there is a second one."
+
+ LD_laytheo_assemble_airframe: "Complete the Airframe"
+ LD_laytheo_assemble_airframe_desc: "The last continuous production run the Federation will ever complete. The line is stripped for it and does not restart."
+
+ LD_laytheo_assemble_propellant: "Fill the Propellant Chain"
+ LD_laytheo_assemble_propellant_desc: "Amsterdam's remaining civil output is diverted for the season. There is no polite way to explain this to the twelve thousand people living there."
+
+ LD_laytheo_assemble_element: "Board the Element"
+ LD_laytheo_assemble_element_desc: "Five thousand are pulled out of the line to train the fourteen who will actually go. The other four thousand nine hundred and eighty six do not come back to the units they left."
+
+ LD_laytheo_launch_window: "The Launch Window"
+ LD_laytheo_launch_window_desc: "The Iris is where it is going to be for sixty days. Orbital mechanics are the one thing this decade that has kept to a schedule."
+ LD_laytheo_launch_window_tt: "§RIf the window closes, the next one costs a stage of climb margin.§!"
+
+ LD_laytheo_launch: "Launch"
+ LD_laytheo_launch_desc: "Runway to orbit. The programme was commissioned in 2021 as a surveillance platform."
+
+ LD_laytheo_climb_window: "The Climb"
+ LD_laytheo_climb_window_desc: "Surface contact established. The lower Beckons burn and are replaced and burn again, which is the first time in ten years that a thing on the ground has behaved exactly as predicted. Eleven days of it to the bulb."
+ LD_laytheo_climb_window_tt: "§RThe climb runs eleven days. It does not get a second attempt.§!"
+
+ LD_laytheo_climb_advance: "Advance the Climb"
+ LD_laytheo_climb_advance_desc: "Another stage of it. The organism replaces what was removed, and the only counter is to be faster than the replacement."
+
+ LD_laytheo_strike_the_bulb: "The Bulb"
+ LD_laytheo_strike_the_bulb_desc: "There is no doctrine for this. There is an object, and there are people standing on it who have carried something up twenty two thousand kilometres of living world, and there is the rest of it."
+
+ LD_laytheo_debug_open: "[DEBUG] Open Operation Laytheo"
+ LD_laytheo_debug_open_desc: "Placeholder entry point. The 2026 to 2029 spine that would set this flag does not exist yet."
+
+ laytheo.1.t: "The Window Closes"
+ laytheo.1.d: "The authorisation did not come in time. The airframe is still buildable, on paper, out of what is left. The assessment that said the Federation had a year was written by people who were being optimistic on purpose, and they were, and they knew it. Laytheo can still fly. It will fly thin."
+ laytheo.1.a: "Then it flies thin."
+
+ laytheo.2.t: "Iris Orbit"
+ laytheo.2.d: "Day 4,100. The Laytheo achieves orbit around a body twenty two thousand three hundred and twenty three kilometres across, and the crew report, at length and in the flat voice of people who rehearsed this, that it is not a planet and does not look like one. The moon is visible from the flight deck. It is not where it should be. It has not been for two years."
+ laytheo.2.a: "Begin the descent."
+
+ laytheo.3.t: "Coordination Ends"
+ laytheo.3.d: "Day 4,112. Four hours after the bulb, every listening post still crewed reports the same thing at the same time: the signal network is gone.\n\nThe parasites are still there. There are more of them than there are people, and there will be for a long time, and now none of them are being told anything. The organisms in the field will drift, and degrade, and take decades to stop being dangerous.\n\nIt is the first morning in ten years that nothing on Earth is being coordinated against it."
+ laytheo.3.a: "The decade ends. Things continue."
+
+ laytheo.4.t: "The Climb Stalls"
+ laytheo.4.d: "The element does not reach the bulb. What is transmitted back is not a distress call, because there is no one in a position to do anything about it, and everyone involved understood that before launch."
+ laytheo.4.a: "Log it."
+
+ LD_AGENCY_USA: "Office of Special Threat Intelligence"
+ LD_AGENCY_EFH: "Federal Intelligence Directorate"
+ LD_AGENCY_KNX: "The Reading Group"
+ LD_AGENCY_IRS: "The Choir"
+
+ operative_sleeper_agent: "Assimilated Sleeper"
+ operative_sleeper_agent_desc: "An assimilated human who still passes for one. Excellent at infiltration and very hard to detect. Nothing in the host's behaviour changes until the hive needs something from it."
+ operative_parasite_hunter: "Parasite Hunter"
+ operative_parasite_hunter_desc: "Trained to find what hides inside people. Resists detection, reads infiltration leads quickly, and excels at pulling intelligence out of compromised channels."
+
+ LD_dispatcher_sigint_1: "Dispatcher Network: Listening (1/3)"
+ LD_dispatcher_sigint_1_desc: "A handful of Dispatchers feed the hive. Their flowers receive human traffic and their roots relay it onward."
+ LD_dispatcher_sigint_2: "Dispatcher Network: Saturated (2/3)"
+ LD_dispatcher_sigint_2_desc: "A dense lattice of Dispatchers blankets the territory. Little of what humans transmit goes unheard."
+ LD_dispatcher_sigint_3: "Dispatcher Network: Total Coverage (3/3)"
+ LD_dispatcher_sigint_3_desc: "The Dispatcher mesh is so thick that the hive effectively reads the continent."
+
+ LD_field_foresight: "Field Foresight"
+ LD_field_foresight_desc: "Decoded Beckon-to-Iris chatter lets our commanders anticipate parasite movements before they happen."
+ LD_counterintel_sweep: "Counter-Intelligence Sweep"
+ LD_counterintel_sweep_desc: "An active hunt for embedded sleepers. Enemy operatives are far more likely to be detected and captured while the sweep runs."
+
+ operation_LD_seed_sleeper: "Seed Sleeper"
+ operation_LD_seed_sleeper_desc: "Embed an assimilated human inside a target nation. The sleeper feeds the hive a steady stream of civilian and military intelligence. Sleeper operatives themselves come from the agency roster, where parasite recruits carry the Assimilated Sleeper trait."
+ operation_LD_seed_sleeper_tt: "Gain civilian and military intelligence on the target."
+ operation_LD_dispatcher_tap: "Dispatcher Tap"
+ operation_LD_dispatcher_tap_desc: "Splice into a Dispatcher's relay in the target state. Decoding the parasite chatter exposes their movements, and the disruption silences that Dispatcher's contribution to the hive network for a month."
+ operation_LD_dispatcher_tap_tt: "Gain military intelligence on the target, apply Field Foresight for 30 days, and suppress the tapped Dispatcher's SIGINT for 35 days."
+ operation_LD_hunt_sleeper_cells: "Hunt Sleeper Cells"
+ operation_LD_hunt_sleeper_cells_desc: "Turn the agency inward and root out assimilated sleepers operating on home soil. The sweep makes enemy operatives far easier to catch for the next several weeks."
+ operation_LD_hunt_sleeper_cells_tt: "Apply a Counter-Intelligence Sweep at home and gain intelligence on the target."
+
+ LD_hunt_canvass_informants: "Canvass Informants"
+ LD_hunt_canvass_informants_desc: "Quiet conversations with the people who notice when a neighbour stops being themselves."
+ LD_hunt_signal_triangulation: "Signal Triangulation"
+ LD_hunt_signal_triangulation_desc: "Cross-reference local transmissions to pin down where the cell is talking from."
+ LD_hunt_raid_safehouse: "Raid the Safehouse"
+ LD_hunt_raid_safehouse_desc: "Hit the location hard and fast before the cell can scatter."
+ LD_hunt_interrogation: "Interrogation"
+ LD_hunt_interrogation_desc: "Work the survivors for everything they know about the rest of the network."
+
+ LD_seed_overland_crossing: "Overland Crossing"
+ LD_seed_overland_crossing_desc: "Walk the host across a quiet stretch of border, indistinguishable from any other refugee."
+ LD_seed_coastal_insertion: "Coastal Insertion"
+ LD_seed_coastal_insertion_desc: "Put the host ashore at night, far from any checkpoint."
+ LD_seed_dormant_carrier: "Dormant Carrier"
+ LD_seed_dormant_carrier_desc: "Move the host in under cover of an existing infestation, where no one is looking for one more body."
+ LD_seed_assume_identity: "Assume an Identity"
+ LD_seed_assume_identity_desc: "The host takes up a name, a history, and a place among people who will vouch for it."
+ LD_seed_secure_position: "Secure a Position"
+ LD_seed_secure_position_desc: "Settle the host into work that puts it near the things the hive wants to hear."
+ LD_seed_go_dormant: "Go Dormant"
+ LD_seed_go_dormant_desc: "The sleeper does nothing, says nothing, and waits."
+ LD_seed_establish_contact: "Establish Contact"
+ LD_seed_establish_contact_desc: "A single thread back to the hive, quiet enough that severing it would be an accident."
+
+ LD_tap_overland_approach: "Overland Approach"
+ LD_tap_overland_approach_desc: "Move the team in on foot through contaminated ground to reach the relay."
+ LD_tap_air_insertion: "Air Insertion"
+ LD_tap_air_insertion_desc: "Drop the team close to the Dispatcher, trading exposure for speed. Requires transport aircraft."
+ LD_tap_splice_roots: "Splice the Root Network"
+ LD_tap_splice_roots_desc: "Cut into the underground tendrils that carry Beckon-to-Beckon traffic and patch in a listener."
+ LD_tap_intercept_flower: "Intercept the Flower"
+ LD_tap_intercept_flower_desc: "Aim receivers at the chrysanthemum relay and capture what it bounces skyward."
+ LD_tap_decode_traffic: "Decode the Traffic"
+ LD_tap_decode_traffic_desc: "Make sense of the parasite chatter: deployments, movements, intentions."
+ LD_tap_quiet_withdrawal: "Quiet Withdrawal"
+ LD_tap_quiet_withdrawal_desc: "Pull the team out before the hive notices a node has gone strange."
+ LD_tap_scrub_traces: "Scrub the Traces"
+ LD_tap_scrub_traces_desc: "Leave nothing behind that would tell the hive it was ever listened to."
+
+ branch_LD_parasite: "Hive Apparatus"
+ branch_LD_counterparasite: "Counter-Parasite Division"
+
+ upgrade_LD_sleeper_network: "Sleeper Network"
+ upgrade_LD_sleeper_network_desc: "Expand the roster of assimilated humans the hive can run abroad, adding operative capacity."
+ upgrade_LD_hive_signals: "Hive Signals"
+ upgrade_LD_hive_signals_desc: "Tune the Dispatcher relays for the agency's own use, boosting decryption and network growth."
+ upgrade_LD_parasite_hunters: "Parasite Hunters"
+ upgrade_LD_parasite_hunters_desc: "Stand up dedicated counter-infiltration teams, hardening the agency and denying the hive new recruits."
+ upgrade_LD_field_decryption: "Field Decryption"
+ upgrade_LD_field_decryption_desc: "Mobile cryptology units that pull more out of intercepted parasite traffic."

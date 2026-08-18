@@ -1,0 +1,354 @@
+focus_tree = {
+	id = KNX_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = KNX
+		}
+	}
+
+	continuous_focus_position = { x = 10 y = 1200 }
+
+	focus = {
+		id = KNX_silent_emergence
+		icon = GFX_focus_SRPLogo
+		x = 0
+		y = 0
+		cost = 0.75
+		available = {
+			has_country_flag = KNX_emerged
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = KNX_dispatcher_inheritance
+		icon = GFX_focus_SRPLogo
+		relative_position_id = KNX_silent_emergence
+		x = -2
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = KNX_silent_emergence }
+		completion_reward = {
+			add_ideas = KNX_dispatcher_inheritance_ns
+			set_country_flag = KNX_dispatcher_inheritance_active
+			create_intelligence_agency = {
+				name = "The Reading Group"
+				icon = GFX_intelligence_agency_logo_generic_3
+			}
+		}
+	}
+
+	focus = {
+		id = KNX_transactional_logic_baseline
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = KNX_silent_emergence
+		x = 3
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = KNX_silent_emergence }
+		completion_reward = {
+			add_ideas = KNX_transactional_logic
+			set_country_flag = KNX_transactional_logic_active
+		}
+	}
+
+	focus = {
+		id = KNX_read_the_perimeter
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = KNX_dispatcher_inheritance
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = KNX_dispatcher_inheritance }
+		completion_reward = {
+			add_ideas = KNX_perimeter_reading
+			set_country_flag = KNX_passive_listening_unlocked
+			custom_effect_tooltip = KNX_passive_listening_unlocked_tt
+		}
+	}
+
+	focus = {
+		id = KNX_hive_construction_phase_1
+		icon = GFX_focus_SRPLogo
+		relative_position_id = KNX_silent_emergence
+		x = 0
+		y = 2
+		cost = 7.5
+		prerequisite = { focus = KNX_silent_emergence }
+		completion_reward = {
+			add_ideas = KNX_hive_construction_phase_1_ns
+			369 = {
+				add_building_construction = {
+					type = beckon_cluster
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dispatcher
+					level = 1
+					instant_build = yes
+				}
+				add_to_variable = { var = iris_infestation_level value = 100 }
+				clamp_variable = {
+					var = iris_infestation_level
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KNX_us_invisibility_continued
+		icon = GFX_goal_generic_secret_weapon
+		relative_position_id = KNX_read_the_perimeter
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_read_the_perimeter }
+		completion_reward = {
+			add_ideas = KNX_us_invisibility
+			set_country_flag = KNX_us_invisibility_extended
+		}
+	}
+
+	focus = {
+		id = KNX_unacknowledged_efh_channel
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = KNX_transactional_logic_baseline
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_transactional_logic_baseline }
+		completion_reward = {
+			set_country_flag = KNX_efh_channel_open
+			custom_effect_tooltip = KNX_efh_channel_open_tt
+		}
+	}
+
+	focus = {
+		id = KNX_resource_exchange_terms
+		icon = GFX_goal_generic_trade
+		relative_position_id = KNX_unacknowledged_efh_channel
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_unacknowledged_efh_channel }
+		completion_reward = {
+			set_country_flag = KNX_resource_exchange_terms_set
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = KNX_price_of_silence
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = KNX_resource_exchange_terms
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = KNX_resource_exchange_terms }
+		completion_reward = {
+			set_country_flag = KNX_price_of_silence_set
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = KNX_selective_disclosure
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = KNX_price_of_silence
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = KNX_price_of_silence }
+		completion_reward = {
+			set_country_flag = KNX_selective_disclosure_active
+			add_political_power = 25
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = KNX_loyal_strain_cultivation
+		icon = GFX_focus_KNX_loyal_strain
+		relative_position_id = KNX_dispatcher_inheritance
+		x = -2
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = KNX_dispatcher_inheritance }
+		completion_reward = {
+			add_ideas = KNX_loyal_strain_ns
+			custom_effect_tooltip = KNX_loyal_strain_cultivation_tt
+		}
+	}
+
+	focus = {
+		id = KNX_personal_guard
+		icon = GFX_focus_KNX_personal_guard
+		relative_position_id = KNX_loyal_strain_cultivation
+		x = 0
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = KNX_loyal_strain_cultivation }
+		completion_reward = {
+			add_ideas = KNX_personal_guard_ns
+		}
+	}
+
+	focus = {
+		id = KNX_brood_expansion
+		icon = GFX_focus_SRPLogo
+		relative_position_id = KNX_personal_guard
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_personal_guard }
+		completion_reward = {
+			add_ideas = KNX_brood_expansion_ns
+			add_manpower = 20000
+		}
+	}
+
+	focus = {
+		id = KNX_hive_construction_phase_2
+		icon = GFX_focus_SRPLogo
+		relative_position_id = KNX_hive_construction_phase_1
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_hive_construction_phase_1 }
+		completion_reward = {
+			add_ideas = KNX_hive_phase_2_ns
+			369 = {
+				add_building_construction = {
+					type = beckon_cluster
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = biomass_pool
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KNX_food_sovereignty
+		icon = GFX_focus_KNX_food_sovereignty
+		relative_position_id = KNX_hive_construction_phase_2
+		x = -1
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = KNX_hive_construction_phase_2 }
+		completion_reward = {
+			add_ideas = KNX_food_sovereignty_ns
+		}
+	}
+
+	focus = {
+		id = KNX_appalachian_claim
+		icon = GFX_focus_KNX_appalachian_claim
+		relative_position_id = KNX_hive_construction_phase_2
+		x = 1
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_hive_construction_phase_2 }
+		completion_reward = {
+			add_ideas = KNX_appalachian_claim_ns
+			set_country_flag = KNX_appalachian_expansion_unlocked
+			custom_effect_tooltip = KNX_appalachian_claim_tt
+		}
+	}
+
+	focus = {
+		id = KNX_vagrant_goes_to_canada
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = KNX_selective_disclosure
+		x = 0
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = KNX_selective_disclosure }
+		available = {
+			EFH = {
+				has_completed_focus = EFH_HNA_independence
+				custom_trigger_tooltip = {
+					tooltip = KNX_vagrant_goes_to_canada_efh_canada_tt
+					OR = {
+						controls_state = 276
+						controls_state = 331
+						controls_state = 332
+						controls_state = 464
+						controls_state = 465
+						controls_state = 466
+						controls_state = 467
+						controls_state = 468
+						controls_state = 469
+						controls_state = 470
+						controls_state = 471
+						controls_state = 472
+						controls_state = 473
+						controls_state = 682
+						controls_state = 683
+						controls_state = 860
+						controls_state = 861
+						controls_state = 862
+						controls_state = 863
+						controls_state = 864
+						controls_state = 865
+						controls_state = 866
+						controls_state = 867
+					}
+				}
+			}
+		}
+		completion_reward = {
+			set_country_flag = KNX_vagrant_deployed_to_canada
+			country_event = { id = knx.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = KNX_first_accord
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = KNX_vagrant_goes_to_canada
+		x = 0
+		y = 1
+		cost = 5.25
+		prerequisite = { focus = KNX_vagrant_goes_to_canada }
+		available = {
+			has_country_flag = KNX_vagrant_contact_accepted_by_efh
+		}
+		completion_reward = {
+			add_ideas = KNX_first_accord_ns
+			set_country_flag = KNX_first_accord_signed
+		}
+	}
+
+	focus = {
+		id = KNX_ef_formal_recognition
+		icon = GFX_focus_KNX_ef_recognition
+		relative_position_id = KNX_first_accord
+		x = 0
+		y = 1
+		cost = 7.5
+		prerequisite = { focus = KNX_first_accord }
+		completion_reward = {
+			add_ideas = KNX_ef_formal_recognition_ns
+			set_country_flag = KNX_efh_strategic_partner
+			set_country_flag = KNX_human_diplomacy_unlocked
+			set_rule = { can_join_factions = yes }
+			custom_effect_tooltip = KNX_human_diplomacy_unlocked_tt
+			EFH = {
+				add_ideas = EFH_knx_partner_ns
+			}
+		}
+	}
+}

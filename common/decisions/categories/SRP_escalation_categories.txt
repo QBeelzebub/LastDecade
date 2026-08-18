@@ -1,0 +1,23 @@
+SRP_escalation_category = {
+	icon = generic_political_actions
+	priority = 79
+	visible_when_empty = no
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = USA
+		}
+	}
+}
+
+SRP_political_interference_category = {
+	icon = generic_political_actions
+	priority = 78
+	visible_when_empty = no
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = USA
+		}
+	}
+}

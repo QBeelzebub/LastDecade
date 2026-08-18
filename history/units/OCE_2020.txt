@@ -1,0 +1,226 @@
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garrison Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Marine Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 200
+		producer = OCE
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 5000
+		producer = OCE
+	}
+	add_equipment_to_stockpile = {
+		type = srp_truck_equipment_1
+		amount = 800
+		producer = OCE
+	}
+	add_equipment_to_stockpile = {
+		type = srp_mbt_chassis1
+		amount = 500
+		producer = OCE
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 600
+		producer = OCE
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 400
+		producer = OCE
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment0
+			creator = "OCE"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_truck_equipment_1
+			creator = "OCE"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 40
+	}
+	add_equipment_to_stockpile = {
+		type = srp_fighter_gen4_airframe
+		amount = 30
+		producer = OCE
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_fighter_gen4_airframe
+			creator = "OCE"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_destroyer_hull_1
+			creator = "OCE"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_submarine_hull_1
+			creator = "OCE"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 40
+	}
+}
+
+units = {
+	division = {
+		name = "1st Infantry Division"
+		division_template = "Infantry Division"
+		location = 1537
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Infantry Division"
+		division_template = "Infantry Division"
+		location = 1759
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3rd Infantry Division"
+		division_template = "Infantry Division"
+		location = 1773
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1st Armored Division"
+		division_template = "Armored Division"
+		location = 1537
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1st Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 1537
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2nd Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 1759
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3rd Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 1565
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "1st Garrison"
+		division_template = "Garrison Battalion"
+		location = 1565
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Garrison"
+		division_template = "Garrison Battalion"
+		location = 1773
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+
+air_wings = {
+	285 = {
+		srp_fighter_gen4_airframe = {
+			owner = OCE
+			amount = 30
+		}
+	}
+}

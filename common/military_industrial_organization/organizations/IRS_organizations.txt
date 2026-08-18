@@ -1,0 +1,1446 @@
+IRS_iris_beckon_mio = {
+	icon = GFX_idea_generic_research_organization
+
+	allowed = { original_tag = IRS }
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = IRS_iris_beckon_initial
+		equipment_bonus = {
+			soft_attack = 0.02
+			defense = 0.02
+		}
+	}
+
+	trait = {
+		token = IRS_iris_genome_core
+		name = IRS_iris_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 3 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_iris_biomass_synthesis
+		name = IRS_iris_biomass_synthesis
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -2 y = 1 }
+		relative_position_id = IRS_iris_genome_core
+		all_parents = { IRS_iris_genome_core }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.08
+			production_resource_need_factor = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_iris_combat_strain
+		name = IRS_iris_combat_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 1 }
+		relative_position_id = IRS_iris_genome_core
+		all_parents = { IRS_iris_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			max_strength = 0.05
+			breakthrough = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_iris_nexus_refinement
+		name = IRS_iris_nexus_refinement
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_iris_biomass_synthesis
+		all_parents = { IRS_iris_biomass_synthesis }
+
+		special_trait_background = yes
+
+		production_bonus = {
+			production_resource_need_factor = -0.10
+		}
+		equipment_bonus = {
+			max_strength = 0.08
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_iris_dense_brood
+		name = IRS_iris_dense_brood
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 1 }
+		relative_position_id = IRS_iris_biomass_synthesis
+		any_parent = { IRS_iris_biomass_synthesis IRS_iris_combat_strain }
+
+		equipment_bonus = {
+			max_strength = 0.05
+			reliability = 0.03
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_iris_apex_strain
+		name = IRS_iris_apex_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_iris_combat_strain
+		all_parents = { IRS_iris_combat_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.08
+			ap_attack = 0.05
+			soft_attack = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_iris_sovereign_genome
+		name = IRS_iris_sovereign_genome
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_iris_dense_brood
+		any_parent = { IRS_iris_nexus_refinement IRS_iris_apex_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.06
+			defense = 0.08
+			max_strength = 0.10
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_vitreous_beckon_mio = {
+	icon = GFX_idea_generic_research_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_completed_focus = IRS_vitreous_contact
+		}
+	}
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = IRS_vitreous_beckon_initial
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = IRS_vitreous_genome_core
+		name = IRS_vitreous_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			defense = 0.06
+			max_strength = 0.05
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_vitreous_root_network
+		name = IRS_vitreous_root_network
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_vitreous_genome_core
+		all_parents = { IRS_vitreous_genome_core }
+
+		production_bonus = {
+			production_cost_factor = -0.06
+			production_efficiency_gain_factor = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_vitreous_subsurface_strain
+		name = IRS_vitreous_subsurface_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_vitreous_genome_core
+		all_parents = { IRS_vitreous_genome_core }
+
+		equipment_bonus = {
+			defense = 0.06
+			breakthrough = 0.05
+			hard_attack = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_vitreous_beckon_growth
+		name = IRS_vitreous_beckon_growth
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_vitreous_root_network
+		all_parents = { IRS_vitreous_root_network }
+
+		special_trait_background = yes
+
+		production_bonus = {
+			production_resource_need_factor = -0.08
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_vitreous_acid_genome
+		name = IRS_vitreous_acid_genome
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_vitreous_subsurface_strain
+		all_parents = { IRS_vitreous_subsurface_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.10
+			ap_attack = 0.06
+			defense = 0.05
+		}
+
+		on_complete = {
+			IRS = { set_technology = { IRS_vitreous_unlock_host = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_vitreous_deep_emergence
+		name = IRS_vitreous_deep_emergence
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_vitreous_beckon_growth
+		any_parent = { IRS_vitreous_beckon_growth IRS_vitreous_acid_genome }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.08
+			defense = 0.08
+			max_strength = 0.10
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			IRS = { set_technology = { IRS_vitreous_unlock_herd = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_tromos_beckon_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_completed_focus = IRS_tromos_contact
+		}
+	}
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = IRS_tromos_beckon_initial
+		equipment_bonus = {
+			soft_attack = 0.02
+			breakthrough = 0.02
+		}
+	}
+
+	trait = {
+		token = IRS_tromos_genome_core
+		name = IRS_tromos_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_tromos_siege_adaptation
+		name = IRS_tromos_siege_adaptation
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_tromos_genome_core
+		all_parents = { IRS_tromos_genome_core }
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			breakthrough = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_tromos_assault_strain
+		name = IRS_tromos_assault_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_tromos_genome_core
+		all_parents = { IRS_tromos_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			maximum_speed = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_tromos_fortification_breach
+		name = IRS_tromos_fortification_breach
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_tromos_siege_adaptation
+		all_parents = { IRS_tromos_siege_adaptation }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.10
+			ap_attack = 0.06
+			breakthrough = 0.06
+		}
+
+		on_complete = {
+			IRS = { set_technology = { IRS_tromos_unlock_hollower = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_tromos_rapid_clearance
+		name = IRS_tromos_rapid_clearance
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_tromos_assault_strain
+		all_parents = { IRS_tromos_assault_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			breakthrough = 0.08
+			maximum_speed = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_tromos_civilization_strain
+		name = IRS_tromos_civilization_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_tromos_fortification_breach
+		any_parent = { IRS_tromos_fortification_breach IRS_tromos_rapid_clearance }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.08
+			soft_attack = 0.06
+			breakthrough = 0.08
+			max_strength = 0.08
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+
+		on_complete = {
+			IRS = { set_technology = { IRS_tromos_unlock_scourer = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_boreic_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_country_flag = IRS_boreic_discovered
+		}
+	}
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = IRS_boreic_initial
+		equipment_bonus = {
+			defense = 0.03
+			max_strength = 0.03
+		}
+	}
+
+	trait = {
+		token = IRS_boreic_genome_core
+		name = IRS_boreic_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			defense = 0.05
+			max_strength = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_boreic_cold_adaptation
+		name = IRS_boreic_cold_adaptation
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_boreic_genome_core
+		all_parents = { IRS_boreic_genome_core }
+
+		equipment_bonus = {
+			defense = 0.06
+			max_strength = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_boreic_predator_instinct
+		name = IRS_boreic_predator_instinct
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_boreic_genome_core
+		all_parents = { IRS_boreic_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			breakthrough = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_boreic_endurance_strain
+		name = IRS_boreic_endurance_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_boreic_cold_adaptation
+		all_parents = { IRS_boreic_cold_adaptation }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.08
+			max_strength = 0.08
+			reliability = 0.03
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_boreic_apex_predator
+		name = IRS_boreic_apex_predator
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_boreic_predator_instinct
+		all_parents = { IRS_boreic_predator_instinct }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.05
+			breakthrough = 0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_boreic_glacier_genome
+		name = IRS_boreic_glacier_genome
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_boreic_endurance_strain
+		any_parent = { IRS_boreic_endurance_strain IRS_boreic_apex_predator }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.10
+			max_strength = 0.10
+			soft_attack = 0.06
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.08
+		}
+
+		on_complete = {
+			IRS = { set_technology = { hibernal_genesis = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_alclidic_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_country_flag = IRS_alclidic_discovered
+		}
+	}
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = IRS_alclidic_initial
+		equipment_bonus = {
+			soft_attack = 0.03
+			breakthrough = 0.02
+		}
+	}
+
+	trait = {
+		token = IRS_alclidic_genome_core
+		name = IRS_alclidic_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.04
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_alclidic_aggression
+		name = IRS_alclidic_aggression
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_alclidic_genome_core
+		all_parents = { IRS_alclidic_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			breakthrough = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_alclidic_resilience
+		name = IRS_alclidic_resilience
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_alclidic_genome_core
+		all_parents = { IRS_alclidic_genome_core }
+
+		equipment_bonus = {
+			defense = 0.05
+			max_strength = 0.06
+			reliability = 0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_alclidic_voracious_strain
+		name = IRS_alclidic_voracious_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_alclidic_aggression
+		all_parents = { IRS_alclidic_aggression }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			breakthrough = 0.08
+			hard_attack = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_alclidic_durability_strain
+		name = IRS_alclidic_durability_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_alclidic_resilience
+		all_parents = { IRS_alclidic_resilience }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.08
+			max_strength = 0.10
+			reliability = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_alclidic_furnace_genome
+		name = IRS_alclidic_furnace_genome
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_alclidic_voracious_strain
+		any_parent = { IRS_alclidic_voracious_strain IRS_alclidic_durability_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.10
+			hard_attack = 0.06
+			defense = 0.06
+			breakthrough = 0.06
+		}
+		production_bonus = {
+			production_cost_factor = -0.06
+		}
+
+		on_complete = {
+			IRS = { set_technology = { ancient_overlord_genesis = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_sinic_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_country_flag = IRS_sinic_discovered
+		}
+	}
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { infantry_weapons }
+
+	initial_trait = {
+		name = IRS_sinic_initial
+		equipment_bonus = {
+			soft_attack = 0.02
+			defense = 0.02
+		}
+	}
+
+	trait = {
+		token = IRS_sinic_genome_core
+		name = IRS_sinic_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			soft_attack = 0.04
+			defense = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_sinic_coordinator_strain
+		name = IRS_sinic_coordinator_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_sinic_genome_core
+		all_parents = { IRS_sinic_genome_core }
+
+		equipment_bonus = {
+			defense = 0.05
+			max_strength = 0.05
+			soft_attack = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_sinic_siege_adaptation
+		name = IRS_sinic_siege_adaptation
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_sinic_genome_core
+		all_parents = { IRS_sinic_genome_core }
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			breakthrough = 0.06
+			ap_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_sinic_swarm_coordination
+		name = IRS_sinic_swarm_coordination
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_sinic_coordinator_strain
+		all_parents = { IRS_sinic_coordinator_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			max_strength = 0.08
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_sinic_vigilance_strain
+		name = IRS_sinic_vigilance_strain
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_sinic_siege_adaptation
+		all_parents = { IRS_sinic_siege_adaptation }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.10
+			breakthrough = 0.08
+			ap_attack = 0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_sinic_city_genome
+		name = IRS_sinic_city_genome
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_sinic_swarm_coordination
+		any_parent = { IRS_sinic_swarm_coordination IRS_sinic_vigilance_strain }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.06
+			defense = 0.08
+			max_strength = 0.08
+		}
+		production_bonus = {
+			production_cost_factor = -0.08
+		}
+
+		on_complete = {
+			IRS = { set_technology = { cordon_genesis = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_ferritic_mio = {
+	icon = GFX_idea_generic_armor_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_country_flag = IRS_ferritic_discovered
+		}
+	}
+
+	equipment_type = { srp_burrower_chassis srp_bolster_chassis srp_warden_chassis srp_summoner_support_chassis srp_colony_carrier_chassis srp_dreadnaut_chassis srp_overlord_chassis }
+	research_categories = { srp_iris_tech }
+
+	initial_trait = {
+		name = IRS_ferritic_initial
+		equipment_bonus = {
+			armor_value = 0.03
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = IRS_ferritic_genome_core
+		name = IRS_ferritic_genome_core
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			armor_value = 0.05
+			defense = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_ferritic_membrane_hardening
+		name = IRS_ferritic_membrane_hardening
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_ferritic_genome_core
+		all_parents = { IRS_ferritic_genome_core }
+
+		equipment_bonus = {
+			armor_value = 0.08
+			defense = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_ferritic_crushing_musculature
+		name = IRS_ferritic_crushing_musculature
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_ferritic_genome_core
+		all_parents = { IRS_ferritic_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			hard_attack = 0.05
+			breakthrough = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_ferritic_bastion_genome
+		name = IRS_ferritic_bastion_genome
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_ferritic_membrane_hardening
+		all_parents = { IRS_ferritic_membrane_hardening }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			armor_value = 0.10
+			defense = 0.08
+			reliability = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_ferritic_siege_genome
+		name = IRS_ferritic_siege_genome
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_ferritic_crushing_musculature
+		all_parents = { IRS_ferritic_crushing_musculature }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.08
+			ap_attack = 0.06
+			breakthrough = 0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_ferritic_apex_plating
+		name = IRS_ferritic_apex_plating
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_ferritic_bastion_genome
+		any_parent = { IRS_ferritic_bastion_genome IRS_ferritic_siege_genome }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			armor_value = 0.12
+			breakthrough = 0.08
+			soft_attack = 0.06
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.08
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_tethysic_mio = {
+	icon = GFX_idea_generic_navy_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_country_flag = IRS_tethysic_discovered
+		}
+	}
+
+	equipment_type = { IRS_devourer_hull IRS_abyssant_hull }
+	research_categories = { srp_iris_tech }
+	initial_trait = {
+		name = IRS_tethysic_initial
+		equipment_bonus = {
+			torpedo_attack = 0.02
+			reliability = 0.02
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = IRS_tethysic_genome_core
+		name = IRS_tethysic_genome_core
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 2 y = 0 }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			torpedo_attack = 0.05
+			sub_visibility = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_tethysic_feeding_frenzy
+		name = IRS_tethysic_feeding_frenzy
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_tethysic_genome_core
+		all_parents = { IRS_tethysic_genome_core }
+
+		equipment_bonus = {
+			torpedo_attack = 0.08
+			max_strength = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_tethysic_deep_adaptation
+		name = IRS_tethysic_deep_adaptation
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_tethysic_genome_core
+		all_parents = { IRS_tethysic_genome_core }
+
+		equipment_bonus = {
+			sub_visibility = -0.08
+			naval_range = 0.10
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_tethysic_swarm_hunger
+		name = IRS_tethysic_swarm_hunger
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_tethysic_feeding_frenzy
+		all_parents = { IRS_tethysic_feeding_frenzy }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			torpedo_attack = 0.10
+			max_strength = 0.08
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+
+		on_complete = {
+			IRS = { set_country_flag = IRS_swarm_hunger_completed }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_tethysic_ocean_mastery
+		name = IRS_tethysic_ocean_mastery
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_tethysic_deep_adaptation
+		all_parents = { IRS_tethysic_deep_adaptation }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			sub_visibility = -0.10
+			naval_range = 0.15
+			naval_speed = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_tethysic_abyssant_genesis
+		name = IRS_tethysic_abyssant_genesis
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_tethysic_swarm_hunger
+		any_parent = { IRS_tethysic_swarm_hunger IRS_tethysic_ocean_mastery }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = IRS_abyssant_requires_proof_tt
+				has_global_flag = global_tethysic_genome_proven
+			}
+		}
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			torpedo_attack = 0.08
+			max_strength = 0.10
+			sub_visibility = -0.06
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			IRS = { set_technology = { abyssant_genesis = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+srp_yelloweye_mio = {
+	icon = GFX_idea_generic_air_organization
+
+	allowed = { is_parasite_nation = yes }
+	available = { always = yes }
+
+	equipment_type = { srp_yelloweye_airframe srp_skymaw_airframe srp_light_bomber_airframe srp_bogle_airframe srp_wraith_airframe srp_heavy_bomber_airframe }
+	research_categories = { srp_iris_tech }
+
+	initial_trait = {
+		name = srp_yelloweye_initial
+		equipment_bonus = {
+			air_ground_attack = 0.02
+			reliability = 0.02
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = srp_yelloweye_genome_core
+		name = srp_yelloweye_genome_core
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 2 y = 0 }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			air_ground_attack = 0.05
+			air_defence = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = srp_yelloweye_swarm_instinct
+		name = srp_yelloweye_swarm_instinct
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = srp_yelloweye_genome_core
+		all_parents = { srp_yelloweye_genome_core }
+
+		equipment_bonus = {
+			air_ground_attack = 0.08
+			air_attack = 0.10
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = srp_yelloweye_high_altitude
+		name = srp_yelloweye_high_altitude
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = srp_yelloweye_genome_core
+		all_parents = { srp_yelloweye_genome_core }
+
+		equipment_bonus = {
+			air_defence = 0.08
+			air_range = 0.10
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = srp_yelloweye_apex_swarm
+		name = srp_yelloweye_apex_swarm
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = srp_yelloweye_swarm_instinct
+		all_parents = { srp_yelloweye_swarm_instinct }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_ground_attack = 0.10
+			air_attack = 0.08
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = srp_yelloweye_storm_mastery
+		name = srp_yelloweye_storm_mastery
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = srp_yelloweye_high_altitude
+		all_parents = { srp_yelloweye_high_altitude }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_defence = 0.10
+			air_range = 0.15
+			maximum_speed = 0.05
+		}
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = srp_yelloweye_apex_genesis
+		name = srp_yelloweye_apex_genesis
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = srp_yelloweye_apex_swarm
+		any_parent = { srp_yelloweye_apex_swarm srp_yelloweye_storm_mastery }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_ground_attack = 0.08
+			air_defence = 0.06
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			every_country = {
+				limit = { is_parasite_nation = yes }
+				set_technology = { skymaw_genesis = 1 popup = no }
+			}
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+IRS_plutonic_mio = {
+	icon = GFX_idea_generic_air_organization
+
+	allowed = { original_tag = IRS }
+	available = {
+		IRS = {
+			has_country_flag = IRS_plutonic_discovered
+		}
+	}
+
+	equipment_type = { srp_draconite_airframe }
+	research_categories = { srp_iris_tech }
+
+	initial_trait = {
+		name = IRS_plutonic_initial
+		equipment_bonus = {
+			air_ground_attack = 0.02
+			reliability = 0.02
+		}
+	}
+
+	trait = {
+		token = IRS_plutonic_genome_core
+		name = IRS_plutonic_genome_core
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 2 y = 0 }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			air_ground_attack = 0.05
+			air_defence = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_plutonic_vent_adaptation
+		name = IRS_plutonic_vent_adaptation
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = IRS_plutonic_genome_core
+		all_parents = { IRS_plutonic_genome_core }
+
+		equipment_bonus = {
+			air_defence = 0.08
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_plutonic_sky_terror
+		name = IRS_plutonic_sky_terror
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_plutonic_genome_core
+		all_parents = { IRS_plutonic_genome_core }
+
+		equipment_bonus = {
+			air_ground_attack = 0.08
+			air_attack = 0.08
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = IRS_plutonic_deep_furnace
+		name = IRS_plutonic_deep_furnace
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_plutonic_vent_adaptation
+		all_parents = { IRS_plutonic_vent_adaptation }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_defence = 0.10
+			air_range = 0.12
+		}
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_plutonic_saliva_calibration
+		name = IRS_plutonic_saliva_calibration
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = IRS_plutonic_sky_terror
+		all_parents = { IRS_plutonic_sky_terror }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_ground_attack = 0.10
+			air_attack = 0.08
+			maximum_speed = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = IRS_plutonic_draconite_genesis
+		name = IRS_plutonic_draconite_genesis
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = IRS_plutonic_deep_furnace
+		any_parent = { IRS_plutonic_deep_furnace IRS_plutonic_saliva_calibration }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_ground_attack = 0.08
+			air_defence = 0.06
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			IRS = { set_technology = { draconite_genesis = 1 popup = no } }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}

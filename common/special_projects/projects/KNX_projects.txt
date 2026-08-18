@@ -1,0 +1,146 @@
+sp_land_KNX_loyal_strain_refinement = {
+	specialization = specialization_land
+
+	allowed = {
+		tag = KNX
+	}
+
+	project_tags = sp_tag_biological
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { has_completed_focus = KNX_loyal_strain_cultivation }
+		}
+	}
+
+	available = {
+		FROM = {
+			tag = KNX
+			has_completed_focus = KNX_loyal_strain_cultivation
+		}
+	}
+
+	prototype_time = sp_time.prototype.medium
+	complexity     = sp_complexity.medium
+
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+
+	resource_cost = {
+		resources = {
+			nexus_biomass = 6
+			steel         = 2
+		}
+	}
+
+	project_output = {
+		country_effects = {
+			add_ideas = KNX_loyal_strain_matured_ns
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_loyal_strain_expression_choice = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 90
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_land_reward_option_loyal_strain_expression_choice_aggression
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						add_tech_bonus = {
+							name     = sp_land_loyal_strain_expression_aggression
+							bonus    = 0.5
+							uses     = 1
+							category = srp_iris_tech
+						}
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience     = constant:sp_scientist_xp_gain.high
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_loyal_strain_expression_choice_resilience
+				iteration_output = {
+					country_effects = {
+						add_stability = 0.02
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+				}
+			}
+		}
+
+		sp_land_reward_loyal_strain_signature_drift = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 10
+				max = 60
+			}
+
+			weight = {
+				base = 3
+			}
+
+			option = {
+				token = sp_land_reward_option_loyal_strain_signature_drift_steady
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience     = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_loyal_strain_signature_drift_unstable
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.medium }
+					}
+					scientist_effects = {
+						injure_scientist_for_days = 30
+					}
+				}
+			}
+		}
+	}
+}

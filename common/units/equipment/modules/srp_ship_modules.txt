@@ -1,0 +1,169 @@
+equipment_modules = {
+
+	srp_carrier_fusion_engine = {
+		abbreviation = "cfe"
+		category = carrier_ship_nuclear_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability   = 0.06
+			build_cost_ic = 2500
+		}
+
+		multiply_stats = {
+			naval_range      = 1
+			naval_speed      = 0.9
+			fuel_consumption = -1
+		}
+
+		can_convert_from = {
+			module_category = carrier_ship_nuclear_engine
+			convert_cost_ic = 1800
+		}
+	}
+
+	srp_naval_sam_sr = {
+		abbreviation = "ssr"
+		category = ship_anti_air
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack = 40
+			build_cost_ic   = 250
+		}
+		xp_cost = 2
+	}
+
+	srp_naval_sam_md = {
+		abbreviation = "smd"
+		category = ship_anti_air
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack = 65
+			build_cost_ic   = 450
+		}
+		xp_cost = 3
+	}
+
+	srp_naval_sam_lr = {
+		abbreviation = "slr"
+		category = ship_anti_air
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack = 90
+			build_cost_ic   = 750
+		}
+		xp_cost = 4
+	}
+
+	srp_naval_gun_155mm = {
+		abbreviation = "155"
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack         = 20
+			hg_armor_piercing = 18
+			lg_attack         = 8
+			lg_armor_piercing = 6
+			build_cost_ic     = 500
+		}
+		xp_cost = 2
+		critical_parts = { damaged_heavy_guns }
+	}
+
+	srp_nuclear_naval_battery = {
+		abbreviation = "nnb"
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack         = 100
+			hg_armor_piercing = 80
+			lg_attack         = 20
+			lg_armor_piercing = 16
+			build_cost_ic     = 6000
+			reliability       = -0.08
+		}
+		build_cost_resources = {
+			fissile_material = 2
+		}
+		xp_cost = 8
+		critical_parts = { damaged_heavy_guns }
+	}
+
+	srp_naval_railgun_203mm = {
+		abbreviation = "emr"
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack         = 32
+			hg_armor_piercing = 45
+			lg_attack         = 6
+			lg_armor_piercing = 8
+			build_cost_ic     = 1200
+			reliability       = -0.05
+		}
+		xp_cost = 4
+		critical_parts = { damaged_heavy_guns }
+	}
+
+	srp_naval_ciws = {
+		abbreviation = "cwis"
+		category = ship_dp_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack   = 20
+			hg_attack         = 3
+			lg_attack         = 6
+			build_cost_ic     = 300
+		}
+		xp_cost = 2
+		critical_parts = { damaged_secondaries }
+	}
+
+	srp_naval_sam_vls = {
+		abbreviation = "sam"
+		category = ship_dp_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack   = 35
+			build_cost_ic     = 500
+		}
+		xp_cost = 3
+		critical_parts = { damaged_secondaries }
+	}
+
+	srp_surface_missile_launcher = {
+		abbreviation = "sml"
+		category = ship_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack  = 26
+			hg_attack       = 5
+			build_cost_ic   = 180
+		}
+		xp_cost = 2
+		critical_parts = { damaged_torpedoes jammed_torpedo }
+	}
+
+	srp_carrier_fuel_synthesis = {
+		abbreviation = "efs"
+		category = ship_deck_space
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			carrier_size   = 3
+			fuel_consumption = -8
+			build_cost_ic = 400
+		}
+
+		xp_cost = 4
+	}
+}

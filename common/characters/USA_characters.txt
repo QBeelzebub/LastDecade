@@ -1,0 +1,488 @@
+characters = {
+
+	USA_victor_harlan = {
+		name = "Victor Harlan"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_william_dudley_pelley }
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			desc = USA_victor_harlan_desc
+		}
+	}
+
+	USA_rosa_delgado = {
+		name = "Rosa Delgado"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {}
+			desc = USA_rosa_delgado_desc
+		}
+	}
+
+	USA_james_thornton = {
+		name = "James Thornton"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_charles_lindbergh }
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			desc = USA_james_thornton_desc
+		}
+	}
+
+	USA_janet_yellen = {
+		name = "Janet Yellen"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_idea_POL_wanda_wasilewska }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_janet_yellen
+			allowed = { original_tag = USA }
+			traits = { financial_expert }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_kamala_harris = {
+		name = "Kamala Harris"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_idea_ENG_sylvia_pankhurst }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_kamala_harris
+			allowed = { original_tag = USA }
+			traits = { popular_figurehead }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_nancy_pelosi = {
+		name = "Nancy Pelosi"
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_GER_eva_braun }
+			army = { small = GFX_idea_dolores_ibarruri }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_nancy_pelosi
+			allowed = { original_tag = USA }
+			traits = { backroom_backstabber }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	USA_pete_buttigieg = {
+		name = "Pete Buttigieg"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_1 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_pete_buttigieg
+			allowed = { original_tag = USA }
+			traits = { smooth_talking_charmer }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_marco_rubio = {
+		name = "Marco Rubio"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_2 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_marco_rubio
+			allowed = { original_tag = USA }
+			traits = { ideological_crusader }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	USA_elon_musk = {
+		name = "Elon Musk"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_3 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_elon_musk
+			allowed = { original_tag = USA }
+			traits = { captain_of_industry }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_bernie_sanders = {
+		name = "Bernie Sanders"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_1 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_bernie_sanders
+			allowed = { original_tag = USA }
+			traits = { democratic_reformer }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	USA_john_bolton = {
+		name = "John Bolton"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_2 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_john_bolton
+			allowed = { original_tag = USA }
+			traits = { propaganda_expert }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+
+	USA_lloyd_austin = {
+		name = "Lloyd Austin"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_3 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_lloyd_austin
+			allowed = { original_tag = USA }
+			traits = { war_industrialist }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_mark_milley = {
+		name = "Mark Milley"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_land_1 }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = USA_mark_milley
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { military_theorist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_cq_brown = {
+		name = "CQ Brown"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_land_2 }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = USA_cq_brown
+			ledger = air
+			allowed = { original_tag = USA }
+			traits = { air_warfare_theorist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_michael_gilday = {
+		name = "Michael Gilday"
+		portraits = {
+			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			army = { small = GFX_idea_USA_generic_navy_1 }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = USA_michael_gilday
+			ledger = navy
+			allowed = { original_tag = USA }
+			traits = { naval_theorist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_paul_lacamera = {
+		name = "Paul LaCamera"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_1
+				small = GFX_idea_USA_generic_land_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = USA_paul_lacamera
+			allowed = { original_tag = USA }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_christopher_cavoli = {
+		name = "Christopher Cavoli"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_2
+				small = GFX_idea_USA_generic_land_2
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = USA_christopher_cavoli
+			allowed = { original_tag = USA }
+			traits = { army_chief_maneuver_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_michael_kurilla = {
+		name = "Michael Kurilla"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_3
+				small = GFX_idea_USA_generic_land_3
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = USA_michael_kurilla
+			allowed = { original_tag = USA }
+			traits = { army_chief_defensive_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_james_foggo = {
+		name = "James Foggo"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_navy_1
+				small = GFX_idea_USA_generic_navy_1
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = USA_james_foggo
+			allowed = { original_tag = USA }
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_daryl_caudle = {
+		name = "Daryl Caudle"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_navy_2
+				small = GFX_idea_USA_generic_navy_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = USA_daryl_caudle
+			allowed = { original_tag = USA }
+			traits = { navy_chief_commerce_raiding_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_david_allvin = {
+		name = "David Allvin"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_4
+				small = GFX_idea_USA_generic_land_4
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = USA_david_allvin
+			allowed = { original_tag = USA }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_james_hecker = {
+		name = "James Hecker"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_5
+				small = GFX_idea_USA_generic_land_5
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = USA_james_hecker
+			allowed = { original_tag = USA }
+			traits = { air_chief_all_weather_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_james_mcconville = {
+		name = "James McConville"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_6
+				small = GFX_Portrait_USA_Generic_land_6_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = USA_james_mcconville
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_austin_scott_miller = {
+		name = "Austin Scott Miller"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_7
+				small = GFX_Portrait_USA_Generic_land_7_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = USA_austin_scott_miller
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_armored_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_john_richardson = {
+		name = "John Richardson"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_navy_3
+				small = GFX_idea_USA_generic_navy_3
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = USA_john_richardson
+			ledger = navy
+			allowed = { original_tag = USA }
+			traits = { navy_submarine_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_kenneth_wilsbach = {
+		name = "Kenneth Wilsbach"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_8
+				small = GFX_Portrait_USA_Generic_land_8_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = USA_kenneth_wilsbach
+			ledger = air
+			allowed = { original_tag = USA }
+			traits = { air_air_superiority_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_sci_land = {
+		name = "Dr. Robert Chen"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_5
+				small = GFX_Portrait_USA_Generic_land_5_small
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+
+	USA_sci_naval = {
+		name = "Dr. Patricia Okafor"
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_6
+				small = GFX_Portrait_USA_Generic_land_6_small
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
+	USA_sci_air = {
+		name = "Dr. Thomas Novak"
+		portraits = {
+			army = {
+				large = GFX_Portrait_USA_Generic_land_7
+				small = GFX_Portrait_USA_Generic_land_7_small
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_fast_learner }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+}

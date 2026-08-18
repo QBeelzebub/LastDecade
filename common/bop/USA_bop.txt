@@ -1,0 +1,113 @@
+USA_public_trust = {
+	initial_value = -0.15
+	left_side = USA_government_distrust_side
+	right_side = USA_public_confidence_side
+	decision_category = USA_public_trust_category
+
+	range = {
+		id = USA_trust_neutral_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+
+	side = {
+		id = USA_government_distrust_side
+		icon = GFX_bop_USA_distrust_icon
+
+		range = {
+			id = USA_trust_strain_range
+			min = -0.40
+			max = -0.10
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = USA_trust_strain_idea
+			}
+			on_deactivate = {
+				remove_ideas = USA_trust_strain_idea
+			}
+		}
+
+		range = {
+			id = USA_trust_crisis_range
+			min = -0.70
+			max = -0.40
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = USA_trust_crisis_idea
+			}
+			on_deactivate = {
+				remove_ideas = USA_trust_crisis_idea
+			}
+		}
+
+		range = {
+			id = USA_trust_collapse_range
+			min = -1.00
+			max = -0.70
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = USA_trust_collapse_idea
+				country_event = { id = usa.1 days = 3 }
+			}
+			on_deactivate = {
+				remove_ideas = USA_trust_collapse_idea
+			}
+		}
+	}
+
+	side = {
+		id = USA_public_confidence_side
+		icon = GFX_bop_USA_confidence_icon
+
+		range = {
+			id = USA_trust_stable_range
+			min = 0.10
+			max = 0.40
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = USA_trust_stable_idea
+			}
+			on_deactivate = {
+				remove_ideas = USA_trust_stable_idea
+			}
+		}
+
+		range = {
+			id = USA_trust_confident_range
+			min = 0.40
+			max = 0.70
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = USA_trust_confident_idea
+			}
+			on_deactivate = {
+				remove_ideas = USA_trust_confident_idea
+			}
+		}
+
+		range = {
+			id = USA_trust_national_unity_range
+			min = 0.70
+			max = 1.00
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = USA_trust_national_unity_idea
+			}
+			on_deactivate = {
+				remove_ideas = USA_trust_national_unity_idea
+			}
+		}
+	}
+}

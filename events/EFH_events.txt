@@ -1,0 +1,1199 @@
+@EFH_HNA_autonomous_time_tier_1 = 140
+@EFH_HNA_autonomous_time_tier_1_flag = 141
+
+add_namespace = efh
+add_namespace = efh_hna
+
+country_event = {
+	id = efh.1
+	title = efh.1.t
+	desc = efh.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.1.a
+		ai_chance = { base = 80 }
+		add_ideas = EFH_haa_aerospace_contract
+		add_timed_idea = {
+			idea = EFH_haa_timeline_compression
+			days = 200
+		}
+		set_country_flag = EFH_laytheo_contractor_selected
+		set_country_flag = EFH_contractor_haa
+		add_political_power = -100
+	}
+
+	option = {
+		name = efh.1.b
+		ai_chance = { base = 10 }
+		add_ideas = EFH_airbus_contract
+		set_country_flag = EFH_laytheo_contractor_selected
+		set_country_flag = EFH_contractor_airbus
+		set_country_flag = EFH_airbus_quality_control_active
+	}
+
+	option = {
+		name = efh.1.c
+		ai_chance = { base = 10 }
+		add_ideas = EFH_esa_contract
+		add_timed_idea = {
+			idea = EFH_esa_timeline_penalty
+			days = 200
+		}
+		set_country_flag = EFH_laytheo_contractor_selected
+		set_country_flag = EFH_contractor_esa
+		set_country_flag = EFH_esa_fissile_reduction_active
+		custom_effect_tooltip = EFH_esa_fissile_reduction_tt
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = efh.2
+	title = efh.2.t
+	desc = efh.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.2.a
+	}
+}
+
+country_event = {
+	id = efh.3
+	title = efh.3.t
+	desc = efh.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.3.a
+	}
+}
+
+news_event = {
+	id = efh.11
+	major = yes
+	title = efh.11.t
+	desc = efh.11.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.11.a
+		set_country_flag = EFH_summit_collapsed
+	}
+}
+
+news_event = {
+	id = efh.10
+	major = yes
+	title = efh.10.t
+	desc = efh.10.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.10.a
+		news_event = { id = efh.11 days = 30 }
+	}
+}
+
+news_event = {
+	id = efh.4
+	major = yes
+	title = efh.4.t
+	desc = efh.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = LD_second_summit_convened
+	}
+
+	option = {
+		name = efh.4.a
+		if = {
+			limit = { check_variable = { EFH_USA_escalation > 79 } }
+			country_event = { id = efh.20 days = 1 }
+		}
+		if = {
+			limit = { check_variable = { EFH_USA_escalation < 80 } }
+			country_event = { id = efh.22 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = efh.22
+	title = efh.22.t
+	desc = efh.22.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+
+	option = {
+		name = efh.22.a
+		ai_chance = { base = 70 }
+		add_political_power = 25
+		add_stability = 0.03
+		SRP_deescalate_low_effect = yes
+	}
+
+	option = {
+		name = efh.22.b
+		ai_chance = { base = 30 }
+		add_war_support = 0.03
+		SRP_escalate_low_effect = yes
+	}
+}
+
+country_event = {
+	id = efh.23
+	title = efh.23.t
+	desc = efh.23.d
+	picture = GFX_report_event_war_news
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = EFH_air_battle_of_boston_fired }
+	}
+
+	option = {
+		name = efh.23.a
+		set_country_flag = EFH_air_battle_of_boston_fired
+		add_ideas = EFH_boston_air_doctrine_review
+		air_experience = 25
+	}
+}
+
+country_event = {
+	id = efh.24
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = EFH_northern_air_campaign
+		NOT = { has_country_flag = EFH_air_battle_of_boston_fired }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_war_with = USA }
+			country_event = { id = efh.23 days = 4 random_days = 10 }
+		}
+		if = {
+			limit = { NOT = { has_war_with = USA } }
+			country_event = { id = efh.24 days = 30 }
+		}
+	}
+}
+
+country_event = {
+	id = efh.40
+	title = efh.40.t
+	desc = efh.40.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+
+	immediate = {
+		685 = {
+			remove_core_of = USA
+			set_state_owner_to = EFH
+			set_state_controller_to = EFH
+			add_core_of = EFH
+		}
+		set_country_flag = EFH_panama_liberated
+		clr_country_flag = EFH_panama_resistance_active
+		SRP_escalate_medium_effect = yes
+	}
+
+	option = {
+		name = efh.40.a
+	}
+}
+
+country_event = {
+	id = efh.5
+	title = efh.5.t
+	desc = efh.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.5.a
+		add_ideas = EFH_panama_access
+	}
+}
+
+country_event = {
+	id = efh.6
+	title = efh.6.t
+	desc = efh.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.6.a
+		custom_effect_tooltip = EFH_canada_clearance_chain_tt
+	}
+}
+
+country_event = {
+	id = efh.20
+	title = efh.20.t
+	desc = efh.20.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = efh.20.a
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		276 = { add_dynamic_modifier = { modifier = fallout_thermonuclear } }
+		357 = { add_dynamic_modifier = { modifier = fallout_thermonuclear } }
+		add_ideas = EFH_nuclear_war_rally
+		add_ideas = EFH_nuclear_war_blowback
+		USA = { add_ideas = USA_nuclear_war_shock }
+		CHN = { country_event = { id = world.1 days = 1 } }
+		JAP = { country_event = { id = world.1 days = 1 } }
+		SAC = { country_event = { id = world.1 days = 1 } }
+		IRS = { country_event = { id = irs.1 days = 1 } }
+	}
+}
+
+country_event = {
+	id = efh_hna.1
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = EFH_HNA_independence
+		has_country_flag = EFH_HNA_independence_granted
+		NOT = { has_completed_focus = EFH_HNA_autonomous_placeholder }
+		NOT = { has_country_flag = EFH_HNA_autonomous_placeholder_in_progress_flag }
+	}
+
+	immediate = {
+		activate_shine_on_focus = EFH_HNA_autonomous_placeholder
+		set_country_flag = {
+			flag = EFH_HNA_autonomous_placeholder_in_progress_flag
+			days = @EFH_HNA_autonomous_time_tier_1_flag
+			value = 1
+		}
+		country_event = { id = efh_hna.2 days = @EFH_HNA_autonomous_time_tier_1 }
+	}
+}
+
+country_event = {
+	id = efh_hna.2
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = EFH_HNA_independence
+		has_country_flag = EFH_HNA_independence_granted
+		has_country_flag = EFH_HNA_autonomous_placeholder_in_progress_flag
+		NOT = { has_completed_focus = EFH_HNA_autonomous_placeholder }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = EFH_HNA_autonomous_placeholder
+			}
+			complete_national_focus = {
+				focus = EFH_HNA_autonomous_placeholder
+				use_side_message = yes
+				originator_name = EFH_HNA_ORIGINATOR
+			}
+			clr_country_flag = EFH_HNA_autonomous_placeholder_in_progress_flag
+		}
+	}
+}
+
+country_event = {
+	id = efh.31
+	title = efh.31.t
+	desc = efh.31.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+
+	option = {
+		name = efh.31.a
+	}
+}
+
+country_event = {
+	id = efh.30
+	title = efh.30.t
+	desc = efh.30.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = {
+		name = efh.30.a
+		ai_chance = { base = 80 }
+		add_ideas = EFH_integration_agreement_full
+		EFH_bop_high_ha_effect = yes
+	}
+
+	option = {
+		name = efh.30.b
+		ai_chance = { base = 20 }
+		add_ideas = EFH_integration_agreement_oversight
+		add_political_power = 100
+		EFH_bop_medium_ha_effect = yes
+	}
+}
+
+country_event = {
+	id = efh.32
+	title = efh.32.t
+	desc = efh.32.d
+	picture = GFX_report_event_generic_intel
+	is_triggered_only = yes
+
+	option = {
+		name = efh.32.a
+		ai_chance = { base = 30 }
+		add_political_power = 25
+	}
+
+	option = {
+		name = efh.32.b
+		ai_chance = { base = 70 }
+		add_war_support = 0.03
+	}
+}
+
+news_event = {
+	id = efh.33
+	title = efh.33.t
+	desc = efh.33.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.33.a
+	}
+}
+
+country_event = {
+	id = efh.60
+	title = efh.60.t
+	desc = efh.60.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.60.a
+	}
+}
+
+country_event = {
+	id = efh.61
+	title = efh.61.t
+	desc = efh.61.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.61.a
+	}
+}
+
+country_event = {
+	id = efh.62
+	title = efh.62.t
+	desc = efh.62.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.62.a
+	}
+}
+
+country_event = {
+	id = efh.63
+	title = efh.63.t
+	desc = efh.63.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.63.a
+	}
+}
+
+country_event = {
+	id = efh.64
+	title = efh.64.t
+	desc = efh.64.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.64.a
+	}
+}
+
+country_event = {
+	id = efh.65
+	title = efh.65.t
+	desc = efh.65.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.65.a
+		trigger = { has_country_flag = EFH_procurement_ha_path }
+	}
+
+	option = {
+		name = efh.65.b
+		trigger = { has_country_flag = EFH_procurement_ef_path }
+	}
+}
+
+news_event = {
+	id = efh.66
+	title = efh.66.t
+	desc = efh.66.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.66.a
+	}
+}
+
+country_event = {
+	id = efh.67
+	title = efh.67.t
+	desc = efh.67.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.67.a
+	}
+}
+
+country_event = {
+	id = efh.68
+	title = efh.68.t
+	desc = efh.68.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.68.a
+		add_war_support = 0.04
+	}
+
+	option = {
+		name = efh.68.b
+		add_political_power = 30
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = efh.69
+	title = efh.69.t
+	desc = efh.69.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.69.a
+	}
+}
+
+country_event = {
+	id = efh.70
+	title = efh.70.t
+	desc = efh.70.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.70.a
+	}
+}
+
+country_event = {
+	id = efh.71
+	title = efh.71.t
+	desc = efh.71.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.71.a
+	}
+}
+
+country_event = {
+	id = efh.72
+	title = efh.72.t
+	desc = efh.72.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.72.a
+	}
+}
+
+country_event = {
+	id = efh.73
+	title = efh.73.t
+	desc = efh.73.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.73.a
+	}
+}
+
+country_event = {
+	id = efh.74
+	title = efh.74.t
+	desc = efh.74.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.74.a
+	}
+}
+
+country_event = {
+	id = efh.75
+	title = efh.75.t
+	desc = efh.75.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.75.a
+	}
+}
+
+country_event = {
+	id = efh.76
+	title = efh.76.t
+	desc = efh.76.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.76.a
+	}
+}
+
+country_event = {
+	id = efh.77
+	title = efh.77.t
+	desc = efh.77.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.77.a
+	}
+}
+
+country_event = {
+	id = efh.78
+	title = efh.78.t
+	desc = efh.78.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.78.a
+	}
+}
+
+country_event = {
+	id = efh.79
+	title = efh.79.t
+	desc = efh.79.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.79.a
+	}
+}
+
+country_event = {
+	id = efh.80
+	title = efh.80.t
+	desc = efh.80.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.80.a
+	}
+}
+
+news_event = {
+	id = efh.81
+	title = efh.81.t
+	desc = efh.81.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.81.a
+	}
+}
+
+country_event = {
+	id = efh.82
+	title = efh.82.t
+	desc = efh.82.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.82.a
+	}
+}
+
+news_event = {
+	id = efh.83
+	title = efh.83.t
+	desc = efh.83.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.83.a
+	}
+}
+
+news_event = {
+	id = efh.84
+	major = yes
+	title = efh.84.t
+	desc = efh.84.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.84.a
+	}
+}
+
+country_event = {
+	id = efh.85
+	title = efh.85.t
+	desc = efh.85.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.85.a
+	}
+}
+
+country_event = {
+	id = efh.86
+	title = efh.86.t
+	desc = efh.86.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.86.a
+	}
+}
+
+country_event = {
+	id = efh.87
+	title = efh.87.t
+	desc = efh.87.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.87.a
+	}
+}
+
+country_event = {
+	id = efh.88
+	title = efh.88.t
+	desc = efh.88.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.88.a
+	}
+}
+
+country_event = {
+	id = efh.89
+	title = efh.89.t
+	desc = efh.89.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.89.a
+	}
+}
+
+country_event = {
+	id = efh.90
+	title = efh.90.t
+	desc = efh.90.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.90.a
+		add_war_support = 0.03
+		add_stability = -0.02
+	}
+
+	option = {
+		name = efh.90.b
+		add_political_power = 25
+		add_stability = 0.02
+	}
+}
+
+news_event = {
+	id = efh.91
+	title = efh.91.t
+	desc = efh.91.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.91.a
+	}
+}
+
+country_event = {
+	id = efh.92
+	title = efh.92.t
+	desc = efh.92.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.92.a
+	}
+}
+
+country_event = {
+	id = efh.93
+	title = efh.93.t
+	desc = efh.93.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.93.a
+	}
+}
+
+country_event = {
+	id = efh.94
+	title = efh.94.t
+	desc = efh.94.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.94.a
+	}
+}
+
+country_event = {
+	id = efh.95
+	title = efh.95.t
+	desc = efh.95.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.95.a
+	}
+}
+
+country_event = {
+	id = efh.96
+	title = efh.96.t
+	desc = efh.96.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.96.a
+	}
+}
+
+country_event = {
+	id = efh.97
+	title = efh.97.t
+	desc = efh.97.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.97.a
+	}
+}
+
+country_event = {
+	id = efh.98
+	title = efh.98.t
+	desc = efh.98.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.98.a
+	}
+}
+
+country_event = {
+	id = efh.99
+	title = efh.99.t
+	desc = efh.99.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.99.a
+	}
+}
+
+country_event = {
+	id = efh.100
+	title = efh.100.t
+	desc = efh.100.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.100.a
+	}
+}
+
+country_event = {
+	id = efh.101
+	title = efh.101.t
+	desc = efh.101.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.101.a
+	}
+}
+
+country_event = {
+	id = efh.50
+	title = efh.50.t
+	desc = efh.50.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.50.a
+	}
+}
+
+country_event = {
+	id = efh.51
+	title = efh.51.t
+	desc = efh.51.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.51.a
+	}
+}
+
+country_event = {
+	id = efh.52
+	title = efh.52.t
+	desc = efh.52.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.52.a
+	}
+}
+
+country_event = {
+	id = efh.53
+	title = efh.53.t
+	desc = efh.53.d
+	picture = GFX_report_event_generic_nuclear
+	is_triggered_only = yes
+
+	option = {
+		name = efh.53.a
+		add_stability = 0.02
+	}
+
+	option = {
+		name = efh.53.b
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = efh.54
+	title = efh.54.t
+	desc = efh.54.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.54.a
+	}
+}
+
+country_event = {
+	id = efh.55
+	title = efh.55.t
+	desc = efh.55.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.55.a
+	}
+}
+
+country_event = {
+	id = efh.56
+	title = efh.56.t
+	desc = efh.56.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.56.a
+	}
+}
+
+country_event = {
+	id = efh.57
+	title = efh.57.t
+	desc = efh.57.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.57.a
+	}
+}
+
+country_event = {
+	id = efh.58
+	title = efh.58.t
+	desc = efh.58.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.58.a
+	}
+}
+
+country_event = {
+	id = efh.59
+	title = efh.59.t
+	desc = efh.59.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh.59.a
+		add_stability = 0.02
+	}
+
+	option = {
+		name = efh.59.b
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = efh.102
+	title = efh.102.t
+	desc = efh.102.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.102.a }
+}
+
+country_event = {
+	id = efh.103
+	title = efh.103.t
+	desc = efh.103.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.103.a }
+}
+
+country_event = {
+	id = efh.104
+	title = efh.104.t
+	desc = efh.104.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.104.a }
+}
+
+country_event = {
+	id = efh.105
+	title = efh.105.t
+	desc = efh.105.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.105.a }
+}
+
+country_event = {
+	id = efh.106
+	title = efh.106.t
+	desc = efh.106.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.106.a }
+}
+
+country_event = {
+	id = efh.107
+	title = efh.107.t
+	desc = efh.107.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.107.a }
+}
+
+news_event = {
+	id = efh.108
+	title = efh.108.t
+	desc = efh.108.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.108.a }
+}
+
+country_event = {
+	id = efh.109
+	title = efh.109.t
+	desc = efh.109.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { name = efh.109.a }
+}
+
+country_event = {
+	id = efh.110
+	title = efh.110.t
+	desc = efh.110.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = efh.110.a
+		army_experience = 10
+		add_war_support = 0.01
+		hidden_effect = {
+			add_to_variable = { var = public_panic value = -100 }
+			SRP_recalculate_public_panic_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = efh.111
+	title = efh.111.t
+	desc = efh.111.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = efh.111.a
+		ai_chance = { base = 60 }
+		army_experience = 20
+		hidden_effect = {
+			add_to_variable = { var = public_panic value = 75 }
+			SRP_recalculate_public_panic_effect = yes
+		}
+	}
+	option = {
+		name = efh.111.b
+		ai_chance = { base = 40 }
+		add_political_power = -50
+		hidden_effect = {
+			add_to_variable = { var = public_panic value = 25 }
+			SRP_recalculate_public_panic_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = efh.112
+	title = efh.112.t
+	desc = efh.112.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = efh.112.a
+		add_tech_bonus = {
+			bonus = 0.15
+			uses = 1
+			category = srp_parasite_tech
+		}
+		mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 4000 }
+	}
+}
+
+country_event = {
+	id = efh.113
+	title = efh.113.t
+	desc = efh.113.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = efh.113.a
+		ai_chance = { base = 50 }
+		mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 1500 }
+		hidden_effect = {
+			add_to_variable = { var = public_panic value = 100 }
+			SRP_recalculate_public_panic_effect = yes
+		}
+		add_stability = -0.02
+	}
+	option = {
+		name = efh.113.b
+		ai_chance = { base = 50 }
+		add_political_power = -50
+		hidden_effect = {
+			add_to_variable = { var = public_panic value = 50 }
+			SRP_recalculate_public_panic_effect = yes
+		}
+	}
+}

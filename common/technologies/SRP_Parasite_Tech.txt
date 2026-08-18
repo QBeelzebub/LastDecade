@@ -1,0 +1,1276 @@
+technologies = {
+	parasite_buildings = {
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2021
+
+		enable_building = {
+			building = beckon_cluster
+			level = 10
+		}
+		enable_building = {
+			building = dispatcher
+			level = 10
+		}
+	}
+
+	parasite_special_project_access = {
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2020
+
+		enable_building = {
+			building = land_facility
+			level = 1
+		}
+		enable_building = {
+			building = air_facility
+			level = 1
+		}
+		enable_building = {
+			building = naval_facility
+			level = 1
+		}
+	}
+
+	inborn_parasites = {
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			rupter_pack
+			carrier_brood
+		}
+		enable_equipments = {
+			rupter_equipment_1
+			carrier_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = assimilated_predators
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = early_primitive_parasites
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = devourer_emergence
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 0 y = 6 }
+		}
+	}
+
+	assimilated_predators = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 2
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			mangler_pack
+		}
+		enable_equipments = {
+			mangler_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = primitive_support_forms
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = parasite_autonomic_sustenance
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	parasite_autonomic_sustenance = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 2
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		on_research_complete = {
+			add_ideas = parasite_autonomic_sustenance_idea
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = { factor = 2 is_ai = yes has_war = yes }
+		}
+	}
+
+	early_primitive_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 3
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			primitive_longarms
+			primitive_reeker
+		}
+		enable_equipments = {
+			primitive_longarms_equipment_1
+			primitive_reeker_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = primitive_support_forms
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	primitive_support_forms = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 4
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			primitive_summoner
+		}
+		enable_equipments = {
+			primitive_summoner_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = late_primitive_parasites
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = biomass_cultivation
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = deterrent_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	late_primitive_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 5
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			primitive_manducater
+			primitive_tozoon
+		}
+		enable_equipments = {
+			primitive_manducater_equipment_1
+			primitive_tozoon_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 6 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	biomass_cultivation = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 5
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		enable_building = {
+			building = biomass_pool
+			level = 10
+		}
+
+		categories = {
+			srp_iris_tech
+			industry
+			synth_resources
+		}
+		path = {
+			leads_to_tech = early_pure_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 6 y = 10 }
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	early_pure_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 6
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			vigilante_battery
+		}
+		enable_equipments = {
+			pure_parasite_equipment_1
+			vigilante_battery_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = advanced_pure_parasites
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nexus_flesh_refinement
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 8 y = 10 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	advanced_pure_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 7
+		start_year = 2023
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			monarch_hunter
+		}
+		enable_equipments = {
+			monarch_hunter_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 10 y = 10 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	nexus_flesh_refinement = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 7
+		start_year = 2023
+		force_use_small_tech_layout = yes
+
+		enable_building = {
+			building = nexus_hive
+			level = 10
+		}
+
+		categories = {
+			srp_iris_tech
+			industry
+			synth_resources
+		}
+		path = {
+			leads_to_tech = early_preeminent_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 10 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	early_preeminent_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 8
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			preeminent_parasite_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = advanced_preeminent_parasites
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nexus_mastery
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 12 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	advanced_preeminent_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 9
+		start_year = 2025
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			haunter_titan
+		}
+		enable_equipments = {
+			haunter_titan_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = ancient_manifestation
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = late_preeminent_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 14 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	late_preeminent_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 9
+		start_year = 2025
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			adapted_warden
+			srp_marauder
+			adapted_burrower
+			adapted_bolster
+			adapted_summoner
+		}
+
+		enable_equipments = {
+			srp_burrower_chassis_1
+			srp_bolster_chassis_1
+			srp_warden_chassis_1
+			srp_summoner_support_chassis_1
+			srp_marauder_equipment_1
+		}
+
+		enable_equipment_modules = {
+			srp_carapace_plating_1
+			srp_carapace_plating_2
+			srp_adapted_limb_cluster_1
+			srp_adapted_limb_cluster_2
+			srp_pure_propulsion_mass_1
+			srp_pure_propulsion_mass_2
+			srp_parasite_support_node_1
+			srp_bolster_signal_node_1
+			srp_burrower_mandible_strike
+			srp_burrower_venom_spike
+			srp_burrower_tunneling_claws_1
+			srp_burrower_tunneling_claws_2
+			srp_burrower_shell_regrowth
+			srp_burrower_camouflage_membrane
+			srp_bolster_crushing_limbs
+			srp_bolster_resonant_maul
+			srp_bolster_resonance_membrane_1
+			srp_bolster_resonance_membrane_2
+			srp_warden_impact_spike
+			srp_warden_siege_maw
+			srp_warden_siege_glands
+			srp_warden_corrosive_mist
+			srp_summoner_call_organ
+			srp_summoner_relay_organ
+			srp_summoner_brood_satchel_1
+			srp_summoner_brood_satchel_2
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = apex_preeminent_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 16 y = 4 }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	apex_preeminent_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 10
+		start_year = 2027
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			colony_carrier
+			dreadnaut
+			overlord
+		}
+
+		enable_equipments = {
+			srp_colony_carrier_chassis_1
+			srp_dreadnaut_chassis_1
+			srp_overlord_chassis_1
+		}
+
+		enable_equipment_modules = {
+			srp_carapace_plating_1
+			srp_carapace_plating_2
+			srp_pure_propulsion_mass_1
+			srp_pure_propulsion_mass_2
+			srp_apex_locomotion_1
+			srp_apex_locomotion_2
+			srp_parasite_support_node_1
+			srp_bolster_signal_node_1
+			srp_colony_carrier_mandible_claws
+			srp_colony_carrier_crushing_thorax
+			srp_colony_spawner_node_1
+			srp_colony_spawner_node_2
+			srp_dreadnaut_impact_organ
+			srp_dreadnaut_rending_talons
+			srp_dreadnaut_night_glands
+			srp_dreadnaut_predator_instinct
+			srp_overlord_crushing_organ
+			srp_overlord_dominion_spike
+			srp_overlord_command_node_1
+			srp_overlord_command_node_2
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 18 y = 4 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	nexus_mastery = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 9
+		start_year = 2025
+		force_use_small_tech_layout = yes
+
+		supply_consumption_factor = -0.05
+		max_planning = 0.05
+		production_speed_buildings_factor = 0.05
+
+		categories = {
+			srp_iris_tech
+			industry
+		}
+		path = {
+			leads_to_tech = ancient_manifestation
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 16 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	ancient_manifestation = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 10
+		start_year = 2026
+		force_use_small_tech_layout = yes
+
+		army_org_factor = 0.05
+		army_morale_factor = 0.05
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 18 y = 6 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	vagrant_manifestation = {
+		allow = {
+			is_parasite_nation = yes
+			has_tech = ancient_manifestation
+		}
+
+		research_cost = 12
+		start_year = 2027
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			vagrant_4
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+
+	efh_vagrant_accord = {
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			vagrant_2
+			vagrant_3
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+
+	knx_vagrant_one_manifestation = {
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			vagrant_1
+		}
+		enable_equipments = {
+			preeminent_parasite_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+
+	devourer_emergence = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 3
+		start_year = 2022
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			IRS_devourer_hull_1
+		}
+		enable_equipment_modules = {
+			IRS_acid_mantle
+			IRS_shredder_array
+			IRS_fin_cluster
+			IRS_current_channeling
+			IRS_burst_propulsor
+			IRS_schooling_pheromone
+			IRS_hunting_call_pheromone
+			IRS_alarm_response_pheromone
+			IRS_exoskeletal_carapace
+			IRS_regenerative_tissue
+			IRS_depth_tolerance
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = adapted_devourer_strain
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 2 y = 12 }
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	adapted_devourer_strain = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 5
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			IRS_devourer_hull_2
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 4 y = 12 }
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	abyssant_genesis = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			IRS_abyssant_hull_1
+		}
+		enable_equipment_modules = {
+			IRS_crushing_maw
+			IRS_corrosive_maw
+			IRS_abyssant_jet_locomotion
+			IRS_abyssant_current_dive
+			IRS_abyssant_light_carapace
+			IRS_abyssant_dense_carapace
+			IRS_abyssant_regenerative_shell
+			IRS_abyssant_vibration_array
+			IRS_abyssant_lateral_membrane
+			IRS_abyssant_echolocation_sac
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 10 y = -4 }
+		}
+	}
+
+	tethysic_devourer_genome = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_equipment_modules = {
+			IRS_tethysic_resonance_organ
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 8 y = -7 }
+		}
+	}
+
+	primitive_yelloweye_tech = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 4
+		start_year = 2021
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_yelloweye_airframe_1
+		}
+		enable_equipment_modules = {
+			srp_yelloweye_propulsion_1
+			srp_yelloweye_wing_membrane_1
+			srp_yelloweye_bile_spitter
+			srp_yelloweye_spine_volley
+			srp_yelloweye_acid_glands
+			srp_yelloweye_thick_hide
+			srp_yelloweye_eye_cluster
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = adapted_yelloweye_tech
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 6 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	adapted_yelloweye_tech = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 6
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_yelloweye_airframe_2
+		}
+		enable_equipment_modules = {
+			srp_yelloweye_propulsion_2
+			srp_yelloweye_wing_membrane_2
+			srp_yelloweye_corrosive_spit
+			srp_yelloweye_regrowth_tissue
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = pure_aerial_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 8 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	pure_aerial_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 6
+		start_year = 2023
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_light_bomber_airframe_1
+		}
+		enable_equipment_modules = {
+			srp_spore_bomb_sacs
+			srp_caustic_payload_sacs
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = preeminent_aerial_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 10 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	preeminent_aerial_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 8
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_bogle_airframe_1
+			srp_wraith_airframe_1
+		}
+		enable_equipment_modules = {
+			srp_bogle_burst_sacs
+			srp_bogle_shimmer_hide
+			srp_wraith_nade_gland
+			srp_wraith_contact_aura
+			srp_succor_brood_pouch
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = heavy_aerial_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 12 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	heavy_aerial_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 9
+		start_year = 2025
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_heavy_bomber_airframe_1
+		}
+		enable_equipment_modules = {
+			srp_brood_bomb_sacs
+			srp_broodling_payload
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 14 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	draconite_genesis = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_draconite_airframe_1
+		}
+		enable_equipment_modules = {
+			srp_draconite_saliva_jet
+			srp_draconite_sky_barrage
+			srp_draconite_projection_shroud
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 14 y = -4 }
+		}
+	}
+
+	deterrent_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 7
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_bolster_membrane_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		path = {
+			leads_to_tech = pure_overseer_parasites
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 6 y = 8 }
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	pure_overseer_parasites = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 8
+		start_year = 2024
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			overseer_caller
+		}
+		enable_equipments = {
+			srp_synaptic_ganglion_1
+			overseer_caller_equipment_1
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 8 y = 8 }
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	skymaw_genesis = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_equipments = {
+			srp_skymaw_airframe_1
+		}
+		enable_equipment_modules = {
+			srp_skymaw_great_maw
+			srp_skymaw_plasma_bile
+			srp_skymaw_storm_wings
+			srp_skymaw_dense_carapace
+			srp_skymaw_regenerative_hide
+			srp_skymaw_sensory_crown
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 12 y = -4 }
+		}
+	}
+
+	hibernal_genesis = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			hibernal
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 18 y = 8 }
+		}
+	}
+
+	ancient_overlord_genesis = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			ancient_overlord
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 20 y = 8 }
+		}
+	}
+
+	cordon_genesis = {
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 2018
+		force_use_small_tech_layout = yes
+
+		enable_subunits = {
+			cordon
+		}
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 16 y = 8 }
+		}
+	}
+
+	IRS_vitreous_unlock_host = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { host_parasite }
+		enable_equipments = { host_parasite_equipment_1 }
+	}
+
+	IRS_vitreous_unlock_herd = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { herd_parasite }
+		enable_equipments = { herd_parasite_equipment_1 }
+	}
+
+	IRS_tromos_unlock_hollower = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { hollower }
+		enable_equipments = { hollower_equipment_1 }
+	}
+
+	IRS_tromos_unlock_scourer = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { scourer }
+		enable_equipments = { scourer_equipment_1 }
+	}
+
+	KNX_vagrant_unlock_arbiter = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { arbiter }
+		enable_equipments = { arbiter_equipment_1 }
+	}
+
+	KNX_vagrant_unlock_culler = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { culler }
+		enable_equipments = { culler_equipment_1 }
+	}
+
+	KNX_vagrant_unlock_magistrate = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { magistrate }
+		enable_equipments = { magistrate_equipment_1 }
+	}
+
+	EFH_contained_beckon_cluster_tech = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_building = {
+			building = EFH_contained_beckon_cluster
+			level = 10
+		}
+	}
+
+	EFH_dyadic_striker_tech = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { dyadic_striker }
+		enable_equipments = { dyadic_striker_equipment_1 }
+	}
+
+	EFH_dyadic_unlock_paragon = {
+		allow = { always = no }
+		research_cost = 1
+		start_year = 2018
+		enable_subunits = { paragon }
+		enable_equipments = { paragon_equipment_1 }
+	}
+}

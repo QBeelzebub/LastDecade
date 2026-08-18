@@ -1,0 +1,61 @@
+ideas = {
+
+	country = {
+
+		LD_dispatcher_sigint_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				decryption_factor = 0.10
+				intel_network_gain_factor = 0.10
+			}
+		}
+
+		LD_dispatcher_sigint_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				decryption_factor = 0.20
+				intel_network_gain_factor = 0.20
+			}
+		}
+
+		LD_dispatcher_sigint_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				decryption_factor = 0.35
+				intel_network_gain_factor = 0.35
+			}
+		}
+
+		LD_field_foresight = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+
+		LD_counterintel_sweep = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.20
+				enemy_operative_capture_chance_factor = 0.25
+			}
+		}
+	}
+}

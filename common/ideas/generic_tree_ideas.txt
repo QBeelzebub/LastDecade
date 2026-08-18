@@ -1,0 +1,158 @@
+ideas = {
+	country = {
+
+		neutrality_idea = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				ai_focus_defense_factor = 0.30
+				join_faction_tension = 0.40
+				guarantee_tension = -0.40
+				send_volunteer_size = -1
+			}
+		}
+
+		liberty_ethos_focus = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				drift_defence_factor = 0.20
+			}
+		}
+
+		militarism_focus = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				generate_wargoal_tension = -0.20
+				justify_war_goal_time = -0.10
+			}
+		}
+
+		idea_political_correctness = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.20
+			}
+		}
+
+		deterrence = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.05
+				guarantee_tension = -0.20
+			}
+		}
+
+		volunteer_corps_focus = {
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = 2
+				send_volunteer_divisions_required = -0.20
+			}
+		}
+
+		foreign_expeditions_focus = {
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = 2
+				experience_gain_army = 0.05
+			}
+		}
+
+		why_we_fight_focus = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				surrender_limit = 0.10
+			}
+		}
+
+		military_youth_focus = {
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				training_time_army_factor = -0.05
+			}
+		}
+
+		paramilitarism_focus = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				conscription = 0.01
+			}
+		}
+
+		indoctrination_focus = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				drift_defence_factor = 0.30
+			}
+		}
+
+		political_commissars_focus = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		ideological_fanaticism_focus = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.20
+				war_support_factor = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+
+		special_forces = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.05
+				army_speed_factor = 0.03
+			}
+		}
+
+		generic_secret_weapons_ns = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+
+	}
+}

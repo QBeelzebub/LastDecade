@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+
+		USA_incendiary_clearance_spirit = {
+			picture = generic_infantry_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.03
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.05
+			}
+		}
+
+		USA_knox_offensive_doctrine = {
+			picture = generic_infantry_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.05
+			}
+		}
+
+	}
+}

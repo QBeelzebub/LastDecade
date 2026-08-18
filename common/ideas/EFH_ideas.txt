@@ -1,0 +1,554 @@
+ideas = {
+	country = {
+		EFH_RTG_ideas_ns = {
+			name = EFH_RTG_ideas
+			picture = GER_attack_usa
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		EFH_TAD_idea_ns = {
+			name = EFH_TAD_idea
+			picture = GER_attack_usa
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 999.9
+				defense_bonus_against = 999.9
+			}
+		}
+
+		EFH_mishandled_contamination = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		EFH_joint_research_accord = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+
+		EFH_usa_market_exclusion = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.03
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		EFH_kaltkrieg_posture = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+			}
+		}
+
+		EFH_kaltkrieg_posture_subdued = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.02
+			}
+		}
+
+		EFH_boston_air_doctrine_review = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = -0.10
+			}
+		}
+
+		EFH_krakow_commitment = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+			}
+		}
+
+		EFH_kaltkrieg_concluded = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.05
+			}
+		}
+
+		EFH_kaltkrieg_legacy = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		EFH_panama_access = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				naval_speed_factor = 0.15
+			}
+		}
+
+		EFH_canada_reclamation = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 250
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		EFH_spaceplane_feasibility_study = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			}
+		}
+
+		EFH_laytheo_in_development = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+			}
+		}
+
+		EFH_haa_aerospace_contract = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		EFH_haa_timeline_compression = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.30
+			}
+		}
+
+		EFH_airbus_contract = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		EFH_esa_contract = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+			}
+		}
+
+		EFH_nuclear_war_rally = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.2
+				army_attack_factor = 0.2
+				weekly_manpower = 300
+				mobilization_speed = 0.5
+				research_speed_factor = 0.1
+			}
+		}
+
+		EFH_nuclear_war_blowback = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.4
+			}
+		}
+
+		EFH_esa_timeline_penalty = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.30
+			}
+		}
+
+		EFH_party_astra_mandate = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.06
+				political_power_gain = 0.05
+				stability_factor = -0.04
+			}
+		}
+
+		EFH_party_volt_mandate = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.08
+				research_speed_factor = 0.03
+				war_support_factor = -0.04
+			}
+		}
+
+		EFH_party_ave_mandate = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				mobilization_speed = 0.15
+				army_defence_factor = 0.04
+				consumer_goods_factor = 0.04
+				stability_factor = -0.02
+			}
+		}
+
+		EFH_party_continuity_mandate = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+				research_speed_factor = -0.02
+			}
+		}
+
+		EFH_party_social_green_mandate = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				consumer_goods_factor = -0.03
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.03
+			}
+		}
+
+		EFH_party_sovereigntist_mandate = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.08
+				drift_defence_factor = -0.10
+			}
+		}
+
+		EFH_separatist_unrest = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		EFH_restoration_referendum_crisis = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.05
+				political_power_gain = -0.15
+			}
+		}
+
+		EFH_bop_ef_low_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+
+		EFH_bop_ef_medium_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+
+		EFH_bop_ef_total_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				army_attack_factor = 0.10
+				political_advisor_cost_factor = -0.10
+			}
+		}
+
+		EFH_bop_ha_low_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		EFH_bop_ha_medium_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+				supply_consumption_factor = -0.05
+				political_power_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		EFH_bop_ha_total_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				supply_consumption_factor = -0.10
+				political_power_factor = -0.20
+				production_speed_industrial_complex_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+
+		EFH_first_vagrant_info = {
+			picture = GFX_focus_SRPLogo
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.3
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.3
+			}
+		}
+
+		EFH_armageddon_state = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 2
+				stability_factor = -0.50
+				war_support_factor = 0.20
+				research_speed_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.20
+				weekly_manpower = 1000
+			}
+		}
+
+		EFH_joint_parasite_command_standing = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = IRS
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = KNX
+				defense_bonus_against = 0.05
+			}
+		}
+
+		EFH_threat_briefing_data = {
+			picture = generic_intelligence_exchange
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				intel_network_gain_factor = 0.05
+			}
+		}
+
+		EFH_joint_command_ready = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+			}
+			targeted_modifier = {
+				tag = IRS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = KNX
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		EFH_industrial_core_surge = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		EFH_sino_efh_partnership = {
+			picture = GFX_focus_generic_diplomatic_treaty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.04
+				war_support_factor = 0.05
+				supply_consumption_factor = -0.03
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				trade_opinion_factor = 0.15
+				political_power_gain = 0.05
+			}
+		}
+
+		EFH_sino_research_exchange_active = {
+			picture = generic_research_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+			}
+		}
+
+		EFH_threat_estimate_current = {
+			picture = generic_intelligence_exchange
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+
+		EFH_joint_exercise_readiness = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.02
+				dig_in_speed_factor = 0.10
+			}
+		}
+
+		EFH_canadian_listening_posts_idea = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				intel_network_gain = 0.10
+				decryption_factor = 0.05
+			}
+		}
+
+		EFH_continental_war_plan_spirit = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+	}
+}

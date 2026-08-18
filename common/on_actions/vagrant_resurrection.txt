@@ -1,0 +1,334 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			KNX = {
+				set_technology = { knx_vagrant_one_manifestation = 1 popup = no }
+				set_country_flag = KNX_vagrant_1_active
+				set_country_flag = KNX_vagrant_1_advisory_duty
+				clr_country_flag = KNX_vagrant_1_field_duty
+			}
+		}
+	}
+
+	on_monthly_EFH = {
+		effect = {
+			if = {
+				limit = {
+					date > 2024.1.1
+					NOT = { has_country_flag = EFH_vagrants_contacted }
+				}
+				set_country_flag = EFH_vagrants_contacted
+				country_event = { id = vagrant.1 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_2_active
+					NOT = { has_character = EFH_vagrant_2 }
+					NOT = { has_character = EFH_vagrant_2_reborn }
+					NOT = { has_country_flag = EFH_vagrant_2_recovering }
+					NOT = { has_country_flag = EFH_vagrant_2_copy_b }
+				}
+				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
+				set_country_flag = EFH_vagrant_2_recruit_b
+				if = {
+					limit = { has_country_flag = EFH_vagrant_3_recovering }
+					country_event = { id = vagrant.4 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_3_recovering } }
+					country_event = { id = vagrant.2 days = 60 }
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_2_active
+					NOT = { has_character = EFH_vagrant_2 }
+					NOT = { has_character = EFH_vagrant_2_reborn }
+					NOT = { has_country_flag = EFH_vagrant_2_recovering }
+					has_country_flag = EFH_vagrant_2_copy_b
+				}
+				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
+				set_country_flag = EFH_vagrant_2_recruit_a
+				if = {
+					limit = { has_country_flag = EFH_vagrant_3_recovering }
+					country_event = { id = vagrant.4 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_3_recovering } }
+					country_event = { id = vagrant.2 days = 60 }
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_3_active
+					NOT = { has_character = EFH_vagrant_3 }
+					NOT = { has_character = EFH_vagrant_3_reborn }
+					NOT = { has_country_flag = EFH_vagrant_3_recovering }
+					NOT = { has_country_flag = EFH_vagrant_3_copy_b }
+				}
+				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
+				set_country_flag = EFH_vagrant_3_recruit_b
+				if = {
+					limit = { has_country_flag = EFH_vagrant_2_recovering }
+					country_event = { id = vagrant.5 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_2_recovering } }
+					country_event = { id = vagrant.3 days = 60 }
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_3_active
+					NOT = { has_character = EFH_vagrant_3 }
+					NOT = { has_character = EFH_vagrant_3_reborn }
+					NOT = { has_country_flag = EFH_vagrant_3_recovering }
+					has_country_flag = EFH_vagrant_3_copy_b
+				}
+				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
+				set_country_flag = EFH_vagrant_3_recruit_a
+				if = {
+					limit = { has_country_flag = EFH_vagrant_2_recovering }
+					country_event = { id = vagrant.5 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_2_recovering } }
+					country_event = { id = vagrant.3 days = 60 }
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_2_active
+					has_country_flag = EFH_vagrant_2_field_duty
+					NOT = { has_country_flag = EFH_vagrant_2_recovering }
+					NOT = { has_equipment = { vagrant_2_core = 1 } }
+					NOT = { has_country_flag = EFH_vagrant_2_copy_b }
+				}
+				retire_character = EFH_vagrant_2
+				clr_country_flag = EFH_vagrant_2_field_duty
+				set_country_flag = EFH_vagrant_2_fallen
+				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
+				set_country_flag = EFH_vagrant_2_recruit_b
+				country_event = { id = vagrant.9 }
+				if = {
+					limit = { has_country_flag = EFH_vagrant_3_recovering }
+					country_event = { id = vagrant.4 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_3_recovering } }
+					country_event = { id = vagrant.2 days = 60 }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_2_active
+					has_country_flag = EFH_vagrant_2_field_duty
+					NOT = { has_country_flag = EFH_vagrant_2_recovering }
+					NOT = { has_equipment = { vagrant_2_core = 1 } }
+					has_country_flag = EFH_vagrant_2_copy_b
+				}
+				retire_character = EFH_vagrant_2_reborn
+				clr_country_flag = EFH_vagrant_2_field_duty
+				set_country_flag = EFH_vagrant_2_fallen
+				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
+				set_country_flag = EFH_vagrant_2_recruit_a
+				country_event = { id = vagrant.9 }
+				if = {
+					limit = { has_country_flag = EFH_vagrant_3_recovering }
+					country_event = { id = vagrant.4 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_3_recovering } }
+					country_event = { id = vagrant.2 days = 60 }
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_3_active
+					has_country_flag = EFH_vagrant_3_field_duty
+					NOT = { has_country_flag = EFH_vagrant_3_recovering }
+					NOT = { has_equipment = { vagrant_3_core = 1 } }
+					NOT = { has_country_flag = EFH_vagrant_3_copy_b }
+				}
+				retire_character = EFH_vagrant_3
+				clr_country_flag = EFH_vagrant_3_field_duty
+				set_country_flag = EFH_vagrant_3_fallen
+				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
+				set_country_flag = EFH_vagrant_3_recruit_b
+				country_event = { id = vagrant.9 }
+				if = {
+					limit = { has_country_flag = EFH_vagrant_2_recovering }
+					country_event = { id = vagrant.5 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_2_recovering } }
+					country_event = { id = vagrant.3 days = 60 }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = EFH_vagrant_3_active
+					has_country_flag = EFH_vagrant_3_field_duty
+					NOT = { has_country_flag = EFH_vagrant_3_recovering }
+					NOT = { has_equipment = { vagrant_3_core = 1 } }
+					has_country_flag = EFH_vagrant_3_copy_b
+				}
+				retire_character = EFH_vagrant_3_reborn
+				clr_country_flag = EFH_vagrant_3_field_duty
+				set_country_flag = EFH_vagrant_3_fallen
+				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
+				set_country_flag = EFH_vagrant_3_recruit_a
+				country_event = { id = vagrant.9 }
+				if = {
+					limit = { has_country_flag = EFH_vagrant_2_recovering }
+					country_event = { id = vagrant.5 days = 120 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = EFH_vagrant_2_recovering } }
+					country_event = { id = vagrant.3 days = 60 }
+				}
+			}
+		}
+	}
+
+	on_monthly_IRS = {
+		effect = {
+			if = {
+				limit = {
+					date > 2025.1.1
+					NOT = { has_country_flag = IRS_vagrant_4_emerged }
+				}
+				set_country_flag = IRS_vagrant_4_emerged
+				country_event = { id = vagrant.8 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = IRS_vagrant_4_active
+					NOT = { has_character = IRS_vagrant_4 }
+					NOT = { has_character = IRS_vagrant_4_reborn }
+					NOT = { has_country_flag = IRS_vagrant_4_recovering }
+					NOT = { has_country_flag = IRS_vagrant_4_copy_b }
+				}
+				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
+				set_country_flag = IRS_vagrant_4_recruit_b
+				country_event = { id = vagrant.6 days = 30 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = IRS_vagrant_4_active
+					NOT = { has_character = IRS_vagrant_4 }
+					NOT = { has_character = IRS_vagrant_4_reborn }
+					NOT = { has_country_flag = IRS_vagrant_4_recovering }
+					has_country_flag = IRS_vagrant_4_copy_b
+				}
+				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
+				set_country_flag = IRS_vagrant_4_recruit_a
+				country_event = { id = vagrant.6 days = 30 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = IRS_vagrant_4_active
+					has_country_flag = IRS_vagrant_4_field_duty
+					NOT = { has_country_flag = IRS_vagrant_4_recovering }
+					NOT = { has_equipment = { vagrant_4_core = 1 } }
+					NOT = { has_country_flag = IRS_vagrant_4_copy_b }
+				}
+				retire_character = IRS_vagrant_4
+				clr_country_flag = IRS_vagrant_4_field_duty
+				set_country_flag = IRS_vagrant_4_fallen
+				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
+				set_country_flag = IRS_vagrant_4_recruit_b
+				country_event = { id = vagrant.9 }
+				country_event = { id = vagrant.6 days = 30 }
+			}
+			if = {
+				limit = {
+					has_country_flag = IRS_vagrant_4_active
+					has_country_flag = IRS_vagrant_4_field_duty
+					NOT = { has_country_flag = IRS_vagrant_4_recovering }
+					NOT = { has_equipment = { vagrant_4_core = 1 } }
+					has_country_flag = IRS_vagrant_4_copy_b
+				}
+				retire_character = IRS_vagrant_4_reborn
+				clr_country_flag = IRS_vagrant_4_field_duty
+				set_country_flag = IRS_vagrant_4_fallen
+				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
+				set_country_flag = IRS_vagrant_4_recruit_a
+				country_event = { id = vagrant.9 }
+				country_event = { id = vagrant.6 days = 30 }
+			}
+		}
+	}
+
+	on_monthly_KNX = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = KNX_vagrant_1_active
+					NOT = { has_character = KNX_vagrant_one }
+					NOT = { has_character = KNX_vagrant_one_reborn }
+					NOT = { has_country_flag = KNX_vagrant_1_recovering }
+					NOT = { has_country_flag = KNX_vagrant_1_copy_b }
+				}
+				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
+				set_country_flag = KNX_vagrant_1_recruit_b
+				country_event = { id = vagrant.7 days = 45 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = KNX_vagrant_1_active
+					NOT = { has_character = KNX_vagrant_one }
+					NOT = { has_character = KNX_vagrant_one_reborn }
+					NOT = { has_country_flag = KNX_vagrant_1_recovering }
+					has_country_flag = KNX_vagrant_1_copy_b
+				}
+				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
+				set_country_flag = KNX_vagrant_1_recruit_a
+				country_event = { id = vagrant.7 days = 45 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = KNX_vagrant_1_active
+					has_country_flag = KNX_vagrant_1_field_duty
+					NOT = { has_country_flag = KNX_vagrant_1_recovering }
+					NOT = { has_equipment = { vagrant_1_core = 1 } }
+					NOT = { has_country_flag = KNX_vagrant_1_copy_b }
+				}
+				clr_country_flag = KNX_vagrant_1_field_duty
+				set_country_flag = KNX_vagrant_1_fallen
+				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
+				set_country_flag = KNX_vagrant_1_recruit_b
+				country_event = { id = vagrant.9 }
+				country_event = { id = vagrant.7 days = 45 }
+			}
+			if = {
+				limit = {
+					has_country_flag = KNX_vagrant_1_active
+					has_country_flag = KNX_vagrant_1_field_duty
+					NOT = { has_country_flag = KNX_vagrant_1_recovering }
+					NOT = { has_equipment = { vagrant_1_core = 1 } }
+					has_country_flag = KNX_vagrant_1_copy_b
+				}
+				retire_character = KNX_vagrant_one_reborn
+				clr_country_flag = KNX_vagrant_1_field_duty
+				set_country_flag = KNX_vagrant_1_fallen
+				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
+				set_country_flag = KNX_vagrant_1_recruit_a
+				country_event = { id = vagrant.9 }
+				country_event = { id = vagrant.7 days = 45 }
+			}
+		}
+	}
+}

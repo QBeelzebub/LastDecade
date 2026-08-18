@@ -1,0 +1,82 @@
+KNX_reading_group = {
+	icon = generic_research
+	priority = 70
+	visible_when_empty = no
+
+	allowed = {
+		original_tag = KNX
+	}
+
+	visible = {
+		has_country_flag = KNX_emerged
+	}
+}
+
+KNX_transactional_diplomacy = {
+	icon = generic_political_actions
+	priority = 65
+	visible_when_empty = no
+
+	allowed = {
+		original_tag = KNX
+	}
+
+	visible = {
+		has_country_flag = KNX_emerged
+		has_country_flag = KNX_transactional_logic_active
+	}
+}
+
+knx_assimilation = {
+	icon = generic_crisis
+	priority = 80
+	visible_when_empty = no
+
+	allowed = {
+		tag = KNX
+	}
+
+	visible = {
+		tag = KNX
+		any_owned_state = {
+			check_variable = {
+				var = iris_infestation_level
+				value = 99
+				compare = greater_than
+			}
+			NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+		}
+	}
+}
+
+knx_nexus_relocation = {
+	icon = generic_political_actions
+	priority = 70
+	visible_when_empty = no
+
+	allowed = {
+		tag = KNX
+	}
+
+	visible = {
+		tag = KNX
+		any_owned_state = {
+			has_state_flag = knx_state_consumed
+		}
+	}
+}
+
+KNX_homeland_defense = {
+	icon = generic_political_actions
+	priority = 75
+	visible_when_empty = no
+
+	allowed = {
+		tag = KNX
+	}
+
+	visible = {
+		tag = KNX
+		has_country_flag = KNX_emerged
+	}
+}

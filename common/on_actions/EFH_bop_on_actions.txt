@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { original_tag = EFH }
+				EFH_initiate_bop_effect = yes
+				EFH_party_init_effect = yes
+			}
+		}
+	}
+}

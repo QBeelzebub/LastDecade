@@ -1,0 +1,809 @@
+SRP_moon_base = {
+	SRP_moon_base_status = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = no
+		cost = 0
+	}
+
+	SRP_moon_base_programme_initiation = {
+		icon = generic_research
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = EFH
+					has_completed_focus = EFH_laytheo_first_flight
+					has_country_flag = HA_lunar_programme_approved
+				}
+				original_tag = USA
+			}
+			NOT = { has_country_flag = SRP_moon_base_active }
+			NOT = { has_country_flag = SRP_moon_base_complete }
+		}
+
+		available = {
+			OR = {
+				AND = {
+					original_tag = EFH
+					has_completed_focus = EFH_laytheo_first_flight
+					has_country_flag = HA_lunar_programme_approved
+				}
+				original_tag = USA
+			}
+			NOT = { has_country_flag = SRP_moon_base_active }
+			NOT = { has_country_flag = SRP_moon_base_complete }
+		}
+
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+			set_country_flag = SRP_moon_base_active
+			set_variable = { var = SRP_moon_base_modules value = 0 }
+			set_variable = { var = SRP_moon_base_progress value = 0 }
+			set_variable = { var = SRP_moon_base_security value = 1 }
+			set_variable = { var = SRP_moon_base_procurement_heat value = 0 }
+			add_ideas = SRP_lunar_race_pressure
+			if = {
+				limit = { has_country_flag = EFH_HNA_lunar_policy_public }
+				add_stability = 0.02
+				add_to_variable = { var = SRP_moon_base_security value = 1 }
+			}
+			if = {
+				limit = { has_country_flag = EFH_HNA_lunar_policy_corporate }
+				add_to_variable = { var = SRP_moon_base_progress value = 3 }
+				add_to_variable = { var = SRP_moon_base_procurement_heat value = 1 }
+			}
+			if = {
+				limit = { has_country_flag = EFH_HNA_lunar_policy_procurement }
+				add_to_variable = { var = SRP_moon_base_progress value = 5 }
+				add_to_variable = { var = SRP_moon_base_procurement_heat value = 2 }
+				set_country_flag = SRP_moon_base_rival_supply_chain_mapped
+			}
+			country_event = { id = srp_moon.1 days = 1 }
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	SRP_moon_base_module_01_site_survey = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 0 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 0 }
+			num_of_available_civilian_factories > 2
+		}
+
+		fire_only_once = yes
+		days_remove = 45
+		cost = 25
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 5 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_02_transfer_schedule = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 1 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 1 }
+			num_of_available_civilian_factories > 3
+		}
+
+		fire_only_once = yes
+		days_remove = 45
+		cost = 25
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 5 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_03_landing_zone = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 2 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 2 }
+			num_of_available_civilian_factories > 4
+		}
+
+		fire_only_once = yes
+		days_remove = 60
+		cost = 35
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 6 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			country_event = { id = srp_moon.2 days = 1 }
+		}
+	}
+
+	SRP_moon_base_module_04_starter_grid = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 3 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 3 }
+			num_of_available_civilian_factories > 5
+		}
+
+		fire_only_once = yes
+		days_remove = 60
+		cost = 40
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 6 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_05_regolith_handling = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 4 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 4 }
+			num_of_available_civilian_factories > 6
+		}
+
+		fire_only_once = yes
+		days_remove = 75
+		cost = 45
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 7
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 7 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_06_construction_yard = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 5 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 5 }
+			num_of_available_civilian_factories > 7
+		}
+
+		fire_only_once = yes
+		days_remove = 90
+		cost = 50
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 8 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			add_ideas = SRP_moon_base_active_base
+			random_list = {
+				25 = { country_event = { id = srp_moon.4 days = 1 } }
+				75 = { }
+			}
+		}
+	}
+
+	SRP_moon_base_module_07_habitat_shells = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 6 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 6 }
+			num_of_available_civilian_factories > 7
+		}
+
+		fire_only_once = yes
+		days_remove = 75
+		cost = 45
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 7 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_08_life_support = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 7 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 7 }
+			num_of_available_civilian_factories > 7
+		}
+
+		fire_only_once = yes
+		days_remove = 75
+		cost = 50
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 7 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_09_rover_chassis = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 8 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 8 }
+			num_of_available_civilian_factories > 7
+		}
+
+		fire_only_once = yes
+		days_remove = 70
+		cost = 45
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 6 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_10_rover_systems = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 9 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 9 }
+			num_of_available_civilian_factories > 8
+		}
+
+		fire_only_once = yes
+		days_remove = 80
+		cost = 55
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 9
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 7 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_module_11_processing_array = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 10 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 10 }
+			num_of_available_civilian_factories > 9
+		}
+
+		fire_only_once = yes
+		days_remove = 90
+		cost = 60
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 8 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			random_list = {
+				30 = { country_event = { id = srp_moon.5 days = 1 } }
+				70 = { }
+			}
+		}
+	}
+
+	SRP_moon_base_module_12_refinement_storage = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 11 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 11 }
+			num_of_available_civilian_factories > 9
+		}
+
+		fire_only_once = yes
+		days_remove = 90
+		cost = 65
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 8 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			add_ideas = SRP_moon_base_he3_partial
+		}
+	}
+
+	SRP_moon_base_module_13_export_logistics = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 12 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 12 }
+			num_of_available_civilian_factories > 9
+		}
+
+		fire_only_once = yes
+		days_remove = 85
+		cost = 60
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 7 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			remove_ideas = SRP_moon_base_he3_partial
+			add_ideas = SRP_moon_base_he3_full
+		}
+	}
+
+	SRP_moon_base_module_14_research_complex = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 13 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 13 }
+			num_of_available_civilian_factories > 5
+		}
+
+		fire_only_once = yes
+		days_remove = 65
+		cost = 45
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			add_to_variable = { var = SRP_moon_base_progress value = 6 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			add_ideas = SRP_moon_base_research
+			random_list = {
+				20 = { country_event = { id = srp_moon.9 days = 1 } }
+				80 = { }
+			}
+		}
+	}
+
+	SRP_moon_base_module_15_final_integration = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			check_variable = { SRP_moon_base_modules = 14 }
+		}
+
+		available = {
+			check_variable = { SRP_moon_base_modules = 14 }
+			num_of_available_civilian_factories > 5
+		}
+
+		fire_only_once = yes
+		days_remove = 60
+		cost = 100
+
+		ai_will_do = { base = 3 }
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		remove_effect = {
+			add_to_variable = { var = SRP_moon_base_modules value = 1 }
+			set_variable = { var = SRP_moon_base_progress value = 100 }
+			remove_ideas = SRP_moon_base_active_base
+			remove_ideas = SRP_moon_base_he3_partial
+			remove_ideas = SRP_moon_base_he3_full
+			remove_ideas = SRP_moon_base_research
+			remove_ideas = SRP_lunar_race_pressure
+			add_ideas = SRP_moon_base_complete
+			set_country_flag = SRP_moon_base_complete
+			set_country_flag = SRP_moon_base_iris_mission_stub
+			clr_country_flag = SRP_moon_base_active
+			country_event = { id = srp_moon.10 days = 1 }
+			if = {
+				limit = {
+					original_tag = EFH
+					USA = {
+						has_country_flag = SRP_moon_base_active
+						NOT = { has_country_flag = SRP_moon_base_complete }
+					}
+				}
+				USA = { country_event = { id = srp_moon.11 days = 2 } }
+			}
+			if = {
+				limit = {
+					original_tag = USA
+					EFH = {
+						has_country_flag = SRP_moon_base_active
+						NOT = { has_country_flag = SRP_moon_base_complete }
+					}
+				}
+				EFH = { country_event = { id = srp_moon.11 days = 2 } }
+			}
+		}
+	}
+
+	SRP_moon_base_prestige_broadcast = {
+		icon = generic_propaganda
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+		}
+
+		available = {
+			has_country_flag = SRP_moon_base_active
+		}
+
+		fire_only_once = no
+		days_re_enable = 90
+		cost = 35
+
+		ai_will_do = { base = 2 }
+
+		complete_effect = {
+			add_stability = 0.01
+			add_war_support = 0.01
+		}
+	}
+
+	SRP_moon_base_emergency_catchup_funding = {
+		icon = generic_political_actions
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			NOT = { check_variable = { SRP_moon_base_progress > 74 } }
+		}
+
+		available = {
+			has_country_flag = SRP_moon_base_active
+			NOT = { check_variable = { SRP_moon_base_progress > 74 } }
+		}
+
+		fire_only_once = no
+		days_re_enable = 180
+		cost = 100
+
+		ai_will_do = { base = 1 }
+
+		complete_effect = {
+			add_to_variable = { var = SRP_moon_base_progress value = 5 }
+			add_to_variable = { var = SRP_moon_base_procurement_heat value = 1 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		}
+	}
+
+	SRP_moon_base_inspect_rival_supply_chains = {
+		icon = generic_political_actions
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			OR = {
+				AND = { original_tag = EFH USA = { has_country_flag = SRP_moon_base_active } }
+				AND = { original_tag = USA EFH = { has_country_flag = SRP_moon_base_active } }
+			}
+			NOT = { has_country_flag = SRP_moon_base_rival_supply_chain_mapped }
+		}
+
+		available = {
+			has_country_flag = SRP_moon_base_active
+			OR = {
+				AND = { original_tag = EFH USA = { has_country_flag = SRP_moon_base_active } }
+				AND = { original_tag = USA EFH = { has_country_flag = SRP_moon_base_active } }
+			}
+			NOT = { has_country_flag = SRP_moon_base_rival_supply_chain_mapped }
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		ai_will_do = { base = 3 }
+
+		complete_effect = {
+			set_country_flag = SRP_moon_base_rival_supply_chain_mapped
+			add_to_variable = { var = SRP_moon_base_security value = 1 }
+		}
+	}
+
+	SRP_moon_base_poach_engineers = {
+		icon = generic_political_actions
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			has_country_flag = SRP_moon_base_rival_supply_chain_mapped
+			OR = {
+				AND = { original_tag = EFH USA = { has_country_flag = SRP_moon_base_active } }
+				AND = { original_tag = USA EFH = { has_country_flag = SRP_moon_base_active } }
+			}
+		}
+
+		available = {
+			has_country_flag = SRP_moon_base_active
+			has_country_flag = SRP_moon_base_rival_supply_chain_mapped
+			OR = {
+				AND = { original_tag = EFH USA = { has_country_flag = SRP_moon_base_active } }
+				AND = { original_tag = USA EFH = { has_country_flag = SRP_moon_base_active } }
+			}
+		}
+
+		fire_only_once = no
+		days_re_enable = 120
+		cost = 75
+
+		ai_will_do = { base = 2 }
+
+		complete_effect = {
+			add_to_variable = { var = SRP_moon_base_progress value = 4 }
+			add_to_variable = { var = SRP_moon_base_procurement_heat value = 1 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			if = {
+				limit = { original_tag = EFH }
+				USA = {
+					add_to_variable = { var = SRP_moon_base_progress value = -1 }
+					clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+				}
+			}
+			if = {
+				limit = { original_tag = USA }
+				EFH = {
+					add_to_variable = { var = SRP_moon_base_progress value = -1 }
+					clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+				}
+			}
+		}
+	}
+
+	SRP_moon_base_acquire_unattended_booster = {
+		icon = GFX_decision_generic_air
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			OR = {
+				AND = { original_tag = EFH USA = { has_country_flag = SRP_moon_base_active } }
+				AND = { original_tag = USA EFH = { has_country_flag = SRP_moon_base_active } }
+			}
+			OR = {
+				has_country_flag = SRP_moon_base_rival_supply_chain_mapped
+				has_country_flag = EFH_HNA_lunar_policy_procurement
+			}
+		}
+
+		available = {
+			has_country_flag = SRP_moon_base_active
+			OR = {
+				AND = { original_tag = EFH USA = { has_country_flag = SRP_moon_base_active } }
+				AND = { original_tag = USA EFH = { has_country_flag = SRP_moon_base_active } }
+			}
+			OR = {
+				has_country_flag = SRP_moon_base_rival_supply_chain_mapped
+				has_country_flag = EFH_HNA_lunar_policy_procurement
+			}
+		}
+
+		fire_only_once = yes
+		cost = 90
+
+		ai_will_do = { base = 1 }
+
+		complete_effect = {
+			add_to_variable = { var = SRP_moon_base_progress value = 9 }
+			add_to_variable = { var = SRP_moon_base_procurement_heat value = 3 }
+			clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+			country_event = { id = srp_moon.6 days = 1 }
+			if = {
+				limit = { original_tag = EFH }
+				USA = {
+					add_to_variable = { var = SRP_moon_base_progress value = -2 }
+					clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+					country_event = { id = srp_moon.7 days = 2 }
+				}
+			}
+			if = {
+				limit = { original_tag = USA }
+				EFH = {
+					add_to_variable = { var = SRP_moon_base_progress value = -2 }
+					clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+					country_event = { id = srp_moon.7 days = 2 }
+				}
+			}
+		}
+	}
+
+	SRP_moon_base_expose_rival_scandal = {
+		icon = generic_political_actions
+
+		visible = {
+			has_country_flag = SRP_moon_base_active
+			OR = {
+				AND = {
+					original_tag = EFH
+					USA = { check_variable = { SRP_moon_base_procurement_heat > 2 } }
+				}
+				AND = {
+					original_tag = USA
+					EFH = { check_variable = { SRP_moon_base_procurement_heat > 2 } }
+				}
+			}
+		}
+
+		available = {
+			has_country_flag = SRP_moon_base_active
+			OR = {
+				AND = {
+					original_tag = EFH
+					USA = { check_variable = { SRP_moon_base_procurement_heat > 2 } }
+				}
+				AND = {
+					original_tag = USA
+					EFH = { check_variable = { SRP_moon_base_procurement_heat > 2 } }
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cost = 60
+
+		ai_will_do = { base = 2 }
+
+		complete_effect = {
+			if = {
+				limit = { original_tag = EFH }
+				USA = { country_event = { id = srp_moon.8 days = 1 } }
+			}
+			if = {
+				limit = { original_tag = USA }
+				EFH = { country_event = { id = srp_moon.8 days = 1 } }
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+add_namespace = laytheo
+
+country_event = {
+	id = laytheo.1
+	title = laytheo.1.t
+	desc = laytheo.1.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = laytheo.1.a
+		ai_chance = { base = 100 }
+	}
+}
+
+country_event = {
+	id = laytheo.2
+	title = laytheo.2.t
+	desc = laytheo.2.d
+	picture = GFX_report_event_generic_sky
+
+	is_triggered_only = yes
+
+	option = {
+		name = laytheo.2.a
+		set_country_flag = LD_laytheo_in_orbit
+		ai_chance = { base = 100 }
+	}
+}
+
+country_event = {
+	id = laytheo.3
+	title = laytheo.3.t
+	desc = laytheo.3.d
+	picture = GFX_report_event_generic_sky
+
+	is_triggered_only = yes
+
+	option = {
+		name = laytheo.3.a
+		set_global_flag = LD_coordination_ended
+		ai_chance = { base = 100 }
+	}
+}
+
+country_event = {
+	id = laytheo.4
+	title = laytheo.4.t
+	desc = laytheo.4.d
+	picture = GFX_report_event_generic_sky
+
+	is_triggered_only = yes
+
+	option = {
+		name = laytheo.4.a
+		ai_chance = { base = 100 }
+	}
+}

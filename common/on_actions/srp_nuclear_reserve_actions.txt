@@ -1,0 +1,87 @@
+on_actions = {
+
+	on_monthly_EFH = {
+		effect = {
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 29 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -30 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 30 }
+			}
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 9 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -10 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 10 }
+			}
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 4 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -5 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 5 }
+			}
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 0 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -1 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 1 }
+			}
+			clamp_variable = { var = SRP_nuclear_warheads min = 0 max = 999 }
+
+			if = {
+				limit = {
+					check_variable = { SRP_nuclear_warheads < 8 }
+					NOT = { has_idea = srp_critical_nuclear_reserve }
+				}
+				add_ideas = srp_critical_nuclear_reserve
+				country_event = { id = srp_nuclear.1 days = 1 }
+			}
+			if = {
+				limit = {
+					check_variable = { SRP_nuclear_warheads > 15 }
+					has_idea = srp_critical_nuclear_reserve
+				}
+				remove_ideas = srp_critical_nuclear_reserve
+			}
+		}
+	}
+
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 29 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -30 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 30 }
+			}
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 9 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -10 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 10 }
+			}
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 4 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -5 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 5 }
+			}
+			if = {
+				limit = { has_equipment = { srp_warhead_component_1 > 0 } }
+				add_equipment_to_stockpile = { type = srp_warhead_component_1 amount = -1 }
+				add_to_variable = { var = SRP_nuclear_warheads value = 1 }
+			}
+			clamp_variable = { var = SRP_nuclear_warheads min = 0 max = 999 }
+
+			if = {
+				limit = {
+					check_variable = { SRP_nuclear_warheads < 8 }
+					NOT = { has_idea = srp_critical_nuclear_reserve }
+				}
+				add_ideas = srp_critical_nuclear_reserve
+				country_event = { id = srp_nuclear.2 days = 1 }
+			}
+			if = {
+				limit = {
+					check_variable = { SRP_nuclear_warheads > 15 }
+					has_idea = srp_critical_nuclear_reserve
+				}
+				remove_ideas = srp_critical_nuclear_reserve
+			}
+		}
+	}
+
+}

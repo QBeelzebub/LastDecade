@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+
+		SRP_escalation_detente_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SRP_escalation_entente_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				production_speed_buildings_factor = 0.08
+				political_power_factor = 0.05
+			}
+		}
+
+		SRP_escalation_standoff_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.02
+				stability_factor = -0.01
+			}
+		}
+
+		SRP_escalation_rivalry_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+
+		SRP_escalation_coldwar_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		SRP_escalation_brink_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.08
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+}

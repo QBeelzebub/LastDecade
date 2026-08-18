@@ -1,0 +1,139 @@
+SRP_orbital_recalculate_surveillance_effect = {
+	remove_ideas = SRP_orbital_surveillance_tier_1
+	remove_ideas = SRP_orbital_surveillance_tier_2
+	remove_ideas = SRP_orbital_surveillance_tier_3
+	remove_ideas = SRP_orbital_surveillance_tier_4
+	remove_ideas = SRP_orbital_surveillance_tier_5
+
+	if = {
+		limit = {
+			check_variable = { var = SRP_surveillance_satellites value = 0 compare = greater_than }
+			NOT = { check_variable = { var = SRP_surveillance_satellites value = 3 compare = greater_than_or_equals } }
+		}
+		add_ideas = SRP_orbital_surveillance_tier_1
+	}
+	if = {
+		limit = {
+			check_variable = { var = SRP_surveillance_satellites value = 3 compare = greater_than_or_equals }
+			NOT = { check_variable = { var = SRP_surveillance_satellites value = 6 compare = greater_than_or_equals } }
+		}
+		add_ideas = SRP_orbital_surveillance_tier_2
+	}
+	if = {
+		limit = {
+			check_variable = { var = SRP_surveillance_satellites value = 6 compare = greater_than_or_equals }
+			NOT = { check_variable = { var = SRP_surveillance_satellites value = 11 compare = greater_than_or_equals } }
+		}
+		add_ideas = SRP_orbital_surveillance_tier_3
+	}
+	if = {
+		limit = {
+			check_variable = { var = SRP_surveillance_satellites value = 11 compare = greater_than_or_equals }
+			NOT = { check_variable = { var = SRP_surveillance_satellites value = 21 compare = greater_than_or_equals } }
+		}
+		add_ideas = SRP_orbital_surveillance_tier_4
+	}
+	if = {
+		limit = {
+			check_variable = { var = SRP_surveillance_satellites value = 21 compare = greater_than_or_equals }
+		}
+		add_ideas = SRP_orbital_surveillance_tier_5
+	}
+}
+
+SRP_orbital_update_total_effect = {
+	set_variable = { var = SRP_total_satellites value = 0 }
+	if = {
+		limit = { check_variable = { var = SRP_surveillance_satellites value = 0 compare = greater_than } }
+		add_to_variable = { var = SRP_total_satellites value = SRP_surveillance_satellites }
+	}
+	if = {
+		limit = { check_variable = { var = SRP_military_satellites value = 0 compare = greater_than } }
+		add_to_variable = { var = SRP_total_satellites value = SRP_military_satellites }
+	}
+	clamp_variable = { var = SRP_total_satellites min = 0 max = 999 }
+}
+
+SRP_orbital_recalculate_armed_warheads_effect = {
+	clamp_variable = { var = SRP_orbital_regular_warheads min = 0 max = 999 }
+	clamp_variable = { var = SRP_orbital_thermo_warheads min = 0 max = 999 }
+	set_variable = { var = SRP_orbital_armed_warheads value = 0 }
+	if = {
+		limit = { check_variable = { var = SRP_orbital_regular_warheads value = 0 compare = greater_than } }
+		add_to_variable = { var = SRP_orbital_armed_warheads value = SRP_orbital_regular_warheads }
+	}
+	if = {
+		limit = { check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than } }
+		add_to_variable = { var = SRP_orbital_armed_warheads value = SRP_orbital_thermo_warheads }
+	}
+	clamp_variable = { var = SRP_orbital_armed_warheads min = 0 max = 999 }
+}
+
+SRP_orbital_consume_regular_warhead_effect = {
+	add_to_variable = { var = SRP_orbital_regular_warheads value = -1 }
+	clamp_variable = { var = SRP_orbital_regular_warheads min = 0 max = 999 }
+	SRP_orbital_recalculate_armed_warheads_effect = yes
+}
+
+SRP_orbital_consume_thermo_warhead_effect = {
+	add_to_variable = { var = SRP_orbital_thermo_warheads value = -1 }
+	clamp_variable = { var = SRP_orbital_thermo_warheads min = 0 max = 999 }
+	SRP_orbital_recalculate_armed_warheads_effect = yes
+}
+
+SRP_orbital_consume_available_warhead_effect = {
+	if = {
+		limit = { check_variable = { var = SRP_orbital_regular_warheads value = 0 compare = greater_than } }
+		SRP_orbital_consume_regular_warhead_effect = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than } }
+		SRP_orbital_consume_thermo_warhead_effect = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = SRP_orbital_armed_warheads value = 0 compare = greater_than } }
+		add_to_variable = { var = SRP_orbital_armed_warheads value = -1 }
+		clamp_variable = { var = SRP_orbital_armed_warheads min = 0 max = 999 }
+	}
+}
+
+SRP_orbital_remove_excess_warhead_effect = {
+	SRP_orbital_recalculate_armed_warheads_effect = yes
+	if = {
+		limit = {
+			check_variable = { var = SRP_orbital_armed_warheads value = SRP_military_satellites compare = greater_than }
+			check_variable = { var = SRP_orbital_regular_warheads value = 0 compare = greater_than }
+		}
+		SRP_orbital_consume_regular_warhead_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { var = SRP_orbital_armed_warheads value = SRP_military_satellites compare = greater_than }
+			check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than }
+		}
+		SRP_orbital_consume_thermo_warhead_effect = yes
+	}
+	SRP_orbital_recalculate_armed_warheads_effect = yes
+}
+
+SRP_orbital_remove_satellite_effect = {
+	if = {
+		limit = { check_variable = { var = SRP_military_satellites value = 0 compare = greater_than } }
+		if = {
+			limit = { check_variable = { var = SRP_orbital_armed_warheads value = 0 compare = greater_than } }
+			SRP_orbital_consume_available_warhead_effect = yes
+		}
+		add_to_variable = { var = SRP_military_satellites value = -1 }
+		add_to_variable = { var = SRP_total_satellites value = -1 }
+		clamp_variable = { var = SRP_military_satellites min = 0 max = 999 }
+		SRP_orbital_remove_excess_warhead_effect = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = SRP_surveillance_satellites value = 0 compare = greater_than } }
+		add_to_variable = { var = SRP_surveillance_satellites value = -1 }
+		add_to_variable = { var = SRP_total_satellites value = -1 }
+	}
+	clamp_variable = { var = SRP_military_satellites min = 0 max = 999 }
+	clamp_variable = { var = SRP_surveillance_satellites min = 0 max = 999 }
+	clamp_variable = { var = SRP_total_satellites min = 0 max = 999 }
+}

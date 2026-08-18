@@ -1,0 +1,61 @@
+srp_generic_drone_mio = {
+	icon = GFX_idea_generic_air_organization
+
+	allowed = { NOT = { is_full_parasite = yes } }
+
+	equipment_type = { srp_fpv_drone_equipment }
+	research_categories = { srp_land_tech srp_electronics_tech }
+
+	initial_trait = {
+		name = srp_drone_initial
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+	}
+
+	trait = {
+		token = srp_drone_root
+		name = srp_drone_root
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.08
+			production_cost_factor = -0.05
+		}
+		ai_will_do = { base = 2 }
+	}
+
+	trait = {
+		token = srp_drone_t2a
+		name = srp_drone_t2a
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = srp_drone_root
+		all_parents = { srp_drone_root }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.04
+		}
+		ai_will_do = { base = 2 }
+	}
+
+	trait = {
+		token = srp_drone_t2b
+		name = srp_drone_t2b
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = srp_drone_root
+		all_parents = { srp_drone_root }
+
+		equipment_bonus = {
+			reliability = 0.06
+			build_cost_ic = -0.05
+		}
+		ai_will_do = { base = 2 }
+	}
+}

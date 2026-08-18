@@ -1,0 +1,472 @@
+ld_fire_protocol_sections = {
+	track = infantry
+	name = LD_SUBDOCTRINE_FIRE_PROTOCOL_SECTIONS
+	description = LD_SUBDOCTRINE_FIRE_PROTOCOL_SECTIONS_DESC
+	icon = GFX_elastic_defence_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_all_infantry = { defense = 0.05 }
+	rewards = {
+		ld_fire_teams = { category_all_infantry = { max_organisation = 5 } }
+		ld_clearance_drills = { dig_in_speed_factor = 0.05 }
+		ld_contact_rotation = { army_morale = 0.05 }
+		ld_suppression_lines = { land_reinforce_rate = 0.01 }
+	}
+}
+
+ld_rtg_contact_teams = {
+	track = infantry
+	name = LD_SUBDOCTRINE_RTG_CONTACT_TEAMS
+	description = LD_SUBDOCTRINE_RTG_CONTACT_TEAMS_DESC
+	icon = GFX_forward_observers_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_all_infantry = { soft_attack = 0.05 hard_attack = 0.03 }
+	rewards = {
+		ld_penetrator_distribution = { category_all_infantry = { hard_attack = 0.08 } }
+		ld_membrane_shot_training = { category_all_infantry = { breakthrough = 0.05 } }
+		ld_heat_discipline = { supply_consumption_factor = -0.03 }
+		ld_contact_reports = { coordination_bonus = 0.03 }
+	}
+}
+
+ld_deep_burn_engineering = {
+	track = combat_support
+	name = LD_SUBDOCTRINE_DEEP_BURN_ENGINEERING
+	description = LD_SUBDOCTRINE_DEEP_BURN_ENGINEERING_DESC
+	icon = GFX_combined_arms_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_support_battalions = { max_organisation = 5 }
+	army_morale = 0.04
+	rewards = {
+		ld_burn_lane_marking = { dig_in_speed_factor = 0.05 }
+		ld_root_depth_charges = { max_dig_in_factor = 0.05 }
+		ld_clearance_logistics = { supply_consumption_factor = -0.05 }
+		ld_engineer_followthrough = { land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_dispatcher_mapping_teams = {
+	track = combat_support
+	name = LD_SUBDOCTRINE_DISPATCHER_MAPPING_TEAMS
+	description = LD_SUBDOCTRINE_DISPATCHER_MAPPING_TEAMS_DESC
+	icon = GFX_c3i_theory_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	coordination_bonus = 0.05
+	rewards = {
+		ld_signal_plotting = { planning_speed = 0.05 }
+		ld_field_triangulation = { land_reinforce_rate = 0.01 }
+		ld_compromised_channel_drills = { org_loss_at_low_org_factor = -0.05 }
+		ld_mapping_serum_protocol = { max_command_power = 10 }
+	}
+}
+
+ld_sealed_mechanized_columns = {
+	track = armor
+	name = LD_SUBDOCTRINE_SEALED_MECHANIZED_COLUMNS
+	description = LD_SUBDOCTRINE_SEALED_MECHANIZED_COLUMNS_DESC
+	icon = GFX_mechanised_offensive_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_all_armor = { max_organisation = 3 }
+	rewards = {
+		ld_overpressure_drills = { category_all_armor = { defense = 0.05 } }
+		ld_filtered_maintenance = { attrition = -0.05 }
+		ld_column_recovery = { org_loss_when_moving = -0.05 }
+		ld_sealed_breakthrough = { category_all_armor = { breakthrough = 0.05 } }
+	}
+}
+
+ld_forward_beckon_suppression = {
+	track = armor
+	name = LD_SUBDOCTRINE_FORWARD_BECKON_SUPPRESSION
+	description = LD_SUBDOCTRINE_FORWARD_BECKON_SUPPRESSION_DESC
+	icon = GFX_armored_operations_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	army_speed_factor = 0.03
+	category_tanks = { soft_attack = 0.05 }
+	rewards = {
+		ld_fast_burn_groups = { org_loss_when_moving = -0.05 }
+		ld_node_pressure = { category_tanks = { breakthrough = 0.05 } }
+		ld_mobile_rtg_reserve = { supply_consumption_factor = -0.03 }
+		ld_armored_clearance = { land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_quarantine_front_doctrine = {
+	track = operations
+	name = LD_SUBDOCTRINE_QUARANTINE_FRONT_DOCTRINE
+	description = LD_SUBDOCTRINE_QUARANTINE_FRONT_DOCTRINE_DESC
+	icon = GFX_prepared_defense_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	max_dig_in_factor = 0.05
+	rewards = {
+		ld_firebreak_lines = { dig_in_speed_factor = 0.05 }
+		ld_zone_denial_orders = { out_of_supply_factor = -0.05 }
+		ld_civilian_filter_points = { supply_consumption_factor = -0.03 }
+		ld_containment_staff = { max_command_power = 10 }
+	}
+}
+
+ld_corridor_warfare = {
+	track = operations
+	name = LD_SUBDOCTRINE_CORRIDOR_WARFARE
+	description = LD_SUBDOCTRINE_CORRIDOR_WARFARE_DESC
+	icon = GFX_tactical_control_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	no_supply_grace = 24
+	rewards = {
+		ld_route_proving = { planning_speed = 0.05 }
+		ld_mobile_waystations = { army_speed_factor = 0.03 }
+		ld_fortress_train_logic = { no_supply_grace = 24 }
+		ld_rearguard_timetables = { land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_combined_arms_assault = {
+	track = infantry
+	name = LD_SUBDOCTRINE_COMBINED_ARMS_ASSAULT
+	description = LD_SUBDOCTRINE_COMBINED_ARMS_ASSAULT_DESC
+	icon = GFX_mobile_warfare_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_all_infantry = { soft_attack = 0.05 breakthrough = 0.03 }
+	rewards = {
+		ld_infantry_tank_coordination = { category_all_infantry = { max_organisation = 5 } }
+		ld_assault_section_training = { category_all_infantry = { soft_attack = 0.03 } }
+		ld_fire_and_movement = { army_morale = 0.05 }
+		ld_exploitation_reserve = { land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_light_infantry_raiding = {
+	track = infantry
+	name = LD_SUBDOCTRINE_LIGHT_INFANTRY_RAIDING
+	description = LD_SUBDOCTRINE_LIGHT_INFANTRY_RAIDING_DESC
+	icon = GFX_elastic_defence_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_all_infantry = { max_organisation = 8 }
+	supply_consumption_factor = -0.05
+	rewards = {
+		ld_infiltration_doctrine = { recon_factor = 0.05 }
+		ld_disruption_teams = { coordination_bonus = 0.03 }
+		ld_raider_sustainment = { out_of_supply_factor = -0.05 }
+		ld_dispersal_tactics = { org_loss_at_low_org_factor = -0.05 }
+	}
+}
+
+ld_joint_fires_cell = {
+	track = combat_support
+	name = LD_SUBDOCTRINE_JOINT_FIRES_CELL
+	description = LD_SUBDOCTRINE_JOINT_FIRES_CELL_DESC
+	icon = GFX_combined_arms_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_line_artillery = { soft_attack = 0.05 }
+	breakthrough_factor = 0.03
+	rewards = {
+		ld_forward_observers_net = { planning_speed = 0.05 }
+		ld_cross_domain_coordination = { coordination_bonus = 0.04 }
+		ld_suppression_timing = { category_line_artillery = { max_organisation = 5 } }
+		ld_counter_battery_protocols = { category_line_artillery = { hard_attack = 0.05 } }
+	}
+}
+
+ld_hardened_logistics = {
+	track = combat_support
+	name = LD_SUBDOCTRINE_HARDENED_LOGISTICS
+	description = LD_SUBDOCTRINE_HARDENED_LOGISTICS_DESC
+	icon = GFX_c3i_theory_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	supply_consumption_factor = -0.06
+	land_reinforce_rate = 0.01
+	rewards = {
+		ld_dispersed_supply_nodes = { out_of_supply_factor = -0.05 }
+		ld_forward_depots = { no_supply_grace = 12 }
+		ld_redundant_communications = { max_command_power = 10 }
+		ld_maintenance_reserve = { attrition = -0.05 }
+	}
+}
+
+ld_armored_exploitation = {
+	track = armor
+	name = LD_SUBDOCTRINE_ARMORED_EXPLOITATION
+	description = LD_SUBDOCTRINE_ARMORED_EXPLOITATION_DESC
+	icon = GFX_armored_operations_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	army_speed_factor = 0.05
+	category_tanks = { breakthrough = 0.07 }
+	rewards = {
+		ld_deep_penetration_orders = { org_loss_when_moving = -0.05 }
+		ld_exploitation_group_doctrine = { category_tanks = { soft_attack = 0.05 } }
+		ld_encirclement_procedures = { additional_brigade_column_size = 1 }
+		ld_armored_spearhead_reserve = { land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_anti_access_barrier = {
+	track = armor
+	name = LD_SUBDOCTRINE_ANTI_ACCESS_BARRIER
+	description = LD_SUBDOCTRINE_ANTI_ACCESS_BARRIER_DESC
+	icon = GFX_prepared_defense_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	category_tanks = { defense = 0.07 }
+	max_dig_in_factor = 0.05
+	rewards = {
+		ld_layered_tank_screen = { category_all_armor = { defense = 0.05 } }
+		ld_standoff_engagement_range = { category_tanks = { hard_attack = 0.05 } }
+		ld_prepared_kill_zones = { dig_in_speed_factor = 0.05 }
+		ld_reserve_counterattack_doctrine = { army_morale = 0.05 }
+	}
+}
+
+ld_joint_command_c2 = {
+	track = operations
+	name = LD_SUBDOCTRINE_JOINT_COMMAND_C2
+	description = LD_SUBDOCTRINE_JOINT_COMMAND_C2_DESC
+	icon = GFX_c3i_theory_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	planning_speed = 0.05
+	coordination_bonus = 0.05
+	rewards = {
+		ld_theater_data_links = { recon_factor = 0.05 }
+		ld_joint_targeting_cell = { max_command_power = 15 }
+		ld_battlespace_fusion = { planning_speed = 0.05 }
+		ld_command_survivability = { org_loss_at_low_org_factor = -0.05 }
+	}
+}
+
+ld_expeditionary_posture = {
+	track = operations
+	name = LD_SUBDOCTRINE_EXPEDITIONARY_POSTURE
+	description = LD_SUBDOCTRINE_EXPEDITIONARY_POSTURE_DESC
+	icon = GFX_forward_observers_medium
+	xp_cost = 100
+	xp_type = army
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	ai_will_do = { base = 1 }
+	army_speed_factor = 0.05
+	org_loss_when_moving = -0.05
+	rewards = {
+		ld_rapid_deployment_protocols = { army_speed_factor = 0.03 }
+		ld_out_of_area_sustainment = { out_of_supply_factor = -0.05 }
+		ld_strategic_lift_doctrine = { no_supply_grace = 12 }
+		ld_forward_presence_concept = { land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_parasite_rupter_surge = {
+	track = parasite_broods
+	name = LD_SUBDOCTRINE_PARASITE_RUPTER_SURGE
+	description = LD_SUBDOCTRINE_PARASITE_RUPTER_SURGE_DESC
+	icon = GFX_elastic_defence_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 2 }
+	category_parasite_swarm = { soft_attack = 0.05 }
+	army_morale = 0.03
+	rewards = {
+		ld_parasite_swarm_press = { category_parasite_swarm = { max_organisation = 5 } }
+		ld_parasite_breach_contact = { breakthrough_factor = 0.03 }
+		ld_parasite_hunger_protocol = { army_morale = 0.05 }
+		ld_parasite_mass_wave = { land_reinforce_rate = 0.01 }
+	}
+}
+
+ld_parasite_assimilated_screen = {
+	track = parasite_broods
+	name = LD_SUBDOCTRINE_PARASITE_ASSIMILATED_SCREEN
+	description = LD_SUBDOCTRINE_PARASITE_ASSIMILATED_SCREEN_DESC
+	icon = GFX_forward_observers_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 1 }
+	category_parasite_swarm = { defense = 0.05 }
+	org_loss_at_low_org_factor = -0.03
+	rewards = {
+		ld_parasite_host_advance = { land_reinforce_rate = 0.01 }
+		ld_parasite_screen_discipline = { org_loss_at_low_org_factor = -0.05 }
+		ld_parasite_contact_absorption = { army_morale = 0.05 }
+		ld_parasite_expendable_vanguard = { category_parasite_swarm = { breakthrough = 0.03 } }
+	}
+}
+
+ld_parasite_bolster_web = {
+	track = parasite_organs
+	name = LD_SUBDOCTRINE_PARASITE_BOLSTER_WEB
+	description = LD_SUBDOCTRINE_PARASITE_BOLSTER_WEB_DESC
+	icon = GFX_combined_arms_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 2 }
+	army_morale = 0.04
+	land_reinforce_rate = 0.01
+	rewards = {
+		ld_parasite_field_regeneration = { land_reinforce_rate = 0.02 }
+		ld_parasite_bolster_distribution = { army_morale = 0.05 }
+		ld_parasite_sustain_pulse = { supply_consumption_factor = -0.03 }
+		ld_parasite_recovery_web = { org_loss_at_low_org_factor = -0.05 }
+	}
+}
+
+ld_parasite_summoner_anchor = {
+	track = parasite_organs
+	name = LD_SUBDOCTRINE_PARASITE_SUMMONER_ANCHOR
+	description = LD_SUBDOCTRINE_PARASITE_SUMMONER_ANCHOR_DESC
+	icon = GFX_c3i_theory_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 1 }
+	land_reinforce_rate = 0.02
+	supply_consumption_factor = -0.03
+	rewards = {
+		ld_parasite_anchor_deployment = { no_supply_grace = 24 }
+		ld_parasite_spawn_protocols = { land_reinforce_rate = 0.02 }
+		ld_parasite_forward_summoning = { supply_consumption_factor = -0.05 }
+		ld_parasite_node_recovery = { army_morale = 0.03 }
+	}
+}
+
+ld_parasite_membrane_advance = {
+	track = parasite_warbeasts
+	name = LD_SUBDOCTRINE_PARASITE_MEMBRANE_ADVANCE
+	description = LD_SUBDOCTRINE_PARASITE_MEMBRANE_ADVANCE_DESC
+	icon = GFX_mechanised_offensive_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 2 }
+	category_parasite_apex = { defense = 0.05 }
+	army_morale = 0.02
+	rewards = {
+		ld_parasite_gel_saturation = { category_parasite_apex = { max_organisation = 5 } }
+		ld_parasite_membrane_pressure = { breakthrough_factor = 0.03 }
+		ld_parasite_vanguard_conditioning = { army_morale = 0.03 }
+		ld_parasite_hardened_push = { category_parasite_apex = { hard_attack = 0.05 } }
+	}
+}
+
+ld_parasite_mangler_vanguard = {
+	track = parasite_warbeasts
+	name = LD_SUBDOCTRINE_PARASITE_MANGLER_VANGUARD
+	description = LD_SUBDOCTRINE_PARASITE_MANGLER_VANGUARD_DESC
+	icon = GFX_mobile_warfare_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 1 }
+	category_parasite_apex = { soft_attack = 0.05 }
+	coordination_bonus = 0.02
+	rewards = {
+		ld_parasite_strike_teleport = { army_speed_factor = 0.03 }
+		ld_parasite_mangler_coordination = { coordination_bonus = 0.03 }
+		ld_parasite_vanguard_persistence = { land_reinforce_rate = 0.01 }
+		ld_parasite_elimination_protocol = { category_parasite_apex = { breakthrough = 0.05 } }
+	}
+}
+
+ld_parasite_beckon_command_web = {
+	track = parasite_web
+	name = LD_SUBDOCTRINE_PARASITE_BECKON_COMMAND_WEB
+	description = LD_SUBDOCTRINE_PARASITE_BECKON_COMMAND_WEB_DESC
+	icon = GFX_grand_battle_plan_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 2 }
+	coordination_bonus = 0.05
+	planning_speed = 0.05
+	rewards = {
+		ld_parasite_node_link = { planning_speed = 0.05 }
+		ld_parasite_theater_signal = { coordination_bonus = 0.05 }
+		ld_parasite_stage_sequencing = { max_command_power = 10 }
+		ld_parasite_synchronized_push = { land_reinforce_rate = 0.01 }
+	}
+}
+
+ld_parasite_dispatcher_grid = {
+	track = parasite_web
+	name = LD_SUBDOCTRINE_PARASITE_DISPATCHER_GRID
+	description = LD_SUBDOCTRINE_PARASITE_DISPATCHER_GRID_DESC
+	icon = GFX_mobile_warfare_medium
+	xp_cost = 100
+	xp_type = army
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	ai_will_do = { base = 1 }
+	org_loss_when_moving = -0.10
+	army_speed_factor = 0.03
+	rewards = {
+		ld_parasite_transit_protocols = { army_speed_factor = 0.03 }
+		ld_parasite_displacement_timing = { org_loss_when_moving = -0.05 }
+		ld_parasite_grid_coverage = { planning_speed = 0.05 }
+		ld_parasite_reappearance_shock = { breakthrough_factor = 0.03 }
+	}
+}

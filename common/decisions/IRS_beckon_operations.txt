@@ -1,0 +1,110 @@
+irs_beckon_operations = {
+	IRS_directed_spore_burst = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				NOT = { is_controlled_by = ROOT }
+				any_neighbor_state = {
+					is_controlled_by = ROOT
+					beckon_cluster > 0
+				}
+			}
+		}
+
+		target_root_trigger = {
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+				any_neighbor_state = {
+					is_controlled_by = ROOT
+					beckon_cluster > 0
+				}
+			}
+		}
+
+		visible = {
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		available = {
+			check_variable = { global.srp_crisis_enabled > 0 }
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+				any_neighbor_state = {
+					is_controlled_by = ROOT
+					beckon_cluster > 0
+				}
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 60
+
+		modifier = {
+			political_power_gain = -0.10
+		}
+
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = { infrastructure > 0 }
+					remove_building = { type = infrastructure level = 1 }
+				}
+				if = {
+					limit = { industrial_complex > 0 }
+					remove_building = { type = industrial_complex level = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { industrial_complex > 0 }
+						arms_factory > 0
+					}
+					remove_building = { type = arms_factory level = 1 }
+				}
+				if = {
+					limit = { NOT = { has_dynamic_modifier = { modifier = spore_burst_contamination } } }
+					add_dynamic_modifier = {
+						modifier = spore_burst_contamination
+						days = 60
+					}
+				}
+				add_to_variable = { var = iris_infestation_level value = 15 }
+				if = {
+					limit = { check_variable = { global.srp_crisis_intensity > 1 } }
+					add_to_variable = { var = iris_infestation_level value = 10 }
+				}
+				clamp_variable = { var = iris_infestation_level min = 0 max = 100 }
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+			modifier = {
+				add = 200
+				has_war = yes
+			}
+		}
+	}
+}

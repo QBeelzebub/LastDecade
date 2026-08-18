@@ -1,0 +1,50 @@
+leader_traits = {
+
+	operative_sleeper_agent = {
+		type = operative
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			base = 1
+			modifier = {
+				add = 99
+				FROM = { is_parasite_nation = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { NOT = { is_parasite_nation = yes } }
+			}
+		}
+
+		modifier = {
+			operation_infiltrate_outcome = 0.25
+			operation_infiltrate_risk = -0.25
+			own_operative_detection_chance_factor = -0.25
+		}
+	}
+
+	operative_parasite_hunter = {
+		type = operative
+		trait_type = basic_trait
+
+		new_commander_weight = {
+			base = 1
+			modifier = {
+				add = 19
+				FROM = { has_done_agency_upgrade = upgrade_LD_parasite_hunters }
+			}
+			modifier = {
+				factor = 0
+				FROM = { is_full_parasite = yes }
+			}
+		}
+
+		cost = 500
+
+		modifier = {
+			own_operative_detection_chance_factor = -0.15
+			operation_infiltrate_outcome = 0.15
+			operation_capture_cipher_outcome = 0.25
+		}
+	}
+}

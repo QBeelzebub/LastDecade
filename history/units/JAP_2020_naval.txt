@@ -1,0 +1,22 @@
+units = {
+	fleet = {
+		name = "Japan Maritime Self-Defense Force"
+		naval_base = 9998
+		task_force = {
+			name = "Escort Flotilla 1"
+			location = 9998
+			ship = { name = "JS Izumo" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = JAP version_name = "Izumo Class" } } }
+			ship = { name = "JS Kaga" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = JAP version_name = "Izumo Class" } } }
+			ship = { name = "JS Atago" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Atago Class" } } }
+			ship = { name = "JS Ashigara" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Atago Class" } } }
+			ship = { name = "JS Akizuki" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Akizuki Class" } } }
+			ship = { name = "JS Teruzuki" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Akizuki Class" } } }
+		}
+		task_force = {
+			name = "Submarine Flotilla 1"
+			location = 9998
+			ship = { name = "JS Soryu" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Soryu Class" } } }
+			ship = { name = "JS Unryu" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Soryu Class" } } }
+		}
+	}
+}

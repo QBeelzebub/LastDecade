@@ -1,0 +1,36 @@
+SRP_is_parasite_tag = {
+	OR = {
+		original_tag = IRS
+		original_tag = KNX
+		original_tag = TET
+	}
+}
+
+is_parasite_nation = {
+	OR = {
+		has_country_flag = is_parasite_nation
+		SRP_is_parasite_tag = yes
+	}
+}
+
+is_full_parasite = {
+	OR = {
+		has_country_flag = is_parasite_nation
+		SRP_is_parasite_tag = yes
+	}
+	NOT = { has_country_flag = is_hybrid_nation }
+}
+
+state_is_iris_bloc_owned = {
+	OR = {
+		is_owned_by = IRS
+		owner = { is_puppet_of = IRS }
+	}
+}
+
+state_is_iris_bloc_controlled = {
+	OR = {
+		is_controlled_by = IRS
+		controller = { is_puppet_of = IRS }
+	}
+}

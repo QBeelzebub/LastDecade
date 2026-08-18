@@ -1,0 +1,1497 @@
+EFH_rheinmetall_land_mio = {
+	icon = GFX_idea_generic_armor_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { srp_mbt_chassis }
+	research_categories = { srp_armor_tech srp_land_tech }
+
+	initial_trait = {
+		name = EFH_rheinmetall_land_initial
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = EFH_rheinmetall_root
+		name = EFH_rheinmetall_root
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_rheinmetall_t2a
+		name = EFH_rheinmetall_t2a
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_rheinmetall_root
+		all_parents = { EFH_rheinmetall_root }
+
+		equipment_bonus = {
+			defense = 0.06
+			armor_value = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_rheinmetall_t2b
+		name = EFH_rheinmetall_t2b
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_rheinmetall_root
+		all_parents = { EFH_rheinmetall_root }
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			ap_attack = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_rheinmetall_t3a
+		name = EFH_rheinmetall_t3a
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_rheinmetall_t2a
+		all_parents = { EFH_rheinmetall_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.08
+			armor_value = 0.06
+			reliability = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_rheinmetall_t3c
+		name = EFH_rheinmetall_t3c
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_rheinmetall_t2a
+		any_parent = { EFH_rheinmetall_t2a EFH_rheinmetall_t2b }
+
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.06
+		}
+
+		on_complete = {
+			EFH = { EFH_bop_very_low_ef_effect = yes }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_rheinmetall_t3b
+		name = EFH_rheinmetall_t3b
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_rheinmetall_t2b
+		all_parents = { EFH_rheinmetall_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.10
+			ap_attack = 0.08
+			breakthrough = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_rheinmetall_t4
+		name = EFH_rheinmetall_t4
+		icon = GFX_generic_mio_department_icon_tank_heavy
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_rheinmetall_t3a
+		any_parent = { EFH_rheinmetall_t3a EFH_rheinmetall_t3c EFH_rheinmetall_t3b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			armor_value = 0.06
+			defense = 0.05
+			ap_attack = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			EFH = { EFH_bop_low_ef_effect = yes }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_knds_land_mio = {
+	icon = GFX_idea_generic_armor_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { srp_mbt_chassis }
+	research_categories = { srp_armor_tech srp_land_tech }
+
+	initial_trait = {
+		name = EFH_knds_land_initial
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = EFH_knds_root
+		name = EFH_knds_root
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_knds_t2a
+		name = EFH_knds_t2a
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_knds_root
+		all_parents = { EFH_knds_root }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_knds_t2b
+		name = EFH_knds_t2b
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_knds_root
+		all_parents = { EFH_knds_root }
+
+		equipment_bonus = {
+			maximum_speed = 0.06
+			breakthrough = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_knds_t3a
+		name = EFH_knds_t3a
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_knds_t2a
+		all_parents = { EFH_knds_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.06
+			breakthrough = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_knds_t3b
+		name = EFH_knds_t3b
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_knds_t2b
+		all_parents = { EFH_knds_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = 0.06
+		}
+		production_bonus = {
+			production_resource_need_factor = -0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_knds_t4
+		name = EFH_knds_t4
+		icon = GFX_generic_mio_department_icon_tank_medium
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_knds_t3a
+		any_parent = { EFH_knds_t3a EFH_knds_t3b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			armor_value = 0.05
+			maximum_speed = 0.04
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_tkms_naval_mio = {
+	icon = GFX_idea_generic_navy_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { srp_carrier_hull srp_submarine_hull srp_destroyer_hull srp_battleship_hull }
+	research_categories = { naval_equipment }
+
+	initial_trait = {
+		name = EFH_tkms_naval_initial
+		equipment_bonus = {
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = EFH_tkms_root
+		name = EFH_tkms_root
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			naval_speed = 0.03
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_tkms_t2a
+		name = EFH_tkms_t2a
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_tkms_root
+		all_parents = { EFH_tkms_root }
+
+		equipment_bonus = {
+			max_strength = 0.05
+			reliability = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_tkms_t2b
+		name = EFH_tkms_t2b
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_tkms_root
+		all_parents = { EFH_tkms_root }
+
+		equipment_bonus = {
+			naval_speed = 0.04
+			anti_air_attack = 0.05
+			sub_detection = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_tkms_t3a
+		name = EFH_tkms_t3a
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_tkms_t2a
+		all_parents = { EFH_tkms_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			max_strength = 0.08
+			naval_speed = 0.06
+			reliability = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_tkms_t3b
+		name = EFH_tkms_t3b
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_tkms_t2b
+		all_parents = { EFH_tkms_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			sub_detection = 0.10
+			anti_air_attack = 0.08
+			max_strength = 0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_tkms_t4
+		name = EFH_tkms_t4
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_tkms_t3a
+		any_parent = { EFH_tkms_t3a EFH_tkms_t3b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			max_strength = 0.07
+			naval_speed = 0.05
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_naval_group_mio = {
+	icon = GFX_idea_generic_navy_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { srp_carrier_hull srp_submarine_hull srp_destroyer_hull srp_battleship_hull }
+	research_categories = { naval_equipment }
+
+	initial_trait = {
+		name = EFH_naval_group_initial
+		equipment_bonus = {
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = EFH_naval_group_root
+		name = EFH_naval_group_root
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			naval_speed = 0.03
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_naval_group_t2a
+		name = EFH_naval_group_t2a
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_naval_group_root
+		all_parents = { EFH_naval_group_root }
+
+		equipment_bonus = {
+			naval_speed = 0.06
+			max_strength = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_naval_group_t2b
+		name = EFH_naval_group_t2b
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_naval_group_root
+		all_parents = { EFH_naval_group_root }
+
+		equipment_bonus = {
+			sub_detection = 0.08
+			anti_air_attack = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_naval_group_t3a
+		name = EFH_naval_group_t3a
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_naval_group_t2a
+		all_parents = { EFH_naval_group_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			max_strength = 0.10
+			naval_speed = 0.05
+			reliability = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_naval_group_t3b
+		name = EFH_naval_group_t3b
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_naval_group_t2b
+		all_parents = { EFH_naval_group_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			sub_detection = 0.10
+			max_strength = 0.06
+			naval_speed = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_naval_group_t4
+		name = EFH_naval_group_t4
+		icon = GFX_generic_mio_department_icon_ship_big
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_naval_group_t3a
+		any_parent = { EFH_naval_group_t3a EFH_naval_group_t3b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			max_strength = 0.08
+			naval_speed = 0.05
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_airbus_aerospace_mio = {
+	icon = GFX_idea_generic_air_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_large_plane }
+	research_categories = { srp_air_tech srp_fighter_tech srp_bomber_tech }
+
+	initial_trait = {
+		name = EFH_airbus_aero_initial
+		equipment_bonus = {
+			build_cost_ic = -0.03
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = EFH_airbus_root
+		name = EFH_airbus_root
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			air_superiority = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_airbus_t2a
+		name = EFH_airbus_t2a
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_airbus_root
+		all_parents = { EFH_airbus_root }
+
+		equipment_bonus = {
+			air_agility = 0.06
+			air_defence = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_airbus_t2b
+		name = EFH_airbus_t2b
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_airbus_root
+		all_parents = { EFH_airbus_root }
+
+		equipment_bonus = {
+			air_range = 0.07
+			reliability = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_airbus_t3a
+		name = EFH_airbus_t3a
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_airbus_t2a
+		all_parents = { EFH_airbus_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_agility = 0.08
+			air_defence = 0.06
+			air_superiority = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_airbus_t3c
+		name = EFH_airbus_t3c
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_airbus_t2a
+		any_parent = { EFH_airbus_t2a EFH_airbus_t2b }
+
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.07
+		}
+
+		on_complete = {
+			EFH = { EFH_bop_very_low_ef_effect = yes }
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_airbus_t3b
+		name = EFH_airbus_t3b
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_airbus_t2b
+		all_parents = { EFH_airbus_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_ground_attack = 0.08
+			naval_strike_attack = 0.06
+			air_range = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_airbus_t4
+		name = EFH_airbus_t4
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_airbus_t3a
+		any_parent = { EFH_airbus_t3a EFH_airbus_t3c EFH_airbus_t3b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_agility = 0.05
+			air_defence = 0.05
+			air_ground_attack = 0.05
+			air_superiority = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		on_complete = {
+			EFH = { EFH_bop_low_ef_effect = yes }
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_diehl_ordnance_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = {
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+		infantry_equipment
+	}
+	research_categories = { srp_artillery_tech srp_land_tech }
+
+	initial_trait = {
+		name = EFH_diehl_ord_initial
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = EFH_diehl_root
+		name = EFH_diehl_root
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_diehl_t2a
+		name = EFH_diehl_t2a
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_diehl_root
+		all_parents = { EFH_diehl_root }
+
+		equipment_bonus = {
+			defense = 0.06
+			soft_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_diehl_t2b
+		name = EFH_diehl_t2b
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_diehl_root
+		all_parents = { EFH_diehl_root }
+
+		equipment_bonus = {
+			defense = 0.05
+			hard_attack = 0.04
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_diehl_t3
+		name = EFH_diehl_t3
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_diehl_t2a
+		any_parent = { EFH_diehl_t2a EFH_diehl_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.10
+			soft_attack = 0.06
+			hard_attack = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_diehl_t4
+		name = EFH_diehl_t4
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_diehl_t3
+		all_parents = { EFH_diehl_t3 }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.08
+			soft_attack = 0.06
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_mbda_ordnance_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = {
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+		infantry_equipment
+	}
+	research_categories = { srp_artillery_tech srp_land_tech }
+
+	initial_trait = {
+		name = EFH_mbda_ord_initial
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = EFH_mbda_root
+		name = EFH_mbda_root
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_mbda_t2a
+		name = EFH_mbda_t2a
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_mbda_root
+		all_parents = { EFH_mbda_root }
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			ap_attack = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_mbda_t2b
+		name = EFH_mbda_t2b
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_mbda_root
+		all_parents = { EFH_mbda_root }
+
+		equipment_bonus = {
+			soft_attack = 0.07
+			breakthrough = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_mbda_t3
+		name = EFH_mbda_t3
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_mbda_t2a
+		any_parent = { EFH_mbda_t2a EFH_mbda_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.08
+			ap_attack = 0.06
+			soft_attack = 0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_mbda_t4
+		name = EFH_mbda_t4
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_mbda_t3
+		all_parents = { EFH_mbda_t3 }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			soft_attack = 0.06
+			ap_attack = 0.05
+			breakthrough = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_thales_ordnance_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = {
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+		infantry_equipment
+	}
+	research_categories = { srp_artillery_tech srp_land_tech }
+
+	initial_trait = {
+		name = EFH_thales_ord_initial
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+	}
+
+	trait = {
+		token = EFH_thales_root
+		name = EFH_thales_root
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.03
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_thales_t2a
+		name = EFH_thales_t2a
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_thales_root
+		all_parents = { EFH_thales_root }
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_thales_t2b
+		name = EFH_thales_t2b
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_thales_root
+		all_parents = { EFH_thales_root }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			defense = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_thales_t3
+		name = EFH_thales_t3
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_thales_t2a
+		any_parent = { EFH_thales_t2a EFH_thales_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.07
+			soft_attack = 0.07
+			ap_attack = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_thales_t4
+		name = EFH_thales_t4
+		icon = GFX_generic_mio_department_icon_artillery_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_thales_t3
+		all_parents = { EFH_thales_t3 }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			hard_attack = 0.06
+			soft_attack = 0.06
+			ap_attack = 0.05
+			defense = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_leonardo_logistics_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = {
+		support_equipment
+		motorized_equipment
+		mechanized_equipment
+		infantry_equipment
+	}
+	research_categories = { srp_motorized_tech srp_land_tech srp_armor_tech }
+
+	initial_trait = {
+		name = EFH_leonardo_log_initial
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = EFH_leonardo_root
+		name = EFH_leonardo_root
+		icon = GFX_generic_mio_department_icon_special_forces
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_leonardo_t2a
+		name = EFH_leonardo_t2a
+		icon = GFX_generic_mio_department_icon_special_forces
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_leonardo_root
+		all_parents = { EFH_leonardo_root }
+
+		equipment_bonus = {
+			maximum_speed = 0.06
+			reliability = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_leonardo_t2b
+		name = EFH_leonardo_t2b
+		icon = GFX_generic_mio_department_icon_special_forces
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_leonardo_root
+		all_parents = { EFH_leonardo_root }
+
+		equipment_bonus = {
+			breakthrough = 0.05
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_leonardo_t3
+		name = EFH_leonardo_t3
+		icon = GFX_generic_mio_department_icon_special_forces
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_leonardo_t2a
+		any_parent = { EFH_leonardo_t2a EFH_leonardo_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			maximum_speed = 0.07
+			breakthrough = 0.06
+			reliability = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_leonardo_t4
+		name = EFH_leonardo_t4
+		icon = GFX_generic_mio_department_icon_special_forces
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_leonardo_t3
+		all_parents = { EFH_leonardo_t3 }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = 0.06
+			breakthrough = 0.05
+			fuel_consumption = -0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_saab_aerospace_mio = {
+	icon = GFX_idea_generic_air_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { mio_cat_eq_all_small_plane }
+	research_categories = { srp_air_tech srp_fighter_tech srp_electronics_tech srp_radar_tech }
+
+	initial_trait = {
+		name = EFH_saab_aero_initial
+		equipment_bonus = {
+			build_cost_ic = -0.03
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = EFH_saab_root
+		name = EFH_saab_root
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			air_agility = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_saab_t2a
+		name = EFH_saab_t2a
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_saab_root
+		all_parents = { EFH_saab_root }
+
+		equipment_bonus = {
+			air_agility = 0.06
+			build_cost_ic = -0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_saab_t2b
+		name = EFH_saab_t2b
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_saab_root
+		all_parents = { EFH_saab_root }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			air_range = 0.06
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_saab_t3a
+		name = EFH_saab_t3a
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_saab_t2a
+		all_parents = { EFH_saab_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			air_agility = 0.08
+			air_superiority = 0.06
+			air_defence = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_saab_t3c
+		name = EFH_saab_t3c
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_saab_t2a
+		any_parent = { EFH_saab_t2a EFH_saab_t2b }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			reliability = 0.04
+			build_cost_ic = -0.04
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_saab_t3b
+		name = EFH_saab_t3b
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_saab_t2b
+		all_parents = { EFH_saab_t2b }
+
+		special_trait_background = yes
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.06
+		}
+		equipment_bonus = {
+			air_superiority = 0.06
+			air_range = 0.05
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_saab_t4
+		name = EFH_saab_t4
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_saab_t3a
+		any_parent = { EFH_saab_t3a EFH_saab_t3c EFH_saab_t3b }
+
+		special_trait_background = yes
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			air_agility = 0.05
+			air_superiority = 0.05
+			air_defence = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}
+
+EFH_heckler_koch_infantry_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = EFH }
+
+	equipment_type = { mio_cat_eq_all_infantry_and_support_equipment }
+	research_categories = { infantry_weapons support_tech }
+
+	initial_trait = {
+		name = EFH_hk_initial
+		equipment_bonus = {
+			build_cost_ic = -0.03
+			reliability = 0.03
+		}
+	}
+
+	trait = {
+		token = EFH_hk_root
+		name = EFH_hk_root
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.04
+		}
+		equipment_bonus = {
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_hk_t2a
+		name = EFH_hk_t2a
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_hk_root
+		all_parents = { EFH_hk_root }
+
+		equipment_bonus = {
+			soft_attack = 0.06
+			reliability = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_hk_t2b
+		name = EFH_hk_t2b
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_hk_root
+		all_parents = { EFH_hk_root }
+
+		equipment_bonus = {
+			defense = 0.06
+			max_strength = 0.05
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_hk_t3a
+		name = EFH_hk_t3a
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_hk_t2a
+		all_parents = { EFH_hk_t2a }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			breakthrough = 0.05
+			reliability = 0.04
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_hk_t3c
+		name = EFH_hk_t3c
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_hk_t2a
+		any_parent = { EFH_hk_t2a EFH_hk_t2b }
+
+		equipment_bonus = {
+			build_cost_ic = -0.05
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.07
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_hk_t3b
+		name = EFH_hk_t3b
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_hk_t2b
+		all_parents = { EFH_hk_t2b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			defense = 0.08
+			max_strength = 0.06
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_hk_t4
+		name = EFH_hk_t4
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_hk_t3a
+		any_parent = { EFH_hk_t3a EFH_hk_t3c EFH_hk_t3b }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			defense = 0.05
+			breakthrough = 0.04
+			reliability = 0.04
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}

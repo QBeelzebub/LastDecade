@@ -1,0 +1,99 @@
+capital = 601
+SRP_enable_starting_human_division_techs_effect = yes
+oob = "ASI_2020"
+set_research_slots = 3
+
+create_corps_commander = {
+	name = "Min-jun Park"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Priya Sharma"
+	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	traits = { engineer_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ryu Seung-ho"
+	gfx = "GFX_Portrait_Europe_Generic_navy_1"
+	traits = { navy_career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+set_politics = {
+    ruling_party = neutrality
+    last_election = "2018.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+starting_train_buffer = 2
+set_technology = {
+    tech_support = 1
+    srp_incendiary = 1
+    srp_fighter_gen4 = 1
+    srp_destroyer_hull_tech_1 = 1
+    srp_submarine_hull_tech_1 = 1
+    ld_civilian_train = 1
+    ld_military_train = 1
+}
+
+create_equipment_variant = {
+    name = "F-16V Block 70"
+    type = srp_fighter_gen4_airframe
+    parent_version = 0
+    modules = {
+        fixed_main_weapon_slot = IRMissile
+        fixed_auxiliary_weapon_slot_1 = IRMissile
+        fixed_auxiliary_weapon_slot_2 = IRMissile
+        fixed_auxiliary_weapon_slot_3 = bomb_locks
+        fixed_auxiliary_weapon_slot_4 = bomb_locks
+        engine_type_slot = srp_afterburner
+        special_type_slot_1 = srp_wing_canard_delta
+        special_type_slot_2 = srp_aesa_radar
+    }
+}
+create_equipment_variant = {
+    name = "Pohang Class"
+    type = srp_destroyer_hull_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = dp_light_battery_4
+        fixed_ship_anti_air_slot = srp_naval_sam_sr
+        fixed_ship_fire_control_system_slot = ship_sonar_3
+        fixed_ship_radar_slot = ship_radar_3
+        fixed_ship_torpedo_slot = ship_torpedo_4
+        fixed_ship_engine_slot = light_ship_engine_4
+        mid_1_custom_slot = ship_depth_charge_1
+        rear_1_custom_slot = ship_torpedo_4
+    }
+}
+create_equipment_variant = {
+    name = "Chang Bogo Class"
+    type = srp_submarine_hull_1
+    parent_version = 0
+    modules = {
+        fixed_ship_torpedo_slot = ship_torpedo_sub_4
+        fixed_ship_engine_slot = sub_ship_nuclear_engine_1
+        front_1_custom_slot = ship_torpedo_sub_4
+        mid_1_custom_slot = ship_anechoic_tile
+        rear_1_custom_slot = ship_torpedo_sub_4
+    }
+}
+set_popularities = {
+    neutrality = 100
+}

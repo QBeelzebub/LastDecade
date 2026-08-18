@@ -1,0 +1,66 @@
+ideas = {
+	country = {
+		proto_supreme_atmospheric_collapse_1 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				weekly_manpower = -100
+				research_speed_factor = -0.05
+				army_morale_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		proto_supreme_atmospheric_collapse_2 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.20
+				weekly_manpower = -200
+				research_speed_factor = -0.10
+				army_morale_factor = -0.10
+				stability_factor = -0.08
+			}
+		}
+
+		proto_supreme_atmospheric_collapse_3 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.30
+				weekly_manpower = -300
+				research_speed_factor = -0.15
+				army_morale_factor = -0.15
+				stability_factor = -0.10
+			}
+		}
+
+		proto_supreme_atmospheric_collapse_4 = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.40
+				weekly_manpower = -500
+				research_speed_factor = -0.20
+				army_morale_factor = -0.20
+				stability_factor = -0.15
+			}
+		}
+
+		proto_supreme_setback = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.10
+				research_speed_factor = -0.10
+				political_power_gain = -0.15
+			}
+		}
+	}
+}

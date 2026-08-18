@@ -1,0 +1,23 @@
+defined_text = {
+	name = GetBeckonStageLabel
+
+	text = {
+		trigger = { check_variable = { iris_infestation_level > 74 } }
+		localization_key = BECKON_STAGE_IV
+	}
+	text = {
+		trigger = { check_variable = { iris_infestation_level > 49 } }
+		localization_key = BECKON_STAGE_III
+	}
+	text = {
+		trigger = { check_variable = { iris_infestation_level > 24 } }
+		localization_key = BECKON_STAGE_II
+	}
+	text = {
+		trigger = { check_variable = { iris_infestation_level > 0 } }
+		localization_key = BECKON_STAGE_I
+	}
+	text = {
+		localization_key = BECKON_STAGE_NONE
+	}
+}

@@ -1,0 +1,69 @@
+SRP_escalation_category = {
+
+	EFH_bolster_panama_resistance = {
+		icon = generic_political_actions
+
+		allowed = { original_tag = EFH }
+
+		visible = {
+			has_country_flag = EFH_panama_resistance_active
+			685 = { is_owned_by = USA }
+		}
+
+		available = {
+			NOT = { has_country_flag = EFH_panama_bolster_cd }
+			NOT = { has_war_with = USA }
+			685 = { resistance < 100 }
+		}
+
+		cost = 40
+
+		complete_effect = {
+			685 = {
+				add_core_of = EFH
+				force_enable_resistance = {
+					clear = no
+					occupier = USA
+					occupied = EFH
+				}
+				start_resistance = EFH
+				if = {
+					limit = { resistance < 1 }
+					set_resistance = 30
+				}
+				add_resistance = 12
+			}
+			SRP_escalate_low_effect = yes
+			set_country_flag = { flag = EFH_panama_bolster_cd value = 1 days = 30 }
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	USA_suppress_panama_resistance = {
+		icon = generic_political_actions
+
+		allowed = { original_tag = USA }
+
+		visible = {
+			685 = { is_owned_by = USA }
+			EFH = { has_country_flag = EFH_panama_resistance_active }
+		}
+
+		available = {
+			NOT = { has_country_flag = USA_panama_suppress_cd }
+			685 = { resistance > 0 }
+		}
+
+		cost = 50
+
+		complete_effect = {
+			685 = { add_resistance = -15 }
+			add_war_support = 0.02
+			SRP_escalate_low_effect = yes
+			set_country_flag = { flag = USA_panama_suppress_cd value = 1 days = 30 }
+		}
+
+		ai_will_do = { base = 3 }
+	}
+}

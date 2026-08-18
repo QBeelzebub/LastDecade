@@ -1,0 +1,571 @@
+equipment_modules = {
+
+	srp_carapace_plating_1 = {
+		abbreviation = "cp1"
+		category = srp_parasite_carapace
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 2
+			armor_value = 4
+			build_cost_ic = 1
+		}
+		xp_cost = 2
+	}
+
+	srp_carapace_plating_2 = {
+		abbreviation = "cp2"
+		category = srp_parasite_carapace
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_carapace_plating_1
+
+		add_stats = {
+			defense = 4
+			armor_value = 8
+			hardness = 0.05
+			maximum_speed = -0.25
+			build_cost_ic = 2
+		}
+		xp_cost = 4
+	}
+
+	srp_adapted_limb_cluster_1 = {
+		abbreviation = "alc1"
+		category = srp_adapted_locomotion
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 0.5
+			build_cost_ic = 1
+		}
+		xp_cost = 2
+	}
+
+	srp_adapted_limb_cluster_2 = {
+		abbreviation = "alc2"
+		category = srp_adapted_locomotion
+		sfx = sfx_ui_sd_module_engine
+		parent = srp_adapted_limb_cluster_1
+
+		add_stats = {
+			maximum_speed = 1.0
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 3
+	}
+
+	srp_pure_propulsion_mass_1 = {
+		abbreviation = "ppm1"
+		category = srp_pure_locomotion
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 0.5
+			armor_value = 1
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_pure_propulsion_mass_2 = {
+		abbreviation = "ppm2"
+		category = srp_pure_locomotion
+		sfx = sfx_ui_sd_module_engine
+		parent = srp_pure_propulsion_mass_1
+
+		add_stats = {
+			maximum_speed = 1.0
+			armor_value = 2
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 4
+	}
+
+	srp_apex_locomotion_1 = {
+		abbreviation = "alc"
+		category = srp_apex_locomotion
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			maximum_speed = 1.5
+			reliability = -0.05
+		}
+		xp_cost = 4
+	}
+
+	srp_apex_locomotion_2 = {
+		abbreviation = "alc2"
+		category = srp_apex_locomotion
+		sfx = sfx_ui_sd_module_engine
+		parent = srp_apex_locomotion_1
+
+		add_stats = {
+			build_cost_ic = 4.5
+			maximum_speed = 2.5
+			reliability = -0.05
+		}
+		xp_cost = 5
+	}
+
+	srp_parasite_support_node_1 = {
+		abbreviation = "spn"
+		category = srp_parasite_support_organ
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 2
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 2
+	}
+
+	srp_bolster_signal_node_1 = {
+		abbreviation = "bsn"
+		category = srp_bolster_signal_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			defense = 3
+			breakthrough = 2
+			build_cost_ic = 2
+		}
+		xp_cost = 3
+	}
+
+	srp_burrower_mandible_strike = {
+		abbreviation = "bms"
+		category = srp_burrower_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 20
+			breakthrough = 12
+			ap_attack = 3
+			build_cost_ic = 2.5
+		}
+		xp_cost = 3
+	}
+
+	srp_burrower_venom_spike = {
+		abbreviation = "bvs"
+		category = srp_burrower_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_burrower_mandible_strike
+
+		add_stats = {
+			soft_attack = 10
+			hard_attack = 8
+			ap_attack = 10
+			build_cost_ic = 3.5
+		}
+		xp_cost = 4
+	}
+
+	srp_burrower_tunneling_claws_1 = {
+		abbreviation = "btc"
+		category = srp_burrower_locomotion
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1.0
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_burrower_tunneling_claws_2 = {
+		abbreviation = "btc2"
+		category = srp_burrower_locomotion
+		sfx = sfx_ui_sd_module_engine
+		parent = srp_burrower_tunneling_claws_1
+
+		add_stats = {
+			maximum_speed = 2.0
+			build_cost_ic = 2.5
+		}
+		xp_cost = 3
+	}
+
+	srp_burrower_shell_regrowth = {
+		abbreviation = "bsr"
+		category = srp_burrower_special
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 6
+			build_cost_ic = 1
+		}
+		xp_cost = 2
+	}
+
+	srp_burrower_camouflage_membrane = {
+		abbreviation = "bcm"
+		category = srp_burrower_special
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_burrower_shell_regrowth
+
+		add_stats = {
+			defense = 8
+			build_cost_ic = 2
+		}
+		xp_cost = 3
+	}
+
+	srp_bolster_crushing_limbs = {
+		abbreviation = "bcl"
+		category = srp_bolster_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 14
+			hard_attack = 8
+			ap_attack = 4
+			build_cost_ic = 2.5
+		}
+		xp_cost = 3
+	}
+
+	srp_bolster_resonant_maul = {
+		abbreviation = "brm"
+		category = srp_bolster_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_bolster_crushing_limbs
+
+		add_stats = {
+			soft_attack = 18
+			hard_attack = 10
+			breakthrough = 4
+			build_cost_ic = 3.5
+		}
+		xp_cost = 4
+	}
+
+	srp_bolster_resonance_membrane_1 = {
+		abbreviation = "brn1"
+		category = srp_bolster_special
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			breakthrough = 2
+			defense = 2
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_bolster_resonance_membrane_2 = {
+		abbreviation = "brn2"
+		category = srp_bolster_special
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_bolster_resonance_membrane_1
+
+		add_stats = {
+			breakthrough = 4
+			defense = 4
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 3
+	}
+
+	srp_warden_impact_spike = {
+		abbreviation = "wis"
+		category = srp_warden_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hard_attack = 18
+			ap_attack = 14
+			soft_attack = 6
+			build_cost_ic = 3
+		}
+		xp_cost = 3
+	}
+
+	srp_warden_siege_maw = {
+		abbreviation = "wsm"
+		category = srp_warden_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_warden_impact_spike
+
+		add_stats = {
+			breakthrough = 14
+			soft_attack = 12
+			hard_attack = 8
+			ap_attack = 4
+			build_cost_ic = 3.5
+		}
+		xp_cost = 4
+	}
+
+	srp_warden_siege_glands = {
+		abbreviation = "wsg"
+		category = srp_warden_special
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			breakthrough = 4
+			defense = 2
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_warden_corrosive_mist = {
+		abbreviation = "wcm"
+		category = srp_warden_special
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_warden_siege_glands
+
+		add_stats = {
+			breakthrough = 2
+			defense = 3
+			build_cost_ic = 2
+		}
+		xp_cost = 3
+	}
+
+	srp_summoner_call_organ = {
+		abbreviation = "sco"
+		category = srp_summoner_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 7
+			breakthrough = 5
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_summoner_relay_organ = {
+		abbreviation = "sro"
+		category = srp_summoner_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_summoner_call_organ
+
+		add_stats = {
+			soft_attack = 4
+			breakthrough = 8
+			defense = 2
+			build_cost_ic = 2.5
+		}
+		xp_cost = 3
+	}
+
+	srp_summoner_brood_satchel_1 = {
+		abbreviation = "sbs1"
+		category = srp_summoner_special
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 3
+			soft_attack = 2
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_summoner_brood_satchel_2 = {
+		abbreviation = "sbs2"
+		category = srp_summoner_special
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_summoner_brood_satchel_1
+
+		add_stats = {
+			defense = 5
+			soft_attack = 4
+			build_cost_ic = 2.5
+		}
+		xp_cost = 3
+	}
+
+	srp_colony_carrier_mandible_claws = {
+		abbreviation = "ccm"
+		category = srp_colony_carrier_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 24
+			hard_attack = 12
+			breakthrough = 7
+			build_cost_ic = 3.5
+		}
+		xp_cost = 4
+	}
+
+	srp_colony_carrier_crushing_thorax = {
+		abbreviation = "cct"
+		category = srp_colony_carrier_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_colony_carrier_mandible_claws
+
+		add_stats = {
+			soft_attack = 16
+			hard_attack = 16
+			ap_attack = 4
+			build_cost_ic = 4
+		}
+		xp_cost = 4
+	}
+
+	srp_colony_spawner_node_1 = {
+		abbreviation = "csn"
+		category = srp_colony_carrier_spawner_organ
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 4
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 3
+	}
+
+	srp_colony_spawner_node_2 = {
+		abbreviation = "csn2"
+		category = srp_colony_carrier_spawner_organ
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_colony_spawner_node_1
+
+		add_stats = {
+			defense = 6
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 4
+	}
+
+	srp_dreadnaut_impact_organ = {
+		abbreviation = "dio"
+		category = srp_dreadnaut_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 24
+			hard_attack = 16
+			ap_attack = 12
+			breakthrough = 8
+			build_cost_ic = 4
+		}
+		xp_cost = 4
+	}
+
+	srp_dreadnaut_rending_talons = {
+		abbreviation = "drt"
+		category = srp_dreadnaut_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_dreadnaut_impact_organ
+
+		add_stats = {
+			soft_attack = 28
+			breakthrough = 14
+			hard_attack = 7
+			build_cost_ic = 4.5
+		}
+		xp_cost = 5
+	}
+
+	srp_dreadnaut_night_glands = {
+		abbreviation = "dng"
+		category = srp_dreadnaut_special
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 2
+			build_cost_ic = 1.5
+		}
+		xp_cost = 2
+	}
+
+	srp_dreadnaut_predator_instinct = {
+		abbreviation = "dpi"
+		category = srp_dreadnaut_special
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_dreadnaut_night_glands
+
+		add_stats = {
+			maximum_speed = 0.5
+			defense = 2
+			build_cost_ic = 2
+		}
+		xp_cost = 3
+	}
+
+	srp_overlord_crushing_organ = {
+		abbreviation = "oco"
+		category = srp_overlord_strike_organ
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 24
+			breakthrough = 16
+			hard_attack = 14
+			build_cost_ic = 4.5
+		}
+		xp_cost = 4
+	}
+
+	srp_overlord_dominion_spike = {
+		abbreviation = "ods"
+		category = srp_overlord_strike_organ
+		sfx = sfx_ui_sd_module_turret
+		parent = srp_overlord_crushing_organ
+
+		add_stats = {
+			hard_attack = 20
+			ap_attack = 16
+			defense = 6
+			build_cost_ic = 5
+		}
+		xp_cost = 5
+	}
+
+	srp_overlord_command_node_1 = {
+		abbreviation = "ocn"
+		category = srp_overlord_command_organ
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 6
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 4
+	}
+
+	srp_overlord_command_node_2 = {
+		abbreviation = "ocn2"
+		category = srp_overlord_command_organ
+		sfx = sfx_ui_sd_module_sonar
+		parent = srp_overlord_command_node_1
+
+		add_stats = {
+			defense = 8
+			breakthrough = 2
+			build_cost_ic = 3.5
+		}
+		multiply_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 5
+	}
+}

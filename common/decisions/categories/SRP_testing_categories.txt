@@ -1,0 +1,9 @@
+SRP_testing = {
+	icon = generic_research
+	priority = 1000
+	visible_when_empty = yes
+
+	visible = {
+		is_ai = no
+	}
+}

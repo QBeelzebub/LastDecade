@@ -1,0 +1,83 @@
+equipments = {
+
+	srp_bolster_membrane = {
+		year = 2024
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+		reliability = 0.85
+		maximum_speed = 1.0
+
+		defense = 14
+		breakthrough = 1
+		hardness = 0
+		armor_value = 6
+
+		soft_attack = 0.5
+		hard_attack = 0.25
+		ap_attack = 0.25
+		air_attack = 0
+
+		lend_lease_cost = 2
+		build_cost_ic = 4
+		resources = {
+			parasite_biomass = 2
+		}
+	}
+
+	srp_bolster_membrane_1 = {
+		year = 2024
+
+		archetype = srp_bolster_membrane
+		priority = 12
+		visual_level = 0
+	}
+
+	srp_synaptic_ganglion = {
+		year = 2024
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+		reliability = 0.88
+		maximum_speed = 1.0
+
+		defense = 6
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+
+		soft_attack = 2
+		hard_attack = 0.25
+		ap_attack = 0.25
+		air_attack = 0
+
+		lend_lease_cost = 2
+		build_cost_ic = 5
+		resources = {
+			parasite_biomass = 1
+			nexus_biomass = 1
+		}
+	}
+
+	srp_synaptic_ganglion_1 = {
+		year = 2024
+
+		archetype = srp_synaptic_ganglion
+		priority = 12
+		visual_level = 0
+	}
+}

@@ -1,0 +1,212 @@
+srp_public_confidence = {
+
+    USA_congressional_emergency_resolution = {
+        icon = generic_political_actions
+
+        allowed = { tag = USA }
+
+        visible = {
+            tag = USA
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = USA_congress_panic_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+            power_balance_value = {
+                id = USA_public_trust
+                value > 0
+            }
+        }
+
+        cost = 75
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 5
+                check_variable = { public_panic > 199 }
+            }
+            modifier = {
+                add = 8
+                check_variable = { public_panic > 399 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = USA_congress_panic_cd days = 45 }
+            add_to_variable = { var = public_panic value = -150 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+        }
+    }
+
+    USA_presidential_address = {
+        icon = generic_political_actions
+
+        allowed = { tag = USA }
+
+        visible = {
+            tag = USA
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = USA_president_address_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+            power_balance_value = {
+                id = USA_public_trust
+                value > 0.40
+            }
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 8
+                check_variable = { public_panic > 399 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { public_panic > 599 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = USA_president_address_cd days = 90 }
+            add_to_variable = { var = public_panic value = -220 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            USA_trust_low_loss_effect = yes
+        }
+    }
+
+    USA_stand_up_containment_command = {
+        icon = generic_political_actions
+
+        allowed = { tag = USA }
+
+        visible = {
+            tag = USA
+            NOT = { is_full_parasite = yes }
+            has_country_flag = USA_joint_containment_boards_active
+        }
+
+        available = {
+            NOT = { has_idea = USA_continental_containment_command }
+        }
+
+        cost = 75
+        fire_only_once = yes
+
+        ai_will_do = { base = 10 }
+
+        complete_effect = {
+            add_ideas = USA_continental_containment_command
+        }
+    }
+
+    USA_continental_containment_sweep = {
+        icon = generic_political_actions
+
+        allowed = { tag = USA }
+
+        visible = {
+            tag = USA
+            NOT = { is_full_parasite = yes }
+            has_idea = USA_continental_containment_command
+        }
+
+        available = {
+            NOT = { has_country_flag = USA_containment_sweep_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+        }
+
+        cost = 40
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 20
+                check_variable = { public_panic > 149 }
+            }
+            modifier = {
+                add = 20
+                check_variable = { public_panic > 349 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = USA_containment_sweep_cd days = 60 }
+            add_to_variable = { var = public_panic value = -140 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_stability = 0.01
+        }
+    }
+
+    USA_northern_perimeter_rotation = {
+        icon = generic_army_support
+
+        allowed = { tag = USA }
+
+        visible = {
+            tag = USA
+            NOT = { is_full_parasite = yes }
+            has_country_flag = USA_northern_logistics_command_active
+        }
+
+        available = {
+            NOT = { has_country_flag = USA_northern_rotation_cd }
+        }
+
+        cost = 30
+        fire_only_once = no
+
+        ai_will_do = { base = 3 }
+
+        complete_effect = {
+            set_country_flag = { flag = USA_northern_rotation_cd days = 90 }
+            army_experience = 15
+            add_timed_idea = { idea = USA_northern_perimeter_ready days = 120 }
+        }
+    }
+
+    USA_expand_incident_network = {
+        icon = generic_political_actions
+
+        allowed = { tag = USA }
+
+        visible = {
+            tag = USA
+            NOT = { is_full_parasite = yes }
+            has_country_flag = USA_anomalous_infestation_reporting
+        }
+
+        available = {
+            NOT = { has_country_flag = USA_incident_network_cd }
+        }
+
+        cost = 25
+        fire_only_once = no
+
+        ai_will_do = { base = 3 }
+
+        complete_effect = {
+            set_country_flag = { flag = USA_incident_network_cd days = 100 }
+            add_political_power = 20
+            add_timed_idea = { idea = USA_field_reporting_data days = 120 }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+peace_ai_desires = {
+
+	SRP_parasites_consume_everything = {
+		peace_action_type = { take_states }
+		enable = {
+			ROOT = { is_full_parasite = yes }
+			ROOT = { tag = ROOT.FROM }
+		}
+		ai_desire = 300
+	}
+
+	SRP_parasites_do_not_govern = {
+		peace_action_type = { puppet liberate force_government }
+		enable = {
+			ROOT = { is_full_parasite = yes }
+		}
+		ai_desire = -1000
+	}
+}

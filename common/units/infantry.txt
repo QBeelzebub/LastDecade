@@ -1,0 +1,507 @@
+sub_units = {
+	infantry = {
+		abbreviation = "INF"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 200
+		active = yes
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+			category_infantry_and_bicycle
+		}
+
+		combat_width = 2
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1000
+		training_time = 90
+		suppression = 1.5
+		weight = 0.5
+		supply_consumption = 0.06
+
+		need = {
+			infantry_equipment = 100
+		}
+	}
+
+	srp_rtg_infantry = {
+		abbreviation = "RTG"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 150
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1000
+		training_time = 100
+		suppression = 1
+		weight = 0.5
+		supply_consumption = 0.07
+
+		need = {
+			srp_rtg_infantry_equipment = 100
+		}
+	}
+
+	motorized = {
+		abbreviation = "MOT"
+		sprite = motorized
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = { motorized }
+		group = mobile
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.30
+		manpower = 1200
+		training_time = 110
+		suppression = 1.5
+		weight = 0.8
+		supply_consumption = 0.12
+
+		need = { srp_ifv_equipment = 100 }
+	}
+
+	mechanized = {
+		abbreviation = "MEC"
+		sprite = motorized
+		map_icon_category = armored
+
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = { mechanized }
+		group = mobile
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 30
+		max_organisation = 60
+		default_morale = 0.30
+		manpower = 1500
+		training_time = 140
+		suppression = 1.2
+		weight = 1.2
+		supply_consumption = 0.20
+
+		need = { srp_ifv_equipment = 50 }
+	}
+
+	srp_atgm_brigade = {
+		abbreviation = "ATG"
+		sprite = anti_tank
+		map_icon_category = infantry
+
+		priority = 650
+		ai_priority = 200
+		active = no
+
+		type = { anti_tank infantry }
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 1
+		max_strength = 15
+		max_organisation = 50
+		default_morale = 0.25
+		manpower = 600
+		training_time = 90
+		suppression = 0.8
+		weight = 0.4
+		supply_consumption = 0.08
+
+		need = { srp_atgm_equipment = 24 }
+	}
+
+	srp_atgm_support = {
+		abbreviation = "ATS"
+		sprite = anti_tank
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = no
+
+		type = { anti_tank infantry support }
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		max_strength = 0.15
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 400
+		training_time = 90
+		weight = 0.1
+		supply_consumption = 0.05
+
+		same_support_type = srp_atgm_support
+
+		need = { srp_atgm_equipment = 12 }
+	}
+
+	srp_drone_support = {
+		abbreviation = "DRN"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		max_strength = 0.15
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		training_time = 90
+		weight = 0.1
+		supply_consumption = 0.06
+
+		same_support_type = srp_drone_support
+
+		need = { srp_fpv_drone_equipment = 8 }
+	}
+
+	adapted_summoner = {
+		abbreviation = "SUM"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+		}
+
+		combat_width = 0
+		max_strength = 0.15
+		max_organisation = 0
+		default_morale = 1
+		manpower = 250
+		training_time = 100
+		weight = 0.15
+		supply_consumption = 0.08
+
+		same_support_type = adapted_summoner
+
+		need = { srp_summoner_support_chassis_1 = 8 }
+	}
+
+	srp_spg_brigade = {
+		abbreviation = "SPG"
+		sprite = artillery
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = yes
+
+		type = { armor support }
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+		}
+
+		combat_width = 0
+		max_strength = 0.3
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 600
+		training_time = 180
+		weight = 0.2
+		supply_consumption = 0.20
+
+		same_support_type = srp_spg_brigade
+
+		need = { srp_mbt_chassis = 6 }
+	}
+
+	srp_drone_regimental = {
+		abbreviation = "RDRN"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		allowed_battalion_groups = { infantry mobile combat_support }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+		}
+
+		divisional = no
+		combat_width = 0
+		max_strength = 0.1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 150
+		training_time = 90
+		weight = 0.1
+		supply_consumption = 0.04
+
+		recon = 0.5
+
+		same_support_type = srp_drone_regimental
+
+		need = { srp_fpv_drone_equipment = 4 }
+	}
+
+	srp_atgm_regimental = {
+		abbreviation = "RATM"
+		sprite = anti_tank
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		allowed_battalion_groups = { infantry mobile combat_support }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_anti_tank
+		}
+
+		divisional = no
+		combat_width = 0
+		max_strength = 0.1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 120
+		training_time = 100
+		weight = 0.1
+		supply_consumption = 0.05
+
+		same_support_type = srp_atgm_regimental
+
+		need = { srp_atgm_equipment = 6 }
+	}
+
+	srp_sapper_regimental = {
+		abbreviation = "RSAP"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		allowed_battalion_groups = { infantry mobile combat_support }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+		}
+
+		divisional = no
+		combat_width = 0
+		max_strength = 0.1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 150
+		training_time = 90
+		weight = 0.1
+		supply_consumption = 0.02
+
+		entrenchment = 1
+		defense = 0.05
+
+		essential = { support_equipment }
+		need = { support_equipment = 4 }
+
+		forest = { defence = 0.1 movement = 0.05 }
+		hills  = { defence = 0.1 }
+		marsh  = { defence = 0.1 movement = 0.1 }
+		fort   = { defence = 0.1 }
+		river  = { defence = 0.1 movement = 0.1 }
+
+		same_support_type = srp_sapper_regimental
+	}
+
+	srp_summoner_regimental = {
+		abbreviation = "RSUM"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		is_artillery_brigade = yes
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		allowed_battalion_groups = { parasite }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_parasite
+		}
+
+		divisional = no
+		combat_width = 0
+		max_strength = 0.1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 150
+		training_time = 100
+		weight = 0.1
+		supply_consumption = -0.06
+
+		casualty_trickleback = 0.12
+
+		same_support_type = srp_summoner_regimental
+
+		need = { srp_summoner_support_chassis_1 = 4 }
+	}
+
+	srp_bolster_regimental = {
+		abbreviation = "RBOL"
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		allowed_battalion_groups = { parasite }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_parasite
+		}
+
+		divisional = no
+		combat_width = 0
+		max_strength = 0.1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 150
+		training_time = 100
+		weight = 0.1
+		supply_consumption = 0.06
+
+		recon = 1
+		initiative = 0.08
+
+		battalion_mult = {
+			category = category_parasite
+			soft_attack = 0.05
+			hard_attack = 0.05
+			add = yes
+		}
+
+		same_support_type = srp_bolster_regimental
+
+		need = { srp_bolster_chassis_1 = 4 }
+	}
+}

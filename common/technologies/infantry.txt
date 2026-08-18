@@ -1,0 +1,576 @@
+technologies = {
+
+	srp_incendiary = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 0.4
+		start_year = 2018
+
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			srp_incendiary
+		}
+		enable_equipments = {
+			infantry_equipment0
+		}
+
+		research_speed_factor = 0.02
+		army_core_defence_factor = 0.02
+
+		path = {
+			leads_to_tech = srp_incendiary1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_incendiary1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2021
+
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			srp_incendiary
+		}
+		enable_equipments = {
+			infantry_equipment1
+		}
+
+		army_core_defence_factor = 0.05
+		army_org_factor = 0.02
+		breakthrough_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_incendiary2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_incendiary2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			srp_incendiary
+		}
+		enable_equipments = {
+			infantry_equipment2
+		}
+
+		army_core_defence_factor = 0.07
+		breakthrough_factor = 0.05
+		army_attack_factor = 0.03
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_containment = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2021
+
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_defence_factor = 0.03
+		max_dig_in = 2
+		dig_in_speed_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_containment1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	srp_containment1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 2 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_defence_factor = 0.04
+		max_dig_in = 2
+		out_of_supply_factor = -0.05
+
+		path = {
+			leads_to_tech = srp_containment2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_containment2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2023
+
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_core_defence_factor = 0.06
+		land_reinforce_rate = 0.02
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_bio_analysis = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2021
+
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 0 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		research_speed_factor = 0.03
+		recon_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_bio_analysis_1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_bio_analysis_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 2 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_core_attack_factor = 0.04
+		recon_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_bio_analysis_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_bio_analysis_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2024
+
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 4 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_core_attack_factor = 0.04
+		army_core_defence_factor = 0.04
+		research_speed_factor = 0.02
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_ap_suppression = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 0 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_attack_factor = 0.03
+		supply_consumption_factor = -0.03
+
+		path = {
+			leads_to_tech = srp_ap_suppression_1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_ap_suppression_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2024
+
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 2 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_attack_factor = 0.04
+		army_core_attack_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_chemical_suppression
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_chemical_suppression = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2025
+
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 4 }
+		}
+
+		categories = {
+			srp_parasite_tech
+		}
+
+		army_attack_factor = 0.02
+		supply_consumption_factor = -0.02
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_smart_weapons = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 0 }
+		}
+
+		categories = { srp_land_tech }
+
+		army_infantry_attack_factor = 0.04
+		breakthrough_factor = 0.02
+
+		path = {
+			leads_to_tech = srp_smart_weapons_1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	srp_smart_weapons_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 2 }
+		}
+
+		categories = { srp_land_tech }
+
+		army_infantry_attack_factor = 0.04
+		army_core_attack_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_smart_weapons_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_smart_weapons_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2025
+
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 4 }
+		}
+
+		categories = { srp_land_tech }
+
+		army_infantry_attack_factor = 0.06
+		army_infantry_defence_factor = 0.02
+		breakthrough_factor = 0.03
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_drone_infantry = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 0 }
+		}
+
+		categories = { srp_land_tech srp_electronics_tech }
+
+		recon_factor = 0.05
+		army_core_attack_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_drone_infantry_1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_drone_infantry_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2025
+
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 2 }
+		}
+
+		categories = { srp_land_tech srp_electronics_tech }
+
+		army_infantry_attack_factor = 0.04
+		recon_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_drone_support_tech
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_drone_support_tech = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 4 }
+		}
+
+		categories = { srp_land_tech srp_electronics_tech }
+
+		enable_subunits = { srp_drone_support }
+		enable_equipments = { srp_fpv_drone_equipment_1 }
+
+		recon_factor = 0.03
+		army_attack_factor = 0.02
+
+		path = {
+			leads_to_tech = srp_drone_support_tech_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_drone_support_tech_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2026
+
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 7 }
+		}
+
+		categories = { srp_land_tech srp_electronics_tech }
+
+		enable_equipments = { srp_fpv_drone_equipment_2 }
+
+		recon_factor = 0.04
+		army_infantry_attack_factor = 0.04
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_ew_hardening = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = 0 }
+		}
+
+		categories = { srp_land_tech srp_electronics_tech }
+
+		coordination_bonus = 0.03
+		army_org_factor = 0.02
+
+		path = {
+			leads_to_tech = srp_ew_hardening_1
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_ew_hardening_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2025
+
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = 2 }
+		}
+
+		categories = { srp_land_tech srp_electronics_tech }
+
+		coordination_bonus = 0.05
+		recon_factor = 0.03
+		planning_speed = 0.03
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_rtg_program = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2024
+
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		research_speed_factor = 0.02
+		army_core_attack_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_rtg_rounds
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_rtg_rounds = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2025
+
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		enable_equipments = {
+			srp_rtg_infantry_equipment_1
+		}
+
+		enable_subunits = {
+			srp_rtg_infantry
+		}
+
+		on_research_complete_limit = {
+			NOT = { is_parasite_nation = yes }
+		}
+		on_research_complete = {
+			add_ideas = srp_rtg_doctrine_idea
+		}
+
+		ai_will_do = { base = 3 }
+	}
+}

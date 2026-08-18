@@ -1,0 +1,90 @@
+EFH_military_focus = {
+	icon = "GFX_idea_generic_army_war_college"
+
+	army_org_factor = EFH_mil_org
+	army_morale_factor = EFH_mil_morale
+	experience_gain_army_factor = EFH_mil_xp
+	training_time_factor = EFH_mil_training
+	land_doctrine_cost_factor = EFH_mil_doctrine
+	army_attack_factor = EFH_mil_attack
+	army_core_attack_factor = EFH_mil_core_attack
+	army_defence_factor = EFH_mil_defence
+	equipment_capture_factor = EFH_mil_capture
+	dig_in_speed_factor = EFH_mil_dig_in
+	mobilization_speed = EFH_mil_mobilization
+	supply_consumption_factor = EFH_mil_supply
+	war_support_factor = EFH_mil_warsupport
+	weekly_manpower = EFH_mil_manpower
+}
+
+EFH_industrial_base = {
+	icon = "GFX_idea_generic_improved_industries"
+	consumer_goods_factor = EFH_ind_consumer_goods_factor
+	political_power_gain = EFH_ind_political_power_gain
+	production_factory_efficiency_gain_factor = EFH_ind_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = EFH_ind_production_factory_max_efficiency_factor
+	production_speed_buildings_factor = EFH_ind_production_speed_buildings_factor
+	production_speed_industrial_complex_factor = EFH_ind_production_speed_industrial_complex_factor
+	research_speed_factor = EFH_ind_research_speed_factor
+	stability_factor = EFH_ind_stability_factor
+	supply_consumption_factor = EFH_ind_supply_consumption_factor
+}
+
+EFH_federal_authority = {
+	icon = "GFX_idea_generic_political_support"
+	army_org_factor = EFH_gov_army_org_factor
+	consumer_goods_factor = EFH_gov_consumer_goods_factor
+	generate_wargoal_tension = EFH_gov_generate_wargoal_tension
+	political_power_gain = EFH_gov_political_power_gain
+	production_speed_buildings_factor = EFH_gov_production_speed_buildings_factor
+	research_speed_factor = EFH_gov_research_speed_factor
+	stability_factor = EFH_gov_stability_factor
+	supply_consumption_factor = EFH_gov_supply_consumption_factor
+	war_support_factor = EFH_gov_war_support_factor
+}
+
+EFH_nuclear_program = {
+	icon = "GFX_idea_GER_attack_usa"
+	nuclear_production_factor = EFH_nuc_nuclear_production_factor
+	production_speed_srp_fissile_extractor_factor = EFH_nuc_production_speed_srp_fissile_extractor_factor
+	research_speed_factor = EFH_nuc_research_speed_factor
+	stability_factor = EFH_nuc_stability_factor
+	war_support_factor = EFH_nuc_war_support_factor
+}
+
+EFH_air_command = {
+	icon = "GFX_idea_generic_air_bonus"
+	air_cas_efficiency = EFH_air_air_cas_efficiency
+	air_close_air_support_org_damage_factor = EFH_air_air_close_air_support_org_damage_factor
+	air_doctrine_cost_factor = EFH_air_air_doctrine_cost_factor
+	air_strategic_bomber_bombing_factor = EFH_air_air_strategic_bomber_bombing_factor
+	air_superiority_efficiency = EFH_air_air_superiority_efficiency
+	cas_damage_reduction = EFH_air_cas_damage_reduction
+	strategic_bomb_visibility = EFH_air_strategic_bomb_visibility
+}
+
+EFH_naval_command = {
+	icon = "GFX_idea_generic_navy_bonus"
+	army_org_factor = EFH_nav_army_org_factor
+	experience_gain_navy_unit_factor = EFH_nav_experience_gain_navy_unit_factor
+	intel_network_gain_factor = EFH_nav_intel_network_gain_factor
+	navy_max_range_factor = EFH_nav_navy_max_range_factor
+	navy_org_factor = EFH_nav_navy_org_factor
+	navy_submarine_attack_factor = EFH_nav_navy_submarine_attack_factor
+	navy_submarine_detection_factor = EFH_nav_navy_submarine_detection_factor
+	research_speed_factor = EFH_nav_research_speed_factor
+}
+
+EFH_laytheo_program = {
+	icon = "GFX_idea_generic_intel_bonus"
+	intel_network_gain_factor = EFH_lay_intel_network_gain_factor
+	navy_submarine_detection_factor = EFH_lay_navy_submarine_detection_factor
+	research_speed_factor = EFH_lay_research_speed_factor
+}
+
+EFH_research_directorate = {
+	icon = "GFX_idea_generic_research_bonus"
+	army_intel_factor = EFH_res_army_intel_factor
+	intel_network_gain_factor = EFH_res_intel_network_gain_factor
+	research_speed_factor = EFH_res_research_speed_factor
+}

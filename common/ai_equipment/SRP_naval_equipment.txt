@@ -1,0 +1,333 @@
+SRP_human_destroyers = {
+	category = naval
+
+	available_for = {
+		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+	}
+
+	roles = {
+		naval_screen
+		naval_escort
+	}
+
+	priority = {
+		factor = 110
+	}
+
+	srp_destroyer = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_destroyer_hull_tech_1
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = srp_destroyer_hull_1
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery_4
+				fixed_ship_anti_air_slot = srp_naval_sam_lr
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_torpedo_slot = srp_surface_missile_launcher
+				fixed_ship_engine_slot = light_ship_engine_4
+				mid_1_custom_slot = srp_naval_sam_md
+				rear_1_custom_slot = ship_anti_air_4
+			}
+		}
+
+		allowed_modules = {
+			dp_light_battery_4
+			srp_naval_sam_lr
+			srp_naval_sam_md
+			srp_naval_sam_sr
+			srp_surface_missile_launcher
+			srp_naval_ciws
+			ship_fire_control_system_3
+			ship_radar_4
+			light_ship_engine_4
+			ship_anti_air_4
+			ship_depth_charge_4
+		}
+	}
+}
+
+SRP_human_submarines = {
+	category = naval
+
+	available_for = {
+		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+	}
+
+	roles = {
+		naval_submarine
+	}
+
+	priority = {
+		factor = 80
+	}
+
+	srp_submarine = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_submarine_hull_tech_1
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = srp_submarine_hull_1
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_4
+				fixed_ship_engine_slot = sub_ship_nuclear_engine_1
+				front_1_custom_slot = ship_torpedo_sub_4
+				mid_1_custom_slot = ship_anechoic_tile
+				rear_1_custom_slot = ship_torpedo_sub_4
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub_4
+			sub_ship_nuclear_engine_1
+			ship_anechoic_tile
+			ship_radar_4
+			srp_surface_missile_launcher
+		}
+	}
+}
+
+SRP_major_carriers = {
+	category = naval
+
+	available_for = {
+		CHN EFH JAP RSF USA
+	}
+
+	roles = {
+		naval_carrier
+	}
+
+	priority = {
+		factor = 45
+	}
+
+	srp_carrier = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_carrier_hull_tech_1
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = srp_carrier_hull_1
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = srp_naval_sam_md
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_engine_slot = carrier_ship_nuclear_engine_1
+				fixed_ship_secondaries_slot = srp_naval_ciws
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = srp_naval_ciws
+			}
+		}
+
+		allowed_modules = {
+			ship_deck_space
+			srp_naval_sam_md
+			srp_naval_sam_lr
+			srp_naval_ciws
+			ship_radar_4
+			carrier_ship_nuclear_engine_1
+			srp_carrier_fuel_synthesis
+			srp_carrier_fusion_engine
+		}
+	}
+}
+
+SRP_major_battleships = {
+	category = naval
+
+	available_for = {
+		CHN EFH JAP RSF USA
+	}
+
+	roles = {
+		naval_capital_bb
+	}
+
+	priority = {
+		factor = 30
+	}
+
+	srp_battleship = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = srp_battleship_hull_tech_1
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = srp_battleship_hull_1
+			modules = {
+				fixed_ship_battery_slot = srp_naval_gun_155mm
+				fixed_ship_anti_air_slot = srp_naval_sam_md
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = srp_naval_ciws
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = srp_naval_sam_lr
+				mid_1_custom_slot = srp_naval_ciws
+			}
+		}
+
+		allowed_modules = {
+			dp_light_battery_4
+			srp_naval_gun_155mm
+			srp_naval_railgun_203mm
+			srp_naval_sam_md
+			srp_naval_sam_lr
+			srp_naval_ciws
+			ship_fire_control_system_3
+			ship_radar_4
+			heavy_ship_engine_4
+			ship_armor_bb_1
+		}
+	}
+}
+
+IRS_devourer_swarms = {
+	category = naval
+
+	available_for = {
+		IRS
+	}
+
+	roles = {
+		naval_submarine
+	}
+
+	priority = {
+		factor = 200
+	}
+
+	IRS_devourer_alpha = {
+		priority = {
+			factor = 100
+		}
+
+		enable = {
+			has_tech = devourer_emergence
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = IRS_devourer_hull_1
+			modules = {
+				fixed_ship_torpedo_slot = IRS_shredder_array
+				fixed_ship_engine_slot = IRS_fin_cluster
+				front_1_custom_slot = IRS_schooling_pheromone
+				mid_1_custom_slot = IRS_hunting_call_pheromone
+				rear_1_custom_slot = IRS_exoskeletal_carapace
+			}
+		}
+
+		allowed_modules = {
+			IRS_acid_mantle
+			IRS_shredder_array
+			IRS_fin_cluster
+			IRS_current_channeling
+			IRS_burst_propulsor
+			IRS_schooling_pheromone
+			IRS_hunting_call_pheromone
+			IRS_alarm_response_pheromone
+			IRS_exoskeletal_carapace
+			IRS_regenerative_tissue
+			IRS_depth_tolerance
+		}
+	}
+
+	IRS_devourer_beta = {
+		priority = {
+			factor = 150
+		}
+
+		enable = {
+			has_tech = adapted_devourer_strain
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 120
+			type = IRS_devourer_hull_2
+			modules = {
+				fixed_ship_torpedo_slot = IRS_shredder_array
+				fixed_ship_engine_slot = IRS_burst_propulsor
+				front_1_custom_slot = IRS_alarm_response_pheromone
+				mid_1_custom_slot = IRS_hunting_call_pheromone
+				rear_1_custom_slot = IRS_regenerative_tissue
+			}
+		}
+
+		allowed_modules = {
+			IRS_acid_mantle
+			IRS_shredder_array
+			IRS_fin_cluster
+			IRS_current_channeling
+			IRS_burst_propulsor
+			IRS_schooling_pheromone
+			IRS_hunting_call_pheromone
+			IRS_alarm_response_pheromone
+			IRS_exoskeletal_carapace
+			IRS_regenerative_tissue
+			IRS_depth_tolerance
+		}
+	}
+
+	IRS_abyssant_prime = {
+		priority = {
+			factor = 180
+		}
+
+		enable = {
+			has_tech = abyssant_genesis
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 140
+			type = IRS_abyssant_hull_1
+			modules = {
+				fixed_ship_torpedo_slot = IRS_crushing_maw
+				fixed_ship_engine_slot = IRS_abyssant_jet_locomotion
+				front_1_custom_slot = IRS_abyssant_dense_carapace
+				mid_1_custom_slot = IRS_abyssant_vibration_array
+				rear_1_custom_slot = IRS_abyssant_echolocation_sac
+			}
+		}
+
+		allowed_modules = {
+			IRS_crushing_maw
+			IRS_abyssant_jet_locomotion
+			IRS_abyssant_dense_carapace
+			IRS_abyssant_vibration_array
+			IRS_abyssant_echolocation_sac
+		}
+	}
+}

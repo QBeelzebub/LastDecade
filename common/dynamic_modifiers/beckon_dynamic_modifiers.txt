@@ -1,0 +1,115 @@
+beckon_iris_buff = {
+    icon = "GFX_goal_generic_secret_weapon"
+
+    local_supplies = iris_infestation_bonus
+    enemy_truck_attrition_factor = iris_infestation_bonus
+    enemy_attrition = iris_infestation_bonus
+    state_resource_parasite_biomass = iris_infestation_biomass
+}
+
+beckon_hostile_debuff = {
+    icon = "GFX_goal_generic_dangerous_deal"
+
+    local_supplies = iris_infestation_penalty
+    attrition = iris_infestation_attrition
+    local_manpower = iris_infestation_attrition
+    weekly_manpower = iris_infestation_upkeep
+}
+
+irs_consumed_state = {
+    icon = "GFX_goal_generic_occupy_states_ongoing_war"
+
+    recruitable_population_factor = -1
+}
+
+knx_consumed_state = {
+    icon = "GFX_goal_generic_occupy_states_ongoing_war"
+
+    recruitable_population_factor = -1
+}
+
+knx_integrated_ground_buff = {
+    icon = "GFX_goal_generic_fortify_city"
+
+    local_supplies_for_controller = 0.10
+    state_resource_parasite_biomass = 1
+}
+
+knx_integrated_ground_resistance = {
+    icon = "GFX_goal_generic_defence"
+
+    local_supplies = -0.05
+    attrition = 0.02
+}
+
+knx_root_stronghold = {
+    icon = "GFX_goal_generic_fortify_city"
+
+    army_defence_factor = 0.35
+    air_defence_factor = 0.25
+    local_supplies_for_controller = 0.25
+    enemy_local_supplies = -0.20
+    enemy_attrition = 0.25
+}
+
+EFH_boomer_fissile_plant_shift = {
+    icon = "GFX_focus_smiling_buddha"
+
+    state_resource_fissile_material = 6
+}
+
+spore_burst_contamination = {
+	icon = "GFX_goal_generic_dangerous_deal"
+
+	local_supplies = -0.12
+	attrition = 0.04
+	local_manpower = -0.08
+}
+
+IRS_evolutionary_surge_modifier = {
+    icon = "GFX_goal_generic_secret_weapon"
+
+    army_attack_factor = 0.15
+    breakthrough_factor = 0.10
+    army_morale_factor = 0.05
+}
+
+fallout_atomic = {
+    icon = "GFX_focus_generic_nuclear_development"
+
+    local_supplies = -0.15
+    local_manpower = -0.15
+    state_resources_factor = -0.10
+}
+
+fallout_thermonuclear = {
+    icon = "GFX_focus_generic_nuclear_development"
+
+    local_supplies = -0.30
+    local_manpower = -0.30
+    state_resources_factor = -0.20
+}
+
+public_panic_modifier = {
+    icon = "GFX_goal_generic_pp_unity_low"
+
+    stability_factor = public_panic_stab_factor
+    political_power_factor = public_panic_pp_factor
+    war_support_factor = public_panic_ws_factor
+
+    research_speed_factor = public_panic_research_factor
+    production_factory_efficiency_gain_factor = public_panic_production_factor
+    weekly_manpower = public_panic_manpower_factor
+    resistance_target_on_our_occupied_states = public_panic_resistance_factor
+}
+
+IRS_dormancy_adaptation = {
+    icon = "GFX_goal_generic_secret_weapon"
+
+    army_defence_factor = IRS_adapt_deep
+    army_attack_factor = IRS_adapt_surface
+    army_org_factor = IRS_adapt_held
+    training_time_army_factor = IRS_adapt_loose
+    production_speed_beckon_cluster_factor = IRS_adapt_centre
+    army_speed_factor = IRS_adapt_thin
+}

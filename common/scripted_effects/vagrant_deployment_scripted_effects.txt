@@ -1,0 +1,111 @@
+SRP_vagrant_1_advisory_duty_effect = {
+	if = {
+		limit = { has_country_flag = KNX_vagrant_1_field_duty }
+		add_equipment_to_stockpile = { type = vagrant_1_core amount = -1 }
+	}
+	set_country_flag = KNX_vagrant_1_advisory_duty
+	clr_country_flag = KNX_vagrant_1_field_duty
+	activate_advisor = KNX_vagrant_one_advisor
+	activate_advisor = KNX_vagrant_one_b_advisor
+}
+
+SRP_vagrant_1_field_duty_effect = {
+	set_country_flag = KNX_vagrant_1_field_duty
+	clr_country_flag = KNX_vagrant_1_advisory_duty
+	remove_ideas = KNX_vagrant_one_advisor
+	remove_ideas = KNX_vagrant_one_b_advisor
+	if = {
+		limit = {
+			NOT = {
+				has_equipment = {
+					vagrant_1_core = 1
+				}
+			}
+		}
+		add_equipment_to_stockpile = { type = vagrant_1_core_1 amount = 1 producer = KNX }
+	}
+}
+
+SRP_vagrant_2_advisory_duty_effect = {
+	if = {
+		limit = { has_country_flag = EFH_vagrant_2_field_duty }
+		add_equipment_to_stockpile = { type = vagrant_2_core amount = -1 }
+	}
+	set_country_flag = EFH_vagrant_2_advisory_duty
+	clr_country_flag = EFH_vagrant_2_field_duty
+	activate_advisor = EFH_vagrant_2_advisor
+	activate_advisor = EFH_vagrant_2_b_advisor
+}
+
+SRP_vagrant_2_field_duty_effect = {
+	set_country_flag = EFH_vagrant_2_field_duty
+	clr_country_flag = EFH_vagrant_2_advisory_duty
+	remove_ideas = EFH_vagrant_2_advisor
+	remove_ideas = EFH_vagrant_2_b_advisor
+	if = {
+		limit = {
+			NOT = {
+				has_equipment = {
+					vagrant_2_core = 1
+				}
+			}
+		}
+		add_equipment_to_stockpile = { type = vagrant_2_core_1 amount = 1 producer = EFH }
+	}
+}
+
+SRP_vagrant_3_advisory_duty_effect = {
+	if = {
+		limit = { has_country_flag = EFH_vagrant_3_field_duty }
+		add_equipment_to_stockpile = { type = vagrant_3_core_1 amount = -1 }
+	}
+	set_country_flag = EFH_vagrant_3_advisory_duty
+	clr_country_flag = EFH_vagrant_3_field_duty
+	activate_advisor = EFH_vagrant_3_advisor
+	activate_advisor = EFH_vagrant_3_b_advisor
+}
+
+SRP_vagrant_3_field_duty_effect = {
+	set_country_flag = EFH_vagrant_3_field_duty
+	clr_country_flag = EFH_vagrant_3_advisory_duty
+	remove_ideas = EFH_vagrant_3_advisor
+	remove_ideas = EFH_vagrant_3_b_advisor
+	if = {
+		limit = {
+			NOT = {
+				has_equipment = {
+					vagrant_3_core = 1
+				}
+			}
+		}
+		add_equipment_to_stockpile = { type = vagrant_3_core_1 amount = 1 producer = EFH }
+	}
+}
+
+SRP_vagrant_4_advisory_duty_effect = {
+	if = {
+		limit = { has_country_flag = IRS_vagrant_4_field_duty }
+		add_equipment_to_stockpile = { type = vagrant_4_core amount = -1 }
+	}
+	set_country_flag = IRS_vagrant_4_advisory_duty
+	clr_country_flag = IRS_vagrant_4_field_duty
+	activate_advisor = IRS_vagrant_4_advisor
+	activate_advisor = IRS_vagrant_4_b_advisor
+}
+
+SRP_vagrant_4_field_duty_effect = {
+	set_country_flag = IRS_vagrant_4_field_duty
+	clr_country_flag = IRS_vagrant_4_advisory_duty
+	remove_ideas = IRS_vagrant_4_advisor
+	remove_ideas = IRS_vagrant_4_b_advisor
+	if = {
+		limit = {
+			NOT = {
+				has_equipment = {
+					vagrant_4_core = 1
+				}
+			}
+		}
+		add_equipment_to_stockpile = { type = vagrant_4_core_1 amount = 1 producer = IRS }
+	}
+}

@@ -1,0 +1,54 @@
+SRP_western_alliance_template = {
+	name = SRP_western_alliance_name
+	manifest = SRP_manifest_western_alliance
+	can_leader_join_other_factions = no
+	icon = GFX_faction_logo_generic_17
+	visible = { always = no }
+
+	goals = {
+		SRP_goal_wa_hemisphere
+		SRP_goal_wa_arsenal
+		SRP_goal_wa_break_efh
+	}
+
+	default_rules = {
+		change_leader_rule_industry
+	}
+}
+
+SRP_european_pact_template = {
+	name = SRP_european_pact_name
+	manifest = SRP_manifest_european_pact
+	can_leader_join_other_factions = no
+	icon = GFX_faction_logo_generic_13
+	visible = { always = no }
+
+	goals = {
+		SRP_goal_ep_anti_parasite_front
+		SRP_goal_ep_war_industry
+		SRP_goal_ep_outlast_america
+		SRP_goal_ep_exploit_parasites
+	}
+
+	default_rules = {
+		change_leader_rule_industry
+	}
+}
+
+SRP_parasite_hive_template = {
+	name = SRP_parasite_hive_name
+	manifest = SRP_manifest_parasite_hive
+	can_leader_join_other_factions = no
+	icon = GFX_faction_logo_generic_15
+	visible = { always = no }
+
+	goals = {
+		SRP_goal_ph_proliferate
+		SRP_goal_ph_assimilate
+		SRP_goal_ph_dominion
+	}
+
+	default_rules = {
+		change_leader_rule_manpower
+	}
+}

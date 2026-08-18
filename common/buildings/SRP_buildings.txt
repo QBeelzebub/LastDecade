@@ -1,0 +1,304 @@
+buildings = {
+	beckon_cluster = {
+		base_cost = 3000
+		base_cost_conversion = 40
+		value = 2
+		icon_frame = 10
+		show_modifier = yes
+		per_level_extra_cost = 500
+		hide_if_missing_tech = yes
+		general_production = 2
+		military_production = 2
+		naval_production = 1
+		level_cap = {
+			state_max = 6
+			shares_slots = yes
+		}
+		local_resources_parasite_biomass = 1
+	}
+	dispatcher = {
+		base_cost = 1500
+		base_cost_conversion = 40
+		value = 1
+		icon_frame = 7
+		per_level_extra_cost = 1
+		hide_if_missing_tech = yes
+		level_cap = {
+			state_max = 1
+			shares_slots = yes
+		}
+	}
+	biomass_pool = {
+		base_cost = 6000
+		base_cost_conversion = 80
+		value = 2
+		icon_frame = 11
+		show_modifier = yes
+		hide_if_missing_tech = yes
+		per_level_extra_cost = 2
+		level_cap = {
+			shares_slots = yes
+			state_max = 4
+		}
+		country_modifiers = {
+			enable_for_controllers = { IRS KNX }
+			modifiers = {
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		local_resources_parasite_biomass = 5
+	}
+	nexus_hive = {
+		base_cost = 18000
+		base_cost_conversion = 160
+		value = 3
+		icon_frame = 12
+		show_modifier = yes
+		hide_if_missing_tech = yes
+		per_level_extra_cost = 4
+		level_cap = {
+			shares_slots = yes
+			state_max = 2
+		}
+		country_modifiers = {
+			enable_for_controllers = { IRS KNX }
+			modifiers = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		local_resources_nexus_biomass = 1
+	}
+	srp_laser_turret = {
+		base_cost = 2000
+		base_cost_conversion = 40
+		value = 2
+		icon_frame = 6
+		show_modifier = yes
+		damage_factor = 0.7
+		per_level_extra_cost = 0
+		hide_if_missing_tech = yes
+		level_cap = {
+			state_max = 1
+		}
+		state_modifiers = {
+			enemy_local_supplies = -0.10
+			enemy_attrition = 0.15
+		}
+	}
+	EFH_contained_beckon_cluster = {
+		base_cost = 4500
+		base_cost_conversion = 60
+		value = 2
+		icon_frame = 11
+		show_modifier = yes
+		per_level_extra_cost = -300
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 10
+		}
+		country_modifiers = {
+			enable_for_controllers = { EFH }
+			modifiers = {
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		local_resources_parasite_biomass = 5
+	}
+	proto_supreme_beckon = {
+		base_cost = 20000
+		damage_factor = 0
+		is_buildable = no
+		disable_grow_animation = yes
+		only_display_if_exists = yes
+		spawn_point = landmark_spawn
+		repair_speed_factor = 0
+		icon_frame = 12
+		show_modifier = yes
+		level_cap = {
+			province_max = 1
+		}
+		country_modifiers = {
+			enable_for_controllers = { IRS KNX }
+			modifiers = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		state_modifiers = {
+			local_resources_factor = 0.50
+			local_building_slots = 5
+		}
+	}
+
+	srp_fissile_extractor = {
+		base_cost = 75000
+		base_cost_conversion = 500
+		value = 2
+		damage_factor = 0.5
+		show_modifier = yes
+		per_level_extra_cost = -5000
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 10
+		}
+		repair_speed_factor = 0.5
+		icon_frame = 1
+		local_resources_fissile_material = 3
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.05
+		}
+	}
+
+	srp_fusion_reactor = {
+		base_cost = 100000
+		base_cost_conversion = 400
+		value = 4
+		damage_factor = 0.5
+		show_modifier = yes
+		per_level_extra_cost = -10000
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 5
+			exclusive_with = commercial_nuclear_reactor
+		}
+		repair_speed_factor = 0.5
+		icon_frame = 27
+		general_production = 5
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.25
+			local_building_slots_factor = 0.20
+			state_resources_factor = 0.15
+			local_factory_energy_consumption = -1.00
+		}
+	}
+
+	srp_containment_node = {
+		base_cost = 1000
+		base_cost_conversion = 20
+		value = 1
+		icon_frame = 9
+		show_modifier = yes
+		per_level_extra_cost = 200
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 5
+		}
+		state_modifiers = {
+			local_manpower = 0.2
+		}
+	}
+
+	srp_genome_archive = {
+		base_cost = 10000
+		base_cost_conversion = 100
+		value = 3
+		icon_frame = 12
+		show_modifier = yes
+		per_level_extra_cost = 1000
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 3
+		}
+		country_modifiers = {
+			enable_for_controllers = { IRS KNX }
+			modifiers = {
+				production_factory_efficiency_gain_factor = 0.03
+				research_speed_factor = 0.01
+			}
+		}
+		local_resources_nexus_biomass = 1
+	}
+
+	srp_distribution_hub = {
+		base_cost = 5000
+		base_cost_conversion = 60
+		value = 2
+		icon_frame = 4
+		show_modifier = yes
+		per_level_extra_cost = 500
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 4
+		}
+		country_modifiers = {
+			modifiers = {
+				supply_node_range = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+	}
+
+	srp_fabrication_yard = {
+		base_cost = 8000
+		base_cost_conversion = 80
+		value = 3
+		icon_frame = 2
+		show_modifier = yes
+		per_level_extra_cost = 800
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 4
+		}
+		general_production = 1
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.05
+			local_building_slots = 2
+		}
+	}
+
+	srp_data_center = {
+		base_cost = 12000
+		base_cost_conversion = 100
+		value = 3
+		icon_frame = 5
+		show_modifier = yes
+		per_level_extra_cost = 1500
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 3
+		}
+		country_modifiers = {
+			modifiers = {
+				research_speed_factor = 0.03
+				encryption = 0.05
+				enemy_operative_detection_chance_factor = 0.05
+			}
+		}
+		state_modifiers = {
+			local_factory_energy_consumption = 1
+		}
+	}
+
+	srp_data_center_2 = {
+		base_cost = 20000
+		base_cost_conversion = 160
+		value = 4
+		icon_frame = 5
+		show_modifier = yes
+		per_level_extra_cost = 2500
+		hide_if_missing_tech = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 2
+		}
+		country_modifiers = {
+			modifiers = {
+				research_speed_factor = 0.05
+				encryption = 0.08
+				enemy_operative_detection_chance_factor = 0.08
+			}
+		}
+		state_modifiers = {
+			local_factory_energy_consumption = 2
+		}
+	}
+}

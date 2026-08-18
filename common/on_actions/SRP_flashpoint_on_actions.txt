@@ -1,0 +1,29 @@
+on_actions = {
+	on_monthly_EFH = {
+		effect = {
+			if = {
+				limit = {
+					country_exists = USA
+					NOT = { has_war_with = USA }
+					check_variable = { EFH_USA_escalation > 49 }
+					NOT = { has_country_flag = SRP_flashpoint_cd }
+				}
+				random_list = {
+					75 = {
+					}
+					25 = {
+						set_country_flag = { flag = SRP_flashpoint_cd value = 1 days = 60 }
+						hidden_effect = {
+							random_list = {
+								25 = { country_event = { id = srp_flashpoint.1 days = 2 } }
+								25 = { country_event = { id = srp_flashpoint.2 days = 2 } }
+								25 = { USA = { country_event = { id = srp_flashpoint.3 days = 2 } } }
+								25 = { USA = { country_event = { id = srp_flashpoint.4 days = 2 } } }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

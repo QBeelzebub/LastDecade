@@ -1,0 +1,61 @@
+SRP_update_consortium_tier_effect = {
+	if = {
+		limit = { has_idea = SRP_consortium_tier_1 }
+		remove_ideas = SRP_consortium_tier_1
+	}
+	if = {
+		limit = { has_idea = SRP_consortium_tier_2 }
+		remove_ideas = SRP_consortium_tier_2
+	}
+	if = {
+		limit = { has_idea = SRP_consortium_tier_3 }
+		remove_ideas = SRP_consortium_tier_3
+	}
+	if = {
+		limit = { check_variable = { global.SRP_consortium_member_count > 5 } }
+		add_ideas = SRP_consortium_tier_3
+	}
+	if = {
+		limit = {
+			check_variable = { global.SRP_consortium_member_count > 3 }
+			NOT = { check_variable = { global.SRP_consortium_member_count > 5 } }
+		}
+		add_ideas = SRP_consortium_tier_2
+	}
+	if = {
+		limit = {
+			check_variable = { global.SRP_consortium_member_count > 1 }
+			NOT = { check_variable = { global.SRP_consortium_member_count > 3 } }
+		}
+		add_ideas = SRP_consortium_tier_1
+	}
+}
+
+SRP_consortium_eject_self_effect = {
+	clr_country_flag = SRP_consortium_member
+	add_to_variable = { var = global.SRP_consortium_member_count value = -1 }
+	if = {
+		limit = { has_idea = SRP_consortium_tier_1 }
+		remove_ideas = SRP_consortium_tier_1
+	}
+	if = {
+		limit = { has_idea = SRP_consortium_tier_2 }
+		remove_ideas = SRP_consortium_tier_2
+	}
+	if = {
+		limit = { has_idea = SRP_consortium_tier_3 }
+		remove_ideas = SRP_consortium_tier_3
+	}
+	if = {
+		limit = { has_country_flag = SRP_consortium_established }
+		clr_country_flag = SRP_consortium_established
+		random_country = {
+			limit = { has_country_flag = SRP_consortium_member }
+			set_country_flag = SRP_consortium_established
+		}
+	}
+	every_country = {
+		limit = { has_country_flag = SRP_consortium_member }
+		SRP_update_consortium_tier_effect = yes
+	}
+}

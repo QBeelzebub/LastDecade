@@ -1,0 +1,103 @@
+division_template = {
+	name = "French National Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 25000
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2000
+		producer = FRA
+	}
+}
+
+units = {
+	division = {
+		name = "1ère Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 11506
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 11506
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 9642
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 9642
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 9490
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 9490
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 6613
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 6613
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 11834
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10ème Division d'Infanterie"
+		division_template = "French National Guard"
+		location = 11834
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

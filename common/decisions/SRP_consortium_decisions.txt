@@ -1,0 +1,109 @@
+SRP_consortium = {
+
+	SRP_establish_consortium = {
+		icon = generic_research_bonus
+
+		visible = {
+			OR = {
+				tag = EFH tag = USA tag = CHN tag = JAP
+				tag = OCE tag = SAC tag = AFR tag = KNX
+			}
+			NOT = { has_country_flag = SRP_consortium_member }
+			NOT = { any_country = { has_country_flag = SRP_consortium_established } }
+		}
+
+		available = {
+			has_war_with = IRS
+			NOT = { has_country_flag = SRP_consortium_member }
+		}
+
+		fire_only_once = yes
+		cost = 150
+
+		complete_effect = {
+			set_country_flag = SRP_consortium_established
+			set_country_flag = SRP_consortium_member
+			set_variable = { var = global.SRP_consortium_member_count value = 1 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = EFH tag = USA tag = CHN tag = JAP
+						tag = OCE tag = SAC tag = AFR tag = KNX
+					}
+					NOT = { has_country_flag = SRP_consortium_member }
+					exists = yes
+				}
+				country_event = { id = srp_consortium.1 days = 1 }
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = IRS }
+			}
+		}
+	}
+
+	SRP_join_consortium = {
+		icon = generic_research_bonus
+
+		visible = {
+			OR = {
+				tag = EFH tag = USA tag = CHN tag = JAP
+				tag = OCE tag = SAC tag = AFR tag = KNX
+			}
+			NOT = { has_country_flag = SRP_consortium_member }
+			any_country = { has_country_flag = SRP_consortium_established }
+		}
+
+		available = {
+			has_war_with = IRS
+			NOT = { has_country_flag = SRP_consortium_member }
+		}
+
+		fire_only_once = yes
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = SRP_consortium_member
+			add_to_variable = { var = global.SRP_consortium_member_count value = 1 }
+			every_country = {
+				limit = { has_country_flag = SRP_consortium_member }
+				SRP_update_consortium_tier_effect = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = IRS }
+			}
+		}
+	}
+
+	SRP_leave_consortium = {
+		icon = generic_political_actions
+
+		visible = {
+			has_country_flag = SRP_consortium_member
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 50
+
+		complete_effect = {
+			SRP_consortium_eject_self_effect = yes
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+}

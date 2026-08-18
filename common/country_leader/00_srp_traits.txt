@@ -1,0 +1,128 @@
+leader_traits = {
+	IRS_Leader_Trait = {
+		random = no
+		resistance_growth = 1.5
+		resistance_target = 1.5
+		surrender_limit = -10.0
+	}
+
+	vagrant_1_nest_builder = {
+		sprite = 10
+		random = no
+		planning_speed = 0.10
+		max_planning = 0.05
+		army_attack_factor = 0.05
+
+		ai_will_do = { factor = 0 }
+	}
+
+	vagrant_2_combat_liaison = {
+		sprite = 10
+		random = no
+		army_attack_factor = 0.07
+		political_power_factor = -0.10
+
+		ai_will_do = { factor = 0 }
+	}
+
+	vagrant_3_hyperbiology_researcher = {
+		sprite = 14
+		random = no
+		research_speed_factor = 0.07
+		political_power_factor = -0.10
+
+		ai_will_do = { factor = 0 }
+	}
+
+	vagrant_4_iris_coordinator = {
+		sprite = 10
+		random = no
+		army_attack_factor = 0.10
+		land_doctrine_cost_factor = -0.10
+
+		ai_will_do = { factor = 0 }
+	}
+
+	EFH_ha_controversial_researcher = {
+		sprite = 14
+		random = no
+		research_speed_factor = 0.15
+		stability_factor = -0.12
+		political_power_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_honorable_socdem = {
+		sprite = 13
+		random = no
+		fascism_drift = 0.08
+		stability_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_institutional_shield = {
+		sprite = 13
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_ashley_unimpeded = {
+		sprite = 14
+		random = no
+		research_speed_factor = 0.08
+		stability_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_voss_covering = {
+		sprite = 13
+		random = no
+		stability_factor = 0.05
+		political_power_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_ashley_under_audit = {
+		sprite = 14
+		random = no
+		research_speed_factor = -0.05
+		political_power_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_voss_overruled = {
+		sprite = 13
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_ashley_sole_custody = {
+		sprite = 14
+		random = no
+		research_speed_factor = 0.12
+		stability_factor = -0.08
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_voss_entrenched = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.04
+		political_power_factor = -0.10
+
+		ai_will_do = { base = 0 }
+	}
+}

@@ -1,0 +1,60 @@
+add_namespace = swr
+
+country_event = {
+	id = swr.1
+	title = swr.1.t
+	desc = swr.1.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = swr.1.a
+		ai_chance = { base = 25 }
+	}
+
+	option = {
+		name = swr.1.b
+		ai_chance = { base = 60 }
+		add_ideas = SWR_ef_weapon_research_access
+	}
+
+	option = {
+		name = swr.1.c
+		ai_chance = { base = 15 }
+		set_country_flag = SWR_nuclear_threat_issued
+		EFH = {
+			country_event = { id = swr.2 days = 3 }
+		}
+		custom_effect_tooltip = swr.1.c_tt
+	}
+}
+
+country_event = {
+	id = swr.2
+	title = swr.2.t
+	desc = swr.2.d
+	picture = GFX_report_event_war_news
+
+	is_triggered_only = yes
+
+	option = {
+		name = swr.2.a
+		ai_chance = { base = 70 }
+		SWR = {
+			add_ideas = SWR_ef_weapon_research_access
+		}
+		add_stability = -0.02
+		custom_effect_tooltip = swr.2.a_tt
+	}
+
+	option = {
+		name = swr.2.b
+		ai_chance = { base = 30 }
+		SWR = {
+			add_timed_idea = { idea = SWR_efh_diplomatic_freeze days = 180 }
+		}
+		add_war_support = 0.03
+		custom_effect_tooltip = swr.2.b_tt
+	}
+}

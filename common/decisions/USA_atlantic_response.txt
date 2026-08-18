@@ -1,0 +1,256 @@
+SRP_political_interference_category = {
+
+	USA_establish_transatlantic_desk = {
+		priority = 56
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			country_exists = EFH
+			OR = {
+				has_country_flag = EFH_hemispheric_claim_detected
+				has_country_flag = EFH_japan_pact_detected
+				has_country_flag = EFH_china_trade_detected
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+		}
+
+		available = {
+			country_exists = EFH
+		}
+
+		fire_only_once = yes
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = USA_transatlantic_desk_active
+			add_intel = {
+				target = EFH
+				civilian_intel = 15
+				army_intel = 10
+			}
+			if = {
+				limit = { has_country_flag = USA_efh_formal_protest }
+				custom_effect_tooltip = USA_transatlantic_desk_protest_tt
+				add_political_power = 25
+				add_intel = {
+					target = EFH
+					army_intel = 10
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	USA_answer_the_hemispheric_claim = {
+		priority = 55
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			has_country_flag = EFH_hemispheric_claim_detected
+			country_exists = EFH
+		}
+
+		available = {
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+
+		fire_only_once = yes
+		cost = 100
+
+		complete_effect = {
+			add_ideas = USA_hemispheric_answer_idea
+			add_war_support = 0.05
+			USA_trust_low_gain_effect = yes
+			SRP_escalate_medium_effect = yes
+			if = {
+				limit = { has_country_flag = USA_continental_sovereignty_reaffirmed }
+				custom_effect_tooltip = USA_hemispheric_answer_sovereignty_tt
+				add_political_power = 25
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	USA_pacific_counterweight = {
+		priority = 54
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			has_country_flag = EFH_japan_pact_detected
+			country_exists = EFH
+		}
+
+		available = {
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+
+		fire_only_once = yes
+		cost = 100
+
+		complete_effect = {
+			add_ideas = USA_pacific_counterweight_idea
+			add_intel = {
+				target = EFH
+				navy_intel = 10
+				airforce_intel = 10
+			}
+			SRP_escalate_low_effect = yes
+			if = {
+				limit = { has_country_flag = USA_japan_diplomatic_pressure }
+				custom_effect_tooltip = USA_pacific_counterweight_pressure_tt
+				navy_experience = 25
+				add_war_support = 0.03
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	USA_eastern_corridor_tariffs = {
+		priority = 53
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			has_country_flag = EFH_china_trade_detected
+			country_exists = EFH
+		}
+
+		available = {
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+
+		fire_only_once = yes
+		cost = 75
+
+		complete_effect = {
+			add_ideas = USA_eastern_corridor_tariffs_idea
+			USA_trust_very_low_loss_effect = yes
+			if = {
+				limit = { EFH = { has_country_flag = EFH_china_neutral } }
+				custom_effect_tooltip = USA_eastern_corridor_narrow_tt
+				SRP_escalate_low_effect = yes
+			}
+			if = {
+				limit = { NOT = { EFH = { has_country_flag = EFH_china_neutral } } }
+				custom_effect_tooltip = USA_eastern_corridor_wide_tt
+				SRP_escalate_medium_effect = yes
+				EFH = { add_timed_idea = { idea = USA_efh_market_exclusion days = 365 } }
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+
+	USA_counterintelligence_sweep = {
+		priority = 52
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			original_tag = USA
+			has_country_flag = USA_transatlantic_desk_active
+			country_exists = EFH
+		}
+
+		available = {
+			NOT = { has_country_flag = USA_counterintel_sweep_cd }
+			country_exists = EFH
+		}
+
+		cost = 75
+
+		complete_effect = {
+			set_country_flag = { flag = USA_counterintel_sweep_cd value = 1 days = 120 }
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = electronics
+			}
+			army_experience = 10
+			custom_effect_tooltip = USA_counterintel_sweep_risk_tt
+			hidden_effect = {
+				random_list = {
+					75 = {
+						add_political_power = 10
+					}
+					25 = {
+						SRP_escalate_low_effect = yes
+						EFH = { add_war_support = 0.02 }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = USA_summit_cooperative_posture
+			}
+		}
+	}
+}

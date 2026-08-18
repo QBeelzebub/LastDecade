@@ -1,0 +1,15 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			EFH = {
+				SRP_preserve_ai_templates_effect = yes
+			}
+		}
+	}
+
+	on_daily_EFH = {
+		effect = {
+			SRP_preserve_ai_templates_effect = yes
+		}
+	}
+}

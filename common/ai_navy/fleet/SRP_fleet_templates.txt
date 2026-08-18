@@ -1,0 +1,48 @@
+SRP_human_patrol_fleet = {
+	required_taskforces = {
+		SRP_small_patrol_destroyers = 1
+	}
+	optional_taskforces = {
+		SRP_small_patrol_destroyers = 3
+		SRP_convoy_escort_destroyers = 1
+	}
+}
+
+SRP_human_escort_fleet = {
+	required_taskforces = {
+		SRP_convoy_escort_destroyers = 1
+	}
+	optional_taskforces = {
+		SRP_convoy_escort_destroyers = 3
+		SRP_small_patrol_destroyers = 1
+	}
+}
+
+SRP_human_raiding_fleet = {
+	required_taskforces = {
+		SRP_sub_raider_wolfpack = 1
+	}
+	optional_taskforces = {
+		SRP_sub_raider_wolfpack = 3
+	}
+}
+
+IRS_devourer_raiding_fleet = {
+	required_taskforces = {
+		IRS_devourer_raiding_pack = 1
+	}
+	optional_taskforces = {
+		IRS_devourer_raiding_pack = 3
+		IRS_devourer_patrol_pack = 1
+	}
+}
+
+IRS_devourer_patrol_fleet = {
+	required_taskforces = {
+		IRS_devourer_patrol_pack = 1
+	}
+	optional_taskforces = {
+		IRS_devourer_patrol_pack = 2
+		IRS_devourer_raiding_pack = 1
+	}
+}

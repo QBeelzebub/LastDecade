@@ -1,0 +1,44 @@
+LD_update_dispatcher_sigint_effect = {
+	set_variable = { LD_dispatcher_count = 0 }
+	every_owned_state = {
+		limit = {
+			dispatcher > 0
+			NOT = { has_state_flag = LD_dispatcher_tapped }
+		}
+		PREV = { add_to_variable = { LD_dispatcher_count = 1 } }
+	}
+
+	if = {
+		limit = { check_variable = { LD_dispatcher_count < 1 } }
+		if = { limit = { has_idea = LD_dispatcher_sigint_1 } remove_ideas = LD_dispatcher_sigint_1 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_2 } remove_ideas = LD_dispatcher_sigint_2 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_3 } remove_ideas = LD_dispatcher_sigint_3 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { LD_dispatcher_count > 0 }
+			check_variable = { LD_dispatcher_count < 3 }
+		}
+		if = { limit = { NOT = { has_idea = LD_dispatcher_sigint_1 } } add_ideas = LD_dispatcher_sigint_1 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_2 } remove_ideas = LD_dispatcher_sigint_2 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_3 } remove_ideas = LD_dispatcher_sigint_3 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { LD_dispatcher_count > 2 }
+			check_variable = { LD_dispatcher_count < 5 }
+		}
+		if = { limit = { NOT = { has_idea = LD_dispatcher_sigint_2 } } add_ideas = LD_dispatcher_sigint_2 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_1 } remove_ideas = LD_dispatcher_sigint_1 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_3 } remove_ideas = LD_dispatcher_sigint_3 }
+	}
+
+	if = {
+		limit = { check_variable = { LD_dispatcher_count > 4 } }
+		if = { limit = { NOT = { has_idea = LD_dispatcher_sigint_3 } } add_ideas = LD_dispatcher_sigint_3 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_1 } remove_ideas = LD_dispatcher_sigint_1 }
+		if = { limit = { has_idea = LD_dispatcher_sigint_2 } remove_ideas = LD_dispatcher_sigint_2 }
+	}
+}

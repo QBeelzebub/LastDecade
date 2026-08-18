@@ -1,0 +1,30 @@
+state={
+	id=776
+	name="STATE_776"
+	manpower = 1351563
+
+	state_category = megalopolis
+	history={
+		owner = AFR
+		add_core_of = AFR
+
+		2020.1.1 = {
+			owner = IRS
+			controller = IRS
+			add_core_of = IRS
+			buildings = {
+				beckon_cluster = 6
+			}
+		}
+
+		victory_points = {
+			10919 1
+		}
+	}
+
+	provinces={
+		10919 12874 12762
+	}
+
+	local_supplies=1.0
+}

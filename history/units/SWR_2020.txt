@@ -1,0 +1,196 @@
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garrison Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Marine Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 150
+		producer = SWR
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 4000
+		producer = SWR
+	}
+	add_equipment_to_stockpile = {
+		type = srp_truck_equipment_1
+		amount = 600
+		producer = SWR
+	}
+	add_equipment_to_stockpile = {
+		type = srp_mbt_chassis1
+		amount = 360
+		producer = SWR
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 500
+		producer = SWR
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 300
+		producer = SWR
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment0
+			creator = "SWR"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_truck_equipment_1
+			creator = "SWR"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 35
+	}
+	add_equipment_to_stockpile = {
+		type = srp_fighter_gen4_airframe
+		amount = 30
+		producer = SWR
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_fighter_gen4_airframe
+			creator = "SWR"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_destroyer_hull_1
+			creator = "SWR"
+		}
+		requested_factories = 1
+		progress = 0.25
+		efficiency = 35
+	}
+}
+
+units = {
+	division = {
+		name = "1st People's Division"
+		division_template = "Infantry Division"
+		location = 836
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "2nd People's Division"
+		division_template = "Infantry Division"
+		location = 916
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "3rd People's Division"
+		division_template = "Infantry Division"
+		location = 800
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "1st Tank Division"
+		division_template = "Armored Division"
+		location = 836
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "2nd Tank Division"
+		division_template = "Armored Division"
+		location = 814
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "1st Border Garrison"
+		division_template = "Garrison Battalion"
+		location = 800
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+
+air_wings = {
+	716 = {
+		srp_fighter_gen4_airframe = {
+			owner = SWR
+			amount = 30
+		}
+	}
+}

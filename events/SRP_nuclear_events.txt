@@ -1,0 +1,25 @@
+add_namespace = srp_nuclear
+
+country_event = {
+	id = srp_nuclear.1
+	title = srp_nuclear.1.t
+	desc = srp_nuclear.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_nuclear.1.a
+	}
+}
+
+country_event = {
+	id = srp_nuclear.2
+	title = srp_nuclear.2.t
+	desc = srp_nuclear.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_nuclear.2.a
+	}
+}

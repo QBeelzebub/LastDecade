@@ -1,0 +1,369 @@
+EFH_party_remove_all_mandates_effect = {
+	remove_ideas = EFH_party_astra_mandate
+	remove_ideas = EFH_party_volt_mandate
+	remove_ideas = EFH_party_ave_mandate
+	remove_ideas = EFH_party_continuity_mandate
+	remove_ideas = EFH_party_social_green_mandate
+	remove_ideas = EFH_party_sovereigntist_mandate
+
+	clr_country_flag = EFH_party_astra_incumbent
+	clr_country_flag = EFH_party_volt_incumbent
+	clr_country_flag = EFH_party_ave_incumbent
+	clr_country_flag = EFH_party_continuity_incumbent
+	clr_country_flag = EFH_party_social_green_incumbent
+	clr_country_flag = EFH_party_sovereigntist_incumbent
+}
+
+EFH_party_init_effect = {
+	if = {
+		limit = { NOT = { has_country_flag = EFH_party_system_initialized } }
+		set_variable = { var = EFH_party_astra value = 12 }
+		set_variable = { var = EFH_party_volt value = 15 }
+		set_variable = { var = EFH_party_ave value = 8 }
+		set_variable = { var = EFH_party_continuity value = 40 }
+		set_variable = { var = EFH_party_social_green value = 18 }
+		set_variable = { var = EFH_party_sovereigntist value = 7 }
+		set_variable = { var = EFH_separatist_pressure value = 10 }
+		set_country_flag = EFH_party_system_initialized
+		add_ideas = EFH_party_continuity_mandate
+		set_country_flag = EFH_party_continuity_incumbent
+		country_event = { id = efh_party.40 days = 30 }
+	}
+}
+
+EFH_party_clamp_support_effect = {
+	clamp_variable = { var = EFH_party_astra min = 0 max = 100 }
+	clamp_variable = { var = EFH_party_volt min = 0 max = 100 }
+	clamp_variable = { var = EFH_party_ave min = 0 max = 100 }
+	clamp_variable = { var = EFH_party_continuity min = 0 max = 100 }
+	clamp_variable = { var = EFH_party_social_green min = 0 max = 100 }
+	clamp_variable = { var = EFH_party_sovereigntist min = 0 max = 100 }
+	clamp_variable = { var = EFH_separatist_pressure min = 0 max = 100 }
+
+	set_variable = { var = EFH_party_total value = 0 }
+	add_to_variable = { var = EFH_party_total value = EFH_party_astra }
+	add_to_variable = { var = EFH_party_total value = EFH_party_volt }
+	add_to_variable = { var = EFH_party_total value = EFH_party_ave }
+	add_to_variable = { var = EFH_party_total value = EFH_party_continuity }
+	add_to_variable = { var = EFH_party_total value = EFH_party_social_green }
+	add_to_variable = { var = EFH_party_total value = EFH_party_sovereigntist }
+
+	if = {
+		limit = { check_variable = { var = EFH_party_total value = 0 compare = less_than_or_equals } }
+		set_variable = { var = EFH_party_astra value = 12 }
+		set_variable = { var = EFH_party_volt value = 15 }
+		set_variable = { var = EFH_party_ave value = 8 }
+		set_variable = { var = EFH_party_continuity value = 40 }
+		set_variable = { var = EFH_party_social_green value = 18 }
+		set_variable = { var = EFH_party_sovereigntist value = 7 }
+	}
+	else = {
+		multiply_variable = { var = EFH_party_astra value = 100 }
+		divide_variable = { var = EFH_party_astra value = EFH_party_total }
+		multiply_variable = { var = EFH_party_volt value = 100 }
+		divide_variable = { var = EFH_party_volt value = EFH_party_total }
+		multiply_variable = { var = EFH_party_ave value = 100 }
+		divide_variable = { var = EFH_party_ave value = EFH_party_total }
+		multiply_variable = { var = EFH_party_continuity value = 100 }
+		divide_variable = { var = EFH_party_continuity value = EFH_party_total }
+		multiply_variable = { var = EFH_party_social_green value = 100 }
+		divide_variable = { var = EFH_party_social_green value = EFH_party_total }
+		multiply_variable = { var = EFH_party_sovereigntist value = 100 }
+		divide_variable = { var = EFH_party_sovereigntist value = EFH_party_total }
+	}
+}
+
+EFH_party_astra_campaign_effect = {
+	add_to_variable = { var = EFH_party_astra value = 4 }
+	add_to_variable = { var = EFH_party_volt value = -1 }
+	add_to_variable = { var = EFH_party_continuity value = -1 }
+	add_to_variable = { var = EFH_party_social_green value = -1 }
+	add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+	EFH_party_clamp_support_effect = yes
+}
+
+EFH_party_volt_campaign_effect = {
+	add_to_variable = { var = EFH_party_volt value = 4 }
+	add_to_variable = { var = EFH_party_astra value = -1 }
+	add_to_variable = { var = EFH_party_continuity value = -1 }
+	add_to_variable = { var = EFH_party_social_green value = -1 }
+	add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+	EFH_party_clamp_support_effect = yes
+}
+
+EFH_party_ave_campaign_effect = {
+	add_to_variable = { var = EFH_party_ave value = 4 }
+	add_to_variable = { var = EFH_party_astra value = -1 }
+	add_to_variable = { var = EFH_party_continuity value = -1 }
+	add_to_variable = { var = EFH_party_social_green value = -1 }
+	add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+	EFH_party_clamp_support_effect = yes
+}
+
+EFH_party_continuity_campaign_effect = {
+	add_to_variable = { var = EFH_party_continuity value = 4 }
+	add_to_variable = { var = EFH_party_astra value = -1 }
+	add_to_variable = { var = EFH_party_volt value = -1 }
+	add_to_variable = { var = EFH_party_ave value = -1 }
+	add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+	EFH_party_clamp_support_effect = yes
+}
+
+EFH_party_social_green_campaign_effect = {
+	add_to_variable = { var = EFH_party_social_green value = 4 }
+	add_to_variable = { var = EFH_party_astra value = -1 }
+	add_to_variable = { var = EFH_party_volt value = -1 }
+	add_to_variable = { var = EFH_party_continuity value = -1 }
+	add_to_variable = { var = EFH_party_sovereigntist value = -1 }
+	EFH_party_clamp_support_effect = yes
+}
+
+EFH_party_sovereigntist_campaign_effect = {
+	add_to_variable = { var = EFH_party_sovereigntist value = 4 }
+	add_to_variable = { var = EFH_party_astra value = -1 }
+	add_to_variable = { var = EFH_party_volt value = -1 }
+	add_to_variable = { var = EFH_party_continuity value = -1 }
+	add_to_variable = { var = EFH_party_social_green value = -1 }
+	add_to_variable = { var = EFH_separatist_pressure value = 5 }
+	EFH_party_clamp_support_effect = yes
+	EFH_party_check_separatist_thresholds_effect = yes
+}
+
+EFH_party_apply_astra_win_effect = {
+	EFH_party_remove_all_mandates_effect = yes
+	add_ideas = EFH_party_astra_mandate
+	set_country_flag = EFH_party_astra_incumbent
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+}
+
+EFH_party_apply_volt_win_effect = {
+	EFH_party_remove_all_mandates_effect = yes
+	add_ideas = EFH_party_volt_mandate
+	set_country_flag = EFH_party_volt_incumbent
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+}
+
+EFH_party_apply_ave_win_effect = {
+	EFH_party_remove_all_mandates_effect = yes
+	add_ideas = EFH_party_ave_mandate
+	set_country_flag = EFH_party_ave_incumbent
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+}
+
+EFH_party_apply_continuity_win_effect = {
+	EFH_party_remove_all_mandates_effect = yes
+	add_ideas = EFH_party_continuity_mandate
+	set_country_flag = EFH_party_continuity_incumbent
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+}
+
+EFH_party_apply_social_green_win_effect = {
+	EFH_party_remove_all_mandates_effect = yes
+	add_ideas = EFH_party_social_green_mandate
+	set_country_flag = EFH_party_social_green_incumbent
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+}
+
+EFH_party_apply_sovereigntist_win_effect = {
+	EFH_party_remove_all_mandates_effect = yes
+	add_ideas = EFH_party_sovereigntist_mandate
+	set_country_flag = EFH_party_sovereigntist_incumbent
+	add_to_variable = { var = EFH_separatist_pressure value = 20 }
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+	EFH_party_check_separatist_thresholds_effect = yes
+}
+
+EFH_party_check_separatist_thresholds_effect = {
+	if = {
+		limit = {
+			check_variable = { var = EFH_separatist_pressure value = 40 compare = greater_than_or_equals }
+			NOT = { has_country_flag = EFH_separatist_unrest_warned }
+		}
+		set_country_flag = EFH_separatist_unrest_warned
+		add_ideas = EFH_separatist_unrest
+		country_event = { id = efh_party.20 days = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { var = EFH_separatist_pressure value = 60 compare = greater_than_or_equals }
+			NOT = { has_country_flag = EFH_restoration_referendum_warned }
+		}
+		set_country_flag = EFH_restoration_referendum_warned
+		add_ideas = EFH_restoration_referendum_crisis
+		country_event = { id = efh_party.21 days = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { var = EFH_separatist_pressure value = 80 compare = greater_than_or_equals }
+			has_country_flag = EFH_party_sovereigntist_incumbent
+			NOT = { has_country_flag = EFH_dissolution_congress_fired }
+		}
+		set_country_flag = EFH_dissolution_congress_fired
+		country_event = { id = efh_party.30 days = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { var = EFH_separatist_pressure value = 40 compare = less_than }
+			has_country_flag = EFH_separatist_unrest_warned
+		}
+		clr_country_flag = EFH_separatist_unrest_warned
+		remove_ideas = EFH_separatist_unrest
+		country_event = { id = efh_party.22 days = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { var = EFH_separatist_pressure value = 60 compare = less_than }
+			has_country_flag = EFH_restoration_referendum_warned
+		}
+		clr_country_flag = EFH_restoration_referendum_warned
+		remove_ideas = EFH_restoration_referendum_crisis
+		country_event = { id = efh_party.23 days = 1 }
+	}
+}
+
+EFH_release_fra_states_effect = {
+	1 = { transfer_state_to = FRA add_core_of = FRA }
+	14 = { transfer_state_to = FRA add_core_of = FRA }
+	15 = { transfer_state_to = FRA add_core_of = FRA }
+	16 = { transfer_state_to = FRA add_core_of = FRA }
+	17 = { transfer_state_to = FRA add_core_of = FRA }
+	18 = { transfer_state_to = FRA add_core_of = FRA }
+	19 = { transfer_state_to = FRA add_core_of = FRA }
+	20 = { transfer_state_to = FRA add_core_of = FRA }
+	21 = { transfer_state_to = FRA add_core_of = FRA }
+	22 = { transfer_state_to = FRA add_core_of = FRA }
+	23 = { transfer_state_to = FRA add_core_of = FRA }
+	24 = { transfer_state_to = FRA add_core_of = FRA }
+	25 = { transfer_state_to = FRA add_core_of = FRA }
+	26 = { transfer_state_to = FRA add_core_of = FRA }
+	27 = { transfer_state_to = FRA add_core_of = FRA }
+	28 = { transfer_state_to = FRA add_core_of = FRA }
+	29 = { transfer_state_to = FRA add_core_of = FRA }
+	30 = { transfer_state_to = FRA add_core_of = FRA }
+	31 = { transfer_state_to = FRA add_core_of = FRA }
+	32 = { transfer_state_to = FRA add_core_of = FRA }
+	33 = { transfer_state_to = FRA add_core_of = FRA }
+	735 = { transfer_state_to = FRA add_core_of = FRA }
+	785 = { transfer_state_to = FRA add_core_of = FRA }
+	806 = { transfer_state_to = FRA add_core_of = FRA }
+	851 = { transfer_state_to = FRA add_core_of = FRA }
+}
+
+EFH_release_ger_states_effect = {
+	42 = { transfer_state_to = GER add_core_of = GER }
+	50 = { transfer_state_to = GER add_core_of = GER }
+	51 = { transfer_state_to = GER add_core_of = GER }
+	52 = { transfer_state_to = GER add_core_of = GER }
+	53 = { transfer_state_to = GER add_core_of = GER }
+	54 = { transfer_state_to = GER add_core_of = GER }
+	55 = { transfer_state_to = GER add_core_of = GER }
+	56 = { transfer_state_to = GER add_core_of = GER }
+	57 = { transfer_state_to = GER add_core_of = GER }
+	58 = { transfer_state_to = GER add_core_of = GER }
+	59 = { transfer_state_to = GER add_core_of = GER }
+	60 = { transfer_state_to = GER add_core_of = GER }
+	61 = { transfer_state_to = GER add_core_of = GER }
+	62 = { transfer_state_to = GER add_core_of = GER }
+	64 = { transfer_state_to = GER add_core_of = GER }
+	65 = { transfer_state_to = GER add_core_of = GER }
+	978 = { transfer_state_to = GER add_core_of = GER }
+}
+
+EFH_release_ita_states_effect = {
+	2 = { transfer_state_to = ITA add_core_of = ITA }
+	39 = { transfer_state_to = ITA add_core_of = ITA }
+	114 = { transfer_state_to = ITA add_core_of = ITA }
+	115 = { transfer_state_to = ITA add_core_of = ITA }
+	117 = { transfer_state_to = ITA add_core_of = ITA }
+	156 = { transfer_state_to = ITA add_core_of = ITA }
+	157 = { transfer_state_to = ITA add_core_of = ITA }
+	158 = { transfer_state_to = ITA add_core_of = ITA }
+	159 = { transfer_state_to = ITA add_core_of = ITA }
+	160 = { transfer_state_to = ITA add_core_of = ITA }
+	161 = { transfer_state_to = ITA add_core_of = ITA }
+	162 = { transfer_state_to = ITA add_core_of = ITA }
+	849 = { transfer_state_to = ITA add_core_of = ITA }
+	850 = { transfer_state_to = ITA add_core_of = ITA }
+}
+
+EFH_release_esp_states_effect = {
+	41 = { transfer_state_to = ESP add_core_of = ESP }
+	165 = { transfer_state_to = ESP add_core_of = ESP }
+	166 = { transfer_state_to = ESP add_core_of = ESP }
+	167 = { transfer_state_to = ESP add_core_of = ESP }
+	168 = { transfer_state_to = ESP add_core_of = ESP }
+	169 = { transfer_state_to = ESP add_core_of = ESP }
+	170 = { transfer_state_to = ESP add_core_of = ESP }
+	171 = { transfer_state_to = ESP add_core_of = ESP }
+	172 = { transfer_state_to = ESP add_core_of = ESP }
+	173 = { transfer_state_to = ESP add_core_of = ESP }
+	174 = { transfer_state_to = ESP add_core_of = ESP }
+	175 = { transfer_state_to = ESP add_core_of = ESP }
+	176 = { transfer_state_to = ESP add_core_of = ESP }
+	177 = { transfer_state_to = ESP add_core_of = ESP }
+	178 = { transfer_state_to = ESP add_core_of = ESP }
+	788 = { transfer_state_to = ESP add_core_of = ESP }
+	789 = { transfer_state_to = ESP add_core_of = ESP }
+	790 = { transfer_state_to = ESP add_core_of = ESP }
+	791 = { transfer_state_to = ESP add_core_of = ESP }
+	792 = { transfer_state_to = ESP add_core_of = ESP }
+	793 = { transfer_state_to = ESP add_core_of = ESP }
+	794 = { transfer_state_to = ESP add_core_of = ESP }
+}
+
+EFH_release_pol_states_effect = {
+	10 = { transfer_state_to = POL add_core_of = POL }
+	63 = { transfer_state_to = POL add_core_of = POL }
+	66 = { transfer_state_to = POL add_core_of = POL }
+	67 = { transfer_state_to = POL add_core_of = POL }
+	68 = { transfer_state_to = POL add_core_of = POL }
+	85 = { transfer_state_to = POL add_core_of = POL }
+	86 = { transfer_state_to = POL add_core_of = POL }
+	87 = { transfer_state_to = POL add_core_of = POL }
+	88 = { transfer_state_to = POL add_core_of = POL }
+	90 = { transfer_state_to = POL add_core_of = POL }
+	92 = { transfer_state_to = POL add_core_of = POL }
+	97 = { transfer_state_to = POL add_core_of = POL }
+	98 = { transfer_state_to = POL add_core_of = POL }
+	762 = { transfer_state_to = POL add_core_of = POL }
+	807 = { transfer_state_to = POL add_core_of = POL }
+}
+
+EFH_release_old_nations_effect = {
+	EFH_release_fra_states_effect = yes
+	EFH_release_ger_states_effect = yes
+	EFH_release_ita_states_effect = yes
+	EFH_release_esp_states_effect = yes
+	EFH_release_pol_states_effect = yes
+}
+
+EFH_war_old_nations_effect = {
+	FRA = { load_oob = "FRA_separatist" }
+	GER = { load_oob = "GER_separatist" }
+	ITA = { load_oob = "ITA_separatist" }
+	ESP = { load_oob = "ESP_separatist" }
+	POL = { load_oob = "POL_separatist" }
+	FRA = { declare_war_on = { target = EFH type = annex_everything } }
+	GER = { declare_war_on = { target = EFH type = annex_everything } }
+	ITA = { declare_war_on = { target = EFH type = annex_everything } }
+	ESP = { declare_war_on = { target = EFH type = annex_everything } }
+	POL = { declare_war_on = { target = EFH type = annex_everything } }
+}

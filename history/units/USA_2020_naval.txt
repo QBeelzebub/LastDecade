@@ -1,0 +1,40 @@
+units = {
+	fleet = {
+		name = "Atlantic Fleet"
+		naval_base = 3878
+		task_force = {
+			name = "Carrier Strike Group 12"
+			location = 3878
+			ship = { name = "USS Gerald Ford" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = USA version_name = "Gerald R. Ford Class" } } }
+			ship = { name = "USS Arleigh Burke" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Cole" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Farragut" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Laboon" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron 6"
+			location = 3878
+			ship = { name = "USS Virginia" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = USA version_name = "Virginia Class" } } }
+			ship = { name = "USS Ohio" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = USA version_name = "Ohio Class" } } }
+		}
+	}
+	fleet = {
+		name = "Pacific Fleet"
+		naval_base = 1562
+		task_force = {
+			name = "Carrier Strike Group 5"
+			location = 1562
+			ship = { name = "USS Ronald Reagan" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = USA version_name = "Nimitz Class" } } }
+			ship = { name = "USS John Paul Jones" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Stethem" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Chafee" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+			ship = { name = "USS Benfold" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = USA version_name = "Arleigh Burke Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron 11"
+			location = 1562
+			ship = { name = "USS Connecticut" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = USA version_name = "Seawolf Class" } } }
+			ship = { name = "USS Annapolis" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = USA version_name = "Los Angeles Class" } } }
+		}
+	}
+}

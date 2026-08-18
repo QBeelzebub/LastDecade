@@ -1,0 +1,298 @@
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garrison Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Marine Battalion"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 500
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 12000
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = srp_truck_equipment_1
+		amount = 2000
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = srp_mbt_chassis1
+		amount = 1000
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 1200
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 1000
+		producer = JAP
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment0
+			creator = "JAP"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_truck_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_mbt_chassis1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_2
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 50
+	}
+	add_equipment_to_stockpile = {
+		type = srp_fighter_gen4_airframe
+		amount = 60
+		producer = JAP
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_fighter_gen4_airframe
+			creator = "JAP"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_destroyer_hull_1
+			creator = "JAP"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 60
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_submarine_hull_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = srp_carrier_hull_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 40
+	}
+}
+
+units = {
+	division = {
+		name = "1st Army"
+		division_template = "Infantry Division"
+		location = 993
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "2nd Army"
+		division_template = "Infantry Division"
+		location = 993
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "3rd Army"
+		division_template = "Infantry Division"
+		location = 1025
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "1st Armored Division"
+		division_template = "Armored Division"
+		location = 993
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "1st Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 993
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "2nd Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 1025
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "4th Army"
+		division_template = "Infantry Division"
+		location = 1100
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "5th Army"
+		division_template = "Infantry Division"
+		location = 912
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "6th Army"
+		division_template = "Infantry Division"
+		location = 1100
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "2nd Armored Division"
+		division_template = "Armored Division"
+		location = 1100
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "3rd Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 1002
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "4th Marine Battalion"
+		division_template = "Marine Battalion"
+		location = 13025
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "1st Pacific Garrison"
+		division_template = "Garrison Battalion"
+		location = 1002
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2nd Pacific Garrison"
+		division_template = "Garrison Battalion"
+		location = 13025
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+
+air_wings = {
+	282 = {
+		srp_fighter_gen4_airframe = {
+			owner = JAP
+			amount = 60
+		}
+	}
+}

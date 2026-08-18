@@ -1,0 +1,192 @@
+operation_LD_seed_sleeper = {
+	icon = GFX_operations_infiltrate_civilian_govt
+	map_icon = GFX_operations_infiltrate_civilian_govt_map
+	name = operation_LD_seed_sleeper
+	desc = operation_LD_seed_sleeper_desc
+	priority = 1
+
+	days = 90
+	network_strength = 35
+	operatives = 1
+
+	visible = {
+		ROOT = { is_parasite_nation = yes }
+		FROM = { NOT = { is_full_parasite = yes } }
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+	}
+
+	risk_chance = 0.1
+	outcome_extra_chance = 0.25
+
+	outcome_execute = {
+		ROOT = {
+			add_intel = {
+				target = FROM
+				civilian_intel = 15
+				army_intel = 5
+			}
+		}
+	}
+
+	outcome_extra_execute = {
+		ROOT = {
+			add_intel = {
+				target = FROM
+				civilian_intel = 10
+			}
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_LD_seed_sleeper_tt
+	}
+
+	phases = {
+		LD_seed_overland_crossing = { base = 34 }
+		LD_seed_coastal_insertion = { base = 33 }
+		LD_seed_dormant_carrier = { base = 33 }
+	}
+	phases = {
+		LD_seed_assume_identity = { base = 50 }
+		LD_seed_secure_position = { base = 50 }
+	}
+	phases = {
+		LD_seed_go_dormant = { base = 50 }
+		LD_seed_establish_contact = { base = 50 }
+	}
+}
+
+operation_LD_dispatcher_tap = {
+	icon = GFX_operations_capture_ciphers
+	map_icon = GFX_operations_capture_ciphers_map
+	name = operation_LD_dispatcher_tap
+	desc = operation_LD_dispatcher_tap_desc
+	priority = 3
+
+	days = 75
+	network_strength = 40
+	operatives = 2
+
+	visible = {
+		ROOT = { NOT = { is_full_parasite = yes } }
+		FROM = { is_parasite_nation = yes }
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+	}
+
+	requirements = {
+		FROM = {
+			any_owned_state = { dispatcher > 0 }
+		}
+	}
+
+	risk_chance = 0.2
+	experience = 2
+	outcome_extra_chance = 0.25
+
+	outcome_execute = {
+		FROM = {
+			random_owned_state = {
+				limit = { dispatcher > 0 }
+				set_state_flag = { flag = LD_dispatcher_tapped value = 1 days = 35 }
+			}
+		}
+		ROOT = {
+			add_intel = {
+				target = FROM
+				army_intel = 20
+				navy_intel = 10
+				airforce_intel = 10
+			}
+			add_timed_idea = { idea = LD_field_foresight days = 30 }
+		}
+	}
+
+	outcome_extra_execute = {
+		ROOT = {
+			add_intel = {
+				target = FROM
+				army_intel = 15
+			}
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_LD_dispatcher_tap_tt
+	}
+
+	phases = {
+		LD_tap_overland_approach = { base = 50 }
+		LD_tap_air_insertion = {
+			base = 50
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		LD_tap_splice_roots = { base = 34 }
+		LD_tap_intercept_flower = { base = 33 }
+		LD_tap_decode_traffic = { base = 33 }
+	}
+	phases = {
+		LD_tap_quiet_withdrawal = { base = 50 }
+		LD_tap_scrub_traces = { base = 50 }
+	}
+}
+
+operation_LD_hunt_sleeper_cells = {
+	icon = GFX_operations_rescue_captured_operative
+	map_icon = GFX_operations_rescue_captured_operative_map
+	name = operation_LD_hunt_sleeper_cells
+	desc = operation_LD_hunt_sleeper_cells_desc
+	priority = 0
+
+	days = 60
+	network_strength = 25
+	operatives = 1
+
+	scale_cost_independent_of_target = yes
+
+	visible = {
+		ROOT = { NOT = { is_full_parasite = yes } }
+		FROM = { is_parasite_nation = yes }
+	}
+
+	requirements = {
+		FROM = { has_intelligence_agency = yes }
+	}
+
+	risk_chance = 0.1
+
+	outcome_execute = {
+		ROOT = {
+			add_timed_idea = { idea = LD_counterintel_sweep days = 45 }
+			add_intel = {
+				target = FROM
+				civilian_intel = 10
+			}
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_LD_hunt_sleeper_cells_tt
+	}
+
+	phases = {
+		LD_hunt_canvass_informants = { base = 50 }
+		LD_hunt_signal_triangulation = { base = 50 }
+	}
+	phases = {
+		LD_hunt_raid_safehouse = { base = 100 }
+	}
+	phases = {
+		LD_hunt_interrogation = { base = 100 }
+	}
+}

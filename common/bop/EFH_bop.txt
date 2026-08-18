@@ -1,0 +1,112 @@
+EFH_power_balance = {
+	initial_value = -0.35
+	left_side = EFH_federal_authority_side
+	right_side = EFH_ha_corporation_side
+	decision_category = EFH_balance_of_power_category
+
+	range = {
+		id = EFH_bop_neutral_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+
+	side = {
+		id = EFH_federal_authority_side
+		icon = GFX_bop_EFH_flag
+
+		range = {
+			id = EFH_bop_ef_low_range
+			min = -0.40
+			max = -0.10
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = EFH_bop_ef_low_idea
+			}
+			on_deactivate = {
+				remove_ideas = EFH_bop_ef_low_idea
+			}
+		}
+
+		range = {
+			id = EFH_bop_ef_medium_range
+			min = -0.70
+			max = -0.40
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = EFH_bop_ef_medium_idea
+			}
+			on_deactivate = {
+				remove_ideas = EFH_bop_ef_medium_idea
+			}
+		}
+
+		range = {
+			id = EFH_bop_ef_total_range
+			min = -1.00
+			max = -0.70
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = EFH_bop_ef_total_idea
+			}
+			on_deactivate = {
+				remove_ideas = EFH_bop_ef_total_idea
+			}
+		}
+	}
+
+	side = {
+		id = EFH_ha_corporation_side
+		icon = GFX_bop_HA_flag
+
+		range = {
+			id = EFH_bop_ha_low_range
+			min = 0.10
+			max = 0.40
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = EFH_bop_ha_low_idea
+			}
+			on_deactivate = {
+				remove_ideas = EFH_bop_ha_low_idea
+			}
+		}
+
+		range = {
+			id = EFH_bop_ha_medium_range
+			min = 0.40
+			max = 0.70
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = EFH_bop_ha_medium_idea
+			}
+			on_deactivate = {
+				remove_ideas = EFH_bop_ha_medium_idea
+			}
+		}
+
+		range = {
+			id = EFH_bop_ha_total_range
+			min = 0.70
+			max = 1.00
+			modifier = {
+			}
+			on_activate = {
+				add_ideas = EFH_bop_ha_total_idea
+			}
+			on_deactivate = {
+				remove_ideas = EFH_bop_ha_total_idea
+			}
+		}
+	}
+}

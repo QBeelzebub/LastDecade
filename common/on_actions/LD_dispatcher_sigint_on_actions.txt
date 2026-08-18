@@ -1,0 +1,20 @@
+on_actions = {
+
+	on_daily_IRS = {
+		effect = {
+			LD_update_dispatcher_sigint_effect = yes
+		}
+	}
+
+	on_monthly_KNX = {
+		effect = {
+			LD_update_dispatcher_sigint_effect = yes
+		}
+	}
+
+	on_monthly_EFH = {
+		effect = {
+			LD_update_dispatcher_sigint_effect = yes
+		}
+	}
+}

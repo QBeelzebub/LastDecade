@@ -1,0 +1,49 @@
+sub_units = {
+	field_hospital = {
+		abbreviation = "HOSP"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+
+		regimental = no
+		combat_width = 0
+
+		max_strength = 1
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		weight = 0.1
+		supply_consumption = 0.03
+		can_be_parachuted = yes
+
+		casualty_trickleback = 0.15
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			support_equipment = 25
+		}
+
+		same_support_type = field_hospital
+	}
+}

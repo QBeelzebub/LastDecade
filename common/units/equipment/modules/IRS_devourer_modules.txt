@@ -1,0 +1,216 @@
+equipment_modules = {
+
+	IRS_acid_mantle = {
+		category = IRS_devourer_feeding_apparatus
+		sfx = ship_module_sfx_torpedo
+
+		add_stats = {
+			torpedo_attack = 3
+			naval_torpedo_hit_chance_factor = 0.015
+		}
+	}
+
+	IRS_shredder_array = {
+		category = IRS_devourer_feeding_apparatus
+		sfx = ship_module_sfx_torpedo
+
+		add_stats = {
+			torpedo_attack = 6
+		}
+	}
+
+	IRS_fin_cluster = {
+		category = IRS_devourer_locomotion
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			naval_speed = 5
+			naval_range = 500
+		}
+	}
+
+	IRS_current_channeling = {
+		category = IRS_devourer_locomotion
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			naval_range = 3000
+			naval_speed = 1
+		}
+	}
+
+	IRS_burst_propulsor = {
+		category = IRS_devourer_locomotion
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			naval_speed = 10
+			naval_range = -1000
+		}
+	}
+
+	IRS_schooling_pheromone = {
+		category = IRS_devourer_pheromone
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			sub_visibility = -4
+		}
+	}
+
+	IRS_hunting_call_pheromone = {
+		category = IRS_devourer_pheromone
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			torpedo_attack = 5
+		}
+	}
+
+	IRS_alarm_response_pheromone = {
+		category = IRS_devourer_pheromone
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			sub_detection = 15
+		}
+	}
+
+	IRS_tethysic_resonance_organ = {
+		category = IRS_devourer_pheromone
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			torpedo_attack = 3
+			sub_visibility = -3
+		}
+	}
+
+	IRS_exoskeletal_carapace = {
+		category = IRS_devourer_defense
+		sfx = ship_module_sfx_armor
+
+		add_stats = {
+			max_strength = 15
+		}
+	}
+
+	IRS_regenerative_tissue = {
+		category = IRS_devourer_defense
+		sfx = ship_module_sfx_armor
+
+		add_stats = {
+			reliability = 0.06
+		}
+	}
+
+	IRS_depth_tolerance = {
+		category = IRS_devourer_defense
+		sfx = ship_module_sfx_armor
+
+		add_stats = {
+			sub_visibility = -5
+			surface_visibility = -1
+		}
+	}
+
+	IRS_crushing_maw = {
+		category = IRS_abyssant_maw
+		sfx = ship_module_sfx_torpedo
+
+		add_stats = {
+			torpedo_attack = 30
+			naval_torpedo_hit_chance_factor = 0.015
+		}
+	}
+
+	IRS_corrosive_maw = {
+		category = IRS_abyssant_maw
+		sfx = ship_module_sfx_torpedo
+
+		add_stats = {
+			torpedo_attack = 18
+			naval_torpedo_hit_chance_factor = 0.02
+		}
+	}
+
+	IRS_abyssant_jet_locomotion = {
+		category = IRS_abyssant_propulsion
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			naval_speed = 6
+		}
+	}
+
+	IRS_abyssant_current_dive = {
+		category = IRS_abyssant_propulsion
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			naval_range = 4000
+			naval_speed = 2
+		}
+	}
+
+	IRS_abyssant_light_carapace = {
+		category = IRS_abyssant_carapace
+		sfx = ship_module_sfx_armor
+
+		add_stats = {
+			naval_speed = 3
+			max_strength = 20
+		}
+	}
+
+	IRS_abyssant_dense_carapace = {
+		category = IRS_abyssant_carapace
+		sfx = ship_module_sfx_armor
+
+		add_stats = {
+			max_strength = 80
+			naval_speed = -3
+			armor_value = 8
+		}
+	}
+
+	IRS_abyssant_regenerative_shell = {
+		category = IRS_abyssant_carapace
+		sfx = ship_module_sfx_armor
+
+		add_stats = {
+			reliability = 0.10
+			max_strength = 30
+		}
+	}
+
+	IRS_abyssant_vibration_array = {
+		category = IRS_abyssant_sensory
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			sub_detection = 30
+			surface_detection = 20
+		}
+	}
+
+	IRS_abyssant_lateral_membrane = {
+		category = IRS_abyssant_sensory
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			sub_visibility = -6
+			surface_visibility = -2
+		}
+	}
+
+	IRS_abyssant_echolocation_sac = {
+		category = IRS_abyssant_sensory
+		sfx = ship_module_sfx_engine
+
+		add_stats = {
+			sub_detection = 18
+			sub_visibility = -3
+		}
+	}
+}

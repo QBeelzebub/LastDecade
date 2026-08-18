@@ -1,0 +1,679 @@
+EFH = {
+	male = {
+		names = {
+			Adrien Alessandro Andreas Anton Bartosz Bernard Christoph Damian Daniel Dario
+			Dimitri Eduard Emil Erik Fabian Felix Filip Florian Franciszek Frederik
+			Georg Gustav Hendrik Henrik Hugo Ivan Jakob Jan Jean Joachim Johan Jonas
+			Klaus Lars Laurent Lorenzo Lucas Ludwig Marco Marek Martin Mathias Matteo
+			Michel Mikkel Niklas Oliver Pascal Patrik Pieter Rafael Reinhard Rene
+			Rickard Robert Sebastian Simon Stefan Sven Theo Thierry Tobias Tomas
+			Valentin Viktor Vincent Wilhelm Wouter
+		}
+	}
+	female = {
+		names = {
+			Agnes Alina Amelie Anna Annika Astrid Beatrix Camille Carla Cecilia Charlotte
+			Clara Dorota Elena Elin Elisabeth Emilia Eva Franziska Freja Gabriela Greta
+			Hanna Helena Ines Ingrid Irene Isabelle Johanna Julia Karin Katarzyna Klara
+			Laura Lena Lucia Magdalena Manon Margrethe Maria Marta Mathilde Nadine Nina
+			Noemi Paula Petra Roberta Sabine Sofia Sophie Stella Susanne Tereza Ursula
+			Valeria Vera Veronika Wilhelmina Zofia
+		}
+	}
+	surnames = {
+		Almeida Andersen Bakker Beaumont Berger Bergstrom Bianchi Blanc Bouchard Braun
+		Brauner Carlsen Colombo Conti Dubois Dupont Eriksen Esposito Fabbri Fischer
+		Fontaine Fournier Gallo Girard Hansen Hoffmann Jansen Jorgensen Kaufmann Keller
+		Kowalska Kowalski Kruger Lambert Larsen Laurent Lehmann Lindqvist Lindstrom
+		Lombardi Lorenz Marchetti Martin Mazur Meier Mercier Moreau Muller Nielsen
+		Nowak Olsen Pedersen Peeters Petit Ricci Richter Rossi Roux Sanchez Schmidt
+		Schneider Schulz Simon Sorensen Vandenberg Verhoeven Vermeulen Vogel Voss
+		Wagner Weber Wisniewski Wolff Zielinski
+	}
+	callsigns = {
+		"Anvil" "Aurora" "Bastion" "Bishop" "Bramble" "Cinder" "Compass" "Curfew"
+		"Dovetail" "Ember" "Fenwick" "Gannet" "Harrow" "Kestrel" "Lantern" "Lyre"
+		"Meridian" "Nightjar" "Palisade" "Quarry" "Redoubt" "Sable" "Shrike"
+		"Stonework" "Tallow" "Thornfield" "Verge" "Watchman"
+	}
+}
+
+SWR = {
+	male = {
+		names = {
+			Aleksandr Aleksei Anatoly Andrei Arkady Artem Boris Danil Dmitri Eduard
+			Egor Evgeny Fyodor Gennady Georgy Grigory Igor Ilya Ivan Kirill Konstantin
+			Leonid Lev Maksim Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Rostislav
+			Ruslan Semyon Sergei Stanislav Stepan Timur Vadim Valery Vasily Viktor
+			Vitaly Vladimir Vladislav Vsevolod Yakov Yaroslav Yuri
+		}
+	}
+	female = {
+		names = {
+			Alevtina Alina Alla Anastasia Anna Antonina Daria Diana Ekaterina Elena
+			Evgenia Galina Inna Irina Kseniya Larisa Lidiya Lyudmila Marina Nadezhda
+			Natalya Nina Olga Polina Raisa Regina Rimma Sofya Svetlana Tamara Tatyana
+			Valentina Varvara Vera Veronika Viktoriya Yana Yelizaveta Zinaida Zoya
+		}
+	}
+	surnames = {
+		Abramov Andreyev Antonov Baranov Belov Bogdanov Bystrov Chernov Danilov Denisov
+		Dorokhin Filatov Gavrilov Gorbunov Gusev Ignatov Kalinin Karpov Kazakov Kiselev
+		Komarov Korolev Kovalenko Kuznetsov Lazarev Lebedev Loginov Makarov Maksimov
+		Medvedev Melnikov Morozov Nikitin Novikov Orlov Osipov Panov Pavlov Petrov
+		Polyakov Popov Rogov Romanov Rybakov Savelyev Semenov Sergeyev Shubin Sidorov
+		Smirnov Sokolov Sorokin Stepanov Subbotin Tarasov Tikhonov Titov Ustinov Vasilyev
+		Vinogradov Volkov Voronin Yakovlev Zaitsev Zhukov Zhukova Zuev
+	}
+	callsigns = {
+		"Bereza" "Buran" "Chagra" "Grach" "Groza" "Izba" "Karst" "Kolos" "Kremen"
+		"Metel" "Nabat" "Osina" "Pika" "Polyn" "Rubezh" "Sever" "Sirin" "Sokol"
+		"Strizh" "Taiga" "Tuman" "Utes" "Vereten" "Vyuga" "Zarya" "Zubr"
+	}
+}
+
+RSF = {
+	male = {
+		names = {
+			Aleksandr Aleksei Anatoly Andrei Anton Arkady Artem Boris Danil Denis Dmitri
+			Eduard Egor Evgeny Fyodor Gennady Georgy Grigory Igor Ilya Ivan Kirill
+			Konstantin Leonid Lev Maksim Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman
+			Ruslan Semyon Sergei Stanislav Stepan Timur Vadim Valery Vasily Viktor
+			Vitaly Vladimir Vladislav Yakov Yaroslav Yuri
+		}
+	}
+	female = {
+		names = {
+			Alina Alla Anastasia Anna Antonina Daria Diana Ekaterina Elena Evgenia
+			Galina Inna Irina Kseniya Larisa Lidiya Lyudmila Marina Nadezhda Natalya
+			Nina Olga Polina Raisa Sofya Svetlana Tamara Tatyana Valentina Varvara
+			Vera Veronika Viktoriya Yana Yelizaveta Zinaida Zoya
+		}
+	}
+	surnames = {
+		Abramov Andreyev Antonov Baranov Belov Bogdanov Chernov Danilov Denisov Filatov
+		Gavrilov Gorbunov Gusev Ignatov Kalinin Karpov Kazakov Kiselev Komarov Korolev
+		Kuznetsov Lazarev Lebedev Loginov Makarov Maksimov Medvedev Melnikov Morozov
+		Nikitin Novikov Orlov Osipov Panov Pavlov Petrov Polyakov Popov Romanov Rybakov
+		Savelyev Semenov Sergeyev Sidorov Smirnov Sokolov Sorokin Stepanov Tarasov
+		Tikhonov Titov Ustinov Vasilyev Vinogradov Volkov Voronin Yakovlev Zaitsev
+		Zhukov Zuev
+	}
+	callsigns = {
+		"Belka" "Buran" "Granit" "Grach" "Groza" "Kolos" "Kremen" "Metel" "Nabat"
+		"Pika" "Rubezh" "Sever" "Sokol" "Strizh" "Taiga" "Tuman" "Utes" "Vyuga"
+		"Zarya" "Zubr"
+	}
+}
+
+CHN = {
+	male = {
+		names = {
+			Bingwen Changpu Chao Cheng Chenglei Dawei Delun Dingxiang Enlai Fang Feng
+			Gang Guang Guiren Hai Heng Hong Huan Huang Jian Jianguo Jianyu Jin Jing
+			Junjie Kang Lei Liang Lin Ling Liwei Long Ming Mingxia Ning Peng Qiang
+			Qingshan Renshu Rong Shan Sheng Shi Tao Wei Weimin Wen Xiaobo Xiaodan
+			Xiaosheng Xin Xiu Yang Yi Yong Yuan Yun Zedong Zhen Zheng Zhong Zian
+		}
+	}
+	female = {
+		names = {
+			Ah Bai Biyu Changchang Chun Cuifen Daiyu Ehuang Fen Fenfang Ge Hua Huan
+			Huiliang Huifang Jia Jiao Jiaying Jingfei Ju Lan Lifen Lihua Lijuan Lin
+			Ling Liling Liqin Liu Luli Mei Meifen Meihui Meixiang Min Ning Nuo Ping
+			Qiao Qing Qiuyue Rong Ruolan Shan Shu Shuang Song Ting Wen Xia Xiaodan
+			Xiaojing Xiaoli Xiaozhi Xifeng Xiulan Xiurong Ya Yan Ying Yingtai Yu
+			Yuming Yun Zhaohui Zhen Zhilan
+		}
+	}
+	surnames = {
+		Bai Cai Cao Chen Cheng Cui Dai Deng Ding Dong Du Duan Fan Fang Feng Fu Gao
+		Gong Gu Guo Han Hao He Hou Hu Huang Jiang Jin Kong Lai Lei Li Liang Liao Lin
+		Liu Long Lu Luo Ma Mao Meng Mo Ni Ou Pan Peng Qian Qiao Qin Qiu Ren Shao Shen
+		Shi Song Su Sun Tan Tang Tian Wan Wang Wei Wen Weng Wu Xia Xiang Xiao Xie Xu
+		Xue Yan Yang Yao Ye Yin You Yu Yuan Zeng Zhang Zhao Zheng Zhong Zhou Zhu Zou
+	}
+	callsigns = {
+		"Baihe" "Beidou" "Canglang" "Changfeng" "Chenxing" "Feiyan" "Fenghuo" "Hanguang"
+		"Heilong" "Jinwu" "Lanling" "Liuyun" "Mingyue" "Panshi" "Qingfeng" "Qinglong"
+		"Sanyue" "Shuanglong" "Tiegu" "Wanli" "Xuanwu" "Yeying" "Yinhe" "Zhulong"
+	}
+}
+
+SAC = {
+	male = {
+		names = {
+			Adriano Agustin Alejandro Andres Antonio Arturo Augusto Benicio Bruno Caio
+			Camilo Carlos Cesar Cristian Damian Daniel Dario Diego Eduardo Emiliano
+			Enrique Esteban Ezequiel Fabio Federico Felipe Fernando Francisco Gabriel
+			Gaston Geraldo Gonzalo Guilherme Gustavo Heitor Hernan Hugo Ignacio Ivan
+			Joaquim Joaquin Jorge Jose Juan Julian Leandro Leonardo Lorenzo Lucas
+			Luciano Luis Manuel Marcelo Marcos Mariano Mateo Matias Mauricio Miguel
+			Nicolas Otavio Pablo Paulo Pedro Rafael Ramiro Raul Renato Ricardo Rodrigo
+			Rogerio Rui Salvador Santiago Sebastian Sergio Thiago Tomas Vicente Vitor
+		}
+	}
+	female = {
+		names = {
+			Adriana Agustina Alejandra Alicia Ana Andrea Antonella Beatriz Bianca Camila
+			Carla Carolina Catalina Cecilia Clara Claudia Constanza Cristina Daniela
+			Delfina Diana Elena Eliana Emilia Esperanza Fernanda Florencia Gabriela
+			Graciela Guadalupe Helena Ines Isabel Isadora Julia Juliana Laura Leticia
+			Liliana Lorena Lucia Luciana Luisa Magdalena Manuela Marcela Margarida
+			Mariana Marina Marta Micaela Milena Mirna Monica Natalia Nicole Norma
+			Patricia Paula Pilar Rafaela Raquel Renata Rocio Rosa Sabrina Silvana
+			Silvia Sofia Solange Soledad Susana Tatiana Teresa Valentina Valeria
+			Vanessa Veronica Victoria Ximena Yolanda
+		}
+	}
+	surnames = {
+		Acosta Aguilar Alvarez Aparicio Araujo Arce Azevedo Barbosa Barros Benitez
+		Bianchi Cabral Caceres Camargo Campos Cardoso Carvalho Castro Cavalcanti
+		Chaves Correa Costa Cruz Dias Dominguez Duarte Escobar Esposito Farias
+		Fernandez Ferreira Figueroa Fonseca Franco Gimenez Godoy Gomes Gonzalez
+		Guerrero Gutierrez Herrera Ibarra Jimenez Lima Lopes Luna Machado Maldonado
+		Marques Martinez Medina Mendes Mendoza Molina Monteiro Morales Moreira Nogueira
+		Nunez Ocampo Oliveira Ortega Ortiz Paredes Peralta Pereira Pinheiro Ponce
+		Quiroga Ramos Ribeiro Rios Rocha Rodrigues Rojas Romero Rosales Salazar
+		Sandoval Santos Sarmiento Silva Sosa Soto Suarez Tavares Teixeira Torres
+		Vargas Vasquez Vega Vera Vieira Villalba Zamora
+	}
+	callsigns = {
+		"Andino" "Arrecife" "Bandeira" "Camalote" "Carancho" "Cerrado" "Chaco" "Corumba"
+		"Espinillo" "Farrapo" "Guaira" "Jacana" "Litoral" "Maloca" "Monsoon" "Onca"
+		"Pampero" "Pantanal" "Quebracho" "Sertao" "Sudestada" "Tapera" "Tuyu" "Urutau"
+		"Zonda"
+	}
+}
+
+AFR = {
+	male = {
+		names = {
+			Abdelkader Abdou Abebe Adama Ahmed Amadou Amare Amir Anwar Ayo Babatunde
+			Bakary Bashir Bekele Boubacar Chidi Chike Dawit Desta Ebrahim Emeka Farouk
+			Gebre Getachew Habib Hakim Hamza Hassan Ibrahim Idris Ismail Jelani Jomo
+			Kagiso Kamau Karim Kwabena Kwame Lamine Lekan Lulama Mamadou Mandla Mensah
+			Mohamed Moussa Mustafa Naledi Nasser Ngozi Nkosi Obi Ousmane Rachid Rashid
+			Salim Samir Sekou Seydou Sipho Solomon Souleymane Tadesse Tariq Tesfaye
+			Thabo Themba Uche Wale Yacine Yahya Yohannes Youssef Zola
+		}
+	}
+	female = {
+		names = {
+			Abeba Adaeze Adama Aisha Alima Aminata Amira Asha Ayana Ayesha Chiamaka
+			Chidinma Dalia Dineo Fatima Fatou Feriel Folake Genet Habiba Hafsa Hanan
+			Ifeoma Imani Jamila Kadiatou Kagiso Karima Kemi Khadija Lerato Lulama Mariam
+			Maryam Meseret Mwangi Nadia Naledi Nasira Ngozi Nomsa Nour Nyala Obioma
+			Oumou Palesa Rahma Rania Refilwe Rokia Safiya Sahra Salma Samira Selam
+			Sibongile Sina Sirak Tariro Thandiwe Tsehay Wanjiru Yaa Yasmin Zahra
+			Zainab Zanele Zeinab Zola
+		}
+	}
+	surnames = {
+		Abdi Abubakar Achebe Adebayo Adeyemi Amadi Amara Ammar Andriamana Asante Ba
+		Balewa Bekele Ben Benali Bennani Bikila Boateng Bouazizi Camara Cisse Dangote
+		Diallo Diop Diouf Dlamini Eze Faye Gebreselassie Gueye Haile Hassan Ibrahim
+		Idowu Jallow Kaba Kagame Kamara Kamau Keita Kimani Kone Kouassi Lawal Lekgotla
+		Maalouf Machel Madiba Mahfouz Makeba Mandela Mbeki Mensah Mhlanga Mkhize Mokoena
+		Moyo Mthembu Mugabe Musa Mwangi Ndiaye Ndlovu Nkomo Nkrumah Ntuli Nyerere
+		Obasanjo Ochieng Odinga Okafor Okonkwo Olawale Osei Ouedraogo Owusu Sall Sangare
+		Sarr Sesay Sithole Sow Sy Tadesse Tesfaye Toure Traore Wanjala Yeboah Zuma
+	}
+	callsigns = {
+		"Baobab" "Barchan" "Caracal" "Dhow" "Drakensberg" "Ennedi" "Erg" "Gelada"
+		"Harmattan" "Hoggar" "Inselberg" "Kalahari" "Karoo" "Khamsin" "Kopje" "Limpopo"
+		"Marabou" "Meroe" "Miombo" "Okavango" "Rift" "Sahel" "Serval" "Tsetse" "Wadi"
+		"Zambezi"
+	}
+}
+
+OCE = {
+	male = {
+		names = {
+			Aaron Adam Alistair Anaru Andrew Angus Ariki Ashton Bailey Ben Blake Brayden
+			Brendan Bruce Callum Cameron Campbell Cody Cooper Craig Damien Darcy Declan
+			Dylan Ethan Finn Fletcher Gareth Grant Harrison Hemi Hugh Hunter Isaac Jack
+			Jarrah Jesse Joel Jonty Kane Kieran Kingi Lachlan Liam Lincoln Logan Mahuta
+			Manaia Marcus Mason Mitchell Nathan Nikau Oliver Owen Patrick Quinn Reuben
+			Riley Rongo Ryan Scott Seth Shane Sione Tama Tane Taylor Toby Travis Tyler
+			Wiremu Zane
+		}
+	}
+	female = {
+		names = {
+			Abigail Adelaide Aleisha Alice Amber Anahera Ashleigh Aroha Bianca Bridget
+			Bronwyn Caitlin Chloe Clare Courtney Danielle Eleanor Ella Erin Esther
+			Fiona Freya Georgia Grace Hannah Harriet Hine Holly Imogen Indi Isla Jade
+			Jasmine Jessica Kaia Kate Keira Kiri Lara Laura Leah Lily Lucy Maia Maree
+			Marlow Megan Mia Millie Moana Naomi Ngaire Nicola Olivia Paige Piper Rachel
+			Rangi Rebecca Rihanna Riley Rosie Ruby Sadie Sally Shannon Sienna Sinead
+			Skye Sophie Stella Tahlia Tania Tessa Vanessa Whina Zara Zoe
+		}
+	}
+	surnames = {
+		Anderson Armstrong Baker Bennett Blackwood Boyd Bradley Brennan Brooks Buchanan
+		Cameron Campbell Carmody Carter Clarke Coleman Collins Connolly Cooper Cross
+		Dalton Davies Dawson Donaldson Douglas Doyle Duncan Ellis Ferguson Fielding
+		Fletcher Ford Fraser Gallagher Gibson Gilmore Grant Gray Greenwood Hale Hamilton
+		Harding Hargreaves Harper Hayes Henare Holloway Hughes Ihaka Jennings Kavanagh
+		Keegan Kelly Kingi Lambert Langford Lawson Leahy Lockhart Macdonald Mackenzie
+		Maloney Marsden Mason Matthews McAllister McCarthy McGregor McLeod Mercer
+		Mitchell Morrison Nairn Ngata Nolan Norris Osborne Palmer Parata Pearce Quinn
+		Rawiri Reid Reynolds Rimmer Roberts Ryan Sinclair Slater Stanton Stirling
+		Sullivan Tahana Tremaine Vaughan Wakefield Walsh Whitcombe Whitmore
+	}
+	callsigns = {
+		"Bilby" "Blackwattle" "Boomer" "Brumby" "Bunyip" "Cassowary" "Currawong"
+		"Dingo" "Firetail" "Goanna" "Huia" "Jabiru" "Kahu" "Karoro" "Kereru" "Kowhai"
+		"Mallee" "Marlin" "Moreton" "Piopio" "Quokka" "Ruru" "Southerly" "Takahe"
+		"Tasman" "Weka" "Willywilly"
+	}
+}
+
+ASI = {
+	male = {
+		names = {
+			Adit Akira Anh Arjun Bagus Bao Budi Chen Daichi Dae Dong Duc Eiji Gede Hae
+			Haruto Hideo Hiro Hoang Hyun Iwan Jae Jin Joon Kaito Kenji Khoa Kiyoshi
+			Kwang Linh Long Makoto Minh Nam Naoki Ngoc Nobu Osamu Phuc Quang Ren Riku
+			Ryo Sang Satoshi Seung Shin Sora Sun Takumi Tam Tao Thanh Tien Tomo Trung
+			Tuan Wahyu Yong Yosuke Youn Yuki Yuta
+		}
+	}
+	female = {
+		names = {
+			Ai Aiko Ayu Bian Chika Dewi Emiko Eun Hana Haruka Hien Hoa Hyo Indah Ji
+			Jin Kaori Kiyomi Lan Lien Linh Mai Maya Mei Mika Minji Miyu Nari Ngoc Nhung
+			Noriko Putri Rina Sakura Sari Seo Soo Sumi Suri Tam Thao Thuy Trang Tuyet
+			Umi Wati Yeon Yoko Yumi Yuna
+		}
+	}
+	surnames = {
+		Abe Aoki Bui Cao Chang Cho Choi Dang Do Duong Endo Fujimoto Fujita Fukuda Goto
+		Ha Hasegawa Hashimoto Hayashi Ho Hong Hwang Ikeda Inoue Ishida Ito Iwamoto Jang
+		Jeong Kaneko Kang Kato Kim Kimura Kobayashi Kondo Kudo Kwon Le Lim Luong Maeda
+		Matsuda Matsumoto Miura Mori Morita Murakami Nakagawa Nakamura Nakano Ngo Nguyen
+		Nishimura Noh Oh Okada Ono Ota Park Pham Phan Ryu Saito Sakamoto Sasaki Sato
+		Seo Shim Shimizu Shin Son Suzuki Takahashi Takeda Tanaka Tran Vo Vu Wibowo
+		Wijaya Won Yamada Yamaguchi Yamamoto Yang Yi Yoon Yoshida
+	}
+	callsigns = {
+		"Anak" "Bakau" "Bamboo" "Bonsai" "Chorus" "Foehn" "Hanoi" "Kabuki" "Kamome"
+		"Karst" "Kaze" "Kirin" "Lantern" "Mekong" "Monsoon" "Nightheron" "Paddy"
+		"Ricebird" "Sakura" "Sampan" "Shoji" "Tanuki" "Typhoon" "Yubari"
+	}
+}
+
+ESP = {
+	male = {
+		names = {
+			Adrian Aitor Alberto Alejandro Alfonso Alvaro Andres Angel Antonio Arnau
+			Bernat Bruno Carles Carlos Cesar Daniel David Diego Eduardo Emilio Enrique
+			Ernesto Esteban Federico Felipe Fernando Francisco Gabriel German Gonzalo
+			Guillem Hector Hugo Ignacio Inigo Ismael Ivan Javier Jesus Joan Joaquin
+			Jordi Jorge Jose Juan Julian Lucas Luis Manuel Marc Marcos Mariano Mario
+			Martin Mateo Miguel Nicolas Oriol Pablo Pau Pedro Rafael Ramon Raul Ricardo
+			Roberto Rodrigo Ruben Salvador Samuel Santiago Sergio Tomas Unai Vicente
+			Victor Xabier
+		}
+	}
+	female = {
+		names = {
+			Adriana Africa Ainhoa Alba Alicia Almudena Amaia Ana Andrea Angeles Aroa
+			Beatriz Belen Blanca Carla Carmen Carolina Clara Claudia Concepcion Cristina
+			Daniela Dolores Elena Elisa Emma Encarna Esperanza Estela Esther Eva Gemma
+			Gloria Guadalupe Ines Irene Isabel Itziar Julia Laia Lara Laura Leire Lidia
+			Lorena Lucia Luisa Maite Manuela Marina Marta Mercedes Miriam Monica Montse
+			Nadia Naiara Natalia Nerea Noelia Nuria Olga Paloma Patricia Paula Pilar
+			Raquel Rocio Rosa Ruth Sandra Sara Silvia Sofia Sonia Susana Teresa Vanesa
+			Veronica Victoria Yolanda
+		}
+	}
+	surnames = {
+		Alonso Alvarez Aparicio Arias Ayala Bermudez Blanco Blazquez Bravo Caballero
+		Cabrera Calvo Campos Cano Carmona Carrasco Castillo Castro Cortes Crespo Cuesta
+		Delgado Diaz Dominguez Duran Escudero Esteban Fernandez Ferrer Flores Fuentes
+		Gallego Garcia Garrido Gil Gimenez Gomez Gonzalez Guerrero Gutierrez Hernandez
+		Herrera Herrero Hidalgo Iglesias Jimenez Lara Lopez Lorenzo Lozano Marin Marquez
+		Marti Martin Martinez Medina Mendez Merino Molina Montero Mora Morales Moreno
+		Munoz Navarro Nieto Nunez Ortega Ortiz Pardo Parra Pascual Pastor Perez Prieto
+		Puig Ramirez Ramos Reyes Rey Rivera Robles Rodriguez Rojas Roman Romero Rubio
+		Ruiz Saez Salas Sanchez Santos Santiago Serrano Silva Soler Soto Suarez Torres
+		Valero Vargas Vazquez Vega Velasco Vicente Vidal Villar Zamora
+	}
+	callsigns = {
+		"Aguila" "Alcazar" "Aljibe" "Almena" "Barranco" "Cierzo" "Cigarral" "Dehesa"
+		"Ferro" "Garduna" "Guadiana" "Jarama" "Lobera" "Marisma" "Meseta" "Milano"
+		"Nevero" "Paramo" "Poniente" "Rambla" "Reguero" "Solano" "Tramontana" "Ventisca"
+		"Zarzal"
+	}
+}
+
+USA = {
+	male = {
+		names = {
+			Aaron Adrian Alan Andre Anthony Austin Blake Brandon Brian Caleb Cameron
+			Carlos Chase Christopher Cody Colin Connor Curtis Damian Daniel Darius
+			Derek Devin Dominic Douglas Dustin Elias Eric Ethan Evan Gabriel Garrett
+			Gregory Hector Isaiah Jared Jason Javier Jeremy Jordan Joseph Joshua Julian
+			Justin Keith Kevin Kyle Lance Logan Lucas Malik Marcus Mason Micah Miguel
+			Nathan Nicholas Owen Patrick Preston Quentin Raymond Reid Ryan Samuel Shane
+			Spencer Terrence Travis Trevor Tyler Victor Wesley Xavier Zachary
+		}
+	}
+	female = {
+		names = {
+			Alexis Alicia Allison Amanda Amber Andrea April Ashley Autumn Bianca Brenda
+			Brianna Brooke Camille Carmen Cassidy Chelsea Cheyenne Claire Courtney Dana
+			Danielle Denise Elena Erin Gabrielle Gina Hailey Heather Imani Jasmine
+			Jenna Jocelyn Kara Kayla Kelsey Kendra Lauren Leslie Lindsey Mackenzie
+			Madison Marisol Megan Melanie Mercedes Mia Monica Natalie Nicole Olivia
+			Paige Priya Rachel Regina Renee Rosa Sabrina Sierra Sydney Tamara Tanya
+			Tiffany Vanessa Whitney Yolanda
+		}
+	}
+	surnames = {
+		Alvarez Anderson Bailey Barrett Bennett Blackwell Bradley Brennan Brooks Bryant
+		Callahan Carpenter Carter Castillo Chambers Coleman Collins Cortez Cross Dalton
+		Delgado Dixon Donnelly Ellis Ferguson Fletcher Flores Foster Gallagher Garrison
+		Gibson Glover Grant Greene Griffin Hale Hammond Harper Hayes Hendricks Holloway
+		Hoffman Ingram Jennings Kaplan Keller Kirby Lambert Lang Larson Lawson Ledbetter
+		Lindsey Lockhart Mahoney Mallory Marsh Mathis Mercer Monroe Morrison Nakamura
+		Navarro Newton Nguyen Norris Okafor Ortega Osborne Padilla Palmer Parrish Patel
+		Pierce Quinn Ramsey Reyes Rhodes Rowland Salazar Sanford Sawyer Sheppard Sinclair
+		Sloan Stafford Sterling Stokes Sullivan Tate Thornton Vaughn Wade Walsh Warren
+		Whitfield Winslow Yates
+	}
+	callsigns = {
+		"Angler" "Backdraft" "Bulwark" "Cobalt" "Copperhead" "Deadbolt" "Dustoff"
+		"Fairway" "Grackle" "Havoc" "Homestead" "Ironside" "Jackknife" "Longhorn"
+		"Maverick" "Nomad" "Outrider" "Pathfinder" "Ravager" "Ridgeline" "Saddle"
+		"Sandpiper" "Stampede" "Switchback" "Tumbleweed" "Vulcan" "Wildcard"
+	}
+}
+
+JAP = {
+	male = {
+		names = {
+			Akira Asahi Atsushi Daichi Daiki Eiji Fumio Gaku Haruki Haruto Hayato Hideo
+			Hiroshi Hisashi Ichiro Isamu Itsuki Junichi Kaito Katsuya Kazuki Keiji Kenji
+			Kenta Kiyoshi Kohei Kosuke Kotaro Makoto Masaki Masaru Michio Minoru Naoki
+			Noboru Osamu Ren Riku Rintaro Ryohei Ryota Satoshi Shigeru Shinji Shohei
+			Shota Sota Sousuke Susumu Tadashi Taiga Takashi Takeshi Tatsuya Tetsuya
+			Tomoya Toru Tsubasa Wataru Yamato Yasuo Yoshiki Yuji Yuma Yuta Yutaka
+		}
+	}
+	female = {
+		names = {
+			Ai Aiko Airi Akane Aoi Asuka Ayaka Ayumi Chiaki Chihiro Emi Eriko Fumika
+			Haruka Hikari Hinata Hiroko Honoka Junko Kaede Kanako Kaori Kasumi Kayo
+			Keiko Kanna Kyoko Mai Maki Mana Mao Mari Mayu Megumi Miho Mika Miki Minako
+			Misaki Miyu Nana Nanami Naoko Natsuki Noriko Rei Rika Rin Rina Riko Sakura
+			Saori Satomi Sayaka Shiori Sora Sumire Tomoko Tsubaki Wakana Yoko Yui Yuka
+			Yuki Yuna Yuri
+		}
+	}
+	surnames = {
+		Abe Aoki Arai Endo Fujii Fujimoto Fujita Fukuda Goto Hara Hashimoto Hayashi
+		Hirano Honda Ikeda Imai Inoue Ishida Ishii Ishikawa Ito Iwasaki Kaneko Katayama
+		Kato Kawaguchi Kimura Kobayashi Koizumi Kondo Kubo Kudo Maeda Maruyama Masuda
+		Matsuda Matsumoto Miura Miyamoto Miyazaki Mori Morimoto Murakami Murata Nakagawa
+		Nakajima Nakamura Nakano Nakayama Nishimura Noguchi Nomura Ochiai Ogawa Okada
+		Okamoto Ono Ota Otsuka Saito Sakai Sakamoto Sano Sasaki Sato Shibata Shimizu
+		Sugawara Sugiyama Suzuki Takada Takagi Takahashi Takeuchi Tamura Tanaka Taniguchi
+		Uchida Ueda Ueno Wada Watanabe Yamada Yamaguchi Yamamoto Yamashita Yasuda Yokoyama
+		Yoshida Yoshikawa
+	}
+	callsigns = {
+		"Amagi" "Azure" "Cormorant" "Crane" "Cutlass" "Fuji" "Halcyon" "Heron"
+		"Kingfisher" "Lacquer" "Lantern" "Monsoon" "Orchid" "Osprey" "Petrel"
+		"Quicksilver" "Sable" "Sakura" "Seawall" "Shirasagi" "Skylark" "Tidewater"
+		"Typhoon" "Vermilion" "Whitecap"
+	}
+}
+
+FRA = {
+	male = {
+		names = {
+			Adrien Alain Alexandre Antoine Arnaud Aurelien Baptiste Benjamin Bertrand
+			Bruno Cedric Charles Christophe Clement Damien Denis Didier Dorian Edouard
+			Emile Emmanuel Etienne Fabien Florian Francois Frederic Gaspard Gautier
+			Geoffroy Gilles Guillaume Hugo Jacques Jerome Julien Laurent Lionel Loic
+			Louis Lucas Ludovic Marc Mathieu Maxime Michel Nicolas Olivier Pascal Patrice
+			Philippe Pierre Quentin Raphael Regis Remi Renaud Romain Sebastien Serge
+			Stephane Sylvain Thibault Thierry Thomas Valentin Vincent Xavier Yann Yves
+		}
+	}
+	female = {
+		names = {
+			Adele Agathe Amandine Amelie Anais Aurelie Beatrice Blandine Camille Capucine
+			Caroline Cecile Celine Charlotte Chloe Clemence Coralie Delphine Elodie Emilie
+			Fanny Florence Gabrielle Genevieve Helene Ines Isabelle Josephine Juliette
+			Laetitia Laure Leonie Lucie Madeleine Manon Margaux Marianne Marion Mathilde
+			Melanie Morgane Nadine Noemie Ophelie Pauline Perrine Sabine Salome Sandrine
+			Severine Sidonie Solange Sophie Sylvie Therese Valerie Veronique Violette Yvonne
+		}
+	}
+	surnames = {
+		Andre Arnaud Aubert Barbier Baron Barre Benoit Bernard Berger Bertrand Blanc
+		Blanchard Bonnet Boucher Boyer Brun Caron Chevalier Clement Collet Colin Cordier
+		Dubois Duchene Dufour Dumas Dumont Dupont Durand Duval Faure Fernandez Fleury
+		Fontaine Fournier Gaillard Garnier Gauthier Gerard Girard Giraud Gonzalez Guerin
+		Guillaume Henry Hubert Humbert Jacquet Julien Lacroix Lambert Lamy Laurent Lecomte
+		Lefebvre Legrand Lemaire Leroy Lombard Louis Marchand Marie Martin Masson Mathieu
+		Menard Mercier Meunier Michel Millet Moreau Morel Morin Muller Nicolas Noel Olivier
+		Perrin Petit Philippe Picard Pierre Poirier Renard Renaud Rey Reynaud Richard
+		Riviere Robert Robin Roche Rolland Rousseau Roussel Roux Roy Sanchez Schmitt Simon
+		Thomas Vasseur Vidal Vincent
+	}
+	callsigns = {
+		"Alouette" "Aramis" "Ardennes" "Bastion" "Cheval" "Cognac" "Corsaire"
+		"Epee" "Falaise" "Gascon" "Grenadier" "Lavande" "Meridien" "Mistral" "Mousquet"
+		"Orage" "Perceval" "Rempart" "Sabot" "Sologne" "Tricolore" "Verdun" "Vigie"
+	}
+}
+
+GER = {
+	male = {
+		names = {
+			Alexander Andreas Anton Armin Arndt Bastian Benedikt Bernd Bjorn Christian
+			Christoph Clemens Constantin Daniel Dennis Detlef Dieter Dominik Eberhard
+			Emil Erich Fabian Felix Florian Frank Franz Friedrich Georg Gerhard Gunther
+			Hannes Hartmut Heiko Heinrich Helmut Hendrik Holger Ingo Jannik Jens Joachim
+			Johannes Jonas Jorg Julian Jurgen Karl Kilian Klaus Konrad Lars Leon Lorenz
+			Lukas Manfred Marius Markus Matthias Maximilian Moritz Niklas Norbert Oliver
+			Otto Patrick Paul Philipp Rainer Reinhard Rolf Rudolf Sebastian Simon Stefan
+			Sven Thorsten Tobias Ulrich Uwe Valentin Volker Werner Wilhelm Wolfgang
+		}
+	}
+	female = {
+		names = {
+			Anja Anke Anna Annegret Antje Astrid Barbara Beate Birgit Brigitte Carla
+			Charlotte Christa Claudia Cordula Dagmar Doris Elisabeth Elke Emilia Erika
+			Franziska Frauke Freya Gabriele Gerda Gisela Greta Hannah Hedwig Heike Helga
+			Henriette Hilde Ilse Ingrid Irmgard Jana Johanna Judith Julia Katharina Katrin
+			Kerstin Klara Kristin Lena Leonie Lisbeth Lotte Magdalena Maike Manuela Marion
+			Martina Mechthild Meike Monika Nadja Nina Petra Regina Renate Sabine Sigrid
+			Silke Sonja Stefanie Susanne Sylvia Tanja Theresa Ulrike Ursula Ute Verena
+			Waltraud Wiebke
+		}
+	}
+	surnames = {
+		Albrecht Bauer Baumann Becker Berger Bergmann Beyer Bock Bohm Brandt Braun Busch
+		Dietrich Dorn Eckert Engel Ernst Fiedler Fischer Frank Franke Friedrich Fuchs
+		Gerber Gross Gunther Haas Hahn Hartmann Heinrich Heller Herbst Hermann Hofmann
+		Horn Huber Jager Jung Kaiser Kaufmann Keller Kern Klein Koch Kohler Konig Kramer
+		Krause Krebs Kruger Kuhn Lang Lange Lehmann Lorenz Ludwig Maier Martin Mayer Meier
+		Meyer Moller Muller Neumann Nowak Otto Peters Pfeiffer Pohl Reinhardt Richter
+		Riedel Ritter Roth Sauer Schafer Schmid Schmidt Schmitt Schneider Scholz Schreiber
+		Schroder Schubert Schulz Schumacher Schuster Schwarz Seidel Simon Sommer Stein
+		Stephan Thiel Ulrich Vogel Vogt Voigt Wagner Walter Weber Wegner Weiss Werner
+		Winkler Wolf Zimmermann
+	}
+	callsigns = {
+		"Amsel" "Basalt" "Bussard" "Domstadt" "Eisvogel" "Feldstein" "Gebirge"
+		"Grauwacke" "Habicht" "Heidekraut" "Hochland" "Kiesel" "Kranich" "Landsturm"
+		"Nordwind" "Reiher" "Rheinwacht" "Schiefer" "Seeadler" "Steinbruch" "Uferwall"
+		"Waldrand" "Wetterstein"
+	}
+}
+
+ITA = {
+	male = {
+		names = {
+			Alberto Alessandro Alessio Andrea Angelo Antonio Bruno Carlo Cesare Christian
+			Claudio Corrado Cristiano Daniele Dario Davide Diego Domenico Edoardo Emanuele
+			Enrico Ettore Fabio Fabrizio Federico Filippo Flavio Francesco Gabriele
+			Giacomo Gianluca Gianmarco Gino Giorgio Giovanni Giulio Giuseppe Gregorio
+			Ivan Lorenzo Luca Luciano Luigi Manuel Marcello Marco Mario Massimo Matteo
+			Mattia Maurizio Michele Nicola Paolo Pasquale Pietro Raffaele Renato Riccardo
+			Roberto Ruggero Salvatore Samuele Sergio Silvio Simone Stefano Tommaso Umberto
+			Valerio Vincenzo Vittorio
+		}
+	}
+	female = {
+		names = {
+			Adriana Alessia Alice Ambra Anna Antonella Arianna Aurora Beatrice Benedetta
+			Bianca Carla Carlotta Caterina Chiara Cinzia Clara Claudia Cristina Daniela
+			Debora Elena Eleonora Elisa Emma Federica Fiorella Flavia Francesca Gabriella
+			Gaia Gemma Giada Gianna Giorgia Giovanna Giulia Grazia Ilaria Irene Isabella
+			Laura Lavinia Letizia Lidia Livia Lorena Lucia Ludovica Manuela Marcella
+			Margherita Maria Marina Marta Martina Michela Milena Mirella Monica Nadia
+			Nicoletta Ornella Paola Patrizia Pia Rachele Raffaella Rita Roberta Rosalia
+			Sabrina Sara Serena Silvia Simona Sofia Stefania Susanna Teresa Valentina
+			Valeria Veronica Viola Vittoria
+		}
+	}
+	surnames = {
+		Amato Barbieri Barone Basile Battaglia Bellini Benedetti Bernardi Bianchi Bianco
+		Bruno Caputo Carbone Caruso Castelli Cattaneo Colombo Conte Conti Coppola Costa
+		Costantini Damico Deangelis Deluca Desantis Donati Esposito Fabbri Farina Ferrara
+		Ferrari Ferretti Fabiani Fiore Fontana Franco Gallo Gatti Gentile Giordano Giuliani
+		Grasso Greco Guerra Lombardi Lombardo Longo Mancini Marchetti Mariani Marini
+		Marino Martinelli Martini Mazza Messina Milani Montanari Monti Morelli Moretti
+		Negri Neri Orlando Pagano Palumbo Parisi Pellegrini Perri Pesce Piras Poli Ricci
+		Riva Rizzi Rizzo Romano Romeo Rossetti Rossi Ruggiero Russo Sala Sanna Santoro
+		Sartori Serra Silvestri Sorrentino Testa Valente Valentini Villa Vitale Vitali
+		Zanetti
+	}
+	callsigns = {
+		"Acciaio" "Adriatico" "Allodola" "Ariete" "Bora" "Brigante" "Carso" "Falco"
+		"Fulmine" "Gabbiano" "Ghibli" "Grifone" "Lupo" "Maestrale" "Montefalco"
+		"Nembo" "Nibbio" "Poggio" "Rocca" "Scirocco" "Sperone" "Vento" "Vespro"
+	}
+}
+
+POL = {
+	male = {
+		names = {
+			Adam Adrian Aleksander Andrzej Antoni Arkadiusz Artur Bartlomiej Bartosz
+			Blazej Bogdan Bogumil Bronislaw Cezary Cyprian Damian Dariusz Dawid Dominik
+			Eryk Filip Franciszek Grzegorz Gustaw Henryk Hubert Ignacy Igor Jacek Jakub
+			Jan Janusz Jaroslaw Jerzy Kacper Kamil Karol Kazimierz Konrad Krystian
+			Krzysztof Lech Leszek Lukasz Maciej Marcin Marek Mariusz Mateusz Michal
+			Mieczyslaw Mikolaj Miroslaw Norbert Oskar Patryk Pawel Piotr Przemyslaw
+			Rafal Radoslaw Robert Roman Ryszard Sebastian Slawomir Stanislaw Szymon
+			Tadeusz Tomasz Waldemar Wiktor Witold Wojciech Zbigniew Zdzislaw Zygmunt
+		}
+	}
+	female = {
+		names = {
+			Agata Agnieszka Aleksandra Alicja Alina Amelia Aneta Anita Anna Antonina
+			Barbara Beata Bogumila Bozena Danuta Dorota Edyta Elzbieta Emilia Ewa Ewelina
+			Gabriela Grazyna Halina Hanna Helena Iga Irena Iwona Izabela Jadwiga Janina
+			Joanna Jolanta Julia Justyna Kamila Karolina Katarzyna Kinga Klara Krystyna
+			Lidia Liliana Lucyna Magdalena Maja Malgorzata Maria Marianna Marta Martyna
+			Marzena Milena Monika Natalia Nina Olga Paulina Renata Roksana Sabina Sylwia
+			Teresa Urszula Weronika Wiktoria Zofia Zuzanna
+		}
+	}
+	surnames = {
+		Adamczyk Adamski Andrzejewski Baran Bak Bialek Bielawski Blaszczyk Borkowski
+		Brzezinski Chmielewski Cieslak Czarnecki Dabrowski Dudek Duda Dziedzic Gajewski
+		Glowacki Gorski Grabowski Jablonski Jakubowski Jankowski Jasinski Jaworski
+		Kaczmarek Kalinowski Kaminski Kowalczyk Kowalski Kozlowski Krawczyk Krol Krupa
+		Kubiak Kucharski Kwiatkowski Laskowski Lewandowski Lis Maciejewski Majewski
+		Malinowski Marciniak Mazur Michalak Michalski Nowak Nowakowski Nowicki Olszewski
+		Ostrowski Pawlak Pawlowski Piotrowski Przybylski Rutkowski Sadowski Sawicki
+		Sikora Sikorski Sobczak Sokolowski Stepien Szczepanski Szewczyk Szulc Szymanski
+		Tomaszewski Urbanski Walczak Wasilewski Wieczorek Wilk Wisniewski Witkowski
+		Wojciechowski Wojcik Wroblewski Zajac Zalewski Zawadzki Zielinski Ziolkowski
+	}
+	callsigns = {
+		"Bielik" "Bocian" "Burza" "Cietrzew" "Czajka" "Dunajec" "Grot" "Halny"
+		"Jastrzab" "Kania" "Kormoran" "Krogulec" "Lawina" "Mysliwiec" "Nurek" "Orlik"
+		"Perkoz" "Puszcza" "Rysy" "Sokol" "Szaniec" "Trzmiel" "Wichura" "Zubr"
+	}
+}
+
+IRS = {
+	male = {
+		names = {
+			Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu
+			Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega
+		}
+	}
+	female = {
+		names = {
+			Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu
+			Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega
+		}
+	}
+	surnames = {
+		Primus Secundus Tertius Quartus Quintus Sextus Septimus Octavus Nonus Decimus
+		Undecimus Duodecimus Tertiusdecimus Quartusdecimus Quintusdecimus Sextusdecimus
+		Septimusdecimus Duodevicesimus Undevicesimus Vicesimus
+	}
+	callsigns = {
+		"Primus" "Secundus" "Tertius" "Quartus" "Quintus" "Sextus" "Septimus"
+		"Octavus" "Nonus" "Decimus"
+	}
+}
+
+KNX = {
+	male = {
+		names = {
+			Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu
+			Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega
+		}
+	}
+	female = {
+		names = {
+			Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu
+			Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega
+		}
+	}
+	surnames = {
+		Primus Secundus Tertius Quartus Quintus Sextus Septimus Octavus Nonus Decimus
+		Undecimus Duodecimus Tertiusdecimus Quartusdecimus Quintusdecimus Sextusdecimus
+		Septimusdecimus Duodevicesimus Undevicesimus Vicesimus
+	}
+	callsigns = {
+		"Primus" "Secundus" "Tertius" "Quartus" "Quintus" "Sextus" "Septimus"
+		"Octavus" "Nonus" "Decimus"
+	}
+}
+
+TET = {
+	male = {
+		names = {
+			Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu
+			Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega
+		}
+	}
+	female = {
+		names = {
+			Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu
+			Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega
+		}
+	}
+	surnames = {
+		Primus Secundus Tertius Quartus Quintus Sextus Septimus Octavus Nonus Decimus
+		Undecimus Duodecimus Tertiusdecimus Quartusdecimus Quintusdecimus Sextusdecimus
+		Septimusdecimus Duodevicesimus Undevicesimus Vicesimus
+	}
+	callsigns = {
+		"Primus" "Secundus" "Tertius" "Quartus" "Quintus" "Sextus" "Septimus"
+		"Octavus" "Nonus" "Decimus"
+	}
+}

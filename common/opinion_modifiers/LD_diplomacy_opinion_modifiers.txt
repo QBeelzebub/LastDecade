@@ -1,0 +1,24 @@
+opinion_modifiers = {
+
+	LD_parasite_isolation = {
+		value = -200
+	}
+
+	LD_efh_usa_friction = {
+		value = -75
+	}
+
+	LD_rsf_hostile_to_efh = {
+		value = -40
+	}
+
+	LD_rsf_hostile_to_chn = {
+		value = -30
+	}
+
+	trade_deal = {
+		trade = yes
+		value = 30
+		decay = 1
+	}
+}

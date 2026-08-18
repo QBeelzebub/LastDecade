@@ -1,0 +1,31 @@
+on_actions = {
+
+	on_weekly = {
+		effect = {
+			every_country = {
+				limit = {
+					exists = yes
+					NOT = { is_full_parasite = yes }
+					any_controlled_state = {
+						check_variable = { iris_infestation_level > 24 }
+					}
+				}
+				LD_update_containment_effect = yes
+			}
+
+			every_country = {
+				limit = {
+					exists = yes
+					NOT = { is_full_parasite = yes }
+					NOT = {
+						any_controlled_state = {
+							check_variable = { iris_infestation_level > 24 }
+						}
+					}
+					check_variable = { LD_contested_states > 0 }
+				}
+				set_variable = { LD_contested_states = 0 }
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+EFH_initiate_bop_effect = {
+	set_power_balance = {
+		id = EFH_power_balance
+		left_side = EFH_federal_authority_side
+		right_side = EFH_ha_corporation_side
+		set_default = yes
+	}
+}
+
+EFH_bop_high_ha_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = 0.20 }
+}
+
+EFH_bop_medium_ha_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = 0.15 }
+}
+
+EFH_bop_low_ha_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = 0.10 }
+}
+
+EFH_bop_very_low_ha_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = 0.05 }
+}
+
+EFH_bop_high_ef_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = -0.20 }
+}
+
+EFH_bop_medium_ef_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = -0.15 }
+}
+
+EFH_bop_low_ef_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = -0.10 }
+}
+
+EFH_bop_very_low_ef_effect = {
+	add_power_balance_value = { id = EFH_power_balance value = -0.05 }
+}

@@ -1,0 +1,169 @@
+EFH_dyadic_beckon_mio = {
+	icon = GFX_idea_generic_infantry_organization
+
+	allowed = { original_tag = EFH }
+	available = {
+		EFH = { has_country_flag = is_hybrid_nation }
+	}
+
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	research_categories = { srp_parasite_tech }
+
+	initial_trait = {
+		name = EFH_dyadic_genome_initial
+		equipment_bonus = {
+			soft_attack = 0.02
+			defense = 0.02
+		}
+	}
+
+	trait = {
+		token = EFH_dyadic_genome_core
+		name = EFH_dyadic_genome_core
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 2 y = 0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_dyadic_coordinated_deployment
+		name = EFH_dyadic_coordinated_deployment
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = -1 y = 1 }
+		relative_position_id = EFH_dyadic_genome_core
+		all_parents = { EFH_dyadic_genome_core }
+
+		equipment_bonus = {
+			defense = 0.06
+			max_strength = 0.06
+			reliability = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_dyadic_shock_integration
+		name = EFH_dyadic_shock_integration
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_dyadic_genome_core
+		all_parents = { EFH_dyadic_genome_core }
+
+		equipment_bonus = {
+			soft_attack = 0.07
+			breakthrough = 0.05
+			ap_attack = 0.04
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	trait = {
+		token = EFH_dyadic_contained_cluster_seeding
+		name = EFH_dyadic_contained_cluster_seeding
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_dyadic_coordinated_deployment
+		all_parents = { EFH_dyadic_coordinated_deployment }
+
+		special_trait_background = yes
+
+		production_bonus = {
+			production_resource_need_factor = -0.08
+			production_efficiency_gain_factor = 0.06
+		}
+
+		on_complete = {
+			EFH = {
+				EFH_bop_low_ha_effect = yes
+				set_technology = { EFH_contained_beckon_cluster_tech = 1 popup = no }
+			}
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_dyadic_combat_strain_refinement
+		name = EFH_dyadic_combat_strain_refinement
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 0 y = 1 }
+		relative_position_id = EFH_dyadic_shock_integration
+		all_parents = { EFH_dyadic_shock_integration }
+
+		special_trait_background = yes
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.06
+			ap_attack = 0.05
+		}
+
+		on_complete = {
+			EFH = {
+				EFH_bop_low_ha_effect = yes
+				set_technology = { EFH_dyadic_striker_tech = 1 popup = no }
+			}
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	trait = {
+		token = EFH_dyadic_two_species_army
+		name = EFH_dyadic_two_species_army
+		icon = GFX_generic_mio_department_icon_infantry_quality
+
+		position = { x = 1 y = 1 }
+		relative_position_id = EFH_dyadic_contained_cluster_seeding
+		any_parent = { EFH_dyadic_contained_cluster_seeding EFH_dyadic_combat_strain_refinement }
+
+		special_trait_background = yes
+
+		available = {
+			EFH = {
+				OR = {
+					has_character = EFH_vagrant_3
+					has_character = EFH_vagrant_3_reborn
+				}
+				has_country_flag = EFH_vagrant_3_advisory_duty
+			}
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.06
+			defense = 0.08
+			max_strength = 0.06
+			ap_attack = 0.05
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.06
+			production_cost_factor = -0.05
+		}
+
+		on_complete = {
+			EFH = {
+				EFH_bop_medium_ha_effect = yes
+				set_technology = { EFH_dyadic_unlock_paragon = 1 popup = no }
+			}
+		}
+
+		ai_will_do = { base = 5 }
+	}
+}

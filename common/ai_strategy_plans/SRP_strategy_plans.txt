@@ -1,0 +1,200 @@
+EFH_canon_plan = {
+	name = "EFH canon research plan"
+	desc = ""
+
+	allowed = { original_tag = EFH }
+	enable  = { always = yes }
+	abort   = { always = no }
+
+	research = {
+		srp_industry_tech     = 18.0
+		srp_electronics_tech  = 14.0
+		srp_incendiary        = 14.0
+		srp_land_tech         = 12.0
+		srp_construction_tech = 10.0
+		srp_air_tech          = 10.0
+		nuclear               = 10.0
+		srp_artillery_tech    = 8.0
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+USA_canon_plan = {
+	name = "USA canon research plan"
+	desc = ""
+
+	allowed = { original_tag = USA }
+	enable  = { always = yes }
+	abort   = { always = no }
+
+	research = {
+		srp_industry_tech    = 18.0
+		srp_land_tech        = 14.0
+		srp_armor_tech       = 12.0
+		srp_air_tech         = 12.0
+		srp_naval_tech       = 10.0
+		srp_incendiary       = 10.0
+		srp_electronics_tech = 8.0
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+JAP_canon_plan = {
+	name = "JAP canon research plan"
+	desc = ""
+
+	allowed = { original_tag = JAP }
+	enable  = { always = yes }
+	abort   = { always = no }
+
+	research = {
+		nuclear           = 20.0
+		srp_naval_tech    = 14.0
+		srp_air_tech      = 12.0
+		srp_industry_tech = 12.0
+		srp_incendiary    = 10.0
+		srp_land_tech     = 10.0
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+CHN_canon_plan = {
+	name = "CHN canon research plan"
+	desc = ""
+
+	allowed = { original_tag = CHN }
+	enable  = { always = yes }
+	abort   = { always = no }
+
+	research = {
+		srp_industry_tech     = 16.0
+		srp_land_tech         = 14.0
+		srp_incendiary        = 10.0
+		srp_artillery_tech    = 10.0
+		srp_construction_tech = 10.0
+		srp_air_tech          = 8.0
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+IRS_canon_plan = {
+	name = "IRS canon research plan"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = { always = yes }
+	abort   = { always = no }
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+KNX_canon_plan = {
+	name = "KNX canon research plan"
+	desc = ""
+
+	allowed = { original_tag = KNX }
+	enable  = { always = yes }
+	abort   = { always = no }
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+EFH_historical_focus_plan = {
+	name = "EFH historical focus path"
+	desc = ""
+
+	allowed = { original_tag = EFH }
+	enable  = { is_historical_focus_on = yes }
+	abort_when_not_enabled = yes
+
+	ai_national_focuses = {
+		EFH_laytheo_orbital_logistics
+		EFH_doctrine_investment
+		EFH_fissile_plant_program
+		EFH_pacific_partnership
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+RSF_historical_focus_plan = {
+	name = "RSF historical focus path"
+	desc = ""
+
+	allowed = { original_tag = RSF }
+	enable  = { is_historical_focus_on = yes }
+	abort_when_not_enabled = yes
+
+	ai_national_focuses = {
+		RSF_autarky
+		RSF_federal_suppression
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}
+
+USA_historical_focus_plan = {
+	name = "USA historical focus path"
+	desc = ""
+
+	allowed = { original_tag = USA }
+	enable  = { is_historical_focus_on = yes }
+	abort_when_not_enabled = yes
+
+	ai_national_focuses = {
+		USA_summit_skepticism
+		USA_cyber_dominance
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}

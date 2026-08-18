@@ -1,0 +1,193 @@
+ld_theater_air_shield = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_THEATER_AIR_SHIELD
+	description = LD_GRAND_DOCTRINE_THEATER_AIR_SHIELD_DESC
+	icon = GFX_air_defence_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_interception_detect_factor = 0.15
+	air_superiority_efficiency = 0.10
+	milestones = {
+		{ air_intercept_efficiency = 0.15 category_fighter = { air_agility = 0.05 } }
+		{ army_bonus_air_superiority_factor = 0.10 }
+		{ air_mission_xp_gain_factor = 0.05 }
+		{ strategic_bomb_visibility = -0.20 }
+	}
+}
+
+ld_close_suppression_doctrine = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_CLOSE_SUPPRESSION_DOCTRINE
+	description = LD_GRAND_DOCTRINE_CLOSE_SUPPRESSION_DOCTRINE_DESC
+	icon = GFX_battlefield_support_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_cas_efficiency = 0.20
+	air_superiority_detect_factor = 0.10
+	milestones = {
+		{ army_bonus_air_superiority_factor = 0.10 }
+		{ air_cas_present_factor = 0.15 category_cas = { air_agility = 0.10 } }
+		{ air_mission_xp_gain_factor = 0.05 }
+		{ air_strategic_bomber_bombing_factor = 0.10 }
+	}
+}
+
+ld_strategic_fire_doctrine = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_STRATEGIC_FIRE_DOCTRINE
+	description = LD_GRAND_DOCTRINE_STRATEGIC_FIRE_DOCTRINE_DESC
+	icon = GFX_battlefield_destruction_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_escort_efficiency = 0.15
+	air_strategic_bomber_bombing_factor = 0.15
+	milestones = {
+		{ air_intercept_efficiency = 0.10 }
+		{ air_nav_efficiency = 0.10 }
+		{ category_tac_bomber = { air_bombing = 0.10 } }
+		{ air_strategic_bomber_bombing_factor = 0.20 air_mission_xp_gain_factor = 0.05 }
+	}
+}
+
+ld_signal_denial_air_war = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_SIGNAL_DENIAL_AIR_WAR
+	description = LD_GRAND_DOCTRINE_SIGNAL_DENIAL_AIR_WAR_DESC
+	icon = GFX_air_superiority_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_interception_detect_factor = 0.10
+	air_superiority_detect_factor = 0.15
+	milestones = {
+		{ air_mission_xp_gain_factor = 0.10 }
+		{ army_bonus_air_superiority_factor = 0.10 }
+		{ category_heavy_fighter = { air_agility = 0.05 } }
+		{ strategic_bomb_visibility = -0.30 }
+	}
+}
+
+ld_air_superiority_campaign = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_AIR_SUPERIORITY_CAMPAIGN
+	description = LD_GRAND_DOCTRINE_AIR_SUPERIORITY_CAMPAIGN_DESC
+	icon = GFX_air_defence_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_superiority_efficiency = 0.15
+	air_intercept_efficiency = 0.10
+	category_fighter = { air_agility = 0.05 }
+	milestones = {
+		{ air_interception_detect_factor = 0.10 air_superiority_detect_factor = 0.10 }
+		{ air_ace_generation_chance_factor = 0.10 }
+		{ army_bonus_air_superiority_factor = 0.15 }
+		{ air_mission_xp_gain_factor = 0.10 air_untrained_pilots_penalty_factor = -0.10 }
+	}
+}
+
+ld_interdiction_strike_doctrine = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_INTERDICTION_STRIKE_DOCTRINE
+	description = LD_GRAND_DOCTRINE_INTERDICTION_STRIKE_DOCTRINE_DESC
+	icon = GFX_battlefield_destruction_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_nav_efficiency = 0.10
+	air_strategic_bomber_bombing_factor = 0.10
+	air_escort_efficiency = 0.10
+	milestones = {
+		{ category_tac_bomber = { air_bombing = 0.08 } }
+		{ air_cas_efficiency = 0.10 naval_strike_targetting_factor = 0.05 }
+		{ air_mission_efficiency = 0.08 }
+		{ air_strategic_bomber_bombing_factor = 0.15 air_mission_xp_gain_factor = 0.05 }
+	}
+}
+
+ld_parasite_air_tide = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_PARASITE_AIR_TIDE
+	description = LD_GRAND_DOCTRINE_PARASITE_AIR_TIDE_DESC
+	icon = GFX_battlefield_support_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 2 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_cas_efficiency = 0.20
+	air_cas_present_factor = 0.10
+	category_cas = { air_agility = 0.05 }
+	milestones = {
+		{ air_cas_efficiency = 0.10 air_superiority_detect_factor = 0.05 }
+		{ air_cas_present_factor = 0.15 }
+		{ category_cas = { air_agility = 0.05 } air_mission_efficiency = 0.05 }
+		{ air_cas_efficiency = 0.10 air_mission_xp_gain_factor = 0.05 }
+	}
+}
+
+ld_parasite_air_few = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_PARASITE_AIR_FEW
+	description = LD_GRAND_DOCTRINE_PARASITE_AIR_FEW_DESC
+	icon = GFX_battlefield_destruction_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_strategic_bomber_bombing_factor = 0.15
+	air_escort_efficiency = 0.15
+	category_tac_bomber = { air_bombing = 0.05 }
+	milestones = {
+		{ category_tac_bomber = { air_bombing = 0.10 } }
+		{ air_strategic_bomber_bombing_factor = 0.10 air_nav_efficiency = 0.05 }
+		{ army_bonus_air_superiority_factor = 0.08 }
+		{ air_strategic_bomber_bombing_factor = 0.15 air_mission_xp_gain_factor = 0.05 }
+	}
+}
+
+ld_parasite_air_network = {
+	folder = air
+	name = LD_GRAND_DOCTRINE_PARASITE_AIR_NETWORK
+	description = LD_GRAND_DOCTRINE_PARASITE_AIR_NETWORK_DESC
+	icon = GFX_air_superiority_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = air
+	ai_will_do = { base = 1 }
+	tracks = { fighter_aircraft strike_aircraft medium_aircraft heavy_aircraft }
+	air_interception_detect_factor = 0.20
+	air_superiority_detect_factor = 0.15
+	strategic_bomb_visibility = -0.15
+	milestones = {
+		{ air_intercept_efficiency = 0.15 }
+		{ air_superiority_efficiency = 0.10 strategic_bomb_visibility = -0.10 }
+		{ air_ace_generation_chance_factor = 0.10 }
+		{ air_interception_detect_factor = 0.10 air_mission_xp_gain_factor = 0.05 }
+	}
+}

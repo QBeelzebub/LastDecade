@@ -1,0 +1,33 @@
+state = {
+	id = 838
+	name = "STATE_838"
+	manpower = 600000
+	resources = {
+		rubber = 2
+	}
+
+	state_category = pastoral
+
+	history = {
+		set_variable = { ETH_state_development_production_speed = -0.3 }
+		set_variable = { ETH_state_development_local_building_slots_factor = -0.3 }
+
+		buildings = {
+		}
+		victory_points = {
+			13244 2
+		}
+		victory_points = {
+			7912 1
+		}
+
+		owner = AFR
+		add_core_of = AFR
+	}
+
+	provinces = {
+ 		7912 13244 13245
+ 	}
+
+	local_supplies = 0.0
+}

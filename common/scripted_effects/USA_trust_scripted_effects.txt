@@ -1,0 +1,40 @@
+USA_initiate_trust_effect = {
+	set_power_balance = {
+		id = USA_public_trust
+		left_side = USA_government_distrust_side
+		right_side = USA_public_confidence_side
+		set_default = yes
+	}
+}
+
+USA_trust_high_gain_effect = {
+	add_power_balance_value = { id = USA_public_trust value = 0.20 }
+}
+
+USA_trust_medium_gain_effect = {
+	add_power_balance_value = { id = USA_public_trust value = 0.15 }
+}
+
+USA_trust_low_gain_effect = {
+	add_power_balance_value = { id = USA_public_trust value = 0.10 }
+}
+
+USA_trust_very_low_gain_effect = {
+	add_power_balance_value = { id = USA_public_trust value = 0.05 }
+}
+
+USA_trust_high_loss_effect = {
+	add_power_balance_value = { id = USA_public_trust value = -0.20 }
+}
+
+USA_trust_medium_loss_effect = {
+	add_power_balance_value = { id = USA_public_trust value = -0.15 }
+}
+
+USA_trust_low_loss_effect = {
+	add_power_balance_value = { id = USA_public_trust value = -0.10 }
+}
+
+USA_trust_very_low_loss_effect = {
+	add_power_balance_value = { id = USA_public_trust value = -0.05 }
+}

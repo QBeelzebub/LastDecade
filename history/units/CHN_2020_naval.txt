@@ -1,0 +1,26 @@
+units = {
+	fleet = {
+		name = "East Sea Fleet"
+		naval_base = 7014
+		task_force = {
+			name = "1st Carrier Group"
+			location = 7014
+			ship = { name = "CNS Liaoning" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = CHN version_name = "Liaoning Class" } } }
+			ship = { name = "CNS Nanchang" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = CHN version_name = "Renhai Class" } } }
+			ship = { name = "CNS Lhasa" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = CHN version_name = "Renhai Class" } } }
+		}
+		task_force = {
+			name = "2nd Carrier Group"
+			location = 7014
+			ship = { name = "CNS Shandong" definition = carrier start_experience_factor = 0.3 equipment = { srp_carrier_hull_1 = { amount = 1 owner = CHN version_name = "Shandong Class" } } }
+			ship = { name = "CNS Kunming" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = CHN version_name = "Kunming Class" } } }
+			ship = { name = "CNS Changsha" definition = destroyer start_experience_factor = 0.3 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = CHN version_name = "Kunming Class" } } }
+		}
+		task_force = {
+			name = "Submarine Flotilla"
+			location = 7014
+			ship = { name = "CNS Changzheng 10" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = CHN version_name = "Shang Class" } } }
+			ship = { name = "CNS Changzheng 18" definition = submarine start_experience_factor = 0.3 equipment = { srp_submarine_hull_1 = { amount = 1 owner = CHN version_name = "Jin Class" } } }
+		}
+	}
+}

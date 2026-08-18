@@ -1,0 +1,114 @@
+srp_public_confidence = {
+
+    CHN_state_media_reassurance = {
+        icon = generic_political_actions
+
+        allowed = { tag = CHN }
+
+        visible = {
+            tag = CHN
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = CHN_media_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_any
+                check_variable = { public_panic > 0 }
+            }
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 8
+                check_variable = { public_panic > 99 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { public_panic > 299 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = CHN_media_cd days = 30 }
+            add_to_variable = { var = public_panic value = -100 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+        }
+    }
+
+    CHN_social_stability_enforcement = {
+        icon = generic_political_actions
+
+        allowed = { tag = CHN }
+
+        visible = {
+            tag = CHN
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = CHN_enforcement_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_100
+                check_variable = { public_panic > 100 }
+            }
+        }
+
+        cost = 75
+        fire_only_once = no
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 8
+                check_variable = { public_panic > 299 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { public_panic > 499 }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = { flag = CHN_enforcement_cd days = 60 }
+            add_to_variable = { var = public_panic value = -200 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_stability = -0.04
+        }
+    }
+
+    CHN_peoples_war_mobilization = {
+        icon = generic_army_support
+
+        allowed = { tag = CHN }
+
+        visible = {
+            tag = CHN
+            NOT = { is_full_parasite = yes }
+        }
+
+        available = {
+            NOT = { has_country_flag = CHN_peoples_war_cd }
+            custom_trigger_tooltip = {
+                tooltip = srp_panic_tt_below_900
+                check_variable = { public_panic < 900 }
+            }
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        ai_will_do = { factor = 0 }
+
+        complete_effect = {
+            set_country_flag = { flag = CHN_peoples_war_cd days = 180 }
+            add_to_variable = { var = public_panic value = 200 }
+            hidden_effect = { SRP_recalculate_public_panic_effect = yes }
+            add_timed_idea = { idea = CHN_peoples_war_spirit days = 120 }
+        }
+    }
+}

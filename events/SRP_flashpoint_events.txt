@@ -1,0 +1,110 @@
+add_namespace = srp_flashpoint
+
+country_event = {
+	id = srp_flashpoint.1
+	title = srp_flashpoint.1.t
+	desc = srp_flashpoint.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_flashpoint.1.a
+		ai_chance = { base = 40 }
+		SRP_deescalate_low_effect = yes
+	}
+
+	option = {
+		name = srp_flashpoint.1.b
+		ai_chance = { base = 40 }
+		add_war_support = 0.02
+		SRP_escalate_low_effect = yes
+	}
+
+	option = {
+		name = srp_flashpoint.1.c
+		ai_chance = { base = 20 }
+		air_experience = 15
+		add_war_support = 0.03
+		SRP_escalate_medium_effect = yes
+	}
+}
+
+country_event = {
+	id = srp_flashpoint.2
+	title = srp_flashpoint.2.t
+	desc = srp_flashpoint.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_flashpoint.2.a
+		ai_chance = { base = 50 }
+		add_political_power = -15
+		SRP_deescalate_low_effect = yes
+	}
+
+	option = {
+		name = srp_flashpoint.2.b
+		ai_chance = { base = 50 }
+		add_political_power = 10
+		navy_experience = 10
+		SRP_escalate_low_effect = yes
+	}
+}
+
+country_event = {
+	id = srp_flashpoint.3
+	title = srp_flashpoint.3.t
+	desc = srp_flashpoint.3.d
+	picture = GFX_report_event_usa_new_navy
+	is_triggered_only = yes
+
+	option = {
+		name = srp_flashpoint.3.a
+		ai_chance = { base = 40 }
+		navy_experience = 15
+	}
+
+	option = {
+		name = srp_flashpoint.3.b
+		ai_chance = { base = 30 }
+		navy_experience = 25
+		add_war_support = 0.03
+		SRP_escalate_medium_effect = yes
+	}
+
+	option = {
+		name = srp_flashpoint.3.c
+		ai_chance = { base = 30 }
+		add_political_power = 10
+		SRP_escalate_low_effect = yes
+	}
+}
+
+country_event = {
+	id = srp_flashpoint.4
+	title = srp_flashpoint.4.t
+	desc = srp_flashpoint.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_flashpoint.4.a
+		ai_chance = { base = 50 }
+		add_political_power = 10
+		SRP_escalate_low_effect = yes
+	}
+
+	option = {
+		name = srp_flashpoint.4.b
+		ai_chance = { base = 30 }
+		SRP_deescalate_low_effect = yes
+	}
+
+	option = {
+		name = srp_flashpoint.4.c
+		ai_chance = { base = 20 }
+		add_war_support = 0.02
+		SRP_escalate_medium_effect = yes
+	}
+}

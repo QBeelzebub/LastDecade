@@ -1,0 +1,252 @@
+add_namespace = efh_geo
+add_namespace = usa_efh_war
+add_namespace = geo_volunteers
+
+news_event = {
+	id = efh_geo.1
+	major = yes
+	title = efh_geo.1.t
+	desc = efh_geo.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_geo.1.a
+		ai_chance = { base = 100 }
+		set_country_flag = EFH_japan_pact_public
+		custom_effect_tooltip = efh_geo_japan_pact_tt
+		hidden_effect = {
+			USA = {
+				set_country_flag = EFH_japan_pact_detected
+				country_event = { id = usa_efh_war.2 days = 3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = efh_geo.2
+	title = efh_geo.2.t
+	desc = efh_geo.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_geo.2.a
+		ai_chance = { base = 60 }
+		set_country_flag = EFH_china_leaning_efh
+		add_political_power = 40
+		if = {
+			limit = { has_completed_focus = EFH_eurasian_buffer_doctrine }
+			hidden_effect = {
+				add_to_variable = { EFH_gov_army_org_factor = -0.04 }
+				add_to_variable = { EFH_gov_war_support_factor = -0.05 }
+				add_to_variable = { EFH_gov_supply_consumption_factor = 0.03 }
+				EFH_refresh_gov = yes
+			}
+		}
+		add_ideas = EFH_sino_efh_partnership
+		if = {
+			limit = { country_exists = CHN }
+			CHN = { add_ideas = CHN_efh_partnership }
+		}
+		EFH_bop_very_low_ef_effect = yes
+		custom_effect_tooltip = efh_geo_china_efh_tt
+	}
+
+	option = {
+		name = efh_geo.2.b
+		ai_chance = { base = 40 }
+		set_country_flag = EFH_china_neutral
+		add_political_power = 15
+		custom_effect_tooltip = efh_geo_china_neutral_tt
+	}
+}
+
+news_event = {
+	id = efh_geo.3
+	major = yes
+	title = efh_geo.3.t
+	desc = efh_geo.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_geo.3.a
+		ai_chance = { base = 100 }
+		set_country_flag = EFH_hemispheric_claim_public
+		custom_effect_tooltip = efh_geo_hemispheric_tt
+		hidden_effect = {
+			USA = {
+				set_country_flag = EFH_hemispheric_claim_detected
+				country_event = { id = usa_efh_war.1 days = 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = usa_efh_war.1
+	title = usa_efh_war.1.t
+	desc = usa_efh_war.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = usa_efh_war.1.a
+		ai_chance = { base = 70 }
+		add_war_support = 0.05
+		add_political_power = 20
+		set_country_flag = USA_efh_formal_protest
+		EFH = {
+			set_country_flag = USA_efh_formal_protest
+			add_political_power = -15
+		}
+	}
+
+	option = {
+		name = usa_efh_war.1.b
+		ai_chance = { base = 30 }
+		add_political_power = 10
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = usa_efh_war.2
+	title = usa_efh_war.2.t
+	desc = usa_efh_war.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = usa_efh_war.2.a
+		ai_chance = { base = 60 }
+		add_war_support = 0.05
+		set_country_flag = USA_japan_diplomatic_pressure
+		EFH = {
+			set_country_flag = USA_japan_diplomatic_pressure
+		}
+	}
+
+	option = {
+		name = usa_efh_war.2.b
+		ai_chance = { base = 40 }
+		add_war_support = 0.08
+		army_experience = 25
+		add_political_power = -20
+	}
+}
+
+country_event = {
+	id = usa_efh_war.3
+	title = usa_efh_war.3.t
+	desc = usa_efh_war.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = usa_efh_war.3.a
+		ai_chance = { base = 50 }
+		if = {
+			limit = {
+				country_exists = EFH
+				NOT = { has_war_with = EFH }
+			}
+			declare_war_on = {
+				target = EFH
+				type = annex_everything
+			}
+		}
+	}
+
+	option = {
+		name = usa_efh_war.3.b
+		ai_chance = { base = 50 }
+		add_war_support = -0.10
+		add_stability = 0.05
+		set_country_flag = USA_efh_war_averted
+		EFH = {
+			set_country_flag = USA_efh_war_averted
+			add_political_power = 30
+		}
+	}
+}
+
+country_event = {
+	id = efh_geo.4
+	title = efh_geo.4.t
+	desc = efh_geo.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_geo.4.a
+		ai_chance = { base = 70 }
+		add_timed_idea = { idea = USA_joint_research_accord days = 180 }
+		EFH = {
+			country_event = { id = efh_geo.5 days = 2 }
+		}
+	}
+
+	option = {
+		name = efh_geo.4.b
+		ai_chance = { base = 30 }
+		add_political_power = 15
+		EFH = {
+			country_event = { id = efh_geo.5 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = efh_geo.5
+	title = efh_geo.5.t
+	desc = efh_geo.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_geo.5.a
+		ai_chance = { base = 100 }
+		if = {
+			limit = { USA = { has_idea = USA_joint_research_accord } }
+			custom_effect_tooltip = efh_geo_accord_accepted_tt
+		}
+		if = {
+			limit = { NOT = { USA = { has_idea = USA_joint_research_accord } } }
+			custom_effect_tooltip = efh_geo_accord_declined_tt
+		}
+	}
+}
+
+country_event = {
+	id = geo_volunteers.1
+	title = geo_volunteers.1.t
+	desc = geo_volunteers.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = geo_volunteers.1.a
+		ai_chance = { base = 70 }
+		add_political_power = -30
+		add_manpower = -5000
+		AFR = {
+			add_manpower = 5000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment0
+				amount = 1000
+				producer = ROOT
+			}
+		}
+		add_ideas = SRP_volunteers_to_africa_idea
+	}
+
+	option = {
+		name = geo_volunteers.1.b
+		ai_chance = { base = 30 }
+		add_political_power = 10
+	}
+}

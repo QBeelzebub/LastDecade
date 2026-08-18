@@ -1,0 +1,15 @@
+panama_canal_damaged_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+
+	custom_modifier_tooltip = kiel_canal_damaged_tt
+}
+
+kiel_canal_damaged_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+
+	custom_modifier_tooltip = kiel_canal_damaged_tt
+}

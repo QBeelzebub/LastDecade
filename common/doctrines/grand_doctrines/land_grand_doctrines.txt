@@ -1,0 +1,201 @@
+ld_contact_warfare = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_CONTACT_WARFARE
+	description = LD_GRAND_DOCTRINE_CONTACT_WARFARE_DESC
+	icon = GFX_mobile_warfare_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { infantry combat_support armor operations }
+	planning_speed = 0.15
+	army_speed_factor = 0.05
+	enable_tactic = tactic_unexpected_thrust
+	milestones = {
+		{ land_reinforce_rate = 0.02 enable_tactic = tactic_delay }
+		{ planning_speed = 0.10 enable_tactic = tactic_overwhelming_fire }
+		{ org_loss_when_moving = -0.10 enable_tactic = tactic_blitz }
+		{ army_morale = 0.05 enable_tactic = tactic_backhand_blow }
+	}
+}
+
+ld_containment_warfare = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_CONTAINMENT_WARFARE
+	description = LD_GRAND_DOCTRINE_CONTAINMENT_WARFARE_DESC
+	icon = GFX_prepared_defense_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 2 }
+	tracks = { infantry combat_support armor operations }
+	max_dig_in_factor = 0.10
+	dig_in_speed_factor = 0.10
+	supply_consumption_factor = -0.05
+	enable_tactic = tactic_elastic_defense
+	milestones = {
+		{ max_dig_in_factor = 0.05 supply_consumption_factor = -0.05 }
+		{ dig_in_speed_factor = 0.05 land_reinforce_rate = 0.01 }
+		{ out_of_supply_factor = -0.05 enable_tactic = tactic_delay }
+		{ coordination_bonus = 0.05 max_command_power = 15 }
+	}
+}
+
+ld_mobile_burn_doctrine = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_MOBILE_BURN_DOCTRINE
+	description = LD_GRAND_DOCTRINE_MOBILE_BURN_DOCTRINE_DESC
+	icon = GFX_mechanised_offensive_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { infantry combat_support armor operations }
+	army_speed_factor = 0.08
+	org_loss_when_moving = -0.10
+	enable_tactic = tactic_breakthrough
+	milestones = {
+		{ army_morale = 0.05 land_reinforce_rate = 0.01 }
+		{ planning_speed = 0.10 enable_tactic = tactic_barrage }
+		{ additional_brigade_column_size = 1 enable_tactic = tactic_blitz }
+		{ org_loss_when_moving = -0.10 enable_tactic = tactic_tactical_withdrawal }
+	}
+}
+
+ld_last_urban_network = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_LAST_URBAN_NETWORK
+	description = LD_GRAND_DOCTRINE_LAST_URBAN_NETWORK_DESC
+	icon = GFX_grand_battle_plan_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { infantry combat_support armor operations }
+	max_planning = 0.10
+	no_supply_grace = 24
+	enable_tactic = tactic_planned_attack
+	milestones = {
+		{ additional_brigade_column_size = 1 max_dig_in_factor = 0.05 }
+		{ coordination_bonus = 0.05 enable_tactic = tactic_overwhelming_fire }
+		{ land_reinforce_rate = 0.02 enable_tactic = tactic_elastic_defense }
+		{ no_supply_grace = 24 max_command_power = 20 }
+	}
+}
+
+ld_combined_arms_maneuver = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_COMBINED_ARMS_MANEUVER
+	description = LD_GRAND_DOCTRINE_COMBINED_ARMS_MANEUVER_DESC
+	icon = GFX_mechanised_offensive_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { infantry combat_support armor operations }
+	army_speed_factor = 0.08
+	motorized_attack_factor = 0.05
+	mechanized_attack_factor = 0.05
+	enable_tactic = tactic_breakthrough
+	milestones = {
+		{ army_morale = 0.05 enable_tactic = tactic_blitz }
+		{ additional_brigade_column_size = 1 enable_tactic = tactic_unexpected_thrust }
+		{ org_loss_when_moving = -0.10 planning_speed = 0.05 }
+		{ army_core_attack_factor = 0.05 max_command_power = 15 }
+	}
+}
+
+ld_precision_strike_group = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_PRECISION_STRIKE_GROUP
+	description = LD_GRAND_DOCTRINE_PRECISION_STRIKE_GROUP_DESC
+	icon = GFX_superior_firepower_medium
+	available = { NOT = { is_full_parasite = yes } }
+	visible = { NOT = { is_full_parasite = yes } }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { infantry combat_support armor operations }
+	planning_speed = 0.10
+	max_planning = 5
+	enable_tactic = tactic_barrage
+	milestones = {
+		{ coordination_bonus = 0.05 enable_tactic = tactic_overwhelming_fire }
+		{ breakthrough_factor = 0.05 enable_tactic = tactic_planned_attack }
+		{ land_reinforce_rate = 0.02 max_dig_in_factor = 0.05 }
+		{ army_core_attack_factor = 0.05 max_command_power = 15 }
+	}
+}
+
+ld_parasite_tide = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_PARASITE_TIDE
+	description = LD_GRAND_DOCTRINE_PARASITE_TIDE_DESC
+	icon = GFX_mobile_warfare_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 2 }
+	tracks = { parasite_broods parasite_organs parasite_warbeasts parasite_web }
+	category_parasite_swarm = { max_organisation = 5 defense = 0.10 soft_attack = 0.05 }
+	land_reinforce_rate = 0.03
+	supply_consumption_factor = -0.08
+	enable_tactic = tactic_unexpected_thrust
+	milestones = {
+		{ army_morale = 0.05 land_reinforce_rate = 0.02 }
+		{ org_loss_when_moving = -0.10 }
+		{ supply_consumption_factor = -0.05 out_of_supply_factor = -0.05 }
+		{ additional_brigade_column_size = 1 land_reinforce_rate = 0.02 }
+	}
+}
+
+ld_parasite_few = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_PARASITE_FEW
+	description = LD_GRAND_DOCTRINE_PARASITE_FEW_DESC
+	icon = GFX_prepared_defense_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { parasite_broods parasite_organs parasite_warbeasts parasite_web }
+	category_parasite_apex = { soft_attack = 0.10 hard_attack = 0.10 defense = 0.10 breakthrough = 0.10 max_organisation = 5 }
+	army_morale = 0.05
+	enable_tactic = tactic_overwhelming_fire
+	milestones = {
+		{ army_morale = 0.05 org_loss_at_low_org_factor = -0.10 }
+		{ breakthrough_factor = 0.05 }
+		{ org_loss_when_moving = -0.10 }
+		{ army_core_attack_factor = 0.05 max_command_power = 15 }
+	}
+}
+
+ld_parasite_network = {
+	folder = land
+	name = LD_GRAND_DOCTRINE_PARASITE_NETWORK
+	description = LD_GRAND_DOCTRINE_PARASITE_NETWORK_DESC
+	icon = GFX_grand_battle_plan_medium
+	available = { is_parasite_nation = yes }
+	visible = { is_parasite_nation = yes }
+	xp_cost = 100
+	xp_type = army
+	ai_will_do = { base = 1 }
+	tracks = { parasite_broods parasite_organs parasite_warbeasts parasite_web }
+	planning_speed = 0.20
+	coordination_bonus = 0.10
+	max_command_power = 20
+	enable_tactic = tactic_planned_attack
+	milestones = {
+		{ max_planning = 0.10 coordination_bonus = 0.05 }
+		{ planning_speed = 0.10 land_reinforce_rate = 0.02 }
+		{ max_dig_in_factor = 0.05 org_loss_at_low_org_factor = -0.10 }
+		{ coordination_bonus = 0.05 additional_brigade_column_size = 1 max_command_power = 15 }
+	}
+}

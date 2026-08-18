@@ -1,0 +1,78 @@
+srp_public_confidence = {
+	icon = generic_political_actions
+	priority = 180
+	visible_when_empty = no
+
+	allowed = {
+		NOT = { is_full_parasite = yes }
+	}
+
+	visible = {
+		NOT = { is_full_parasite = yes }
+	}
+}
+
+srp_national_policy = {
+	icon = generic_political_actions
+	priority = 200
+	visible_when_empty = yes
+
+	allowed = {
+		NOT = { OR = { tag = IRS tag = KNX } }
+	}
+
+	visible = {
+		has_country_flag = SRP_testing_national_policy
+	}
+
+	scripted_gui = srp_national_laws_ui
+}
+
+SRP_moon_base = {
+	icon = generic_research
+	priority = 80
+	visible_when_empty = no
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = USA
+		}
+	}
+}
+
+SRP_orbital_program = {
+	icon = generic_research
+	priority = 82
+	visible_when_empty = yes
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = USA
+		}
+	}
+}
+
+SRP_consortium = {
+	icon = generic_research_bonus
+	priority = 60
+	visible_when_empty = no
+
+	allowed = {
+		OR = {
+			tag = EFH tag = USA tag = CHN tag = JAP
+			tag = OCE tag = SAC tag = AFR tag = KNX
+		}
+	}
+}
+
+srp_warhead_production = {
+	icon = generic_industry
+	priority = 81
+	visible_when_empty = no
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = USA
+		}
+	}
+}

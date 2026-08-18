@@ -1,0 +1,125 @@
+LD_hunt_canvass_informants = {
+	name = LD_hunt_canvass_informants
+	desc = LD_hunt_canvass_informants_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_hunt_signal_triangulation = {
+	name = LD_hunt_signal_triangulation
+	desc = LD_hunt_signal_triangulation_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_hunt_raid_safehouse = {
+	name = LD_hunt_raid_safehouse
+	desc = LD_hunt_raid_safehouse_desc
+	icon = "GFX_arrested_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_hunt_interrogation = {
+	name = LD_hunt_interrogation
+	desc = LD_hunt_interrogation_desc
+	icon = "GFX_arrested_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_overland_crossing = {
+	name = LD_seed_overland_crossing
+	desc = LD_seed_overland_crossing_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_coastal_insertion = {
+	name = LD_seed_coastal_insertion
+	desc = LD_seed_coastal_insertion_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_dormant_carrier = {
+	name = LD_seed_dormant_carrier
+	desc = LD_seed_dormant_carrier_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_assume_identity = {
+	name = LD_seed_assume_identity
+	desc = LD_seed_assume_identity_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_secure_position = {
+	name = LD_seed_secure_position
+	desc = LD_seed_secure_position_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_go_dormant = {
+	name = LD_seed_go_dormant
+	desc = LD_seed_go_dormant_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_seed_establish_contact = {
+	name = LD_seed_establish_contact
+	desc = LD_seed_establish_contact_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_overland_approach = {
+	name = LD_tap_overland_approach
+	desc = LD_tap_overland_approach_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_air_insertion = {
+	name = LD_tap_air_insertion
+	desc = LD_tap_air_insertion_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_splice_roots = {
+	name = LD_tap_splice_roots
+	desc = LD_tap_splice_roots_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_intercept_flower = {
+	name = LD_tap_intercept_flower
+	desc = LD_tap_intercept_flower_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_decode_traffic = {
+	name = LD_tap_decode_traffic
+	desc = LD_tap_decode_traffic_desc
+	icon = "GFX_total_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_quiet_withdrawal = {
+	name = LD_tap_quiet_withdrawal
+	desc = LD_tap_quiet_withdrawal_desc
+	icon = "GFX_dead_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}
+
+LD_tap_scrub_traces = {
+	name = LD_tap_scrub_traces
+	desc = LD_tap_scrub_traces_desc
+	icon = "GFX_dead_operatives"
+	picture = "GFX_report_event_generic_croatia_handshake"
+}

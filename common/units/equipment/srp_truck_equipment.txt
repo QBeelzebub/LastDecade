@@ -1,0 +1,56 @@
+equipments = {
+
+	srp_truck_equipment = {
+		year = 2018
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment
+		is_buildable = no
+		type = {
+			motorized
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		supply_truck = yes
+
+		maximum_speed = 12
+		reliability = 0.80
+		hardness = 0.05
+		breakthrough = 2
+
+		lend_lease_cost = 4
+
+		build_cost_ic = 2.0
+		resources = {
+			rubber = 1
+			steel = 1
+		}
+
+		fuel_consumption = 0.9
+	}
+
+	srp_truck_equipment_1 = {
+		year = 2018
+
+		archetype = srp_truck_equipment
+		priority = 30
+	}
+
+	srp_truck_equipment_2 = {
+		year = 2023
+
+		archetype = srp_truck_equipment
+		parent = srp_truck_equipment_1
+		priority = 40
+
+		maximum_speed = 14
+		reliability = 0.88
+		hardness = 0.08
+		breakthrough = 3
+
+		build_cost_ic = 3.0
+		fuel_consumption = 1.1
+	}
+}

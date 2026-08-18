@@ -1,0 +1,19 @@
+add_namespace = IRS_recovery
+
+country_event = {
+	id = IRS_recovery.1
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_core_state = {
+			limit = { NOT = { state = 703 } }
+			transfer_state_to = IRS
+		}
+		load_oob = "IRS_emergency_respawn"
+		add_manpower = 200000
+		clr_country_flag = IRS_recovery_pending
+	}
+
+	option = { }
+}

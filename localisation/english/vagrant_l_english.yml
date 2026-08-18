@@ -1,0 +1,147 @@
+﻿l_english:
+ vagrant_1_desc: "The first Vagrant ever recorded. A measured, enduring warform that holds ground through sheer mass rather than speed. Whatever held it is gone."
+ vagrant_2_desc: "A Vagrant built for forward momentum. It arrives at a position and keeps going."
+ vagrant_3_desc: "The most resilient of the four. It anchors wherever it stands, and no attempt to remove one has finished inside its own timetable."
+ vagrant_4_desc: "The Iris's own, and the most alien of the four. What it does when it is not fighting has never been established."
+
+ host_parasite: "Host"
+ host_parasite_desc: "A sub-surface organism that erupts to summon others and spray acid across armored positions."
+ herd_parasite: "Herd"
+ herd_parasite_desc: "An evolved Host, larger and more saturating. Its emergence draws more organisms from the ground with it."
+ hollower: "Hollower"
+ hollower_desc: "A Tromos siege organism built to dismantle hardened positions from the outside in."
+ scourer: "Scourer"
+ scourer_desc: "A fast Tromos assault breed designed for rapid terrain clearance and exploitation."
+ arbiter: "Arbiter"
+ arbiter_desc: "A precision organism engineered by VAGRANT-01, effective against both human formations and Iris parasite units."
+ culler: "Culler"
+ culler_desc: "An elimination-focused organism designed for targeted removal. Stays in contact until the target stops."
+ magistrate: "Magistrate"
+ magistrate_desc: "VAGRANT-01's capstone organism. A phase-adaptive strike organ reconfigures between human-lethal and Iris-disruptive biochemistry depending on what it engages, backed by a dense adaptive membrane drawn from the Culler lineage. Built to have no bad matchup, rather than specialising the way Arbiter and Culler do."
+
+ vagrant_manifestation: "Vagrant Manifestation"
+ vagrant_manifestation_desc: "The Iris turns its attention inward and something long dormant begins to move. A Vagrant was already in the ground before the Iris called for it."
+ efh_vagrant_accord: "Vagrant Accord"
+ efh_vagrant_accord_desc: "Two of the four known Vagrants have chosen to cooperate with the European Federation. Nobody in the research division is entirely comfortable with that word, chosen."
+
+ vagrant_1_nest_builder: "Nest Architect"
+ vagrant_1_nest_builder_desc: "Builds infrastructure and defends it. Plans ten steps ahead and commits to none of them until the ground is ready. A contractor with aligned interests, not an ally."
+
+ vagrant_2_combat_liaison: "Combat Liaison"
+ vagrant_2_combat_liaison_desc: "Functions as a direct interface between H&A command and the parasite front line. Its presence accelerates fieldwork and complicates every political meeting it attends."
+
+ vagrant_3_hyperbiology_researcher: "Hyperbiology Collaborator"
+ vagrant_3_hyperbiology_researcher_desc: "Sits in on H&A Hyperbiology sessions and corrects the researchers. Politely. The paperwork around its clearance level does not resolve cleanly."
+
+ vagrant_4_iris_coordinator: "Network Conductor"
+ vagrant_4_iris_coordinator_desc: "Coordinates parasite operations at a scale no Dispatcher can match. It adjusts the signal, and things happen."
+
+ EFH_VAGRANT_2_NAME: "The Second"
+ EFH_VAGRANT_3_NAME: "The Third"
+ IRS_VAGRANT_4_NAME: "The Fourth"
+
+ EFH_vagrant_2_advisor: "The Second"
+ EFH_vagrant_2_advisor_desc: "A parasite aligned with the Federation. Operates as a liaison between H&A's Hyperbiology division and the military command structure. Its presence alone shifts how the Federation approaches the war."
+ EFH_vagrant_2_b_advisor: "The Second"
+ EFH_vagrant_2_b_advisor_desc: "A parasite aligned with the Federation. Operates as a liaison between H&A's Hyperbiology division and the military command structure. Its presence alone shifts how the Federation approaches the war."
+
+ EFH_vagrant_3_advisor: "The Third"
+ EFH_vagrant_3_advisor_desc: "A parasite aligned with the Federation. Works closely with H&A researchers on the Hyperbiology programme. Its insight into parasite cognition has no parallel."
+ EFH_vagrant_3_b_advisor: "The Third"
+ EFH_vagrant_3_b_advisor_desc: "A parasite aligned with the Federation. Works closely with H&A researchers on the Hyperbiology programme. Its insight into parasite cognition has no parallel."
+
+ IRS_vagrant_4_advisor: "The Fourth"
+ IRS_vagrant_4_advisor_desc: "Aligned with the Iris since emergence. Coordinates parasite activity across theatres at a scale no human command structure is built to track."
+ IRS_vagrant_4_b_advisor: "The Fourth"
+ IRS_vagrant_4_b_advisor_desc: "Aligned with the Iris since emergence. Coordinates parasite activity across theatres at a scale no human command structure is built to track."
+
+ KNX_vagrant_one_advisor: "The First"
+ KNX_vagrant_one_advisor_desc: "The oldest known vagrant. Builds a civilisation project from Knox County's remains. Transactional with outside powers, but loyal to nothing except its own design."
+ KNX_vagrant_one_b_advisor: "The First"
+ KNX_vagrant_one_b_advisor_desc: "The oldest known vagrant. Builds a civilisation project from Knox County's remains. Transactional with outside powers, but loyal to nothing except its own design."
+
+ vagrant_1_core: "First Vagrant Core"
+ vagrant_1_core_1: "First Vagrant Core"
+ vagrant_2_core: "Second Vagrant Core"
+ vagrant_2_core_1: "Second Vagrant Core"
+ vagrant_3_core: "Third Vagrant Core"
+ vagrant_3_core_1: "Third Vagrant Core"
+ vagrant_4_core: "Fourth Vagrant Core"
+ vagrant_4_core_1: "Fourth Vagrant Core"
+
+ vagrant_1: "The First"
+ vagrant_2: "The Second"
+ vagrant_3: "The Third"
+ vagrant_4: "The Fourth"
+
+ vagrant_deployment_decisions: "Vagrant Deployment"
+ vagrant_deployment_decisions_desc: "Assign each active vagrant to advisory work or field deployment. A vagrant cannot serve in both roles at once."
+
+ KNX_deploy_vagrant_1_field: "Deploy the First as a Battalion"
+ KNX_deploy_vagrant_1_field_desc: "Withdraw VAGRANT-01 from advisory duty and make its unique core available for a field battalion."
+ KNX_assign_vagrant_1_advisory: "Assign the First to Advisory Duty"
+ KNX_assign_vagrant_1_advisory_desc: "Return VAGRANT-01 to advisory work. Requires the First Vagrant Core to be back in stockpile. Disband any deployed or training battalion first."
+
+ EFH_deploy_vagrant_2_field: "Deploy the Second as a Battalion"
+ EFH_deploy_vagrant_2_field_desc: "Withdraw the Second from H&A advisory duty and make its unique core available for a field battalion."
+ EFH_assign_vagrant_2_advisory: "Assign the Second to Advisory Duty"
+ EFH_assign_vagrant_2_advisory_desc: "Return the Second to H&A advisory work. Requires the Second Vagrant Core to be back in stockpile. Disband any deployed or training battalion first."
+
+ EFH_deploy_vagrant_3_field: "Deploy the Third as a Battalion"
+ EFH_deploy_vagrant_3_field_desc: "Withdraw the Third from H&A advisory duty and make its unique core available for a field battalion."
+ EFH_assign_vagrant_3_advisory: "Assign the Third to Advisory Duty"
+ EFH_assign_vagrant_3_advisory_desc: "Return the Third to H&A advisory work. Requires the Third Vagrant Core to be back in stockpile. Disband any deployed or training battalion first."
+
+ IRS_deploy_vagrant_4_field: "Deploy the Fourth as a Battalion"
+ IRS_deploy_vagrant_4_field_desc: "Withdraw the Fourth from strategic advisory duty and make its unique core available for a field battalion."
+ IRS_assign_vagrant_4_advisory: "Assign the Fourth to Advisory Duty"
+ IRS_assign_vagrant_4_advisory_desc: "Return the Fourth to strategic advisory work. Requires the Fourth Vagrant Core to be back in stockpile. Disband any deployed or training battalion first."
+
+ IRS_vagrant_4_surge_command: "Surge Command"
+ IRS_vagrant_4_surge_command_desc: "Direct the Fourth to issue a full-spectrum coordination signal, synchronising every active swarm across all fronts simultaneously. The effect is brief. Nothing on the front acts independently while it runs. Requires the Fourth to be deployed in the field."
+
+ IRS_vagrant_4_surge_idea: "Surge Command"
+ IRS_vagrant_4_surge_idea_desc: "The Fourth is conducting direct swarm coordination across every active front."
+
+ vagrant.1.t: "H&A Makes Contact"
+ vagrant.1.d: "H&A field teams have located two parasite individuals near the research perimeter. They are watching. When approached by a Hyperbiology team, they responded with coherent signals. They are intelligent. They are aligned with us."
+ vagrant.1.a: "Establish formal contact."
+
+ vagrant.2.t: "The Second Has Returned"
+ vagrant.2.d: "The signal went dark for sixty days. Then it came back. The Second has reformed through its Beckon. It reports no memory of the interval. It is ready to continue."
+ vagrant.2.a: "Welcome it back."
+
+ vagrant.3.t: "The Third Has Returned"
+ vagrant.3.d: "The signal went dark for sixty days. Then it came back. The Third has reformed through its Beckon. It reports no memory of the interval. It is ready to continue."
+ vagrant.3.a: "Welcome it back."
+
+ vagrant.4.t: "The Second Has Returned"
+ vagrant.4.d: "Both were gone at the same time. For four months there was nothing. The Second has reformed first. It scanned for the Third immediately on emergence. We do not know what that means to a parasite. We know what it means to us."
+ vagrant.4.a: "Welcome it back."
+
+ vagrant.5.t: "The Third Has Returned"
+ vagrant.5.d: "Both were gone at the same time. For four months there was nothing. The Third has reformed. The Second was already back. Their reunion lasted three seconds in sensor range and then they moved to separate quadrants."
+ vagrant.5.a: "Welcome it back."
+
+ vagrant.6.t: "The Fourth Has Returned"
+ vagrant.6.d: "A Beckon in [Root.GetCapitalStateName] has gone quiet and then active again. The Fourth has come back. It took thirty days. There are hundreds of Beckons it could have chosen. It chose that one."
+ vagrant.6.a: "Continue operations."
+
+ vagrant.7.t: "The First Has Returned"
+ vagrant.7.d: "For six weeks the settlement ran on contingency command. Then the signal returned from the soil beneath the eastern grid. The First is back. It did not explain where it was. It resumed its schedules as if nothing had happened."
+ vagrant.7.a: "Carry on."
+
+ vagrant.8.t: "The Fourth Has Emerged"
+ vagrant.8.d: "A new signal has appeared in the Beckon network. It does not match any known Dispatcher pattern. It moves through the relay structure with intent. It responds to Iris-directed commands but it is making its own. The Iris recognises it. The Fourth has emerged."
+ vagrant.8.a: "Accept its alignment."
+
+ vagrant.11.t: "H&A Makes Contact"
+ vagrant.11.d: "H&A field teams have located two parasite individuals near the research perimeter. They are watching. When approached by a Hyperbiology team, they responded with coherent signals. They are intelligent. They are aligned with us."
+ vagrant.11.a: "Establish formal contact."
+
+ vagrant.9.t: "Signal Lost"
+ vagrant.9.d: "The vagrant's division has been annihilated in the field. Its core signal has gone dark. It will reform in time, but for now it is gone. The division cannot be reconstructed until it returns."
+ vagrant.9.a: "Understood."
+
+ vagrant.99.a: "."
+ vagrant.98.a: "."

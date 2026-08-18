@@ -1,0 +1,96 @@
+IRS_phase0_operations = {
+	IRS_phase0_infestation_surge = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = less_than
+				}
+			}
+		}
+
+		target_root_trigger = {
+			tag = IRS
+			has_country_flag = IRS_seeding_ops_phase0_active
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = less_than
+				}
+			}
+		}
+
+		visible = {
+			has_country_flag = IRS_seeding_ops_phase0_active
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		available = {
+			has_country_flag = IRS_seeding_ops_phase0_active
+			FROM = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+			}
+		}
+
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 30
+
+		complete_effect = {
+			FROM = {
+				add_to_variable = { var = iris_infestation_level value = 20 }
+				clamp_variable = { var = iris_infestation_level min = 0 max = 100 }
+			}
+		}
+
+		ai_will_do = { base = 0 }
+	}
+
+	IRS_phase0_emergence_drive = {
+		icon = GFX_decision_generic_operation
+
+		visible = {
+			has_country_flag = IRS_emergence_ops_phase0_active
+		}
+
+		available = {
+			has_country_flag = IRS_emergence_ops_phase0_active
+		}
+
+		fire_only_once = no
+		days_re_enable = 45
+		cost = 40
+
+		complete_effect = {
+			add_manpower = 8000
+		}
+
+		ai_will_do = { base = 0 }
+	}
+}

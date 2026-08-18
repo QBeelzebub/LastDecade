@@ -1,0 +1,224 @@
+SRP_recompute_infestation_derived = {
+	clamp_variable = { var = iris_infestation_level min = 0 max = 100 }
+
+	set_variable = { var = iris_infestation_bonus value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_bonus value = 0.005 }
+
+	set_variable = { var = iris_infestation_biomass value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_biomass value = 0.05 }
+
+	set_variable = { var = iris_infestation_penalty value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_penalty value = -0.003 }
+
+	set_variable = { var = iris_infestation_attrition value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_attrition value = 0.002 }
+
+	set_variable = { var = iris_infestation_upkeep value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_upkeep value = 0.25 }
+}
+
+IRS_refresh_dormancy_adaptation = {
+	set_variable = { var = IRS_adapt_deep value = IRS_lean_deep }
+	multiply_variable = { var = IRS_adapt_deep value = 0.02 }
+
+	set_variable = { var = IRS_adapt_surface value = IRS_lean_surface }
+	multiply_variable = { var = IRS_adapt_surface value = 0.02 }
+
+	set_variable = { var = IRS_adapt_held value = IRS_lean_held }
+	multiply_variable = { var = IRS_adapt_held value = 0.02 }
+
+	set_variable = { var = IRS_adapt_loose value = IRS_lean_loose }
+	multiply_variable = { var = IRS_adapt_loose value = -0.02 }
+
+	set_variable = { var = IRS_adapt_centre value = IRS_lean_centre }
+	multiply_variable = { var = IRS_adapt_centre value = 0.03 }
+
+	set_variable = { var = IRS_adapt_thin value = IRS_lean_thin }
+	multiply_variable = { var = IRS_adapt_thin value = 0.02 }
+
+	if = {
+		limit = { has_dynamic_modifier = { modifier = IRS_dormancy_adaptation } }
+		remove_dynamic_modifier = { modifier = IRS_dormancy_adaptation }
+	}
+	add_dynamic_modifier = { modifier = IRS_dormancy_adaptation }
+}
+
+IRS_resolve_lineage = {
+	set_variable = { var = IRS_net_coord value = IRS_lean_held }
+	subtract_from_variable = { var = IRS_net_coord value = IRS_lean_loose }
+
+	set_variable = { var = IRS_net_centre value = IRS_lean_centre }
+	subtract_from_variable = { var = IRS_net_centre value = IRS_lean_thin }
+
+	set_variable = { var = IRS_net_depth value = IRS_lean_deep }
+	subtract_from_variable = { var = IRS_net_depth value = IRS_lean_surface }
+
+	if = {
+		limit = { difficulty > 3 }
+		set_country_flag = IRS_archetype_telotic
+		add_ideas = IRS_archetype_telotic_spirit
+		set_country_flag = IRS_lineage_resolved
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = IRS_lineage_resolved }
+			check_variable = { IRS_net_coord < 0 }
+		}
+		set_country_flag = IRS_archetype_unchecked
+		add_ideas = IRS_archetype_unchecked_spirit
+		set_country_flag = IRS_lineage_resolved
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = IRS_lineage_resolved }
+			check_variable = { IRS_net_centre < 1 }
+		}
+		set_country_flag = IRS_archetype_adaptive
+		add_ideas = IRS_archetype_adaptive_spirit
+		set_country_flag = IRS_lineage_resolved
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = IRS_lineage_resolved }
+			check_variable = { IRS_net_depth > 0 }
+		}
+		set_country_flag = IRS_archetype_vitreous
+		add_ideas = IRS_archetype_vitreous_spirit
+		set_country_flag = IRS_lineage_resolved
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = IRS_lineage_resolved }
+			check_variable = { IRS_net_depth < 0 }
+		}
+		set_country_flag = IRS_archetype_tromos
+		add_ideas = IRS_archetype_tromos_spirit
+		set_country_flag = IRS_lineage_resolved
+	}
+	if = {
+		limit = { NOT = { has_country_flag = IRS_lineage_resolved } }
+		set_country_flag = IRS_archetype_iris
+		add_ideas = IRS_archetype_iris_spirit
+		set_country_flag = IRS_lineage_resolved
+	}
+}
+
+IRS_perform_emergence = {
+	if = {
+		limit = { NOT = { has_country_flag = IRS_emerged } }
+
+		set_country_flag = IRS_emerged
+		set_global_flag = parasites_emerged
+
+		set_country_flag = IRS_seeding_ops_phase0_active
+		set_country_flag = IRS_emergence_ops_phase0_active
+
+		if = {
+			limit = {
+				NOT = { has_country_flag = IRS_archetype_iris }
+				NOT = { has_country_flag = IRS_archetype_vitreous }
+				NOT = { has_country_flag = IRS_archetype_tromos }
+				NOT = { has_country_flag = IRS_archetype_adaptive }
+				NOT = { has_country_flag = IRS_archetype_unchecked }
+				NOT = { has_country_flag = IRS_archetype_telotic }
+			}
+			IRS_resolve_lineage = yes
+		}
+
+		transfer_state = 274
+		transfer_state = 558
+		transfer_state = 776
+		transfer_state = 777
+		transfer_state = 900
+		transfer_state = 901
+		transfer_state = 902
+		add_state_core = 274
+		add_state_core = 558
+		add_state_core = 776
+		add_state_core = 777
+		add_state_core = 900
+		add_state_core = 901
+		add_state_core = 902
+
+		load_oob = "IRS_2020"
+
+		remove_ideas = IRS_dormant_emergence
+		add_ideas = IRS_active_emergence
+
+		if = {
+			limit = { OR = { has_country_flag = IRS_archetype_tromos has_country_flag = IRS_archetype_unchecked } }
+			add_equipment_to_stockpile = { type = basic_parasite_equipment_1 amount = 100 producer = IRS }
+		}
+		if = {
+			limit = { has_country_flag = IRS_archetype_vitreous }
+			776 = { add_building_construction = { type = beckon_cluster level = 2 instant_build = yes } }
+		}
+		if = {
+			limit = { OR = { has_country_flag = IRS_archetype_iris has_country_flag = IRS_archetype_adaptive } }
+			add_to_variable = { IRS_evolution_points = 10 }
+		}
+
+		if = {
+			limit = { check_variable = { IRS_lean_deep > 1 } }
+			558 = { add_building_construction = { type = biomass_pool level = 1 instant_build = yes } }
+		}
+		if = {
+			limit = { check_variable = { IRS_lean_surface > 1 } }
+			add_equipment_to_stockpile = { type = rupter_equipment_1 amount = 60 producer = IRS }
+		}
+		if = {
+			limit = { check_variable = { IRS_lean_held > 1 } }
+			add_equipment_to_stockpile = { type = carrier_equipment_1 amount = 40 producer = IRS }
+			hidden_effect = {
+				777 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+				776 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+				558 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+				274 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+				900 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+				901 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+				902 = { add_to_variable = { var = iris_infestation_level value = 10 } SRP_recompute_infestation_derived = yes }
+			}
+			custom_effect_tooltip = IRS_strain_carrier_payoff_tt
+		}
+		if = {
+			limit = { check_variable = { IRS_lean_loose > 1 } }
+			set_technology = { assimilated_predators = 1 popup = no }
+			add_equipment_to_stockpile = { type = mangler_equipment_1 amount = 20 producer = IRS }
+		}
+		if = {
+			limit = { check_variable = { IRS_lean_centre > 1 } }
+			777 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = beckon_cluster level = 1 instant_build = yes }
+			}
+		}
+		if = {
+			limit = { check_variable = { IRS_lean_thin > 1 } }
+			776 = { add_building_construction = { type = beckon_cluster level = 1 instant_build = yes } }
+			902 = { add_building_construction = { type = beckon_cluster level = 1 instant_build = yes } }
+		}
+
+		news_event = { id = world.30 days = 1 }
+		hidden_effect = {
+			every_country = {
+				limit = {
+					exists = yes
+					NOT = { is_full_parasite = yes }
+				}
+				add_to_variable = { var = public_panic value = 40 }
+				SRP_recalculate_public_panic_effect = yes
+			}
+			news_event = { id = world.31 days = 5 }
+			AFR = { country_event = { id = world.32 days = 6 } }
+		}
+		custom_effect_tooltip = IRS_emergence_world_shock_tt
+
+		EFH = {
+			set_country_flag = EFH_sf6_lawsuit_active
+			country_event = { id = efh_hna.3 days = 14 }
+
+			set_country_flag = EFH_prologue_closed
+			country_event = { id = ldpro.10 days = 1 }
+		}
+	}
+}

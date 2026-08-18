@@ -1,0 +1,12 @@
+air_wings = {
+	7 = {
+		srp_fighter_gen4_airframe = {
+			owner = EFH
+			amount = 80
+		}
+		srp_strategic_bomber_1_airframe = {
+			owner = EFH
+			amount = 20
+		}
+	}
+}

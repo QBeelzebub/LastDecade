@@ -1,0 +1,1226 @@
+sp_land_stbn_tank_shell = {
+	specialization = specialization_land
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { has_tech = srp_nbc_sealing }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_nbc_sealing
+		}
+	}
+
+	prototype_time = sp_time.prototype.medium
+	complexity     = sp_complexity.medium
+
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+
+	resource_cost = {
+		resources = {
+			fissile_material = 2
+			steel            = 4
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_tank_stbn_cannon
+		}
+		country_effects = {
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.10 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_armor_tech_1
+		sp_land_generic_reward_armor_tech_2
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_stbn_containment_breach = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 10
+				max = 70
+			}
+
+			weight = {
+				base = 3
+			}
+
+			option = {
+				token = sp_land_reward_option_stbn_containment_breach_seal
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.medium }
+					}
+					scientist_effects = {
+						injure_scientist_for_days = 45
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_stbn_containment_breach_continue
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.high
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+		}
+
+		sp_land_reward_stbn_warhead_calibration = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 100
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_land_reward_option_stbn_calibration_controlled_series
+				default = yes
+
+				iteration_output = {
+					scientist_effects = {
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_stbn_calibration_live_fire_validation
+				iteration_output = {
+					scientist_effects = {
+						injure_scientist_for_days = 30
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.high
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_naval_stbn_shell = {
+	specialization = specialization_naval
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_surface_ship
+
+	special_project_parent = {
+		sp_land_stbn_tank_shell
+	}
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 2
+			FROM = { has_tech = srp_destroyer_hull_tech_2 }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_destroyer_hull_tech_1
+		}
+	}
+
+	prototype_time = sp_time.prototype.medium
+	complexity     = sp_complexity.small
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+	resource_cost = {
+		resources = {
+			fissile_material = 4
+			steel            = 8
+		}
+	}
+
+	project_output = {
+		country_effects = {
+			add_equipment_bonus = {
+				name = sp_naval_stbn_shell_bonus
+				bonus = {
+					srp_destroyer_hull = {
+						lg_attack         = 0.12
+						hg_armor_piercing = 0.10
+						instant           = yes
+					}
+					srp_carrier_hull = {
+						lg_attack         = 0.12
+						hg_armor_piercing = 0.10
+						instant           = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.11 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_failure_torpedo_accident
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_reward_stbn_naval_calibration = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 100
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_naval_reward_option_stbn_naval_calibration_penetration
+				default = yes
+
+				iteration_output = {
+					equipment_bonus = {
+						srp_destroyer_hull = {
+							hg_armor_piercing = 0.06
+						}
+						srp_carrier_hull = {
+							hg_armor_piercing = 0.06
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_naval_reward_option_stbn_naval_calibration_blast
+				iteration_output = {
+					equipment_bonus = {
+						srp_destroyer_hull = {
+							lg_attack = 0.08
+						}
+						srp_carrier_hull = {
+							lg_attack = 0.08
+						}
+					}
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_naval_fusion_engine = {
+	specialization = specialization_naval
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { has_tech = srp_carrier_hull_tech_2 }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_carrier_hull_tech_2
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+	complexity     = sp_complexity.large
+
+	breakthrough_cost = {
+		specialization_naval = 3
+	}
+
+	resource_cost = {
+		resources = {
+			fissile_material = 4
+			steel            = 16
+			chromium         = 8
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_carrier_fusion_engine
+		}
+		country_effects = {
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.12 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_failure_torpedo_accident
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_reward_fusion_engine_containment_choice = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 100
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_naval_reward_option_fusion_engine_incremental_trials
+				default = yes
+
+				iteration_output = {
+					scientist_effects = {
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_naval
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_naval_reward_option_fusion_engine_full_load_stress_test
+				iteration_output = {
+					scientist_effects = {
+						injure_scientist_for_days = 30
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.high
+							specialization = specialization_naval
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_air_sf6_jet_engine = {
+	specialization = specialization_air
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = {
+		sp_tag_aircraft
+		sp_tag_jet
+	}
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { has_tech = srp_fighter_gen5 }
+		}
+	}
+
+	available = {
+		date > 2026.1.1
+		FROM = {
+			has_tech = srp_fighter_gen5
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+	complexity     = sp_complexity.large
+
+	breakthrough_cost = {
+		specialization_air = 3
+	}
+
+	resource_cost = {
+		resources = {
+			chromium  = 12
+			aluminium = 6
+			rubber    = 4
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_sf6_engine_1x
+			srp_sf6_engine_2x
+		}
+		country_effects = {
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.13 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		sp_air_reward_sf6_combustion_ratio_choice = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_air_reward_option_sf6_bench_calibration_runs
+				default = yes
+
+				iteration_output = {
+					scientist_effects = {
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_air
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_air_reward_option_sf6_inflight_combustion_trials
+				iteration_output = {
+					scientist_effects = {
+						injure_scientist_for_days = 30
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.high
+							specialization = specialization_air
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_land_parasite_weakpoint_algorithm = {
+	specialization = specialization_land
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 4
+			FROM = { has_tech = srp_mbt_chassis2 }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_mbt_chassis2
+		}
+	}
+
+	prototype_time = sp_time.prototype.medium
+	complexity     = sp_complexity.medium
+
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+
+	resource_cost = {
+		resources = {
+			chromium = 4
+			steel    = 2
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_parasite_interface_turret
+		}
+		country_effects = {
+			add_equipment_bonus = {
+				name = sp_land_parasite_weakpoint_algorithm_bonus
+				bonus = {
+					srp_mbt_chassis = {
+						hard_attack  = 0.08
+						soft_attack  = 0.05
+						breakthrough = 0.06
+					}
+				}
+			}
+			set_technology = {
+				srp_laser_turret_tech = 1
+				popup = no
+			}
+			add_ideas = srp_weakpoint_targeting_idea
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.14 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_armor_tech_1
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_weakpoint_data_calibration = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 100
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_land_reward_option_weakpoint_data_calibration_aggressive
+				default = yes
+
+				iteration_output = {
+					equipment_bonus = {
+						srp_mbt_chassis = {
+							hard_attack  = 0.04
+							breakthrough = 0.03
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_weakpoint_data_calibration_efficient
+				iteration_output = {
+					equipment_bonus = {
+						srp_mbt_chassis = {
+							soft_attack = 0.05
+						}
+					}
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_weakpoint_data_calibration_comprehensive
+				iteration_output = {
+					equipment_bonus = {
+						srp_mbt_chassis = {
+							hard_attack  = 0.02
+							soft_attack  = 0.02
+							breakthrough = 0.02
+							build_cost_ic = 0.04
+						}
+					}
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_naval_carrier_fuel_synthesis = {
+	specialization = specialization_naval
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { has_tech = srp_carrier_hull_tech_1 }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_carrier_hull_tech_1
+		}
+	}
+
+	prototype_time = sp_time.prototype.medium
+	complexity     = sp_complexity.medium
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+	resource_cost = {
+		resources = {
+			chromium = 6
+			steel    = 4
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_carrier_fuel_synthesis
+		}
+		country_effects = {
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.15 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_reward_fuel_synthesis_design = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 100
+			}
+
+			weight = {
+				base = 50
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_naval_reward_option_fuel_synthesis_lab_scale_runs
+				default = yes
+
+				iteration_output = {
+					scientist_effects = {
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_naval
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_naval_reward_option_fuel_synthesis_full_deck_trial
+				iteration_output = {
+					scientist_effects = {
+						injure_scientist_for_days = 30
+						add_scientist_xp = {
+							experience    = constant:sp_scientist_xp_gain.high
+							specialization = specialization_naval
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_land_nuclear_artillery = {
+	specialization = specialization_land
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_artillery
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			FROM = {
+				NOT = { has_tech = srp_artillery_4 }
+			}
+		}
+		modifier = {
+			factor = 3
+			FROM = { is_major = yes }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_artillery_4
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+	complexity     = sp_complexity.large
+
+	breakthrough_cost = {
+		specialization_land = 3
+	}
+
+	resource_cost = {
+		resources = {
+			fissile_material = 8
+			steel            = 16
+			tungsten         = 8
+		}
+	}
+
+	project_output = {
+		country_effects = {
+			set_technology = {
+				srp_nuclear_artillery = 1
+				popup = no
+			}
+			if = {
+				limit = { has_country_flag = SRP_consortium_member }
+				set_country_flag = SRP_consortium_broadcasting
+				every_country = {
+					limit = {
+						has_country_flag = SRP_consortium_member
+						NOT = { has_country_flag = SRP_consortium_broadcasting }
+					}
+					country_event = { id = srp_consortium.16 days = 1 }
+				}
+				clr_country_flag = SRP_consortium_broadcasting
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_artillery_tech_1
+		sp_land_generic_reward_artillery_tech_2
+		sp_land_generic_reward_artillery_bonus_1
+		sp_land_generic_reward_artillery_bonus_2
+		sp_land_generic_reward_resource_scarcity
+		sp_land_generic_reward_critical_failure
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_nuclear_artillery_yield_choice = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 100
+			}
+
+			weight = {
+				base = 100
+			}
+
+			force_reward_if_available = yes
+
+			option = {
+				token = sp_land_reward_option_nuclear_artillery_yield_choice_precision
+				default = yes
+
+				iteration_output = {
+					equipment_bonus = {
+						srp_nuclear_artillery_eq = {
+							hard_attack = 0.08
+							ap_attack   = 0.06
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_nuclear_artillery_yield_choice_blast
+				iteration_output = {
+					equipment_bonus = {
+						srp_nuclear_artillery_eq = {
+							soft_attack = 0.12
+							hard_attack = -0.05
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_nuclear_artillery_yield_choice_balanced
+				iteration_output = {
+					equipment_bonus = {
+						srp_nuclear_artillery_eq = {
+							soft_attack = 0.06
+							hard_attack = 0.04
+						}
+					}
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.low }
+					}
+				}
+			}
+		}
+
+		sp_land_reward_nuclear_artillery_fissile_efficiency = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 50
+				max = 100
+			}
+
+			weight = {
+				base = 3
+			}
+
+			option = {
+				token = sp_land_reward_option_nuclear_artillery_fissile_efficiency
+
+				iteration_output = {
+					equipment_bonus = {
+						srp_nuclear_artillery_eq = {
+							build_cost_ic = -0.08
+						}
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience     = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_land_nanocomposite = {
+	specialization = specialization_land
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 4
+			FROM = { has_tech = srp_spaced_composite_tech }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_spaced_composite_tech
+		}
+	}
+
+	prototype_time = sp_time.prototype.long
+	complexity     = sp_complexity.large
+
+	breakthrough_cost = {
+		specialization_land = 3
+	}
+
+	resource_cost = {
+		resources = {
+			chromium = 8
+			steel    = 4
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_nanocomposite
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_armor_tech_1
+		sp_land_generic_reward_armor_tech_2
+		sp_land_generic_reward_armor_bonus_1
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_nanocomposite_synthesis_milestone = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 50
+				max = 100
+			}
+
+			weight = {
+				base = 3
+			}
+
+			option = {
+				token = sp_land_reward_option_nanocomposite_synthesis_milestone
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_land_nanocomposite_interim_bonus
+							bonus = {
+								srp_mbt_chassis = {
+									armor_value = 0.05
+								}
+							}
+						}
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.medium }
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience     = constant:sp_scientist_xp_gain.medium
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_land_railgun = {
+	specialization = specialization_land
+
+	allowed = {
+		NOT = {
+			OR = {
+				tag = IRS
+				tag = KNX
+			}
+		}
+	}
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 3
+			FROM = { has_tech = srp_adv_armament }
+		}
+	}
+
+	available = {
+		FROM = {
+			has_tech = srp_adv_armament
+		}
+	}
+
+	prototype_time = sp_time.prototype.very_long
+	complexity     = sp_complexity.insane
+
+	breakthrough_cost = {
+		specialization_land = 4
+	}
+
+	resource_cost = {
+		resources = {
+			chromium = 6
+			steel    = 8
+			tungsten = 4
+		}
+	}
+
+	project_output = {
+		enable_equipment_modules = {
+			srp_railgun_prototype
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_armor_tech_1
+		sp_land_generic_reward_resource_scarcity
+		sp_land_generic_reward_critical_failure
+	}
+
+	unique_prototype_rewards = {
+		sp_land_reward_railgun_power_surge = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 30
+				max = 80
+			}
+
+			weight = {
+				base = 4
+			}
+
+			option = {
+				token = sp_land_reward_option_railgun_power_surge_contained
+				default = yes
+
+				iteration_output = {
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
+					}
+					scientist_effects = {
+						add_scientist_xp = {
+							experience     = constant:sp_scientist_xp_gain.high
+							specialization = specialization_land
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_railgun_power_surge_overload
+
+				iteration_output = {
+					facility_state_effects = {
+						damage_building = {
+							tags = facility
+							damage = 0.20
+							province = var:facility_province_id
+						}
+					}
+					country_effects = {
+						FROM = { add_project_progress_ratio = constant:sp_progress.loss.medium }
+					}
+					scientist_effects = {
+						injure_scientist_for_days = 60
+					}
+				}
+			}
+		}
+	}
+}

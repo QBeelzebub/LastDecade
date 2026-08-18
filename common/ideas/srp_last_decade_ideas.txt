@@ -1,0 +1,100 @@
+ideas = {
+	country = {
+
+		srp_last_decade_t1_parasite = {
+			picture = idea_great_depression
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.15
+				political_power_gain = -0.20
+			}
+		}
+
+		srp_last_decade_t1_human = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.10
+				political_power_gain = 0.15
+			}
+		}
+
+		srp_last_decade_t2_parasite = {
+			picture = idea_great_depression
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.075
+				research_speed_factor = -0.075
+				political_power_gain = -0.10
+			}
+		}
+
+		srp_last_decade_t2_human = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				political_power_gain = 0.075
+			}
+		}
+
+		srp_last_decade_t4_parasite = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				research_speed_factor = 0.075
+				political_power_gain = 0.10
+			}
+		}
+
+		srp_last_decade_t4_human = {
+			picture = idea_great_depression
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.05
+				political_power_gain = -0.075
+			}
+		}
+
+		srp_last_decade_t5_parasite = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.15
+				political_power_gain = 0.20
+			}
+		}
+
+		srp_last_decade_t5_human = {
+			picture = idea_great_depression
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				research_speed_factor = -0.10
+				political_power_gain = -0.15
+			}
+		}
+	}
+}

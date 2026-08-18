@@ -1,0 +1,123 @@
+USA_public_trust_category = {
+
+	USA_federal_address = {
+		icon = GFX_decision_generic_political_address
+
+		allowed = { original_tag = USA }
+
+		visible = {
+			original_tag = USA
+		}
+
+		cost = 50
+		days_re_enable = 120
+
+		complete_effect = {
+			USA_trust_very_low_gain_effect = yes
+		}
+
+		ai_will_do = {
+			base = 4
+			modifier = {
+				add = 8
+				power_balance_value = { id = USA_public_trust value < 0 }
+			}
+		}
+	}
+
+	USA_emergency_relief_appropriation = {
+		icon = GFX_decision_generic_civil_support
+
+		allowed = { original_tag = USA }
+
+		visible = {
+			original_tag = USA
+		}
+
+		available = {
+			power_balance_value = { id = USA_public_trust value < 0.10 }
+		}
+
+		cost = 60
+		days_remove = 90
+		days_re_enable = 180
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		remove_effect = {
+			USA_trust_low_gain_effect = yes
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				add = 10
+				power_balance_value = { id = USA_public_trust value < -0.35 }
+			}
+		}
+	}
+
+	USA_congressional_oversight = {
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = { original_tag = USA }
+
+		visible = {
+			original_tag = USA
+			power_balance_value = { id = USA_public_trust value < -0.40 }
+		}
+
+		available = {
+			power_balance_value = { id = USA_public_trust value < -0.40 }
+		}
+
+		cost = 100
+		days_re_enable = 365
+
+		complete_effect = {
+			add_stability = -0.05
+			USA_trust_medium_gain_effect = yes
+		}
+
+		ai_will_do = {
+			base = 12
+			modifier = {
+				add = 20
+				power_balance_value = { id = USA_public_trust value < -0.60 }
+			}
+		}
+	}
+
+	USA_manage_the_reporting = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		allowed = { original_tag = USA }
+
+		visible = {
+			original_tag = USA
+		}
+
+		cost = 40
+		days_remove = 200
+		days_re_enable = 240
+		is_good = no
+
+		complete_effect = {
+			USA_trust_low_gain_effect = yes
+		}
+
+		remove_effect = {
+			USA_trust_medium_loss_effect = yes
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 6
+				power_balance_value = { id = USA_public_trust value < -0.60 }
+			}
+		}
+	}
+}

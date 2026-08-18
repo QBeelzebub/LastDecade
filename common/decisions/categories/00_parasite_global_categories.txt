@@ -1,0 +1,97 @@
+infestation_decision = {
+	icon = generic_crisis
+	priority = 50
+	visible_when_empty = yes
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { is_full_parasite = yes }
+		any_controlled_state = {
+			beckon_cluster > 0
+		}
+	}
+}
+
+infestation_suppression_policy = {
+	icon = generic_crisis
+	priority = 45
+	visible_when_empty = no
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		NOT = { has_country_flag = is_parasite_nation }
+	}
+}
+
+irs_beckon_operations = {
+	icon = generic_prepare_offensive
+	priority = 65
+	visible_when_empty = no
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		any_controlled_state = {
+			beckon_cluster > 0
+		}
+	}
+}
+
+srp_turret_deployment = {
+	icon = GFX_decision_cat_generic_military_mission
+
+	allowed = {
+		NOT = { is_full_parasite = yes }
+	}
+
+	visible = {
+		NOT = { is_full_parasite = yes }
+		has_tech = srp_laser_turret_tech
+	}
+}
+
+vagrant_deployment_decisions = {
+	icon = GFX_decision_generic_army_attack
+	priority = 65
+	visible_when_empty = no
+
+	allowed = {
+		OR = {
+			original_tag = KNX
+			original_tag = EFH
+			original_tag = IRS
+		}
+	}
+
+	visible = {
+		OR = {
+			has_country_flag = KNX_vagrant_1_active
+			has_country_flag = EFH_vagrant_2_active
+			has_country_flag = EFH_vagrant_3_active
+			has_country_flag = IRS_vagrant_4_active
+		}
+	}
+}
+
+proto_supreme_raid_decisions = {
+	icon = GFX_decision_generic_army_attack
+	priority = 90
+	visible_when_empty = no
+
+	allowed = {
+		NOT = { is_parasite_nation = yes }
+	}
+
+	visible = {
+		NOT = { is_parasite_nation = yes }
+		check_variable = { global.proto_supreme_count > 0 }
+	}
+}

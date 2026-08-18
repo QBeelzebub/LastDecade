@@ -1,0 +1,215 @@
+technologies = {
+
+	srp_asw_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			srp_naval_tech
+			asw_tech
+		}
+
+		naval_detection = 0.08
+		navy_anti_air_attack_factor = 0.05
+
+		path = {
+			leads_to_tech = srp_asw_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	srp_asw_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			srp_naval_tech
+			asw_tech
+		}
+
+		naval_detection = 0.10
+		convoy_escort_efficiency = 0.10
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_naval_missiles_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			srp_naval_tech
+		}
+
+		naval_strike_targetting_factor = 0.05
+		navy_capital_ship_attack_factor = 0.03
+
+		path = {
+			leads_to_tech = srp_naval_missiles_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	srp_naval_missiles_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 2 y = 2 }
+		}
+
+		categories = {
+			srp_naval_tech
+		}
+
+		naval_strike_targetting_factor = 0.08
+		strike_force_movement_org_loss = -0.05
+
+		path = {
+			leads_to_tech = srp_naval_missiles_3
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_naval_missiles_3 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2026
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			srp_naval_tech
+		}
+
+		naval_strike_targetting_factor = 0.12
+		navy_capital_ship_attack_factor = 0.05
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_naval_ew_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2021
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 4 y = 0 }
+		}
+
+		categories = {
+			srp_naval_tech
+			srp_electronics_tech
+		}
+
+		navy_anti_air_attack_factor = 0.06
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		path = {
+			leads_to_tech = srp_naval_ew_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_naval_ew_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2024
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 4 y = 2 }
+		}
+
+		categories = {
+			srp_naval_tech
+			srp_electronics_tech
+		}
+
+		navy_anti_air_attack_factor = 0.08
+		navy_capital_ship_defence_factor = 0.04
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_mine_warfare_1 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 6 y = 0 }
+		}
+
+		categories = {
+			srp_naval_tech
+			naval_mines
+			naval_minelaying
+		}
+
+		mines_planting_by_fleets_factor = 0.10
+		naval_detection = 0.03
+
+		path = {
+			leads_to_tech = srp_mine_warfare_2
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_mine_warfare_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 6 y = 2 }
+		}
+
+		categories = {
+			srp_naval_tech
+			naval_mines
+			naval_minelaying
+		}
+
+		mines_planting_by_fleets_factor = 0.15
+		convoy_escort_efficiency = 0.05
+
+		ai_will_do = { base = 2 }
+	}
+}

@@ -1,0 +1,30 @@
+defined_text = {
+	name = GetEFHPartyCurrentGovernment
+	text = {
+		trigger = { has_country_flag = EFH_party_astra_incumbent }
+		localization_key = EFH_party_current_government_astra
+	}
+	text = {
+		trigger = { has_country_flag = EFH_party_volt_incumbent }
+		localization_key = EFH_party_current_government_volt
+	}
+	text = {
+		trigger = { has_country_flag = EFH_party_ave_incumbent }
+		localization_key = EFH_party_current_government_ave
+	}
+	text = {
+		trigger = { has_country_flag = EFH_party_continuity_incumbent }
+		localization_key = EFH_party_current_government_continuity
+	}
+	text = {
+		trigger = { has_country_flag = EFH_party_social_green_incumbent }
+		localization_key = EFH_party_current_government_social_green
+	}
+	text = {
+		trigger = { has_country_flag = EFH_party_sovereigntist_incumbent }
+		localization_key = EFH_party_current_government_sovereigntist
+	}
+	text = {
+		localization_key = EFH_party_current_government_unknown
+	}
+}

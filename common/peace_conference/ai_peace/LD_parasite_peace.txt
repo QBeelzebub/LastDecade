@@ -1,0 +1,15 @@
+peace_ai_desires = {
+
+	ld_never_puppet_parasites = {
+		peace_action_type = puppet
+
+		enable = {
+			ROOT.FROM.FROM = {
+				is_full_parasite = yes
+			}
+		}
+
+		ai_desire = -9999
+	}
+
+}

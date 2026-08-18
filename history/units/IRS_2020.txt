@@ -1,0 +1,164 @@
+division_template = {
+	name = "Inborn Swarm"
+	force_allow_recruiting = yes
+	regiments = {
+		rupter_pack = { x = 0 y = 0 }
+		rupter_pack = { x = 0 y = 1 }
+		rupter_pack = { x = 0 y = 2 }
+		rupter_pack = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+		rupter_pack = { x = 3 y = 0 }
+		rupter_pack = { x = 3 y = 1 }
+		rupter_pack = { x = 3 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Rupter Pack"
+	force_allow_recruiting = yes
+	regiments = {
+		rupter_pack = { x = 0 y = 0 }
+		rupter_pack = { x = 0 y = 1 }
+		rupter_pack = { x = 0 y = 2 }
+		rupter_pack = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Primitive Host"
+	force_allow_recruiting = yes
+	regiments = {
+		primitive_longarms = { x = 0 y = 0 }
+		primitive_longarms = { x = 0 y = 1 }
+		primitive_longarms = { x = 0 y = 2 }
+		primitive_longarms = { x = 0 y = 3 }
+		primitive_reeker = { x = 1 y = 0 }
+		primitive_reeker = { x = 1 y = 1 }
+		primitive_reeker = { x = 1 y = 2 }
+		primitive_reeker = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Pure Swarm"
+	force_allow_recruiting = yes
+	regiments = {
+		vigilante_battery = { x = 0 y = 0 }
+		vigilante_battery = { x = 0 y = 1 }
+		vigilante_battery = { x = 0 y = 2 }
+		vigilante_battery = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Evolved Assault"
+	force_allow_recruiting = yes
+	regiments = {
+		monarch_hunter = { x = 0 y = 0 }
+		monarch_hunter = { x = 0 y = 1 }
+		monarch_hunter = { x = 0 y = 2 }
+		monarch_hunter = { x = 0 y = 3 }
+		rupter_pack = { x = 1 y = 0 }
+		rupter_pack = { x = 1 y = 1 }
+		rupter_pack = { x = 1 y = 2 }
+		rupter_pack = { x = 1 y = 3 }
+		rupter_pack = { x = 2 y = 0 }
+		rupter_pack = { x = 2 y = 1 }
+		rupter_pack = { x = 2 y = 2 }
+		rupter_pack = { x = 2 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "First Brood"
+		division_template = "Inborn Swarm"
+		location = 8039
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Western Pack"
+		division_template = "Rupter Pack"
+		location = 1951
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Niger Delta Pack"
+		division_template = "Rupter Pack"
+		location = 1992
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Bight Pack"
+		division_template = "Rupter Pack"
+		location = 10919
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	fleet = {
+		name = "Devourer Brood"
+		naval_base = 1951
+		task_force = {
+			name = "Devourer Brood"
+			location = 1951
+			ship = {
+				name = "Devourer Alpha I"
+				definition = devourer_submarine
+				start_experience_factor = 0.2
+				equipment = {
+					IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" }
+				}
+			}
+			ship = {
+				name = "Devourer Alpha II"
+				definition = devourer_submarine
+				start_experience_factor = 0.2
+				equipment = {
+					IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" }
+				}
+			}
+			ship = {
+				name = "Devourer Alpha III"
+				definition = devourer_submarine
+				start_experience_factor = 0.2
+				equipment = {
+					IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" }
+				}
+			}
+			ship = {
+				name = "Devourer Alpha IV"
+				definition = devourer_submarine
+				start_experience_factor = 0.2
+				equipment = {
+					IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" }
+				}
+			}
+		}
+	}
+}

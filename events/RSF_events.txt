@@ -1,0 +1,191 @@
+add_namespace = rsf
+
+country_event = {
+	id = rsf.1
+	title = rsf.1.t
+	desc = rsf.1.d
+	picture = GFX_report_event_generic_collapse
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.1.a
+		ai_chance = { base = 70 }
+		hidden_effect = {
+			country_event = { id = rsf.2 days = 14 }
+		}
+		custom_effect_tooltip = rsf.1.a_tt
+	}
+
+	option = {
+		name = rsf.1.b
+		ai_chance = { base = 30 }
+		add_stability = -0.10
+		add_war_support = 0.05
+		hidden_effect = {
+			country_event = { id = rsf.2 days = 30 }
+		}
+		custom_effect_tooltip = rsf.1.b_tt
+	}
+}
+
+country_event = {
+	id = rsf.2
+	title = rsf.2.t
+	desc = rsf.2.d
+	picture = GFX_report_event_generic_collapse
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.2.a
+		ai_chance = { base = 100 }
+
+		hidden_effect = {
+			SWR = {
+				transfer_state = 249
+				transfer_state = 250
+				transfer_state = 251
+				set_capital = { state = 249 }
+				add_ideas = SWR_council_authority_idea
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.10
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 5
+					fascism = 0
+					communism = 80
+					neutrality = 15
+				}
+				if = {
+					limit = { ROOT = { has_country_flag = RSF_councils_engaged } }
+					add_stability = 0.05
+					add_war_support = 0.05
+					add_ideas = SWR_peoples_defense_force_idea
+				}
+				country_event = { id = swr.1 days = 30 }
+				change_tag_from = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rsf.3
+	title = rsf.3.t
+	desc = rsf.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.3.a
+		ai_chance = { base = 40 }
+		set_country_flag = RSF_nationalized
+		add_stability = -0.05
+		add_war_support = 0.05
+		custom_effect_tooltip = rsf.3.a_tt
+	}
+
+	option = {
+		name = rsf.3.b
+		ai_chance = { base = 60 }
+		set_country_flag = RSF_compromised
+		add_political_power = 40
+		custom_effect_tooltip = rsf.3.b_tt
+	}
+}
+
+country_event = {
+	id = rsf.4
+	title = rsf.4.t
+	desc = rsf.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.4.a
+		ai_chance = { base = 60 }
+		add_ideas = RSF_efh_ceasefire_idea
+		add_political_power = -20
+		custom_effect_tooltip = rsf.4.a_tt
+	}
+
+	option = {
+		name = rsf.4.b
+		ai_chance = { base = 40 }
+		add_ideas = RSF_efh_hostility_idea
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = rsf.5
+	title = rsf.5.t
+	desc = rsf.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.5.a
+		ai_chance = { base = 70 }
+		add_ideas = RSF_chinese_investment_idea
+		CHN = {
+			add_opinion_modifier = { target = ROOT modifier = trade_deal }
+		}
+	}
+
+	option = {
+		name = rsf.5.b
+		ai_chance = { base = 30 }
+		add_ideas = RSF_eastern_self_reliance_idea
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = rsf.6
+	title = rsf.6.t
+	desc = rsf.6.d
+	picture = GFX_report_event_war_news
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.6.a
+		ai_chance = { base = 100 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = rsf.7
+	title = rsf.7.t
+	desc = rsf.7.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = rsf.7.a
+		ai_chance = { base = 50 }
+		set_country_flag = RSF_councils_suppressed
+		add_stability = 0.03
+		add_war_support = -0.05
+	}
+
+	option = {
+		name = rsf.7.b
+		ai_chance = { base = 50 }
+		set_country_flag = RSF_councils_engaged
+		add_stability = -0.05
+		add_war_support = 0.05
+		custom_effect_tooltip = rsf.7.b_tt
+	}
+}

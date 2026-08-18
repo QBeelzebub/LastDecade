@@ -1,0 +1,96 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = { NOT = { difficulty > 0 } }
+				every_country = {
+					limit = { exists = yes is_parasite_nation = yes }
+					add_ideas = srp_last_decade_t1_parasite
+				}
+				every_country = {
+					limit = { exists = yes NOT = { is_parasite_nation = yes } }
+					add_ideas = srp_last_decade_t1_human
+				}
+			}
+			if = {
+				limit = {
+					difficulty > 0
+					NOT = { difficulty > 1 }
+				}
+				every_country = {
+					limit = { exists = yes is_parasite_nation = yes }
+					add_ideas = srp_last_decade_t2_parasite
+				}
+				every_country = {
+					limit = { exists = yes NOT = { is_parasite_nation = yes } }
+					add_ideas = srp_last_decade_t2_human
+				}
+			}
+			if = {
+				limit = {
+					difficulty > 2
+					NOT = { difficulty > 3 }
+				}
+				every_country = {
+					limit = { exists = yes is_parasite_nation = yes }
+					add_ideas = srp_last_decade_t4_parasite
+				}
+				every_country = {
+					limit = { exists = yes NOT = { is_parasite_nation = yes } }
+					add_ideas = srp_last_decade_t4_human
+				}
+			}
+			if = {
+				limit = { difficulty > 3 }
+				every_country = {
+					limit = { exists = yes is_parasite_nation = yes }
+					add_ideas = srp_last_decade_t5_parasite
+				}
+				every_country = {
+					limit = { exists = yes NOT = { is_parasite_nation = yes } }
+					add_ideas = srp_last_decade_t5_human
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					tag = IRS
+					exists = yes
+					NOT = { difficulty > 0 }
+				}
+				add_to_variable = { IRS_evolution_points = -2 }
+			}
+			if = {
+				limit = {
+					tag = IRS
+					exists = yes
+					difficulty > 0
+					NOT = { difficulty > 1 }
+				}
+				add_to_variable = { IRS_evolution_points = -1 }
+			}
+			if = {
+				limit = {
+					tag = IRS
+					exists = yes
+					difficulty > 2
+					NOT = { difficulty > 3 }
+				}
+				add_to_variable = { IRS_evolution_points = 1 }
+			}
+			if = {
+				limit = {
+					tag = IRS
+					exists = yes
+					difficulty > 3
+				}
+				add_to_variable = { IRS_evolution_points = 2 }
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+EFH_balance_of_power_category = {
+	icon = generic_political_actions
+	priority = 80
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+}
+
+EFH_party_politics = {
+	icon = generic_political_actions
+	priority = 75
+	visible_when_empty = yes
+	allowed = {
+		original_tag = EFH
+	}
+}
+
+EFH_civilian_measures = {
+	icon = generic_crisis
+	priority = 50
+	visible_when_empty = yes
+	allowed = {
+		original_tag = EFH
+	}
+}
+
+EFH_summit = {
+	icon = generic_political_actions
+	priority = 70
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+}
+
+EFH_spaceplane = {
+	icon = generic_research
+	priority = 60
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+}
+
+EFH_eurasian_coordination = {
+	icon = generic_political_actions
+	priority = 65
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+	visible = {
+		original_tag = EFH
+		has_country_flag = EFH_china_leaning_efh
+	}
+}
+
+EFH_mio_funding = {
+	icon = generic_research
+	priority = 55
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+	visible = {
+		original_tag = EFH
+		has_country_flag = EFH_hyperbiology_founded
+	}
+}
+
+LD_operation_laytheo = {
+	icon = generic_research
+	priority = 62
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+}
+
+EFH_containment_operations = {
+	icon = generic_crisis
+	priority = 58
+	visible_when_empty = no
+	allowed = {
+		original_tag = EFH
+	}
+	visible = {
+		original_tag = EFH
+		has_global_flag = parasites_emerged
+	}
+}

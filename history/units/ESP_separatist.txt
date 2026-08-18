@@ -1,0 +1,103 @@
+division_template = {
+	name = "Spanish Territorial Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 25000
+		producer = ESP
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2000
+		producer = ESP
+	}
+}
+
+units = {
+	division = {
+		name = "1a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 3938
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 3938
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 9764
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 9764
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 1048
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 1048
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 6906
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 6906
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 6902
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10a Division de Infanteria"
+		division_template = "Spanish Territorial Guard"
+		location = 6902
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

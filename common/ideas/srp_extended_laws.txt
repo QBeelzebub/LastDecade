@@ -1,0 +1,133 @@
+ideas = {
+
+	country = {
+
+		srp_civil_society_intact = {
+			picture = civilian_economy
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+
+		srp_emergency_legislation = {
+			picture = low_economic_mobilisation
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		srp_security_state = {
+			picture = limited_conscription
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.08
+				army_org_factor = 0.02
+			}
+		}
+
+		srp_martial_law = {
+			picture = service_by_requirement
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				war_support_factor = 0.12
+				stability_factor = -0.08
+			}
+		}
+
+		srp_total_emergency_regime = {
+			picture = tot_economic_mobilisation
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				consumer_goods_expected_value = -0.10
+				industrial_capacity_factory = 0.10
+				stability_factor = -0.15
+				war_support_factor = 0.15
+			}
+		}
+
+		srp_laissez_faire = {
+			picture = free_trade
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_expected_value = 0.03
+			}
+		}
+
+		srp_keynesian_intervention = {
+			picture = export_focus
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		srp_social_democracy = {
+			picture = limited_exports
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				research_speed_factor = 0.02
+				stability_factor = 0.05
+			}
+		}
+
+		srp_austerity_measures = {
+			picture = war_economy
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		srp_war_socialism = {
+			picture = isolation
+
+			allowed = { NOT = { is_full_parasite = yes } }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.10
+				consumer_goods_expected_value = -0.10
+				stability_factor = -0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,125 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			IRS = {
+				set_variable = { var = global.srp_infest_growth_mult value = 1 }
+				if = {
+					limit = { has_game_rule = { rule = srp_infestation_growth option = OFF } }
+					set_variable = { var = global.srp_infest_growth_mult value = 0 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_infestation_growth option = SLOW } }
+					set_variable = { var = global.srp_infest_growth_mult value = 0.5 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_infestation_growth option = FAST } }
+					set_variable = { var = global.srp_infest_growth_mult value = 1.5 }
+				}
+
+				set_variable = { var = global.srp_handover_enabled value = 1 }
+				set_variable = { var = global.srp_handover_grace_days value = 30 }
+				if = {
+					limit = { has_game_rule = { rule = srp_state_handover option = OFF } }
+					set_variable = { var = global.srp_handover_enabled value = 0 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_state_handover option = SLOW } }
+					set_variable = { var = global.srp_handover_grace_days value = 90 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_state_handover option = FAST } }
+					set_variable = { var = global.srp_handover_grace_days value = 7 }
+				}
+
+				set_variable = { var = global.srp_occupation_flip_threshold value = 50 }
+				if = {
+					limit = { has_game_rule = { rule = srp_occupation_flip option = OFF } }
+					set_variable = { var = global.srp_occupation_flip_threshold value = 999 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_occupation_flip option = SLOW } }
+					set_variable = { var = global.srp_occupation_flip_threshold value = 75 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_occupation_flip option = FAST } }
+					set_variable = { var = global.srp_occupation_flip_threshold value = 25 }
+				}
+
+				set_variable = { var = global.srp_containment_mult value = 1 }
+				if = {
+					limit = { has_game_rule = { rule = srp_containment_efficiency option = WEAK } }
+					set_variable = { var = global.srp_containment_mult value = 0.5 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_containment_efficiency option = STRONG } }
+					set_variable = { var = global.srp_containment_mult value = 1.5 }
+				}
+
+				set_variable = { var = global.srp_spread_mult value = 1 }
+				if = {
+					limit = { has_game_rule = { rule = srp_infestation_spread option = OFF } }
+					set_variable = { var = global.srp_spread_mult value = 0 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_infestation_spread option = LOW } }
+					set_variable = { var = global.srp_spread_mult value = 0.5 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_infestation_spread option = HIGH } }
+					set_variable = { var = global.srp_spread_mult value = 1.5 }
+				}
+
+				set_variable = { var = global.srp_attrition_tier value = 2 }
+				if = {
+					limit = { has_game_rule = { rule = srp_parasite_attrition option = LIGHT } }
+					set_variable = { var = global.srp_attrition_tier value = 1 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_parasite_attrition option = SEVERE } }
+					set_variable = { var = global.srp_attrition_tier value = 3 }
+				}
+
+				set_variable = { var = global.srp_parasite_aggression value = 2 }
+				if = {
+					limit = { has_game_rule = { rule = srp_parasite_aggression option = PASSIVE } }
+					set_variable = { var = global.srp_parasite_aggression value = 1 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_parasite_aggression option = RELENTLESS } }
+					set_variable = { var = global.srp_parasite_aggression value = 3 }
+				}
+
+				set_variable = { var = global.srp_ep_income_mult value = 1 }
+				if = {
+					limit = { has_game_rule = { rule = srp_evolution_economy option = LEAN } }
+					set_variable = { var = global.srp_ep_income_mult value = 0.5 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_evolution_economy option = ABUNDANT } }
+					set_variable = { var = global.srp_ep_income_mult value = 1.5 }
+				}
+
+				set_variable = { var = global.srp_scorched_earth value = 1 }
+				if = {
+					limit = { has_game_rule = { rule = srp_scorched_earth option = NEVER } }
+					set_variable = { var = global.srp_scorched_earth value = 0 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_scorched_earth option = FREELY } }
+					set_variable = { var = global.srp_scorched_earth value = 2 }
+				}
+
+				set_variable = { var = global.srp_crisis_enabled value = 1 }
+				set_variable = { var = global.srp_crisis_intensity value = 1 }
+				if = {
+					limit = { has_game_rule = { rule = srp_crisis_layer option = OFF } }
+					set_variable = { var = global.srp_crisis_enabled value = 0 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_crisis_layer option = INTENSE } }
+					set_variable = { var = global.srp_crisis_intensity value = 2 }
+				}
+			}
+		}
+	}
+}

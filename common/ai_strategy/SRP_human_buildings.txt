@@ -1,0 +1,88 @@
+SRP_human_build_peacetime = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target  id = industrial_complex  value = 6  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 6  }
+	ai_strategy = { type = building_target  id = infrastructure      value = 4  }
+	ai_strategy = { type = building_target  id = radar_station       value = 2  }
+	ai_strategy = { type = building_target  id = dockyard            value = 4  }
+}
+
+SRP_human_build_wartime = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target  id = arms_factory        value = 20 }
+	ai_strategy = { type = building_target  id = anti_air_building   value = 8  }
+	ai_strategy = { type = building_target  id = infrastructure      value = 3  }
+	ai_strategy = { type = building_target  id = industrial_complex  value = 4  }
+	ai_strategy = { type = building_target  id = dockyard            value = 6  }
+}
+
+SRP_major_power_build_peacetime = {
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = RSF
+			original_tag = USA
+		}
+	}
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target  id = industrial_complex  value = 14 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 10 }
+	ai_strategy = { type = building_target  id = radar_station       value = 6  }
+	ai_strategy = { type = building_target  id = infrastructure      value = 5  }
+	ai_strategy = { type = building_target  id = dockyard            value = 10 }
+}
+
+SRP_major_power_build_wartime = {
+	allowed = {
+		OR = {
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = RSF
+			original_tag = USA
+		}
+	}
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target  id = arms_factory        value = 35 }
+	ai_strategy = { type = building_target  id = anti_air_building   value = 14 }
+	ai_strategy = { type = building_target  id = radar_station       value = 8  }
+	ai_strategy = { type = building_target  id = industrial_complex  value = 6  }
+	ai_strategy = { type = building_target  id = infrastructure      value = 4  }
+	ai_strategy = { type = building_target  id = dockyard            value = 14 }
+}

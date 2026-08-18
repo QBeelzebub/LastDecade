@@ -1,0 +1,27 @@
+add_namespace = irs
+
+country_event = {
+	id = irs.1
+	title = irs.1.t
+	desc = irs.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = irs.1.a
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = irs.2
+	title = irs.2.t
+	desc = irs.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = irs.2.a
+		add_political_power = 50
+	}
+}

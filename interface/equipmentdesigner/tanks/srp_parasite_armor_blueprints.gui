@@ -1,0 +1,86 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "equipment_designer_srp_burrower_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_light_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_srp_bolster_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_heavy_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_srp_warden_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_heavy_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_srp_summoner_support_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_light_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_srp_colony_carrier_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_heavy_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_srp_dreadnaut_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_srp_overlord_chassis_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_heavy_tank_chassis"
+			position = { x=0 y=0 }
+		}
+	}
+}

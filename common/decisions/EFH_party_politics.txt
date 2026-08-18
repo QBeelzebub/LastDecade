@@ -1,0 +1,193 @@
+EFH_party_politics = {
+	EFH_first_federal_election_mission = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		activation = {
+			has_country_flag = EFH_party_system_initialized
+			NOT = { has_country_flag = EFH_regular_federal_elections_active }
+			NOT = { has_country_flag = EFH_federal_election_in_progress }
+			NOT = { has_country_flag = EFH_old_nations_released }
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		visible = {
+			has_country_flag = EFH_party_system_initialized
+			NOT = { has_country_flag = EFH_regular_federal_elections_active }
+			NOT = { has_country_flag = EFH_federal_election_in_progress }
+			NOT = { has_country_flag = EFH_old_nations_released }
+		}
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 1216
+		is_good = yes
+		fire_only_once = no
+		timeout_effect = {
+			set_country_flag = EFH_federal_election_in_progress
+			country_event = { id = efh_party.1 days = 1 }
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_regular_federal_election_mission = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		activation = {
+			has_country_flag = EFH_regular_federal_elections_active
+			NOT = { has_country_flag = EFH_federal_election_in_progress }
+			NOT = { has_country_flag = EFH_old_nations_released }
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		visible = {
+			has_country_flag = EFH_regular_federal_elections_active
+			NOT = { has_country_flag = EFH_federal_election_in_progress }
+			NOT = { has_country_flag = EFH_old_nations_released }
+		}
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 1460
+		is_good = yes
+		fire_only_once = no
+		timeout_effect = {
+			set_country_flag = EFH_federal_election_in_progress
+			country_event = { id = efh_party.1 days = 1 }
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_campaign_for_astra = {
+		icon = generic_research
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = EFH_party_system_initialized }
+		available = { NOT = { has_country_flag = EFH_campaign_astra_cooldown } }
+		cost = 40
+		complete_effect = {
+			EFH_party_astra_campaign_effect = yes
+			set_country_flag = { flag = EFH_campaign_astra_cooldown value = 1 days = 120 }
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	EFH_campaign_for_volt = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = EFH_party_system_initialized }
+		available = { NOT = { has_country_flag = EFH_campaign_volt_cooldown } }
+		cost = 40
+		complete_effect = {
+			EFH_party_volt_campaign_effect = yes
+			set_country_flag = { flag = EFH_campaign_volt_cooldown value = 1 days = 120 }
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	EFH_campaign_for_ave = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = EFH_party_system_initialized }
+		available = { NOT = { has_country_flag = EFH_campaign_ave_cooldown } }
+		cost = 40
+		complete_effect = {
+			EFH_party_ave_campaign_effect = yes
+			set_country_flag = { flag = EFH_campaign_ave_cooldown value = 1 days = 120 }
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	EFH_campaign_for_continuity = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = EFH_party_system_initialized }
+		available = { NOT = { has_country_flag = EFH_campaign_continuity_cooldown } }
+		cost = 40
+		complete_effect = {
+			EFH_party_continuity_campaign_effect = yes
+			set_country_flag = { flag = EFH_campaign_continuity_cooldown value = 1 days = 120 }
+		}
+		ai_will_do = { base = 2 }
+	}
+
+	EFH_campaign_for_social_green = {
+		icon = generic_industry
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = EFH_party_system_initialized }
+		available = { NOT = { has_country_flag = EFH_campaign_social_green_cooldown } }
+		cost = 40
+		complete_effect = {
+			EFH_party_social_green_campaign_effect = yes
+			set_country_flag = { flag = EFH_campaign_social_green_cooldown value = 1 days = 120 }
+		}
+		ai_will_do = { base = 1 }
+	}
+
+	EFH_campaign_for_sovereigntists = {
+		icon = generic_crisis
+		allowed = { original_tag = EFH }
+		visible = { has_country_flag = EFH_party_system_initialized }
+		available = { NOT = { has_country_flag = EFH_campaign_sovereigntist_cooldown } }
+		cost = 40
+		complete_effect = {
+			EFH_party_sovereigntist_campaign_effect = yes
+			set_country_flag = { flag = EFH_campaign_sovereigntist_cooldown value = 1 days = 120 }
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_reassure_member_nations = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		visible = {
+			check_variable = { var = EFH_separatist_pressure value = 40 compare = greater_than_or_equals }
+			NOT = { has_country_flag = EFH_dissolution_congress_fired }
+		}
+		available = { NOT = { has_country_flag = EFH_reassurance_cooldown } }
+		cost = 75
+		complete_effect = {
+			add_to_variable = { var = EFH_separatist_pressure value = -8 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			add_stability = 0.02
+			set_country_flag = { flag = EFH_reassurance_cooldown value = 1 days = 180 }
+		}
+		ai_will_do = { base = 3 }
+	}
+
+	EFH_convene_constitutional_convention = {
+		icon = generic_political_actions
+		allowed = { original_tag = EFH }
+		visible = {
+			check_variable = { var = EFH_separatist_pressure value = 60 compare = greater_than_or_equals }
+			NOT = { has_country_flag = EFH_dissolution_congress_fired }
+		}
+		available = { NOT = { has_country_flag = EFH_constitutional_convention_cooldown } }
+		cost = 150
+		complete_effect = {
+			add_to_variable = { var = EFH_separatist_pressure value = -15 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+			EFH_bop_low_ef_effect = yes
+			set_country_flag = { flag = EFH_constitutional_convention_cooldown value = 1 days = 365 }
+		}
+		ai_will_do = { base = 2 }
+	}
+
+	EFH_authorize_restoration_referenda = {
+		icon = generic_crisis
+		allowed = { original_tag = EFH }
+		visible = {
+			check_variable = { var = EFH_separatist_pressure value = 60 compare = greater_than_or_equals }
+			NOT = { has_country_flag = EFH_dissolution_congress_fired }
+		}
+		available = { has_country_flag = EFH_party_sovereigntist_incumbent }
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = { var = EFH_separatist_pressure value = 20 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+}

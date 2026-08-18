@@ -1,0 +1,29 @@
+has_war_with_non_exiled_country = {
+	any_enemy_country = {
+		is_government_in_exile = no
+	}
+}
+
+has_naval_treaty_trigger = {
+	always = no
+}
+
+TUR_is_friend_for_bosphorus = {
+	always = no
+}
+
+TUR_is_friend_for_dardanelles = {
+	always = no
+}
+
+should_play_south_american_music = {
+	original_tag = SAC
+}
+
+ITA_is_italian_tag_for_music = {
+	original_tag = ITA
+}
+
+ETH_is_horn_of_africa_original_tag = {
+	original_tag = AFR
+}

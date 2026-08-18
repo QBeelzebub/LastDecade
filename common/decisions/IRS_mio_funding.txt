@@ -1,0 +1,43 @@
+IRS_mio_funding = {
+
+	IRS_fund_beckon_genome = {
+		icon = generic_prepare_offensive
+
+		visible = {
+			tag = IRS
+		}
+
+		available = {
+			tag = IRS
+			NOT = { has_country_flag = IRS_beckon_funding_cooldown }
+			check_variable = { IRS_evolution_points > 49 }
+			has_equipment = { basic_parasite_equipment > 99 }
+		}
+
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { IRS_evolution_points = -50 }
+			add_equipment_to_stockpile = {
+				type = basic_parasite_equipment
+				amount = -100
+				producer = IRS
+			}
+			mio:IRS_iris_beckon_mio = {
+				add_mio_funds = 150
+			}
+			set_country_flag = { flag = IRS_beckon_funding_cooldown value = 1 days = 60 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 30
+				check_variable = { IRS_evolution_points > 99 }
+				has_equipment = { basic_parasite_equipment > 200 }
+			}
+		}
+	}
+
+}

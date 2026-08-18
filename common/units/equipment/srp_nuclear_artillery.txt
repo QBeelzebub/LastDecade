@@ -1,0 +1,55 @@
+equipments = {
+
+	srp_nuclear_artillery_eq = {
+		year = 2029
+
+		is_archetype = yes
+		is_buildable = no
+		picture = archetype_artillery_equipment
+		type = {
+			artillery
+			infantry
+		}
+		group_by = archetype
+		interface_category = interface_category_land
+
+		reliability    = 0.70
+		maximum_speed  = 2
+		defense        = 12
+		breakthrough   = 10
+		hardness       = 0
+		armor_value    = 0
+
+		soft_attack = 28
+		hard_attack = 8
+		ap_attack   = 10
+		air_attack  = 0
+
+		build_cost_ic = 16
+		resources = {
+			fissile_material = 2
+			steel            = 8
+			tungsten         = 4
+		}
+	}
+
+	srp_nuclear_artillery_eq_1 = {
+		year = 2029
+
+		archetype = srp_nuclear_artillery_eq
+		priority  = 200
+
+		defense       = 14
+		breakthrough  = 12
+		soft_attack   = 45
+		hard_attack   = 12
+		ap_attack     = 14
+
+		build_cost_ic = 18
+		resources = {
+			fissile_material = 2
+			steel            = 8
+			tungsten         = 4
+		}
+	}
+}

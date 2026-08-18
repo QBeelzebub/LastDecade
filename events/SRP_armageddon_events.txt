@@ -1,0 +1,31 @@
+add_namespace = srp_armageddon
+
+news_event = {
+    id = srp_armageddon.1
+    title = srp_armageddon.1.t
+    desc = srp_armageddon.1.d
+    picture = GFX_report_event_generic_read_write
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = srp_armageddon.1.a
+    }
+}
+
+country_event = {
+    id = srp_armageddon.2
+    title = srp_armageddon.2.t
+    desc = srp_armageddon.2.d
+    picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = yes
+
+    option = {
+        name = srp_armageddon.2.a
+        add_war_support = 0.15
+        add_political_power = 150
+        add_stability = 0.10
+    }
+}

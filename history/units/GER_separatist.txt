@@ -1,0 +1,103 @@
+division_template = {
+	name = "German Territorial Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment0
+		amount = 25000
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2000
+		producer = GER
+	}
+}
+
+units = {
+	division = {
+		name = "1. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 6521
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 6521
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 9515
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 9515
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 241
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 241
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 3561
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 3561
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 9388
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10. Infanteriedivision"
+		division_template = "German Territorial Guard"
+		location = 9388
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

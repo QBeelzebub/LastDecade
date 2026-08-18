@@ -1,0 +1,47 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_generic_research_tech"
+		texturefile = "gfx/interface/goals/focus_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_army_b"
+		texturefile = "gfx/interface/goals/goal_generic_army_doctrines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_economy"
+		texturefile = "gfx/interface/goals/focus_generic_industry_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_foreign_policy"
+		texturefile = "gfx/interface/goals/goal_generic_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_nuclear"
+		texturefile = "gfx/interface/goals/focus_wonderweapons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_oligarchies_of_eastern_europe"
+		texturefile = "gfx/interface/goals/focus_generic_industry_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_political_support"
+		texturefile = "gfx/interface/goals/goal_generic_propaganda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_self_focus"
+		texturefile = "gfx/interface/goals/focus_generic_self_management.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_generic_war_communism"
+		texturefile = "gfx/interface/goals/goal_generic_support_communism.dds"
+	}
+}

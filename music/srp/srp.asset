@@ -1,0 +1,119 @@
+music = {
+	name = "the_call"
+	file = "the_call.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "prey"
+	file = "prey.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "parasite"
+	file = "parasite.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "relentless"
+	file = "relentless.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "unsteady"
+	file = "unsteady.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "coagulation"
+	file = "coagulation.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "adaptation"
+	file = "adaptation.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "from_below"
+	file = "from_below.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "insanity"
+	file = "insanity.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "irreversible"
+	file = "irreversible.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "chants_of_the_beckons"
+	file = "chants_of_the_beckons.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "grounded"
+	file = "grounded.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "tying_veins"
+	file = "tying_veins.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "hive_mind"
+	file = "hive_mind.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "anguish"
+	file = "anguish.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "restless"
+	file = "restless.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "dominion"
+	file = "dominion.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "fathomless"
+	file = "fathomless.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "sorrow"
+	file = "sorrow.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "serenity"
+	file = "serenity.ogg"
+	volume = 0.65
+}

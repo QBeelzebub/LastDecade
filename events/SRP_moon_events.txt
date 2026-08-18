@@ -1,0 +1,159 @@
+add_namespace = srp_moon
+
+country_event = {
+	id = srp_moon.1
+	title = srp_moon.1.t
+	desc = srp_moon.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.1.a
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.2
+	title = srp_moon.2.t
+	desc = srp_moon.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.2.a
+		add_political_power = 25
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.4
+	title = srp_moon.4.t
+	desc = srp_moon.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.4.a
+		add_stability = -0.02
+		add_to_variable = { var = SRP_moon_base_procurement_heat value = 1 }
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.5
+	title = srp_moon.5.t
+	desc = srp_moon.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.5.a
+		add_political_power = 35
+		add_to_variable = { var = SRP_moon_base_progress value = 2 }
+		clamp_variable = { var = SRP_moon_base_progress min = 0 max = 100 }
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.6
+	title = srp_moon.6.t
+	desc = srp_moon.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.6.a
+		add_political_power = -10
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.7
+	title = srp_moon.7.t
+	desc = srp_moon.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.7.a
+		add_war_support = -0.01
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.8
+	title = srp_moon.8.t
+	desc = srp_moon.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.8.a
+		add_stability = -0.03
+		add_political_power = -35
+		add_timed_idea = {
+			idea = SRP_moon_base_procurement_scandal
+			days = 120
+		}
+		add_to_variable = { var = SRP_moon_base_procurement_heat value = -2 }
+		clamp_variable = { var = SRP_moon_base_procurement_heat min = 0 max = 20 }
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.9
+	title = srp_moon.9.t
+	desc = srp_moon.9.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.9.a
+		set_country_flag = SRP_moon_base_iris_anomaly_detected
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = {
+	id = srp_moon.10
+	title = srp_moon.10.t
+	desc = srp_moon.10.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.10.a
+		ai_chance = { base = 5 }
+	}
+
+	option = {
+		name = srp_moon.10.b
+		trigger = { has_country_flag = SRP_moon_base_iris_anomaly_detected }
+		add_timed_idea = {
+			idea = SRP_lunar_anomaly_insight
+			days = 365
+		}
+		ai_chance = { base = 5 }
+	}
+}
+
+country_event = {
+	id = srp_moon.11
+	title = srp_moon.11.t
+	desc = srp_moon.11.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = srp_moon.11.a
+		add_stability = -0.02
+		ai_chance = { base = 10 }
+	}
+}

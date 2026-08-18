@@ -1,0 +1,7 @@
+IRS_grant_scaled_ep = {
+	if = {
+		limit = { check_variable = { global.srp_ep_income_mult > 0 } }
+		multiply_variable = { var = IRS_ep_gain_tmp value = global.srp_ep_income_mult }
+	}
+	add_to_variable = { var = IRS_evolution_points value = IRS_ep_gain_tmp }
+}

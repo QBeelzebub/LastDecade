@@ -1,0 +1,266 @@
+USA_refresh_mil = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = USA_armed_forces } }
+		remove_dynamic_modifier = { modifier = USA_armed_forces }
+	}
+	add_dynamic_modifier = { modifier = USA_armed_forces }
+}
+
+USA_mil_appalachian_cordon = {
+	add_to_variable = { USA_mil_army_defence_factor = 0.05 }
+	add_to_variable = { USA_mil_army_org_factor = 0.03 }
+	add_to_variable = { USA_mil_supply_consumption_factor = -0.05 }
+	USA_refresh_mil = yes
+}
+
+USA_mil_canadian_theater_posture = {
+	add_to_variable = { USA_mil_army_org_factor = 0.03 }
+	add_to_variable = { USA_mil_mobilization_speed = 0.1 }
+	add_to_variable = { USA_mil_consumer_goods_factor = 0.02 }
+	USA_refresh_mil = yes
+}
+
+USA_mil_continental_defense_command = {
+	add_to_variable = { USA_mil_army_org_factor = 0.05 }
+	add_to_variable = { USA_mil_army_defence_factor = 0.05 }
+	USA_refresh_mil = yes
+}
+
+USA_mil_conventional_overmatch = {
+	add_to_variable = { USA_mil_army_attack_factor = 0.05 }
+	add_to_variable = { USA_mil_army_defence_factor = 0.05 }
+	USA_refresh_mil = yes
+}
+
+USA_mil_mil_standard = {
+	add_to_variable = { USA_mil_army_morale_factor = 0.05 }
+	add_to_variable = { USA_mil_equipment_capture_factor = 0.05 }
+	USA_refresh_mil = yes
+}
+
+USA_mil_war_college = {
+	add_to_variable = { USA_mil_experience_gain_army_factor = 0.05 }
+	add_to_variable = { USA_mil_army_org_factor = 0.03 }
+	USA_refresh_mil = yes
+}
+
+USA_refresh_ind = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = USA_industrial_might } }
+		remove_dynamic_modifier = { modifier = USA_industrial_might }
+	}
+	add_dynamic_modifier = { modifier = USA_industrial_might }
+}
+
+USA_ind_arsenal_of_democracy = {
+	add_to_variable = { USA_ind_production_speed_industrial_complex_factor = 0.05 }
+	add_to_variable = { USA_ind_industrial_capacity_factory = 0.05 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_defense_spending = {
+	add_to_variable = { USA_ind_production_speed_buildings_factor = 0.05 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_economic_freedom = {
+	add_to_variable = { USA_ind_industrial_capacity_factory = 0.08 }
+	add_to_variable = { USA_ind_consumer_goods_factor = -0.03 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_fossil_economy = {
+	add_to_variable = { USA_ind_industrial_capacity_factory = 0.08 }
+	add_to_variable = { USA_ind_local_resources_oil_factor = 0.10 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_industrial_capacity = {
+	add_to_variable = { USA_ind_production_speed_buildings_factor = 0.05 }
+	add_to_variable = { USA_ind_industrial_capacity_factory = 0.03 }
+	add_to_variable = { USA_ind_consumer_goods_factor = -0.02 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_peace_dividend = {
+	add_to_variable = { USA_ind_consumer_goods_factor = -0.05 }
+	add_to_variable = { USA_ind_production_speed_buildings_factor = 0.05 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_war_economy = {
+	add_to_variable = { USA_ind_production_speed_arms_factory_factor = 0.10 }
+	add_to_variable = { USA_ind_line_change_production_efficiency_factor = 0.10 }
+	add_to_variable = { USA_ind_consumer_goods_factor = 0.05 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_fissile_energy = {
+	add_to_variable = { USA_ind_production_speed_srp_fissile_extractor_factor = 0.20 }
+	add_to_variable = { USA_ind_nuclear_production_factor = 0.10 }
+	add_to_variable = { USA_ind_research_speed_factor = 0.02 }
+	USA_refresh_ind = yes
+}
+
+USA_ind_nuclear_superiority = {
+	add_to_variable = { USA_ind_nuclear_production_factor = 0.15 }
+	add_to_variable = { USA_ind_war_support_factor = 0.05 }
+	USA_refresh_ind = yes
+}
+
+USA_refresh_dom = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = USA_domestic_order } }
+		remove_dynamic_modifier = { modifier = USA_domestic_order }
+	}
+	add_dynamic_modifier = { modifier = USA_domestic_order }
+}
+
+USA_dom_american_century = {
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	add_to_variable = { USA_dom_stability_factor = 0.03 }
+	add_to_variable = { USA_dom_war_support_factor = 0.03 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_cold_war_posture = {
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	add_to_variable = { USA_dom_war_support_factor = 0.05 }
+	add_to_variable = { USA_dom_stability_factor = -0.03 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_domestic_containment_doctrine = {
+	add_to_variable = { USA_dom_stability_factor = 0.05 }
+	add_to_variable = { USA_dom_war_support_factor = 0.03 }
+	add_to_variable = { USA_dom_political_power_gain = 0.03 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_domestic_continuity = {
+	add_to_variable = { USA_dom_stability_factor = 0.03 }
+	add_to_variable = { USA_dom_political_power_gain = 0.03 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_establishment_consensus = {
+	add_to_variable = { USA_dom_stability_factor = 0.05 }
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_populist_surge = {
+	add_to_variable = { USA_dom_war_support_factor = 0.08 }
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	add_to_variable = { USA_dom_stability_factor = -0.05 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_prepared_union = {
+	add_to_variable = { USA_dom_stability_factor = 0.05 }
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_quarantine_authority = {
+	add_to_variable = { USA_dom_stability_factor = 0.05 }
+	add_to_variable = { USA_dom_war_support_factor = 0.02 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_pan_american_bloc = {
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	add_to_variable = { USA_dom_stability_factor = 0.03 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_security_incident_framing = {
+	add_to_variable = { USA_dom_resistance_growth = -0.03 }
+	add_to_variable = { USA_dom_research_speed_factor = -0.02 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_economic_nationalism = {
+	add_to_variable = { USA_dom_war_support_factor = 0.05 }
+	add_to_variable = { USA_dom_trade_opinion_factor = -0.10 }
+	add_to_variable = { USA_dom_political_power_gain = 0.05 }
+	USA_refresh_dom = yes
+}
+
+USA_dom_efh_exclusion = {
+	add_to_variable = { USA_dom_political_power_gain = 0.08 }
+	add_to_variable = { USA_dom_production_speed_buildings_factor = 0.05 }
+	USA_refresh_dom = yes
+}
+
+USA_refresh_for = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = USA_hemispheric_posture } }
+		remove_dynamic_modifier = { modifier = USA_hemispheric_posture }
+	}
+	add_dynamic_modifier = { modifier = USA_hemispheric_posture }
+}
+
+USA_for_beijing_confrontation = {
+	add_to_variable = { USA_for_war_support_factor = 0.05 }
+	add_to_variable = { USA_for_political_power_gain = 0.05 }
+	USA_refresh_for = yes
+}
+
+USA_for_great_power_doctrine = {
+	add_to_variable = { USA_for_war_support_factor = 0.05 }
+	add_to_variable = { USA_for_political_power_gain = 0.05 }
+	USA_refresh_for = yes
+}
+
+USA_for_hemispheric_primacy = {
+	add_to_variable = { USA_for_war_support_factor = 0.05 }
+	add_to_variable = { USA_for_political_power_gain = 0.05 }
+	add_to_variable = { USA_for_army_org_factor = 0.03 }
+	USA_refresh_for = yes
+}
+
+USA_for_monroe_doctrine = {
+	add_to_variable = { USA_for_war_support_factor = 0.08 }
+	add_to_variable = { USA_for_political_power_gain = 0.05 }
+	add_to_variable = { USA_for_army_org_factor = 0.03 }
+	USA_refresh_for = yes
+}
+
+USA_for_pacific_containment = {
+	add_to_variable = { USA_for_war_support_factor = 0.05 }
+	add_to_variable = { USA_for_army_org_factor = 0.03 }
+	USA_refresh_for = yes
+}
+
+USA_for_western_hemisphere_bloc = {
+	add_to_variable = { USA_for_war_support_factor = 0.10 }
+	add_to_variable = { USA_for_army_org_factor = 0.05 }
+	add_to_variable = { USA_for_political_power_gain = 0.05 }
+	USA_refresh_for = yes
+}
+
+USA_for_doctrine_reckoning = {
+	add_to_variable = { USA_for_war_support_factor = 0.03 }
+	add_to_variable = { USA_for_research_speed_factor = 0.03 }
+	USA_refresh_for = yes
+}
+
+USA_refresh_res = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = USA_technical_directorate } }
+		remove_dynamic_modifier = { modifier = USA_technical_directorate }
+	}
+	add_dynamic_modifier = { modifier = USA_technical_directorate }
+}
+
+USA_res_technological_edge = {
+	add_to_variable = { USA_res_research_speed_factor = 0.05 }
+	add_to_variable = { USA_res_experience_gain_army_factor = 0.05 }
+	USA_refresh_res = yes
+}
+
+USA_res_dispatcher_blindspot = {
+	add_to_variable = { USA_res_intel_network_gain_factor = 0.05 }
+	USA_refresh_res = yes
+}

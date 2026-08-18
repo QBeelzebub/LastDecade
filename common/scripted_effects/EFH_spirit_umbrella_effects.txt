@@ -1,0 +1,565 @@
+EFH_refresh_military_focus = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_military_focus } }
+		remove_dynamic_modifier = { modifier = EFH_military_focus }
+	}
+	add_dynamic_modifier = { modifier = EFH_military_focus }
+}
+
+EFH_mil_standing_force_reform = {
+	add_to_variable = { EFH_mil_training = -0.10 }
+	add_to_variable = { EFH_mil_xp = 0.05 }
+	add_to_variable = { EFH_mil_org = 0.03 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_professional_army = {
+	add_to_variable = { EFH_mil_xp = 0.10 }
+	add_to_variable = { EFH_mil_org = 0.05 }
+	add_to_variable = { EFH_mil_morale = 0.05 }
+	add_to_variable = { EFH_mil_training = -0.10 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_mass_mobilization = {
+	add_to_variable = { EFH_mil_mobilization = 0.20 }
+	add_to_variable = { EFH_mil_manpower = 250 }
+	add_to_variable = { EFH_mil_org = -0.03 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_combined_arms_command = {
+	add_to_variable = { EFH_mil_org = 0.05 }
+	add_to_variable = { EFH_mil_morale = 0.05 }
+	add_to_variable = { EFH_mil_doctrine = -0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_conventional_primacy = {
+	add_to_variable = { EFH_mil_attack = 0.05 }
+	add_to_variable = { EFH_mil_defence = 0.05 }
+	add_to_variable = { EFH_mil_xp = 0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_war_readiness = {
+	add_to_variable = { EFH_mil_org = 0.03 }
+	add_to_variable = { EFH_mil_warsupport = 0.05 }
+	add_to_variable = { EFH_mil_mobilization = 0.10 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_war_college = {
+	add_to_variable = { EFH_mil_xp = 0.05 }
+	add_to_variable = { EFH_mil_org = 0.03 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_canadian_commitment = {
+	add_to_variable = { EFH_mil_manpower = -100 }
+	add_to_variable = { EFH_mil_supply = -0.10 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_northern_professional_edge = {
+	add_to_variable = { EFH_mil_org = 0.05 }
+	add_to_variable = { EFH_mil_morale = 0.05 }
+	add_to_variable = { EFH_mil_xp = 0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_kaltkrieg_doctrine = {
+	add_to_variable = { EFH_mil_attack = 0.05 }
+	add_to_variable = { EFH_mil_core_attack = 0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_hyperbiology_findings = {
+	add_to_variable = { EFH_mil_morale = 0.05 }
+	add_to_variable = { EFH_mil_attack = 0.02 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_training_command = {
+	add_to_variable = { EFH_mil_org = 0.04 }
+	add_to_variable = { EFH_mil_training = -0.05 }
+	add_to_variable = { EFH_mil_doctrine = -0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_civil_mobilization = {
+	add_to_variable = { EFH_mil_manpower = 250 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_joint_exercise = {
+	add_to_variable = { EFH_mil_org = 0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_equipment_standard = {
+	add_to_variable = { EFH_mil_capture = 0.10 }
+	add_to_variable = { EFH_mil_morale = 0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_mil_defensible_lines = {
+	add_to_variable = { EFH_mil_supply = -0.05 }
+	add_to_variable = { EFH_mil_defence = 0.05 }
+	EFH_refresh_military_focus = yes
+}
+
+EFH_refresh_ind = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_industrial_base } }
+		remove_dynamic_modifier = { modifier = EFH_industrial_base }
+	}
+	add_dynamic_modifier = { modifier = EFH_industrial_base }
+}
+
+EFH_ind_civil_expansion = {
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.05 }
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.03 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_reconstruction_bureau = {
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.08 }
+	add_to_variable = { EFH_ind_production_speed_industrial_complex_factor = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_sac_infrastructure = {
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.05 }
+	add_to_variable = { EFH_ind_production_speed_industrial_complex_factor = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_procurement_framework = {
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.05 }
+	add_to_variable = { EFH_ind_production_factory_efficiency_gain_factor = 0.05 }
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.02 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_supply_chain_leadership = {
+	add_to_variable = { EFH_ind_production_factory_max_efficiency_factor = 0.05 }
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.03 }
+	add_to_variable = { EFH_ind_production_factory_efficiency_gain_factor = 0.05 }
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.02 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_techno_industrial = {
+	add_to_variable = { EFH_ind_research_speed_factor = 0.05 }
+	add_to_variable = { EFH_ind_production_speed_industrial_complex_factor = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_long_peace_dividend = {
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.05 }
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_hyperbiology_facilities = {
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.05 }
+	add_to_variable = { EFH_ind_research_speed_factor = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_sino_efh_trade = {
+	add_to_variable = { EFH_ind_production_speed_industrial_complex_factor = 0.08 }
+	add_to_variable = { EFH_ind_political_power_gain = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_logistics_militarization = {
+	add_to_variable = { EFH_ind_supply_consumption_factor = -0.05 }
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.03 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_panama_economic_presence = {
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_prosperity_dividend = {
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.04 }
+	add_to_variable = { EFH_ind_stability_factor = 0.03 }
+	add_to_variable = { EFH_ind_political_power_gain = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_orbital_competitive_pressure = {
+	add_to_variable = { EFH_ind_research_speed_factor = 0.05 }
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_trade_bloc_expansion = {
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.05 }
+	add_to_variable = { EFH_ind_political_power_gain = 0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_corporate_commons = {
+	add_to_variable = { EFH_ind_research_speed_factor = 0.05 }
+	add_to_variable = { EFH_ind_consumer_goods_factor = -0.03 }
+	add_to_variable = { EFH_ind_political_power_gain = -0.05 }
+	EFH_refresh_ind = yes
+}
+
+EFH_ind_sac_economic_presence = {
+	add_to_variable = { EFH_ind_political_power_gain = 0.05 }
+	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.03 }
+	EFH_refresh_ind = yes
+}
+
+EFH_refresh_gov = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_federal_authority } }
+		remove_dynamic_modifier = { modifier = EFH_federal_authority }
+	}
+	add_dynamic_modifier = { modifier = EFH_federal_authority }
+}
+
+EFH_gov_alignment_initiative = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	add_to_variable = { EFH_gov_generate_wargoal_tension = -0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_arsenal_of_regulation = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.15 }
+	add_to_variable = { EFH_gov_stability_factor = 0.05 }
+	add_to_variable = { EFH_gov_war_support_factor = 0.05 }
+	add_to_variable = { EFH_gov_production_speed_buildings_factor = -0.10 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_biocontainment = {
+	add_to_variable = { EFH_gov_stability_factor = 0.03 }
+	add_to_variable = { EFH_gov_war_support_factor = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_biosecurity = {
+	add_to_variable = { EFH_gov_stability_factor = 0.04 }
+	add_to_variable = { EFH_gov_political_power_gain = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_federal_emergency_protocols = {
+	add_to_variable = { EFH_gov_war_support_factor = 0.05 }
+	add_to_variable = { EFH_gov_stability_factor = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_member_state_compact = {
+	add_to_variable = { EFH_gov_stability_factor = 0.05 }
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_prepared_federation = {
+	add_to_variable = { EFH_gov_stability_factor = 0.05 }
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_public_institutions = {
+	add_to_variable = { EFH_gov_stability_factor = 0.05 }
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	add_to_variable = { EFH_gov_war_support_factor = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_society_on_the_eve = {
+	add_to_variable = { EFH_gov_stability_factor = 0.05 }
+	add_to_variable = { EFH_gov_war_support_factor = 0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_long_peace = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	add_to_variable = { EFH_gov_stability_factor = 0.05 }
+	add_to_variable = { EFH_gov_consumer_goods_factor = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_global_posture = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	add_to_variable = { EFH_gov_generate_wargoal_tension = -0.10 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_beijing_channel = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_pacific_framework = {
+	add_to_variable = { EFH_gov_research_speed_factor = 0.03 }
+	add_to_variable = { EFH_gov_political_power_gain = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_hemispheric_doctrine = {
+	add_to_variable = { EFH_gov_war_support_factor = 0.08 }
+	add_to_variable = { EFH_gov_army_org_factor = 0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_pacific_defense_pact = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.08 }
+	add_to_variable = { EFH_gov_army_org_factor = 0.03 }
+	add_to_variable = { EFH_gov_war_support_factor = 0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_japan_sphere_deepened = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.05 }
+	add_to_variable = { EFH_gov_army_org_factor = 0.02 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_eurasian_buffer = {
+	add_to_variable = { EFH_gov_army_org_factor = 0.04 }
+	add_to_variable = { EFH_gov_war_support_factor = 0.05 }
+	add_to_variable = { EFH_gov_supply_consumption_factor = -0.03 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_governance_suspension = {
+	add_to_variable = { EFH_gov_political_power_gain = 0.10 }
+	add_to_variable = { EFH_gov_research_speed_factor = 0.03 }
+	add_to_variable = { EFH_gov_stability_factor = -0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_gov_hyperbiology_oversight_drag = {
+	add_to_variable = { EFH_gov_political_power_gain = -0.05 }
+	EFH_refresh_gov = yes
+}
+
+EFH_refresh_nuc = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_nuclear_program } }
+		remove_dynamic_modifier = { modifier = EFH_nuclear_program }
+	}
+	add_dynamic_modifier = { modifier = EFH_nuclear_program }
+}
+
+EFH_nuc_fissile_industry = {
+	add_to_variable = { EFH_nuc_production_speed_srp_fissile_extractor_factor = 0.20 }
+	add_to_variable = { EFH_nuc_nuclear_production_factor = 0.10 }
+	EFH_refresh_nuc = yes
+}
+
+EFH_nuc_nuclear_brinkmanship = {
+	add_to_variable = { EFH_nuc_war_support_factor = 0.05 }
+	add_to_variable = { EFH_nuc_nuclear_production_factor = 0.15 }
+	add_to_variable = { EFH_nuc_stability_factor = -0.02 }
+	EFH_refresh_nuc = yes
+}
+
+EFH_nuc_nuclear_deterrence = {
+	add_to_variable = { EFH_nuc_war_support_factor = 0.05 }
+	add_to_variable = { EFH_nuc_nuclear_production_factor = 0.15 }
+	add_to_variable = { EFH_nuc_stability_factor = 0.03 }
+	EFH_refresh_nuc = yes
+}
+
+EFH_nuc_nuclear_fuel_cycle = {
+	add_to_variable = { EFH_nuc_production_speed_srp_fissile_extractor_factor = 0.15 }
+	add_to_variable = { EFH_nuc_nuclear_production_factor = 0.15 }
+	add_to_variable = { EFH_nuc_research_speed_factor = 0.02 }
+	EFH_refresh_nuc = yes
+}
+
+EFH_nuc_thermonuclear_priority = {
+	add_to_variable = { EFH_nuc_nuclear_production_factor = 0.15 }
+	add_to_variable = { EFH_nuc_research_speed_factor = 0.03 }
+	EFH_refresh_nuc = yes
+}
+
+EFH_refresh_air = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_air_command } }
+		remove_dynamic_modifier = { modifier = EFH_air_command }
+	}
+	add_dynamic_modifier = { modifier = EFH_air_command }
+}
+
+EFH_air_air_northern_commitment = {
+	add_to_variable = { EFH_air_air_superiority_efficiency = 0.15 }
+	EFH_refresh_air = yes
+}
+
+EFH_air_post_boston_doctrine = {
+	add_to_variable = { EFH_air_air_strategic_bomber_bombing_factor = 0.10 }
+	add_to_variable = { EFH_air_air_cas_efficiency = 0.05 }
+	EFH_refresh_air = yes
+}
+
+EFH_air_strategic_air = {
+	add_to_variable = { EFH_air_air_superiority_efficiency = 0.05 }
+	add_to_variable = { EFH_air_strategic_bomb_visibility = -0.10 }
+	add_to_variable = { EFH_air_air_doctrine_cost_factor = -0.05 }
+	EFH_refresh_air = yes
+}
+
+EFH_air_tactical_air = {
+	add_to_variable = { EFH_air_air_superiority_efficiency = 0.05 }
+	add_to_variable = { EFH_air_cas_damage_reduction = 0.10 }
+	add_to_variable = { EFH_air_air_close_air_support_org_damage_factor = 0.05 }
+	EFH_refresh_air = yes
+}
+
+EFH_refresh_nav = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_naval_command } }
+		remove_dynamic_modifier = { modifier = EFH_naval_command }
+	}
+	add_dynamic_modifier = { modifier = EFH_naval_command }
+}
+
+EFH_nav_atlantic_fleet = {
+	add_to_variable = { EFH_nav_navy_org_factor = 0.05 }
+	add_to_variable = { EFH_nav_navy_max_range_factor = 0.10 }
+	add_to_variable = { EFH_nav_experience_gain_navy_unit_factor = 0.05 }
+	EFH_refresh_nav = yes
+}
+
+EFH_nav_naval_doctrine = {
+	add_to_variable = { EFH_nav_navy_submarine_attack_factor = 0.10 }
+	add_to_variable = { EFH_nav_navy_submarine_detection_factor = 0.10 }
+	add_to_variable = { EFH_nav_navy_max_range_factor = 0.05 }
+	EFH_refresh_nav = yes
+}
+
+EFH_nav_japan_sphere_anchor = {
+	add_to_variable = { EFH_nav_research_speed_factor = 0.03 }
+	add_to_variable = { EFH_nav_navy_max_range_factor = 0.10 }
+	EFH_refresh_nav = yes
+}
+
+EFH_nav_pacific_security = {
+	add_to_variable = { EFH_nav_army_org_factor = 0.03 }
+	add_to_variable = { EFH_nav_intel_network_gain_factor = 0.05 }
+	add_to_variable = { EFH_nav_navy_max_range_factor = 0.10 }
+	EFH_refresh_nav = yes
+}
+
+EFH_refresh_lay = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_laytheo_program } }
+		remove_dynamic_modifier = { modifier = EFH_laytheo_program }
+	}
+	add_dynamic_modifier = { modifier = EFH_laytheo_program }
+}
+
+EFH_lay_laytheo_operational = {
+	add_to_variable = { EFH_lay_intel_network_gain_factor = 0.20 }
+	add_to_variable = { EFH_lay_navy_submarine_detection_factor = 0.10 }
+	EFH_refresh_lay = yes
+}
+
+EFH_lay_laytheo_orbital_logistics = {
+	add_to_variable = { EFH_lay_intel_network_gain_factor = 0.10 }
+	add_to_variable = { EFH_lay_research_speed_factor = 0.05 }
+	EFH_refresh_lay = yes
+}
+
+EFH_lay_laytheo_surveillance = {
+	add_to_variable = { EFH_lay_intel_network_gain_factor = 0.20 }
+	EFH_refresh_lay = yes
+}
+
+EFH_refresh_res = {
+	if = {
+		limit = { has_dynamic_modifier = { modifier = EFH_research_directorate } }
+		remove_dynamic_modifier = { modifier = EFH_research_directorate }
+	}
+	add_dynamic_modifier = { modifier = EFH_research_directorate }
+}
+
+EFH_res_parasite_monitoring = {
+	add_to_variable = { EFH_res_intel_network_gain_factor = 0.05 }
+	add_to_variable = { EFH_res_research_speed_factor = 0.02 }
+	EFH_refresh_res = yes
+}
+
+EFH_res_live_specimen_program = {
+	add_to_variable = { EFH_res_research_speed_factor = 0.05 }
+	add_to_variable = { EFH_res_army_intel_factor = 0.05 }
+	EFH_refresh_res = yes
+}
+
+EFH_res_japan_tech_coop = {
+	add_to_variable = { EFH_res_research_speed_factor = 0.05 }
+	EFH_refresh_res = yes
+}
+
+EFH_parasite_warfare_step = {
+	if = {
+		limit = { NOT = { check_variable = { EFH_para_tier > 6 } } }
+		add_to_variable = { EFH_para_tier = 1 }
+	}
+	if = { limit = { has_idea = EFH_parasite_warfare_1 } remove_ideas = EFH_parasite_warfare_1 }
+	if = { limit = { has_idea = EFH_parasite_warfare_2 } remove_ideas = EFH_parasite_warfare_2 }
+	if = { limit = { has_idea = EFH_parasite_warfare_3 } remove_ideas = EFH_parasite_warfare_3 }
+	if = { limit = { has_idea = EFH_parasite_warfare_4 } remove_ideas = EFH_parasite_warfare_4 }
+	if = { limit = { has_idea = EFH_parasite_warfare_5 } remove_ideas = EFH_parasite_warfare_5 }
+	if = { limit = { has_idea = EFH_parasite_warfare_6 } remove_ideas = EFH_parasite_warfare_6 }
+	if = { limit = { has_idea = EFH_parasite_warfare_7 } remove_ideas = EFH_parasite_warfare_7 }
+
+	if = { limit = { check_variable = { EFH_para_tier = 1 } } add_ideas = EFH_parasite_warfare_1 }
+	if = { limit = { check_variable = { EFH_para_tier = 2 } } add_ideas = EFH_parasite_warfare_2 }
+	if = { limit = { check_variable = { EFH_para_tier = 3 } } add_ideas = EFH_parasite_warfare_3 }
+	if = { limit = { check_variable = { EFH_para_tier = 4 } } add_ideas = EFH_parasite_warfare_4 }
+	if = { limit = { check_variable = { EFH_para_tier = 5 } } add_ideas = EFH_parasite_warfare_5 }
+	if = { limit = { check_variable = { EFH_para_tier = 6 } } add_ideas = EFH_parasite_warfare_6 }
+	if = { limit = { check_variable = { EFH_para_tier = 7 } } add_ideas = EFH_parasite_warfare_7 }
+}
+
+EFH_para_anti_parasite_command = {
+	add_to_variable = { EFH_mil_org = 0.03 }
+	EFH_refresh_military_focus = yes
+	EFH_parasite_warfare_step = yes
+}
+
+EFH_para_branch_doctrine = {
+	EFH_parasite_warfare_step = yes
+}
+
+EFH_para_federal_cordon = {
+	add_to_variable = { EFH_mil_dig_in = 0.10 }
+	EFH_refresh_military_focus = yes
+	EFH_parasite_warfare_step = yes
+}
+
+EFH_para_root_burning = {
+	EFH_parasite_warfare_step = yes
+}
+
+EFH_para_rtg_penetrator = {
+	EFH_parasite_warfare_step = yes
+}
+
+EFH_para_contracted_response = {
+	add_to_variable = { EFH_mil_org = 0.02 }
+	add_to_variable = { EFH_gov_political_power_gain = -0.05 }
+	EFH_refresh_military_focus = yes
+	EFH_refresh_gov = yes
+	EFH_parasite_warfare_step = yes
+}
+
+EFH_para_xenobiology_directorate = {
+	add_to_variable = { EFH_res_research_speed_factor = 0.05 }
+	add_to_variable = { EFH_res_intel_network_gain_factor = 0.05 }
+	EFH_refresh_res = yes
+	EFH_parasite_warfare_step = yes
+}

@@ -1,0 +1,186 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_sam_sr"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_1.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_sam_md"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_sam_lr"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/anti_air_icn_3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_nuclear_naval_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/srp_nuclear_naval_battery.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_gun_155mm"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_battery_icn_3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_railgun_203mm"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_battery_icn_5.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_ciws"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_naval_sam_vls"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_surface_missile_launcher"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_torpedo_launcher_icn_1.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_carrier_fusion_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_nuclear_engine.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_srp_carrier_fuel_synthesis"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/deck_space_icn.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_acid_mantle"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_torpedo_launcher_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_shredder_array"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_torpedo_launcher_icn_2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_fin_cluster"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_current_channeling"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_burst_propulsor"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_schooling_pheromone"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_snorkel_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_hunting_call_pheromone"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_snorkel_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_alarm_response_pheromone"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_snorkel_icn_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_tethysic_resonance_organ"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_anechoic_tile_1.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_exoskeletal_carapace"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/armor_thin_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_regenerative_tissue"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/armor_thin_icn_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_depth_tolerance"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/submarine_aip_engine_1.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_crushing_maw"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_torpedo_launcher_icn_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_corrosive_maw"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sub_torpedo_launcher_icn_4.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_jet_locomotion"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_current_dive"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_light_carapace"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/armor_thin_icn_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_dense_carapace"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/armor_thick_icn_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_regenerative_shell"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/armor_thin_icn_3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_vibration_array"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sonar_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_lateral_membrane"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sonar_icn_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SMI_IRS_abyssant_echolocation_sac"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sonar_icn_2.dds"
+		legacy_lazy_load = no
+	}
+}

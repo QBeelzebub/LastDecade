@@ -1,0 +1,310 @@
+IRS_evolution_points_category = {
+
+	IRS_ep_catalyze_evolution = {
+		icon = generic_political_actions
+		visible = { has_country_flag = IRS_phase_0_active }
+		available = {
+			NOT = { has_country_flag = IRS_ep_catalyze_cooldown }
+		}
+		cost = 75
+		fire_only_once = no
+		complete_effect = {
+			set_variable = { var = IRS_ep_gain_tmp value = 30 }
+			IRS_grant_scaled_ep = yes
+			set_country_flag = { flag = IRS_ep_catalyze_cooldown value = 1 days = 30 }
+		}
+		ai_will_do = {
+			base = 15
+			modifier = {
+				add = 10
+				has_war = yes
+			}
+		}
+	}
+
+	IRS_ep_sacrifice_swarm = {
+		icon = generic_army_manpower
+		visible = { has_country_flag = IRS_phase_0_active }
+		available = {
+			NOT = { has_country_flag = IRS_ep_sacrifice_cooldown }
+			has_equipment = { rupter_equipment > 50 }
+		}
+		cost = 0
+		fire_only_once = no
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = rupter_equipment
+				amount = -50
+			}
+			set_variable = { var = IRS_ep_gain_tmp value = 25 }
+			IRS_grant_scaled_ep = yes
+			set_country_flag = { flag = IRS_ep_sacrifice_cooldown value = 1 days = 15 }
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 25
+				has_equipment = { rupter_equipment > 200 }
+			}
+		}
+	}
+
+	IRS_ep_evolutionary_surge = {
+		icon = generic_army_motorized
+		visible = { has_country_flag = IRS_phase_0_active }
+		available = {
+			check_variable = { IRS_evolution_points > 99 }
+			NOT = { has_country_flag = IRS_ep_surge_cooldown }
+		}
+		cost = 0
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = { IRS_evolution_points = -100 }
+			add_dynamic_modifier = {
+				modifier = IRS_evolutionary_surge_modifier
+				days = 30
+			}
+			set_country_flag = { flag = IRS_ep_surge_cooldown value = 1 days = 60 }
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				check_variable = { IRS_evolution_points > 9999 }
+			}
+		}
+	}
+
+	IRS_ep_quicken_the_beckon = {
+		icon = GFX_decision_generic_operation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = less_than
+				}
+			}
+		}
+
+		target_root_trigger = {
+			tag = IRS
+			has_country_flag = IRS_phase_0_active
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+				check_variable = {
+					var = iris_infestation_level
+					value = 99
+					compare = less_than
+				}
+			}
+		}
+
+		visible = {
+			has_country_flag = IRS_phase_0_active
+			any_controlled_state = {
+				beckon_cluster > 0
+			}
+		}
+
+		available = {
+			check_variable = { global.srp_infest_growth_mult > 0 }
+			check_variable = { IRS_evolution_points > 59 }
+			NOT = { has_country_flag = IRS_ep_quicken_cooldown }
+			FROM = {
+				is_controlled_by = ROOT
+				beckon_cluster > 0
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = IRS_ep_cost_60_tt
+			add_to_variable = { IRS_evolution_points = -60 }
+			set_country_flag = { flag = IRS_ep_quicken_cooldown value = 1 days = 30 }
+			FROM = {
+				add_to_variable = { var = iris_infestation_level value = 25 }
+				SRP_recompute_infestation_derived = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 20
+				check_variable = { IRS_evolution_points > 199 }
+			}
+		}
+	}
+
+	IRS_ep_seed_new_beckon = {
+		icon = GFX_decision_generic_construction
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		highlight_states = {
+			highlight_states_trigger = {
+				is_controlled_by = ROOT
+				is_owned_by = ROOT
+				NOT = { beckon_cluster > 0 }
+				free_building_slots = {
+					building = beckon_cluster
+					size > 0
+				}
+			}
+		}
+
+		target_root_trigger = {
+			tag = IRS
+			has_country_flag = IRS_phase_0_active
+		}
+
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				is_owned_by = ROOT
+				NOT = { beckon_cluster > 0 }
+				free_building_slots = {
+					building = beckon_cluster
+					size > 0
+				}
+			}
+		}
+
+		visible = {
+			has_country_flag = IRS_phase_0_active
+		}
+
+		available = {
+			check_variable = { global.srp_infest_growth_mult > 0 }
+			check_variable = { IRS_evolution_points > 199 }
+			NOT = { has_country_flag = IRS_ep_seed_beckon_cooldown }
+			FROM = {
+				is_controlled_by = ROOT
+				is_owned_by = ROOT
+				NOT = { beckon_cluster > 0 }
+			}
+		}
+
+		cancel_trigger = {
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = IRS_ep_cost_200_tt
+			add_to_variable = { IRS_evolution_points = -200 }
+			set_country_flag = { flag = IRS_ep_seed_beckon_cooldown value = 1 days = 90 }
+			FROM = {
+				add_building_construction = {
+					type = beckon_cluster
+					level = 1
+					instant_build = yes
+				}
+				add_to_variable = { var = iris_infestation_level value = 10 }
+				SRP_recompute_infestation_derived = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 15
+				check_variable = { IRS_evolution_points > 349 }
+			}
+		}
+	}
+
+	IRS_ep_force_an_adaptation = {
+		icon = generic_research
+
+		visible = { has_country_flag = IRS_phase_0_active }
+
+		available = {
+			check_variable = { IRS_evolution_points > 79 }
+			NOT = { has_country_flag = IRS_ep_adaptation_cooldown }
+		}
+
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = IRS_ep_cost_80_tt
+			add_to_variable = { IRS_evolution_points = -80 }
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = srp_iris_tech
+			}
+			set_country_flag = { flag = IRS_ep_adaptation_cooldown value = 1 days = 60 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 15
+				check_variable = { IRS_evolution_points > 249 }
+			}
+		}
+	}
+
+	IRS_ep_deepen_the_brood = {
+		icon = generic_army_manpower
+
+		visible = { has_country_flag = IRS_phase_0_active }
+
+		available = {
+			check_variable = { IRS_evolution_points > 49 }
+			NOT = { has_country_flag = IRS_ep_brood_cooldown }
+		}
+
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			custom_effect_tooltip = IRS_ep_cost_50_tt
+			add_to_variable = { IRS_evolution_points = -50 }
+			add_equipment_to_stockpile = {
+				type = rupter_equipment
+				amount = 75
+			}
+			set_country_flag = { flag = IRS_ep_brood_cooldown value = 1 days = 30 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 20
+				check_variable = { IRS_evolution_points > 199 }
+				NOT = { has_equipment = { rupter_equipment > 99 } }
+			}
+		}
+	}
+
+}

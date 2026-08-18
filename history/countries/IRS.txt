@@ -1,0 +1,127 @@
+set_country_flag = is_parasite_nation
+set_rule = { can_join_factions = no }
+set_research_slots = 5
+set_stability = 2.5
+set_war_support = 2.5
+recruit_character = Iris_Leader
+recruit_character = IRS_sci_land
+recruit_character = IRS_sci_air
+capital = 703
+
+create_corps_commander = {
+	name = "Unit Designation 7-REND"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Unit Designation 12-SURGE"
+	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	traits = { urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Unit Designation OV-1"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Unit Designation 3-TIDE"
+	gfx = "GFX_Portrait_Europe_Generic_navy_1"
+	traits = { navy_career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+add_ideas = IRS_passive_accumulation
+add_ideas = IRS_dormant_emergence
+add_ideas = IRS_measured_digestion
+starting_train_buffer = 5
+add_equipment_to_stockpile = { type = parasite_supply_swarm_1 amount = 500 producer = IRS }
+add_equipment_to_stockpile = { type = parasite_bio_rail_1 amount = 50 producer = IRS }
+set_technology = {
+	parasite_buildings = 1
+	inborn_parasites = 1
+	parasite_industry_basics = 1
+	devourer_emergence = 1
+	parasite_equipment_access = 1
+}
+oob = "IRS_ascension_army"
+
+2020.1.1 = {
+	set_country_flag = IRS_emerged
+	set_global_flag = parasites_emerged
+	remove_ideas = IRS_dormant_emergence
+	add_ideas = IRS_active_emergence
+	set_country_flag = IRS_archetype_iris
+	add_ideas = IRS_archetype_iris_spirit
+	set_technology = { inborn_parasites = 1 }
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1870.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+create_equipment_variant = {
+	name = "Devourer Alpha-Type"
+	type = IRS_devourer_hull_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = IRS_shredder_array
+		fixed_ship_engine_slot = IRS_fin_cluster
+		front_1_custom_slot = IRS_schooling_pheromone
+		mid_1_custom_slot = IRS_hunting_call_pheromone
+		rear_1_custom_slot = IRS_exoskeletal_carapace
+	}
+}
+create_equipment_variant = {
+	name = "Devourer Beta-Type"
+	type = IRS_devourer_hull_2
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = IRS_shredder_array
+		fixed_ship_engine_slot = IRS_burst_propulsor
+		front_1_custom_slot = IRS_alarm_response_pheromone
+		mid_1_custom_slot = IRS_hunting_call_pheromone
+		rear_1_custom_slot = IRS_regenerative_tissue
+	}
+}
+create_equipment_variant = {
+	name = "Abyssant Prime"
+	type = IRS_abyssant_hull_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = IRS_crushing_maw
+		fixed_ship_engine_slot = IRS_abyssant_jet_locomotion
+		front_1_custom_slot = IRS_abyssant_dense_carapace
+		mid_1_custom_slot = IRS_abyssant_vibration_array
+		rear_1_custom_slot = IRS_abyssant_echolocation_sac
+	}
+}

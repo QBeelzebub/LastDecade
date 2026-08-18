@@ -1,0 +1,179 @@
+ideas = {
+	country = {
+		USA_fire_protocol_confidence = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+
+		USA_TAD_EFH_idea_ns = {
+			name = EFH_TAD_idea
+			picture = GER_attack_usa
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -500000
+			}
+		}
+
+		USA_nuclear_war_shock = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.1
+				war_support_factor = -0.2
+				mobilization_speed = 0.3
+				research_speed_factor = -0.1
+			}
+		}
+
+		USA_trust_strain_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		USA_trust_crisis_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.10
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		USA_trust_collapse_idea = {
+			picture = idea_government_in_exile
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				political_power_factor = -0.20
+				war_support_factor = -0.15
+				army_org_factor = -0.10
+			}
+		}
+
+		USA_trust_stable_idea = {
+			picture = idea_democratic_opposition
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.03
+			}
+		}
+
+		USA_trust_confident_idea = {
+			picture = idea_democratic_opposition
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.07
+				political_power_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		USA_trust_national_unity_idea = {
+			picture = idea_democratic_opposition
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				political_power_factor = 0.10
+				war_support_factor = 0.07
+				army_attack_factor = 0.03
+			}
+		}
+
+		USA_manufacturing_surge = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		USA_joint_research_accord = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+
+		USA_efh_market_exclusion = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				political_power_gain = -0.10
+			}
+		}
+
+		USA_war_plan_north_spirit = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.03
+			}
+			targeted_modifier = {
+				tag = EFH
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		USA_continental_containment_command = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.02
+				resistance_growth = -0.03
+			}
+		}
+
+		USA_northern_perimeter_ready = {
+			picture = GER_attack_usa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				max_planning = 0.05
+			}
+		}
+
+		USA_field_reporting_data = {
+			picture = idea_nuclear_development
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+on_actions = {
+
+	on_monthly_EFH = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = EFH_panama_resistance_active
+					NOT = { has_country_flag = EFH_panama_liberated }
+					685 = {
+						is_owned_by = USA
+						resistance > 79
+					}
+				}
+				country_event = { id = efh.40 days = 1 }
+			}
+		}
+	}
+}

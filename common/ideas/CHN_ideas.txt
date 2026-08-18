@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+
+		CHN_efh_partnership = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
+	}
+}

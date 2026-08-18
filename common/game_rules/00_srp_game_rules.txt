@@ -1,0 +1,259 @@
+srp_infestation_growth = {
+	name = "RULE_SRP_INFESTATION_GROWTH"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = OFF
+		text = "RULE_OPTION_SRP_OFF"
+		desc = "RULE_SRP_INFESTATION_GROWTH_OFF_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = SLOW
+		text = "RULE_OPTION_SRP_SLOW"
+		desc = "RULE_SRP_INFESTATION_GROWTH_SLOW_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_INFESTATION_GROWTH_NORMAL_DESC"
+	}
+	option = {
+		name = FAST
+		text = "RULE_OPTION_SRP_FAST"
+		desc = "RULE_SRP_INFESTATION_GROWTH_FAST_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_state_handover = {
+	name = "RULE_SRP_STATE_HANDOVER"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = OFF
+		text = "RULE_OPTION_SRP_OFF"
+		desc = "RULE_SRP_STATE_HANDOVER_OFF_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = SLOW
+		text = "RULE_OPTION_SRP_SLOW"
+		desc = "RULE_SRP_STATE_HANDOVER_SLOW_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_STATE_HANDOVER_NORMAL_DESC"
+	}
+	option = {
+		name = FAST
+		text = "RULE_OPTION_SRP_FAST"
+		desc = "RULE_SRP_STATE_HANDOVER_FAST_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_occupation_flip = {
+	name = "RULE_SRP_OCCUPATION_FLIP"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = OFF
+		text = "RULE_OPTION_SRP_OFF"
+		desc = "RULE_SRP_OCCUPATION_FLIP_OFF_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = SLOW
+		text = "RULE_OPTION_SRP_SLOW"
+		desc = "RULE_SRP_OCCUPATION_FLIP_SLOW_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_OCCUPATION_FLIP_NORMAL_DESC"
+	}
+	option = {
+		name = FAST
+		text = "RULE_OPTION_SRP_FAST"
+		desc = "RULE_SRP_OCCUPATION_FLIP_FAST_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_crisis_layer = {
+	name = "RULE_SRP_CRISIS_LAYER"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = OFF
+		text = "RULE_OPTION_SRP_OFF"
+		desc = "RULE_SRP_CRISIS_LAYER_OFF_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_CRISIS_LAYER_NORMAL_DESC"
+	}
+	option = {
+		name = INTENSE
+		text = "RULE_OPTION_SRP_INTENSE"
+		desc = "RULE_SRP_CRISIS_LAYER_INTENSE_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_containment_efficiency = {
+	name = "RULE_SRP_CONTAINMENT_EFFICIENCY"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = WEAK
+		text = "RULE_OPTION_SRP_WEAK"
+		desc = "RULE_SRP_CONTAINMENT_EFFICIENCY_WEAK_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_CONTAINMENT_EFFICIENCY_NORMAL_DESC"
+	}
+	option = {
+		name = STRONG
+		text = "RULE_OPTION_SRP_STRONG"
+		desc = "RULE_SRP_CONTAINMENT_EFFICIENCY_STRONG_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_infestation_spread = {
+	name = "RULE_SRP_INFESTATION_SPREAD"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = OFF
+		text = "RULE_OPTION_SRP_OFF"
+		desc = "RULE_SRP_INFESTATION_SPREAD_OFF_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = LOW
+		text = "RULE_OPTION_SRP_LOW"
+		desc = "RULE_SRP_INFESTATION_SPREAD_LOW_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = MEDIUM
+		text = "RULE_OPTION_SRP_MEDIUM"
+		desc = "RULE_SRP_INFESTATION_SPREAD_MEDIUM_DESC"
+	}
+	option = {
+		name = HIGH
+		text = "RULE_OPTION_SRP_HIGH"
+		desc = "RULE_SRP_INFESTATION_SPREAD_HIGH_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_parasite_attrition = {
+	name = "RULE_SRP_PARASITE_ATTRITION"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = LIGHT
+		text = "RULE_OPTION_SRP_LIGHT"
+		desc = "RULE_SRP_PARASITE_ATTRITION_LIGHT_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_PARASITE_ATTRITION_NORMAL_DESC"
+	}
+	option = {
+		name = SEVERE
+		text = "RULE_OPTION_SRP_SEVERE"
+		desc = "RULE_SRP_PARASITE_ATTRITION_SEVERE_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_parasite_aggression = {
+	name = "RULE_SRP_PARASITE_AGGRESSION"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = PASSIVE
+		text = "RULE_OPTION_SRP_PASSIVE"
+		desc = "RULE_SRP_PARASITE_AGGRESSION_PASSIVE_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_PARASITE_AGGRESSION_NORMAL_DESC"
+	}
+	option = {
+		name = RELENTLESS
+		text = "RULE_OPTION_SRP_RELENTLESS"
+		desc = "RULE_SRP_PARASITE_AGGRESSION_RELENTLESS_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_evolution_economy = {
+	name = "RULE_SRP_EVOLUTION_ECONOMY"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = LEAN
+		text = "RULE_OPTION_SRP_LEAN"
+		desc = "RULE_SRP_EVOLUTION_ECONOMY_LEAN_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_EVOLUTION_ECONOMY_NORMAL_DESC"
+	}
+	option = {
+		name = ABUNDANT
+		text = "RULE_OPTION_SRP_ABUNDANT"
+		desc = "RULE_SRP_EVOLUTION_ECONOMY_ABUNDANT_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_scorched_earth = {
+	name = "RULE_SRP_SCORCHED_EARTH"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = NEVER
+		text = "RULE_OPTION_SRP_NEVER"
+		desc = "RULE_SRP_SCORCHED_EARTH_NEVER_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = DESPERATE
+		text = "RULE_OPTION_SRP_DESPERATE"
+		desc = "RULE_SRP_SCORCHED_EARTH_DESPERATE_DESC"
+	}
+	option = {
+		name = FREELY
+		text = "RULE_OPTION_SRP_FREELY"
+		desc = "RULE_SRP_SCORCHED_EARTH_FREELY_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_lethal_events = {
+	name = "RULE_SRP_LETHAL_EVENTS"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	default = {
+		name = DISABLED
+		text = "RULE_OPTION_SRP_DISABLED"
+		desc = "RULE_SRP_LETHAL_EVENTS_DISABLED_DESC"
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_OPTION_SRP_ENABLED"
+		desc = "RULE_SRP_LETHAL_EVENTS_ENABLED_DESC"
+		allow_achievements = no
+	}
+}

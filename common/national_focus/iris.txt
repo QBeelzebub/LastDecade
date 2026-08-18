@@ -1,0 +1,1410 @@
+@IRS_vitreous_auto1_weeks = 5
+@IRS_vitreous_auto2_weeks = 5
+@IRS_vitreous_auto3_weeks = 5
+@IRS_tromos_auto1_weeks = 5
+@IRS_tromos_auto2_weeks = 5
+@IRS_tromos_auto3_weeks = 5
+
+focus_tree = {
+
+	id = iris_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = IRS
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2800 }
+
+	focus = {
+		id = IRS_dorm_night_surfacing
+		icon = GFX_focus_IRS_phase1_nocturnal_adaptation
+		x = 4
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_deep = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_first_dispatcher
+		icon = GFX_focus_IRS_phase1_hive_resonance
+		x = 6
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_held = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_one_place
+		icon = GFX_focus_IRS_phase0_beckon_seeding
+		x = 8
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_centre = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_tolerate_daylight
+		icon = GFX_focus_IRS_phase0_biomass_pools
+		x = 10
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_surface = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_rupters_run
+		icon = GFX_focus_IRS_phase1_rupter_aggression
+		x = 12
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_loose = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_bud_edge
+		icon = GFX_focus_IRS_phase0_beckon_seeding
+		x = 14
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_thin = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_overwinter
+		icon = GFX_focus_IRS_phase0_soil_contamination
+		x = 16
+		y = -3
+		cost = 12
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_deep = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_learn_the_radio
+		icon = GFX_focus_IRS_phase1_hive_resonance
+		x = 4
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_night_surfacing }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_held = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_thicken
+		icon = GFX_focus_IRS_phase1_territorial_instinct
+		x = 6
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_first_dispatcher }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_centre = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_deepen_the_mat
+		icon = GFX_focus_IRS_phase0_root_network
+		x = 8
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_one_place }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_deep = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_host_left_walking
+		icon = GFX_focus_IRS_phase0_buglin_emergence
+		x = 10
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_tolerate_daylight }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_loose = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_follow_the_water
+		icon = GFX_focus_IRS_phase1_spore_dispersal
+		x = 12
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_rupters_run }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_thin = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_take_the_topsoil
+		icon = GFX_focus_IRS_phase0_soil_contamination
+		x = 14
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_bud_edge }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_surface = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_pheromone_sync
+		icon = GFX_focus_IRS_phase0_pheromone_sync
+		x = 16
+		y = -2
+		cost = 12
+		prerequisite = { focus = IRS_dorm_overwinter }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_held = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_hold_the_interior
+		icon = GFX_focus_IRS_phase1_territorial_instinct
+		x = 5
+		y = -1
+		cost = 12
+		prerequisite = { focus = IRS_dorm_learn_the_radio focus = IRS_dorm_thicken }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_centre = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_bury_the_circulation
+		icon = GFX_focus_IRS_phase0_root_network
+		x = 7
+		y = -1
+		cost = 12
+		prerequisite = { focus = IRS_dorm_thicken focus = IRS_dorm_deepen_the_mat }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_deep = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_unattended_broods
+		icon = GFX_focus_IRS_phase1_spore_dispersal
+		x = 9
+		y = -1
+		cost = 12
+		prerequisite = { focus = IRS_dorm_deepen_the_mat focus = IRS_dorm_host_left_walking }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_loose = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_take_the_coast
+		icon = GFX_focus_IRS_phase0_biomass_pools
+		x = 11
+		y = -1
+		cost = 12
+		prerequisite = { focus = IRS_dorm_host_left_walking focus = IRS_dorm_follow_the_water }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_thin = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_die_back_regrow
+		icon = GFX_focus_IRS_phase1_adaptive_biology
+		x = 13
+		y = -1
+		cost = 12
+		prerequisite = { focus = IRS_dorm_follow_the_water focus = IRS_dorm_take_the_topsoil }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_surface = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_dorm_cross_the_water
+		icon = GFX_focus_SRPLogo
+		x = 15
+		y = -1
+		cost = 12
+		prerequisite = { focus = IRS_dorm_take_the_topsoil focus = IRS_dorm_pheromone_sync }
+		available = { NOT = { has_country_flag = IRS_emerged } }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { IRS_lean_thin = 1 }
+				IRS_refresh_dormancy_adaptation = yes
+			}
+			custom_effect_tooltip = IRS_dormancy_adapt_tt
+		}
+	}
+
+	focus = {
+		id = IRS_phase_0_arrival
+		icon = GFX_focus_SRPLogo
+		x = 10
+		y = 0
+		cost = 0.75
+		available = {
+			date > 2020.1.1
+		}
+		completion_reward = {
+			hidden_effect = { play_song = "coagulation" }
+			IRS_perform_emergence = yes
+			set_country_flag = IRS_phase_0_active
+			add_ideas = IRS_evolution_0
+			create_intelligence_agency = {
+				name = "The Choir"
+				icon = GFX_intelligence_agency_logo_generic_2
+			}
+			777 = { add_extra_state_shared_building_slots = 2 }
+			custom_effect_tooltip = IRS_ep_gain_5_tt
+			add_to_variable = { IRS_evolution_points = 5 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase0_beckon_expansion
+		icon = GFX_focus_IRS_phase0_beckon_seeding
+		relative_position_id = IRS_phase_0_arrival
+		x = -2
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = IRS_phase_0_arrival }
+		completion_reward = {
+			777 = { add_building_construction = { type = beckon_cluster level = 2 instant_build = yes } }
+			add_timed_idea = { idea = IRS_phase0_construction_surge days = 180 }
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase0_biomass_seeding
+		icon = GFX_focus_IRS_phase0_biomass_pools
+		relative_position_id = IRS_phase_0_arrival
+		x = 2
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = IRS_phase_0_arrival }
+		completion_reward = {
+			777 = { add_building_construction = { type = beckon_cluster level = 2 instant_build = yes } }
+			add_timed_idea = { idea = IRS_phase0_biomass_pulse days = 180 }
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase0_territory_consolidation
+		icon = GFX_focus_IRS_phase0_root_network
+		relative_position_id = IRS_phase0_beckon_expansion
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase0_beckon_expansion }
+		prerequisite = { focus = IRS_phase0_biomass_seeding }
+		completion_reward = {
+			777 = { add_extra_state_shared_building_slots = 3 }
+			add_stability = 0.03
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase0_inland_root
+		icon = GFX_focus_IRS_phase0_beckon_seeding
+		relative_position_id = IRS_phase_0_arrival
+		x = 5
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = IRS_phase_0_arrival }
+		completion_reward = {
+			900 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = beckon_cluster level = 1 instant_build = yes }
+			}
+			custom_effect_tooltip = IRS_ep_gain_10_tt
+			add_to_variable = { IRS_evolution_points = 10 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase0_northern_surge
+		icon = GFX_focus_IRS_phase0_beckon_seeding
+		relative_position_id = IRS_phase0_inland_root
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = IRS_phase0_inland_root }
+		completion_reward = {
+			901 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = beckon_cluster level = 1 instant_build = yes }
+			}
+			custom_effect_tooltip = IRS_ep_gain_10_tt
+			add_to_variable = { IRS_evolution_points = 10 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase0_western_anchor
+		icon = GFX_focus_IRS_phase0_biomass_pools
+		relative_position_id = IRS_phase0_northern_surge
+		x = 0
+		y = 1
+		cost = 3.75
+		prerequisite = { focus = IRS_phase0_northern_surge }
+		completion_reward = {
+			902 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = beckon_cluster level = 1 instant_build = yes }
+			}
+			custom_effect_tooltip = IRS_ep_gain_10_tt
+			add_to_variable = { IRS_evolution_points = 10 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase_1_proliferation
+		icon = GFX_focus_IRS_phase_1_proliferation
+		relative_position_id = IRS_phase0_territory_consolidation
+		x = 0
+		y = 1
+		cost = 2.25
+		prerequisite = { focus = IRS_phase0_territory_consolidation }
+		available = {
+			check_variable = { IRS_evolution_points > 49 }
+			custom_trigger_tooltip = {
+				tooltip = IRS_ep_gate_tt_50
+				check_variable = { IRS_evolution_points > 49 }
+			}
+		}
+		completion_reward = {
+			set_country_flag = IRS_phase_1_active
+			remove_ideas = IRS_evolution_0
+			remove_ideas = IRS_phase0_construction_surge
+			remove_ideas = IRS_phase0_biomass_pulse
+			add_ideas = IRS_evolution_1
+			custom_effect_tooltip = IRS_ep_gain_10_tt
+			add_to_variable = { IRS_evolution_points = 10 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_nocturnal_adaptation
+		icon = GFX_focus_IRS_phase1_nocturnal_adaptation
+		relative_position_id = IRS_phase_1_proliferation
+		x = -3
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_1_proliferation }
+		completion_reward = {
+			900 = { add_building_construction = { type = beckon_cluster level = 1 instant_build = yes } }
+			add_ideas = IRS_rupter_assault_doctrine
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_rupter_aggression
+		icon = GFX_focus_IRS_phase1_rupter_aggression
+		relative_position_id = IRS_phase_1_proliferation
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_1_proliferation }
+		completion_reward = {
+			777 = { add_building_construction = { type = beckon_cluster level = 1 instant_build = yes } }
+			add_timed_idea = { idea = IRS_wartime_surge days = 120 }
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_spore_dispersal
+		icon = GFX_focus_IRS_phase1_spore_dispersal
+		relative_position_id = IRS_phase_1_proliferation
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_1_proliferation }
+		completion_reward = {
+			901 = { add_building_construction = { type = beckon_cluster level = 1 instant_build = yes } }
+			set_country_flag = IRS_dispersal_active
+			add_ideas = IRS_spore_drive_idea
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_hive_resonance
+		icon = GFX_focus_IRS_phase1_hive_resonance
+		relative_position_id = IRS_phase_1_proliferation
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_1_proliferation }
+		completion_reward = {
+			add_ideas = IRS_hive_resonance_idea
+			custom_effect_tooltip = IRS_ep_gain_30_tt
+			add_to_variable = { IRS_evolution_points = 30 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_adaptive_biology
+		icon = GFX_focus_IRS_phase1_adaptive_biology
+		relative_position_id = IRS_phase1_nocturnal_adaptation
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase1_nocturnal_adaptation }
+		prerequisite = { focus = IRS_phase1_rupter_aggression }
+		completion_reward = {
+			add_ideas = IRS_adaptive_strain_idea
+			custom_effect_tooltip = IRS_ep_gain_25_tt
+			add_to_variable = { IRS_evolution_points = 25 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_territorial_instinct
+		icon = GFX_focus_IRS_phase1_territorial_instinct
+		relative_position_id = IRS_phase1_spore_dispersal
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase1_spore_dispersal }
+		prerequisite = { focus = IRS_phase1_hive_resonance }
+		completion_reward = {
+			add_ideas = IRS_territorial_drive_idea
+			custom_effect_tooltip = IRS_ep_gain_25_tt
+			add_to_variable = { IRS_evolution_points = 25 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase1_root_expansion
+		icon = GFX_focus_IRS_phase0_root_network
+		relative_position_id = IRS_phase1_adaptive_biology
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase1_adaptive_biology }
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_owned_by = ROOT
+					NOT = { state = 777 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = beckon_cluster level = 1 instant_build = yes }
+			}
+			add_ideas = IRS_root_network_idea
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_west_african_mobilization
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase1_territorial_instinct
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase1_territorial_instinct }
+		completion_reward = {
+			add_ideas = IRS_west_african_mobilization_idea
+			777 = { add_extra_state_shared_building_slots = 2 }
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_continental_assault
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_west_african_mobilization
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_west_african_mobilization }
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = AFR
+					NOT = { has_war_with = AFR }
+				}
+				declare_war_on = {
+					target = AFR
+					type = annex_everything
+				}
+			}
+			add_ideas = IRS_continental_assault_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase_2_assimilation
+		icon = GFX_focus_IRS_phase_2_assimilation
+		relative_position_id = IRS_continental_assault
+		x = 0
+		y = 1
+		cost = 0.75
+		prerequisite = { focus = IRS_continental_assault }
+		available = {
+			check_variable = { IRS_evolution_points > 149 }
+			custom_trigger_tooltip = {
+				tooltip = IRS_ep_gate_tt_150
+				check_variable = { IRS_evolution_points > 149 }
+			}
+		}
+		completion_reward = {
+			set_country_flag = IRS_phase_2_active
+			remove_ideas = IRS_evolution_1
+			remove_ideas = IRS_rupter_assault_doctrine
+			remove_ideas = IRS_spore_drive_idea
+			remove_ideas = IRS_adaptive_strain_idea
+			remove_ideas = IRS_hive_resonance_idea
+			remove_ideas = IRS_territorial_drive_idea
+			remove_ideas = IRS_root_network_idea
+			remove_ideas = IRS_west_african_mobilization_idea
+			remove_ideas = IRS_continental_assault_idea
+			add_ideas = IRS_evolution_2
+			custom_effect_tooltip = IRS_ep_gain_10_tt
+			add_to_variable = { IRS_evolution_points = 10 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_african_surge
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_2_assimilation
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_2_assimilation }
+		completion_reward = {
+			add_ideas = IRS_african_campaign_idea
+			random_owned_state = {
+				limit = { is_owned_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = beckon_cluster level = 2 instant_build = yes }
+			}
+			random_owned_state = {
+				limit = { is_owned_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = beckon_cluster level = 1 instant_build = yes }
+			}
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_consumption_front
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_african_surge
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase2_african_surge }
+		completion_reward = {
+			add_ideas = IRS_consumption_pace_idea
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_coastal_control
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_consumption_front
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase2_consumption_front }
+		completion_reward = {
+			add_ideas = IRS_coastal_seeding_idea
+			set_country_flag = IRS_coast_controlled
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_hive_signal
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_2_assimilation
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_2_assimilation }
+		completion_reward = {
+			add_ideas = IRS_hive_signal_idea
+			random_owned_state = {
+				limit = { is_owned_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+			}
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_distributed_will
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_hive_signal
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase2_hive_signal }
+		completion_reward = {
+			add_ideas = IRS_distributed_will_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_assimilation_directive
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_distributed_will
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase2_distributed_will }
+		completion_reward = {
+			add_ideas = IRS_assimilation_directive_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_vector_mapping
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_2_assimilation
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_2_assimilation }
+		completion_reward = {
+			add_ideas = IRS_vector_mapping_idea
+			set_country_flag = IRS_sea_colony_unlocked
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_dormant_transit
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_vector_mapping
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase2_vector_mapping }
+		completion_reward = {
+			add_ideas = IRS_dormant_transit_idea
+			777 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase2_sac_emergence
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_dormant_transit
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase2_dormant_transit }
+		completion_reward = {
+			add_ideas = IRS_sac_foothold_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase_2_complete
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase2_coastal_control
+		x = 4
+		y = 1
+		cost = 2.25
+		prerequisite = { focus = IRS_phase2_coastal_control }
+		prerequisite = { focus = IRS_phase2_assimilation_directive }
+		prerequisite = { focus = IRS_phase2_sac_emergence }
+		completion_reward = {
+			set_country_flag = IRS_phase_2_full_complete
+			remove_ideas = IRS_evolution_2
+			remove_ideas = IRS_african_campaign_idea
+			remove_ideas = IRS_consumption_pace_idea
+			remove_ideas = IRS_coastal_seeding_idea
+			remove_ideas = IRS_hive_signal_idea
+			remove_ideas = IRS_distributed_will_idea
+			remove_ideas = IRS_assimilation_directive_idea
+			remove_ideas = IRS_vector_mapping_idea
+			remove_ideas = IRS_dormant_transit_idea
+			remove_ideas = IRS_sac_foothold_idea
+			add_ideas = IRS_evolution_3
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase_3_expansion
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_2_complete
+		x = 0
+		y = 1
+		cost = 2.25
+		prerequisite = { focus = IRS_phase_2_complete }
+		available = {
+			check_variable = { IRS_evolution_points > 799 }
+			custom_trigger_tooltip = {
+				tooltip = IRS_ep_gate_tt_800
+				check_variable = { IRS_evolution_points > 799 }
+			}
+		}
+		completion_reward = {
+			set_country_flag = IRS_phase_3_active
+			add_ideas = IRS_phase3_expansion_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_south_american_vectors
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_3_expansion
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		completion_reward = {
+			add_ideas = IRS_south_american_vectors_idea
+			set_country_flag = IRS_sac_breach_unlocked
+			custom_effect_tooltip = IRS_sac_breach_unlocked_tt
+			random_owned_state = {
+				limit = { is_owned_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = beckon_cluster level = 2 instant_build = yes }
+			}
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_transoceanic_breach
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_south_american_vectors
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_south_american_vectors }
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = SAC
+					NOT = { has_war_with = SAC }
+				}
+				declare_war_on = {
+					target = SAC
+					type = annex_everything
+				}
+			}
+			add_ideas = IRS_transoceanic_breach_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_full_assimilation
+		icon = GFX_focus_IRS_phase_2_assimilation
+		relative_position_id = IRS_transoceanic_breach
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_transoceanic_breach }
+		completion_reward = {
+			set_country_flag = IRS_global_phase_active
+			add_ideas = IRS_full_assimilation_idea
+			custom_effect_tooltip = IRS_ep_gain_25_tt
+			add_to_variable = { IRS_evolution_points = 25 }
+		}
+	}
+
+	focus = {
+		id = IRS_release_tethysic_puppet
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_3_expansion
+		x = -6
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = {
+			has_country_flag = IRS_tethysic_discovered
+			335 = { has_state_flag = irs_state_consumed }
+			672 = { has_state_flag = irs_state_consumed }
+			1055 = { has_state_flag = irs_state_consumed }
+			1022 = { has_state_flag = irs_state_consumed }
+			NOT = { country_exists = TET }
+		}
+		completion_reward = {
+			IRS_release_tethysic_puppet = yes
+			custom_effect_tooltip = IRS_release_tethysic_puppet_tt
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_deep_inland
+		icon = GFX_focus_IRS_phase0_root_network
+		relative_position_id = IRS_phase_3_expansion
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = { NOT = { has_country_flag = IRS_global_phase_active } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			every_owned_state = {
+				limit = { is_owned_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+			}
+			add_timed_idea = { idea = IRS_deep_inland_surge days = 180 }
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_global_signal
+		icon = GFX_focus_IRS_phase_1_proliferation
+		relative_position_id = IRS_phase_3_expansion
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = { NOT = { has_country_flag = IRS_global_phase_active } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			set_country_flag = IRS_boreic_discovered
+			set_country_flag = IRS_sinic_discovered
+			add_ideas = IRS_global_signal_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_predation_doctrine
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_3_expansion
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = { NOT = { has_country_flag = IRS_global_phase_active } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_ideas = IRS_predation_doctrine_idea
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_dispatcher_surge
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_3_expansion
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = { NOT = { has_country_flag = IRS_global_phase_active } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			777 = { add_building_construction = { type = dispatcher level = 1 instant_build = yes } }
+			add_ideas = IRS_dispatcher_surge_idea
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_manifestation_primer
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_3_expansion
+		x = 6
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = { NOT = { has_country_flag = IRS_global_phase_active } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_ideas = IRS_manifestation_primer_idea
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+		}
+	}
+
+	focus = {
+		id = IRS_phase3_swarm_legend
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_3_expansion
+		x = 8
+		y = 1
+		cost = 5
+		prerequisite = { focus = IRS_phase_3_expansion }
+		available = { NOT = { has_country_flag = IRS_global_phase_active } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			custom_effect_tooltip = IRS_ep_gain_60_tt
+			add_to_variable = { IRS_evolution_points = 60 }
+		}
+	}
+
+	focus = {
+		id = IRS_last_decade_threshold
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase3_full_assimilation
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = IRS_phase3_full_assimilation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = IRS_last_decade_threshold_difficulty_tt
+				difficulty > 3
+			}
+		}
+		completion_reward = {
+			set_country_flag = IRS_last_decade_genome_unlocked
+			custom_effect_tooltip = IRS_last_decade_genome_tt
+			custom_effect_tooltip = IRS_ep_gain_25_tt
+			add_to_variable = { IRS_evolution_points = 25 }
+		}
+	}
+
+	focus = {
+		id = IRS_daughters_awakening
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_phase_1_proliferation
+		x = 10
+		y = 1
+		cost = 0.75
+		prerequisite = { focus = IRS_phase_1_proliferation }
+		available = {
+			check_variable = { IRS_evolution_points > 0 }
+			custom_trigger_tooltip = {
+				tooltip = IRS_daughters_ep_gate_tt
+				check_variable = { IRS_evolution_points > 0 }
+			}
+		}
+		completion_reward = {
+			set_country_flag = IRS_daughters_awakening_done
+			custom_effect_tooltip = IRS_daughters_awakening_tt
+		}
+	}
+
+	focus = {
+		id = IRS_vitreous_contact
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_daughters_awakening
+		x = -2
+		y = 1
+		cost = 0.75
+		prerequisite = { focus = IRS_daughters_awakening }
+		completion_reward = {
+			set_country_flag = IRS_vitreous_active
+			custom_effect_tooltip = IRS_vitreous_contact_tt
+			hidden_effect = {
+				country_event = { id = irs_vitreous.1 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRS_vitreous_auto_1
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_vitreous_contact
+		x = 0
+		y = 1
+		cost = @IRS_vitreous_auto1_weeks
+		prerequisite = { focus = IRS_vitreous_contact }
+		available = {
+			if = {
+				limit = { has_country_flag = IRS_vitreous_auto1_in_progress }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = IRS_vitreous_working_tt
+						FLAG_DAYS = [?IRS_vitreous_auto1_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = IRS_vitreous_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = IRS_vitreous_root_lattice
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+			hidden_effect = {
+				country_event = { id = irs_vitreous.3 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRS_vitreous_auto_2
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_vitreous_auto_1
+		x = 0
+		y = 1
+		cost = @IRS_vitreous_auto2_weeks
+		prerequisite = { focus = IRS_vitreous_auto_1 }
+		available = {
+			if = {
+				limit = { has_country_flag = IRS_vitreous_auto2_in_progress }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = IRS_vitreous_working_tt
+						FLAG_DAYS = [?IRS_vitreous_auto2_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = IRS_vitreous_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = IRS_vitreous_subterranean_web
+			777 = { add_building_construction = { type = beckon_cluster level = 1 instant_build = yes } }
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+			hidden_effect = {
+				country_event = { id = irs_vitreous.5 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRS_vitreous_auto_3
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_vitreous_auto_2
+		x = 0
+		y = 1
+		cost = @IRS_vitreous_auto3_weeks
+		prerequisite = { focus = IRS_vitreous_auto_2 }
+		available = {
+			if = {
+				limit = { has_country_flag = IRS_vitreous_auto3_in_progress }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = IRS_vitreous_working_tt
+						FLAG_DAYS = [?IRS_vitreous_auto3_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = IRS_vitreous_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = IRS_vitreous_the_emergence
+			set_country_flag = IRS_tethysic_discovered
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+	focus = {
+		id = IRS_tromos_contact
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_daughters_awakening
+		x = 2
+		y = 1
+		cost = 0.75
+		prerequisite = { focus = IRS_daughters_awakening }
+		completion_reward = {
+			set_country_flag = IRS_tromos_active
+			custom_effect_tooltip = IRS_tromos_contact_tt
+			hidden_effect = {
+				country_event = { id = irs_tromos.1 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRS_tromos_auto_1
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_tromos_contact
+		x = 0
+		y = 1
+		cost = @IRS_tromos_auto1_weeks
+		prerequisite = { focus = IRS_tromos_contact }
+		available = {
+			if = {
+				limit = { has_country_flag = IRS_tromos_auto1_in_progress }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = IRS_tromos_working_tt
+						FLAG_DAYS = [?IRS_tromos_auto1_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = IRS_tromos_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = IRS_tromos_hollow_networks
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+			hidden_effect = {
+				country_event = { id = irs_tromos.3 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRS_tromos_auto_2
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_tromos_auto_1
+		x = 0
+		y = 1
+		cost = @IRS_tromos_auto2_weeks
+		prerequisite = { focus = IRS_tromos_auto_1 }
+		available = {
+			if = {
+				limit = { has_country_flag = IRS_tromos_auto2_in_progress }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = IRS_tromos_working_tt
+						FLAG_DAYS = [?IRS_tromos_auto2_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = IRS_tromos_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = IRS_tromos_structural_memory
+			custom_effect_tooltip = IRS_ep_gain_15_tt
+			add_to_variable = { IRS_evolution_points = 15 }
+			hidden_effect = {
+				country_event = { id = irs_tromos.5 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRS_tromos_auto_3
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = IRS_tromos_auto_2
+		x = 0
+		y = 1
+		cost = @IRS_tromos_auto3_weeks
+		prerequisite = { focus = IRS_tromos_auto_2 }
+		available = {
+			if = {
+				limit = { has_country_flag = IRS_tromos_auto3_in_progress }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = IRS_tromos_working_tt
+						FLAG_DAYS = [?IRS_tromos_auto3_in_progress:days]
+					}
+					always = no
+				}
+			}
+			else = {
+				custom_override_tooltip = {
+					tooltip = IRS_tromos_not_started_tt
+					always = no
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = IRS_tromos_the_template
+			set_country_flag = IRS_alclidic_discovered
+			custom_effect_tooltip = IRS_ep_gain_20_tt
+			add_to_variable = { IRS_evolution_points = 20 }
+		}
+	}
+
+}

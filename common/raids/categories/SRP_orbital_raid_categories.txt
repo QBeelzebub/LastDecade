@@ -1,0 +1,22 @@
+categories = {
+	SRP_orbital_strikes = {
+		intel_source = air
+		free_targeting = yes
+		faction_influence_score_on_success = -100
+
+		visible = {
+			OR = {
+				original_tag = EFH
+				original_tag = USA
+			}
+		}
+
+		available = {
+			OR = {
+				check_variable = { var = SRP_orbital_regular_warheads value = 0 compare = greater_than }
+				check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than }
+				check_variable = { var = SRP_orbital_armed_warheads value = 0 compare = greater_than }
+			}
+		}
+	}
+}
