@@ -56,5 +56,6 @@ It sucks, you can contribute anything you want (please)
 ## Credits
 
 Based on **Scape and Run: Parasites**, created by **Dhanantry**.
+Music by Rotch Gwylt
 
 The Last Decade setting, alternate history, faction structure, and mod implementation are original work for this project. (By Honaaa or qbeelzebub on github cause I have that fuckass name ig)
