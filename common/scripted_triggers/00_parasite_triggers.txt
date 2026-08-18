@@ -24,13 +24,13 @@ is_full_parasite = {
 state_is_iris_bloc_owned = {
 	OR = {
 		is_owned_by = IRS
-		owner = { is_puppet_of = IRS }
+		owner = { is_subject_of = IRS } # Could also be is_puppet_of I'm not sure.
 	}
 }
 
 state_is_iris_bloc_controlled = {
 	OR = {
 		is_controlled_by = IRS
-		controller = { is_puppet_of = IRS }
+		controller = { is_subject_of = IRS } # Could also be is_puppet_of I'm not sure.
 	}
 }
