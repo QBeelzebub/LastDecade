@@ -96,3 +96,66 @@ faction_goal_develop_indonesian_riches = {
 	visible = { always = no }
 	completed = { always = no }
 }
+
+faction_goal_strategic_bombing_campaign = {
+	name = strategic_bombing_campaign_goal_name
+	description = strategic_bombing_campaign_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_AIR_XP
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_the_red_tide = {
+	name = the_red_tide_goal_name
+	description = the_red_tide_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_ARMY_XP
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_unlock_research = {
+	name = faction_goal_unlock_research_name
+	description = faction_goal_unlock_research_desc
+	category = short_term
+	group = FOCUS_FILTER_INTERNAL_AFFAIRS
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_unlock_military = {
+	name = faction_goal_unlock_military_name
+	description = faction_goal_unlock_military_desc
+	category = short_term
+	group = FOCUS_FILTER_INTERNAL_AFFAIRS
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_secure_chinese_waters = {
+	name = secure_chinese_waters_goal_name
+	description = secure_chinese_waters_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_NAVY_XP
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_subjugate_the_faction = {
+	name = faction_goal_subjugate_the_faction_name
+	description = faction_goal_subjugate_the_faction_desc
+	category = medium_term
+	group = FOCUS_FILTER_POLITICAL
+	visible = { always = no }
+	completed = { always = no }
+}
+
+faction_goal_war_on_communism_in_asia = {
+	name = war_on_communism_in_asia_goal_name
+	description = war_on_communism_in_asia_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_POLITICAL_CHARACTER
+	visible = { always = no }
+	completed = { always = no }
+}
