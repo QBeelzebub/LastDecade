@@ -18,6 +18,9 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 50 y = 2800 }
 
+
+
+
 	focus = {
 		id = IRS_dorm_night_surfacing
 		icon = GFX_focus_IRS_phase1_nocturnal_adaptation
@@ -136,6 +139,7 @@ focus_tree = {
 			custom_effect_tooltip = IRS_dormancy_adapt_tt
 		}
 	}
+
 
 	focus = {
 		id = IRS_dorm_learn_the_radio
@@ -263,6 +267,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_dorm_hold_the_interior
 		icon = GFX_focus_IRS_phase1_territorial_instinct
@@ -371,6 +376,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase_0_arrival
 		icon = GFX_focus_SRPLogo
@@ -444,6 +450,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase0_inland_root
 		icon = GFX_focus_IRS_phase0_beckon_seeding
@@ -497,6 +504,7 @@ focus_tree = {
 			add_to_variable = { IRS_evolution_points = 10 }
 		}
 	}
+
 
 	focus = {
 		id = IRS_phase_1_proliferation
@@ -620,6 +628,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase1_root_expansion
 		icon = GFX_focus_IRS_phase0_root_network
@@ -684,6 +693,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase_2_assimilation
 		icon = GFX_focus_IRS_phase_2_assimilation
@@ -715,6 +725,8 @@ focus_tree = {
 			add_to_variable = { IRS_evolution_points = 10 }
 		}
 	}
+
+
 
 	focus = {
 		id = IRS_phase2_african_surge
@@ -775,6 +787,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase2_hive_signal
 		icon = GFX_focus_generic_military_mission
@@ -824,6 +837,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase2_vector_mapping
 		icon = GFX_focus_generic_military_mission
@@ -871,6 +885,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase_2_complete
 		icon = GFX_focus_generic_military_mission
@@ -899,6 +914,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_phase_3_expansion
 		icon = GFX_focus_generic_military_mission
@@ -921,6 +937,7 @@ focus_tree = {
 			add_to_variable = { IRS_evolution_points = 20 }
 		}
 	}
+
 
 	focus = {
 		id = IRS_south_american_vectors
@@ -984,6 +1001,7 @@ focus_tree = {
 			add_to_variable = { IRS_evolution_points = 25 }
 		}
 	}
+
 
 	focus = {
 		id = IRS_release_tethysic_puppet
@@ -1139,6 +1157,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = IRS_daughters_awakening
 		icon = GFX_focus_generic_military_mission
@@ -1159,6 +1178,7 @@ focus_tree = {
 			custom_effect_tooltip = IRS_daughters_awakening_tt
 		}
 	}
+
 
 	focus = {
 		id = IRS_vitreous_contact
@@ -1283,6 +1303,7 @@ focus_tree = {
 			add_to_variable = { IRS_evolution_points = 20 }
 		}
 	}
+
 
 	focus = {
 		id = IRS_tromos_contact

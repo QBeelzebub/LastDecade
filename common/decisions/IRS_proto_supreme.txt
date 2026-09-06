@@ -1,3 +1,4 @@
+
 proto_supreme_raid_decisions = {
 
 	raid_proto_supreme = {

@@ -2,7 +2,7 @@ state = {
 	id = 695
 	name = "STATE_695"
 	manpower = 76299
-
+	
 	state_category = town
 
 	resources = {
@@ -10,7 +10,7 @@ state = {
 	}
 
 	history = {
-
+		
 		owner = EFH
 		add_core_of = EFH
 
@@ -36,8 +36,8 @@ state = {
 	}
 
 	provinces = {
-		153
+		153 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

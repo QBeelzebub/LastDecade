@@ -1,3 +1,4 @@
+
 state={
 	id=309
 	name="STATE_309"
@@ -5,8 +6,8 @@ state={
 
 	resources={
 		aluminium=60
-	}
-
+	}	
+	
 	state_category = rural
 
 	history={
@@ -25,8 +26,8 @@ state={
 	}
 
 	provinces={
-		1928 10906 12828
+		1928 10906 12828 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

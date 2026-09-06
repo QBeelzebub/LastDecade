@@ -1,3 +1,4 @@
+
 change_leader_rule_industry = {
 	type = change_leader_rules
 
@@ -7,6 +8,7 @@ change_leader_rule_industry = {
 
 	ai_will_do = { base = 1 }
 }
+
 change_leader_rule_manpower = {
 	type = change_leader_rules
 

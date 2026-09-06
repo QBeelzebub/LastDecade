@@ -85,6 +85,7 @@ ld_silent_transit_doctrine = {
 	}
 }
 
+
 ld_sea_control_doctrine = {
 	folder = naval
 	name = LD_GRAND_DOCTRINE_SEA_CONTROL_DOCTRINE
@@ -128,6 +129,7 @@ ld_sea_denial_doctrine = {
 		{ submarine_attack = 0.10 naval_detection = 0.05 }
 	}
 }
+
 
 ld_parasite_naval_tide = {
 	folder = naval

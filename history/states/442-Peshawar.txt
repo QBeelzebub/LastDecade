@@ -1,3 +1,4 @@
+
 state={
 	id=442
 	name="STATE_442"
@@ -18,11 +19,12 @@ state={
 			air_base = 1
 		}
 
+
 	}
 
 	provinces={
-		 4558 12717 12763
+		 4558 12717 12763 
 	}
 
-	local_supplies=5.0
+	local_supplies=5.0 
 }

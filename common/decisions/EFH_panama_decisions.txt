@@ -1,3 +1,4 @@
+
 SRP_escalation_category = {
 
 	EFH_bolster_panama_resistance = {

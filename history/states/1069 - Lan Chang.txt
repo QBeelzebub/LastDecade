@@ -2,7 +2,7 @@ state = {
 	id = 1069
 	name = "STATE_1069"
 	manpower = 214000
-
+	
 	state_category = pastoral
 
 	history = {
@@ -21,8 +21,8 @@ state = {
 	}
 
 	provinces = {
-		10330 10456 10356
+		10330 10456 10356 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

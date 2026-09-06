@@ -1,10 +1,11 @@
+
 state={
 	id=275
 	name="STATE_275"
 	manpower = 3680363
-
+	
 	state_category = city
-
+	
 	resources={
 		steel=11
 		chromium=53
@@ -26,8 +27,8 @@ state={
 	}
 
 	provinces={
-		1688 2171 2213 5106 5217 5231 10400 10566 10668 12064 12648
+		1688 2171 2213 5106 5217 5231 10400 10566 10668 12064 12648 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

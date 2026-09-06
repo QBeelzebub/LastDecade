@@ -14,9 +14,9 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
@@ -37,7 +37,7 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.2
 		weight = 0.1
-
+		
 		supply_consumption = 0.16
 
 		defense = -0.4
@@ -45,9 +45,10 @@ sub_units = {
 		soft_attack = -0.4
 		hard_attack = -0.4
 
+
 		can_be_parachuted = no
 	}
-
+	
 	rocket_artillery = {
 		abbreviation = "RART"
 		sprite = "artillery"
@@ -57,12 +58,12 @@ sub_units = {
 		active = yes
 		affects_speed = no
 		is_artillery_brigade = yes
-
+		
 		type = {
 			infantry
 			support
 		}
-
+		
 		group = support
 
 		categories = {
@@ -72,7 +73,7 @@ sub_units = {
 			category_artillery
 			category_support_artillery
 			category_rocket_artillery
-		}
+		}		
 
 		regimental = no
 		combat_width = 0
@@ -87,13 +88,14 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.2
 		weight = 0.1
-
+		
 		supply_consumption = 0.16
 
 		defense = -0.4
 		breakthrough = -0.4
 		soft_attack = -0.4
 		hard_attack = -0.4
+
 
 		can_be_parachuted = no
 	}
@@ -112,9 +114,9 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
@@ -125,7 +127,7 @@ sub_units = {
 
 		regimental = no
 		combat_width = 0
-
+		
 		essential = {
 			super_heavy_artillery_equipment
 		}
@@ -139,7 +141,7 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.2
 		weight = 0.1
-
+		
 		supply_consumption = 0.25
 
 		can_be_parachuted = no
@@ -161,9 +163,9 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
@@ -189,7 +191,7 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.2
 		weight = 0.1
-
+		
 		supply_consumption = 0.35
 
 		can_be_parachuted = no

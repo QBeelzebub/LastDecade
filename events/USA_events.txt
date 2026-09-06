@@ -1,5 +1,6 @@
 add_namespace = usa
 
+
 country_event = {
 	id = usa.1
 	title = usa.1.t
@@ -62,6 +63,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = usa.3
 	title = usa.3.t
@@ -73,6 +75,7 @@ country_event = {
 		name = usa.3.a
 	}
 }
+
 
 country_event = {
 	id = usa.2
@@ -86,6 +89,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = usa.4
 	title = usa.4.t
@@ -97,6 +101,7 @@ country_event = {
 		name = usa.4.a
 	}
 }
+
 
 country_event = {
 	id = usa.50
@@ -152,6 +157,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = usa.54
 	title = usa.54.t
@@ -199,6 +205,7 @@ country_event = {
 		name = usa.57.a
 	}
 }
+
 
 country_event = {
 	id = usa.58
@@ -254,6 +261,7 @@ country_event = {
 	option = { name = usa.63.a }
 }
 
+
 country_event = {
 	id = usa.64
 	title = usa.64.t
@@ -272,6 +280,7 @@ country_event = {
 	option = { name = usa.65.a }
 }
 
+
 country_event = {
 	id = usa.66
 	title = usa.66.t
@@ -289,6 +298,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = usa.67.a }
 }
+
 
 country_event = {
 	id = usa.68
@@ -317,6 +327,7 @@ country_event = {
 	option = { name = usa.70.a }
 }
 
+
 country_event = {
 	id = usa.71
 	title = usa.71.t
@@ -334,6 +345,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = usa.72.a }
 }
+
 
 country_event = {
 	id = usa.73
@@ -370,6 +382,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = usa.76.a }
 }
+
 
 country_event = {
 	id = usa.77

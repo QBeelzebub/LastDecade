@@ -1,3 +1,4 @@
+
 srp_clear_crisis_authority = {
 	if = { limit = { has_idea = srp_civil_society_intact }   remove_ideas = srp_civil_society_intact }
 	if = { limit = { has_idea = srp_emergency_legislation }  remove_ideas = srp_emergency_legislation }

@@ -8,14 +8,14 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-
+		
 		group = support
 
 		type = {
 			infantry
 			support
 		}
-
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -39,7 +39,7 @@ sub_units = {
 		weight = 0.1
 
 		can_be_parachuted = no
-
+		
 		supply_consumption = 0.08
 
 		defense = -0.4

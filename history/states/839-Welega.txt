@@ -2,23 +2,23 @@ state = {
 	id = 839
 	name = "STATE_839"
 	manpower = 600000
-
+	
 	state_category = pastoral
 
 	history = {
 		set_variable = { ETH_state_development_production_speed = -0.3 }
 		set_variable = { ETH_state_development_local_building_slots_factor = -0.3 }
-
+		
 		buildings = {
 		}
-
-		victory_points = {
-			2009 2
+		
+		victory_points = { 
+			2009 2 
 		}
-		victory_points = {
-			13243 1
+		victory_points = { 
+			13243 1 
 		}
-
+		
 		owner = AFR
 		add_core_of = AFR
 	}
@@ -27,5 +27,5 @@ state = {
  		2009 12856 13243
  	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

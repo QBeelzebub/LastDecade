@@ -1,3 +1,4 @@
+
 state={
 	id=812
 	name="STATE_812"
@@ -6,7 +7,7 @@ state={
 		owner = EFH
 		add_core_of = EFH
 		victory_points = {
-			3152 5
+			3152 5 
 		}
 		buildings = {
 			infrastructure = 3
@@ -23,7 +24,7 @@ state={
 	}
 
 	provinces={
-		496 567 3152 11426
+		496 567 3152 11426 
 	}
 	manpower=275220
 	buildings_max_level_factor=1.000

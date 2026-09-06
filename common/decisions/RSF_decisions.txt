@@ -1,5 +1,6 @@
 RSF_emergency_decrees = {
 
+
 	RSF_emergency_industrial_push = {
 		icon = generic_industry
 		available = {
@@ -41,6 +42,7 @@ RSF_emergency_decrees = {
 }
 
 RSF_military_ops = {
+
 
 	RSF_scorch_eastern_infrastructure = {
 		icon = generic_army_support

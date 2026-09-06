@@ -1,5 +1,6 @@
 characters = {
 
+
 	USA_victor_harlan = {
 		name = "Victor Harlan"
 		portraits = {
@@ -36,6 +37,7 @@ characters = {
 			desc = USA_james_thornton_desc
 		}
 	}
+
 
 	USA_janet_yellen = {
 		name = "Janet Yellen"
@@ -184,6 +186,7 @@ characters = {
 		}
 	}
 
+
 	USA_mark_milley = {
 		name = "Mark Milley"
 		portraits = {
@@ -234,6 +237,7 @@ characters = {
 			ai_will_do = { base = 5 }
 		}
 	}
+
 
 	USA_paul_lacamera = {
 		name = "Paul LaCamera"
@@ -289,6 +293,7 @@ characters = {
 		}
 	}
 
+
 	USA_james_foggo = {
 		name = "James Foggo"
 		portraits = {
@@ -325,6 +330,7 @@ characters = {
 		}
 	}
 
+
 	USA_david_allvin = {
 		name = "David Allvin"
 		portraits = {
@@ -360,6 +366,7 @@ characters = {
 			ai_will_do = { base = 5 }
 		}
 	}
+
 
 	USA_james_mcconville = {
 		name = "James McConville"
@@ -436,6 +443,7 @@ characters = {
 			ai_will_do = { base = 5 }
 		}
 	}
+
 
 	USA_sci_land = {
 		name = "Dr. Robert Chen"

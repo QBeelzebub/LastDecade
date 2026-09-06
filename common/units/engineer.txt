@@ -12,9 +12,9 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -22,9 +22,10 @@ sub_units = {
 			category_army
 		}
 
+
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
@@ -33,15 +34,16 @@ sub_units = {
 
 		weight = 0.1
 		supply_consumption = 0.02
-
+		
 		entrenchment = 2
-
+		
 		battalion_mult = {
 			category = category_light_infantry
 			entrenchment = 0.20
 			add = yes
 		}
 
+				
 		defense = 0.1
 		breakthrough = 0.5
 
@@ -91,7 +93,7 @@ sub_units = {
 
 		same_support_type = engineer
 	}
-
+	
 	pioneer_support = {
 		abbreviation = "PIO"
 		sprite = infantry
@@ -105,9 +107,9 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -117,9 +119,10 @@ sub_units = {
 			category_marines_and_amphibious
 		}
 
+
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
@@ -128,14 +131,15 @@ sub_units = {
 
 		weight = 0.1
 		supply_consumption = 0.02
-
+		
 		entrenchment = 2
-
+		
 		battalion_mult = {
 			category = category_marines
 			breakthrough = 0.15
 		}
 
+		
 		entrenchment = 2.5
 		defense = 0.1
 		breakthrough = 0.5
@@ -169,9 +173,9 @@ sub_units = {
 			defence = 0.20
 			movement = 0.25
 		}
-
+		
 		same_support_type = engineer
-
+		
 	}
 
 	jungle_pioneers_support = {
@@ -186,9 +190,9 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
@@ -197,7 +201,7 @@ sub_units = {
 
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 1
 		max_organisation = 30
 		default_morale = 0.3
@@ -209,10 +213,11 @@ sub_units = {
 		can_be_parachuted = yes
 		acclimatization_hot_climate_gain_factor = 3
 
+		
 		entrenchment = 2
 		breakthrough = 0.3
 		defense = 0.05
-
+		
 		essential = {
 			infantry_equipment
 			support_equipment
@@ -222,13 +227,13 @@ sub_units = {
 			infantry_equipment = 10
 			support_equipment = 40
 		}
-
+		
 		forest = {
 			attack = 0.1
 			defence = 0.05
 			movement = 0.3
 		}
-
+		
 		jungle = {
 			attack = 0.1
 			defence = 0.2
@@ -241,8 +246,11 @@ sub_units = {
 			movement = 0.25
 		}
 
+
 		same_support_type = engineer
 	}
+
+
 
 	assault_engineer = {
 		abbreviation = "ASEC"
@@ -257,9 +265,9 @@ sub_units = {
 			armor
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -269,9 +277,11 @@ sub_units = {
 			category_army
 		}
 
+		
+
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
@@ -280,14 +290,16 @@ sub_units = {
 
 		weight = 0.1
 		supply_consumption = 0.025
-
+		
 		entrenchment = 2
-
+		
+		
 		battalion_mult = {
 			category = category_light_infantry
 			breakthrough = 0.1
 		}
 
+				
 		defense = 0.1
 		breakthrough = 1.5
 
@@ -362,9 +374,9 @@ sub_units = {
 			armor
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -374,9 +386,10 @@ sub_units = {
 			category_army
 		}
 
+
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
@@ -385,9 +398,9 @@ sub_units = {
 
 		weight = 0.1
 		supply_consumption = 0.035
-
+		
 		entrenchment = 3
-
+		
 		battalion_mult = {
 			category = category_all_infantry
 			entrenchment = 0.2
@@ -399,7 +412,7 @@ sub_units = {
 			breakthrough = 0.05
 			add = yes
 		}
-
+				
 		defense = 0.15
 		breakthrough = 1
 
@@ -468,5 +481,5 @@ sub_units = {
 
 		same_support_type = engineer
 	}
-
+	
 }

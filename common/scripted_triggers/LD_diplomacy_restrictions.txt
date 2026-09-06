@@ -1,3 +1,5 @@
+
+
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 
 	if = {

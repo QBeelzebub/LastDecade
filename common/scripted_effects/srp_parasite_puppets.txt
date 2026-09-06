@@ -1,3 +1,4 @@
+
 IRS_release_tethysic_puppet = {
 	335 = { add_core_of = TET }
 	672 = { add_core_of = TET }

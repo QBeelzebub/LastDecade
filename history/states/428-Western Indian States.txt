@@ -2,10 +2,11 @@ state = {
 	id = 428
 	name = "STATE_428"
 	manpower = 10489446
-
+	
+	
 	state_category = town
 	resources = {
-		oil = 6
+		oil = 6 
 	}
 
 	history = {
@@ -18,7 +19,7 @@ state = {
 		}
 
 		victory_points = {
-			9975 10
+			9975 10 
 		}
 
 		buildings = {
@@ -29,8 +30,8 @@ state = {
 	}
 
 	provinces = {
-		1061 1103 1144 1190 4064 4090 4132 7020 7165 7207 9975 10118 12037 12092
+		1061 1103 1144 1190 4064 4090 4132 7020 7165 7207 9975 10118 12037 12092 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

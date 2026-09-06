@@ -4,9 +4,9 @@ state = {
 
 	manpower = 8600
 
-	impassable = yes
+	impassable = yes 
 	force_link_ownership_to = 334
-
+	
 	state_category = rural
 
 	history = {
@@ -21,8 +21,8 @@ state = {
 	}
 
 	provinces = {
-		1230 2047 2170 2184 2222 4335 5176 5226 7424 8221
+		1230 2047 2170 2184 2222 4335 5176 5226 7424 8221 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

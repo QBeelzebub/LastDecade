@@ -2,13 +2,14 @@ state={
 	id=988
 	name="STATE_988"
 	provinces={
-		5075 5105 8013 8044
+		5075 5105 8013 8044  
 	}
 	state_category = rural
 	manpower = 512000
 	history={
 		owner = CHN
 		add_core_of = CHN
+
 
 		buildings = {
 			infrastructure = 1

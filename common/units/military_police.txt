@@ -12,25 +12,25 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
 			category_army
 		}
-
+		
 		battalion_mult = {
 			category = category_all_infantry
 			default_morale = 0.20
 		}
-
+		
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 1
-		max_organisation = 0
+		max_organisation = 0	
 		default_morale = 0.3
 		manpower = 500
 		training_time = 180
@@ -38,14 +38,14 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		can_be_parachuted = yes
-
+		
 		suppression_factor = 0.20
 
 		essential = {
 			infantry_equipment
 			support_equipment
 		}
-
+		
 		need = {
 			support_equipment = 10
 			infantry_equipment = 40
@@ -67,15 +67,15 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
 			category_army
 		}
-
+		
 		battalion_mult = {
 			category = category_all_infantry
 			default_morale = 0.20
@@ -85,10 +85,10 @@ sub_units = {
 			category = category_vehicle_infantry
 			suppression_factor = 0.20
 		}
-
+		
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 2
 		max_organisation = 10
 		default_morale = 0.3
@@ -98,7 +98,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.03
 		can_be_parachuted = no
-
+		
 		suppression_factor = 0.30
 		recon = 1
 
@@ -107,7 +107,7 @@ sub_units = {
 			support_equipment
 			motorbike_equipment
 		}
-
+		
 		need = {
 			support_equipment = 5
 			infantry_equipment = 20

@@ -1,5 +1,6 @@
 add_namespace = proto_supreme
 
+
 country_event = {
 	id = proto_supreme.5
 	hidden = yes

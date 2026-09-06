@@ -1,0 +1,25 @@
+﻿#Scape & Run: The Last Decade
+#Public Alpha v0.12.1
+#A total conversion for Hearts of Iron IV
+
+
+#MOD BY
+Hona
+
+#ORIGINAL SETTING
+Scape & Run: Parasites
+Dhanantry
+
+#SOUNDTRACK
+Rotch Gwylt
+
+
+#TYPOGRAPHY
+Faustina, by Omnibus-Type
+SIL Open Font License 1.1
+
+
+#BUILT ON
+Hearts of Iron IV
+Paradox Development Studio
+Paradox Interactive

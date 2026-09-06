@@ -1,3 +1,4 @@
+
 telotic_lethal_events_enabled = {
 	has_game_rule = { rule = srp_lethal_events option = ENABLED }
 }

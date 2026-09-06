@@ -4,19 +4,19 @@ state={
 	manpower = 562330
 	state_category = rural
 	provinces={
-		4949 5020 5064 8090 10789
+		4949 5020 5064 8090 10789 
 	}
 	history={
 		owner = CHN
 		add_core_of = CHN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1 
 		}
 		victory_points = {
-			5064 1
+			5064 1 
 		}
 	}
-
+	
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

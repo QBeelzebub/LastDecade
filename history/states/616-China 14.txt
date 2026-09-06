@@ -11,6 +11,8 @@ state = {
 		owner = CHN
 		add_core_of = CHN
 
+
+
 		buildings = {
 			infrastructure = 1
 
@@ -32,14 +34,15 @@ state = {
 			5031 1
 		}
 
+
 	}
 
 	provinces = {
-		3742 5031 7511 8055 8081 8127 10724 12750
+		3742 5031 7511 8055 8081 8127 10724 12750  
 	}
 	manpower = 1077600
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

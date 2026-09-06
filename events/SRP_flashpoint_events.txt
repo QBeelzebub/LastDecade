@@ -1,5 +1,6 @@
 add_namespace = srp_flashpoint
 
+
 country_event = {
 	id = srp_flashpoint.1
 	title = srp_flashpoint.1.t

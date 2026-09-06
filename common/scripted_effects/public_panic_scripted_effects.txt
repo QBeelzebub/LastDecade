@@ -1,5 +1,7 @@
+
 SRP_recalculate_public_panic_effect = {
     clamp_variable = { var = public_panic min = 0 max = 1000 }
+
 
     set_variable = { var = public_panic_stab_factor value = 0 }
     add_to_variable = { var = public_panic_stab_factor value = public_panic }

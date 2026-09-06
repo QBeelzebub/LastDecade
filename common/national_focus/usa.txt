@@ -11,6 +11,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 4400 }
 
+
 	focus = {
 		id = USA_american_century
 		icon = GFX_goal_generic_national_unity
@@ -28,6 +29,7 @@ focus_tree = {
 			country_event = { id = usa.54 days = 2 }
 		}
 	}
+
 
 	focus = {
 		id = USA_atlantic_vigilance
@@ -180,6 +182,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = USA_state_of_the_union
 		icon = GFX_goal_generic_political_pressure
@@ -304,6 +307,7 @@ focus_tree = {
 			add_stability = 0.03
 		}
 	}
+
 
 	focus = {
 		id = USA_pentagon_review
@@ -446,6 +450,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = USA_peace_dividend
 		icon = GFX_goal_generic_construct_civ_factory
@@ -540,6 +545,7 @@ focus_tree = {
 			country_event = { id = usa.59 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = USA_continental_sovereignty
@@ -663,6 +669,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = USA_fire_protocol_adoption
@@ -789,6 +796,8 @@ focus_tree = {
 		}
 	}
 
+
+
 	focus = {
 		id = USA_fossil_fuel_expansion
 		icon = GFX_focus_USA_fossil_fuel_expansion
@@ -872,6 +881,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = USA_federal_research_grants
 		icon = GFX_focus_research
@@ -947,6 +957,7 @@ focus_tree = {
 			country_event = { id = usa.72 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = USA_deregulation_act
@@ -1029,6 +1040,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = USA_defense_budget_expansion
 		icon = GFX_focus_USA_defense_budget_expansion
@@ -1053,6 +1065,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = USA_hemispheric_primacy
 		icon = GFX_focus_USA_hemispheric_primacy
@@ -1070,6 +1083,7 @@ focus_tree = {
 			country_event = { id = usa.3 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = USA_secure_the_approaches
@@ -1103,6 +1117,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_domestic_order_tt
 		}
 	}
+
 
 	focus = {
 		id = USA_domestic_containment_doctrine
@@ -1150,6 +1165,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = USA_continental_defense_command
 		icon = GFX_focus_USA_continental_defense_command
@@ -1166,6 +1182,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_armed_forces_tt
 		}
 	}
+
 
 	focus = {
 		id = USA_doctrine_reckoning
@@ -1266,6 +1283,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = USA_knox_county_response
@@ -1391,6 +1409,7 @@ focus_tree = {
 		ai_will_do = { base = 100 }
 	}
 
+
 	focus = {
 		id = USA_great_power_doctrine
 		icon = GFX_goal_generic_demand_territory
@@ -1406,6 +1425,7 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 	}
+
 
 	focus = {
 		id = USA_monroe_doctrine_reassertion
@@ -1475,6 +1495,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = USA_pacific_containment

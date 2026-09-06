@@ -3,7 +3,7 @@ economy_decisions = {
 
 		icon = GFX_decision_generic_construction
 
-		visible = {
+		visible = { 
 			OR = {
 				is_major = no
 				AND = {
@@ -34,7 +34,7 @@ economy_decisions = {
 		}
 
 		cancel_trigger = {
-
+			
 			 check_variable = { node_goal < num_of_supply_nodes }
 		}
 
@@ -56,15 +56,16 @@ economy_decisions = {
 	}
 }
 
+
 propaganda_efforts = {
-	war_propaganda = {
+	war_propaganda = { 
 
 		icon = generic_prepare_civil_war
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			has_war_support < 0.5
-
+			
 			if = {
 				limit = {
 					original_tag = SPR
@@ -76,7 +77,7 @@ propaganda_efforts = {
 
 		visible = {
 			OR = {
-				has_war_with_non_exiled_country = yes
+				has_war_with_non_exiled_country = yes  
 				any_neighbor_country = {
 					AND = {
 						NOT = { has_government = ROOT }
@@ -114,8 +115,8 @@ propaganda_efforts = {
 			}
 		}
 	}
-
-	war_propaganda_casualties = {
+	
+	war_propaganda_casualties = { 
 
 		icon = generic_prepare_civil_war
 
@@ -130,16 +131,17 @@ propaganda_efforts = {
 		fire_only_once = no
 
 		days_remove = 180
-
+		
 		remove_trigger = {
 			has_war = no
         }
-
+		
 		cost = 100
 
 		modifier = {
 			weekly_casualties_war_support = 0.006
 		}
+
 
 		ai_will_do = {
 			base = 0
@@ -178,8 +180,8 @@ propaganda_efforts = {
 			}
 		}
 	}
-
-	war_propaganda_convoys = {
+	
+	war_propaganda_convoys = { 
 
 		icon = GFX_decision_generic_naval
 
@@ -194,16 +196,17 @@ propaganda_efforts = {
 		fire_only_once = no
 
 		days_remove = 180
-
+		
 		remove_trigger = {
 			has_war = no
         }
-
+		
 		cost = 100
 
 		modifier = {
 			weekly_convoys_war_support = 0.006
 		}
+
 
 		ai_will_do = {
 			base = 0
@@ -223,8 +226,8 @@ propaganda_efforts = {
 			}
 		}
 	}
-
-	war_propaganda_bombing = {
+	
+	war_propaganda_bombing = { 
 
 		icon = GFX_decision_generic_air
 
@@ -239,16 +242,17 @@ propaganda_efforts = {
 		fire_only_once = no
 
 		days_remove = 180
-
+		
 		remove_trigger = {
 			has_war = no
         }
-
+		
 		cost = 100
 
 		modifier = {
 			weekly_bombing_war_support = 0.006
 		}
+
 
 		ai_will_do = {
 			base = 0
@@ -295,12 +299,12 @@ propaganda_efforts = {
 			}
 		}
 	}
-
-	war_propaganda_film_industry = {
+	
+	war_propaganda_film_industry = { 
 
 		icon = generic_prepare_civil_war
 
-		available = {
+		available = { 
 			has_war_with_non_exiled_country = yes
 			OR = {
 				is_major = yes
@@ -331,7 +335,7 @@ propaganda_efforts = {
 
 		fire_only_once = yes
 
-		cost = 100
+		cost = 100 
 
 		complete_effect = {
 			effect_tooltip = {
@@ -351,7 +355,7 @@ propaganda_efforts = {
 			}
 		}
 	}
-
+	
 }
 
 operations = {
@@ -381,7 +385,7 @@ operations = {
 				}
 			}
 		}
-
+	
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
@@ -392,13 +396,13 @@ operations = {
 				}
 			}
 		}
-
+	
 		fire_only_once = no
-
+	
 		days_remove = 30
-
+	
 		cost = 75
-
+	
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -421,7 +425,7 @@ operations = {
 				}
 			}
 		}
-
+	
 		remove_effect = {
 			if = {
 				limit = {
@@ -493,12 +497,12 @@ operations = {
 		icon = GFX_decision_generic_ignite_civil_war
 		allowed = {
 			has_dlc = "Waking the Tiger"
-
+			
 		}
 		available = {
 			has_full_control_of_state = 685
 		}
-
+	
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
@@ -509,13 +513,13 @@ operations = {
 				}
 			}
 		}
-
+	
 		fire_only_once = no
-
+	
 		days_remove = 30
-
+	
 		cost = 75
-
+	
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -536,7 +540,7 @@ operations = {
 				}
 			}
 		}
-
+	
 		remove_effect = {
 			if = {
 				limit = {
@@ -600,21 +604,21 @@ special_projects = {
 			has_full_control_of_state = 453
 			num_of_civilian_factories > 15
 		}
-
+	
 		visible = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 		}
-
+	
 		fire_only_once = no
-
+	
 		days_remove = 365
-
+	
 		cost = 120
-
+	
 		modifier = {
 			civilian_factory_use = 15
 		}
-
+	
 		remove_effect = {
 			if = {
 				limit = {
@@ -675,21 +679,21 @@ special_projects = {
 			}
 			num_of_civilian_factories > 25
 		}
-
+	
 		visible = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
 		}
-
+	
 		fire_only_once = no
-
+	
 		days_remove = 180
-
+	
 		cost = 400
-
+	
 		modifier = {
 			civilian_factory_use = 25
 		}
-
+	
 		remove_effect = {
 			if = {
 				limit = {
@@ -731,7 +735,7 @@ special_projects = {
 }
 
 war_measures = {
-
+	
 	emergency_factory_conversion_defensive = {
 
 		icon = generic_industry
@@ -743,7 +747,7 @@ war_measures = {
 		visible = {
 			has_defensive_war = yes
 			has_offensive_war = no
-			num_of_controlled_states > 0
+			num_of_controlled_states > 0			
 		}
 
 		fire_only_once = no
@@ -828,7 +832,7 @@ war_measures = {
 
 		}
 	}
-
+	
 }
 
 foreign_politics = {
@@ -869,7 +873,7 @@ foreign_politics = {
 			NOT = { has_war_with = FROM }
 			any_enemy_country = {
 				has_attache_from = FROM
-			}
+			}			
 		}
 
         complete_effect = {
@@ -908,7 +912,7 @@ economy_decisions = {
 				}
 			}
 		}
-
+	
 		visible = {
 			any_owned_state = {
 				NOT = { has_state_flag = infrastructure_building_slot_flag }
@@ -960,14 +964,14 @@ economy_decisions = {
         fire_only_once = no
 
         available = {
-			IF = {
-				limit = {
-					OR = {
-						has_dlc = "Man the Guns"
-						has_dlc = "By Blood Alone"
+			IF = { 
+				limit = { 
+					OR = { 
+						has_dlc = "Man the Guns" 	
+						has_dlc = "By Blood Alone" 
 					}
 				}
-				has_war_with_non_exiled_country = yes
+				has_war_with_non_exiled_country = yes   
 			}
 			ELSE = {
 				has_war = yes

@@ -1,5 +1,6 @@
 IRS_evolution_points_category = {
 
+
 	IRS_ep_catalyze_evolution = {
 		icon = generic_political_actions
 		visible = { has_country_flag = IRS_phase_0_active }
@@ -74,6 +75,7 @@ IRS_evolution_points_category = {
 			}
 		}
 	}
+
 
 	IRS_ep_quicken_the_beckon = {
 		icon = GFX_decision_generic_operation

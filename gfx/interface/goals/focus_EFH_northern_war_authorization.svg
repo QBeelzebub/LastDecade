@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" fill="#0d1623"/>
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Authorization order -->
+  <path d="M28 21 H74 L99 46 V104 H28 Z" fill="#c9a52a"/>
+  <polygon points="74,21 74,46 99,46" fill="#0d1623"/>
+  <rect x="39" y="57" width="48" height="5" fill="#0d1623" opacity="0.72"/>
+  <rect x="39" y="69" width="35" height="5" fill="#0d1623" opacity="0.72"/>
+
+  <!-- Strike approval mark -->
+  <circle cx="76" cy="88" r="20" fill="#0d1623"/>
+  <circle cx="76" cy="88" r="15" fill="none" stroke="#c9a52a" stroke-width="4"/>
+  <path d="M64 88 L72 96 L90 77" fill="none" stroke="#c9a52a" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

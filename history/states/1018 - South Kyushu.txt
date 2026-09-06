@@ -19,7 +19,7 @@ state = {
 			infrastructure = 2
 			dockyard = 1
 			industrial_complex = 1
-
+			
 		}
 
 		victory_points = {
@@ -33,8 +33,8 @@ state = {
 	}
 
 	provinces = {
-		1020 1183 4102 4198 7178 11949 12006 12032
+		1020 1183 4102 4198 7178 11949 12006 12032 
 	}
 
-	local_supplies = 10.0
+	local_supplies = 10.0 
 }

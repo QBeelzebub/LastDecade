@@ -1,4 +1,8 @@
+
+
+
 equipment_modules = {
+
 
 	srp_carapace_plating_1 = {
 		abbreviation = "cp1"
@@ -29,6 +33,7 @@ equipment_modules = {
 		xp_cost = 4
 	}
 
+
 	srp_adapted_limb_cluster_1 = {
 		abbreviation = "alc1"
 		category = srp_adapted_locomotion
@@ -56,6 +61,7 @@ equipment_modules = {
 		}
 		xp_cost = 3
 	}
+
 
 	srp_pure_propulsion_mass_1 = {
 		abbreviation = "ppm1"
@@ -87,6 +93,7 @@ equipment_modules = {
 		xp_cost = 4
 	}
 
+
 	srp_apex_locomotion_1 = {
 		abbreviation = "alc"
 		category = srp_apex_locomotion
@@ -114,6 +121,7 @@ equipment_modules = {
 		xp_cost = 5
 	}
 
+
 	srp_parasite_support_node_1 = {
 		abbreviation = "spn"
 		category = srp_parasite_support_organ
@@ -129,6 +137,7 @@ equipment_modules = {
 		xp_cost = 2
 	}
 
+
 	srp_bolster_signal_node_1 = {
 		abbreviation = "bsn"
 		category = srp_bolster_signal_organ
@@ -141,6 +150,7 @@ equipment_modules = {
 		}
 		xp_cost = 3
 	}
+
 
 	srp_burrower_mandible_strike = {
 		abbreviation = "bms"
@@ -221,6 +231,7 @@ equipment_modules = {
 		xp_cost = 3
 	}
 
+
 	srp_bolster_crushing_limbs = {
 		abbreviation = "bcl"
 		category = srp_bolster_strike_organ
@@ -280,6 +291,7 @@ equipment_modules = {
 		xp_cost = 3
 	}
 
+
 	srp_warden_impact_spike = {
 		abbreviation = "wis"
 		category = srp_warden_strike_organ
@@ -337,6 +349,7 @@ equipment_modules = {
 		xp_cost = 3
 	}
 
+
 	srp_summoner_call_organ = {
 		abbreviation = "sco"
 		category = srp_summoner_strike_organ
@@ -391,6 +404,7 @@ equipment_modules = {
 		}
 		xp_cost = 3
 	}
+
 
 	srp_colony_carrier_mandible_claws = {
 		abbreviation = "ccm"
@@ -452,6 +466,7 @@ equipment_modules = {
 		xp_cost = 4
 	}
 
+
 	srp_dreadnaut_impact_organ = {
 		abbreviation = "dio"
 		category = srp_dreadnaut_strike_organ
@@ -507,6 +522,7 @@ equipment_modules = {
 		}
 		xp_cost = 3
 	}
+
 
 	srp_overlord_crushing_organ = {
 		abbreviation = "oco"

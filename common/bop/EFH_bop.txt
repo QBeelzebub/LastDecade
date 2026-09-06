@@ -1,3 +1,4 @@
+
 EFH_power_balance = {
 	initial_value = -0.35
 	left_side = EFH_federal_authority_side

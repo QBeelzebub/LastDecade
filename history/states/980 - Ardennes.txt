@@ -6,7 +6,7 @@ state = {
 		steel=9
 		coal = 7
 	}
-
+	
 	state_category = rural
 
 	history = {
@@ -23,12 +23,12 @@ state = {
 
 			3488 = { dam = 1 }
 		}
-
+		
 	}
 
 	provinces = {
 		3488 6537 9418 9444 11407
 	}
 
-	local_supplies = 14.0
+	local_supplies = 14.0 
 }

@@ -1,7 +1,7 @@
 state = {
 	id = 736
 	name = "STATE_736"
-
+	
 	state_category = city
 
 	history = {
@@ -10,6 +10,8 @@ state = {
 		}
 		owner = EFH
 		add_core_of = EFH
+
+
 
 		buildings = {
 			infrastructure = 1
@@ -24,10 +26,10 @@ state = {
 	}
 
 	provinces = {
-		599 6626 11595
+		599 6626 11595 
 	}
 	manpower = 1038159
 	buildings_max_level_factor = 1.000
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

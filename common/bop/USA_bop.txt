@@ -1,3 +1,4 @@
+
 USA_public_trust = {
 	initial_value = -0.15
 	left_side = USA_government_distrust_side

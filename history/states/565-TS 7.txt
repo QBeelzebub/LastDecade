@@ -16,15 +16,16 @@ state = {
 		owner = RSF
 		add_core_of = RSF
 
+
 		buildings = {
 			infrastructure = 1
 		}
-
+		
 	}
 
 	provinces = {
-		1666 1761 4762 4795 4868 7759 7854 10583 10654 12538
+		1666 1761 4762 4795 4868 7759 7854 10583 10654 12538  
 	}
 
-	local_supplies = 5.0
+	local_supplies = 5.0 
 }

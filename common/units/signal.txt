@@ -12,18 +12,20 @@ sub_units = {
 			infantry
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
 			category_army
 		}
 
+	
+
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 1
 		max_organisation = 20
 		default_morale = 0.3
@@ -33,11 +35,11 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		can_be_parachuted = yes
-
+		
 		initiative = 0.1
-
+		
 		own_equipment_fuel_consumption_mult = 0.0
-
+		
 		essential = {
 			support_equipment
 			srp_truck_equipment
@@ -50,6 +52,8 @@ sub_units = {
 
 		same_support_type = signal_company
 	}
+
+
 
 	armored_signal = {
 		abbreviation = "ASC"
@@ -64,9 +68,9 @@ sub_units = {
 			armor
 			support
 		}
-
+		
 		group = support
-
+		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
@@ -80,9 +84,11 @@ sub_units = {
 			breakthrough = 0.05
 		}
 
+	
+
 		regimental = no
 		combat_width = 0
-
+	
 		max_strength = 1
 		max_organisation = 20
 		default_morale = 0.3
@@ -92,9 +98,9 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.035
 		can_be_parachuted = no
-
+		
 		initiative = 0.12
-
+				
 		essential = {
 			support_equipment
 			armored_support_vehicle

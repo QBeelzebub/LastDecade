@@ -1,3 +1,4 @@
+
 state = {
 	id = 305
 	name = "STATE_305"
@@ -6,7 +7,7 @@ state = {
 	resources = {
 		oil = 2
 	}
-
+	
 	state_category = city
 
 	history = {
@@ -23,7 +24,7 @@ state = {
 				naval_base = 4
 			}
 		}
-
+		
 		victory_points = {
 			12798 10
 		}
@@ -39,8 +40,8 @@ state = {
 	}
 
 	provinces = {
-		5051 5120 8047 8075 8252 10888 11020 12798
+		5051 5120 8047 8075 8252 10888 11020 12798 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

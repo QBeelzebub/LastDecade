@@ -1,3 +1,5 @@
+
+
 music = {
 	name = "maintheme"
 	file = "srp/dominion.ogg"
@@ -31,6 +33,7 @@ music = {
 	volume = 0.65
 }
 
+
 music = {
 	name = "allies_peace_1"
 	file = "allies_peace_morningofdday.ogg"
@@ -41,6 +44,7 @@ music = {
 	file = "endofthetour.ogg"
 	volume = 0.65
 }
+
 
 music = {
 	name = "allies_war_1"
@@ -53,6 +57,7 @@ music = {
 	volume = 0.65
 }
 
+
 music = {
 	name = "axis_peace_1"
 	file = "axis_peace_krakow.ogg"
@@ -63,6 +68,7 @@ music = {
 	file = "luftwaffemarch_reprise.ogg"
 	volume = 0.65
 }
+
 
 music = {
 	name = "axis_war_1"
@@ -85,6 +91,8 @@ music = {
 	volume = 0.65
 }
 
+
+
 music = {
 	name = "comintern_peace_1"
 	file = "motherrussia.ogg"
@@ -103,6 +111,7 @@ music = {
 	volume = 0.65
 }
 
+
 music = {
 	name = "comintern_war_1"
 	file = "themightofsovietunion.ogg"
@@ -120,6 +129,7 @@ music = {
 	file = "thegreatpatrioticwar.ogg"
 	volume = 0.65
 }
+
 
 music = {
 	name = "resistance_spanish"

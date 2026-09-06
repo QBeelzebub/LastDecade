@@ -6,12 +6,13 @@ state = {
 	resources = {
 		aluminium = 5
 	}
+	
 
 	history = {
 		victory_points = {
-			9296 3
+			9296 3 
 		}
-
+		
 		owner = EFH
 		add_core_of = EFH
 		buildings = {

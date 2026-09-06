@@ -6,7 +6,7 @@ state = {
 		owner = RSF
 		add_core_of = RSF
 		victory_points = {
-			13204 1
+			13204 1 
 		}
 		buildings = {
 			infrastructure = 1
@@ -14,6 +14,8 @@ state = {
 				naval_base = 1
 			}
 		}
+
+
 
 	}
 
@@ -24,5 +26,5 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = "pastoral"
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

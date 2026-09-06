@@ -1,3 +1,4 @@
+
 SRP_update_consortium_tier_effect = {
 	if = {
 		limit = { has_idea = SRP_consortium_tier_1 }

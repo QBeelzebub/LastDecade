@@ -1,3 +1,4 @@
+
 EFH_dyadic_beckon_mio = {
 	icon = GFX_idea_generic_infantry_organization
 

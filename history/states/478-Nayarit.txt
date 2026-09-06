@@ -1,10 +1,11 @@
+
 state={
 	id=478
 	name="STATE_478"
 	manpower = 2470875
-
+	
 	state_category = town
-
+	
 	resources={
 		tungsten=8
 	}
@@ -29,8 +30,9 @@ state={
 	}
 
 	provinces={
-		2051 5052 10172 12746 12873 13089
+		2051 5052 10172 12746 12873 13089 
 	}
+	
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -120,6 +120,7 @@ equipments = {
 		visual_level = 0
 	}
 
+
 	vagrant_1_core = {
 		year = 2018
 		is_archetype = yes
@@ -228,6 +229,7 @@ equipments = {
 		visual_level = 0
 	}
 
+
 	parasite_supply_swarm = {
 		year = 2018
 
@@ -264,6 +266,7 @@ equipments = {
 		priority = 30
 	}
 
+
 	parasite_bio_rail = {
 		year = 2018
 
@@ -293,6 +296,8 @@ equipments = {
 		archetype = parasite_bio_rail
 		priority = 10
 	}
+
+
 
 	rupter_equipment = {
 		year = 2022
@@ -564,6 +569,7 @@ equipments = {
 		visual_level = 0
 	}
 
+
 	vigilante_battery_equipment = {
 		year = 2022
 		is_archetype = yes
@@ -773,6 +779,7 @@ equipments = {
 		priority = 7
 		visual_level = 0
 	}
+
 
 	haunter_titan_equipment = {
 		year = 2024

@@ -1,8 +1,9 @@
+
 state={
 	id=414
 	name="STATE_414"
 	manpower = 243007
-
+	
 	state_category = wasteland
 
 	history={
@@ -12,13 +13,13 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			10913 1
+			10913 1 
 		}
 	}
 
 	provinces={
-		1986 10913 11249 12809
+		1986 10913 11249 12809 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

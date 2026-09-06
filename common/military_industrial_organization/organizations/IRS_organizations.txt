@@ -1,3 +1,5 @@
+
+
 IRS_iris_beckon_mio = {
 	icon = GFX_idea_generic_research_organization
 
@@ -152,6 +154,7 @@ IRS_iris_beckon_mio = {
 	}
 }
 
+
 IRS_vitreous_beckon_mio = {
 	icon = GFX_idea_generic_research_organization
 
@@ -295,6 +298,7 @@ IRS_vitreous_beckon_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 IRS_tromos_beckon_mio = {
 	icon = GFX_idea_generic_infantry_organization
@@ -442,6 +446,7 @@ IRS_tromos_beckon_mio = {
 	}
 }
 
+
 IRS_boreic_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -582,6 +587,7 @@ IRS_boreic_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 IRS_alclidic_mio = {
 	icon = GFX_idea_generic_infantry_organization
@@ -726,6 +732,7 @@ IRS_alclidic_mio = {
 	}
 }
 
+
 IRS_sinic_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -868,6 +875,8 @@ IRS_sinic_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
+
 
 IRS_ferritic_mio = {
 	icon = GFX_idea_generic_armor_organization
@@ -1162,6 +1171,7 @@ IRS_tethysic_mio = {
 	}
 }
 
+
 srp_yelloweye_mio = {
 	icon = GFX_idea_generic_air_organization
 
@@ -1303,6 +1313,7 @@ srp_yelloweye_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 IRS_plutonic_mio = {
 	icon = GFX_idea_generic_air_organization

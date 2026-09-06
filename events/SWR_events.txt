@@ -1,5 +1,6 @@
 add_namespace = swr
 
+
 country_event = {
 	id = swr.1
 	title = swr.1.t
@@ -29,6 +30,7 @@ country_event = {
 		custom_effect_tooltip = swr.1.c_tt
 	}
 }
+
 
 country_event = {
 	id = swr.2

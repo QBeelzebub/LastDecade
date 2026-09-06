@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_fighter_gen4 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -30,7 +31,7 @@ technologies = {
 			srp_radio_navigation
 			drop_tanks
 		}
-
+	
 		path = {
 			leads_to_tech = srp_fighter_gen45
 			research_cost_coeff = 1
@@ -40,6 +41,7 @@ technologies = {
 			srp_air_tech
 			srp_fighter_tech
 		}
+
 
 		ai_will_do = {
 			base = 3
@@ -139,6 +141,7 @@ technologies = {
 		}
 	}
 
+
 	srp_cas_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -196,6 +199,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_bomber_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -259,6 +263,7 @@ technologies = {
 		}
 	}
 
+
 	srp_transport_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -278,6 +283,7 @@ technologies = {
 			base = 1
 		}
 	}
+
 
 	srp_helicopter_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -391,6 +397,7 @@ technologies = {
 			always = no
 		}
 
+
 		enable_equipment_modules = {
 			EFH_ha_wing_canard_delta
 		}
@@ -408,6 +415,7 @@ technologies = {
 			always = no
 		}
 
+
 		enable_equipment_modules = {
 			USA_lockheed_f35_lo_wing
 		}
@@ -424,6 +432,7 @@ technologies = {
 		allow = {
 			always = no
 		}
+
 
 		enable_equipments = {
 			srp_orbital_delivery_vehicle_equipment_1

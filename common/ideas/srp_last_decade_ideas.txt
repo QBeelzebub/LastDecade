@@ -1,5 +1,7 @@
+
 ideas = {
 	country = {
+
 
 		srp_last_decade_t1_parasite = {
 			picture = idea_great_depression
@@ -25,6 +27,7 @@ ideas = {
 			}
 		}
 
+
 		srp_last_decade_t2_parasite = {
 			picture = idea_great_depression
 			allowed = { always = no }
@@ -49,6 +52,7 @@ ideas = {
 			}
 		}
 
+
 		srp_last_decade_t4_parasite = {
 			picture = generic_production_bonus
 			allowed = { always = no }
@@ -72,6 +76,7 @@ ideas = {
 				political_power_gain = -0.075
 			}
 		}
+
 
 		srp_last_decade_t5_parasite = {
 			picture = generic_production_bonus

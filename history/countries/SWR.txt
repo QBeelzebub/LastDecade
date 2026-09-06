@@ -1,3 +1,4 @@
+
 recruit_character = SWR_Leader
 capital = 716
 

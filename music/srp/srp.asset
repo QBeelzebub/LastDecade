@@ -1,3 +1,4 @@
+
 music = {
 	name = "the_call"
 	file = "the_call.ogg"
@@ -117,3 +118,4 @@ music = {
 	file = "serenity.ogg"
 	volume = 0.65
 }
+

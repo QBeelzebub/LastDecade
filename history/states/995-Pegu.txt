@@ -1,10 +1,11 @@
 state = {
 	id = 995
 	name = "STATE_995"
-
+	
 	state_category = city
 	manpower = 1272324
-
+	
+	
 	history = {
 
 		owner = CHN
@@ -30,10 +31,10 @@ state = {
 	}
 
 	provinces = {
-		1330 1650 10154 10283 10344 12127
+		1330 1650 10154 10283 10344 12127 
 	}
 
 	buildings_max_level_factor = 1.000
 	local_supplies = 6
-
+	
 }

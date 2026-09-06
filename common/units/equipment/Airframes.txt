@@ -19,7 +19,7 @@ equipments = {
 		air_map_icon_frame = 1
 		interface_category = interface_category_air
 		substitute = cv_small_plane_airframe
-
+		
 		air_range = 3000
 		maximum_speed = 600
 		air_agility = 20
@@ -55,7 +55,7 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_1 = {
+			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -94,7 +94,7 @@ equipments = {
 				}
 			}
 		}
-
+		
 		module_count_limit = {
 			category = srp_wing_configuration
 			count < 2
@@ -170,6 +170,8 @@ equipments = {
 		is_buildable = yes
 		priority = 5
 
+
+		
 		resources = {
 			aluminium = 4
 			chromium = 4
@@ -185,7 +187,7 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_1 = {
+			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -196,7 +198,7 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
-			fixed_auxiliary_weapon_slot_2 = {
+			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -207,7 +209,7 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
-			fixed_auxiliary_weapon_slot_3 = {
+			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -219,7 +221,7 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_4 = {
+			fixed_auxiliary_weapon_slot_4 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -281,7 +283,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-		}
+		}		
 	}
 	srp_fighter_gen45_airframe = {
 		abbreviation = "gen45"
@@ -322,7 +324,7 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_1 = {
+			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -333,7 +335,7 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
-			fixed_auxiliary_weapon_slot_2 = {
+			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -344,7 +346,7 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
-			fixed_auxiliary_weapon_slot_3 = {
+			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -356,7 +358,7 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_4 = {
+			fixed_auxiliary_weapon_slot_4 = { 
 				required = no
 				allowed_module_categories = {
 					recon_camera
@@ -456,7 +458,7 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
-
+	
 				}
 			}
 
@@ -469,7 +471,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
-
+	
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = {
@@ -481,7 +483,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
-
+	
 				}
 			}
 			fixed_auxiliary_weapon_slot_3 = {
@@ -493,7 +495,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
-
+	
 				}
 			}
 			fixed_auxiliary_weapon_slot_4 = {
@@ -505,7 +507,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
-
+	
 				}
 			}
 

@@ -8,12 +8,13 @@ state = {
 		coal = 4
 		chromium = 1
 	}
-
+	
 	state_category = pastoral
 	history = {
 
 		owner = RSF
 		add_core_of = RSF
+
 
 		add_claim_by = JAP
 
@@ -24,8 +25,8 @@ state = {
 	}
 
 	provinces = {
-		855 1742 1755
+		855 1742 1755 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

@@ -1,3 +1,4 @@
+
 state={
 	id=113
 	name="STATE_113"
@@ -7,9 +8,9 @@ state={
 		steel=2
 		coal = 1
 	}
-
+	
 	state_category = city
-
+	
 	history={
 		owner = EFH
 		add_core_of = EFH
@@ -34,8 +35,8 @@ state={
 	}
 
 	provinces={
-		285 303 369 3342 3359 7377 11293 11303
+		285 303 369 3342 3359 7377 11293 11303 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

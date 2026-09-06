@@ -1,3 +1,4 @@
+
 state={
 	id=47
 	name="STATE_47"
@@ -8,14 +9,14 @@ state={
 		aluminium=30
 		tungsten = 10
 	}
-
+	
 	state_category = city
 
 	history={
 		owner = EFH
 		add_core_of = EFH
 		victory_points = {
-			4109 20
+			4109 20 
 		}
 		victory_points = {
 			3973 3
@@ -41,8 +42,8 @@ state={
 	}
 
 	provinces={
-		863 976 1109 3864 3973 3988 4109 6930 7127
+		863 976 1109 3864 3973 3988 4109 6930 7127 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

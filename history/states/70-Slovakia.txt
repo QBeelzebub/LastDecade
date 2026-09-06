@@ -5,9 +5,9 @@ state = {
 	name = "STATE_70"
 
 	manpower = 1230500
-
+	
 	state_category = city
-
+	
 	resources = {
 		tungsten = 1
 	}
@@ -16,7 +16,7 @@ state = {
 
 		owner = EFH
 		add_core_of = EFH
-
+		
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
@@ -35,12 +35,12 @@ state = {
 		victory_points = {
 			541 2
 		}
-
+		
 	}
 
 	provinces = {
-		541 3484 3537 9539 9692 11522 11539
+		541 3484 3537 9539 9692 11522 11539 
 	}
 
-	local_supplies = 3.0
+	local_supplies = 3.0 
 }

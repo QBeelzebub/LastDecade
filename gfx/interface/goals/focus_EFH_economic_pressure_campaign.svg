@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Market frame -->
+  <rect x="16" y="22" width="96" height="82" rx="3" fill="#c9a52a"/>
+  <rect x="24" y="30" width="80" height="66" fill="#0d1623"/>
+
+  <!-- Chart grid -->
+  <rect x="25" y="51" width="78" height="2" fill="#c9a52a" opacity="0.42"/>
+  <rect x="25" y="72" width="78" height="2" fill="#c9a52a" opacity="0.42"/>
+  <rect x="48" y="31" width="2" height="64" fill="#c9a52a" opacity="0.32"/>
+  <rect x="75" y="31" width="2" height="64" fill="#c9a52a" opacity="0.32"/>
+
+  <!-- Falling market line -->
+  <path d="M31 39 L48 45 L61 38 L76 58 L95 84" fill="none" stroke="#c9a52a" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+  <polygon points="93,73 105,93 83,88" fill="#c9a52a"/>
+</svg>

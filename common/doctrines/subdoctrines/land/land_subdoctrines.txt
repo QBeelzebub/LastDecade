@@ -152,6 +152,7 @@ ld_corridor_warfare = {
 	}
 }
 
+
 ld_combined_arms_assault = {
 	track = infantry
 	name = LD_SUBDOCTRINE_COMBINED_ARMS_ASSAULT
@@ -310,6 +311,7 @@ ld_expeditionary_posture = {
 		ld_forward_presence_concept = { land_reinforce_rate = 0.02 }
 	}
 }
+
 
 ld_parasite_rupter_surge = {
 	track = parasite_broods

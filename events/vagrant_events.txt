@@ -1,5 +1,7 @@
 add_namespace = vagrant
 
+
+
 country_event = {
 	id = vagrant.9
 	title = vagrant.9.t
@@ -11,6 +13,8 @@ country_event = {
 		name = vagrant.9.a
 	}
 }
+
+
 
 country_event = {
 	id = vagrant.8
@@ -30,6 +34,7 @@ country_event = {
 		add_political_power = 100
 	}
 }
+
 
 country_event = {
 	id = vagrant.7
@@ -64,6 +69,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = vagrant.6
 	title = vagrant.6.t
@@ -94,6 +100,7 @@ country_event = {
 		clr_country_flag = IRS_vagrant_4_field_duty
 	}
 }
+
 
 country_event = {
 	id = vagrant.5
@@ -126,6 +133,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = vagrant.4
 	title = vagrant.4.t
@@ -156,6 +164,7 @@ country_event = {
 		clr_country_flag = EFH_vagrant_2_field_duty
 	}
 }
+
 
 country_event = {
 	id = vagrant.3
@@ -188,6 +197,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = vagrant.2
 	title = vagrant.2.t
@@ -218,6 +228,7 @@ country_event = {
 		clr_country_flag = EFH_vagrant_2_field_duty
 	}
 }
+
 
 country_event = {
 	id = vagrant.1

@@ -1,3 +1,4 @@
+
 panama_canal_damaged_modifier = {
 	enable = { always = yes }
 

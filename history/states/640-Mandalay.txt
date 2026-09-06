@@ -5,10 +5,10 @@ state = {
 	resources = {
 		tungsten = 50
 	}
-
+	
 	manpower = 158241
 	state_category = town
-
+	
 	history = {
 
 		owner = CHN
@@ -25,7 +25,7 @@ state = {
 	}
 
 	provinces = {
-		1492 4585 4626 7469 7562 12404
+		1492 4585 4626 7469 7562 12404 
 	}
 
 	local_supplies = 0.000

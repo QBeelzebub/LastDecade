@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_mbt_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -70,6 +71,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_ifv_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -198,6 +200,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_infantry_eq_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -351,6 +354,7 @@ technologies = {
 		}
 	}
 
+
 	srp_arty_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -397,6 +401,7 @@ technologies = {
 		}
 	}
 
+
 	srp_motorized_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -427,6 +432,7 @@ technologies = {
 			base = 3
 		}
 	}
+
 
 	srp_wheeled_ifv_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -538,6 +544,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_logistics_transport_1 = {
 		allow = { NOT = { is_full_parasite = yes } }

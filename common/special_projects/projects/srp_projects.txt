@@ -1,3 +1,6 @@
+
+
+
 sp_land_stbn_tank_shell = {
 	specialization = specialization_land
 
@@ -159,6 +162,8 @@ sp_land_stbn_tank_shell = {
 	}
 }
 
+
+
 sp_naval_stbn_shell = {
 	specialization = specialization_naval
 
@@ -300,6 +305,8 @@ sp_naval_stbn_shell = {
 	}
 }
 
+
+
 sp_naval_fusion_engine = {
 	specialization = specialization_naval
 
@@ -423,6 +430,8 @@ sp_naval_fusion_engine = {
 		}
 	}
 }
+
+
 
 sp_air_sf6_jet_engine = {
 	specialization = specialization_air
@@ -551,6 +560,8 @@ sp_air_sf6_jet_engine = {
 		}
 	}
 }
+
+
 
 sp_land_parasite_weakpoint_algorithm = {
 	specialization = specialization_land
@@ -705,6 +716,8 @@ sp_land_parasite_weakpoint_algorithm = {
 	}
 }
 
+
+
 sp_naval_carrier_fuel_synthesis = {
 	specialization = specialization_naval
 
@@ -822,6 +835,8 @@ sp_naval_carrier_fuel_synthesis = {
 		}
 	}
 }
+
+
 
 sp_land_nuclear_artillery = {
 	specialization = specialization_land
@@ -1004,6 +1019,7 @@ sp_land_nuclear_artillery = {
 	}
 }
 
+
 sp_land_nanocomposite = {
 	specialization = specialization_land
 
@@ -1106,6 +1122,7 @@ sp_land_nanocomposite = {
 		}
 	}
 }
+
 
 sp_land_railgun = {
 	specialization = specialization_land

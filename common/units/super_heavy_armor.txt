@@ -11,7 +11,7 @@ sub_units = {
 			support
 			armor
 		}
-
+		
 		group = support
 
 		categories = {
@@ -22,7 +22,7 @@ sub_units = {
 			category_all_armor
 			category_army
 		}
-
+		
 		regimental = no
 		combat_width = 0
 
@@ -36,9 +36,10 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.0
-
+		
 		supply_consumption = 0.4
 
+		
 		suppression = 2.5
 
 		forest = {
@@ -71,12 +72,12 @@ sub_units = {
 			attack = 0.1
 			defence = 0.05
 		}
-		river = {
+		river = { 
 			attack = -0.25
 			defence = -0.25
 			movement = -0.3
 		}
-		amphibious = {
+		amphibious = { 
 			attack = -0.6
 		}
 	}

@@ -1,5 +1,6 @@
 equipments = {
 
+
 	srp_destroyer_hull = {
 		year = 2018
 
@@ -260,6 +261,7 @@ equipments = {
 		manpower = 800
 		naval_dominance_factor = 80
 	}
+
 
 	srp_carrier_hull = {
 		year = 2018
@@ -532,6 +534,7 @@ equipments = {
 		naval_dominance_factor = 600
 	}
 
+
 	srp_battleship_hull = {
 		year = 2018
 
@@ -745,6 +748,7 @@ equipments = {
 		manpower = 3200
 		naval_dominance_factor = 470
 	}
+
 
 	srp_submarine_hull = {
 		year = 2018
@@ -970,6 +974,7 @@ equipments = {
 		naval_dominance_factor = 32
 	}
 
+
 	IRS_devourer_hull = {
 		year = 2022
 
@@ -1093,6 +1098,7 @@ equipments = {
 		manpower = 150
 		naval_dominance_factor = 8
 	}
+
 
 	IRS_abyssant_hull = {
 		year = 2027

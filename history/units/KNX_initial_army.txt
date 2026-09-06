@@ -1,3 +1,5 @@
+
+
 division_template = {
 	name = "Knox Irregular"
 	force_allow_recruiting = yes
@@ -73,6 +75,7 @@ division_template = {
 		rupter_pack = { x = 2 y = 3 }
 	}
 }
+
 
 units = {
 	division = {

@@ -1,3 +1,4 @@
+
 SRP_initiate_escalation_effect = {
 	set_variable = { EFH_USA_escalation = 35 }
 	SRP_recalc_escalation_idea = yes
@@ -51,6 +52,7 @@ SRP_recalc_escalation_idea = {
 	}
 }
 
+
 SRP_escalate_low_effect = {
 	EFH = { add_to_variable = { EFH_USA_escalation = 6 } SRP_recalc_escalation_idea = yes }
 	USA = { add_to_variable = { EFH_USA_escalation = 6 } SRP_recalc_escalation_idea = yes }
@@ -70,6 +72,7 @@ SRP_escalate_drift_effect = {
 	EFH = { add_to_variable = { EFH_USA_escalation = 3 } SRP_recalc_escalation_idea = yes }
 	USA = { add_to_variable = { EFH_USA_escalation = 3 } SRP_recalc_escalation_idea = yes }
 }
+
 
 SRP_deescalate_low_effect = {
 	EFH = { add_to_variable = { EFH_USA_escalation = -6 } SRP_recalc_escalation_idea = yes }

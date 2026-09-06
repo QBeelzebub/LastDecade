@@ -1,5 +1,6 @@
 ﻿l_english:
 
+
  RSF_iron_grip: "Iron Grip"
  RSF_iron_grip_desc: "The state will hold. Whatever must be done to silence the fractures in our elite and keep the machine running will be done."
 
@@ -54,6 +55,7 @@
  RSF_nuclear_deterrent: "Nuclear Deterrent"
  RSF_nuclear_deterrent_desc: "While everything else falls apart, our nuclear arsenal remains intact. It is the one thing no one can take from us."
 
+
  rsf.1.t: "The State Cannot Hold"
  rsf.1.d: "The line has been crossed. The federal government no longer controls the eastern oblasts. The councils are armed and organised. The military is fracturing along ideological lines.\n\nRussia is ending. What rises from this depends on who chooses to lead the transition."
  rsf.1.a: "Let the councils form. Sweramoa will rise."
@@ -92,6 +94,7 @@
  rsf.7.a: "Suppress the committees. Arrest the organizers."
  rsf.7.b: "Engage with them. Send a government representative."
  rsf.7.b_tt: "When Sweramoa forms, it will have a stronger foundation."
+
 
  RSF_iron_grip_idea: "Iron Grip"
  RSF_iron_grip_idea_desc: "The leadership maintains tight control over the apparatus of state. Stability is enforced rather than earned."
@@ -132,11 +135,13 @@
  RSF_emergency_output: "Emergency Production Decree"
  RSF_emergency_output_desc: "By decree, all non-essential industrial capacity has been redirected to war production. The legal framework was suspended three months ago."
 
+
  RSF_emergency_decrees: "Emergency Decrees"
  RSF_emergency_decrees_desc: "Wartime authority measures available to the Russian federal government during the crisis period."
 
  RSF_military_ops: "Military Operations"
  RSF_military_ops_desc: "Operational orders issued by the eastern command, including scorched earth authority."
+
 
  RSF_emergency_industrial_push: "Emergency Industrial Decree"
  RSF_emergency_industrial_push_desc: "Mandate emergency production quotas across all state-controlled factories. 60-day surge at the cost of peacetime norms."
@@ -147,10 +152,12 @@
  RSF_scorch_eastern_infrastructure: "Scorched Earth Order"
  RSF_scorch_eastern_infrastructure_desc: "Destroy the infrastructure of this state before it falls to parasite control. Power grids, rail junctions, road bridges. Leave nothing useful."
 
+
  RSF_alexei_marenkov: "Alexei Marenkov"
  RSF_alexei_marenkov_desc: "A former deputy economics minister with no political ambitions beyond functional government. He manages the machinery that others argue about."
  RSF_marenkov_token: "State Technocrat"
  RSF_marenkov_token_desc: "Marenkov runs the practical operations of the Russian state: contracts, production quotas, and resource allocation. The politicians fight. He keeps the lights on."
+
 
  SWR_council_of_twelve: "The Council of Twelve"
  SWR_council_of_twelve_desc: "The twelve senior council-commanders who organised the transition have convened to govern Sweramoa. A governing charter must be written. Defence must be organised. Something must be built."
@@ -176,6 +183,7 @@
  SWR_against_all_fronts: "Against All Fronts"
  SWR_against_all_fronts_desc: "Parasites to the east. The European Federation to the west. Old Russia's remnants in the south. There is no front that can be left unmanned."
 
+
  SWR_council_authority_idea: "Council Authority"
  SWR_council_authority_idea_desc: "The Council of Twelve governs with revolutionary mandate. Political decisions are fast, and the bureaucracy obeys."
 
@@ -191,6 +199,7 @@
  SWR_tactical_redoubt_idea: "Strategic Redoubt Doctrine"
  SWR_tactical_redoubt_idea_desc: "Sweramoa has learned to hold ground. Every fortified position is built to be held longer than the attacker planned for."
 
+
  swr.1.t: "A Question of Survival"
  swr.1.d: "The Council of Twelve has convened an emergency session on military research. The parasite advance into the former Russian heartland shows no sign of slowing, and our weapons programmes cannot keep pace with the threat.\n\nThe European Federation possesses RTG research and other anti-parasite technology that we do not. The question is how we pursue it, and what price we are willing to pay."
  swr.1.a: "Sweramoa builds its own weapons. We trust no one."
@@ -204,6 +213,7 @@
  swr.2.a_tt: "Sweramoa receives access to EF anti-parasite research. The Federation absorbs a small stability cost from the political fallout of complying under threat."
  swr.2.b: "We will not be coerced. Reject the ultimatum."
  swr.2.b_tt: "Sweramoa's research programme stalls. Relations with the EF are frozen for six months."
+
 
  SWR_ef_weapon_research_access: "EF Research Access"
  SWR_ef_weapon_research_access_desc: "Sweramoa has obtained access to European Federation anti-parasite research, including preliminary RTG weapons data."

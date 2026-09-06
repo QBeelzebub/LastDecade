@@ -7,6 +7,7 @@ add_namespace = irs_vitreous
 @IRS_vitreous_auto3_days = 63
 @IRS_vitreous_auto3_flag = 64
 
+
 country_event = {
 	id = irs_vitreous.6
 	hidden = yes

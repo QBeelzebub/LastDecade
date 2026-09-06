@@ -54,6 +54,8 @@
 		target_min_match = 0.5
 	}
 
+
+
 	medium_armor_early = {
 
 		upgrade_prio = {
@@ -319,7 +321,9 @@ infantry_generic = {
 	}
 }
 
+
 landcruiser_generic = {
+
 
 	role = mega_heavy_breakthrough_role
 
@@ -360,6 +364,7 @@ landcruiser_generic = {
 }
 
 super_heavy_generic = {
+
 
 	role = super_heavy_breakthrough_role
 
@@ -406,3 +411,8 @@ super_heavy_generic = {
 		}
 	}
 }
+
+
+
+
+

@@ -8,6 +8,9 @@ style = {
 	current = GFX_focus_current
 }
 
+
+
+
 style = {
 	name = NORDIC_focus_style
 
@@ -16,6 +19,9 @@ style = {
 	available = GFX_focus_can_start_joint
 	current = GFX_focus_current_joint
 }
+
+
+
 
 style = {
 	name = CONGO_COG_focus_style
@@ -26,6 +32,7 @@ style = {
 	current = GFX_focus_current_joint_COG
 }
 
+
 style = {
 	name = CONGO_BEL_focus_style
 
@@ -35,6 +42,7 @@ style = {
 	current = GFX_focus_current_joint_BEL
 }
 
+
 style = {
 	name = CONGO_BEL_COG_focus_style
 
@@ -43,6 +51,7 @@ style = {
 	available = GFX_focus_can_start_joint_BEL_COG
 	current = GFX_focus_current_joint_BEL_COG
 }
+
 
 style = {
 	name = GER_inner_circle_focus_style

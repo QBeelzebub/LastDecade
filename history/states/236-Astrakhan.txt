@@ -1,15 +1,16 @@
+
 state={
 	id=236
 	name="STATE_236"
 	manpower = 647208
-
+	
 	state_category = rural
 
 	history={
 		owner = RSF
 		add_core_of = RSF
 		victory_points = {
-			9753 3
+			9753 3 
 		}
 		buildings = {
 			infrastructure = 2
@@ -18,8 +19,8 @@ state={
 	}
 
 	provinces={
-		618 757 3435 3461 3487 6486 6516 6620 9440 9455 9592 9753 11429 11579 11736
+		618 757 3435 3461 3487 6486 6516 6620 9440 9455 9592 9753 11429 11579 11736 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

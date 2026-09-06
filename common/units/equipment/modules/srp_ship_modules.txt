@@ -1,5 +1,6 @@
 equipment_modules = {
 
+
 	srp_carrier_fusion_engine = {
 		abbreviation = "cfe"
 		category = carrier_ship_nuclear_engine
@@ -21,6 +22,9 @@ equipment_modules = {
 			convert_cost_ic = 1800
 		}
 	}
+
+
+
 
 	srp_naval_sam_sr = {
 		abbreviation = "ssr"
@@ -57,6 +61,7 @@ equipment_modules = {
 		}
 		xp_cost = 4
 	}
+
 
 	srp_naval_gun_155mm = {
 		abbreviation = "155"
@@ -111,6 +116,7 @@ equipment_modules = {
 		critical_parts = { damaged_heavy_guns }
 	}
 
+
 	srp_naval_ciws = {
 		abbreviation = "cwis"
 		category = ship_dp_secondaries
@@ -138,6 +144,7 @@ equipment_modules = {
 		xp_cost = 3
 		critical_parts = { damaged_secondaries }
 	}
+
 
 	srp_surface_missile_launcher = {
 		abbreviation = "sml"

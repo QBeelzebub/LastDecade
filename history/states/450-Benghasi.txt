@@ -1,16 +1,17 @@
+
 state={
 	id=450
 	name="STATE_450"
 	manpower = 82535
-
+	
 	state_category = wasteland
 
 	history={
 		owner = AFR
 		add_core_of = AFR
-
+		
 		victory_points = {
-			11954 3
+			11954 3 
 		}
 		buildings = {
 			infrastructure = 2
@@ -22,8 +23,8 @@ state={
 	}
 
 	provinces={
-		1127 4120 10123 11954
+		1127 4120 10123 11954 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

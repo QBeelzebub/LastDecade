@@ -364,6 +364,7 @@ technologies = {
 		}
 	}
 
+
 	srp_drivetrain_tech = {
 		allow = { NOT = { is_full_parasite = yes } }
 
@@ -454,6 +455,7 @@ technologies = {
 		}
 	}
 
+
 	srp_advanced_materials = {
 		allow = { NOT = { is_full_parasite = yes } }
 
@@ -541,6 +543,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_modern_armament = {
 		allow = { NOT = { is_full_parasite = yes } }

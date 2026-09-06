@@ -1,3 +1,4 @@
+
 LD_hunt_canvass_informants = {
 	name = LD_hunt_canvass_informants
 	desc = LD_hunt_canvass_informants_desc

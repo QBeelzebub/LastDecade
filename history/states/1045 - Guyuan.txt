@@ -11,6 +11,8 @@ state = {
 		owner = CHN
 		add_core_of = CHN
 
+
+
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -25,8 +27,9 @@ state = {
 	provinces = {
 		1985 3745 5025 6638
 	}
-
+	
 	buildings_max_level_factor = 1.000
+	
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

@@ -78,6 +78,7 @@ equipment_modules = {
 		xp_cost = 2
 	}
 
+
 	srp_gas_turbine = {
 		abbreviation = "tur"
 		category = tank_engine_type
@@ -126,6 +127,7 @@ equipment_modules = {
 		}
 		xp_cost = 4
 	}
+
 
 	srp_welded_steel = {
 		abbreviation = "wst"
@@ -201,6 +203,7 @@ equipment_modules = {
 		xp_cost = 10
 	}
 
+
 	srp_hydropneumatic = {
 		abbreviation = "hyd"
 		category = tank_suspension_type
@@ -227,6 +230,7 @@ equipment_modules = {
 		}
 		xp_cost = 6
 	}
+
 
 	srp_armored_mbt_turret = {
 		abbreviation = "mbt"
@@ -294,6 +298,7 @@ equipment_modules = {
 		}
 		xp_cost = 4
 	}
+
 
 	srp_120mm_smoothbore = {
 		abbreviation = "120"

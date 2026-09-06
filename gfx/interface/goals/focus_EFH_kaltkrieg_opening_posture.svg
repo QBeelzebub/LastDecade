@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Dark navy background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Left Chess Pawn (EFH side, centered x=36) -->
+  <g fill="#c9a52a">
+    <circle cx="36" cy="38" r="11"/>
+    <polygon points="30,48 42,48 40,55 32,55"/>
+    <ellipse cx="36" cy="63" rx="15" ry="9"/>
+    <polygon points="21,63 51,63 53,71 19,71"/>
+    <rect x="18" y="71" width="36" height="7" rx="3"/>
+  </g>
+
+  <!-- Right Chess Pawn (USA side, centered x=92) -->
+  <g fill="#c9a52a">
+    <circle cx="92" cy="38" r="11"/>
+    <polygon points="86,48 98,48 96,55 88,55"/>
+    <ellipse cx="92" cy="63" rx="15" ry="9"/>
+    <polygon points="77,63 107,63 109,71 75,71"/>
+    <rect x="74" y="71" width="36" height="7" rx="3"/>
+  </g>
+
+  <!-- Centre dashed dividing line, the iron curtain stand-off -->
+  <line x1="64" y1="33" x2="64" y2="80" stroke="#c9a52a" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.7"/>
+</svg>

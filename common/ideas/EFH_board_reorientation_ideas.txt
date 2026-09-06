@@ -1,3 +1,4 @@
+
 ideas = {
 	country = {
 
@@ -33,6 +34,7 @@ ideas = {
 				political_power_gain = 0.05
 			}
 		}
+
 
 		EFH_first_beckon_confidence = {
 			picture = GER_attack_usa

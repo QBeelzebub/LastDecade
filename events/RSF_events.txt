@@ -1,5 +1,6 @@
 add_namespace = rsf
 
+
 country_event = {
 	id = rsf.1
 	title = rsf.1.t
@@ -28,6 +29,7 @@ country_event = {
 		custom_effect_tooltip = rsf.1.b_tt
 	}
 }
+
 
 country_event = {
 	id = rsf.2
@@ -74,6 +76,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = rsf.3
 	title = rsf.3.t
@@ -100,6 +103,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = rsf.4
 	title = rsf.4.t
@@ -123,6 +127,7 @@ country_event = {
 		add_war_support = 0.05
 	}
 }
+
 
 country_event = {
 	id = rsf.5
@@ -149,6 +154,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = rsf.6
 	title = rsf.6.t
@@ -163,6 +169,7 @@ country_event = {
 		add_war_support = 0.05
 	}
 }
+
 
 country_event = {
 	id = rsf.7

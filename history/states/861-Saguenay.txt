@@ -3,20 +3,21 @@ state = {
 	name = "STATE_861"
 	manpower = 50000
 	state_category = pastoral
-
+	
 	history = {
 
 		owner = EFH
 		add_core_of = EFH
+
 
 		buildings = {
 			infrastructure = 1
 		}
 
 	}
-
+	
 	provinces = {
-		1657 4666 13164
+		1657 4666 13164 
 	}
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.000

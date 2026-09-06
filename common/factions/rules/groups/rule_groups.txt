@@ -1,3 +1,4 @@
+
 rule_group_leader_industry = {
 	rules = {
 		change_leader_rule_industry

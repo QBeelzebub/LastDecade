@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Orbit arc behind rocket -->
+  <path d="M 18,72 A 50,22 0 0 1 110,72" fill="none" stroke="#c9a52a" stroke-width="2" opacity="0.45"/>
+
+  <!-- Rocket body -->
+  <rect x="56" y="34" width="16" height="56" rx="4" fill="#c9a52a"/>
+  <!-- Nose cone -->
+  <polygon points="64,16 56,38 72,38" fill="#c9a52a"/>
+  <!-- Left fin -->
+  <polygon points="56,76 42,100 56,88" fill="#c9a52a" opacity="0.85"/>
+  <!-- Right fin -->
+  <polygon points="72,76 86,100 72,88" fill="#c9a52a" opacity="0.85"/>
+  <!-- Engine exhaust -->
+  <ellipse cx="64" cy="95" rx="8" ry="5" fill="#c9a52a" opacity="0.4"/>
+
+  <!-- Stars -->
+  <circle cx="22" cy="28" r="2" fill="#c9a52a" opacity="0.6"/>
+  <circle cx="96" cy="22" r="2" fill="#c9a52a" opacity="0.6"/>
+  <circle cx="108" cy="44" r="1.5" fill="#c9a52a" opacity="0.5"/>
+  <circle cx="16" cy="50" r="1.5" fill="#c9a52a" opacity="0.5"/>
+</svg>

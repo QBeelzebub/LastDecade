@@ -1,10 +1,11 @@
+
 state={
 	id=635
 	name="STATE_635"
 	resources={
 		chromium=90
 	}
-
+	
 	state_category = small_island
 
 	history={
@@ -29,5 +30,5 @@ state={
 	manpower=51876
 	buildings_max_level_factor=1.000
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

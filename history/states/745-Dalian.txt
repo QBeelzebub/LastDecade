@@ -22,13 +22,14 @@ state = {
 				coastal_bunker = 1
 			}
 		}
-
+	
 	}
+	
 
 	provinces = {
-		1150 6851
+		1150 6851 
 	}
 	buildings_max_level_factor = 1.000
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

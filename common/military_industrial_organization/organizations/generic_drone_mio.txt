@@ -1,3 +1,4 @@
+
 srp_generic_drone_mio = {
 	icon = GFX_idea_generic_air_organization
 

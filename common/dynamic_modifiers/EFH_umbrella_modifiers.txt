@@ -1,3 +1,4 @@
+
 EFH_military_focus = {
 	icon = "GFX_idea_generic_army_war_college"
 

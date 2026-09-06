@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_asw_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -46,6 +47,7 @@ technologies = {
 
 		ai_will_do = { base = 2 }
 	}
+
 
 	srp_naval_missiles_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -117,6 +119,7 @@ technologies = {
 		ai_will_do = { base = 2 }
 	}
 
+
 	srp_naval_ew_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -163,6 +166,7 @@ technologies = {
 
 		ai_will_do = { base = 2 }
 	}
+
 
 	srp_mine_warfare_1 = {
 		allow = { NOT = { is_full_parasite = yes } }

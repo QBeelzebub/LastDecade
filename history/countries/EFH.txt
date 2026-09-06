@@ -138,6 +138,7 @@ set_popularities = {
     neutrality = 0
 }
 
+
 add_ideas = EFH_fusion_economy
 add_ideas = EFH_bop_ef_low_idea
 SRP_initiate_escalation_effect = yes

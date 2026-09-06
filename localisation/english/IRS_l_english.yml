@@ -216,6 +216,7 @@
  spore_burst_contamination: "Parasite Contamination"
  spore_burst_contamination_desc: "Beckon output has been directed into this region. Infestation is deepening and local supply lines are compromised. The contamination will fade after roughly 60 days if no Beckon structure is established."
 
+
  IRS_daughters_awakening: "The Daughters Stir"
  IRS_daughters_awakening_desc: "Something vast moves beyond the atmosphere. The Iris reaches further than this world and further than this sun. Two of its daughters have been here far longer than us, each shaped by worlds they have already finished."
  IRS_daughters_ep_gate_tt: "The Iris must have achieved basic proliferation before its will can extend to the daughters."
@@ -260,6 +261,7 @@
  IRS_tromos_structural_memory_desc: "Tromos has broken fortifications on a planetary scale. Its genome translates into raw breakthrough capacity for IRS assault forces."
  IRS_tromos_the_template: "The Template"
  IRS_tromos_the_template_desc: "A civilisation's worth of digested knowledge accelerates the Iris's own research, compressing centuries of adaptation into years."
+
 
  EQ_MOD_CAT_IRS_devourer_feeding_apparatus_TITLE: "Feeding Apparatus"
  EQ_MOD_CAT_IRS_devourer_locomotion_TITLE: "Locomotion"
@@ -377,11 +379,24 @@
  IRS_tethysic_abyssant_genesis_desc: "The TETHYSIC genome has been pushed beyond its limits. What emerges is no longer a devourer. The Iris built it from the water up as a dedicated ship-killer."
  IRS_abyssant_requires_proof_tt: "Locked until a Tethysic puppet completes its own Abyssant Genesis."
 
+
+
  IRS_phase_0_arrival: "Phase 0: Arrival"
  IRS_phase_0_arrival_desc: "At long last, the first parasites are on earth. In a matter of weeks West Africa became infested. It's only a matter of time before that's true for the rest of this planet."
 
+
+
+
+
+
+
+
  IRS_phase_1_proliferation: "Phase 1: Proliferation"
  IRS_phase_1_proliferation_desc: "Phase 1: Rupters, the cheapest swarm unit are created wherever there is infested terrain... We can truly begin now."
+
+
+
+
 
  IRS_phase1_adaptive_biology: "Adaptive Biology"
  IRS_phase1_adaptive_biology_desc: "Organisms evolve across climate ranges their prey cannot survive. Heat and cold stop being threats."
@@ -389,11 +404,14 @@
  IRS_phase1_territorial_instinct: "Territorial Instinct"
  IRS_phase1_territorial_instinct_desc: "Parasites establish permanent territorial claims. Ground taken stays taken. The front moves as fast as the network allows."
 
+
  IRS_phase_2_assimilation: "Phase 2: Assimilation"
  IRS_phase_2_assimilation_desc: "The phase of true assimilation begins. Hosts emerge from the infected population. The line between prey and parasite starts to blur."
 
+
  IRS_ep_gate_tt_50: "Requires 50 Evolution Points"
  IRS_ep_gate_tt_150: "Requires 150 Evolution Points"
+
 
  IRS_ep_gain_5_tt: "§G+5 Evolution Points§!"
  IRS_ep_gain_10_tt: "§G+10 Evolution Points§!"
@@ -401,13 +419,16 @@
  IRS_ep_gain_20_tt: "§G+20 Evolution Points§!"
  IRS_ep_gain_25_tt: "§G+25 Evolution Points§!"
 
+
  IRS_ep_cost_50_tt: "§R-50 Evolution Points§!"
  IRS_ep_cost_60_tt: "§R-60 Evolution Points§!"
  IRS_ep_cost_80_tt: "§R-80 Evolution Points§!"
  IRS_ep_cost_200_tt: "§R-200 Evolution Points§!"
 
+
  IRS_evolution_points_category: "Evolution"
  IRS_evolution_points_category_desc: "The Iris advances by consuming, infesting, and assimilating. Evolution Points accumulate through biological pressure and actions. They are required to pass into new phases, and the phase gates read the running total without ever spending it. Anything bought here is paid for in phase progress. \nCurrent Evolution Points: [?IRS_evolution_points]"
+
 
  IRS_ep_catalyze_evolution: "Catalyze Evolution"
  IRS_ep_catalyze_evolution_desc: "Direct political pressure accelerates the Iris's biological clock. Gain 30 Evolution Points. 30-day cooldown."
@@ -430,7 +451,9 @@
  IRS_ep_deepen_the_brood: "Deepen the Brood"
  IRS_ep_deepen_the_brood_desc: "Banked adaptation is spent growing replacement organisms instead of new traits. Costs 50 Evolution Points, grows 75 rupters straight into the stockpile. 30-day cooldown."
 
+
  IRS_evolutionary_surge_modifier: "Evolutionary Surge"
+
 
  IRS_evolution_0: "Evolution State: Arrival"
  IRS_evolution_0_desc: "The Iris has established its first presence on Earth. Root networks spread. Beckons take hold. The contamination of the biosphere has begun."
@@ -440,6 +463,7 @@
 
  IRS_evolution_2: "Evolution State: Assimilation"
  IRS_evolution_2_desc: "The phase of true assimilation begins. The boundary between territory and organism starts to dissolve."
+
 
  IRS_early_biomass_idea: "Early Biomass Network"
  IRS_early_biomass_idea_desc: "Crude but functional. The first biomass pools provide a cost basis for expansion."
@@ -452,6 +476,7 @@
 
  IRS_soil_contamination_idea: "Soil Contamination"
  IRS_soil_contamination_idea_desc: "The contaminated ground is home territory. Parasite units do not suffer attrition on it."
+
 
  IRS_nocturnal_hunter_idea: "Nocturnal Hunter"
  IRS_nocturnal_hunter_idea_desc: "Parasite units strike harder at night and suffer less attrition in the field."
@@ -475,6 +500,7 @@
  IRS_territorial_drive_idea: "Territorial Drive"
  IRS_territorial_drive_idea_desc: "Parasites move faster and consume less supply when advancing into new territory."
 
+
  proto_supreme_atmospheric_collapse_1: "Atmospheric Collapse"
  proto_supreme_atmospheric_collapse_1_desc: "A Proto-Supreme Beckon stands. The skies above contested regions carry particulate from the growth structure."
  proto_supreme_atmospheric_collapse_2: "Atmospheric Collapse (II)"
@@ -495,6 +521,7 @@
 
  raid_proto_supreme: "Raid the Proto-Supreme Beckon"
  raid_proto_supreme_desc: "Commit a combined strike to expose and destroy the bulb: a nuclear detonation, a strategic bomber wing, and fighter cover. The first assault has slim odds, but each failed attempt wears the structure down and improves the next. Costs 2 nuclear weapons, 20 strategic bombers, 40 fighters, and 300 political power per attempt."
+
 
  proto_supreme.1.t: "A Proto-Supreme Has Matured"
  proto_supreme.1.d: "Beckon growth in a contested region has crossed every known threshold. The Iris has raised a Proto-Supreme Beckon: a growth structure built around an Assecula Bulbus, large enough to threaten the whole region. It will not fall to bombing. While it stands, the sky itself turns against us. A direct strike to destroy the bulb is the only answer."
@@ -584,14 +611,25 @@
  IRS_phase0_emergence_drive: "Emergence Drive"
  IRS_phase0_emergence_drive_desc: "Accelerate the maturation cycle across occupied territory. Emerging organisms push to the surface ahead of schedule, swelling the available swarm. 45-day cooldown."
 
+
+
+
+
  IRS_phase2_coastal_control: "Coastal Seeding"
  IRS_phase2_coastal_control_desc: "The Iris reaches the African coastlines. Root networks spread through port sediment. The ocean becomes a new vector."
+
+
+
 
  IRS_phase2_assimilation_directive: "Assimilation Directive"
  IRS_phase2_assimilation_directive_desc: "Phase 2: Assimilations become commonplace. Animals, livestock, fish, humans. Greatly empowering us."
 
+
+
+
  IRS_phase2_sac_emergence: "First Contact: South America"
  IRS_phase2_sac_emergence_desc: "The first dormant vectors have arrived. Organisms emerge from containers at South American ports. The infestation takes root in new soil. The Atlantic is no longer a barrier."
+
 
  IRS_phase_2_complete: "Phase 3: Global Reach"
  IRS_phase_2_complete_desc: "Africa is consuming. South America is seeded. The Iris has broken the geographic limits that defined its first two years."
@@ -668,6 +706,7 @@
 
  IRS_transoceanic_breach_idea: "The Breach"
  IRS_transoceanic_breach_idea_desc: "The invasion of South America is underway. Organism aggression and breakthrough capacity are elevated for the initial assault."
+
 
  IRS_dormancy_adapt_tt: "§GThe dormancy adaptation deepens§!"
 
@@ -757,6 +796,7 @@
  irs.2.d: "The crossing succeeded. A coastal state has been taken quietly, without a war to announce it. The ground is infested and held. From here the system has somewhere to grow on the western landmass. The Confederation has not yet decided what to call what happened."
  irs.2.a: "The ground is ours."
 
+
  IRS_phase0_inland_root: "Inland Seeding: Benue"
  IRS_phase0_inland_root_desc: "The swarm extends its reach into Benue, establishing the first beckon cluster in the interior. Feeding grounds are secured. The hive prepares to grow."
 
@@ -765,6 +805,7 @@
 
  IRS_phase0_western_anchor: "Western Anchor: Sokoto"
  IRS_phase0_western_anchor_desc: "The western approaches are locked down. Sokoto is seeded, completing the ring of infestation across the starting territory."
+
 
  IRS_phase1_nocturnal_adaptation: "Nocturnal Assault Doctrine"
  IRS_phase1_nocturnal_adaptation_desc: "The rupters are conditioned to strike at night. Soldiers falter in the dark, the swarm does not. Night attacks become a defining feature of the parasite's warfare."
@@ -778,8 +819,10 @@
  IRS_phase1_hive_resonance: "Hive Resonance"
  IRS_phase1_hive_resonance_desc: "The distributed will of the hive aligns into a coherent signal. Research processes accelerate as the swarm shares knowledge collectively. A dividend of evolution is paid in full."
 
+
  IRS_phase1_root_expansion: "Root Network Expansion"
  IRS_phase1_root_expansion_desc: "The adaptive biology of the swarm extends the root network into a second territory, building infrastructure while the war preparations proceed on the right flank."
+
 
  IRS_phase2_african_surge: "African Consolidation Surge"
  IRS_phase2_african_surge_desc: "The conquered African territory is rapidly colonised. Beckon clusters rise across the occupied states as the hive digests its gains."
@@ -799,6 +842,7 @@
  IRS_phase2_dormant_transit: "Dormant Transit Preparations"
  IRS_phase2_dormant_transit_desc: "Devourer elements are adapted for long-range oceanic transit in a dormant state. Togo's naval infrastructure is expanded to support the transoceanic deployment."
 
+
  IRS_phase3_deep_inland: "Deep Inland Colonisation"
  IRS_phase3_deep_inland_desc: "The hive pushes deep into every territory it holds, expanding building capacity across all owned states. The surge lasts six months before the pace normalises."
 
@@ -810,6 +854,7 @@
 
  IRS_last_decade_threshold: "Beyond Assimilation"
  IRS_last_decade_threshold_desc: "The hive turns inward. Pressures that were once survival problems become evolutionary opportunities, and something is taking shape in the deepest nodes of the network."
+
 
  IRS_phase3_predation_doctrine: "Predation Doctrine"
  IRS_phase3_predation_doctrine_desc: "Restraint is removed from the directive. Organisms are conditioned to engage rather than withdraw, and biomass recovery from cleared ground is prioritised over caution."
@@ -835,9 +880,11 @@
  IRS_ep_gate_tt_800: "Requires 800 Evolution Points"
  IRS_ep_gain_60_tt: "+60 Evolution Points"
 
+
  IRS_release_tethysic_puppet: "Establish the Tethysic Brood-State"
  IRS_release_tethysic_puppet_desc: "Once the Indonesian cluster is fully consumed, the hive lets the genome there organise into a self-directing brood-state. It administers its own water-line under the hive's direction, an integrated subject with no path back to independence, relieving the central will of regional management. Its separate line of development is also the only one that can prove the Tethysic genome to maturity."
  IRS_release_tethysic_puppet_tt: "Releases the Tethysic Brood on the consumed West Java cluster (West Java, South Sumatra, Eastern Kalimantan, Interior Borneo), which it owns and cannot be separated from. Permanently integrated, it can neither gain independence nor be annexed. Requires the whole cluster consumed first. The brood develops the Tethysic genome on its own. Completing its apex is what unlocks the Abyssant for the hive."
+
 
  IRS_rupter_assault_doctrine: "Rupter Assault Doctrine"
  IRS_rupter_assault_doctrine_desc: "Night is no longer a limitation. The swarm's assault organisms are conditioned to exploit darkness, striking when human senses fail and morale collapses."
@@ -860,9 +907,11 @@
  IRS_full_assimilation_idea: "Full Assimilation"
  IRS_full_assimilation_idea_desc: "The parasite has achieved global coherence. Every biological node resonates with the same directive."
 
+
  IRS_last_decade_genome_tt: "A new genome begins its long process of refinement. Its traits are not yet stable enough to express."
 
  IRS_ep_gain_30_tt: "+30 Evolution Points"
+
 
  parasite_supply_swarm: "Carrier Swarm"
  parasite_supply_swarm_desc: "Coordinated broods of small organisms that collectively haul biomass and material across the hive network. Slower than vehicles but entirely biological, requiring no fuel."
@@ -873,3 +922,4 @@
  parasite_bio_rail_desc: "Larger swarms that move in synchronised columns along established rail lines, providing rail-based supply capacity. They follow the infrastructure humanity built. The purpose has simply changed."
  parasite_bio_rail_1: "Rail Swarm"
  parasite_bio_rail_1_desc: "Larger swarms that move in synchronised columns along established rail lines, providing rail-based supply capacity. They follow the infrastructure humanity built. The purpose has simply changed."
+

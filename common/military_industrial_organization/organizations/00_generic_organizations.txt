@@ -1,3 +1,5 @@
+
+
 generic_sentinel_arms = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -91,6 +93,7 @@ generic_sentinel_arms = {
 		ai_will_do = { base = 3 }
 	}
 }
+
 
 generic_rampart_heavy = {
 	icon = GFX_idea_generic_armor_organization
@@ -187,6 +190,7 @@ generic_rampart_heavy = {
 	}
 }
 
+
 generic_meridian_aerospace = {
 	icon = GFX_idea_generic_air_organization
 
@@ -282,6 +286,7 @@ generic_meridian_aerospace = {
 	}
 }
 
+
 generic_trident_naval = {
 	icon = GFX_idea_generic_navy_organization
 
@@ -376,6 +381,7 @@ generic_trident_naval = {
 		ai_will_do = { base = 3 }
 	}
 }
+
 
 generic_ironwall_munitions = {
 	icon = GFX_idea_generic_research_organization

@@ -1,3 +1,4 @@
+
 set_country_flag = is_parasite_nation
 set_rule = { can_join_factions = no }
 recruit_character = KNX_vagrant_one

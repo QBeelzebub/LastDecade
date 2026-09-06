@@ -90,6 +90,7 @@
  LD_intervene_for_knox: "Intervene in Knox County"
  LD_intervene_for_knox_desc: "Break the suspension and enter the war on Knox County's side. The northern approaches open, Knox coordinates its offensive with the Federation's, and the Atlantic war resumes on the Federation's initiative."
 
+
  ldpro.1.t: "Tariff Schedule Revision"
  ldpro.1.d: "Washington has moved fourteen categories of Federation aerospace component from the standing schedule onto the discretionary one. The effect on trade is about two hundred million a year. Discretionary listings are reviewed by the executive rather than the joint commission, which has arbitrated that schedule since 1994.\n\nThe Commerce Directorate recommends a proportionate response, the Foreign Secretariat none. Both notes have been filed."
  ldpro.1.a: "File both."
@@ -110,9 +111,11 @@
  ldpro.5.d: "Since 1991 both powers have given seventy-two hours notice of imaging passes over the other's territory. The notice was never verifiable and was never really believed. It was given anyway, every week, for twenty-eight years.\n\nThe American State Department has informed the Secretariat that the practice is being discontinued as redundant. It was the last thing on the calendar that required the two governments to speak."
  ldpro.5.a: "Strike it from the calendar."
 
+
  ldpro.10.t: "The Preparatory Programme Is Concluded"
  ldpro.10.d: "The continental works programme that has run since 2018 is closed. Its appropriations lapse at the end of the accounting period and will not be renewed, because the Federation now has an emergency to fund and emergencies are funded from somewhere.\n\nWhat was drafted, costed, argued over and left unfunded goes back into the archive, and the Secretariat has no intention of reopening it.\n\nEverything the Federation carries into what follows, it is carrying now."
  ldpro.10.a: "Close the file."
+
 
  ldpro.20.t: "Contamination Event, Upper Rhone"
  ldpro.20.d: "A chlorinated solvent plume was detected in the upper Rhone at eleven times the permitted concentration. The continental surveillance network flagged it on the second day, before any clinical case.\n\nThe source was a decommissioned degreasing plant with a failed containment sump. Abstraction was suspended for nine days across four member states and the operator referred for prosecution.\n\nThe Health Directorate has asked that this be recorded, since a surveillance system working is not usually recorded."
@@ -122,10 +125,13 @@
  ldpro.21.d: "A chlorinated solvent plume reached the upper Rhone from a decommissioned degreasing plant with a failed sump. A municipal water authority identified it on the forty-third day, after two cantons had attributed clinical presentations to seasonal illness.\n\nThe Federation has no continental sampling programme. Each member state tests to its own schedule and reports to its own ministry, and the four concerned did not compare figures until the press did.\n\nEleven people are dead."
  ldpro.21.a: "There is nothing to appeal."
 
+
  EFH_mishandled_contamination: "The Rhone Inquiry"
  EFH_mishandled_contamination_desc: "The inquiry found no individual at fault and recommended a continental sampling programme, which is the programme the Federation had declined to fund. Public health advisories issued from Brussels are now read as political documents."
 
+
  EFH_prologue_closed_tt: "The preparatory programme is closed. This was 2018 work and it is no longer 2018."
+
 
  LD_operation_laytheo: "Operation Laytheo"
 
@@ -167,6 +173,7 @@
 
  LD_laytheo_debug_open: "[DEBUG] Open Operation Laytheo"
  LD_laytheo_debug_open_desc: "Placeholder entry point. The 2026 to 2029 spine that would set this flag does not exist yet."
+
 
  laytheo.1.t: "The Window Closes"
  laytheo.1.d: "The authorisation did not come in time. The airframe is still buildable, on paper, out of what is left. The assessment that said the Federation had a year was written by people who were being optimistic on purpose, and they were, and they knew it. Laytheo can still fly. It will fly thin."
@@ -266,3 +273,4 @@
  upgrade_LD_parasite_hunters_desc: "Stand up dedicated counter-infiltration teams, hardening the agency and denying the hive new recruits."
  upgrade_LD_field_decryption: "Field Decryption"
  upgrade_LD_field_decryption_desc: "Mobile cryptology units that pull more out of intercepted parasite traffic."
+

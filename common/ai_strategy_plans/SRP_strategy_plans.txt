@@ -1,3 +1,4 @@
+
 EFH_canon_plan = {
 	name = "EFH canon research plan"
 	desc = ""
@@ -139,6 +140,7 @@ KNX_canon_plan = {
 		modifier = { factor = 1.0 }
 	}
 }
+
 
 EFH_historical_focus_plan = {
 	name = "EFH historical focus path"

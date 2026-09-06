@@ -19,7 +19,7 @@ state = {
 				naval_base = 1
 			}
 		}
-
+		
 		victory_points = {
 			7197 8
 		}
@@ -33,5 +33,5 @@ state = {
 		4094 4179 7046 7197 9965 11997 12028
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

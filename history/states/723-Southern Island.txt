@@ -9,6 +9,7 @@ state={
 
 	state_category = rural
 
+
 	history={
 		owner = OCE
 		add_core_of = OCE
@@ -27,5 +28,5 @@ state={
 		2197 2203 5195 8212 12966 12974
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -1,5 +1,6 @@
 technologies = {
 
+
 	parasite_industry_basics = {
 		allow = {
 			is_parasite_nation = yes
@@ -35,6 +36,7 @@ technologies = {
 			base = 5
 		}
 	}
+
 
 	biological_construction_methods = {
 		allow = {
@@ -90,6 +92,7 @@ technologies = {
 			base = 3
 		}
 	}
+
 
 	biomass_processing = {
 		allow = {
@@ -176,6 +179,7 @@ technologies = {
 			base = 3
 		}
 	}
+
 
 	parasite_production_efficiency = {
 		allow = {

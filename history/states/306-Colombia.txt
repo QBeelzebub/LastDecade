@@ -1,10 +1,11 @@
+
 state={
 	id=306
 	name="STATE_306"
 	manpower = 4953049
-
+	
 	state_category = city
-
+	
 	history={
 		owner = SAC
 		add_core_of = SAC
@@ -21,8 +22,8 @@ state={
 	}
 
 	provinces={
-		2079 7936 7991 7993 10747 10790 10846
+		2079 7936 7991 7993 10747 10790 10846 
 	}
 
-	local_supplies=4.0
+	local_supplies=4.0 
 }

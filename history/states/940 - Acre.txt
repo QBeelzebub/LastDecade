@@ -1,10 +1,11 @@
+
 state = {
 	id = 940
 	name = "STATE_940"
 	manpower = 463559
-
+	
 	state_category = pastoral
-
+	
 	resources = {
 		aluminium = 6
 	}
@@ -19,14 +20,14 @@ state = {
 		}
 
 		victory_points = {
-			13278 2
+			13278 2 
 		}
-
+		
 	}
 
 	provinces = {
 		13278 13279 13280
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

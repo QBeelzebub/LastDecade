@@ -6,6 +6,7 @@ state = {
 	local_supplies=1
 	manpower = 2314096
 
+
 	history = {
 
 		owner = CHN
@@ -33,5 +34,6 @@ state = {
 	provinces = {
 		 7408 10250 1427
 	}
+
 
 }

@@ -2,11 +2,12 @@ state = {
 	id = 1060
 	name = "STATE_1060"
 	manpower = 1023100
-
+	
+	
 	state_category = town
-
+	
 	resources = {
-		rubber = 40
+		rubber = 40 
 		steel = 2
 		aluminium = 2
 	}
@@ -30,12 +31,12 @@ state = {
 			}
 
 		}
-
+		
 	}
 
 	provinces = {
-		4424 10313 13376 7427
+		4424 10313 13376 7427 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

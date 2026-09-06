@@ -15,7 +15,7 @@ script_enum_advisor_slot_type = {
 	political_advisor
 }
 
-script_enum_equipment_stat = {
+script_enum_equipment_stat = {	
 
 	default_morale
 	defense
@@ -76,7 +76,7 @@ script_enum_equipment_stat = {
 	railway_gun_hours_between_redistribution
 	max_organisation
 	max_strength
-	maximum_speed
+	maximum_speed	
 	armor_value
 	ap_attack
 	reliability
@@ -149,6 +149,8 @@ script_enum_equipment_category = {
 }
 
 script_enum_equipment_bonus_type = {
+
+
 
 	convoy
 	train
@@ -440,7 +442,7 @@ script_enum_equipment_bonus_type = {
 	cv_small_plane_naval_bomber_airframe_2
 	cv_small_plane_naval_bomber_airframe_3
 	cv_small_plane_naval_bomber_airframe_4
-
+	
 	small_plane_suicide_airframe_0
 	small_plane_suicide_airframe_1
 	small_plane_suicide_airframe_2

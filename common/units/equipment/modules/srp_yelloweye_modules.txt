@@ -1,5 +1,6 @@
 equipment_modules = {
 
+
 	srp_yelloweye_propulsion_1 = {
 		abbreviation = "yp1"
 		category = srp_yelloweye_propulsion
@@ -30,6 +31,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_yelloweye_wing_membrane_1 = {
 		abbreviation = "yw1"
 		category = srp_yelloweye_wing
@@ -53,6 +55,7 @@ equipment_modules = {
 			build_cost_ic = 2
 		}
 	}
+
 
 	srp_yelloweye_bile_spitter = {
 		abbreviation = "ybs"
@@ -140,6 +143,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_yelloweye_acid_glands = {
 		abbreviation = "yag"
 		category = srp_yelloweye_special
@@ -221,6 +225,7 @@ equipment_modules = {
 		}
 		xp_cost = 3
 	}
+
 
 	srp_skymaw_great_maw = {
 		abbreviation = "smm"

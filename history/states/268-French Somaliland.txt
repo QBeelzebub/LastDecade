@@ -3,11 +3,13 @@ state={
 	name="STATE_268"
 	manpower = 85232
 
+
 	state_category = enclave
 
 	history={
 		owner = AFR
 		add_core_of = AFR
+
 
 		victory_points = {
 			8124 1
@@ -25,5 +27,5 @@ state={
 		4985 8124
  	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -1,5 +1,7 @@
+
 ideas = {
 	country = {
+
 
 		USA_root_clearance_doctrine_spirit = {
 			picture = GER_attack_usa
@@ -16,6 +18,7 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+
 
 		USA_hemispheric_answer_idea = {
 			picture = GER_attack_usa

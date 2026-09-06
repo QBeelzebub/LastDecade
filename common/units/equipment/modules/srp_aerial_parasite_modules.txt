@@ -1,5 +1,6 @@
 equipment_modules = {
 
+
 	srp_spore_bomb_sacs = {
 		abbreviation = "psb"
 		category = srp_parasite_bomb_organ
@@ -76,6 +77,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_bogle_burst_sacs = {
 		abbreviation = "pbb"
 		category = cas_weapon
@@ -103,6 +105,7 @@ equipment_modules = {
 			}
 		}
 	}
+
 
 	srp_wraith_nade_gland = {
 		abbreviation = "pwn"
@@ -133,6 +136,7 @@ equipment_modules = {
 		}
 		xp_cost = 5
 	}
+
 
 	srp_brood_bomb_sacs = {
 		abbreviation = "phb"
@@ -209,6 +213,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_draconite_saliva_jet = {
 		abbreviation = "pdj"
 		category = srp_draconite_organ
@@ -266,6 +271,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_bogle_shimmer_hide = {
 		abbreviation = "pbs"
 		category = srp_yelloweye_special
@@ -305,6 +311,7 @@ equipment_modules = {
 		}
 		xp_cost = 6
 	}
+
 
 	srp_wraith_phase_membrane = {
 		abbreviation = "pwm"

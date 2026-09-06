@@ -1,8 +1,9 @@
+
 state={
 	id=83
 	name="STATE_83"
 	manpower = 632900
-
+	
 	state_category = town
 
 	history={
@@ -14,14 +15,14 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			6682 1
+			6682 1 
 		}
 
 	}
 
 	provinces={
-		696 6682 6697 9640
+		696 6682 6697 9640 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

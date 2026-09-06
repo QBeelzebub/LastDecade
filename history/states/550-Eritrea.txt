@@ -6,9 +6,9 @@ state=
 	resources = {
 		steel = 2
 	}
-
+	
 	state_category = rural
-
+	
 	history={
 		owner = AFR
 		add_core_of = AFR
@@ -33,5 +33,5 @@ state=
 		5017 5047 5091 8043 12723 12766 13250 13251
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

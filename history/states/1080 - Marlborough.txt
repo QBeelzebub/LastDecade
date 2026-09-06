@@ -8,6 +8,7 @@ state = {
 
 	state_category = rural
 
+
 	history = {
 
 		owner = OCE
@@ -15,18 +16,18 @@ state = {
 
 		buildings = {
 
-			infrastructure = 2
+			infrastructure = 2 
 
 		}
 
 		victory_points = {
 			12632 1
 		}
-
+		
 	}
 	provinces = {
-		12632 10650 4819 8204 7839
+		12632 10650 4819 8204 7839 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

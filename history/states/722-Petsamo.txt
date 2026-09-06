@@ -20,11 +20,12 @@ state={
 			}
 		}
 
-	}
 
+	}
+	
 	provinces={
-		6012 6183 9140 11142
+		6012 6183 9140 11142 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -1,3 +1,5 @@
+
+
 EFH_rheinmetall_land_mio = {
 	icon = GFX_idea_generic_armor_organization
 
@@ -157,6 +159,7 @@ EFH_rheinmetall_land_mio = {
 	}
 }
 
+
 EFH_knds_land_mio = {
 	icon = GFX_idea_generic_armor_organization
 
@@ -291,6 +294,7 @@ EFH_knds_land_mio = {
 	}
 }
 
+
 EFH_tkms_naval_mio = {
 	icon = GFX_idea_generic_navy_organization
 
@@ -424,6 +428,7 @@ EFH_tkms_naval_mio = {
 	}
 }
 
+
 EFH_naval_group_mio = {
 	icon = GFX_idea_generic_navy_organization
 
@@ -555,6 +560,7 @@ EFH_naval_group_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 EFH_airbus_aerospace_mio = {
 	icon = GFX_idea_generic_air_organization
@@ -716,6 +722,7 @@ EFH_airbus_aerospace_mio = {
 	}
 }
 
+
 EFH_diehl_ordnance_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -833,6 +840,7 @@ EFH_diehl_ordnance_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 EFH_mbda_ordnance_mio = {
 	icon = GFX_idea_generic_infantry_organization
@@ -952,6 +960,7 @@ EFH_mbda_ordnance_mio = {
 	}
 }
 
+
 EFH_thales_ordnance_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -1070,6 +1079,7 @@ EFH_thales_ordnance_mio = {
 	}
 }
 
+
 EFH_leonardo_logistics_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -1186,6 +1196,7 @@ EFH_leonardo_logistics_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 EFH_saab_aerospace_mio = {
 	icon = GFX_idea_generic_air_organization
@@ -1344,6 +1355,7 @@ EFH_saab_aerospace_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 EFH_heckler_koch_infantry_mio = {
 	icon = GFX_idea_generic_infantry_organization

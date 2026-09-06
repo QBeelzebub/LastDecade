@@ -1,3 +1,4 @@
+
 state={
 	id=544
 	name="STATE_544"
@@ -14,13 +15,13 @@ state={
 
 		}
 		victory_points = {
-			8245 1
+			8245 1 
 		}
 
 	}
 
 	provinces={
-		2193 5177 5212 8245
+		2193 5177 5212 8245 
 	}
 
 	buildings_max_level_factor=1.000

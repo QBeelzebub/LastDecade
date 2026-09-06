@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Runway strip -->
+  <rect x="14" y="108" width="46" height="5" rx="2" fill="#c9a52a" opacity="0.5"/>
+  <!-- Runway centre dashes -->
+  <rect x="18" y="109.5" width="8" height="2" fill="#0d1623"/>
+  <rect x="30" y="109.5" width="8" height="2" fill="#0d1623"/>
+  <rect x="42" y="109.5" width="8" height="2" fill="#0d1623"/>
+
+  <!-- Trajectory: ascending sweep then transitioning to orbit arc -->
+  <path d="M 44,108 Q 68,42 100,22 A 34,16 0 0 1 120,34"
+        fill="none" stroke="#c9a52a" stroke-width="2"
+        stroke-dasharray="5,4" opacity="0.6"/>
+
+  <!-- Spaceplane (delta-wing, facing upper-right, small, just taking off) -->
+  <g transform="translate(42,90) rotate(-48) scale(0.68)">
+    <polygon points="22,0 10,-4 0,-4 -15,-24 -20,-8 -22,-4 -22,4 -20,8 -15,24 0,4 10,4" fill="#c9a52a"/>
+  </g>
+
+  <!-- Orbit-arrival arc (top right, partial ring suggesting orbit) -->
+  <path d="M 100,22 A 34,16 0 0 1 120,34"
+        fill="none" stroke="#c9a52a" stroke-width="3" opacity="0.85"/>
+</svg>

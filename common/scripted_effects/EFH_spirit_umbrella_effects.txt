@@ -1,3 +1,4 @@
+
 EFH_refresh_military_focus = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = EFH_military_focus } }
@@ -109,6 +110,7 @@ EFH_mil_defensible_lines = {
 	EFH_refresh_military_focus = yes
 }
 
+
 EFH_refresh_ind = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = EFH_industrial_base } }
@@ -216,6 +218,7 @@ EFH_ind_sac_economic_presence = {
 	add_to_variable = { EFH_ind_production_speed_buildings_factor = 0.03 }
 	EFH_refresh_ind = yes
 }
+
 
 EFH_refresh_gov = {
 	if = {
@@ -344,6 +347,7 @@ EFH_gov_hyperbiology_oversight_drag = {
 	EFH_refresh_gov = yes
 }
 
+
 EFH_refresh_nuc = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = EFH_nuclear_program } }
@@ -385,6 +389,7 @@ EFH_nuc_thermonuclear_priority = {
 	EFH_refresh_nuc = yes
 }
 
+
 EFH_refresh_air = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = EFH_air_command } }
@@ -417,6 +422,7 @@ EFH_air_tactical_air = {
 	add_to_variable = { EFH_air_air_close_air_support_org_damage_factor = 0.05 }
 	EFH_refresh_air = yes
 }
+
 
 EFH_refresh_nav = {
 	if = {
@@ -453,6 +459,7 @@ EFH_nav_pacific_security = {
 	EFH_refresh_nav = yes
 }
 
+
 EFH_refresh_lay = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = EFH_laytheo_program } }
@@ -477,6 +484,7 @@ EFH_lay_laytheo_surveillance = {
 	add_to_variable = { EFH_lay_intel_network_gain_factor = 0.20 }
 	EFH_refresh_lay = yes
 }
+
 
 EFH_refresh_res = {
 	if = {
@@ -503,6 +511,7 @@ EFH_res_japan_tech_coop = {
 	EFH_refresh_res = yes
 }
 
+
 EFH_parasite_warfare_step = {
 	if = {
 		limit = { NOT = { check_variable = { EFH_para_tier > 6 } } }
@@ -524,6 +533,7 @@ EFH_parasite_warfare_step = {
 	if = { limit = { check_variable = { EFH_para_tier = 6 } } add_ideas = EFH_parasite_warfare_6 }
 	if = { limit = { check_variable = { EFH_para_tier = 7 } } add_ideas = EFH_parasite_warfare_7 }
 }
+
 
 EFH_para_anti_parasite_command = {
 	add_to_variable = { EFH_mil_org = 0.03 }

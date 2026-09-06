@@ -1,3 +1,6 @@
+
+
+
 sp_land_IRS_adapted_beckon_cultivation = {
 	specialization = specialization_land
 
@@ -142,6 +145,8 @@ sp_land_IRS_adapted_beckon_cultivation = {
 		}
 	}
 }
+
+
 
 sp_air_IRS_aerial_genome_calibration = {
 	specialization = specialization_air

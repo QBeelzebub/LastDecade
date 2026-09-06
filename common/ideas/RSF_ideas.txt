@@ -2,6 +2,7 @@ ideas = {
 
 	country = {
 
+
 		RSF_iron_grip_idea = {
 			picture = generic_political_support
 			allowed = { always = no }
@@ -146,6 +147,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
+
 
 		SWR_council_authority_idea = {
 			picture = generic_political_support

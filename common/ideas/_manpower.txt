@@ -4,6 +4,7 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
+
 		srp_professional_force = {
 			cost = 150
 			removal_cost = -1
@@ -170,6 +171,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_dormant_emergence = {
 			cost = 150
 			removal_cost = -1
@@ -295,6 +297,7 @@ ideas = {
 				}
 			}
 		}
+
 
 		KNX_minimal_strain = {
 			cost = 150

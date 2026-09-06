@@ -1,3 +1,5 @@
+
+
 SRP_goal_ep_anti_parasite_front = {
 	name = SRP_goal_ep_anti_parasite_front
 	description = SRP_goal_ep_anti_parasite_front_desc
@@ -73,6 +75,7 @@ SRP_goal_ep_exploit_parasites = {
 	ai_will_do = { base = 1 }
 }
 
+
 SRP_goal_wa_hemisphere = {
 	name = SRP_goal_wa_hemisphere
 	description = SRP_goal_wa_hemisphere_desc
@@ -123,6 +126,7 @@ SRP_goal_wa_break_efh = {
 	}
 	ai_will_do = { base = 1 }
 }
+
 
 SRP_goal_ph_proliferate = {
 	name = SRP_goal_ph_proliferate

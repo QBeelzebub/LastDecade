@@ -260,6 +260,7 @@ sub_units = {
 		training_time = 100
 		weight = 0.15
 		supply_consumption = 0.08
+		
 
 		same_support_type = adapted_summoner
 
@@ -299,6 +300,7 @@ sub_units = {
 
 		need = { srp_mbt_chassis = 6 }
 	}
+
 
 	srp_drone_regimental = {
 		abbreviation = "RDRN"

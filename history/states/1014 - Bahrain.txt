@@ -5,7 +5,7 @@ state = {
 	state_category = pastoral
 
 	history = {
-
+		
 		owner = EFH
 		add_core_of = EFH
 
@@ -25,5 +25,5 @@ state = {
 		13313
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

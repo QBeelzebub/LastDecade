@@ -1,3 +1,4 @@
+
 has_war_with_non_exiled_country = {
 	any_enemy_country = {
 		is_government_in_exile = no

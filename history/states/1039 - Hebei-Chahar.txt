@@ -2,13 +2,14 @@ state = {
 	id = 1039
 	name = "STATE_1039"
 	manpower = 367500
-
+	
 	state_category = pastoral
 
 	history = {
 
 		owner = CHN
 		add_core_of = CHN
+
 
 		buildings = {
 			infrastructure = 1
@@ -21,7 +22,7 @@ state = {
 				}
 			}
 		}
-
+		
 		victory_points = {
 			6904 3
 		}
@@ -32,5 +33,5 @@ state = {
 		1137 1590 6904 9776
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

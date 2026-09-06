@@ -99,6 +99,7 @@ sub_units = {
 
 		group = support
 
+
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -110,12 +111,12 @@ sub_units = {
 
 		regimental = no
 		combat_width = 0
-
+		
 		battalion_mult = {
 			category = category_all_infantry
 			breakthrough = 0.05
 		}
-
+		
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
@@ -183,12 +184,12 @@ sub_units = {
 		}
 
 		group = support
-
+		
 		battalion_mult = {
 			category = category_all_infantry
 			breakthrough = 0.05
 		}
-
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -216,6 +217,7 @@ sub_units = {
 		hard_attack = -0.625
 		defense = -0.625
 		armor_value = -0.625
+
 
 		need = {
 			heavy_tank_flame_chassis = 15

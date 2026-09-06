@@ -20,7 +20,7 @@ equipments = {
 					tank_modern_turret_type
 				}
 			}
-
+			
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -88,7 +88,7 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -215,6 +215,7 @@ equipments = {
 }
 
 equipments = {
+
 
 	srp_ifv_equipment = {
 		year = 2018

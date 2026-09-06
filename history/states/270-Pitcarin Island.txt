@@ -4,7 +4,7 @@ state=
 	name="STATE_270"
 	manpower = 40
 	state_category = tiny_island
-
+	
 	history=
 	{
 		owner = EFH
@@ -20,5 +20,5 @@ state=
 		1280
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

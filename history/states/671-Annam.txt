@@ -2,20 +2,21 @@ state = {
 	id = 671
 	name = "STATE_671"
 	manpower = 8528000
-
+	
 	state_category = town
-
+	
 	resources = {
 		chromium = 2
 		tungsten = 20
 		coal = 3
 	}
 
+
 	history = {
 
 		owner = CHN
 		add_core_of = CHN
-
+		
 		victory_points = {
 			4075 5
 		}
@@ -39,8 +40,8 @@ state = {
 	}
 
 	provinces = {
-		1073 1157 1185 4075 4119 4529 7015 7093 7518 9948 10075 10103 10129 12008 12048 12065 12075 12319
+		1073 1157 1185 4075 4119 4529 7015 7093 7518 9948 10075 10103 10129 12008 12048 12065 12075 12319 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

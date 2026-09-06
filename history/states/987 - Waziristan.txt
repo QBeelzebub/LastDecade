@@ -1,10 +1,11 @@
+
 state={
 	id=987
 	name="STATE_987"
-	manpower = 217974
-
+	manpower = 217974 
+	
 	state_category = rural
-
+	
 	history={
 		owner = CHN
 		add_core_of = CHN
@@ -14,8 +15,8 @@ state={
 	}
 
 	provinces={
-		1107 1978 4998 7975
+		1107 1978 4998 7975 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

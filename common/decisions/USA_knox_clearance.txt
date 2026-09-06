@@ -1,3 +1,4 @@
+
 USA_knox_clearance_category = {
 
 	USA_knox_containment_strike = {

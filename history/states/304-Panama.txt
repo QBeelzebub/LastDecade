@@ -1,3 +1,4 @@
+
 state={
 	id=304
 	name="STATE_304"
@@ -5,16 +6,16 @@ state={
 	resources={
 		oil=1
 	}
-
+	
 	state_category = town
-
+	
 	history={
 		owner = SAC
 		add_core_of = SAC
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 2 
 			air_base = 1
 			7630 = {
 				naval_base = 4
@@ -24,7 +25,7 @@ state={
 			}
 		}
 		victory_points = {
-			7630 5
+			7630 5 
 		}
 		victory_points = {
 			4611 1
@@ -33,8 +34,8 @@ state={
 	}
 
 	provinces={
-		1633 4611 4624 7630 10482
+		1633 4611 4624 7630 10482 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

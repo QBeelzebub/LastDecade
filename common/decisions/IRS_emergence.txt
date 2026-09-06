@@ -31,6 +31,7 @@ IRS_emergence_operations = {
 		}
 	}
 
+
 	IRS_vector_northward = {
 		icon = GFX_decision_generic_operation
 
@@ -109,6 +110,7 @@ IRS_emergence_operations = {
 		ai_will_do = { base = 10 }
 	}
 
+
 	IRS_cultivate_lineage = {
 		icon = GFX_decision_generic_construction
 
@@ -157,6 +159,8 @@ IRS_emergence_operations = {
 
 		ai_will_do = { base = 20 }
 	}
+
+
 
 	IRS_listen_signal_traffic = {
 		icon = GFX_decision_generic_political_discourse

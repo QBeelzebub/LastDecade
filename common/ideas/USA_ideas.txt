@@ -35,6 +35,7 @@ ideas = {
 			}
 		}
 
+
 		USA_trust_strain_idea = {
 			picture = idea_government_in_exile
 			allowed = { always = no }
@@ -102,6 +103,8 @@ ideas = {
 			}
 		}
 
+
+
 		USA_manufacturing_surge = {
 			picture = generic_production_bonus
 			allowed = { always = no }
@@ -111,6 +114,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+
 
 		USA_joint_research_accord = {
 			picture = GER_attack_usa
@@ -131,6 +135,7 @@ ideas = {
 				political_power_gain = -0.10
 			}
 		}
+
 
 		USA_war_plan_north_spirit = {
 			picture = GER_attack_usa

@@ -1,3 +1,4 @@
+
 division_template = {
 	name = "US Infantry Division"
 	regiments = {
@@ -434,3 +435,4 @@ air_wings = {
 		}
 	}
 }
+

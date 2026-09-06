@@ -37,6 +37,7 @@
  USA_anomalous_infestation_tt: "Begins tracking interior biological incidents as anomalous local infestations. This does not identify their source."
  USA_canadian_theater_preposition_tt: "Pre-positions American forces for a future Canadian theater conflict."
 
+
  USA_victor_harlan_desc: "Rose through state governorship on a platform of security and order. His response to the parasite outbreak was effective. His response to the political opposition was also effective."
 
  USA_rosa_delgado_desc: "Labor organizer from Chicago who spent twenty years arguing that the system would break under its own weight. She is currently watching it break under its own weight."
@@ -223,6 +224,8 @@
  USA_hii_t4: "Naval Supremacy Platform"
  USA_hii_t4_desc: "A fleet-wide standard combining survivability, reliability, and speed, with a higher production efficiency ceiling."
 
+
+
  USA_public_trust: "Public Trust"
  USA_government_distrust_side: "Government Distrust"
  USA_public_confidence_side: "Public Confidence"
@@ -234,6 +237,7 @@
  USA_trust_stable_range: "Stable Ground"
  USA_trust_confident_range: "Public Confidence"
  USA_trust_national_unity_range: "National Unity"
+
 
  USA_trust_strain_idea: "Growing Skepticism"
  USA_trust_strain_idea_desc: "Public confidence in the federal government is slipping. Missteps and mixed messaging have left citizens uncertain about who is in charge."
@@ -253,8 +257,10 @@
  USA_trust_national_unity_idea: "National Unity"
  USA_trust_national_unity_idea_desc: "The country is unified behind its government in a way rarely seen. The parasite threat has dissolved partisan divisions and produced genuine national solidarity."
 
+
  USA_public_trust_category: "Public Trust"
  USA_public_trust_category_desc: "Manage the relationship between the federal government and the American public. Trust is earned through competent crisis response and lost through failure, scandal, or mishandling."
+
 
  USA_federal_address: "Address the Nation"
  USA_federal_address_desc: "Prime time, all networks, twenty minutes. The office still commands the airwaves even when it commands very little else."
@@ -268,12 +274,14 @@
  USA_manage_the_reporting: "Manage the Reporting"
  USA_manage_the_reporting_desc: "Classify the assessments, brief the friendly outlets, and let the casualty figures come out in pieces small enough to absorb. It buys confidence now against a larger correction later, when the full numbers surface and the gap between them and the briefings is the story. Take it if the next two hundred days matter more than the two hundred after that."
 
+
  usa.1.t: "The Federal Government Has Lost All Credibility"
  usa.1.d: "Years of mismanagement, broken promises, and visible failures in the face of the parasite crisis have destroyed what remained of public trust in Washington. Power is already moving out of Washington's hands, and factions within the military, the private sector, and the political fringe are competing to claim it."
 
  usa.1.a: "Let Harlan restore order."
  usa.1.b: "The military must take the helm."
  usa.1.c: "We hold. Whatever it costs."
+
 
  USA_fossil_fuel_expansion: "Energy Extraction Act"
  USA_fossil_fuel_expansion_desc: "The administration signs the Energy Extraction and Independence Act, opening new federal land to oil and gas development and fast-tracking permits for Gulf of Mexico operations."
@@ -311,11 +319,19 @@
  USA_defense_budget_expansion: "Defense Budget Expansion"
  USA_defense_budget_expansion_desc: "The Pentagon budget receives its largest single-year increase in decades. Exercises increase in frequency and ambition. Contractors begin building ahead of procurement."
 
+
+
+
+
+
+
  USA_fissile_energy_program: "Fissile Energy Program"
  USA_fissile_energy_program_desc: "New Mexico and Tennessee host the first purpose-built fissile extraction facilities. The United States' nuclear energy capacity stops being a legacy inheritance and starts being a strategic asset."
 
+
  USA_manufacturing_surge: "Manufacturing Surge"
  USA_manufacturing_surge_desc: "A government-directed production surge drives output across arms manufacturers. The effect is temporary but the infrastructure remains."
+
 
  USA_american_century: "The American Century"
  USA_american_century_desc: "The Cold War with the European Federation never ended, and the United States entered the decade as it entered the last: the strongest power on Earth and certain of it. The administration takes stock of an order it assumes will hold."
@@ -401,8 +417,18 @@
  USA_union_on_the_eve: "The Union on the Eve"
  USA_union_on_the_eve_desc: "However the political argument settled, the republic enters the new decade solvent and governed. The budget for next year assumes the one after it looks the same."
 
+
+
+
+
+
+
+
+
+
  USA_war_plan_north_spirit: "War Plan North"
  USA_war_plan_north_spirit_desc: "A standing, current war plan for the northern theater: better organization and an edge against Federation forces."
+
 
  USA_groundwork_war_plan_tt: "War Plan North guides the deployment: +25 Army Experience, +3% War Support."
  USA_groundwork_union_tt: "The union was consolidated before the crisis: +25 Political Power, +2% Stability."
@@ -555,6 +581,7 @@
 
  USA_approaches_secured_tt: "Forces redeploy to the northern and maritime approaches."
 
+
  usa.3.t: "The Hemisphere First"
  usa.3.d: "The arrival of the Iris produced six weeks of cooperation with the European Federation and then a return to form. The United States is dominant in the Americas, formidable in the Pacific, and done pretending the Federation is a partner. The hemisphere is the priority. The rest of the world will manage."
  usa.3.a: "The hemisphere is the priority."
@@ -579,6 +606,7 @@
  usa.4.t: "The Organisms Adapted"
  usa.4.d: "The infestations logged as local incidents through 2021 were weak and predictable. They are neither now. The reports converging on Washington describe organisms that counter fire, counter fortification, and counter command. The framing that kept the public calm has run out of room. The doctrine has to change, and the budget that funded the calm was not built for this."
  usa.4.a: "Rebuild the doctrine."
+
 
  USA_establish_transatlantic_desk: "Stand Up the Transatlantic Desk"
  USA_establish_transatlantic_desk_desc: "A permanent collection section aimed at the European Federation, staffed out of existing budget lines so it does not require a public authorization. Grants standing civilian and army intelligence on the Federation and opens the sweep program."
@@ -648,3 +676,4 @@
  usa.81.t: "No Version Where It Stands"
  usa.81.d: "The cordon held. The clearance held. The planners deliver the assessment they have delivered since the first briefing: Knox County is dug in, sited to be defended, and favored on every metric that decides a ground campaign. It will cost more than it should and it may not be enough. The order is signed anyway. Whatever else this decade becomes, it does not include a standing Knox County hive."
  usa.81.a: "Give the order."
+

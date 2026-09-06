@@ -2,6 +2,7 @@ ideas = {
 
 	country = {
 
+
 		srp_civil_society_intact = {
 			picture = civilian_economy
 
@@ -66,6 +67,7 @@ ideas = {
 				war_support_factor = 0.15
 			}
 		}
+
 
 		srp_laissez_faire = {
 			picture = free_trade

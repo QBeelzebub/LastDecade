@@ -10,6 +10,7 @@ state = {
 		owner = EFH
 		add_core_of = EFH
 
+
 		victory_points = {
 			911 1
 		}
@@ -23,8 +24,9 @@ state = {
 				coastal_bunker = 1
 			}
 
-		}
 
+		}
+		
 		1939.1.1 = {
 			buildings = {
 				dockyard = 1
@@ -39,5 +41,5 @@ state = {
 		911 956 3928 3961
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

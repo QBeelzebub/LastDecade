@@ -110,6 +110,7 @@
  srp_stealth_coating: "Stealth Coating"
  srp_stealth_coating_desc: "Radar-absorbent coating applied to strategic bomber airframes. Reduces radar cross-section significantly on deep penetration missions."
 
+
  sp_land_stbn_tank_shell: "STBN Anti-Parasite Shells"
  sp_land_stbn_tank_shell_desc: "Advanced fabricated parasites and their membranes are making standard ballistics less effective every month. Rounds ricochet, or land without killing. By heating the tip with nuclear materials we can vaporise the membrane coating and deliver a small nuclear payload directly into the organism."
 
@@ -333,3 +334,4 @@
  sp_land_reward_loyal_strain_signature_drift_desc: "The organism's biological signature is fluctuating during maturation. Left unchecked, it risks drifting back toward baseline Iris patterns."
  sp_land_reward_option_loyal_strain_signature_drift_steady: "Hold the signature steady"
  sp_land_reward_option_loyal_strain_signature_drift_unstable: "Push through the instability"
+

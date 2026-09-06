@@ -1,18 +1,19 @@
+
 state = {
 	id = 110
 	name = "STATE_110"
 	manpower = 1057185
-
+	
 	state_category = large_town
-
+	
 	history = {
 		victory_points = {
-			6115 13
+			6115 13 
 		}
 		victory_points = {
 			11151 2
 		}
-
+		
 		owner = EFH
 		add_core_of = EFH
 		buildings = {
@@ -29,8 +30,8 @@ state = {
 	}
 
 	provinces={
-		14 3007 3171 6115 9103 11078 11151 11184
+		14 3007 3171 6115 9103 11078 11151 11184  
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

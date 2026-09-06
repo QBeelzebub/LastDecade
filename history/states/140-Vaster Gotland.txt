@@ -1,3 +1,4 @@
+
 state = {
 	id = 140
 	name = "STATE_140"
@@ -12,7 +13,7 @@ state = {
 		owner = EFH
 		add_core_of = EFH
 		victory_points = {
-			383 10
+			383 10 
 		}
 		buildings = {
 			infrastructure = 3
@@ -31,8 +32,9 @@ state = {
 	}
 
 	provinces = {
-		295 383 3063 3286 3375 3386 6331 6406 11070 13096
+		295 383 3063 3286 3375 3386 6331 6406 11070 13096 
 	}
 
+	
 	local_supplies = 0.000
 }

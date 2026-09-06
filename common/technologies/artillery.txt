@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_artillery_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		enable_equipments = {
@@ -200,6 +201,7 @@ technologies = {
 		}
 	}
 
+
 	srp_aa_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		enable_equipments = {
@@ -300,6 +302,7 @@ technologies = {
 		}
 	}
 
+
 	srp_rocket_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		enable_equipments = {
@@ -393,6 +396,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_atgm_1 = {
 		allow = { NOT = { is_full_parasite = yes } }

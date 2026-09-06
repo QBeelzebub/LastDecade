@@ -1,3 +1,4 @@
+
 EFH_party_remove_all_mandates_effect = {
 	remove_ideas = EFH_party_astra_mandate
 	remove_ideas = EFH_party_volt_mandate

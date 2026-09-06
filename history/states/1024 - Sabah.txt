@@ -8,13 +8,14 @@ state = {
 	resources = {
 		rubber = 20
 	}
-
+	
 	state_category = rural
 
 	history = {
 
 		owner = CHN
 		add_core_of = CHN
+
 
 		victory_points = {
 			10199 2
@@ -49,12 +50,12 @@ state = {
 			}
 
 		}
-
+		
 	}
 
 	provinces = {
-		1306 1335 4282 4338 7358 10143 10212 10199 10240 12171 12186 12228
+		1306 1335 4282 4338 7358 10143 10212 10199 10240 12171 12186 12228 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

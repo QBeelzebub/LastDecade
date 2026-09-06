@@ -1,6 +1,8 @@
+
 add_namespace = efh_geo
 add_namespace = usa_efh_war
 add_namespace = geo_volunteers
+
 
 news_event = {
 	id = efh_geo.1
@@ -84,6 +86,7 @@ news_event = {
 		}
 	}
 }
+
 
 country_event = {
 	id = usa_efh_war.1
@@ -173,6 +176,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh_geo.4
 	title = efh_geo.4.t
@@ -219,6 +223,7 @@ country_event = {
 		}
 	}
 }
+
 
 country_event = {
 	id = geo_volunteers.1

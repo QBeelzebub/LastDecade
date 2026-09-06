@@ -1,3 +1,4 @@
+
 LD_update_containment_effect = {
 	set_variable = { LD_contested_states = 0 }
 	every_controlled_state = {
@@ -7,6 +8,7 @@ LD_update_containment_effect = {
 		PREV = { add_to_variable = { LD_contested_states = 1 } }
 	}
 }
+
 
 LD_raise_containment_strain_effect = {
 	add_to_variable = { LD_containment_strain = 1 }
@@ -27,6 +29,7 @@ LD_lower_containment_strain_effect = {
 	}
 	LD_apply_containment_strain_effect = yes
 }
+
 
 LD_apply_containment_strain_effect = {
 

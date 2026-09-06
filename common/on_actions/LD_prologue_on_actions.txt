@@ -1,3 +1,4 @@
+
 on_actions = {
 
 	on_startup = {
@@ -28,6 +29,7 @@ on_actions = {
 					complete_national_focus = EFH_professional_army
 					complete_national_focus = EFH_modern_federal_army
 					complete_national_focus = EFH_combined_arms_command
+
 
 					set_country_flag = EFH_prologue_closed
 				}

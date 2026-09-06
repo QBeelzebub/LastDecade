@@ -24,6 +24,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = srp_consortium.16
 	title = srp_consortium.16.t

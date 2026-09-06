@@ -6,7 +6,7 @@ debug_decisions = {
 		OR = {
 			AND = {
 				has_country_flag = NOR_vanilla_debug_tack
-				tag = NOR
+				tag = NOR 
 			}
 			NOT = { tag = NOR }
 		}
@@ -48,7 +48,7 @@ war_measures = {
 		OR = {
 			AND = {
 				has_war = yes
-				has_war_with_non_exiled_country = yes
+				has_war_with_non_exiled_country = yes  
 			}
 			AND = {
 				OR = {
@@ -58,7 +58,7 @@ war_measures = {
 				has_global_flag = CONGO_independence_war_ongoing
 			}
 		}
-
+		
 	}
 }
 operations = {
@@ -68,11 +68,11 @@ operations = {
 
 foreign_support = {
 	icon = generic_political_actions
-
+	
 }
 
 prestigious_projects = {
-
+	
 }
 
 CHI_occupation_actions = {
@@ -168,7 +168,7 @@ fascism_on_the_rise = {
 			}
 		}
 	}
-
+	
 }
 
 democratic_on_the_rise = {
@@ -220,7 +220,7 @@ democratic_on_the_rise = {
 			}
 		}
 	}
-
+	
 }
 
 communism_on_the_rise = {
@@ -278,7 +278,7 @@ communism_on_the_rise = {
 			}
 		}
 	}
-
+	
 	visible = {
 	}
 }
@@ -298,7 +298,7 @@ crisis = {
 demobilization = {
 	icon = generic_crisis
 	priority = 100
-
+	
 	visible = {
 		has_war = no
 	}
@@ -318,7 +318,7 @@ prospect_for_resources = {
 }
 
 special_projects = {
-
+	
 	icon = generic_prospect_for_resources
 
 	allowed = {
@@ -327,7 +327,7 @@ special_projects = {
 }
 
 governments_in_exile = {
-
+	
 	icon = generic_formable_nations
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
@@ -341,7 +341,7 @@ governments_in_exile = {
 }
 
 category_exile_forces = {
-
+	
 	icon = infiltration
 	picture = GFX_decision_cat_picture_government_in_exile
 	allowed = {
@@ -365,12 +365,12 @@ lar_local_recruitment = {
 	visible = { has_done_agency_upgrade = upgrade_training_centers }
 
 	visibility_type = map_and_decisions_view
-
+	
 	on_map_area = {
 		state = 8
 		name = LAR_recruitment_europe
 		zoom = 650
-
+		
 		target_root_trigger = {
 			OR = {
 				has_country_flag = europe_recruitment_unlocked
@@ -503,17 +503,18 @@ foreign_mio_decisions_category = {
 	priority = 5
 }
 
+
 generic_purchase_old_ships_category = {
 	icon = GFX_decision_category_MTG_naval_treaties
 	picture = GFX_decision_cat_picture_naval_treaties
-
+	
 	allowed = {
 		always = no
 	}
 	visible = {
 		has_country_flag = generic_purchase_old_ships_flag
 	}
-
+	
 	priority = {
 		base = 8
 	}
@@ -532,7 +533,7 @@ PHI_department_of_foreign_affairs_category = {
 generic_refit_civilian_ships_category = {
 	icon = GFX_decision_category_MTG_naval_treaties
 	picture = GFX_decision_cat_picture_generic_shipbuilding
-
+	
 	allowed = {
 		OR = {
 			AND = {
@@ -552,7 +553,7 @@ generic_refit_civilian_ships_category = {
 	visible = {
 		has_country_flag = refit_convoy_ships_flag
 	}
-
+	
 	priority = {
 		base = 8
 	}

@@ -4,7 +4,7 @@ state = {
 	resources = {
 		chromium = 50.000
 		aluminium = 10.000
-	}
+	} 
 
 	history = {
 		owner = EFH
@@ -22,11 +22,11 @@ state = {
 	}
 
 	provinces = {
-	 	907 974 3833 3865 3882 6886
+	 	907 974 3833 3865 3882 6886 
 	}
 	manpower = 1030650
 	buildings_max_level_factor = 1.000
 	state_category = rural
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

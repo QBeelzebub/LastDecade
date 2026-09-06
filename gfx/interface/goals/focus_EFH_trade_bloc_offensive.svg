@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Shipping container body -->
+  <rect x="18" y="40" width="92" height="52" rx="3" fill="#c9a52a"/>
+
+  <!-- Door seams (vertical dividers) -->
+  <rect x="63" y="40" width="3" height="52" fill="#0d1623"/>
+
+  <!-- Horizontal corrugation ribs -->
+  <rect x="18" y="52" width="92" height="3" fill="#0d1623" opacity="0.55"/>
+  <rect x="18" y="64" width="92" height="3" fill="#0d1623" opacity="0.55"/>
+  <rect x="18" y="76" width="92" height="3" fill="#0d1623" opacity="0.55"/>
+
+  <!-- Corner fittings (8 small squares) -->
+  <rect x="18" y="40" width="10" height="9" rx="2" fill="#c9a52a" stroke="#0d1623" stroke-width="1.5"/>
+  <rect x="100" y="40" width="10" height="9" rx="2" fill="#c9a52a" stroke="#0d1623" stroke-width="1.5"/>
+  <rect x="18" y="83" width="10" height="9" rx="2" fill="#c9a52a" stroke="#0d1623" stroke-width="1.5"/>
+  <rect x="100" y="83" width="10" height="9" rx="2" fill="#c9a52a" stroke="#0d1623" stroke-width="1.5"/>
+</svg>

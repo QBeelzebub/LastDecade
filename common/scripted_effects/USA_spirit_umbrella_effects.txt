@@ -1,3 +1,5 @@
+
+
 USA_refresh_mil = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = USA_armed_forces } }
@@ -43,6 +45,7 @@ USA_mil_war_college = {
 	add_to_variable = { USA_mil_army_org_factor = 0.03 }
 	USA_refresh_mil = yes
 }
+
 
 USA_refresh_ind = {
 	if = {
@@ -107,6 +110,7 @@ USA_ind_nuclear_superiority = {
 	add_to_variable = { USA_ind_war_support_factor = 0.05 }
 	USA_refresh_ind = yes
 }
+
 
 USA_refresh_dom = {
 	if = {
@@ -193,6 +197,7 @@ USA_dom_efh_exclusion = {
 	USA_refresh_dom = yes
 }
 
+
 USA_refresh_for = {
 	if = {
 		limit = { has_dynamic_modifier = { modifier = USA_hemispheric_posture } }
@@ -245,6 +250,7 @@ USA_for_doctrine_reckoning = {
 	add_to_variable = { USA_for_research_speed_factor = 0.03 }
 	USA_refresh_for = yes
 }
+
 
 USA_refresh_res = {
 	if = {

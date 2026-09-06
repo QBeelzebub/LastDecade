@@ -1,5 +1,6 @@
 equipments = {
 
+
 	srp_fpv_drone_equipment = {
 		year = 2023
 

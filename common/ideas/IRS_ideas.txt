@@ -22,6 +22,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_evolution_0 = {
 			picture = generic_army_tank
 			allowed = { tag = IRS }
@@ -86,6 +87,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_phase0_construction_surge = {
 			picture = generic_production_bonus
 			allowed = { tag = IRS }
@@ -105,6 +107,7 @@ ideas = {
 				supply_consumption_factor = -0.03
 			}
 		}
+
 
 		IRS_early_biomass_idea = {
 			picture = generic_army_tank
@@ -143,6 +146,7 @@ ideas = {
 				attrition = -0.05
 			}
 		}
+
 
 		IRS_rupter_assault_doctrine = {
 			picture = generic_army_tank
@@ -242,6 +246,7 @@ ideas = {
 				supply_consumption_factor = -0.03
 			}
 		}
+
 
 		IRS_african_campaign_idea = {
 			picture = generic_army_tank
@@ -391,6 +396,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_west_african_mobilization_idea = {
 			picture = generic_army_tank
 			allowed = { always = no }
@@ -401,6 +407,7 @@ ideas = {
 				army_morale_factor = 0.03
 			}
 		}
+
 
 		IRS_phase3_expansion_idea = {
 			picture = generic_production_bonus
@@ -435,6 +442,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_vitreous_root_lattice = {
 			picture = generic_production_bonus
 			allowed = { tag = IRS }
@@ -468,6 +476,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_tromos_hollow_networks = {
 			picture = generic_production_bonus
 			allowed = { tag = IRS }
@@ -499,6 +508,7 @@ ideas = {
 				military_industrial_organization_research_bonus = 1
 			}
 		}
+
 
 		IRS_deep_inland_surge = {
 			picture = generic_production_bonus

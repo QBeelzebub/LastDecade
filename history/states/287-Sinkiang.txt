@@ -7,20 +7,23 @@ state = {
 		owner = CHN
 		add_core_of = CHN
 
+
+
 		buildings = {
 			infrastructure = 0
 		}
 
 	}
 
+
 	provinces={
-		5016 7790 8042 8086 10885 12864
+		5016 7790 8042 8086 10885 12864 
 	}
 	manpower = 28000
 	buildings_max_level_factor = 1.000
 	state_category = wasteland
-	impassable = yes
+	impassable = yes 
 	force_link_ownership_to = 1042
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

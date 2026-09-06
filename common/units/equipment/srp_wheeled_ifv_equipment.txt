@@ -1,5 +1,6 @@
 equipments = {
 
+
 	srp_wheeled_ifv_equipment = {
 		year = 2022
 

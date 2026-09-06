@@ -3,9 +3,9 @@ state = {
 	name = "STATE_927"
 
 	manpower = 404500
-
+	
 	state_category = rural
-
+	
 	history = {
 		owner = EFH
 		add_core_of = EFH
@@ -21,7 +21,7 @@ state = {
 		victory_points = {
 			9167 1
 		}
-
+	
 		buildings = {
 			infrastructure = 1
 		}

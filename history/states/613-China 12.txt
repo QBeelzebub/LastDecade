@@ -2,13 +2,14 @@ state = {
 	id = 613
 	name = "STATE_613"
 	manpower = 6180392
-
+	
 	state_category = large_city
-
+	
 	history = {
 
 		owner = CHN
 		add_core_of = CHN
+
 
 		buildings = {
 			infrastructure = 3
@@ -21,15 +22,15 @@ state = {
 				bunker = 1
 			}
 		}
-
+		
 		victory_points = {
 			7014 5
 		}
 	}
 
 	provinces = {
-		7014 10034 12052 12076
+		7014 10034 12052 12076 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

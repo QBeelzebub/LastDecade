@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Canal lock walls (top + bottom) -->
+  <rect x="14" y="36" width="100" height="14" rx="3" fill="#c9a52a" opacity="0.65"/>
+  <rect x="14" y="78" width="100" height="14" rx="3" fill="#c9a52a" opacity="0.65"/>
+
+  <!-- Lock gate posts (left + right ends) -->
+  <rect x="14" y="36" width="8" height="56" fill="#c9a52a"/>
+  <rect x="106" y="36" width="8" height="56" fill="#c9a52a"/>
+
+  <!-- Ship (top-down view, in the canal channel) -->
+  <!-- Hull -->
+  <rect x="32" y="54" width="66" height="20" rx="8" fill="#c9a52a"/>
+  <!-- Pointed bow (right) -->
+  <polygon points="98,54 98,74 114,64" fill="#c9a52a"/>
+  <!-- Bridge superstructure -->
+  <rect x="42" y="57" width="28" height="14" rx="3" fill="#0d1623" opacity="0.5"/>
+</svg>

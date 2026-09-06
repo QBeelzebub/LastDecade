@@ -3,9 +3,9 @@ state=
 	id=626
 	name="STATE_626"
 	manpower = 192257
-
+	
 	state_category = pastoral
-
+	
 	history=
 	{
 		owner = CHN
@@ -23,8 +23,8 @@ state=
 		}
 	}
 	provinces={
-		4429 7419 10145
+		4429 7419 10145 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -8,13 +8,14 @@ state = {
 	resources = {
 		oil = 12
 	}
-
+	
 	state_category = rural
 
 	history = {
 
 		owner = CHN
 		add_core_of = CHN
+
 
 		victory_points = {
 			7387 2
@@ -33,12 +34,12 @@ state = {
 			}
 
 		}
-
+		
 	}
 
 	provinces = {
-		7371 7387
+		7371 7387 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

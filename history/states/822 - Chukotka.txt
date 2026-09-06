@@ -6,20 +6,22 @@ state = {
 		owner = RSF
 		add_core_of = RSF
 		victory_points = {
-			13063 1
+			13063 1 
 		}
 		buildings = {
 			infrastructure = 1
 		}
 
+
+
 	}
 
 	provinces = {
-		4744 5264 13062 13063
+		4744 5264 13062 13063 
 	}
 	manpower = 31182
 	buildings_max_level_factor = 1
 	state_category = "pastoral"
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

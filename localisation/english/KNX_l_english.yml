@@ -18,6 +18,7 @@
  knx_relocate_nexus: "Relocate Knox Nexus to [FROM.GetName]"
  knx_relocate_nexus_desc: "The local nexus can be re-anchored in [FROM.GetName]. The movement is deliberate, slow, and difficult to reverse."
 
+
  KNX: "Knox Exclusion Zone"
  KNX_DEF: "the Knox Exclusion Zone"
  KNX_ADJ: "Knox"
@@ -104,6 +105,7 @@
  KNX_efh_channel_open_tt: "Unlocks transactional intelligence exchanges with the European Federation."
  KNX_human_diplomacy_unlocked_tt: "Knox County may now conduct diplomacy with human states, including lend-lease, guarantees and faction membership."
 
+
  KNX_loyal_strain_cultivation: "Loyal Strain Program"
  KNX_loyal_strain_cultivation_desc: "Vagrant 1 has spent two years understanding the Beckon network from inside it. The next step is to cultivate organisms carrying the vagrant's own biological signature, which answer to nobody else."
  KNX_personal_guard: "The Personal Guard"
@@ -159,6 +161,7 @@
  knx.5.a: "Send the researcher. See what they want."
  knx.5.b: "Parasite contact protocol. Seal the building."
 
+
  KNX_vagrant_genome_mio: "1st Vagrant Genome"
  KNX_vagrant_genome_mio_desc: "The Knox County Vagrant does not inherit a genome. It designs one. Its organisms are built with intent: precise, dual-purpose, and architecturally unlike anything in the Iris lineage. They are effective against humans and Iris parasites alike, which is not an accident."
 
@@ -179,6 +182,7 @@
 
  KNX_vagrant_sovereignty: "Vagrant Sovereignty"
  KNX_vagrant_sovereignty_desc: "The 1st Vagrant genome at full expression. Their capability comes from the Vagrant's own design, separate from the Iris lineage."
+
 
  KNX_vagrant_genome_initial: "Vagrant Design Philosophy"
 
@@ -209,3 +213,4 @@
  KNX_homeland_defense_desc: "Extend the Kentucky model to new ground."
  KNX_fortify_root_stronghold: "Establish Root Stronghold"
  KNX_fortify_root_stronghold_desc: "Build out a target state the way Kentucky was built: layered defenses, buried supply, and prepared ground. Applies the Root Stronghold modifier permanently, giving the state the same defensive weight as the original homeland."
+

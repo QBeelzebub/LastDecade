@@ -6,11 +6,12 @@ state = {
 		owner = RSF
 		add_core_of = RSF
 		victory_points = {
-			12549 1
+			12549 1 
 		}
 		buildings = {
 			infrastructure = 1
 		}
+
 
 	}
 
@@ -21,5 +22,5 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = "wasteland"
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

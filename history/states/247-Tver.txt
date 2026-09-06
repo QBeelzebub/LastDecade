@@ -1,3 +1,4 @@
+
 state={
 	id=247
 	name="STATE_247"
@@ -8,7 +9,7 @@ state={
 		owner = RSF
 		add_core_of = RSF
 		victory_points = {
-			6245 10
+			6245 10 
 		}
 		buildings = {
 			infrastructure = 3
@@ -17,8 +18,8 @@ state={
 	}
 
 	provinces={
-		85 150 344 3143 3176 3323 6022 6122 6203 6245 6346 9046 9144 9256 11084 11154 11250
+		85 150 344 3143 3176 3323 6022 6122 6203 6245 6346 9046 9144 9256 11084 11154 11250 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

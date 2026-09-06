@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" fill="#0d1623"/>
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Pacific sphere -->
+  <circle cx="64" cy="52" r="28" fill="none" stroke="#c9a52a" stroke-width="4" opacity="0.62"/>
+  <circle cx="64" cy="52" r="14" fill="#c9a52a"/>
+
+  <!-- Anchor holding the sphere -->
+  <rect x="59" y="37" width="10" height="49" rx="3" fill="#c9a52a"/>
+  <rect x="44" y="48" width="40" height="7" rx="2" fill="#c9a52a"/>
+  <path d="M36 78 C39 100 50 108 64 108 C78 108 89 100 92 78 H82 C79 91 72 97 64 97 C56 97 49 91 46 78 Z" fill="#c9a52a"/>
+  <polygon points="33,76 50,75 41,90" fill="#c9a52a"/>
+  <polygon points="95,76 78,75 87,90" fill="#c9a52a"/>
+</svg>

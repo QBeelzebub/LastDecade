@@ -1,20 +1,21 @@
+
 state = {
 	id = 1079
 	name = "STATE_1079"
 	manpower = 449918
-
+	
 	resources = {
 		coal = 1
 	}
 	state_category = city
-
+	
 	history = {
 
 		owner = OCE
 		add_core_of = OCE
 
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 2
@@ -24,7 +25,7 @@ state = {
 			}
 
 		}
-
+		
 		victory_points = {
 			4543 5
 		}
@@ -37,11 +38,12 @@ state = {
 			4718 1
 		}
 
+		
 	}
 
 	provinces = {
-		4615 10334 10373 4543 1565 12362 12664 7887 4718 10710 7742 4748 1713 1746 10609 1786
+		4615 10334 10373 4543 1565 12362 12664 7887 4718 10710 7742 4748 1713 1746 10609 1786 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

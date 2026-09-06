@@ -8,6 +8,7 @@ state = {
 		owner = CHN
 		add_core_of = CHN
 
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -17,14 +18,15 @@ state = {
 			}
 		}
 
-		victory_points = {
+
+		victory_points = { 
 			10004 1
 		}
 	}
 
 	provinces = {
-		1018 4023 4160 7135 7192 10004 10105 11926
+		1018 4023 4160 7135 7192 10004 10105 11926 
 	}
 
-	local_supplies = 1.0
+	local_supplies = 1.0 
 }

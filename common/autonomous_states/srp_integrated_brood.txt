@@ -1,3 +1,4 @@
+
 autonomy_state = {
 	id = autonomy_srp_integrated_brood
 

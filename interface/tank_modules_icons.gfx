@@ -1,5 +1,6 @@
 spriteTypes = {
 
+
 	spriteType = {
 		name = "GFX_EMI_tank_anti_air_cannon"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_gun.dds"
@@ -376,6 +377,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_light_turret_type.dds"
@@ -461,6 +463,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_diesel_engine.dds"
 		legacy_lazy_load = no
 	}
+
 
 	spriteType = {
 		name = "GFX_EMI_lc_radio_module"
@@ -673,6 +676,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+
 	spriteType = {
 		name = "GFX_EMI_srp_modern_howitzer"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/srp_modern_howitzer.dds"
@@ -788,6 +792,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/srp_tank_stbn_cannon.dds"
 		legacy_lazy_load = no
 	}
+
 
 	spriteType = {
 		name = "GFX_EMI_srp_carapace_plating_1"

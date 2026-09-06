@@ -1,5 +1,7 @@
+
 ideas = {
 	country = {
+
 
 		neutrality_idea = {
 			picture = generic_political_support
@@ -84,6 +86,7 @@ ideas = {
 			}
 		}
 
+
 		military_youth_focus = {
 			picture = generic_manpower_bonus
 			allowed = { always = no }
@@ -134,6 +137,7 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+
 
 		special_forces = {
 			picture = generic_army_problems

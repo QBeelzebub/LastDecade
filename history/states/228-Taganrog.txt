@@ -1,8 +1,9 @@
+
 state={
 	id=228
 	name="STATE_228"
 	manpower = 2167411
-
+	
 	state_category = town
 
 	history={
@@ -18,8 +19,8 @@ state={
 	}
 
 	provinces={
-		523 547 570 6505 6519 9446 9461 9476 11487 11513
+		523 547 570 6505 6519 9446 9461 9476 11487 11513 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

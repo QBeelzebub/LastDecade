@@ -6,13 +6,13 @@ state={
 	resources = {
 		coal = 1
 	}
-
+	
 	state_category = rural
-
+	
 	history=
 	{
 		victory_points = {
-			577 1
+			577 1 
 		}
 		owner = EFH
 		add_core_of = EFH
@@ -26,5 +26,5 @@ state={
 		577 9548
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

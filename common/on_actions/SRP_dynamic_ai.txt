@@ -1,3 +1,4 @@
+
 on_actions = {
 
 	on_war_relation_added = {

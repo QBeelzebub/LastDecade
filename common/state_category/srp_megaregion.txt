@@ -1,3 +1,4 @@
+
 state_categories = {
 	srp_megaregion = {
 		local_building_slots = 18

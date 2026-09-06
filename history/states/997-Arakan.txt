@@ -5,10 +5,10 @@ state = {
 	resources = {
 		rubber = 3
 	}
-
+	
 	state_category = rural
 	manpower = 530980
-
+	
 	history = {
 		owner = CHN
 		add_core_of = CHN
@@ -28,7 +28,7 @@ state = {
 	}
 
 	provinces = {
-		1014 1142 1333 3651 4019 4059 4147 7122 10182 12090
+		1014 1142 1333 3651 4019 4059 4147 7122 10182 12090 
 	}
 
 	local_supplies = 0.000

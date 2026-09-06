@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Two busts side by side: Woods and Voss, seated in the same structure. -->
+  <circle cx="44" cy="46" r="13" fill="#c9a52a"/>
+  <path d="M26 84 a18 20 0 0 1 36 0 z" fill="#c9a52a"/>
+
+  <circle cx="84" cy="46" r="13" fill="#c9a52a"/>
+  <path d="M66 84 a18 20 0 0 1 36 0 z" fill="#c9a52a"/>
+
+  <!-- The bar under both of them: the appointment itself, and the thing that
+       stops either of them being lifted out of the seat. -->
+  <rect x="28" y="91" width="72" height="9" fill="#c9a52a"/>
+
+  <!-- Corner reticle brackets, proven composition, kept subordinate. -->
+  <rect x="14" y="14" width="17" height="3" fill="#c9a52a" opacity="0.55"/>
+  <rect x="14" y="14" width="3" height="17" fill="#c9a52a" opacity="0.55"/>
+  <rect x="97" y="14" width="17" height="3" fill="#c9a52a" opacity="0.55"/>
+  <rect x="111" y="14" width="3" height="17" fill="#c9a52a" opacity="0.55"/>
+  <rect x="14" y="111" width="17" height="3" fill="#c9a52a" opacity="0.55"/>
+  <rect x="14" y="97" width="3" height="17" fill="#c9a52a" opacity="0.55"/>
+  <rect x="97" y="111" width="17" height="3" fill="#c9a52a" opacity="0.55"/>
+  <rect x="111" y="97" width="3" height="17" fill="#c9a52a" opacity="0.55"/>
+</svg>

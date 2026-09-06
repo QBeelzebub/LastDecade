@@ -3,14 +3,14 @@ state=
 	id=164
 	name="STATE_164"
 	manpower = 120000
-
+	
 	state_category = small_island
-
+	
 	history = {
 		owner = EFH
 		add_core_of = EFH
 		victory_points = {
-			10007 1
+			10007 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -29,5 +29,5 @@ state=
 		7003 10007
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

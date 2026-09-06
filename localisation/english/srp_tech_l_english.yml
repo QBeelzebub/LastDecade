@@ -255,6 +255,7 @@
  srp_railgun_prototype: "Electromagnetic Railgun"
  srp_railgun_prototype_desc: "Projectile velocity renders conventional armor irrelevant. Low rate of fire. Power systems are large and sensitive to battle damage. The result is a field prototype with limited production value."
 
+
  srp_autoloader_module: "Autoloader System"
  srp_autoloader_module_desc: "Mechanical autoloader replaces the human loader crew position. Increases sustained rate of fire but adds maintenance complexity and reduces tolerance for ammunition feed faults."
 
@@ -448,6 +449,7 @@
  srp_ew_hardening_1: "Full-Spectrum Signal Hardening"
  srp_ew_hardening_1_desc: "Dispatcher-resistant communication architecture distributed to platoon level. Battlefield coordination survives active electronic warfare. Units maintain planning and targeting discipline even in compromised signal environments."
 
+
  srp_drone_support: "FPV Drone Company"
  srp_drone_support_desc: "A support company of first-person-view strike drone operators. Provides battlefield reconnaissance and precision strike capability against soft targets and light vehicles. Small teams, high lethality."
 
@@ -506,6 +508,7 @@
  srp_rtg_doctrine_idea_desc: "RTG-equipped infantry gain a decisive edge against parasite organisms, exploiting structural vulnerabilities that conventional weapons cannot reach."
  srp_rtg_infantry: "RTG Infantry"
  srp_rtg_infantry_desc: "Infantry outfitted with radioisotope-powered combat equipment. A distinct class from conventional infantry, optimised for anti-parasite engagements."
+
 
  srp_infantry_eq_3: "Crisis Infantry Kit"
  srp_infantry_eq_3_desc: "NBC-sealed equipment integration and parasite-hardened optics. Designed for extended operations in contaminated environments."
@@ -1044,6 +1047,7 @@
  modifier_experience_gain_abyssant_submarine_mission_factor: "Abyssant Mission Experience Gain"
  modifier_experience_gain_abyssant_submarine_combat_factor: "Abyssant Combat Experience Gain"
 
+
  rupter_equipment: "Rupter"
  rupter_equipment_1: "Rupter"
  rupter_equipment_desc: "Cultivated Rupter broods grown and deployed as a complete combat strain."
@@ -1112,3 +1116,4 @@
  srp_marauder_equipment: "Marauder"
  srp_marauder_equipment_1: "Marauder"
  srp_marauder_equipment_desc: "Cultivated Marauder organisms grown and deployed as a complete combat strain."
+

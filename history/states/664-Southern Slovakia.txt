@@ -10,9 +10,9 @@ state = {
 		steel = 13
 		chromium = 3
 	}
-
+	
 	state_category = town
-
+	
 	history = {
 
 		owner = EFH
@@ -27,6 +27,7 @@ state = {
 			6573 1
 		}
 
+
 		IF = {
 			limit = {
 				NOT = {
@@ -34,12 +35,12 @@ state = {
 				}
 			}
 		}
-
+		
 	}
-
+	
 	provinces = {
-		3565 3716 6561 6573 9537 11679
+		3565 3716 6561 6573 9537 11679 
 	}
 
-	local_supplies = 3.0
+	local_supplies = 3.0 
 }

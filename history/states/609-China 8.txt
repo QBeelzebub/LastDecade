@@ -6,7 +6,7 @@ state = {
 	resources = {
 		coal = 2
 	}
-
+	
 	state_category = town
 
 	history = {
@@ -22,7 +22,7 @@ state = {
 
 			3900 = {
 				naval_base = 2
-
+				
 				landmark_great_wall_section = {
 				    level = 1
 				    allowed = {
@@ -44,8 +44,8 @@ state = {
 	}
 
 	provinces = {
-		900 1052 3830 3900 9905 11822 12043
+		900 1052 3830 3900 9905 11822 12043 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

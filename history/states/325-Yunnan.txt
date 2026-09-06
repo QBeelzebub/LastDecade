@@ -9,6 +9,8 @@ state={
 		owner = CHN
 		add_core_of = CHN
 
+
+
 		victory_points = {
 			1319 10
 		}
@@ -37,5 +39,5 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=town
 
-	local_supplies=3.0
+	local_supplies=3.0 
 }

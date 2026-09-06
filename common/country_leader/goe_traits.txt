@@ -174,6 +174,7 @@ leader_traits = {
 		political_power_factor = 0.1
 		stability_factor = -0.02
 
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -285,7 +286,7 @@ leader_traits = {
 		war_support_factor = 0.05
 		political_power_gain = 0.05
 		resistance_target_on_our_occupied_states = 0.15
-
+		
 	}
 
 	exiled_dissident = {
@@ -335,7 +336,7 @@ leader_traits = {
 		trade_laws_cost_factor = 0.75
 		mobilization_laws_cost_factor = 0.75
 		economy_cost_factor = 0.75
-		army_chief_cost_factor = 0.5
+		army_chief_cost_factor = 0.5	
 	}
 
 	flexible_industrialist = {
@@ -641,7 +642,7 @@ leader_traits = {
 				build_cost_ic = -0.07
 				instant = yes
 			}
-
+			
 		}
 
 		equipment_bonus = {
@@ -656,8 +657,8 @@ leader_traits = {
 				build_cost_ic = -0.15
 				instant = yes
 			}
-
-		}
+			
+		}	
 	}
 
 	tata_chairman = {

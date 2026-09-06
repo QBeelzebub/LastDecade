@@ -1,5 +1,6 @@
 characters = {
 
+
 	EFH_ashley_woods = {
 		name = "Ashley Woods"
 		gender = female
@@ -165,6 +166,7 @@ characters = {
 		}
 	}
 
+
 	EFH_jens_stoltenberg = {
 		name = "Jens Stoltenberg"
 		portraits = {
@@ -216,6 +218,7 @@ characters = {
 			ai_will_do = { base = 5 }
 		}
 	}
+
 
 	EFH_thierry_burkhard = {
 		name = "Thierry Burkhard"
@@ -271,6 +274,7 @@ characters = {
 		}
 	}
 
+
 	EFH_pierre_vandier = {
 		name = "Pierre Vandier"
 		portraits = {
@@ -307,6 +311,7 @@ characters = {
 		}
 	}
 
+
 	EFH_stephane_mille = {
 		name = "Stéphane Mille"
 		portraits = {
@@ -342,6 +347,7 @@ characters = {
 			ai_will_do = { base = 5 }
 		}
 	}
+
 
 	EFH_alfons_mais = {
 		name = "Alfons Mais"
@@ -440,6 +446,7 @@ characters = {
 		}
 	}
 
+
 	EFH_friedrich_haas = {
 		name = "Friedrich Haas"
 		portraits = {
@@ -476,6 +483,7 @@ characters = {
 			desc = EFH_edvard_lindstrom_desc
 		}
 	}
+
 
 	EFH_sci_land = {
 		name = "Dr. Miriam Haugen"

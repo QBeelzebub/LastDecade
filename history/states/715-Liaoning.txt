@@ -2,14 +2,16 @@ state = {
 	id = 715
 	name = "STATE_715"
 	manpower = 3643373
-
+	
 	state_category = town
 
-	history = {
+	history = { 
 
 		owner = SWR
 		add_core_of = CHN
 		add_core_of = SWR
+
+
 
 		victory_points = {
 			11836 1
@@ -24,8 +26,8 @@ state = {
 	}
 
 	provinces = {
-		916 930 1499 1508 1558 1627 1638 3877 3978 4561 4633 4642 6893 7812 9831 10429 11836 11903 12337 12469 12478
+		916 930 1499 1508 1558 1627 1638 3877 3978 4561 4633 4642 6893 7812 9831 10429 11836 11903 12337 12469 12478 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

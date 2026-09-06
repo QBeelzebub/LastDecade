@@ -104,6 +104,7 @@ ideas = {
 			}
 		}
 
+
 		KNX_loyal_strain_ns = {
 			picture = GER_attack_usa
 			allowed = { always = no }
@@ -144,6 +145,7 @@ ideas = {
 			}
 		}
 
+
 		KNX_hive_phase_2_ns = {
 			picture = idea_MAN
 			allowed = { always = no }
@@ -173,6 +175,7 @@ ideas = {
 				supply_consumption_factor = -0.05
 			}
 		}
+
 
 		KNX_first_accord_ns = {
 			picture = GER_attack_usa
@@ -204,6 +207,7 @@ ideas = {
 				army_attack_factor = 0.03
 			}
 		}
+
 
 		EFH_knx_resource_exchange = {
 			picture = GER_attack_usa

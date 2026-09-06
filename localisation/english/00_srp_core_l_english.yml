@@ -238,6 +238,7 @@
  srp_incendiary_tech: "Incendiary Systems"
  srp_incendiary_tech_research: "Incendiary Research Speed"
 
+
  beckon_cluster: "Beckon Cluster"
  beckon_cluster_desc: "Dense root network structure associated with Iris infestation. Rapid growth observed in contaminated zones. Primary target for containment and eradication efforts."
  dispatcher: "The Dispatcher"
@@ -302,6 +303,8 @@
  PRODUCTION_MATERIALS_FISSILE_MATERIAL: "Fissile Material"
  fissile_material_desc: "Fissile material used in advanced energy systems and nuclear weaponry. Critical for industrial and military applications. Obtained through mining, enrichment, or trade."
 
+
+
  CHN_mobilize_the_nation: "Mobilise the Nation"
  CHN_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
 
@@ -340,6 +343,7 @@
 
  CHN_tech_acceleration: "Technology Acceleration"
  CHN_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
+
 
  JAP_mobilize_the_nation: "Mobilise the Nation"
  JAP_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
@@ -380,6 +384,7 @@
  JAP_tech_acceleration: "Technology Acceleration"
  JAP_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
 
+
  OCE_mobilize_the_nation: "Mobilise the Nation"
  OCE_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
 
@@ -419,6 +424,7 @@
  OCE_tech_acceleration: "Technology Acceleration"
  OCE_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
 
+
  SAC_mobilize_the_nation: "Mobilise the Nation"
  SAC_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
 
@@ -457,6 +463,7 @@
 
  SAC_tech_acceleration: "Technology Acceleration"
  SAC_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
+
 
  AFR_mobilize_the_nation: "Mobilise the Nation"
  AFR_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
@@ -507,6 +514,10 @@
  political_commissars_focus_desc: "Political officers attached to units. Morale is maintained and the home front stays quiet, by whichever means the posting requires."
  ideological_fanaticism_focus_desc: "Belief substituted for calculation. The country will keep fighting well past the point where it should have stopped."
 
+
+
+
+
  srp_last_decade_t1_parasite: "Contained Growth"
  srp_last_decade_t1_parasite_desc: "Containment efforts have disrupted the luxsynthesis cycle across much of the network. Biomass conversion runs below capacity, and the Dispatcher network struggles to relay coordination signals through damaged territory."
  srp_last_decade_t1_human: "Coordinated Response"
@@ -526,6 +537,7 @@
  srp_last_decade_t5_parasite_desc: "The network operates at its highest recorded efficiency. Nothing in it is waiting on anything else."
  srp_last_decade_t5_human: "Last Decade: Diminished Capacity"
  srp_last_decade_t5_human_desc: "The world's remaining institutions are buckling under the weight of a war that should have ended years ago. Ministries are triaging which of their statutory duties to stop performing."
+
 
  IRS_last_decade_threshold_difficulty_tt: "Only available on the Elite difficulty, The Last Decade."
 
@@ -791,9 +803,11 @@ knox_county: "Knox County"
  STATE_CATEGORY_srp_megaregion: "Megaregion"
  srp_megaregion: "Megaregion"
 
+
  SRP_western_alliance_name: "Western Alliance"
  SRP_european_pact_name: "European Pact"
  SRP_parasite_hive_name: "The Hive"
+
 
  geo_volunteers.1.t: "Africa Falls Under Assault"
  geo_volunteers.1.d: "The Iris parasite faction has declared war on the African Confederation. Our forces are watching. The question is whether we commit."
@@ -802,6 +816,7 @@ knox_county: "Knox County"
 
  SRP_volunteers_to_africa_idea: "Volunteers to Africa"
  SRP_volunteers_to_africa_idea_desc: "Our forces have joined the African front against the parasite assault. The commitment has hardened national resolve."
+
 
  EFH_global_positioning: "Global Positioning"
  EFH_global_positioning_desc: "The European Federation is not content to remain a regional power. The Pacific, East Asia and South America are all in play."
@@ -833,7 +848,18 @@ knox_county: "Knox County"
  EFH_eurasian_buffer_doctrine: "Eurasian Buffer Doctrine"
  EFH_eurasian_buffer_doctrine_desc: "The Federation signals that China is a natural buffer against American influence in Eurasia. The question is whether Beijing agrees, and how far it is willing to lean."
 
+
+
  EFH_japan_sphere_tt: "Japan is drawn deeper into the Federation's security and economic sphere."
+
+
+
+
+
+
+
+
+
 
  EFH_sino_efh_partnership: "Sino-European Partnership"
  EFH_sino_efh_partnership_desc: "Beijing has answered the buffer doctrine in the only language that matters: agreement. Trade runs both ways, research is shared, and the two continental powers coordinate against a threat neither can face alone. The relationship is pragmatic on both sides, and the more durable for it."
@@ -858,6 +884,7 @@ knox_county: "Knox County"
  EFH_sino_eastern_intelligence_desc: "Pool what Beijing and Brussels each know about the parasite advance across the Asian landmass. A one-time intelligence hand-off on the Iris."
  EFH_sino_contact_groundwork_tt: "The Beijing back-channel makes the first hand-off larger: additional intelligence on the Iris."
 
+
  USA_great_power_doctrine: "Great Power Doctrine"
  USA_great_power_doctrine_desc: "The United States reaffirms itself as the world's leading power. The Federation's growing ambitions will not go unanswered."
 
@@ -879,10 +906,18 @@ knox_county: "Knox County"
  USA_pacific_war_authorization: "Pacific War Authorisation"
  USA_pacific_war_authorization_desc: "With Federation entrenched in Japan and the Pacific containment line drawn, the United States authorises military action if necessary. The cold war is becoming something else."
 
+
+
+
+
  USA_efh_market_exclusion: "American Market Exclusion"
  USA_efh_market_exclusion_desc: "The United States has shut American markets to EFH."
 
+
+
+
  USA_pacific_containment_tt: "The USA secures the Pacific rim against Federation expansion."
+
 
  efh_geo.1.t: "The Pacific Pact is Signed"
  efh_geo.1.d: "Japan has formally aligned with the European Federation. The defence pact is public, the terms are binding, and Washington has received its copy. The Pacific balance has shifted in a way that will be difficult to reverse."
@@ -916,6 +951,7 @@ knox_county: "Knox County"
  usa_efh_war.3.a: "Issue the ultimatum. If they do not withdraw, we will make them."
  usa_efh_war.3.b: "We cannot fight this war. Stand down and find another path."
 
+
  SRP_political_interference_category: "Political Operations"
  SRP_political_interference_category_desc: "Quiet operations to shape the rival power's internal politics, without moving forces or firing shots."
 
@@ -936,6 +972,7 @@ knox_county: "Knox County"
  EFH_undermine_us_narrative_desc: "European intelligence has documented American mishandling of the parasite situation in exquisite detail. The files are embarrassing. Releasing them to international press would make Washington's job considerably harder."
  EFH_undermine_us_narrative_tt: "Damages USA public trust in federal institutions."
 
+
  EFH_establish_atlantic_network: "Establish the Atlantic Network"
  EFH_establish_atlantic_network_desc: "Intelligence operations against American interests are authorised. A permanent collection network inside the United States requires money, patience, and people willing to disappear into American life for years. The federal services have all three."
  EFH_atlantic_network_groundwork_tt: "The pre-crisis northern intelligence groundwork shortens the build-up: 25 Political Power recovered and additional intelligence on American forces."
@@ -948,6 +985,7 @@ knox_county: "Knox County"
  EFH_intel_canadian_listening_posts_desc: "The intelligence groundwork laid on the northern frontier before the crisis makes a permanent signals presence possible. Listening stations along the Canadian border watch American military traffic around the clock. Washington will eventually notice."
  EFH_canadian_listening_posts_idea: "Canadian Listening Posts"
  EFH_canadian_listening_posts_idea_desc: "Signals stations on the northern frontier track American military traffic."
+
 
  EFH_propose_research_accord: "Propose Anti-Parasite Research Accord"
  EFH_propose_research_accord_desc: "A research-sharing arrangement with Washington. The Federation wants American bioanalysis data, Washington wants European field containment data, and neither side has said yet whether that is a trade."
@@ -964,8 +1002,10 @@ knox_county: "Knox County"
  efh_geo_accord_accepted_tt: "The United States accepted the accord. Both parties gain consolidated research access."
  efh_geo_accord_declined_tt: "The United States declined. The Federation's own research programme proceeds independently."
 
+
  EFH_joint_research_accord: "Joint Research Accord"
  EFH_joint_research_accord_desc: "The Federation and the United States have agreed to pool parasite research data. Shared containment protocols and bioanalysis records are accelerating the scientific effort on both fronts."
 
  USA_joint_research_accord: "Joint Research Accord"
  USA_joint_research_accord_desc: "The United States has agreed to share parasite research data with EFH. European field containment records are filling gaps in American bioanalysis programmes."
+

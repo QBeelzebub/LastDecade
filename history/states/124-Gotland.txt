@@ -3,9 +3,9 @@ state=
 	id=124
 	name="STATE_124"
 	manpower = 56988
-
+	
 	state_category = small_island
-
+	
 	history = {
 		victory_points = {
 			408 1
@@ -23,5 +23,5 @@ state=
 		408 6258
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

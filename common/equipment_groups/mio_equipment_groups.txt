@@ -1,8 +1,12 @@
+
+
+
+
 mio_cat_eq_all_light_tank = {
 	equipment_type = {
 		modern_tank_chassis
 		srp_mbt_chassis
-	}
+	}	
 }
 
 mio_cat_eq_all_medium_tank = {
@@ -21,7 +25,7 @@ mio_cat_eq_all_heavy_tank = {
 
 mio_cat_eq_all_tank_destroyers = {
 	equipment_type = {
-		light_tank_destroyer_chassis
+		light_tank_destroyer_chassis 
 		medium_tank_destroyer_chassis
 		heavy_tank_destroyer_chassis
 		super_heavy_tank_destroyer_chassis
@@ -37,13 +41,15 @@ mio_cat_eq_all_tanks = {
 		modern_tank_chassis
 		heavy_tank_chassis
 		super_heavy_tank_chassis
-		light_tank_destroyer_chassis
+		light_tank_destroyer_chassis 
 		medium_tank_destroyer_chassis
 		heavy_tank_destroyer_chassis
 		super_heavy_tank_destroyer_chassis
 		modern_tank_destroyer_chassis
 	}
 }
+
+
 
 mio_cat_eq_all_carrier = {
 	equipment_type = {
@@ -78,6 +84,8 @@ mio_cat_eq_all_ships_no_convoys = {
 		ship_hull_submarine
 	}
 }
+
+
 
 mio_cat_eq_all_small_plane = {
 	equipment_type = {
@@ -209,6 +217,8 @@ mio_cat_eq_only_strategic_bomber = {
 	}
 }
 
+
+
 mio_cat_eq_all_artillery = {
 	equipment_type = {
 		artillery_equipment
@@ -218,6 +228,8 @@ mio_cat_eq_all_artillery = {
 	}
 }
 
+
+
 mio_cat_eq_all_infantry_and_support_equipment = {
 	equipment_type = {
 		infantry_equipment
@@ -225,6 +237,8 @@ mio_cat_eq_all_infantry_and_support_equipment = {
 		srp_fpv_drone_equipment
 	}
 }
+
+
 
 mio_cat_eq_all_parasite_equipment = {
 	equipment_type = {
@@ -286,6 +300,8 @@ mio_cat_eq_srp_parasite_armor = {
 		srp_summoner_support_chassis
 	}
 }
+
+
 
 mio_cat_eq_srp_nuclear = {
 	equipment_type = {

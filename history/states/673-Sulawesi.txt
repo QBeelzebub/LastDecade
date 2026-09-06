@@ -8,11 +8,12 @@ state={
 
 	state_category = town
 
+
 	history= {
 		owner = CHN
 		add_core_of = CHN
 		victory_points = {
-			10263 3
+			10263 3 
 		}
 
 		buildings = {
@@ -27,5 +28,5 @@ state={
 		1589 4308 4349 4564 7336 7598 10222 10263 10450 10464 12330 12444
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

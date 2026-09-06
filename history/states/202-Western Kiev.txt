@@ -1,3 +1,4 @@
+
 state={
 	id=202
 	name="STATE_202"
@@ -6,7 +7,7 @@ state={
 		oil=8
 		aluminium=7
 	}
-
+	
 	state_category = large_city
 
 	history={
@@ -32,8 +33,8 @@ state={
 	}
 
 	provinces={
-		489 504 525 582 3494 3543 6497 9465 9543 9568 11557
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

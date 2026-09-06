@@ -15,10 +15,10 @@ state=
 			}
 		}
 	}
-
+	
 	provinces={
-		13051
+		13051 	
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

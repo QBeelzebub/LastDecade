@@ -6,6 +6,7 @@ leader_traits = {
 		surrender_limit = -10.0
 	}
 
+
 	vagrant_1_nest_builder = {
 		sprite = 10
 		random = no
@@ -43,6 +44,7 @@ leader_traits = {
 		ai_will_do = { factor = 0 }
 	}
 
+
 	EFH_ha_controversial_researcher = {
 		sprite = 14
 		random = no
@@ -63,6 +65,7 @@ leader_traits = {
 		ai_will_do = { base = 0 }
 	}
 
+
 	EFH_ha_institutional_shield = {
 		sprite = 13
 		random = no
@@ -71,6 +74,7 @@ leader_traits = {
 
 		ai_will_do = { base = 0 }
 	}
+
 
 	EFH_ha_ashley_unimpeded = {
 		sprite = 14

@@ -27,6 +27,7 @@ ideas = {
 			}
 		}
 
+
 		EFH_mishandled_contamination = {
 			picture = GER_attack_usa
 			allowed = { always = no }
@@ -36,6 +37,7 @@ ideas = {
 				political_power_factor = -0.05
 			}
 		}
+
 
 		EFH_joint_research_accord = {
 			picture = GER_attack_usa
@@ -141,6 +143,7 @@ ideas = {
 			}
 		}
 
+
 		EFH_spaceplane_feasibility_study = {
 			picture = GER_attack_usa
 			allowed = { always = no }
@@ -156,6 +159,7 @@ ideas = {
 			modifier = {
 			}
 		}
+
 
 		EFH_haa_aerospace_contract = {
 			picture = GER_attack_usa
@@ -193,6 +197,8 @@ ideas = {
 			}
 		}
 
+
+
 		EFH_nuclear_war_rally = {
 			picture = GER_attack_usa
 			allowed = { always = no }
@@ -224,6 +230,7 @@ ideas = {
 				political_power_gain = -0.30
 			}
 		}
+
 
 		EFH_party_astra_mandate = {
 			picture = GER_attack_usa
@@ -316,6 +323,7 @@ ideas = {
 			}
 		}
 
+
 		EFH_bop_ef_low_idea = {
 			picture = GER_attack_usa
 			allowed = { always = no }
@@ -345,6 +353,7 @@ ideas = {
 				political_advisor_cost_factor = -0.10
 			}
 		}
+
 
 		EFH_bop_ha_low_idea = {
 			picture = GER_attack_usa
@@ -412,6 +421,7 @@ ideas = {
 			}
 		}
 
+
 		EFH_armageddon_state = {
 			picture = GER_attack_usa
 			allowed = { always = no }
@@ -425,6 +435,8 @@ ideas = {
 				weekly_manpower = 1000
 			}
 		}
+
+
 
 		EFH_joint_parasite_command_standing = {
 			picture = generic_political_support
@@ -473,6 +485,9 @@ ideas = {
 			}
 		}
 
+
+
+
 		EFH_industrial_core_surge = {
 			picture = generic_production_bonus
 			allowed = { always = no }
@@ -482,6 +497,7 @@ ideas = {
 				industrial_capacity_factory = 0.03
 			}
 		}
+
 
 		EFH_sino_efh_partnership = {
 			picture = GFX_focus_generic_diplomatic_treaty
@@ -507,6 +523,7 @@ ideas = {
 			}
 		}
 
+
 		EFH_threat_estimate_current = {
 			picture = generic_intelligence_exchange
 			allowed = { always = no }
@@ -525,6 +542,7 @@ ideas = {
 				dig_in_speed_factor = 0.10
 			}
 		}
+
 
 		EFH_canadian_listening_posts_idea = {
 			picture = GER_attack_usa
@@ -549,6 +567,8 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+
+
 
 	}
 }

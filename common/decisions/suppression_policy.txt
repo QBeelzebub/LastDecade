@@ -1,3 +1,4 @@
+
 infestation_suppression_policy = {
 
 	adopt_controlled_burns = {

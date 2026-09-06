@@ -1,5 +1,6 @@
 add_namespace = world
 
+
 country_event = {
 	id = world.1
 	title = world.1.t
@@ -20,6 +21,8 @@ country_event = {
 		add_political_power = -50
 	}
 }
+
+
 
 news_event = {
 	id = world.2
@@ -75,6 +78,7 @@ news_event = {
 	}
 }
 
+
 news_event = {
 	id = world.5
 	title = world.5.t
@@ -128,6 +132,7 @@ news_event = {
 		trigger = { tag = IRS }
 	}
 }
+
 
 news_event = {
 	id = world.8
@@ -183,6 +188,7 @@ news_event = {
 	}
 }
 
+
 news_event = {
 	id = world.11
 	title = world.11.t
@@ -236,6 +242,7 @@ news_event = {
 		trigger = { tag = IRS }
 	}
 }
+
 
 news_event = {
 	id = world.14
@@ -291,6 +298,7 @@ news_event = {
 	}
 }
 
+
 news_event = {
 	id = world.17
 	title = world.17.t
@@ -345,6 +353,7 @@ news_event = {
 	}
 }
 
+
 news_event = {
 	id = world.20
 	title = world.20.t
@@ -398,6 +407,7 @@ news_event = {
 		trigger = { tag = IRS }
 	}
 }
+
 
 news_event = {
 	id = world.30

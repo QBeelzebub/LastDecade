@@ -2,7 +2,7 @@ state={
 	id=787
 	name="STATE_787"
 	manpower = 1672000
-
+	
 	state_category = rural
 
 	history={
@@ -17,8 +17,8 @@ state={
 	}
 
 	provinces={
-		1910 2041 2084 10821
+		1910 2041 2084 10821 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -151,6 +151,7 @@ ld_last_fleet_concentration = {
 	}
 }
 
+
 ld_hunter_killer_doctrine = {
 	track = submarines
 	name = LD_SUBDOCTRINE_HUNTER_KILLER_DOCTRINE
@@ -310,6 +311,7 @@ ld_ship_launched_strike = {
 		ld_land_attack_cruise_doctrine = { strike_force_movement_org_loss = -0.10 }
 	}
 }
+
 
 ld_parasite_deep_hunt = {
 	track = submarines

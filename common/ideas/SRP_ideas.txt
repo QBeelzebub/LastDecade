@@ -118,6 +118,7 @@ ideas = {
             }
         }
 
+
         srp_civil_defense_bonus = {
             picture = generic_industry
             allowed = { always = no }

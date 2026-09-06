@@ -6,6 +6,7 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 50 y = 1800 }
 
+
 	focus = {
 		id = RSF_iron_grip
 		icon = GFX_focus_RSF_iron_grip
@@ -17,6 +18,7 @@ focus_tree = {
 			add_ideas = RSF_iron_grip_idea
 		}
 	}
+
 
 	focus = {
 		id = RSF_the_billionaires_table
@@ -91,6 +93,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = RSF_emergency_economics
 		icon = GFX_focus_generic_economy
@@ -149,6 +152,7 @@ focus_tree = {
 			set_country_flag = RSF_autarky_mode
 		}
 	}
+
 
 	focus = {
 		id = RSF_military_posture
@@ -217,6 +221,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = RSF_peoples_council
 		icon = GFX_focus_generic_war_communism
@@ -270,6 +275,7 @@ focus_tree = {
 			country_event = { id = rsf.1 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = RSF_nuclear_deterrent

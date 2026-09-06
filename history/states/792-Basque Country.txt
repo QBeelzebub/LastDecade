@@ -24,11 +24,11 @@ state={
 	}
 
 	provinces={
-		740 3735 6756 13233
+		740 3735 6756 13233 
 	}
 	manpower=928094
 	buildings_max_level_factor=1.000
 	state_category=town
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

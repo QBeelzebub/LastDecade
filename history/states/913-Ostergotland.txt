@@ -11,10 +11,10 @@ state = {
 		owner = EFH
 		add_core_of = EFH
 		victory_points = {
-			11380 1
+			11380 1 
 		}
 		victory_points = {
-			9393 2
+			9393 2 
 		}
 		buildings = {
 			infrastructure = 3
@@ -29,6 +29,6 @@ state = {
 	provinces = {
 		6311 6397 9308 9393 11289 11311 11380 11390 13095 13264 13265
 	}
-
+	
 	local_supplies = 11
 }

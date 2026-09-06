@@ -4,7 +4,7 @@ state = {
 	manpower = 1111000
 	state_category = rural
 
-	history = {
+	history = { 
 
 		owner = JAP
 		add_core_of = JAP
@@ -23,8 +23,8 @@ state = {
 	}
 
 	provinces = {
-		1167 1191 7050 7145 10055
+		1167 1191 7050 7145 10055 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

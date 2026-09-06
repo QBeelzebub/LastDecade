@@ -1,5 +1,6 @@
 add_namespace = efh_directorate
 
+
 country_event = {
 	id = efh_directorate.2
 	title = efh_directorate.2.t

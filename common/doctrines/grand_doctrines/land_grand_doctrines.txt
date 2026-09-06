@@ -87,6 +87,7 @@ ld_last_urban_network = {
 	}
 }
 
+
 ld_combined_arms_maneuver = {
 	folder = land
 	name = LD_GRAND_DOCTRINE_COMBINED_ARMS_MANEUVER
@@ -131,6 +132,7 @@ ld_precision_strike_group = {
 		{ army_core_attack_factor = 0.05 max_command_power = 15 }
 	}
 }
+
 
 ld_parasite_tide = {
 	folder = land

@@ -2,17 +2,19 @@ state = {
 	id = 147
 	name = "STATE_147"
 	manpower = 4630
-
+	
 	state_category = enclave
-
-	history = {
+	
+	history = {	
 		owner = EFH
 		add_core_of = EFH
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 1 
 		}
 
+
+		
 		victory_points = {
 			197 1
 		}
@@ -20,8 +22,8 @@ state = {
 	}
 
 	provinces = {
-		197 9158 11085
+		197 9158 11085 	
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

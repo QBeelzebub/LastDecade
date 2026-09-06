@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_comms_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -125,6 +126,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_radar_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -252,6 +254,7 @@ technologies = {
 		}
 	}
 
+
 	srp_cyber_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
@@ -352,6 +355,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_compute_1 = {
 		allow = { NOT = { is_full_parasite = yes } }

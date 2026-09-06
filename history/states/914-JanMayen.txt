@@ -10,12 +10,13 @@ state = {
 			13272 = {
 				naval_base = 1
 			}
-		}
+		}	
 	}
+
 
 	provinces = {
 		13272
 	}
-
+	
 	local_supplies=0.000
 }

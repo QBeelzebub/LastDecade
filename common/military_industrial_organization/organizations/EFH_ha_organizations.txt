@@ -1,3 +1,5 @@
+
+
 EFH_ha_land_mio = {
 	icon = GFX_idea_generic_armor_organization
 
@@ -142,6 +144,7 @@ EFH_ha_land_mio = {
 	}
 }
 
+
 EFH_ha_naval_mio = {
 	icon = GFX_idea_generic_navy_organization
 
@@ -285,6 +288,7 @@ EFH_ha_naval_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 EFH_ha_aerospace_mio = {
 	icon = GFX_idea_generic_air_organization
@@ -477,6 +481,7 @@ EFH_ha_aerospace_mio = {
 	}
 }
 
+
 EFH_ha_ordnance_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -654,6 +659,7 @@ EFH_ha_ordnance_mio = {
 	}
 }
 
+
 EFH_ha_logistics_mio = {
 	icon = GFX_idea_generic_infantry_organization
 
@@ -800,6 +806,7 @@ EFH_ha_logistics_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 EFH_ha_hyperbiology_mio = {
 	icon = GFX_idea_generic_research_organization

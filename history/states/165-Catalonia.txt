@@ -1,3 +1,4 @@
+
 state={
 	id=165
 	name="STATE_165"
@@ -6,7 +7,7 @@ state={
 	resources = {
 		coal = 2
 	}
-
+	
 	state_category = large_city
 
 	history={
@@ -33,8 +34,8 @@ state={
 	}
 
 	provinces={
-		854 872 897 3898 3899 6812 6836 6865 6927 6966 9764 9797 9824 11779
+		854 872 897 3898 3899 6812 6836 6865 6927 6966 9764 9797 9824 11779 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

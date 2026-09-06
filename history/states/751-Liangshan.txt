@@ -1,7 +1,7 @@
 state = {
 	id = 751
 	name = "STATE_751"
-
+	
 	manpower = 300000
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
@@ -10,6 +10,7 @@ state = {
 
 		owner = CHN
 		add_core_of = CHN
+
 
 		buildings = {
 			infrastructure = 1
@@ -22,6 +23,7 @@ state = {
 		victory_points = {
 			10841 3
 		}
+
 
 		1939.1.1 = {
 			buildings = {
@@ -36,5 +38,5 @@ state = {
 	provinces = {
 		2067 7294 10726 10841
 	}
-	local_supplies = 1.0
+	local_supplies = 1.0 
 }

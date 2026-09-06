@@ -1,3 +1,4 @@
+
 IRS_grant_scaled_ep = {
 	if = {
 		limit = { check_variable = { global.srp_ep_income_mult > 0 } }

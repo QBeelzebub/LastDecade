@@ -1,5 +1,6 @@
 SRP_consortium = {
 
+
 	SRP_establish_consortium = {
 		icon = generic_research_bonus
 
@@ -46,6 +47,7 @@ SRP_consortium = {
 		}
 	}
 
+
 	SRP_join_consortium = {
 		icon = generic_research_bonus
 
@@ -83,6 +85,7 @@ SRP_consortium = {
 			}
 		}
 	}
+
 
 	SRP_leave_consortium = {
 		icon = generic_political_actions

@@ -5,6 +5,7 @@ focus_tree = {
 		modifier = { add = 10  tag = SWR }
 	}
 
+
 	focus = {
 		id = SWR_council_of_twelve
 		icon = GFX_focus_SWR_council_of_twelve

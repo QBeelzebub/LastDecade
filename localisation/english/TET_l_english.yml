@@ -1,5 +1,6 @@
 ﻿l_english:
 
+
  TET_root_brood: "The Tethysic Genome"
  TET_root_brood_desc: "The genome left in the West Java shallows organises itself into a self-directing population. It is the hive's water-line, made administratively separate."
 
@@ -22,7 +23,9 @@
  TET_resonance: "Resonance with the Hive"
  TET_resonance_desc: "The brood keeps its signal aligned with the hive that seeded it. The separation is administrative, not biological. The two remain one genome speaking to itself across distance."
 
+
  autonomy_srp_integrated_brood: "Integrated Brood"
+
 
  TET_tethysic_mio: "Tethysic Brood"
  TET_tethysic_mio_desc: "The brood's whole industrial output is the Tethysic genome and nothing else. Where the hive divides its attention across many lineages, the brood pours all of it into one, and its line of organisms runs correspondingly deeper."

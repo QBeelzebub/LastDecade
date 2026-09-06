@@ -1,3 +1,4 @@
+
 state={
 	id=843
 	name="STATE_843"
@@ -15,7 +16,7 @@ state={
 
 		}
 		victory_points = {
-			5097 1
+			5097 1 
 		}
 		owner = AFR
 		add_core_of = AFR
@@ -23,7 +24,7 @@ state={
 	}
 
 	provinces={
-		5097 7944
+		5097 7944 
 	}
 	manpower=650000
 	buildings_max_level_factor=1.000

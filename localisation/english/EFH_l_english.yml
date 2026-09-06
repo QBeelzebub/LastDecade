@@ -34,6 +34,7 @@
  EFH_ha_lobby_parliament: "H&A Lobbies Parliament"
  EFH_ha_lobby_parliament_desc: "H&A spends its influence on parliamentary opinion. Nothing is offered in a room that keeps minutes."
 
+
  EFH_ha_controversial_researcher: "Controversial Hyperbio Employee"
  EFH_ha_controversial_researcher_desc: "Leads the Hyperbiology division's most sensitive work. Her relationship with the Federation's resident vagrants is a subject nobody in administration wants to put in writing."
 
@@ -292,6 +293,7 @@
  POL_communism_DEF: "the Polish Commune"
  POL_communism_ADJ: "Polish"
 
+
  EFH_panama_pressure: "The Panama Question"
  EFH_panama_pressure_desc: "The summit failed. What it left behind is a very specific question: who controls the Panama Canal, and on whose terms. The Federation opens a diplomatic channel."
 
@@ -304,8 +306,10 @@
  EFH_panama_resistance: "Operation: Pressure Valve"
  EFH_panama_resistance_desc: "EF intelligence assets are activated in the Canal Zone. Civilian resistance to American administration is quietly encouraged. The pressure is deniable. The intent is not."
 
+
  EFH_panama_cores_tt: "Asserts the Federation's claim to the Canal Zone and stokes the resistance against American rule."
  EFH_panama_resistance_tt: "Activates resistance operations in American-held Panama Canal Zone states."
+
 
  EFH_kaltkrieg_opening_posture: "Finish the kaltkrieg"
  EFH_kaltkrieg_opening_posture_desc: "The European Federation's competitive posture toward the United States did not end with the peace. It hardened into doctrine. Reaffirm it now, before the summit makes any of it awkward to say aloud."
@@ -346,6 +350,10 @@
  EFH_africa_resources: "The African Question"
  EFH_africa_resources_desc: "The Congo basin holds significant fissile material deposits. Both the Federation and the United States are aware of this. The Federation is moving first."
 
+
+
+
+
  EFH_usa_market_exclusion: "European Market Exclusion"
  EFH_usa_market_exclusion_desc: "American financial instruments have been barred from European markets. The economic pressure is sustained and targeted."
 
@@ -355,6 +363,7 @@
  EFH_congo_fissile_concessions: "Secure Congo Fissile Concessions"
  EFH_congo_fissile_concessions_desc: "European negotiators are leveraging the Federation's head start in the Congo basin to lock in preferential fissile material shipments before Washington can counter-offer."
  EFH_congo_fissile_concessions_tt: "Increases fissile material production at the capital by 3 for 180 days."
+
 
  EFH_second_space_race: "The Second Space Race"
  EFH_second_space_race_desc: "American orbital activity has expanded sharply since the summit collapsed. The Federation's review board confirms a widening capability gap. A competitive orbital programme is authorised."
@@ -374,14 +383,18 @@
  EFH_laytheo_orbital_logistics: "Laytheo: Orbital Logistics"
  EFH_laytheo_orbital_logistics_desc: "Laytheo flies as a reusable single-stage spaceplane, delivering satellites to orbit for a fraction of expendable-launch cost. Communications, observation, and the heavy lift the lunar programme needs all become routine."
 
+
  EFH_kaltkrieg_posture: "Kaltkrieg Posture"
  EFH_kaltkrieg_posture_desc: "The Federation's competitive orientation toward the United States is doctrine, not accident. Trade friction and military awareness are maintained as deliberate policy."
 
  EFH_kaltkrieg_posture_subdued: "Summit Posture"
  EFH_kaltkrieg_posture_subdued_desc: "The sharper edges of Federation policy have been pulled back for the duration of the summit track. The posture remains. Its expression has been restrained."
 
+
+
  EFH_boston_air_doctrine_review: "Boston Air Doctrine Review"
  EFH_boston_air_doctrine_review_desc: "The Boston engagement imposed losses that demand formal review. Air units are operating under interim revised procedures while the board works."
+
 
  EFH_krakow_commitment: "Krakow Operational Commitment"
  EFH_krakow_commitment_desc: "Federation ground forces are committed fully to the Krakow front. Supply, command, and operational authority are consolidated."
@@ -398,11 +411,17 @@
  EFH_canada_reclamation: "Canadian Reclamation"
  EFH_canada_reclamation_desc: "Canadian territory is being brought back under Federation administration. Manpower from newly recovered states is feeding the army. Supply lines from here to the front are stretched."
 
+
+
  EFH_spaceplane_feasibility_study: "Spaceplane Feasibility Study (Active)"
  EFH_spaceplane_feasibility_study_desc: "The runway-to-orbit feasibility study is underway. A contractor selection process has been initiated in parallel."
 
  EFH_laytheo_in_development: "Laytheo In Development"
  EFH_laytheo_in_development_desc: "The Laytheo prototype is under construction. First flight is targeted within the programme timeline."
+
+
+
+
 
  EFH_haa_aerospace_contract: "H&A Aerospace Contract"
  EFH_haa_aerospace_contract_desc: "H&A Aerospace is leading the Laytheo programme. Nobody else in Europe has the engineering depth. The political implications of that arrangement are noted and accepted."
@@ -419,11 +438,13 @@
  EFH_esa_timeline_penalty: "ESA Programme Schedule"
  EFH_esa_timeline_penalty_desc: "ESA's institutional procurement processes are proceeding at their own pace. The programme will not be rushed."
 
+
  EFH_spaceplane: "Laytheo Programme"
  EFH_spaceplane_desc: "Decisions related to the Laytheo reusable spaceplane programme."
 
  EFH_laytheo_contractor_selection: "Laytheo Programme: Select Contractor"
  EFH_laytheo_contractor_selection_desc: "The feasibility study has concluded. The review board has identified three viable contractors. A selection must be made before prototype construction can be authorised."
+
 
  efh.1.t: "Laytheo Programme: Contractor Selection"
  efh.1.d: "The review board has presented its findings. Three contractors are viable. The differences in cost, timeline, and institutional alignment are significant."
@@ -431,34 +452,42 @@
  efh.1.b: "The Airbus Consortium. Expertise in atmospheric flight, lacking in spaceflight."
  efh.1.c: "The ESA. The programme belongs to the Federation, not to a contractor."
 
+
  efh.2.t: "Laytheo: Prototype Construction Authorised"
  efh.2.d: "The selected contractor has taken delivery of the programme documentation and initial material allocations. Ground is broken on the prototype assembly facility. The timeline has formally begun."
  efh.2.a: "Noted."
 
+
  efh.3.t: "Laytheo: First Flight Confirmed"
  efh.3.d: "First runway departure at 06:14. Orbital insertion confirmed at T+14 minutes. Payload separated. Reentry burn nominal. Runway recovery at 09:41. The vehicle is intact. The programme has succeeded."
  efh.3.a: "Outstanding."
+
 
  efh.4.t: "The Second Canadian Summit"
  efh.4.d: "The second Canadian summit convenes over the disputed Eastern territories. Whether the table holds, or the talks collapse into something far worse, depends on how far the rivalry with Washington has already run."
  efh.4.a: "Convene the summit."
  efh.4.b: "Not yet. Hold on the frontier."
 
+
  efh.5.t: "The Panama Approach"
  efh.5.d: "Federation naval planners have presented options for securing Canal access. The outcome of the Kaltkrieg has improved the Federation's negotiating position considerably."
  efh.5.a: "Proceed."
+
 
  efh.6.t: "The Canadian Reclamation"
  efh.6.d: "The Kaltkrieg's resolution has opened the way to recovering full Canadian territories. A clearance campaign is required alongside the political settlement."
  efh.6.a: "Begin the reclamation."
 
+
  efh.20.t: "The 2nd Canadian summit"
  efh.20.d: "The second Canadian summit convened on 15 November to discuss the Eastern territories. The Federation proposed a referendum in both halves of Canada on which power they belong to.\n\nThe American delegation refused to table it. Six hours in, the agenda has not moved past the first item, and the Federation delegation has stopped pretending it expects it to."
  efh.20.a: "§RThen somebody in the room fires.§!"
 
+
  efh.23.t: "The Battle of Boston"
  efh.23.d: "The strike package went in against the Boston approaches at 04:10 local. American interceptors were already at altitude, in numbers the pre-strike assessment had ruled out, and the escort came apart inside four minutes.\n\nEleven aircraft did not come back. Four more were written off on the ground at Goose Bay. The Air Staff has grounded the package and convened a doctrine board. Until it reports, the wings fly interim procedures that nobody has trained on."
  efh.23.a: "Convene the board."
+
 
  EFH_summit_decision_unlocked_tt: "Summit diplomatic decisions are now available."
  EFH_intel_ops_unlocked_tt: "Intelligence operations against American interests are now authorised."
@@ -469,6 +498,7 @@
  EFH_war_deferred_tt: "Operations are held. The order can be issued later."
  EFH_canada_clearance_chain_tt: "Beckon clearance operation decisions for infested Canadian states will become available."
  EFH_esa_fissile_reduction_tt: "ESA programme management reduces fissile material costs on Laytheo-related decisions by 15."
+
 
  EFH_summit: "Summit Diplomacy"
  EFH_summit_desc: "Decisions relating to the EF-US summit process."
@@ -483,6 +513,7 @@
  efh.11.t: "The Summit Has Failed"
  efh.11.d: "The delegations have departed without an agreement. The Federation's position was not accepted. The American position was not accepted. The talks are over."
  efh.11.a: "Then we draw our conclusions."
+
 
  EFH_eter_completion: "ETER Commissioning"
  EFH_eter_completion_desc: "The European Thermonuclear Energy Reactor, Europe's answer to the international fusion programme, enters commercial operation at its primary facility near Amsterdam."
@@ -522,6 +553,8 @@
  EFH_federal_research_institute: "Federal Research Institute"
  EFH_federal_research_institute_desc: "The Federation formalises its wartime science programme. An independent agency answering directly to the Council of Ministers coordinates research across member states, allocates security clearances, and ensures the Federation's intellectual resources are deployed where they are needed most. A third research division opens."
 
+
+
  EFH_federal_mandate: "Federal Governing Mandate"
  EFH_federal_mandate_desc: "The Federation government renews its mandate with a broad package of administrative reforms, reinforcing institutional legitimacy and giving Brussels expanded fiscal coordination authority."
 
@@ -540,6 +573,12 @@
  EFH_modernization_program: "Armed Forces Modernisation"
  EFH_modernization_program_desc: "A five-year modernisation roadmap for the European Defence Force sets new standards for training, equipment, and doctrinal consistency, aligning national contingents under a unified command framework."
 
+
+
+
+
+
+
  EFH_parasite_threat_assessment: "Anomaly Assessment Programme"
  EFH_parasite_threat_assessment_desc: "Field reports describe soil contamination, unexplained organism behaviour, and atmospheric anomalies across three continents. Intelligence divisions have been tasked to compile and cross-reference. Officially, it is a precautionary measure."
 
@@ -551,6 +590,9 @@
 
  EFH_joint_anti_parasite_command: "Joint Anti-Parasite Command"
  EFH_joint_anti_parasite_command_desc: "A unified command structure for all military assets engaged in parasite response. Doctrine and logistics are standardised across Federation member states for the first time."
+
+
+
 
  EFH_joint_parasite_command_standing: "Federal Parasite Response Directorate"
  EFH_joint_parasite_command_standing_desc: "The response programmes have been consolidated into a single permanent directorate under federal authority. Assessment, monitoring, emergency mandate, and joint command answer to one body in Brussels. The continent no longer improvises its defence, it administers it."
@@ -570,6 +612,8 @@
  EFH_ha_naval_integration: "H&A Naval Integration"
  EFH_ha_naval_integration_desc: "Rather than expand state yards, the Federation hands naval procurement to H&A. The corporation's shipbuilding division accelerates the programme, at the price of further corporate leverage over the state."
 
+
+
  EFH_air_force_modernization: "Air Force Modernisation"
  EFH_air_force_modernization_desc: "New airbases across France and Germany bring Federation tactical air within range of any prospective front."
 
@@ -578,6 +622,8 @@
 
  EFH_strategic_air_doctrine: "Strategic Air Doctrine"
  EFH_strategic_air_doctrine_desc: "Strategic bombing doctrine is overhauled, incorporating stealth profiles and extended-range operations. The Federation's air power can now reach deep behind any adversary's lines."
+
+
 
  EFH_industrial_core_expansion: "Industrial Core Expansion"
  EFH_industrial_core_expansion_desc: "The ETER-powered industrial core expands outward from Holland. France and Belgium receive the first round of new plant construction, backed by fusion-grid power."
@@ -599,6 +645,10 @@
 
  EFH_industrial_core_surge: "ETER Industrial Surge"
  EFH_industrial_core_surge_desc: "Fusion-grid power drives a temporary but significant boost to construction throughput and factory output."
+
+
+
+
 
  EFH_end_of_long_peace: "End of the Long Peace"
  EFH_end_of_long_peace_desc: "The Federation enters its fourth decade as the settled power of the Atlantic world. The institutions hold, the rivalry with Washington is managed, and the long peace has made the public comfortable. Federal planners are asked to take stock of where the Federation stands while the quiet still holds."
@@ -624,6 +674,7 @@
  EFH_market_resource_agreements: "Market Resource Agreements"
  EFH_market_resource_agreements_desc: "Locking in strategic resource contracts through H&A's international supplier networks. Markets are volatile. Early commitments from reliable suppliers mean less scrambling when the crisis deepens."
  EFH_market_resource_agreements_tt: "Secures +100 £resources_strip|5, +50 £resources_strip|6, and +50 £resources_strip|2 from locked-in supplier contracts."
+
 
  EFH_long_peace_dividend: "The Long Peace Dividend"
  EFH_long_peace_dividend_desc: "Decades without a continental war have left the Federation wealthy and its factories pointed at civilian work. While the peace lasts, that surplus can be put to productive use."
@@ -651,6 +702,11 @@
  EFH_canal_zone_watch: "Canal Zone Watch"
  EFH_canal_zone_watch_desc: "Federal attention turns to the Panama Canal, the maritime chokepoint that any Atlantic contest with the United States would eventually run through. Contacts are opened, traffic is studied, and options are kept open."
  EFH_canal_zone_watch_tt: "Opens federal contacts in the Panama Canal Zone."
+
+
+
+
+
 
  EFH_the_federal_question: "The Federal Question"
  EFH_the_federal_question_desc: "Every decade the Federation asks itself the same question in a different voice: how much of itself should belong to the centre, and how much to the old nations. The coming federal contest will answer it again."
@@ -726,6 +782,14 @@
  EFH_groundwork_japan_security_tt: "The early security-led partnership matures into a hardened military pact: +25 Navy and +25 Air Experience."
  EFH_groundwork_japan_techno_tt: "The early techno-industrial partnership matures into shared R&D: an electronics research bonus."
 
+
+
+
+
+
+
+
+
  efh.60.t: "End of the Long Peace"
  efh.60.d: "For most of a generation the worst thing the Federation had to fear was the United States, and that fear had become a kind of furniture, always there, rarely thought about. The maps have not changed. The briefings have not changed. And yet the people whose job is to feel these things have begun, quietly, to feel that the long quiet is running out, and that whatever ends it will not be Washington. There is no headline for this. There is only the sense, settling over Brussels like weather, that the decade ahead will not resemble the one behind."
  efh.60.a: "The decade begins."
@@ -762,8 +826,11 @@
  EFH_pacific_framework: "The Pacific Framework"
  EFH_pacific_framework_desc: "Set the partnership with Japan on a standing institutional footing that will outlast any single government."
 
+
+
  EFH_continental_war_plan_spirit: "Continental War Plan"
  EFH_continental_war_plan_spirit_desc: "A rehearsed plan for war with the United States: better organisation and a combat edge against American forces."
+
 
  EFH_the_brittle_hegemon: "The Brittle Hegemon"
  EFH_the_brittle_hegemon_desc: "On paper the Federation is the closest thing the world has to a hegemon. Up close it is a settlement of compromises, held together over older loyalties and leaning a little harder each year on the firms that actually keep the lights on. The Long Peace is ending, and the question is no longer how powerful the Federation looks, but how much it can take."
@@ -1159,6 +1226,7 @@
  EFH_branch_parasite_study: "Branch Parasite Study"
  EFH_branch_parasite_study_desc: "The newer field organisms are not the primitive Beckon growths of 2021. They arrive already shaped against the tactics used on the last ones. The division formalises what the front already suspects: standard countermeasures have a shelf life, and doctrine must be rotated before it is compromised rather than after."
 
+
  EFH_fund_hyperbiology_major: "Fund Hyperbiology Directorate"
  EFH_fund_hyperbiology_major_desc: "Commit a major share of industrial output to a full research cycle at the expanded directorate. Larger than the founding grant, and it shows in the results."
 
@@ -1187,3 +1255,4 @@
  EFH_bolster_panama_resistance_desc: "Arm and fund the resistance to American rule in the Canal Zone (Panama, state 685). The state's own resistance climbs. When it boils over, the Federation moves to liberate Panama."
  USA_suppress_panama_resistance: "Suppress the Canal Zone"
  USA_suppress_panama_resistance_desc: "Crack down on the unrest in the Canal Zone (Panama, state 685) to keep the locks in American hands. The methods are ugly, and Europe is watching."
+

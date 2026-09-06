@@ -4,6 +4,7 @@
 add_namespace = efh
 add_namespace = efh_hna
 
+
 country_event = {
 	id = efh.1
 	title = efh.1.t
@@ -49,6 +50,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.2
 	title = efh.2.t
@@ -61,6 +63,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.3
 	title = efh.3.t
@@ -72,6 +75,7 @@ country_event = {
 		name = efh.3.a
 	}
 }
+
 
 news_event = {
 	id = efh.11
@@ -87,6 +91,7 @@ news_event = {
 	}
 }
 
+
 news_event = {
 	id = efh.10
 	major = yes
@@ -100,6 +105,7 @@ news_event = {
 		news_event = { id = efh.11 days = 30 }
 	}
 }
+
 
 news_event = {
 	id = efh.4
@@ -214,6 +220,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.5
 	title = efh.5.t
@@ -227,6 +234,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.6
 	title = efh.6.t
@@ -239,6 +247,7 @@ country_event = {
 		custom_effect_tooltip = EFH_canada_clearance_chain_tt
 	}
 }
+
 
 country_event = {
 	id = efh.20
@@ -263,6 +272,7 @@ country_event = {
 		IRS = { country_event = { id = irs.1 days = 1 } }
 	}
 }
+
 
 country_event = {
 	id = efh_hna.1
@@ -314,6 +324,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.31
 	title = efh.31.t
@@ -325,6 +336,7 @@ country_event = {
 		name = efh.31.a
 	}
 }
+
 
 country_event = {
 	id = efh.30
@@ -349,6 +361,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.32
 	title = efh.32.t
@@ -369,6 +382,7 @@ country_event = {
 	}
 }
 
+
 news_event = {
 	id = efh.33
 	title = efh.33.t
@@ -381,6 +395,7 @@ news_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.60
 	title = efh.60.t
@@ -392,6 +407,7 @@ country_event = {
 		name = efh.60.a
 	}
 }
+
 
 country_event = {
 	id = efh.61
@@ -459,6 +475,7 @@ country_event = {
 	}
 }
 
+
 news_event = {
 	id = efh.66
 	title = efh.66.t
@@ -502,6 +519,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.69
 	title = efh.69.t
@@ -538,6 +556,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.72
 	title = efh.72.t
@@ -561,6 +580,7 @@ country_event = {
 		name = efh.73.a
 	}
 }
+
 
 country_event = {
 	id = efh.74
@@ -598,6 +618,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.77
 	title = efh.77.t
@@ -621,6 +642,7 @@ country_event = {
 		name = efh.78.a
 	}
 }
+
 
 country_event = {
 	id = efh.79
@@ -657,6 +679,7 @@ news_event = {
 		name = efh.81.a
 	}
 }
+
 
 country_event = {
 	id = efh.82
@@ -695,6 +718,7 @@ news_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.85
 	title = efh.85.t
@@ -719,6 +743,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.87
 	title = efh.87.t
@@ -742,6 +767,7 @@ country_event = {
 		name = efh.88.a
 	}
 }
+
 
 country_event = {
 	id = efh.89
@@ -774,6 +800,7 @@ country_event = {
 		add_stability = 0.02
 	}
 }
+
 
 news_event = {
 	id = efh.91
@@ -811,6 +838,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.94
 	title = efh.94.t
@@ -834,6 +862,7 @@ country_event = {
 		name = efh.95.a
 	}
 }
+
 
 country_event = {
 	id = efh.96
@@ -882,6 +911,7 @@ country_event = {
 		name = efh.99.a
 	}
 }
+
 
 country_event = {
 	id = efh.100
@@ -973,6 +1003,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = efh.55
 	title = efh.55.t
@@ -1057,6 +1088,7 @@ country_event = {
 	option = { name = efh.103.a }
 }
 
+
 country_event = {
 	id = efh.104
 	title = efh.104.t
@@ -1092,6 +1124,7 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = efh.107.a }
 }
+
 
 news_event = {
 	id = efh.108

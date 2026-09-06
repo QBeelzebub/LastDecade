@@ -4,6 +4,7 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
+
 		srp_peacetime_economy = {
 			cost = 150
 			removal_cost = -1
@@ -169,6 +170,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_passive_accumulation = {
 			cost = 150
 			removal_cost = -1
@@ -305,6 +307,7 @@ ideas = {
 			}
 		}
 
+
 		KNX_hidden_reserve = {
 			cost = 150
 			removal_cost = -1
@@ -429,6 +432,7 @@ ideas = {
 	trade_laws = {
 		law = yes
 		use_list_view = yes
+
 
 		srp_open_global_market = {
 			cost = 150
@@ -596,6 +600,7 @@ ideas = {
 			}
 		}
 
+
 		IRS_measured_digestion = {
 			cost = 150
 			removal_cost = -1
@@ -717,6 +722,7 @@ ideas = {
 				}
 			}
 		}
+
 
 		KNX_complete_isolation = {
 			cost = 150

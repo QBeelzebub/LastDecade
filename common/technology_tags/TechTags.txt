@@ -196,8 +196,8 @@ technology_folders = {
 		}
 	}
 	air_techs_folder = {
-		available = {
-			NOT = { has_dlc = "By Blood Alone" }
+		available = { 
+			NOT = { has_dlc = "By Blood Alone" } 
 			is_full_parasite = no
 		}
 		ledger = air

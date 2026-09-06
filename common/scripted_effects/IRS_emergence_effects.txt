@@ -1,3 +1,4 @@
+
 SRP_recompute_infestation_derived = {
 	clamp_variable = { var = iris_infestation_level min = 0 max = 100 }
 
@@ -157,6 +158,7 @@ IRS_perform_emergence = {
 			limit = { OR = { has_country_flag = IRS_archetype_iris has_country_flag = IRS_archetype_adaptive } }
 			add_to_variable = { IRS_evolution_points = 10 }
 		}
+
 
 		if = {
 			limit = { check_variable = { IRS_lean_deep > 1 } }

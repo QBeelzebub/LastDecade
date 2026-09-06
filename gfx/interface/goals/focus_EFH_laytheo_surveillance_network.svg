@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Solar panels (dimmer gold) -->
+  <rect x="14" y="41" width="32" height="10" rx="2" fill="#c9a52a" opacity="0.65"/>
+  <rect x="82" y="41" width="32" height="10" rx="2" fill="#c9a52a" opacity="0.65"/>
+
+  <!-- Satellite body -->
+  <rect x="44" y="37" width="40" height="18" rx="3" fill="#c9a52a"/>
+
+  <!-- Dish stem -->
+  <rect x="62" y="55" width="4" height="9" fill="#c9a52a"/>
+
+  <!-- Dish (bowl facing down / earthward) -->
+  <path d="M 52 64 Q 64 78 76 64" fill="none" stroke="#c9a52a" stroke-width="3.5"/>
+
+  <!-- Radio waves (expanding downward from dish) -->
+  <path d="M 57 82 Q 64 90 71 82"  fill="none" stroke="#c9a52a" stroke-width="2.5"/>
+  <path d="M 52 90 Q 64 99 76 90"  fill="none" stroke="#c9a52a" stroke-width="2"/>
+  <path d="M 47 98 Q 64 108 81 98" fill="none" stroke="#c9a52a" stroke-width="1.5" opacity="0.65"/>
+</svg>

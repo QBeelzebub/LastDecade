@@ -2,13 +2,13 @@ state = {
 	id = 1062
 	name = "STATE_1062"
 	manpower = 546200
-
+	
 	state_category = town
-
+	
 	resources = {
-		tungsten = 30
-		aluminium = 4
-		rubber = 77
+		tungsten = 30 
+		aluminium = 4 
+		rubber = 77 
 	}
 
 	history = {
@@ -35,12 +35,12 @@ state = {
 			}
 
 		}
-
+		
 	}
 
 	provinces = {
-		7329 10227 13410 1348 4355 12199
+		7329 10227 13410 1348 4355 12199 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

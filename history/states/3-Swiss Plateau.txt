@@ -1,9 +1,11 @@
+
 state={
 	id=3
 	name="STATE_3"
 	manpower = 1216838
 
 	state_category = city
+
 
 	history={
 		owner = EFH
@@ -22,5 +24,5 @@ state={
 		663 9620 11590 11604 11623
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

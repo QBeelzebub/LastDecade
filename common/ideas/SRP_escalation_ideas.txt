@@ -1,5 +1,7 @@
+
 ideas = {
 	country = {
+
 
 		SRP_escalation_detente_idea = {
 			picture = idea_government_in_exile
@@ -22,6 +24,7 @@ ideas = {
 			}
 		}
 
+
 		SRP_escalation_standoff_idea = {
 			picture = idea_government_in_exile
 			allowed = { always = no }
@@ -31,6 +34,7 @@ ideas = {
 				stability_factor = -0.01
 			}
 		}
+
 
 		SRP_escalation_rivalry_idea = {
 			picture = idea_government_in_exile

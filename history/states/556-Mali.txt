@@ -1,3 +1,4 @@
+
 state={
 	id=556
 	name="STATE_556"
@@ -8,7 +9,7 @@ state={
 		owner = AFR
 		add_core_of = AFR
 		victory_points = {
-			4927 1
+			4927 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -18,9 +19,9 @@ state={
 	}
 
 	provinces={
-		4927 5045 8116 12794
+		4927 5045 8116 12794 
 	}
 	buildings_max_level_factor=1.000
-
+	
 	local_supplies=2.000
 }

@@ -1,17 +1,17 @@
 equipments = {
 	infantry_equipment = {
 		year = 2015
-
+	
 		is_archetype = yes
-		picture = archetype_infantry_equipment
+		picture = archetype_infantry_equipment		
 		is_buildable = no
 		type = infantry
 		group_by = archetype
-
+		
 		interface_category = interface_category_land
-
+		
 		active = yes
-
+		
 		reliability = 0.9
 		maximum_speed = 4
 
@@ -26,7 +26,7 @@ equipments = {
 		air_attack = 0
 
 		lend_lease_cost = 1
-
+		
 		build_cost_ic = 2
 		resources = {
 			steel = 1
@@ -34,14 +34,14 @@ equipments = {
 	}
 	infantry_equipment0 = {
 		year = 2015
-
+	
 		archetype = infantry_equipment
 		priority = 05
 		visual_level = 0
 	}
 	infantry_equipment1 = {
 		year = 2018
-
+	
 		archetype = infantry_equipment
 		parent = infantry_equipment0
 		priority = 10
@@ -60,12 +60,12 @@ equipments = {
 
 	infantry_equipment2 = {
 		year = 2022
-
+	
 		archetype = infantry_equipment
 		parent = infantry_equipment1
 		priority = 10
 		visual_level = 2
-
+		
 		defense = 28
 		breakthrough = 4
 
@@ -73,11 +73,11 @@ equipments = {
 		hard_attack = 1.5
 		ap_attack = 5
 		air_attack = 0
-
+		
 		build_cost_ic = 2.5
 		resources = {
 			steel = 2
 		}
-
+		
 	}
 }

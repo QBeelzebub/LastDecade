@@ -1,3 +1,4 @@
+
 srp_infestation_growth = {
 	name = "RULE_SRP_INFESTATION_GROWTH"
 	group = "RULE_GROUP_SRP_LAST_DECADE"

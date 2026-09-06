@@ -391,6 +391,7 @@ srp_public_confidence = {
         }
     }
 
+
     EFH_continental_threat_briefing = {
         icon = generic_political_actions
 

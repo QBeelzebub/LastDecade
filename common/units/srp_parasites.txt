@@ -1,5 +1,6 @@
 sub_units = {
 
+
 	rupter_pack = {
 		abbreviation = "RUP"
 		sprite = infantry
@@ -157,6 +158,7 @@ sub_units = {
 			primitive_reeker_equipment = 50
 		}
 	}
+
 
 	primitive_summoner = {
 		abbreviation = "SUM"
@@ -353,6 +355,7 @@ sub_units = {
 		}
 	}
 
+
 	haunter_titan = {
 		abbreviation = "HAU"
 		sprite = heavy_armor
@@ -392,6 +395,7 @@ sub_units = {
 			srp_bolster_membrane = 8
 		}
 	}
+
 
 	adapted_burrower = {
 		abbreviation = "ABR"
@@ -1291,6 +1295,7 @@ sub_units = {
 		}
 	}
 
+
 	carrier_brood = {
 		abbreviation = "CAR"
 		sprite = infantry
@@ -1330,6 +1335,7 @@ sub_units = {
 			carrier_equipment = 30
 		}
 	}
+
 
 	overseer_caller = {
 		abbreviation = "OVR"

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Gear teeth -->
+  <g fill="#c9a52a">
+    <rect x="57" y="20" width="14" height="22"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(45 64 64)"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(90 64 64)"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(135 64 64)"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(180 64 64)"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(225 64 64)"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(270 64 64)"/>
+    <rect x="57" y="20" width="14" height="22" transform="rotate(315 64 64)"/>
+  </g>
+
+  <!-- Gear body -->
+  <circle cx="64" cy="64" r="30" fill="#c9a52a"/>
+  <!-- Center hole -->
+  <circle cx="64" cy="64" r="14" fill="#0d1623"/>
+  <!-- Axle -->
+  <circle cx="64" cy="64" r="6" fill="#c9a52a"/>
+</svg>

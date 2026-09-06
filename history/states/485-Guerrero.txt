@@ -1,13 +1,15 @@
+
 state={
 	id=485
 	name="STATE_485"
 	manpower = 1598311
-
+	
 	state_category = rural
 
 	resources={
 		steel=4
 	}
+
 
 	history={
 		owner = USA
@@ -31,8 +33,9 @@ state={
 	}
 
 	provinces={
-		4887 5066 8032 10730 10832
+		4887 5066 8032 10730 10832 
 	}
+	
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

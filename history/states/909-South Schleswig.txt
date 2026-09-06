@@ -3,11 +3,13 @@ state = {
 	name = "STATE_909"
 	manpower = 152520
 	state_category = rural
-
+	
 	history = {
 
 		owner = EFH
 		add_core_of = EFH
+
+
 
 		victory_points = {
 			317 3
@@ -17,12 +19,12 @@ state = {
 			infrastructure = 3
 			arms_factory = 1
 		}
-
+		
 	}
 
 	provinces = {
 		317 3231 11366
  	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

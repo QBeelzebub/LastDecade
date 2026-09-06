@@ -1,3 +1,4 @@
+
 USA_armed_forces = {
 	icon = "GFX_idea_generic_army_war_college"
 	army_attack_factor = USA_mil_army_attack_factor

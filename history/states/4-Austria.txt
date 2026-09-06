@@ -4,18 +4,18 @@ state = {
 	manpower = 2297983
 
 	resources = {
-		oil = 2
+		oil = 2 
 	}
-
+	
 	state_category = large_city
-
+	
 	history = {
 
 		owner = EFH
 		add_core_of = EFH
 
 		victory_points = {
-			11666 30
+			11666 30 
 		}
 
 		victory_points = {
@@ -40,8 +40,8 @@ state = {
 	}
 
 	provinces = {
-		704 732 3718 6552 6690 6723 6739 9527 11651 11666
+		704 732 3718 6552 6690 6723 6739 9527 11651 11666 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

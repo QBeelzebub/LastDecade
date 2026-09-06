@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		owner = OCE
+		owner = OCE 
 		add_core_of = OCE
 
 		buildings = {
@@ -23,8 +23,8 @@ state = {
 	}
 
 	provinces = {
-		13080
+		13080 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

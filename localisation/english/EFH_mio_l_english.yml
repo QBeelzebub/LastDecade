@@ -246,6 +246,7 @@
  EFH_ha_naval_t3a: "Convoy Escort Doctrine"
  EFH_ha_naval_t3a_desc: "Destroyer-specific optimisation for the convoy escort role. H&A Naval equips the EF's surface escorts with the sensor reach and attack systems needed to stop parasite raiding before it reaches the convoy lanes."
 
+
  EFH_ha_naval_t3c: "Carrier Air Operations"
  EFH_ha_naval_t3c_desc: "Airwing endurance and maintenance optimisation for the fleet carrier. The carrier becomes the decisive operational instrument H&A Naval designed it to be."
 
@@ -358,6 +359,11 @@
  EFH_ha_log_initial: "Supply Chain Infrastructure"
  EFH_ha_hyper_initial: "Standing Research Division"
 
+
+
+
+
+
   EFH_HA_hyperbiology_founded: "Found H&A Hyperbiology"
   EFH_HA_hyperbiology_founded_desc: "H&A responds to the SF6 case by establishing a dedicated research subdivision: Hyperbiology. Publicly framed as environmental science, the division's real mandate is to produce rigorous data on the beckon organisms as biological sources of atmospheric SF6. Whatever the court decides, H&A will have the science on its side."
 
@@ -373,11 +379,14 @@
   EFH_HA_hyperbiology_initial_findings_desc: "Hyperbiology reports: The first Primitive Beckons have emerged. Black stem, green bulb resembling almost a tree. Concentrated in equatorial zones they are fragile but spread infestation around them. Fire incinerated them in minutes. Surely they cannot become an issue."
   EFH_HA_hyperbiology_initial_findings_tt: "Hyperbiology's early research output establishes the division's scientific credibility."
 
+
+
   EFH_ha_hyper_phase1_root: "Atmospheric Survey Division"
   EFH_ha_hyper_phase1_root_desc: "Hyperbiology's founding work is methodical and unsexy: atmospheric sampling, emissions cataloguing, and the slow construction of a baseline dataset for beckon-adjacent zones. The work is dull now and will matter later."
 
   EFH_ha_hyper_beckon_survey: "Beckon Emission Cataloguing"
   EFH_ha_hyper_beckon_survey_desc: "Hyperbiology teams operating near active beckon clusters have produced the first systematic measurement of SF6 emissions attributable to biological sources rather than industrial ones. The data holds up, and it does nothing for H&A's position. If the case goes public, Hyperbiology will have been the first institution to document this."
+
 
   efh_hna.3.t: "European Federation Files Atmospheric Suit"
   efh_hna.3.d: "The European Federation's judicial authority has filed suit against H&A Corporation, citing anomalous concentrations of sulfur hexafluoride in several EF territories. The affected areas coincide closely with mapped beckon cluster sites, but EF lawyers attribute the contamination to industrial sources within H&A's manufacturing network. The case is significant. H&A's legal exposure is real."
@@ -528,3 +537,4 @@
  EFH_mio_funding_desc: "Decisions related to funding H&A Hyperbiology research."
  EFH_fund_hyperbiology: "Allocate Industrial Budget to Hyperbiology"
  EFH_fund_hyperbiology_desc: "Redirect a major portion of our GDP to fund Hyperbiology operations."
+

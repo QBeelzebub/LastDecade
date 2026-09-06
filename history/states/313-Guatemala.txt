@@ -1,3 +1,4 @@
+
 state={
 	id=313
 	name="STATE_313"
@@ -5,7 +6,7 @@ state={
 	resources={
 		chromium=4
 	}
-
+	
 	state_category = town
 
 	history={
@@ -14,7 +15,7 @@ state={
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 2 
 			air_base = 1
 			10886 = {
 				naval_base = 1
@@ -24,14 +25,15 @@ state={
 			}
 		}
 		victory_points = {
-			10886 3
+			10886 3 
 		}
 
 	}
 
 	provinces={
-		4991 10842 10886 13085
+		4991 10842 10886 13085 
 	}
+	
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

@@ -3,7 +3,7 @@ state = {
 	name = "STATE_921"
 	manpower = 141502
 	state_category = rural
-
+	
 	history = {
 		owner = EFH
 		add_core_of = EFH
@@ -11,7 +11,7 @@ state = {
 			6151 1
 		}
 		buildings = {
-			industrial_complex = 1
+			industrial_complex = 1 
 			infrastructure = 3
 		}
 	}

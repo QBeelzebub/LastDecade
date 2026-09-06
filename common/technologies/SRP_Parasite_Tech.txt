@@ -7,6 +7,7 @@ technologies = {
 		research_cost = 1
 		start_year = 2021
 
+
 		enable_building = {
 			building = beckon_cluster
 			level = 10
@@ -24,6 +25,7 @@ technologies = {
 
 		research_cost = 1
 		start_year = 2020
+
 
 		enable_building = {
 			building = land_facility
@@ -716,6 +718,7 @@ technologies = {
 		}
 	}
 
+
 	devourer_emergence = {
 		allow = {
 			is_parasite_nation = yes
@@ -837,6 +840,7 @@ technologies = {
 		}
 	}
 
+
 	primitive_yelloweye_tech = {
 		allow = {
 			is_parasite_nation = yes
@@ -911,6 +915,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	pure_aerial_parasites = {
 		allow = {
@@ -1041,6 +1046,7 @@ technologies = {
 			position = { x = 14 y = -4 }
 		}
 	}
+
 
 	deterrent_parasites = {
 		allow = {
@@ -1192,6 +1198,7 @@ technologies = {
 		}
 	}
 
+
 	IRS_vitreous_unlock_host = {
 		allow = { always = no }
 		research_cost = 1
@@ -1247,6 +1254,7 @@ technologies = {
 		enable_subunits = { magistrate }
 		enable_equipments = { magistrate_equipment_1 }
 	}
+
 
 	EFH_contained_beckon_cluster_tech = {
 		allow = { always = no }

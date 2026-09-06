@@ -1,5 +1,6 @@
 add_namespace = irs_transit
 
+
 country_event = {
 	id = irs_transit.1
 	title = irs_transit.1.t

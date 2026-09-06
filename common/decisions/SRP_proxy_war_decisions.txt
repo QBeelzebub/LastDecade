@@ -1,3 +1,4 @@
+
 SRP_political_interference_category = {
 
 	USA_stoke_ef_separatism = {
@@ -187,6 +188,7 @@ SRP_political_interference_category = {
 		}
 	}
 
+
 	EFH_establish_atlantic_network = {
 		priority = 56
 		icon = generic_political_actions
@@ -333,6 +335,7 @@ SRP_political_interference_category = {
 		}
 	}
 }
+
 
 SRP_escalation_category = {
 

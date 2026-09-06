@@ -2,9 +2,9 @@ state = {
 	id = 1065
 	name = "STATE_1065"
 	manpower = 201100
-
+	
 	state_category = town
-
+	
 	resources = {
 	}
 
@@ -27,12 +27,12 @@ state = {
 			}
 
 		}
-
+		
 	}
 
 	provinces = {
-		13408
+		13408 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

@@ -1,5 +1,6 @@
 equipment_modules = {
 
+
 	srp_turboshaft_1 = {
 		abbreviation = "ts1"
 		category = srp_helicopter_engine
@@ -55,6 +56,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_rotor_single = {
 		abbreviation = "rsg"
 		category = srp_rotor_configuration
@@ -96,6 +98,7 @@ equipment_modules = {
 			air_range = 0.15
 		}
 	}
+
 
 	srp_helo_chaingun = {
 		abbreviation = "hcg"
@@ -177,6 +180,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_helo_dipping_sonar = {
 		abbreviation = "dsn"
 		category = nav_bomber_weapon
@@ -225,6 +229,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_helo_recon_pod = {
 		abbreviation = "hrc"
 		category = recon_camera
@@ -244,6 +249,7 @@ equipment_modules = {
 		}
 	}
 
+
 	srp_helo_troop_bay = {
 		abbreviation = "htb"
 		category = srp_helo_transport
@@ -257,6 +263,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 	}
+
 
 	srp_helo_longbow_radar = {
 		abbreviation = "lbr"

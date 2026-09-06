@@ -13,6 +13,8 @@ state={
 		owner = CHN
 		add_core_of = CHN
 
+
+
 		victory_points = {
 			10750 1
 		}
@@ -24,5 +26,5 @@ state={
 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

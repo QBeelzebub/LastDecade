@@ -4,7 +4,7 @@ state = {
 	resources = {
 		tungsten = 2
 	}
-
+	
 	state_category = rural
 
 	history = {
@@ -29,5 +29,5 @@ state = {
 	manpower = 130000
 	buildings_max_level_factor = 1.000
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

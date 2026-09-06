@@ -1,3 +1,4 @@
+
 SRP_manifest_european_pact = {
 	name = SRP_manifest_european_pact
 	description = SRP_manifest_european_pact_desc

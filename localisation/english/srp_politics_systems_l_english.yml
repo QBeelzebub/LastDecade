@@ -84,6 +84,7 @@
  srp_desperate_enlistment: "Desperate Enlistment"
  srp_desperate_enlistment_desc: "With losses mounting and options exhausted, the state lowers every recruitment threshold. The untrained, the unfit, and those previously exempted are pressed into service. Numbers are enormous. Quality is not."
 
+
  IRS_passive_accumulation: "Passive Accumulation"
  IRS_passive_accumulation_desc: "The hive directs biomass toward building its infrastructure base. Beckons spread deeper, biomass pools accumulate reserves, and the nexus network expands. Military production is secondary for now."
 
@@ -95,6 +96,7 @@
 
  IRS_apex_consumption: "Apex Consumption"
  IRS_apex_consumption_desc: "All biomass is consumed in the production of combat forms. Infrastructure is stripped and stockpiles burned. The military machine runs at maximum capacity. The hive is spending what it built."
+
 
  IRS_dormant_emergence: "Dormant Emergence"
  IRS_dormant_emergence_desc: "The swarm moves slowly and with minimal aggression, conserving energy and maintaining a defensive posture. Organisation is reduced, but the hive holds its ground well."
@@ -108,6 +110,7 @@
  IRS_total_swarm_state: "Total Swarm State"
  IRS_total_swarm_state_desc: "The Iris commits the full weight of its consciousness to military coordination. Every form acts as one. The strain on the hive mind is severe. The output justifies it."
 
+
  IRS_measured_digestion: "Measured Digestion"
  IRS_measured_digestion_desc: "The hive draws from its territory carefully, sustaining long-term supply efficiency without over-consuming. A patient approach."
 
@@ -119,6 +122,7 @@
 
  IRS_ecological_dominion: "Ecological Dominion"
  IRS_ecological_dominion_desc: "The Iris asserts full ecological authority over its territory. The ground is no longer being competed for."
+
 
  KNX_hidden_reserve: "Hidden Reserve"
  KNX_hidden_reserve_desc: "Knox keeps its capabilities concealed. No flag is raised, no territory claimed publicly. Political capital accumulates quietly while the rest of the world remains uncertain what it is dealing with."
@@ -132,6 +136,7 @@
  KNX_open_campaign: "Open Campaign"
  KNX_open_campaign_desc: "The Vagrant declares openly and moves decisively."
 
+
  KNX_minimal_strain: "Minimal Strain"
  KNX_minimal_strain_desc: "Only a core force of proven strains is maintained. Numbers are limited and cohesion is exceptional. A force this small only works because none of it is wasted."
 
@@ -143,6 +148,7 @@
 
  KNX_emergency_spawning: "Emergency Spawning"
  KNX_emergency_spawning_desc: "With reserves drawn low, Knox accelerates spawning beyond sustainable rates. Numbers surge dramatically at the cost of cohesion and internal stability. A gamble the Vagrant may not be able to undo."
+
 
  KNX_complete_isolation: "Complete Isolation"
  KNX_complete_isolation_desc: "No contact with outside powers. Knox shares nothing and receives nothing. Research suffers from the absence of external input, but the faction remains perfectly hidden."
@@ -159,6 +165,8 @@
  modifier_production_speed_beckon_cluster_factor: "Beckon Cluster Production Speed"
  modifier_production_speed_biomass_pool_factor: "Biomass Pool Production Speed"
  modifier_production_speed_nexus_hive_factor: "Nexus Hive Production Speed"
+
+
 
  srp_panic_tt_any: "Public Panic: [?ROOT.public_panic] / 1000"
  srp_panic_tt_100: "Public Panic: [?ROOT.public_panic] / 1000 (requires 100+)"
@@ -213,6 +221,7 @@
  EFH_federalize_parasite_response: "Federalise the Parasite Response"
  EFH_federalize_parasite_response_desc: "Brussels consolidates the assessment, monitoring, emergency, and command structures into a single permanent continental body under direct federal authority. The response stops being a set of programmes and becomes an institution. Shifts the balance of power toward the federal government."
 
+
  EFH_declare_armageddon: "Declare Armageddon"
  EFH_declare_armageddon_desc: "The Federal Union formally designates the parasite crisis as an existential threat to human civilisation and declares a state of permanent emergency. All federal institutions are subordinated to the war effort.\n\nRequires: public panic at 800 or above. At least 5 major world cities at 50% infestation or beyond."
 
@@ -255,6 +264,8 @@
  USA_nuclear_war_shock: "Nuclear Shock"
  USA_nuclear_war_shock_desc: "Cities are gone. The government is scrambling for answers. The public is in panic and the political class is tearing itself apart over who to blame and what to do next."
 
+
+
  world.2.t: "Unusual Reports from Ile-de-France"
  world.2.d: "Metro infrastructure in multiple arrondissements has gone dark. Municipal maintenance teams sent to investigate have not returned. H&A Containment is reviewing satellite imagery. The readings are not consistent with known outbreak signatures."
  world.2.a: "Flag it. Send a team."
@@ -269,6 +280,7 @@
  world.4.d: "The last organised transmission from central Paris came from a field hospital in the 12th arrondissement. Aerial observation since then has recorded only canopy spread across the riverbanks and the upper floors of Haussmann buildings. The perimeter is still held. What it is containing is no longer a city."
  world.4.a: "The loss is recorded."
  world.4.b: "A deep site. It will hold long after the stone wears."
+
 
  world.5.t: "Anomalous Readings Along the Thames"
  world.5.d: "Environmental monitoring stations on the Thames embankment have returned unexplained biological readings for the third consecutive week. Underground infrastructure surveys in several districts have been suspended pending investigation. The reports have not yet reached public channels."
@@ -285,6 +297,7 @@
  world.7.a: "Document everything received."
  world.7.b: "A relay node now. More efficient than the original."
 
+
  world.8.t: "Seismic Anomaly Below Brandenburg"
  world.8.d: "The Federal Institute for Geosciences has flagged subsurface anomalies beneath the Tiergarten district and the Spree riverbed. The readings do not match geological records. Field assessment teams are being assembled. H&A Structural Division has been informed."
  world.8.a: "Get eyes underground."
@@ -299,6 +312,7 @@
  world.10.d: "An emergency session of the Bundestag voted to formally designate central Berlin as a hazard zone beyond recovery threshold. Personnel have been evacuated. Canopy growth is visible from satellite imagery above the former governmental district. The Tiergarten is unrecognizable."
  world.10.a: "History will record this day."
  world.10.b: "Let it grow."
+
 
  world.11.t: "Infrastructure Failures in Moscow's Outer Districts"
  world.11.d: "Russian state media has not acknowledged the reports. H&A intelligence has confirmed that maintenance crews sent to the Lyublino and Pechatniki districts have been unreachable for eleven days. Rail access to the outer ring road has been suspended without announced reason."
@@ -315,6 +329,7 @@
  world.13.a: "We are watching an end."
  world.13.b: "The capital feeds the root structure well."
 
+
  world.14.t: "Shinjuku District Readings Disputed"
  world.14.d: "The Tokyo Metropolitan Government has classified internal reports regarding biological anomalies in the Shinjuku and Shibuya ward perimeters. H&A's Tokyo monitoring team reports that foot traffic patterns changed three weeks before the classification order."
  world.14.a: "Pressure for transparency now, while there is still time."
@@ -330,6 +345,7 @@
  world.16.a: "The loss is immense. We keep moving."
  world.16.b: "A node this size will anchor regional expansion for years."
 
+
  world.17.t: "CDC Preliminary Alert: New York"
  world.17.d: "The U.S. Centers for Disease Control has issued a restricted preliminary alert regarding biological anomalies in the Staten Island and Queens boroughs. The alert cites unexplained root-like growth in storm drain infrastructure. H&A received a copy through secondary channels."
  world.17.a: "Get ahead of this before the press does."
@@ -344,6 +360,7 @@
  world.19.d: "The United Nations General Assembly has gone into indefinite recess. A final communique was released at 14:00 calling for a coordinated global response. Aerial observation of Manhattan shows growth extending above the roofline of buildings across the lower island. There is no further communication from within the cordon."
  world.19.a: "Then the world responds without a centre."
  world.19.b: "The infrastructure holds. The people were the variable."
+
 
  world.20.t: "Unusual Growth Near Northern Beijing"
  world.20.d: "Intelligence sources indicate that construction teams working in the northern district have encountered growth structures inconsistent with any known biological category. The Chinese government has placed a news blackout on the region. H&A has two assets in Beijing. One has not reported in nine days."
@@ -373,6 +390,7 @@
  world.32.d: "The reports from the Bight coast stopped contradicting each other three days ago, which is worse than when they disagreed. Seven states of coastline and interior have stopped answering. Reconnaissance flights bring back imagery of structured growth, green-lit and spreading, and columns of people walking out of it who do not all arrive. The capitals abroad have sent condolences and observers. Whatever this is, it begins here, and no one else is coming."
  world.32.a: "Mobilise. Now."
  world.32.b: "Contain the panic first."
+
 
  srp_moon.1.t: "Lunar Programme Launched"
  srp_moon.1.d: "The procurement tranche is cleared and the programme directors have their mandate. Engineers are being pulled from every parallel project. The lunar programme is open. Whether it outlasts the crisis is a question for whoever survives it."
@@ -414,6 +432,14 @@
  srp_moon.11.t: "Rival Lunar Base Complete"
  srp_moon.11.d: "Our programme is still active. Theirs is finished. They have established a permanent lunar base and are already drawing operational benefit from it. We are behind. The gap in research capacity, resource access, and strategic positioning will widen until we close this."
  srp_moon.11.a: "Accelerate. There is no alternative."
+
+
+
+
+
+
+
+
 
  SRP_lunar_anomaly_insight: "Anomaly Analysis: Ongoing"
  SRP_lunar_anomaly_insight_desc: "The deep-core sample from the lunar crater wall does not match any known geological layer. The composition analysis is running in parallel with active programme operations. Whatever it is, studying it is producing unexpected side results across multiple research disciplines."
@@ -655,6 +681,7 @@
  srp_consortium.16.d: "A Consortium member has completed development of tactical nuclear gun batteries. Yield calibration data and warhead integration specs have been shared, accelerating our own nuclear artillery research."
  srp_consortium.16.a: "A grim but necessary development."
 
+
  LD_containment_failure: "Containment Failure"
  LD_containment_failure_desc: "Contested states: §R[?LD_contested_states|0]§!\nStanding: [GetLDContainmentTier]\n\nTwo or more states are past the threshold at which the infestation seeds its own neighbours. The ministry has ninety days to bring that count back under two. If it does not, the standing falls another step, and the count starts again from where it is now."
 
@@ -780,3 +807,4 @@
 
  generic_ironwall_t3: "Saturation Fire"
  generic_ironwall_t3_desc: "Ironwall Munitions combines its range and production improvements into a unified fire support doctrine. Artillery concentrations get larger and last longer."
+

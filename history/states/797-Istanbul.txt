@@ -2,14 +2,14 @@ state={
 	id=797
 	name="STATE_797"
 	provinces={
-		9833 11829
+		9833 11829 
 	}
 	manpower = 1042276
 	resources={
 		chromium=45
 		steel = 10
 	}
-
+	
 	state_category = city
 
 	history= {
@@ -39,5 +39,5 @@ state={
 		}
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

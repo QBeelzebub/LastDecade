@@ -288,6 +288,7 @@
  ld_parasite_deep_deployment_ops_ld_parasite_survivability_routing: "Survivability Routing"
  ld_parasite_deep_deployment_ops_ld_parasite_deep_wave_timing: "Deep Wave Timing"
 
+
  LD_SUBDOCTRINE_PARASITE_SHROUD_AMBUSH: "Shroud Ambush"
  LD_SUBDOCTRINE_PARASITE_SHROUD_AMBUSH_DESC: "Wraith flights hold concealment until contact, then burst-fire and re-form before a response can be brought to bear."
  ld_parasite_shroud_ambush_ld_parasite_shroud_positioning: "Shroud Positioning"
@@ -578,3 +579,4 @@
  infestation_crisis.3.t: "There Will Be No Treaty"
  infestation_crisis.3.d: "Territory we had listed as occupied has been struck from the national register. Not contested, not administered under duress. Gone. The survey office has stopped printing maps that include it.\n\nThere is no negotiation that gives this ground back. No conference, no settlement, no line drawn on a table in some capital. What the parasites hold long enough, they keep, and the only instrument that reverses it is an army."
  infestation_crisis.3.a: "Then we take it back the only way left."
+

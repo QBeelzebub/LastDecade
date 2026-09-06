@@ -5,14 +5,14 @@ state = {
 	resources = {
 		coal = 2
 	}
-
+	
 	state_category = rural
 
 	history = {
-
+	
 		owner = RSF
 		add_core_of = RSF
-
+		
 		buildings = {
 			infrastructure = 2
 			12446 = {
@@ -25,5 +25,5 @@ state = {
 	}
 
 	provinces = { 1322 1820 12446 }
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

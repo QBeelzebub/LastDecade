@@ -6,7 +6,7 @@ state = {
 	resources = {
 		tungsten = 6
 	}
-
+	
 	state_category = rural
 
 	history = {
@@ -22,9 +22,9 @@ state = {
 				naval_base = 1
 			}
 		}
-
+		
 		victory_points = {
-			2210 5
+			2210 5 
 		}
 
 		victory_points = {
@@ -40,7 +40,7 @@ state = {
 	provinces = {
 		2182 2210 2225 5202 12953 13175 13286 13288
 	}
-
+	
 	buildings_max_level_factor = 1.000
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

@@ -1,3 +1,4 @@
+
 SRP_western_alliance_template = {
 	name = SRP_western_alliance_name
 	manifest = SRP_manifest_western_alliance

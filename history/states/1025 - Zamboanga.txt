@@ -4,9 +4,9 @@ state = {
 	manpower = 295467
 
 	resources = {
-		coal = 2
+		coal = 2 
 	}
-
+	
 	state_category = pastoral
 
 	history = {
@@ -27,12 +27,12 @@ state = {
 		victory_points = {
 			1421 2
 		}
-
+		
 	}
 
 	provinces = {
-		1421 4399 7360 7389 7417 10184
+		1421 4399 7360 7389 7417 10184 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

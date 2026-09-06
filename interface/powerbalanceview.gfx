@@ -62,13 +62,14 @@ spriteTypes = {
 		name = "GFX_bop_bulb"
 		textureFile = "gfx//interface/bop/bop_bulb.dds"
 		noOfFrames = 3
-	}
+	}	
 
 	spriteType = {
 		name = "GFX_bop_bulb_L"
 		textureFile = "gfx//interface/bop/bop_bulb_L.dds"
 		noOfFrames = 3
 	}
+
 
 	spriteType = {
 		name = "GFX_bop_bar_frame"
@@ -245,6 +246,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/bop/bop_background.dds"
 	}
 
+
+
+
 	spriteType = {
 		name = "GFX_bop_DEN_welfare_side"
 		texturefile = "gfx/interface/bop/bop_DEN_welfare_side.dds"
@@ -277,6 +281,7 @@ spriteTypes = {
 		name = "GFX_bop_DEN_annexation_improved_side"
 		texturefile = "gfx/interface/bop/bop_DEN_annexation_improved_side.dds"
 	}
+
 
 	spriteType = {
 		name = "GFX_bop_FIN_bad_rubble_side"
@@ -453,6 +458,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/bop/bop_FIN_leino_bad_improved_side.dds"
 	}
 
+
 	spriteType = {
 		name = "GFX_bop_FIN_prince_wolfgang_good_side"
 		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_good_side.dds"
@@ -469,7 +475,7 @@ spriteTypes = {
 		name = "GFX_bop_FIN_prince_wolfgang_bad_improved_side"
 		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_bad_improved_side.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_bop_CZE_army_readiness_good_side"
 		texturefile = "gfx/interface/bop/bop_CZE_army_readiness_good_side.dds"
@@ -486,6 +492,13 @@ spriteTypes = {
 		name = "GFX_bop_CZE_army_readiness_bad_improved_side"
 		texturefile = "gfx/interface/bop/bop_CZE_army_readiness_bad_improved_side.dds"
 	}
+
+
+
+
+
+
+
 
 	spriteType = {
 		name = "GFX_PRC_bop_left_side"

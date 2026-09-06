@@ -1,3 +1,5 @@
+
+
 USA_lockheed_mio = {
 	icon = GFX_idea_generic_air_organization
 
@@ -170,6 +172,7 @@ USA_lockheed_mio = {
 	}
 }
 
+
 USA_boeing_mio = {
 	icon = GFX_idea_generic_air_organization
 
@@ -297,6 +300,7 @@ USA_boeing_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 USA_northrop_mio = {
 	icon = GFX_idea_generic_air_organization
@@ -427,6 +431,7 @@ USA_northrop_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 USA_raytheon_mio = {
 	icon = GFX_idea_generic_infantry_organization
@@ -566,6 +571,7 @@ USA_raytheon_mio = {
 	}
 }
 
+
 USA_general_dynamics_mio = {
 	icon = GFX_idea_generic_armor_organization
 
@@ -696,6 +702,7 @@ USA_general_dynamics_mio = {
 		ai_will_do = { base = 5 }
 	}
 }
+
 
 USA_hii_mio = {
 	icon = GFX_idea_generic_navy_organization

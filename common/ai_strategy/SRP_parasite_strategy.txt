@@ -192,6 +192,9 @@ IRS_atlantic_crossing_strategy = {
 	ai_strategy = { type = area_priority  id = africa         value = 300 }
 }
 
+
+
+
 IRS_phase1_africa_aggression = {
 	allowed = { original_tag = IRS }
 	enable = {
@@ -498,6 +501,8 @@ SRP_major_power_navy = {
 	}
 }
 
+
+
 EFH_home_seas = {
 	allowed = { original_tag = EFH }
 	enable = { always = yes }
@@ -565,6 +570,7 @@ RSF_home_seas = {
 	ai_strategy = { type = naval_dominance  id = 88   value = 60  }
 	ai_strategy = { type = naval_dominance  id = 79   value = 60  }
 }
+
 
 SRP_human_amphibious_counterattack = {
 	allowed = {
@@ -669,6 +675,7 @@ AFR_frontline_strategy = {
 		value = -200
 	}
 }
+
 
 EFH_personality = {
 	allowed = { original_tag = EFH }

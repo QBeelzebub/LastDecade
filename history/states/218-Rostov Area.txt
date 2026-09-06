@@ -1,15 +1,16 @@
+
 state={
 	id=218
 	name="STATE_218"
 	manpower = 1501076
-
+	
 	state_category = city
 
 	history={
 		owner = RSF
 		add_core_of = RSF
 		victory_points = {
-			9417 15
+			9417 15 
 		}
 		buildings = {
 			infrastructure = 3
@@ -23,8 +24,8 @@ state={
 	}
 
 	provinces={
-		585 6445 9417 9430 11418 11434 11450 11559
+		585 6445 9417 9430 11418 11434 11450 11559 
 	}
 
-	local_supplies=3.0
+	local_supplies=3.0 
 }

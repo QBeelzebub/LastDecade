@@ -2,7 +2,7 @@ state={
 	id=759
 	name="STATE_759"
 	provinces={
-		1698 2074 4947 5736
+		1698 2074 4947 5736  
 	}
 	manpower=70000
 	buildings_max_level_factor=1.000
@@ -11,6 +11,8 @@ state={
 
 		owner = CHN
 		add_core_of = CHN
+
+
 
 		victory_points = {
 			2074 1
@@ -22,5 +24,5 @@ state={
 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

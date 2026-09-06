@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_fusion_economy = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -155,6 +156,7 @@ technologies = {
 		}
 	}
 
+
 	srp_precision_mfg = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.0
@@ -251,6 +253,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_logistics_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
@@ -356,6 +359,7 @@ technologies = {
 		}
 	}
 
+
 	srp_fissile_extraction_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
@@ -454,6 +458,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_fusion_reactor_1 = {
 		allow = { NOT = { is_full_parasite = yes } }

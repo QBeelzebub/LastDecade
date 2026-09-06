@@ -6,6 +6,7 @@ technologies = {
 		}
 		research_cost = 1
 
+
 		enable_equipments = {
 			basic_parasite_equipment_1
 			pure_parasite_equipment_1

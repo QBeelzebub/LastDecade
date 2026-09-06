@@ -18,11 +18,11 @@ state={
 			favorable_approach = 13013
 		}
 	}
-
+	
 	provinces={
-		13013
+		13013 
 	}
 	impassable = yes
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

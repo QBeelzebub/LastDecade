@@ -1,5 +1,6 @@
 buildings = {
 
+
 	infrastructure = {
 		base_cost = 6000
 		icon_frame = 3
@@ -81,8 +82,8 @@ buildings = {
 			province_max = 1
 		}
 		tags = { supply_building }
-	}
-
+	}	
+	
 	rail_way = {
 		base_cost = 170
 		per_level_extra_cost = 130
@@ -93,7 +94,7 @@ buildings = {
 			province_max = 1
 		}
 	}
-
+	
 	naval_facility = {
 		show_on_map = 1
 		base_cost = 12000
@@ -125,7 +126,7 @@ buildings = {
 		always_shown = yes
 		base_cost = 5000
 		per_level_extra_cost = 1000
-		spawn_point = naval_base_spawn
+		spawn_point = naval_base_spawn 
 		only_costal = yes
 		is_port = yes
 		icon_frame = 6
@@ -150,7 +151,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			province_max = 10
-		}
+		}		
 	}
 
 	coastal_bunker = {
@@ -191,7 +192,7 @@ buildings = {
 			enemy_attrition = 0.1
 			state_production_speed_bunker_factor = 0.1
 			state_production_speed_coastal_bunker_factor = 0.1
-		}
+		}		
 	}
 
 	dockyard = {
@@ -212,6 +213,7 @@ buildings = {
 		}
 	}
 
+	
 	anti_air_building = {
 		show_on_map = 3
 		base_cost = 2500
@@ -266,7 +268,7 @@ buildings = {
 				max_fuel_building = 100.0
 			}
 		}
-
+		
 		level_cap = {
 			shares_slots = yes
 		}
@@ -307,6 +309,7 @@ buildings = {
 		}
 	}
 
+
 	rocket_site = {
 		show_on_map = 1
 		base_cost = 6400
@@ -325,7 +328,7 @@ buildings = {
 			exclusive_with = mega_gun_emplacement
 		}
 	}
-
+	
 	naval_supply_hub = {
 		show_on_map = 1
 		base_cost = 12500
@@ -346,7 +349,7 @@ buildings = {
 			province_max = 1
 		}
 	}
-
+	
 	naval_headquarters = {
 		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }
 		show_on_map = 1
@@ -373,10 +376,10 @@ buildings = {
 			naval_leader_module
 		}
 	}
-
+	
 	nuclear_reactor = {
 		hide_if_missing_tech = yes
-		missing_tech_loc = {
+		missing_tech_loc = { 
 			localization_key = SP_BUILDING_MISSING_PROJECT
 			PROJECT = sp_nuclear_reactor
 		}
@@ -405,7 +408,7 @@ buildings = {
 
 	nuclear_reactor_heavy_water = {
 		hide_if_missing_tech = yes
-		missing_tech_loc = {
+		missing_tech_loc = { 
 			localization_key = SP_BUILDING_MISSING_PROJECT
 			PROJECT = sp_nuclear_reactor
 		}
@@ -434,7 +437,7 @@ buildings = {
 	commercial_nuclear_reactor = {
 		dlc_allowed = { has_dlc = Gotterdammerung }
 		hide_if_missing_tech = yes
-		missing_tech_loc = {
+		missing_tech_loc = { 
 			localization_key = SP_BUILDING_MISSING_PROJECT
 			PROJECT = sp_commercial_nuclear_reactor
 		}
@@ -445,7 +448,7 @@ buildings = {
 		affects_energy = yes
 		value = 10
 		infrastructure_construction_effect = yes
-
+		
 		country_modifiers = {
 			modifiers = {
 				nuclear_production_factor = 3
@@ -550,7 +553,7 @@ buildings = {
 		is_buildable = no
 		affects_energy = yes
 		need_detection = no
-		detecting_intel_type = civilian
+		detecting_intel_type = civilian 
 		province_damage_modifiers = { flooded }
 		only_display_if_exists = yes
 		special_icon = GFX_dam_icon_small
@@ -577,7 +580,7 @@ buildings = {
 		is_buildable = no
 		affects_energy = yes
 		need_detection = no
-		detecting_intel_type = civilian
+		detecting_intel_type = civilian 
 		province_damage_modifiers = { flooded }
 		only_display_if_exists = yes
 		special_icon = GFX_dam_icon_small
@@ -640,7 +643,7 @@ buildings = {
 		}
 		show_modifier = yes
 		state_modifiers = {
-
+			
 		}
 	}
 
@@ -663,10 +666,11 @@ buildings = {
 		}
 		show_modifier = yes
 		state_modifiers = {
-
+			
 		}
 	}
-
+	
+	
 	energy_infrastructure = {
 		base_cost = 12000
 		icon_frame = 30
@@ -686,7 +690,7 @@ buildings = {
 			local_factory_energy_consumption_per_infrastructure = -0.075
 		}
 	}
-
+	
 	industrial_infrastructure = {
 		base_cost = 12000
 		icon_frame = 31

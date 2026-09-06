@@ -1,5 +1,6 @@
 add_namespace = knx
 
+
 country_event = {
 	id = knx.1
 	title = knx.1.t
@@ -77,6 +78,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = knx.2
 	title = knx.2.t
@@ -93,6 +95,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = knx.3
 	title = knx.3.t
@@ -105,6 +108,7 @@ country_event = {
 		EFH = { add_ideas = EFH_first_vagrant_info }
 	}
 }
+
 
 country_event = {
 	id = knx.4
@@ -123,6 +127,7 @@ country_event = {
 		name = knx.4.a
 	}
 }
+
 
 country_event = {
 	id = knx.5

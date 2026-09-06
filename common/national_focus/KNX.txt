@@ -174,6 +174,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = KNX_loyal_strain_cultivation
 		icon = GFX_focus_KNX_loyal_strain
@@ -214,6 +215,7 @@ focus_tree = {
 			add_manpower = 20000
 		}
 	}
+
 
 	focus = {
 		id = KNX_hive_construction_phase_2
@@ -267,6 +269,7 @@ focus_tree = {
 			custom_effect_tooltip = KNX_appalachian_claim_tt
 		}
 	}
+
 
 	focus = {
 		id = KNX_vagrant_goes_to_canada

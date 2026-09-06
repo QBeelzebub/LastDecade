@@ -6,7 +6,7 @@ state = {
 	resources = {
 		coal = 4
 	}
-
+	
 	state_category = small_island
 
 	history = {
@@ -29,6 +29,7 @@ state = {
 		strategic_province_location = {
 		 	defensible_coastline = 11932
 		}
+		 		 
 
 		strategic_province_location = {
 			defensible_coastline = 10124
@@ -41,12 +42,16 @@ state = {
 		strategic_province_location = {
 			defensive_chokepoint = 11932
 		}
+		
 
 	}
+
+
+
 
 	provinces = {
-		1123 7115 10124 11932
+		1123 7115 10124 11932 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

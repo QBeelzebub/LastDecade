@@ -6,6 +6,7 @@ technologies = {
 		}
 		research_cost = 1
 
+
 		enable_equipments = {
 			infantry_equipment0
 			srp_warhead_component_1

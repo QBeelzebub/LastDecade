@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1071"
 	resources = {
 	}
-
+	
 	state_category = small_island
 
 	history = {
@@ -27,10 +27,10 @@ state = {
 	}
 
 	provinces = {
-		1237 4247 12120
+		1237 4247 12120 
 	}
 	manpower = 21876
 	buildings_max_level_factor = 1.000
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

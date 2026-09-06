@@ -2,7 +2,7 @@ state={
 	id=1054
 	name="STATE_1054"
 	resources={
-
+		
 	}
 
 	history={
@@ -27,5 +27,5 @@ state={
 	manpower = 216435
 	state_category = small_island
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

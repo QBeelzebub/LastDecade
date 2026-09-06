@@ -82,6 +82,7 @@ ld_signal_denial_air_war = {
 	}
 }
 
+
 ld_air_superiority_campaign = {
 	folder = air
 	name = LD_GRAND_DOCTRINE_AIR_SUPERIORITY_CAMPAIGN
@@ -125,6 +126,7 @@ ld_interdiction_strike_doctrine = {
 		{ air_strategic_bomber_bombing_factor = 0.15 air_mission_xp_gain_factor = 0.05 }
 	}
 }
+
 
 ld_parasite_air_tide = {
 	folder = air

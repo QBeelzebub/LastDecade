@@ -2,7 +2,7 @@ state = {
 	id = 506
 	name = "STATE_506"
 	manpower = 423605
-
+	
 	state_category = town
 
 	resources = {
@@ -24,7 +24,7 @@ state = {
 				naval_base = 1
 			}
 		}
-
+		
 		victory_points = {
 			12994 10
 		}
@@ -35,5 +35,5 @@ state = {
 		5146 5171 12994 13301 13302 13304
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

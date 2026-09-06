@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" fill="#0d1623"/>
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Reassessment dossier -->
+  <path d="M29 23 H72 L96 47 V101 H29 Z" fill="#c9a52a"/>
+  <polygon points="72,23 72,47 96,47" fill="#0d1623"/>
+  <rect x="38" y="58" width="47" height="5" fill="#0d1623" opacity="0.72"/>
+  <rect x="38" y="71" width="35" height="5" fill="#0d1623" opacity="0.72"/>
+
+  <!-- Intelligence reassessment -->
+  <path d="M37 89 C47 77 78 77 88 89 C78 101 47 101 37 89 Z" fill="#0d1623"/>
+  <circle cx="63" cy="89" r="9" fill="#c9a52a"/>
+  <circle cx="63" cy="89" r="4" fill="#0d1623"/>
+</svg>

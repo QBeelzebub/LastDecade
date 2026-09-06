@@ -1,3 +1,4 @@
+
 state={
 	id=189
 	name="STATE_189"
@@ -26,10 +27,10 @@ state={
 	}
 
 	provinces={
-		3337 3354 6314 9483 9499 9731
+		3337 3354 6314 9483 9499 9731 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 	manpower=697100
 	buildings_max_level_factor=1.000
 	state_category=town

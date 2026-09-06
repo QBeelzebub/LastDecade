@@ -1,3 +1,4 @@
+
 EFH_directorate_clear_posture_effect = {
 	if = {
 		limit = { check_variable = { EFH_directorate_posture = 1 } }

@@ -1,3 +1,4 @@
+
 IRS_spawn_proto_supreme_hiroshima = {
 	if = {
 		limit = { check_variable = { global.srp_crisis_enabled > 0 } }

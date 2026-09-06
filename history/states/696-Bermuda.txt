@@ -17,10 +17,10 @@ state={
 			}
 		}
 	}
-
+	
 	provinces={
-		13010
+		13010 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

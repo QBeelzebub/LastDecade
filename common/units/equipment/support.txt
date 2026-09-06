@@ -12,9 +12,9 @@ equipments = {
 			support
 		}
 		group_by = archetype
-
+		
 		interface_category = interface_category_land
-
+		
 		reliability = 0.8
 
 		lend_lease_cost = 1

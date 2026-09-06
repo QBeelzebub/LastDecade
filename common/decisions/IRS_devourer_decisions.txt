@@ -27,6 +27,7 @@ IRS_devourer_operations = {
 		ai_will_do = { base = 15 }
 	}
 
+
 	IRS_establish_colony_pacific = {
 		icon = GFX_decision_generic_political_actions
 

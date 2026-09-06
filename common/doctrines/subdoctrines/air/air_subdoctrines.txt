@@ -151,6 +151,7 @@ ld_proto_supreme_delivery_planning = {
 	}
 }
 
+
 ld_bvr_air_combat = {
 	track = fighter_aircraft
 	name = LD_SUBDOCTRINE_BVR_AIR_COMBAT
@@ -310,6 +311,7 @@ ld_maritime_strike_doctrine = {
 		ld_fleet_target_allocation = { air_escort_efficiency = 0.05 }
 	}
 }
+
 
 ld_parasite_yelloweye_swarm = {
 	track = fighter_aircraft

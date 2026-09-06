@@ -1,5 +1,6 @@
 technologies = {
 
+
 	srp_destroyer_hull_tech_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 
@@ -113,6 +114,7 @@ technologies = {
 		}
 	}
 
+
 	srp_carrier_hull_tech_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 
@@ -213,6 +215,7 @@ technologies = {
 		}
 	}
 
+
 	srp_submarine_hull_tech_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 
@@ -311,6 +314,7 @@ technologies = {
 			base = 2
 		}
 	}
+
 
 	srp_battleship_hull_tech_1 = {
 		allow = { NOT = { is_full_parasite = yes } }

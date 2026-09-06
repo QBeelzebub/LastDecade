@@ -2,13 +2,15 @@ state = {
 	id = 56
 	name = "STATE_56"
 	manpower = 2058467
-
+	
 	state_category = large_city
 
 	history = {
 
 		owner = EFH
 		add_core_of = EFH
+
+
 
 		victory_points = {
 			241 5
@@ -38,7 +40,7 @@ state = {
 			}
 			air_base = 3
 		}
-
+		
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -51,8 +53,8 @@ state = {
 	}
 
 	provinces = {
-		241 247 309 336 3234 9281 11233 11264 11360 11388
+		241 247 309 336 3234 9281 11233 11264 11360 11388 
 	}
 
-	local_supplies = 14.0
+	local_supplies = 14.0 
 }

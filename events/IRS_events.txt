@@ -1,5 +1,6 @@
 add_namespace = irs
 
+
 country_event = {
 	id = irs.1
 	title = irs.1.t
@@ -12,6 +13,7 @@ country_event = {
 		add_political_power = 100
 	}
 }
+
 
 country_event = {
 	id = irs.2

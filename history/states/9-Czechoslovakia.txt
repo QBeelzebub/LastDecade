@@ -6,9 +6,9 @@ state={
 		steel = 5
 		coal = 6
 	}
-
+	
 	state_category = large_city
-
+	
 	history={
 		owner = EFH
 		add_core_of = EFH
@@ -25,8 +25,8 @@ state={
 	}
 
 	provinces={
-		445 494 583 3462 6418 6440 6592 9414 9421 9429 9541 9569 11542 11556
+		445 494 583 3462 6418 6440 6592 9414 9421 9429 9541 9569 11542 11556 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

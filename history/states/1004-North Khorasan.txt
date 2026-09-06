@@ -1,3 +1,4 @@
+
 state={
 	id=1004
 	name="STATE_1004"
@@ -15,5 +16,5 @@ state={
 		7573 1521 10351
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

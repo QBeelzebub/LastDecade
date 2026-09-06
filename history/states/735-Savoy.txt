@@ -11,6 +11,7 @@ state = {
 		owner = EFH
 		add_core_of = EFH
 
+
 		victory_points = {
 			778 1
 		}
@@ -24,17 +25,18 @@ state = {
 
 			9909 = {
 				naval_base = 2
-			}
+			}	
+
 
 		}
 
 	}
 
 	provinces = {
-		764 778 3764 3959 6609 6975 9603 9736 9745 9909 11573
+		764 778 3764 3959 6609 6975 9603 9736 9745 9909 11573 
 	}
-
+	
 	buildings_max_level_factor = 1.000
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

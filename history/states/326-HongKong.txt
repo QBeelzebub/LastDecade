@@ -10,7 +10,7 @@ state=
 		add_core_of = EFH
 
 		victory_points = {
-			10062 3
+			10062 3 
 		}
 		buildings = {
 			infrastructure = 3
@@ -25,5 +25,5 @@ state=
 		10062
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

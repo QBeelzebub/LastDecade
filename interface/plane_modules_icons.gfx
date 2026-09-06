@@ -1,5 +1,11 @@
 spriteTypes = {
 
+
+
+
+
+
+
 	spriteType = {
 		name = "GFX_EMI_light_mg_2x"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_light_mg_2_icon.dds"
@@ -431,6 +437,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+
 	spriteType = {
 		name = "GFX_EMI_fighter_weapon"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"
@@ -547,10 +554,14 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+
+
 	spriteType = {
 		name = "GFX_EMSI_plane_role_module"
 		textureFile = "gfx/interface/equipmentdesigner/planes/plane_role_module.dds"
 	}
+
+
 
 	spriteType = {
 		name = "GFX_plane_niche_icon_strip"
@@ -567,6 +578,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/Niche_icon_strip_glow.dds"
 		noOfFrames = 8
 	}
+
+
+
+
+
+
 
 	spriteType = {
 		name = "GFX_EMI_jet_engine_axial_1x"

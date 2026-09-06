@@ -1,3 +1,4 @@
+
 upgrades = {
 
 	tank_nsb_engine_upgrade = {
@@ -20,7 +21,7 @@ upgrades = {
 			15 = {
 				has_tech = srp_mbt_chassis3
 			}
-			18 = {
+			18 = { 
 				has_tech = srp_mbt_chassis4
 			}
 		}
@@ -65,7 +66,7 @@ upgrades = {
 
 		resource_cost_thresholds = {
 			5 = {
-				steel = 1
+				steel = 1 
 			}
 			10 = {
 				steel = 1
@@ -110,12 +111,12 @@ upgrades = {
 		cost = land
 		maximum_speed = 0.04
 		build_cost_ic = 0.05
-	}
+	}	
 	ac_engine_upgrade = {
 		max_level = 5
 		cost = land
 		maximum_speed = 0.02
-	}
+	}	
 	tank_reliability_upgrade = {
 		max_level = 5
 		cost = land

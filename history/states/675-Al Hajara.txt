@@ -2,7 +2,7 @@ state = {
 	id = 675
 	name = "STATE_675"
 	manpower = 222093
-
+	
 	state_category = wasteland
 
 	history = {
@@ -16,12 +16,12 @@ state = {
 
 		buildings = {
 		}
-
+		
 	}
-
+	
 	provinces = {
 		10744 12879 13368
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

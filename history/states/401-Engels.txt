@@ -1,10 +1,11 @@
+
 state = {
 	id = 401
 	name = "STATE_401"
 	manpower = 309530
-
+	
 	state_category = rural
-
+	
 	resources = {
 		steel = 10
 		tungsten = 10
@@ -22,8 +23,8 @@ state = {
 	}
 
 	provinces = {
-		410 452 499 3490 3551 6339 6430 6473 6502 6574 9337 9447 9473 9577 11321 11421 11458
+		410 452 499 3490 3551 6339 6430 6473 6502 6574 9337 9447 9473 9577 11321 11421 11458 
 	}
 
-	local_supplies = 7.0
+	local_supplies = 7.0 
 }

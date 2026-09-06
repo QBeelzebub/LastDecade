@@ -1,3 +1,4 @@
+
 division_template = {
 	name = "EF Infantry Brigade"
 	regiments = {
@@ -136,6 +137,7 @@ instant_effect = {
 		efficiency = 60
 	}
 
+
 	add_equipment_production = {
 		equipment = {
 			type = srp_mbt_chassis1
@@ -165,7 +167,7 @@ instant_effect = {
 		progress = 0.50
 		efficiency = 60
 	}
-
+	
 	add_equipment_production = {
 		equipment = {
 			type = srp_strategic_bomber_1_airframe

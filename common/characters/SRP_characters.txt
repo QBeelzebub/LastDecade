@@ -229,6 +229,7 @@ characters = {
         }
     }
 
+
     IRS_vagrant_4 = {
         name = IRS_VAGRANT_4_NAME
         can_be_captured = no
@@ -449,6 +450,7 @@ characters = {
             desc = POL_RESTORATION_COUNCIL_DESC
         }
     }
+
 
     IRS_sci_land = {
         name = "Dr. Robert Hayes"

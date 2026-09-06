@@ -1,14 +1,15 @@
+
 state={
 	id=476
 	name="STATE_476"
 	manpower = 1663331
-
+	
 	state_category = rural
 
 	resources={
 		oil=8
 	}
-
+	
 	history={
 		owner = USA
 		add_core_of = USA
@@ -28,8 +29,9 @@ state={
 	}
 
 	provinces={
-		2021 8236 10773 10889 12712
+		2021 8236 10773 10889 12712 
 	}
+	
 
-	local_supplies=8.0
+	local_supplies=8.0 
 }

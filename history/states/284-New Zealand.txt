@@ -1,13 +1,14 @@
+
 state={
 	id=284
 	name="STATE_284"
 	manpower = 899836
-
+	
 	resources = {
 		coal = 2
 	}
 	state_category = city
-
+	
 	history={
 		owner = OCE
 		add_core_of = OCE
@@ -29,5 +30,5 @@ state={
 		1801 1814 4804 7692 7783 7826 12604 12617
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }

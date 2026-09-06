@@ -6,7 +6,7 @@ state=
 	resources = {
 		rubber = 2
 	}
-
+	
 	state_category = town
 
 	history = {
@@ -20,11 +20,11 @@ state=
 			industrial_complex = 1
 			air_base = 1
 		}
-		victory_points = {
-			5010 5
+		victory_points = { 
+			5010 5 
 		}
-		victory_points = {
-			8036 1
+		victory_points = { 
+			8036 1 
 		}
 
 	}
@@ -33,5 +33,5 @@ state=
 		5010 8036 10734 13239
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }

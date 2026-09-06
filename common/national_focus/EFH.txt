@@ -19,6 +19,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 2000 }
 
+
 	focus = {
 		id = EFH_end_of_long_peace
 		icon = GFX_goal_generic_national_unity
@@ -46,6 +47,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = EFH_federal_state_of_the_union
@@ -266,6 +268,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_continental_defense_review
 		icon = GFX_goal_generic_army_doctrines
@@ -458,6 +461,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = EFH_atlantic_rivalry_doctrine
@@ -677,6 +681,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_alignment_initiative
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -846,6 +851,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_federation_on_the_eve
 		icon = GFX_goal_generic_national_unity
@@ -964,6 +970,7 @@ focus_tree = {
 			news_event = { id = efh.81 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_the_brittle_hegemon
@@ -1174,6 +1181,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_federal_health_security
 		icon = GFX_goal_generic_national_unity
@@ -1251,6 +1259,8 @@ focus_tree = {
 			country_event = { id = efh.93 days = 1 }
 		}
 	}
+
+
 
 	focus = {
 		id = EFH_kaltkrieg_opening_posture
@@ -1414,6 +1424,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_kaltkrieg_doctrine_reform
 		icon = GFX_focus_EFH_kaltkrieg_doctrine_reform
@@ -1471,6 +1482,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = EFH_sphere_retention_japan
@@ -1554,6 +1566,7 @@ focus_tree = {
 			custom_effect_tooltip = EFH_africa_resources_tt
 		}
 	}
+
 
 	focus = {
 		id = EFH_panama_pressure
@@ -1642,6 +1655,7 @@ focus_tree = {
 			country_event = { id = efh.90 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_second_space_race
@@ -1773,6 +1787,7 @@ focus_tree = {
 			country_event = { id = efh.76 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_HA_hyperbiology_founded
@@ -1941,6 +1956,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_expand_hyperbiology
 		icon = GFX_focus_EFH_expand_hyperbiology
@@ -2036,6 +2052,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_terms_of_appointment
 		icon = GFX_focus_EFH_terms_of_appointment
@@ -2067,6 +2084,7 @@ focus_tree = {
 			}
 		}
 	}
+
 
 	focus = {
 		id = EFH_HNA_independence
@@ -2134,6 +2152,8 @@ focus_tree = {
 			custom_effect_tooltip = EFH_HNA_lunar_programme_approved_tt
 		}
 	}
+
+
 
 	focus = {
 		id = EFH_eter_completion
@@ -2225,6 +2245,7 @@ focus_tree = {
 			5 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
 	}
+
 
 	focus = {
 		id = EFH_research_coordination
@@ -2383,6 +2404,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_industrial_procurement_strategy
 		icon = GFX_goal_generic_positive_trade_relations
@@ -2494,6 +2516,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_federal_mandate
 		icon = GFX_goal_generic_national_unity
@@ -2603,6 +2626,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_parasite_threat_assessment
 		icon = GFX_focus_EFH_parasite_threat_assessment
@@ -2711,6 +2735,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_federal_cordon_doctrine
 		icon = GFX_goal_generic_defence
@@ -2784,6 +2809,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_modernization_program
 		icon = GFX_goal_generic_military_sphere
@@ -2803,6 +2829,7 @@ focus_tree = {
 			custom_effect_tooltip = EFH_military_focus_tt
 		}
 	}
+
 
 	focus = {
 		id = EFH_board_reorientation
@@ -2831,6 +2858,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_thermonuclear_priority
 		icon = GFX_focus_EFH_nuclear_deterrence_posture
@@ -2850,6 +2878,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_logistics_militarization
 		icon = GFX_focus_EFH_logistics_militarization
@@ -2867,6 +2896,7 @@ focus_tree = {
 			EFH_bop_very_low_ha_effect = yes
 		}
 	}
+
 
 	focus = {
 		id = EFH_governance_suspension
@@ -2894,6 +2924,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_rtg_penetrator_program
 		icon = GFX_goal_generic_army_artillery2
@@ -2918,6 +2949,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_integration_agreement
 		icon = GFX_focus_EFH_integration_agreement
@@ -2933,6 +2965,7 @@ focus_tree = {
 			country_event = { id = efh.30 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_dispatcher_identified
@@ -2990,6 +3023,7 @@ focus_tree = {
 			country_event = { id = efh.101 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_naval_modernization
@@ -3059,6 +3093,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_air_force_modernization
 		icon = GFX_goal_generic_air_doctrine
@@ -3126,6 +3161,7 @@ focus_tree = {
 			country_event = { id = efh.95 days = 2 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_industrial_core_expansion
@@ -3235,6 +3271,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_global_positioning
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -3254,6 +3291,7 @@ focus_tree = {
 			EFH_bop_very_low_ef_effect = yes
 		}
 	}
+
 
 	focus = {
 		id = EFH_pacific_partnership
@@ -3351,6 +3389,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = EFH_south_american_outreach
 		icon = GFX_goal_generic_positive_trade_relations
@@ -3418,6 +3457,7 @@ focus_tree = {
 			news_event = { id = efh_geo.3 days = 1 }
 		}
 	}
+
 
 	focus = {
 		id = EFH_beijing_channel

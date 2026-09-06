@@ -1,3 +1,4 @@
+
 operation_LD_seed_sleeper = {
 	icon = GFX_operations_infiltrate_civilian_govt
 	map_icon = GFX_operations_infiltrate_civilian_govt_map

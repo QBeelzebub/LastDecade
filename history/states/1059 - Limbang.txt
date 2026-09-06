@@ -7,9 +7,9 @@ state = {
 
 	resources = {
 		oil = 1
-		coal = 2
+		coal = 2 
 	}
-
+	
 	state_category = rural
 
 	history = {
@@ -26,12 +26,13 @@ state = {
 			infrastructure = 1
 
 		}
-
+		
 	}
 
 	provinces = {
-		10269 13377 13378
+		10269 13377 13378 
 	}
 
-	local_supplies = 0.0
+	local_supplies = 0.0 
 }
+

@@ -6,8 +6,9 @@ state={
 		chromium=60
 		coal = 4
 	}
-
+	
 	state_category = city
+
 
 	history={
 		owner = AFR
@@ -24,16 +25,16 @@ state={
 			}
 		}
 		victory_points = {
-			1468 3
+			1468 3 
 		}
 		victory_points = {
-			4696 1
+			4696 1 
 		}
 	}
 
 	provinces={
-		1468 1494 1833 4556 4584 4696 7576 7900 8178
+		1468 1494 1833 4556 4584 4696 7576 7900 8178 
 	}
 
-	local_supplies=0.0
+	local_supplies=0.0 
 }
