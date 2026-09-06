@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Rank chevrons -->
+  <polygon points="40,70 64,54 88,70 88,79 64,63 40,79" fill="#c9a52a"/>
+  <polygon points="40,56 64,40 88,56 88,65 64,49 40,65" fill="#c9a52a"/>
+  <polygon points="40,42 64,26 88,42 88,51 64,35 40,51" fill="#c9a52a"/>
+</svg>

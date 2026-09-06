@@ -1,0 +1,55 @@
+
+SRP_naval_dominance = {
+	objective_type = naval_dominance
+
+	available_for = {
+		AFR ASI CHN EFH IRS KNX OCE RSF SAC SWR USA JAP
+	}
+
+	min_priority = 50
+	max_priority = 85
+}
+
+SRP_naval_invasion_support = {
+	objective_type = naval_invasion_support
+
+	available_for = {
+		AFR ASI CHN EFH IRS KNX OCE RSF SAC SWR USA JAP
+	}
+
+	min_priority = 60
+	max_priority = 90
+}
+
+SRP_convoy_raiding = {
+	objective_type = convoy_raiding
+
+	available_for = {
+		IRS KNX
+	}
+
+	min_priority = 10
+	max_priority = 22
+}
+
+SRP_coast_defense = {
+	objective_type = coast_defense
+
+	available_for = {
+		AFR ASI CHN EFH OCE RSF SAC SWR USA JAP
+	}
+
+	min_priority = 15
+	max_priority = 30
+}
+
+SRP_convoy_protection = {
+	objective_type = convoy_protection
+
+	available_for = {
+		AFR ASI CHN EFH OCE RSF SAC SWR USA JAP
+	}
+
+	min_priority = 12
+	max_priority = 25
+}

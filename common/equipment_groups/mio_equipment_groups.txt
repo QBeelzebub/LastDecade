@@ -235,6 +235,14 @@ mio_cat_eq_all_infantry_and_support_equipment = {
 		infantry_equipment
 		support_equipment
 		srp_fpv_drone_equipment
+		srp_truck_equipment
+	}
+}
+
+mio_cat_eq_srp_ifv = {
+	equipment_type = {
+		srp_ifv_equipment
+		srp_wheeled_ifv_equipment
 	}
 }
 

@@ -802,6 +802,8 @@ script_enum_equipment_bonus_type = {
 	IRS_devourer_hull_2
 	IRS_abyssant_hull
 	IRS_abyssant_hull_1
+	IRS_colossant_hull
+	IRS_colossant_hull_1
 	srp_fpv_drone_equipment
 	srp_fpv_drone_equipment_1
 	srp_fpv_drone_equipment_2

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Cargo box and cab -->
+  <rect x="26" y="48" width="44" height="28" fill="#c9a52a"/>
+  <polygon points="70,76 70,54 84,54 92,64 92,76" fill="#c9a52a"/>
+  <polygon points="73,58 82,58 87,64 73,64" fill="#0d1623"/>
+
+  <!-- Wheels -->
+  <circle cx="40" cy="79" r="7" fill="#c9a52a"/>
+  <circle cx="40" cy="79" r="3" fill="#0d1623"/>
+  <circle cx="78" cy="79" r="7" fill="#c9a52a"/>
+  <circle cx="78" cy="79" r="3" fill="#0d1623"/>
+
+  <!-- Road -->
+  <rect x="22" y="89" width="76" height="3" fill="#c9a52a" opacity="0.55"/>
+</svg>

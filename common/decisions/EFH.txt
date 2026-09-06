@@ -21,7 +21,7 @@ EFH_spaceplane = {
 		}
 
 		ai_will_do = {
-			base = 5
+			base = 30
 		}
 	}
 }

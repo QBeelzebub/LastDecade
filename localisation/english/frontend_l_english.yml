@@ -1,0 +1,18 @@
+﻿l_english:
+
+ FE_DIFFICULTY_CUSTOM: "Configure custom game rules."
+ FE_DIFFICULTY_CUSTOM_BTN: "Custom Game Rules"
+ FE_DIFFICULTY: "Difficulty"
+ FE_DIFFICULTY_VERY_EASY: "Containment"
+ FE_DIFFICULTY_VERY_EASY_TOOLTIP: "Quarantine lines hold. The network is contained, and humanity's institutions still function at near full capacity."
+ FE_DIFFICULTY_EASY: "Breach"
+ FE_DIFFICULTY_EASY_TOOLTIP: "Containment is failing in isolated sectors. Resistance still holds the advantage, but cracks are showing."
+ FE_DIFFICULTY_NORMAL: "Open War"
+ FE_DIFFICULTY_NORMAL_TOOLTIP: "Neither side holds a clear advantage. The war for the world is fought on even terms."
+ FE_DIFFICULTY_HARD: "Collapse"
+ FE_DIFFICULTY_HARD_TOOLTIP: "The network is spreading faster than it can be contained. Humanity's institutions are buckling under the strain."
+ FE_DIFFICULTY_VERY_HARD: "Telotic"
+ FE_DIFFICULTY_VERY_HARD_TOOLTIP: "WIP, an alternative more brutal story."
+ FE_DIFFICULTY_UNKNOWN: "Secret Difficulty"
+ FE_DIFFICULTY_MODIFIER_PLAYER_TOOLTIP: "\n\nPlayer:\n$PLAYERMOD$"
+ FE_DIFFICULTY_MODIFIER_AI_TOOLTIP: "\n\nAI:\n$AIMOD$"

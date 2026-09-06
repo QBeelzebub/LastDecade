@@ -13,7 +13,20 @@ ideas = {
 				army_org_factor = 0.05
 				army_morale_factor = 0.10
 				max_planning = 0.10
-				supply_consumption_factor = -0.10
+
+				supply_consumption_factor = -0.70
+				supply_node_range = 1.50
+				no_supply_grace = 336
+				out_of_supply_factor = -0.50
+
+				weekly_manpower = 1000
+
+				factory_energy_consumption = -1.0
+
+				political_power_gain = 2
+
+				ai_focus_aggressive_factor = 1.0
+				ai_focus_defense_factor = -0.5
 			}
 		}
 
@@ -83,11 +96,11 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				army_attack_factor = 0.10
-				army_defence_factor = 0.10
-				army_org_factor = 0.08
-				army_speed_factor = 0.06
-				army_morale_factor = 0.08
+				army_attack_factor = 1.00
+				army_defence_factor = 1.00
+				army_org_factor = 0.5
+				army_speed_factor = 0.4
+				army_morale_factor = 0.5
 			}
 		}
 

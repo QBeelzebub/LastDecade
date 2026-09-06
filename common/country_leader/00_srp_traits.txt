@@ -1,9 +1,12 @@
 leader_traits = {
 	IRS_Leader_Trait = {
 		random = no
-		resistance_growth = 1.5
-		resistance_target = 1.5
+		resistance_growth = 0.5
+		resistance_target = 0.5
 		surrender_limit = -10.0
+		max_command_power = 300
+		command_power_gain = 0.8
+		ai_focus_aggressive_factor = 1.5
 	}
 
 

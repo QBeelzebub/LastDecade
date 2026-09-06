@@ -62,7 +62,7 @@ country_event = {
 				EFH_party_apply_social_green_win_effect = yes
 				news_event = { id = efh_party.6 days = 1 }
 			}
-			if = {
+			else_if = {
 				limit = {
 					check_variable = { var = EFH_party_sovereigntist value = EFH_party_social_green compare = greater_than }
 				}

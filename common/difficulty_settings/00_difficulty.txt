@@ -1,50 +1,49 @@
+
 difficulty_settings = {
+
+
 	difficulty_setting = {
-		key = "custom_diff_strong_ger"
-		modifier = diff_strong_ai_generic
-		countries = { GER }
-		multiplier = 2.0
-	}
-	difficulty_setting = {
-		key = "custom_diff_strong_ita"
-		modifier = diff_strong_ai_generic
-		countries = { ITA }
-		multiplier = 2.0
-	}
-	difficulty_setting = {
-		key = "custom_diff_strong_sov"
-		modifier = diff_strong_ai_generic
-		countries = { RSF }
-		multiplier = 2.0
-	}
-	difficulty_setting = {
-		key = "custom_diff_strong_fra"
-		modifier = diff_strong_ai_generic
-		countries = { FRA }
-		multiplier = 2.0
-	}
-	difficulty_setting = {
-		key = "custom_diff_strong_eng"
+		key = "srp_diff_strong_efh"
 		modifier = diff_strong_ai_generic
 		countries = { EFH }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_usa"
+		key = "srp_diff_strong_usa"
 		modifier = diff_strong_ai_generic
 		countries = { USA }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_jap"
+		key = "srp_diff_strong_rsf"
 		modifier = diff_strong_ai_generic
-		countries = { JAP }
+		countries = { RSF }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_chi"
+		key = "srp_diff_strong_swr"
 		modifier = diff_strong_ai_generic
-		countries = { CHN }
+		countries = { SWR }
+		multiplier = 2.0
+	}
+
+
+	difficulty_setting = {
+		key = "srp_diff_strong_irs"
+		modifier = diff_strong_ai_generic
+		countries = { IRS }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "srp_diff_strong_knx"
+		modifier = diff_strong_ai_generic
+		countries = { KNX }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "srp_diff_strong_tet"
+		modifier = diff_strong_ai_generic
+		countries = { TET }
 		multiplier = 2.0
 	}
 }

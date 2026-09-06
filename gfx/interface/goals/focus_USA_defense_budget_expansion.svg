@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Shield -->
+  <path d="M64,30 L92,40 V64 Q92,86 64,98 Q36,86 36,64 V40 Z" fill="#c9a52a"/>
+  <path d="M64,38 L85,46 V64 Q85,80 64,90 Q43,80 43,64 V46 Z" fill="#0d1623"/>
+
+  <!-- Up arrow -->
+  <rect x="60" y="58" width="8" height="22" fill="#c9a52a"/>
+  <polygon points="64,46 78,64 50,64" fill="#c9a52a"/>
+</svg>

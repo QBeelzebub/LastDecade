@@ -46,6 +46,11 @@ recruit_character = EFH_sci_land
 recruit_character = EFH_sci_naval
 recruit_character = EFH_sci_air
 
+recruit_character = EFH_vagrant_2
+recruit_character = EFH_vagrant_2_reborn
+recruit_character = EFH_vagrant_3
+recruit_character = EFH_vagrant_3_reborn
+
 create_field_marshal = {
 	name = "Henrik Brauner"
 	gfx = "GFX_Portrait_Europe_Generic_land_1"
@@ -87,6 +92,16 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
+
+create_field_marshal = { name = "Sofia Lindqvist"    gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { organisational_leader }      skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 4 logistics_skill = 3 }
+create_corps_commander = { name = "Tomas Novak"      gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }            skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Ines Almeida"     gfx = "GFX_Portrait_Europe_Generic_land_3" traits = { naval_invader }             skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 4 logistics_skill = 3 }
+create_corps_commander = { name = "Bjorn Halvorsen"  gfx = "GFX_Portrait_Europe_Generic_land_4" traits = { infantry_officer }          skill = 2 attack_skill = 3 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Katarina Horvat"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { urban_assault_specialist }  skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Emile Rousseau"   gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { naval_invader }             skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 4 logistics_skill = 4 }
+create_corps_commander = { name = "Rafael Moreno"    gfx = "GFX_Portrait_Europe_Generic_land_3" traits = { armor_officer }             skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 2 logistics_skill = 3 }
+create_corps_commander = { name = "Greta Vogel"      gfx = "GFX_Portrait_Europe_Generic_land_4" traits = { career_officer }            skill = 2 attack_skill = 2 defense_skill = 4 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Lukas Meier"      gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                           skill = 2 attack_skill = 3 defense_skill = 2 planning_skill = 3 logistics_skill = 3 }
 
 create_navy_leader = {
 	name = "Pieter van den Berg"

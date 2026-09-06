@@ -52,6 +52,7 @@ on_actions = {
 					has_war_with = USA
 					has_country_flag = LD_atlantic_war_1_active
 					has_global_flag = parasites_emerged
+					
 					NOT = { has_country_flag = LD_white_peace_cd }
 					NOT = { has_global_flag = LD_first_atlantic_war_ended }
 				}

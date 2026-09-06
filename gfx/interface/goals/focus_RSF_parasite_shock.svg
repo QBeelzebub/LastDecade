@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Snapped front: western half high, eastern half dropped -->
+  <rect x="20" y="22" width="34" height="20" fill="#c9a52a"/>
+  <rect x="78" y="54" width="30" height="20" fill="#c9a52a"/>
+  <!-- Incursion pushing up through the break -->
+  <polygon points="62,58 54,76 59,78 51,94 56,96 49,104 71,104 66,88 68,86 63,72 63,70" fill="#c9a52a"/>
+</svg>

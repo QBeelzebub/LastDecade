@@ -1,6 +1,6 @@
 
 KNX_vagrant_genome_mio = {
-	icon = GFX_idea_generic_research_organization
+	icon = GFX_idea_generic_electronics_concern_2
 
 	allowed = { original_tag = KNX }
 	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }

@@ -4,6 +4,10 @@ technologies = {
 	srp_destroyer_hull_tech_1 = {
 		allow = { NOT = { is_full_parasite = yes } }
 
+		naval_invasion_capacity = 100
+		naval_invasion_plan_cap = 2
+		naval_invasion_division_cap = 8
+
 		enable_equipments = {
 			srp_destroyer_hull_1
 		}

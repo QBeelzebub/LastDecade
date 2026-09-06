@@ -1,0 +1,255 @@
+
+
+
+JAP_home_seas = {
+	allowed = { original_tag = JAP }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 79   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 90   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 76   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 78   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 177  value = 60  }
+	ai_strategy = { type = naval_dominance  id = 87   value = 60  }
+}
+
+JAP_contested_seas = {
+	allowed = { original_tag = JAP }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 90   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 79   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 76   value = 80  }
+	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
+}
+
+
+
+CHN_home_seas = {
+	allowed = { original_tag = CHN }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 77   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 76   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 75   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 78   value = 60  }
+}
+
+CHN_contested_seas = {
+	allowed = { original_tag = CHN }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 77   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 76   value = 90  }
+	ai_strategy = { type = naval_dominance  id = 75   value = 90  }
+	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
+}
+
+
+
+RSF_home_seas = {
+	allowed = { original_tag = RSF }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 9    value = 100 }
+	ai_strategy = { type = naval_dominance  id = 46   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 45   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 30   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 87   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 88   value = 60  }
+	ai_strategy = { type = naval_dominance  id = 79   value = 60  }
+}
+
+RSF_contested_seas = {
+	allowed = { original_tag = RSF }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 9    value = 100 }
+	ai_strategy = { type = naval_dominance  id = 46   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 30   value = 70  }
+	ai_strategy = { type = naval_avoid_region id = 88 value = 200 }
+	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
+}
+
+
+
+SAC_home_seas = {
+	allowed = { original_tag = SAC }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 108  value = 100 }
+	ai_strategy = { type = naval_dominance  id = 109  value = 100 }
+	ai_strategy = { type = naval_dominance  id = 53   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 66   value = 60  }
+	ai_strategy = { type = naval_dominance  id = 64   value = 50  }
+}
+
+SAC_contested_seas = {
+	allowed = { original_tag = SAC }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 108  value = 100 }
+	ai_strategy = { type = naval_dominance  id = 66   value = 90  }
+	ai_strategy = { type = naval_dominance  id = 61   value = 70  }
+	ai_strategy = { type = naval_dominance  id = 53   value = 70  }
+	ai_strategy = { type = naval_avoid_region id = 109 value = 150 }
+	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
+}
+
+
+
+OCE_home_seas = {
+	allowed = { original_tag = OCE }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 86   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 81   value = 90  }
+	ai_strategy = { type = naval_dominance  id = 98   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 91   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 82   value = 70  }
+	ai_strategy = { type = naval_dominance  id = 92   value = 70  }
+	ai_strategy = { type = naval_dominance  id = 83   value = 60  }
+}
+
+OCE_contested_seas = {
+	allowed = { original_tag = OCE }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance  id = 86   value = 100 }
+	ai_strategy = { type = naval_dominance  id = 81   value = 90  }
+	ai_strategy = { type = naval_dominance  id = 91   value = 80  }
+	ai_strategy = { type = naval_dominance  id = 92   value = 80  }
+	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
+	ai_strategy = { type = garrison value = 400 }
+}
+
+
+
+SRP_human_marine_corps = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+	enable = { has_global_flag = parasites_emerged }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = role_ratio  id = marines  value = 160 }
+	ai_strategy = { type = build_army  id = marines  value = 12  }
+}
+
+SRP_human_amphibious_counterattack = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+	enable = {
+		OR = {
+			has_war_with = IRS
+			has_war_with = KNX
+			has_war_with = TET
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_invasion_focus            value = 260 }
+	ai_strategy = { type = naval_invasion_dominance_weight value = 35  }
+	ai_strategy = { type = ignore_army_incompetence        value = 1   }
+
+	ai_strategy = { type = invade  id = IRS  value = 360 }
+	ai_strategy = { type = invade  id = KNX  value = 360 }
+	ai_strategy = { type = invade  id = TET  value = 300 }
+
+	ai_strategy = { type = role_ratio  id = marines  value = 260 }
+	ai_strategy = { type = build_army  id = marines  value = 24  }
+
+	ai_strategy = { type = area_priority         id   = human_africa_landing         value = 520 }
+	ai_strategy = { type = area_priority         id   = human_north_america_landing  value = 520 }
+
+	ai_strategy = { type = invasion_unit_request area = human_africa_landing         value = 15 }
+	ai_strategy = { type = invasion_unit_request area = human_north_america_landing  value = 15 }
+	ai_strategy = { type = invasion_unit_request tag = IRS  value = 20 }
+	ai_strategy = { type = invasion_unit_request tag = KNX  value = 20 }
+}
+
+
+
+AFR_frontline_strategy = {
+	allowed = { original_tag = AFR }
+	enable = { has_global_flag = parasites_emerged }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 80 }
+	ai_strategy = { type = force_build_armies         value = 40 }
+	ai_strategy = { type = role_ratio id = armor      value = -3 }
+
+	ai_strategy = { type = area_priority id = africa        value = 80  }
+	ai_strategy = { type = area_priority id = europe        value = -20 }
+	ai_strategy = { type = area_priority id = north_america value = -20 }
+
+	ai_strategy = { type = strategic_air_importance id = 140 value = 30000 }
+	ai_strategy = { type = strategic_air_importance id = 226 value = 26000 }
+	ai_strategy = { type = strategic_air_importance id = 183 value = 24000 }
+}
+
+SRP_human_last_ditch = {
+	allowed = {
+		OR = {
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+		}
+	}
+	enable = {
+		OR = {
+			has_war_with = IRS
+			has_war_with = KNX
+			has_war_with = TET
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 300 }
+	ai_strategy = { type = force_build_armies value = 100 }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 40 }
+
+	ai_strategy = { type = garrison value = 400 }
+	ai_strategy = { type = garrison_reinforcement_priority value = 250 }
+
+	ai_strategy = { type = force_concentration_factor value = -40 }
+	ai_strategy = { type = spare_unit_factor value = 60 }
+
+}

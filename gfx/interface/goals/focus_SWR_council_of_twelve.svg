@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Council ring -->
+  <path fill-rule="evenodd" d="M 44,64 a 20,20 0 1 0 40,0 a 20,20 0 1 0 -40,0 Z M 51,64 a 13,13 0 1 0 26,0 a 13,13 0 1 0 -26,0 Z" fill="#c9a52a"/>
+  <!-- Twelve seats -->
+  <circle cx="64" cy="25" r="5" fill="#c9a52a"/>
+  <circle cx="84" cy="30" r="5" fill="#c9a52a"/>
+  <circle cx="98" cy="45" r="5" fill="#c9a52a"/>
+  <circle cx="103" cy="64" r="5" fill="#c9a52a"/>
+  <circle cx="98" cy="84" r="5" fill="#c9a52a"/>
+  <circle cx="84" cy="98" r="5" fill="#c9a52a"/>
+  <circle cx="64" cy="103" r="5" fill="#c9a52a"/>
+  <circle cx="45" cy="98" r="5" fill="#c9a52a"/>
+  <circle cx="30" cy="84" r="5" fill="#c9a52a"/>
+  <circle cx="25" cy="64" r="5" fill="#c9a52a"/>
+  <circle cx="30" cy="45" r="5" fill="#c9a52a"/>
+  <circle cx="45" cy="30" r="5" fill="#c9a52a"/>
+</svg>

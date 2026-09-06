@@ -27,12 +27,22 @@ SRP_human_raiding_fleet = {
 	}
 }
 
+SRP_human_invasion_fleet = {
+	required_taskforces = {
+		SRP_human_invasion_escort = 1
+	}
+	optional_taskforces = {
+		SRP_human_invasion_escort = 2
+		SRP_small_patrol_destroyers = 2
+	}
+}
+
 IRS_devourer_raiding_fleet = {
 	required_taskforces = {
 		IRS_devourer_raiding_pack = 1
 	}
 	optional_taskforces = {
-		IRS_devourer_raiding_pack = 3
+		IRS_devourer_raiding_pack = 5
 		IRS_devourer_patrol_pack = 1
 	}
 }
@@ -44,5 +54,16 @@ IRS_devourer_patrol_fleet = {
 	optional_taskforces = {
 		IRS_devourer_patrol_pack = 2
 		IRS_devourer_raiding_pack = 1
+	}
+}
+
+IRS_devourer_invasion_fleet = {
+	required_taskforces = {
+		IRS_devourer_invasion_escort = 1
+	}
+	optional_taskforces = {
+		IRS_colossant_line = 1
+		IRS_devourer_invasion_escort = 2
+		IRS_devourer_patrol_pack = 2
 	}
 }

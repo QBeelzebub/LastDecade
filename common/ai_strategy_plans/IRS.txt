@@ -1,0 +1,198 @@
+
+IRS_lineage_tromos_plan = {
+	name = "Iris lineage: Tromos"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = { difficulty < 1 }
+	abort   = { always = no }
+
+	ai_national_focuses = {
+		IRS_dorm_one_place
+		IRS_dorm_tolerate_daylight
+		IRS_dorm_first_dispatcher
+		IRS_dorm_thicken
+		IRS_dorm_bud_edge
+		IRS_dorm_take_the_topsoil
+		IRS_dorm_hold_the_interior
+		IRS_dorm_die_back_regrow
+	}
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = { factor = 1.0 }
+}
+
+IRS_lineage_vitreous_plan = {
+	name = "Iris lineage: Vitreous"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = {
+		difficulty > 0
+		difficulty < 2
+	}
+	abort   = { always = no }
+
+	ai_national_focuses = {
+		IRS_dorm_one_place
+		IRS_dorm_night_surfacing
+		IRS_dorm_first_dispatcher
+		IRS_dorm_thicken
+		IRS_dorm_deepen_the_mat
+		IRS_dorm_overwinter
+		IRS_dorm_hold_the_interior
+		IRS_dorm_bury_the_circulation
+	}
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = { factor = 1.0 }
+}
+
+IRS_lineage_iris_plan = {
+	name = "Iris lineage: Iris"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = {
+		difficulty > 1
+		difficulty < 3
+	}
+	abort   = { always = no }
+
+	ai_national_focuses = {
+		IRS_dorm_one_place
+		IRS_dorm_night_surfacing
+		IRS_dorm_tolerate_daylight
+		IRS_dorm_first_dispatcher
+		IRS_dorm_thicken
+		IRS_dorm_hold_the_interior
+		IRS_dorm_bud_edge
+		IRS_dorm_rupters_run
+	}
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = { factor = 1.0 }
+}
+
+IRS_lineage_unchecked_plan = {
+	name = "Iris lineage: Unchecked"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = { has_country_flag = IRS_collapse_unchecked }
+	abort   = { always = no }
+
+	ai_national_focuses = {
+		IRS_dorm_first_dispatcher
+		IRS_dorm_rupters_run
+		IRS_dorm_bud_edge
+		IRS_dorm_follow_the_water
+		IRS_dorm_night_surfacing
+		IRS_dorm_tolerate_daylight
+		IRS_dorm_take_the_coast
+		IRS_dorm_host_left_walking
+	}
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = { factor = 1.0 }
+}
+
+IRS_lineage_adaptive_plan = {
+	name = "Iris lineage: Adaptive"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = { has_country_flag = IRS_collapse_adaptive }
+	abort   = { always = no }
+
+	ai_national_focuses = {
+		IRS_dorm_first_dispatcher
+		IRS_dorm_rupters_run
+		IRS_dorm_bud_edge
+		IRS_dorm_follow_the_water
+		IRS_dorm_night_surfacing
+		IRS_dorm_tolerate_daylight
+		IRS_dorm_take_the_coast
+		IRS_dorm_learn_the_radio
+	}
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = { factor = 1.0 }
+}
+
+IRS_lineage_telotic_plan = {
+	name = "Iris lineage: Telotic"
+	desc = ""
+
+	allowed = { original_tag = IRS }
+	enable  = { difficulty > 3 }
+	abort   = { always = no }
+
+	ai_national_focuses = {
+		IRS_dorm_night_surfacing
+		IRS_dorm_first_dispatcher
+		IRS_dorm_overwinter
+		IRS_dorm_learn_the_radio
+		IRS_dorm_one_place
+		IRS_dorm_deepen_the_mat
+		IRS_dorm_pheromone_sync
+		IRS_dorm_thicken
+	}
+
+	research = {
+		srp_parasite_tech         = 25.0
+		basic_parasites           = 20.0
+		srp_parasite_support_tech = 15.0
+		parasite_buildings        = 15.0
+		srp_iris_tech             = 12.0
+		srp_industry_tech         = 12.0
+		srp_construction_tech     = 10.0
+	}
+
+	weight = { factor = 1.0 }
+}

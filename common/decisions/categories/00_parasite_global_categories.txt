@@ -49,7 +49,7 @@ srp_turret_deployment = {
 	icon = GFX_decision_cat_generic_military_mission
 
 	allowed = {
-		NOT = { is_full_parasite = yes }
+		NOT = { SRP_is_parasite_tag = yes }
 	}
 
 	visible = {
@@ -87,7 +87,7 @@ proto_supreme_raid_decisions = {
 	visible_when_empty = no
 
 	allowed = {
-		NOT = { is_parasite_nation = yes }
+		NOT = { SRP_is_parasite_tag = yes }
 	}
 
 	visible = {

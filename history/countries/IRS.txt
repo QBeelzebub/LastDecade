@@ -7,6 +7,8 @@ set_war_support = 2.5
 recruit_character = Iris_Leader
 recruit_character = IRS_sci_land
 recruit_character = IRS_sci_air
+recruit_character = IRS_vagrant_4
+recruit_character = IRS_vagrant_4_reborn
 capital = 703
 
 create_corps_commander = {
@@ -40,6 +42,64 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
+create_field_marshal = {
+	name = "Unit Designation 1-DIRECT"
+	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	traits = { career_officer organisational_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Unit Designation 2-MARSHAL"
+	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	traits = { organisational_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = { name = "Unit Designation 3-CLEAVE"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { career_officer }           skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 2 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 5-HARROW"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { infantry_officer }         skill = 2 attack_skill = 3 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 9-SUNDER"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { naval_invader }            skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 11-GRIND"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }           skill = 2 attack_skill = 2 defense_skill = 4 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 14-FLENSE" gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { urban_assault_specialist } skill = 3 attack_skill = 4 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 16-SCOUR"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { }                          skill = 2 attack_skill = 3 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 18-RUPTURE" gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { naval_invader }           skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 4 }
+create_corps_commander = { name = "Unit Designation 21-SHEAR"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { infantry_officer }         skill = 2 attack_skill = 2 defense_skill = 3 planning_skill = 2 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 23-GNAW"   gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 3 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 26-THRESH" gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }           skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 4 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 29-SEVER"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { urban_assault_specialist } skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 31-WRACK"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { }                          skill = 2 attack_skill = 2 defense_skill = 3 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 34-BREACH" gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { naval_invader }            skill = 4 attack_skill = 4 defense_skill = 3 planning_skill = 4 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 37-CHURN"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { infantry_officer }         skill = 2 attack_skill = 3 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 39-GORE"   gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 4 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 42-RASP"   gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }           skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 44-SPLIT"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 47-CRUSH"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { urban_assault_specialist } skill = 3 attack_skill = 4 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 51-SWELL"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { infantry_officer }         skill = 2 attack_skill = 2 defense_skill = 4 planning_skill = 2 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 53-PIERCE" gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { naval_invader }            skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 56-HUSK"   gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 2 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 58-SCATHE" gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }           skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 3 logistics_skill = 4 }
+create_corps_commander = { name = "Unit Designation 61-COIL"   gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 3 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 63-LATHE"  gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { infantry_officer }         skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 2 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 66-DRIFT"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 2 defense_skill = 2 planning_skill = 4 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 69-CLENCH" gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }           skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 2 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 72-SPINE"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { urban_assault_specialist } skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 74-KNIT"   gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { }                          skill = 2 attack_skill = 2 defense_skill = 3 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 77-GRAFT"  gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { infantry_officer }         skill = 2 attack_skill = 3 defense_skill = 2 planning_skill = 2 logistics_skill = 4 }
+create_corps_commander = { name = "Unit Designation 81-TIDE"   gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { naval_invader }            skill = 3 attack_skill = 3 defense_skill = 3 planning_skill = 4 logistics_skill = 3 }
+
+create_corps_commander = { name = "Unit Designation 84-FLAY"    gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { urban_assault_specialist } skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 3 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 87-RIVE"    gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { naval_invader }            skill = 3 attack_skill = 3 defense_skill = 2 planning_skill = 4 logistics_skill = 4 }
+create_corps_commander = { name = "Unit Designation 89-SCORE"   gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { }                          skill = 2 attack_skill = 3 defense_skill = 3 planning_skill = 2 logistics_skill = 2 }
+create_corps_commander = { name = "Unit Designation 92-QUELL"   gfx = "GFX_Portrait_Europe_Generic_land_2" traits = { career_officer }           skill = 3 attack_skill = 2 defense_skill = 4 planning_skill = 3 logistics_skill = 3 }
+create_corps_commander = { name = "Unit Designation 95-BRISTLE" gfx = "GFX_Portrait_Europe_Generic_land_1" traits = { infantry_officer }         skill = 2 attack_skill = 2 defense_skill = 3 planning_skill = 3 logistics_skill = 2 }
+
 create_navy_leader = {
 	name = "Unit Designation 3-TIDE"
 	gfx = "GFX_Portrait_Europe_Generic_navy_1"
@@ -69,11 +129,11 @@ oob = "IRS_ascension_army"
 2020.1.1 = {
 	set_country_flag = IRS_emerged
 	set_global_flag = parasites_emerged
-	remove_ideas = IRS_dormant_emergence
 	add_ideas = IRS_active_emergence
 	set_country_flag = IRS_archetype_iris
 	add_ideas = IRS_archetype_iris_spirit
 	set_technology = { inborn_parasites = 1 }
+	capital = 274
 }
 
 set_politics = {

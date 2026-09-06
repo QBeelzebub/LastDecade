@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Wax seal: thick ring, r 34 outer / 22 inner -->
+  <path fill-rule="evenodd" d="M 30,52 a 34,34 0 1 0 68,0 a 34,34 0 1 0 -68,0 Z M 42,52 a 22,22 0 1 0 44,0 a 22,22 0 1 0 -44,0 Z" fill="#c9a52a"/>
+  <!-- Ribbon banner with notched tails -->
+  <polygon points="22,102 30,108 22,114 106,114 98,108 106,102" fill="#c9a52a"/>
+</svg>

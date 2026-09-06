@@ -2,7 +2,7 @@ equipments = {
 
 
 	srp_wheeled_ifv_equipment = {
-		year = 2022
+		year = 2018
 
 		is_archetype = yes
 		picture = archetype_mechanized_equipment
@@ -35,7 +35,7 @@ equipments = {
 	}
 
 	srp_wheeled_ifv_equipment_1 = {
-		year = 2022
+		year = 2018
 
 		archetype = srp_wheeled_ifv_equipment
 		priority = 8

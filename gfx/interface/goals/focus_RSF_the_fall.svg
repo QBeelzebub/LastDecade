@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Star sheared away along a jagged diagonal, lower right simply gone -->
+  <path d="M 71,40 L 63,20 L 51,80 L 21,78 L 44,70 L 37,100 L 53,90 L 65,84 L 61,69 L 72,60 L 63,46 Z" fill="#c9a52a"/>
+</svg>

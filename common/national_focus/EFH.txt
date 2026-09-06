@@ -26,14 +26,7 @@ focus_tree = {
 		x = 18
 		y = -7
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 15 }
+		ai_will_do = { base = 30 }
 		completion_reward = {
 			add_political_power = 30
 			hidden_effect = {
@@ -56,13 +49,6 @@ focus_tree = {
 		x = 10
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_end_of_long_peace }
 		completion_reward = {
@@ -78,13 +64,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_federal_state_of_the_union }
 		completion_reward = {
@@ -106,13 +85,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_consolidate_federal_authority }
 		completion_reward = {
@@ -131,14 +103,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 12 }
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_the_federal_question }
 		mutually_exclusive = { focus = EFH_sovereigntist_bloc }
 		completion_reward = {
@@ -163,14 +128,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 6 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_the_federal_question }
 		mutually_exclusive = { focus = EFH_federalist_coalition }
 		completion_reward = {
@@ -195,13 +153,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_federalist_coalition focus = EFH_sovereigntist_bloc }
 		completion_reward = {
@@ -222,14 +173,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_govern_the_federation }
 		completion_reward = {
 			add_political_power = 20
@@ -249,14 +193,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 5 }
+		ai_will_do = { base = 1 }
 		allow_branch = { has_global_flag = before_the_storm }
 		prerequisite = { focus = EFH_federal_state_of_the_union }
 		completion_reward = {
@@ -276,13 +213,6 @@ focus_tree = {
 		x = 14
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_end_of_long_peace }
 		completion_reward = {
@@ -298,13 +228,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_continental_defense_review }
 		completion_reward = {
@@ -325,13 +248,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_standing_force_reform }
 		completion_reward = {
@@ -351,13 +267,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_force_structure_debate }
 		mutually_exclusive = { focus = EFH_mass_mobilization_base }
@@ -369,6 +278,7 @@ focus_tree = {
 			custom_effect_tooltip = EFH_military_focus_tt
 			set_country_flag = EFH_doctrine_professional
 			add_tech_bonus = {
+				name = EFH_professional_army
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine
@@ -384,14 +294,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_force_structure_debate }
 		mutually_exclusive = { focus = EFH_professional_army }
 		completion_reward = {
@@ -412,18 +315,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_professional_army focus = EFH_mass_mobilization_base }
 		completion_reward = {
 			army_experience = 30
 			add_tech_bonus = {
+				name = EFH_modern_federal_army
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine
@@ -439,14 +336,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_modern_federal_army }
 		completion_reward = {
 			hidden_effect = {
@@ -470,13 +360,6 @@ focus_tree = {
 		x = -17
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_end_of_long_peace }
 		completion_reward = {
@@ -497,13 +380,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_atlantic_rivalry_doctrine }
 		completion_reward = {
@@ -520,14 +396,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_the_standoff }
 		mutually_exclusive = { focus = EFH_conventional_primacy }
 		completion_reward = {
@@ -550,13 +419,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_the_standoff }
 		mutually_exclusive = { focus = EFH_nuclear_brinkmanship }
@@ -584,13 +446,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_nuclear_brinkmanship focus = EFH_conventional_primacy }
 		completion_reward = {
@@ -606,14 +461,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 6 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_brinkmanship_posture }
 		completion_reward = {
 			add_political_power = 20
@@ -632,14 +480,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 6 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_brinkmanship_posture }
 		completion_reward = {
 			add_political_power = 20
@@ -658,14 +499,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_brinkmanship_posture }
 		completion_reward = {
 			army_experience = 25
@@ -689,14 +523,7 @@ focus_tree = {
 		x = 24
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_end_of_long_peace }
 		completion_reward = {
 			add_political_power = 40
@@ -716,14 +543,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_alignment_initiative }
 		completion_reward = {
 			add_political_power = 25
@@ -741,14 +561,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 9 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_tokyo_dialogue }
 		mutually_exclusive = { focus = EFH_techno_industrial_compact }
 		completion_reward = {
@@ -770,14 +583,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 9 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_tokyo_dialogue }
 		mutually_exclusive = { focus = EFH_pacific_security_cooperation }
 		completion_reward = {
@@ -787,6 +593,7 @@ focus_tree = {
 			custom_effect_tooltip = EFH_industrial_base_tt
 			set_country_flag = EFH_japan_techno_path
 			add_tech_bonus = {
+				name = EFH_techno_industrial_compact
 				bonus = 0.5
 				uses = 1
 				category = electronics
@@ -802,14 +609,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 9 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_pacific_security_cooperation focus = EFH_techno_industrial_compact }
 		completion_reward = {
 			add_political_power = 30
@@ -827,20 +627,15 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 9 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_alignment_initiative }
+		mutually_exclusive = { focus = EFH_pacific_framework }
 		completion_reward = {
 			add_political_power = 25
 			set_country_flag = EFH_sac_early_contact
 			set_country_flag = EFH_china_early_contact
 			add_tech_bonus = {
+				name = EFH_eastern_outreach
 				bonus = 0.5
 				uses = 1
 				category = electronics
@@ -859,14 +654,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_govern_the_federation }
 		completion_reward = {
 			add_political_power = 30
@@ -891,14 +679,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_modern_federal_army }
 		completion_reward = {
 			army_experience = 40
@@ -907,6 +688,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = EFH_military_focus_tt
 			add_tech_bonus = {
+				name = EFH_federal_war_college
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine
@@ -923,14 +705,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_brinkmanship_posture }
 		completion_reward = {
 			army_experience = 25
@@ -949,15 +724,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_efh_japan_axis }
+		mutually_exclusive = { focus = EFH_eastern_outreach }
 		completion_reward = {
 			add_political_power = 25
 			hidden_effect = {
@@ -979,14 +748,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 9 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_end_of_long_peace }
 		completion_reward = {
 			add_political_power = 30
@@ -1003,14 +765,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_the_brittle_hegemon }
 		mutually_exclusive = { focus = EFH_a_union_of_homelands }
 		completion_reward = {
@@ -1034,14 +789,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_the_brittle_hegemon }
 		mutually_exclusive = { focus = EFH_a_continental_demos }
 		completion_reward = {
@@ -1066,14 +814,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_a_continental_demos focus = EFH_a_union_of_homelands }
 		completion_reward = {
 			add_political_power = 20
@@ -1094,14 +835,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_the_prosperity_dividend }
 		mutually_exclusive = { focus = EFH_the_corporate_commons }
 		completion_reward = {
@@ -1122,14 +856,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_the_prosperity_dividend }
 		mutually_exclusive = { focus = EFH_public_institutions_first }
 		completion_reward = {
@@ -1137,7 +864,6 @@ focus_tree = {
 				EFH_ind_corporate_commons = yes
 			}
 			custom_effect_tooltip = EFH_industrial_base_tt
-			add_research_slot = 1
 			EFH_bop_low_ha_effect = yes
 			country_event = { id = efh.58 days = 1 }
 		}
@@ -1150,14 +876,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_public_institutions_first focus = EFH_the_corporate_commons }
 		completion_reward = {
 			add_political_power = 30
@@ -1189,14 +908,7 @@ focus_tree = {
 		x = -12
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 7 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_end_of_long_peace }
 		completion_reward = {
 			add_political_power = 20
@@ -1213,14 +925,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 7 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_federal_health_security }
 		completion_reward = {
 			hidden_effect = {
@@ -1240,14 +945,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
-		ai_will_do = { base = 7 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_continental_disease_surveillance }
 		completion_reward = {
 			add_political_power = 25
@@ -1268,9 +966,7 @@ focus_tree = {
 		relative_position_id = EFH_war_readiness_directive
 		x = 0
 		y = 1
-		ai_will_do = {
-			base = 10
-		}
+		ai_will_do = { base = 30 }
 		cost = 3.75
 		available = {
 			has_country_flag = EFH_prologue_closed
@@ -1282,7 +978,10 @@ focus_tree = {
 			add_to_variable = { var = EFH_party_social_green value = -1 }
 			add_to_variable = { var = EFH_party_sovereigntist value = -2 }
 			EFH_party_clamp_support_effect = yes
-			news_event = { id = efh.84 days = 2 }
+			if = {
+				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
+				news_event = { id = efh.84 days = 2 }
+			}
 		}
 	}
 
@@ -1293,6 +992,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_kaltkrieg_opening_posture }
 		completion_reward = {
 			remove_ideas = EFH_kaltkrieg_posture
@@ -1315,6 +1015,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_summit_position }
 		available = {
 			has_country_flag = EFH_summit_collapsed
@@ -1336,6 +1037,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_summit_failure_response }
 		completion_reward = {
 			hidden_effect = {
@@ -1370,12 +1072,70 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFH_northern_supply_groundwork
+		icon = GFX_focus_EFH_northern_supply_groundwork
+		relative_position_id = EFH_northern_theater_preparation
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = EFH_northern_theater_preparation }
+		ai_will_do = { base = 10 }
+		completion_reward = {
+			276 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					province = 3778
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					province = 3775
+					level = 1
+					instant_build = yes
+				}
+			}
+			331 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 12505
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					province = 12505
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				EFH_mil_northern_logistics = yes
+			}
+			custom_effect_tooltip = EFH_military_focus_tt
+			army_experience = 15
+			EFH_bop_low_ef_effect = yes
+		}
+	}
+
+	focus = {
 		id = EFH_northern_war_authorization
 		icon = GFX_focus_EFH_northern_war_authorization
 		relative_position_id = EFH_northern_theater_preparation
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_northern_theater_preparation }
 		available = {
 			has_country_flag = EFH_second_summit_incident
@@ -1392,6 +1152,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_northern_war_authorization }
 		completion_reward = {
 			air_experience = 50
@@ -1411,6 +1172,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_northern_air_campaign }
 		available = {
 			has_country_flag = EFH_air_battle_of_boston_fired
@@ -1432,6 +1194,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_kaltkrieg_opening_posture }
 		completion_reward = {
 			hidden_effect = {
@@ -1455,6 +1218,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_kaltkrieg_doctrine_reform }
 		available = {
 			custom_trigger_tooltip = {
@@ -1491,6 +1255,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_kaltkrieg_opening_posture }
 		completion_reward = {
 			hidden_effect = {
@@ -1512,6 +1277,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_sphere_retention_japan }
 		available = {
 			custom_trigger_tooltip = {
@@ -1537,6 +1303,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_trade_bloc_offensive }
 		completion_reward = {
 			add_political_power = 25
@@ -1559,6 +1326,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_economic_pressure_campaign }
 		completion_reward = {
 			add_political_power = 20
@@ -1575,6 +1343,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_northern_theater_preparation }
 		completion_reward = {
 			add_political_power = 15
@@ -1596,6 +1365,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_panama_pressure }
 		completion_reward = {
 			hidden_effect = {
@@ -1613,6 +1383,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_panama_deals }
 		completion_reward = {
 			set_country_flag = EFH_panama_cores_established
@@ -1632,6 +1403,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_panama_cores }
 		completion_reward = {
 			set_country_flag = EFH_panama_resistance_active
@@ -1663,6 +1435,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 5
+		ai_will_do = { base = 100 }
 		completion_reward = {
 			hidden_effect = {
 				EFH_ind_orbital_competitive_pressure = yes
@@ -1685,6 +1458,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_second_space_race }
 		completion_reward = {
 			add_timed_idea = {
@@ -1701,6 +1475,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_runway_to_orbit_feasibility }
 		available = {
 			has_country_flag = EFH_laytheo_contractor_selected
@@ -1718,6 +1493,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 15
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = EFH_laytheo_prototype_authorization }
 		completion_reward = {
 			remove_ideas = EFH_laytheo_in_development
@@ -1749,9 +1525,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = EFH_laytheo_first_flight }
 		mutually_exclusive = { focus = EFH_laytheo_orbital_logistics }
-		ai_will_do = {
-			factor = 40
-		}
+		ai_will_do = { base = 2 }
 		completion_reward = {
 			hidden_effect = {
 				EFH_lay_laytheo_surveillance = yes
@@ -1772,9 +1546,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = EFH_laytheo_first_flight }
 		mutually_exclusive = { focus = EFH_laytheo_surveillance_network }
-		ai_will_do = {
-			factor = 60
-		}
+		ai_will_do = { base = 10 }
 		completion_reward = {
 			air_experience = 25
 			hidden_effect = {
@@ -1795,6 +1567,7 @@ focus_tree = {
 		x = 14
 		y = 0
 		cost = @EFH_HA_hyper_founded_weeks
+		prerequisite = { focus = EFH_research_coordination }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = parasites_emerged_focus_tt
@@ -1823,6 +1596,7 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = EFH_hyperbiology_founded
 			add_tech_bonus = {
+				name = EFH_HA_hyperbiology_founded
 				bonus = 0.25
 				uses = 1
 				category = srp_parasite_tech
@@ -1833,6 +1607,7 @@ focus_tree = {
 				country_event = { id = efh_hna.22 days = 1 }
 			}
 		}
+		ai_will_do = { base = 30 }
 	}
 
 	focus = {
@@ -1842,6 +1617,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = @EFH_HA_research_fund_weeks
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_HA_hyperbiology_founded }
 		available = {
 			if = {
@@ -1882,6 +1658,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = @EFH_HA_laytheo_weeks
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_HA_hyperbiology_founded }
 		prerequisite = { focus = EFH_laytheo_first_flight }
 		available = {
@@ -1907,6 +1684,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 50
 			add_tech_bonus = {
+				name = EFH_HA_laytheo_ha_integration
 				bonus = 0.25
 				uses = 1
 				category = srp_parasite_tech
@@ -1923,6 +1701,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = @EFH_HA_initial_findings_weeks
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_HA_hyperbiology_research_fund }
 		available = {
 			if = {
@@ -1964,6 +1743,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_HA_hyperbiology_initial_findings }
 		available = {
 			date > 2023.1.1
@@ -1974,13 +1754,13 @@ focus_tree = {
 			if = {
 				limit = { has_idea = EFH_integration_agreement_full }
 				mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 8000 }
-				add_tech_bonus = { bonus = 0.5 uses = 1 category = srp_parasite_tech }
+				add_tech_bonus = { bonus = 0.5 uses = 1 category = srp_parasite_tech name = EFH_expand_hyperbiology }
 				EFH_bop_low_ha_effect = yes
 			}
 			if = {
 				limit = { NOT = { has_idea = EFH_integration_agreement_full } }
 				mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 4000 }
-				add_tech_bonus = { bonus = 0.25 uses = 1 category = srp_parasite_tech }
+				add_tech_bonus = { bonus = 0.25 uses = 1 category = srp_parasite_tech name = EFH_expand_hyperbiology }
 				EFH_bop_very_low_ha_effect = yes
 			}
 			if = {
@@ -2001,6 +1781,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_expand_hyperbiology }
 		completion_reward = {
 			hidden_effect = {
@@ -2019,6 +1800,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_expand_hyperbiology }
 		completion_reward = {
 			set_country_flag = EFH_harvesting_groundwork
@@ -2039,10 +1821,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 6
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_hyperbiology_facilities }
 		prerequisite = { focus = EFH_live_specimen_acquisition }
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = srp_parasite_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = srp_parasite_tech name = EFH_branch_parasite_study }
 			hidden_effect = {
 				EFH_para_branch_doctrine = yes
 			}
@@ -2060,6 +1843,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 7
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_branch_parasite_study }
 		available = {
 			has_idea = EFH_ashley_woods
@@ -2101,6 +1885,7 @@ focus_tree = {
 				country_event = { id = efh_hna.1 days = 7 }
 			}
 		}
+		ai_will_do = { base = 10 }
 	}
 
 	focus = {
@@ -2111,6 +1896,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = @EFH_HNA_autonomous_time_tier_1
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_HNA_independence }
 		available = {
 			if = {
@@ -2161,6 +1947,7 @@ focus_tree = {
 		x = 20
 		y = 0
 		cost = 5
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			7 = {
 				add_extra_state_shared_building_slots = 6
@@ -2180,6 +1967,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_eter_completion }
 		completion_reward = {
 			add_political_power = 50
@@ -2193,6 +1981,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 3.75
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_fusion_regulatory_framework }
 		completion_reward = {
 			set_technology = {
@@ -2209,6 +1998,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_eter_completion }
 		completion_reward = {
 			1 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
@@ -2224,6 +2014,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_industrial_surge }
 		completion_reward = {
 			1 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
@@ -2239,6 +2030,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_construction_acceleration }
 		completion_reward = {
 			1 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
@@ -2253,15 +2045,10 @@ focus_tree = {
 		x = 16
 		y = -5
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_research_coordination
 				bonus = 0.5
 				uses = 1
 				category = electronics
@@ -2276,16 +2063,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_research_coordination }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_industrial_rnd
 				bonus = 0.5
 				uses = 1
 				category = industry
@@ -2300,20 +2082,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
 		prerequisite = { focus = EFH_industrial_rnd }
 		mutually_exclusive = { focus = EFH_parasite_early_research }
-		ai_will_do = {
-			factor = 55
-		}
+		ai_will_do = { base = 30 }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_doctrine_investment
 				bonus = 0.75
 				uses = 1
 				category = land_doctrine
@@ -2337,11 +2111,10 @@ focus_tree = {
 			}
 			has_global_flag = parasites_emerged
 		}
-		ai_will_do = {
-			factor = 45
-		}
+		ai_will_do = { base = 2 }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_parasite_early_research
 				bonus = 0.75
 				uses = 1
 				category = srp_parasite_tech
@@ -2356,13 +2129,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = {
-			hidden_trigger = { NOT = { has_country_flag = EFH_prologue_closed } }
-			custom_trigger_tooltip = {
-				tooltip = EFH_prologue_closed_tt
-				NOT = { has_country_flag = EFH_prologue_closed }
-			}
-		}
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_doctrine_investment }
 		completion_reward = {
 			hidden_effect = {
@@ -2380,6 +2147,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_parasite_early_research }
 		completion_reward = {
 			hidden_effect = {
@@ -2397,6 +2165,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_joint_training_command focus = EFH_xenobiology_directorate }
 		completion_reward = {
 			add_research_slot = 1
@@ -2409,10 +2178,10 @@ focus_tree = {
 		id = EFH_industrial_procurement_strategy
 		icon = GFX_goal_generic_positive_trade_relations
 		relative_position_id = EFH_member_state_accord
-		x = -3
+		x = -4
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 5 }
 		available = {
 			has_country_flag = EFH_prologue_closed
 		}
@@ -2430,7 +2199,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 12 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_industrial_procurement_strategy }
 		mutually_exclusive = { focus = EFH_ha_supply_dominance }
 		completion_reward = {
@@ -2449,7 +2218,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_industrial_procurement_strategy }
 		mutually_exclusive = { focus = EFH_ha_research_consortium }
 		completion_reward = {
@@ -2470,7 +2239,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_ha_research_consortium focus = EFH_ha_supply_dominance }
 		completion_reward = {
 			add_political_power = 20
@@ -2493,7 +2262,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_market_resource_agreements }
 		completion_reward = {
 			add_political_power = 25
@@ -2524,6 +2293,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		available = {
 			has_country_flag = EFH_prologue_closed
 		}
@@ -2545,6 +2315,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_federal_mandate }
 		mutually_exclusive = { focus = EFH_member_state_compact }
 		completion_reward = {
@@ -2572,6 +2343,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_federal_mandate }
 		mutually_exclusive = { focus = EFH_centralize_emergency_powers }
 		completion_reward = {
@@ -2594,6 +2366,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_centralize_emergency_powers focus = EFH_member_state_compact }
 		available = {
 			custom_trigger_tooltip = {
@@ -2615,7 +2388,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		cost = 5
-		ai_will_do = { base = 5 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_parliamentary_consolidation }
 		completion_reward = {
 			add_political_power = 50
@@ -2633,6 +2406,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_HA_hyperbiology_initial_findings }
 		relative_position_id = EFH_HA_hyperbiology_initial_findings
 		available = {
@@ -2645,6 +2419,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			add_tech_bonus = {
+				name = EFH_parasite_threat_assessment
 				bonus = 0.25
 				uses = 1
 				category = srp_parasite_tech
@@ -2663,6 +2438,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_parasite_threat_assessment }
 		completion_reward = {
 			hidden_effect = {
@@ -2675,6 +2451,7 @@ focus_tree = {
 				custom_effect_tooltip = EFH_groundwork_biosecurity_tt
 				add_political_power = 25
 				add_tech_bonus = {
+					name = EFH_continental_monitoring_network
 					bonus = 0.25
 					uses = 1
 					category = srp_parasite_tech
@@ -2690,6 +2467,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_continental_monitoring_network }
 		completion_reward = {
 			add_political_power = 50
@@ -2723,6 +2501,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_federal_emergency_protocols }
 		completion_reward = {
 			army_experience = 50
@@ -2743,6 +2522,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_joint_anti_parasite_command }
 		mutually_exclusive = { focus = EFH_contracted_field_response }
 		completion_reward = {
@@ -2767,6 +2547,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_joint_anti_parasite_command }
 		mutually_exclusive = { focus = EFH_federal_cordon_doctrine }
 		completion_reward = {
@@ -2788,6 +2569,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_federal_cordon_doctrine focus = EFH_contracted_field_response }
 		completion_reward = {
 			add_war_support = 0.02
@@ -2817,6 +2599,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		available = {
 			has_country_flag = EFH_prologue_closed
 		}
@@ -2837,6 +2620,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		relative_position_id = EFH_parasite_threat_assessment
 		prerequisite = { focus = EFH_parasite_threat_assessment }
 		completion_reward = {
@@ -2866,6 +2650,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_board_reorientation }
 		completion_reward = {
 			hidden_effect = {
@@ -2886,6 +2671,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_board_reorientation }
 		completion_reward = {
 			hidden_effect = {
@@ -2905,6 +2691,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_thermonuclear_priority focus = EFH_logistics_militarization }
 		available = {
 			custom_trigger_tooltip = {
@@ -2932,9 +2719,11 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_governance_suspension }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_rtg_penetrator_program
 				bonus = 0.5
 				uses = 1
 				category = srp_parasite_tech
@@ -2957,6 +2746,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_rtg_penetrator_program }
 		available = {
 			date > 2022.1.1
@@ -2973,6 +2763,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		relative_position_id = EFH_parasite_threat_assessment
 		prerequisite = { focus = EFH_parasite_threat_assessment }
 		completion_reward = {
@@ -2992,6 +2783,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_dispatcher_identified }
 		available = {
 			date > 2022.1.1
@@ -3013,6 +2805,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_root_network_revision }
 		completion_reward = {
 			hidden_effect = {
@@ -3032,12 +2825,14 @@ focus_tree = {
 		x = -2
 		y = 3
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_modernization_program }
 		completion_reward = {
 			7 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
 			1 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
 			5 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
 			add_tech_bonus = {
+				name = EFH_naval_modernization
 				bonus = 0.5
 				uses = 1
 				category = srp_naval_tech
@@ -3056,10 +2851,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_naval_modernization }
 		mutually_exclusive = { focus = EFH_ha_naval_integration }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_blue_water_doctrine
 				bonus = 0.75
 				uses = 1
 				category = srp_naval_tech
@@ -3079,11 +2876,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_naval_modernization }
 		mutually_exclusive = { focus = EFH_blue_water_doctrine }
 		completion_reward = {
 			mio:EFH_ha_naval_mio = { add_mio_funds = 4000 }
 			add_tech_bonus = {
+				name = EFH_ha_naval_integration
 				bonus = 0.5
 				uses = 1
 				category = srp_naval_tech
@@ -3101,12 +2900,14 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_modernization_program }
 		completion_reward = {
 			air_experience = 50
 			1 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
 			5 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
 			add_tech_bonus = {
+				name = EFH_air_force_modernization
 				bonus = 0.5
 				uses = 1
 				category = srp_air_tech
@@ -3125,10 +2926,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_air_force_modernization }
 		mutually_exclusive = { focus = EFH_ha_aerospace_integration }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_strategic_air_doctrine
 				bonus = 0.75
 				uses = 1
 				category = srp_air_tech
@@ -3148,11 +2951,13 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_air_force_modernization }
 		mutually_exclusive = { focus = EFH_strategic_air_doctrine }
 		completion_reward = {
 			mio:EFH_ha_aerospace_mio = { add_mio_funds = 4000 }
 			add_tech_bonus = {
+				name = EFH_ha_aerospace_integration
 				bonus = 0.5
 				uses = 1
 				category = srp_air_tech
@@ -3170,6 +2975,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_defense_conversion }
 		completion_reward = {
 			1 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
@@ -3185,6 +2991,7 @@ focus_tree = {
 		x = 1
 		y = 5
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_industrial_core_expansion }
 		completion_reward = {
 			7 = { add_extra_state_shared_building_slots = 2 }
@@ -3201,9 +3008,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = EFH_fissile_foundation }
 		mutually_exclusive = { focus = EFH_civil_expansion }
-		ai_will_do = {
-			factor = 50
-		}
+		ai_will_do = { base = 10 }
 		completion_reward = {
 			7 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
 			42 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
@@ -3223,9 +3028,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = EFH_fissile_foundation }
 		mutually_exclusive = { focus = EFH_fissile_plant_program }
-		ai_will_do = {
-			factor = 50
-		}
+		ai_will_do = { base = 2 }
 		completion_reward = {
 			1 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
 			5 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
@@ -3243,6 +3046,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_fissile_plant_program }
 		completion_reward = {
 			7 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
@@ -3260,6 +3064,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = EFH_civil_expansion }
 		completion_reward = {
 			6 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
@@ -3279,6 +3084,7 @@ focus_tree = {
 		x = -4
 		y = 6
 		cost = 5
+		ai_will_do = { base = 5 }
 		available = {
 			has_country_flag = EFH_prologue_closed
 		}
@@ -3300,6 +3106,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = EFH_global_positioning }
 		mutually_exclusive = { focus = EFH_beijing_channel }
 		completion_reward = {
@@ -3325,14 +3132,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_pacific_partnership }
 		completion_reward = {
 			add_tech_bonus = {
+				name = EFH_japan_tech_exchange
 				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
 			add_tech_bonus = {
+				name = EFH_japan_tech_exchange
 				bonus = 0.5
 				uses = 1
 				category = armor
@@ -3352,6 +3162,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = EFH_japan_tech_exchange }
 		available = {
 			date > 2022.6.1
@@ -3381,6 +3192,7 @@ focus_tree = {
 				limit = { has_country_flag = EFH_japan_techno_path }
 				custom_effect_tooltip = EFH_groundwork_japan_techno_tt
 				add_tech_bonus = {
+					name = EFH_pacific_defense_pact
 					bonus = 0.5
 					uses = 1
 					category = electronics
@@ -3397,6 +3209,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_global_positioning }
 		completion_reward = {
 			add_political_power = 30
@@ -3422,6 +3235,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_south_american_outreach }
 		completion_reward = {
 			hidden_effect = {
@@ -3442,6 +3256,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_SAC_infrastructure_program }
 		available = {
 			date > 2022.1.1
@@ -3466,6 +3281,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_global_positioning }
 		mutually_exclusive = { focus = EFH_pacific_partnership }
 		completion_reward = {
@@ -3492,6 +3308,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_beijing_channel }
 		completion_reward = {
 			hidden_effect = {
@@ -3512,6 +3329,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_trade_normalization }
 		completion_reward = {
 			set_country_flag = EFH_eurasian_buffer_active

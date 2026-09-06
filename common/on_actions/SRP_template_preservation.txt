@@ -12,4 +12,15 @@ on_actions = {
 			SRP_preserve_ai_templates_effect = yes
 		}
 	}
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { EFH = { exists = yes } }
+				}
+				SRP_preserve_ai_templates_effect = yes
+			}
+		}
+	}
 }

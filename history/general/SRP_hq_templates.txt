@@ -1,0 +1,44 @@
+every_possible_country = {
+	limit = { has_dlc = "Thunder at Our Gates" }
+
+	if = {
+		limit = { OR = { tag = IRS tag = KNX } }
+		division_template = {
+			name = "Coordination Node"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_overseer_node = { x = 0 y = 0 }
+				hq_overseer_node = { x = 0 y = 1 }
+				hq_overseer_node = { x = 0 y = 2 }
+			}
+
+			support = {
+				hq_dispatcher_relay = { x = 0 y = 0 }
+				hq_naval_relay = { x = 0 y = 1 }
+			}
+		}
+	}
+
+	if = {
+		limit = { NOT = { OR = { tag = IRS tag = KNX } } }
+		division_template = {
+			name = "Field Army Headquarters"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 }
+				hq_infantry = { x = 0 y = 1 }
+				hq_infantry = { x = 0 y = 2 }
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
+				hq_naval_liaison = { x = 0 y = 1 }
+				hq_air_liaison = { x = 0 y = 2 }
+			}
+		}
+	}
+}

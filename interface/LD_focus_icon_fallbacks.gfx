@@ -45,4 +45,9 @@ spriteTypes = {
 		name = "GFX_focus_generic_war_communism"
 		texturefile = "gfx/interface/goals/goal_generic_support_communism.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_EFH_northern_supply_groundwork"
+		texturefile = "gfx/interface/goals/focus_CHI_combined_logistics_command.dds"
+	}
 }

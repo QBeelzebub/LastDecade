@@ -30,30 +30,7 @@ SRP_orbital_program = {
 				clamp_variable = { var = SRP_surveillance_satellites min = 0 max = 999 }
 				add_to_variable = { var = SRP_total_satellites value = 1 }
 				clamp_variable = { var = SRP_total_satellites min = 0 max = 999 }
-				if = {
-					limit = { check_variable = { var = SRP_surveillance_satellites value = 1 compare = equals } }
-					add_ideas = SRP_orbital_surveillance_tier_1
-				}
-				if = {
-					limit = { check_variable = { var = SRP_surveillance_satellites value = 3 compare = equals } }
-					remove_ideas = SRP_orbital_surveillance_tier_1
-					add_ideas = SRP_orbital_surveillance_tier_2
-				}
-				if = {
-					limit = { check_variable = { var = SRP_surveillance_satellites value = 6 compare = equals } }
-					remove_ideas = SRP_orbital_surveillance_tier_2
-					add_ideas = SRP_orbital_surveillance_tier_3
-				}
-				if = {
-					limit = { check_variable = { var = SRP_surveillance_satellites value = 11 compare = equals } }
-					remove_ideas = SRP_orbital_surveillance_tier_3
-					add_ideas = SRP_orbital_surveillance_tier_4
-				}
-				if = {
-					limit = { check_variable = { var = SRP_surveillance_satellites value = 21 compare = equals } }
-					remove_ideas = SRP_orbital_surveillance_tier_4
-					add_ideas = SRP_orbital_surveillance_tier_5
-				}
+				SRP_orbital_recalculate_surveillance_effect = yes
 			}
 		}
 
@@ -113,6 +90,7 @@ SRP_orbital_program = {
 		icon = generic_research
 
 		visible = {
+			check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals }
 			OR = {
 				original_tag = EFH
 				original_tag = USA
@@ -155,6 +133,7 @@ SRP_orbital_program = {
 		icon = generic_research
 
 		visible = {
+			check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals }
 			OR = {
 				original_tag = EFH
 				original_tag = USA
@@ -220,6 +199,7 @@ SRP_orbital_program = {
 		}
 
 		visible = {
+			check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals }
 			OR = {
 				original_tag = EFH
 				original_tag = USA
@@ -294,6 +274,7 @@ SRP_orbital_program = {
 		}
 
 		visible = {
+			check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals }
 			OR = {
 				original_tag = EFH
 				original_tag = USA
@@ -357,6 +338,8 @@ SRP_orbital_program = {
 				original_tag = USA
 			}
 		}
+
+		targets = { USA EFH }
 
 		target_root_trigger = {
 			check_variable = { var = SRP_military_satellites value = 0 compare = greater_than }
@@ -528,7 +511,7 @@ SRP_orbital_program = {
 		}
 
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 	}
 }

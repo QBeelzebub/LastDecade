@@ -33,14 +33,6 @@ on_actions = {
 				add_ideas = srp_social_democracy
 			}
 
-			every_country = {
-				limit = { tag = EFH exists = yes }
-				set_variable = { var = SRP_nuclear_warheads value = 40 }
-			}
-			every_country = {
-				limit = { tag = USA exists = yes }
-				set_variable = { var = SRP_nuclear_warheads value = 30 }
-			}
 		}
 	}
 

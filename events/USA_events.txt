@@ -5,7 +5,7 @@ country_event = {
 	id = usa.1
 	title = usa.1.t
 	desc = usa.1.d
-	picture = GFX_report_event_usa_new_navy
+	picture = GFX_report_event_generic_rally
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -68,7 +68,7 @@ country_event = {
 	id = usa.3
 	title = usa.3.t
 	desc = usa.3.d
-	picture = GFX_report_event_usa_new_navy
+	picture = GFX_report_event_usa_destroyers
 	is_triggered_only = yes
 
 	option = {
@@ -143,7 +143,7 @@ country_event = {
 	id = usa.53
 	title = usa.53.t
 	desc = usa.53.d
-	picture = GFX_report_event_generic_nuclear
+	picture = GFX_report_event_SOV_atomic_program_caught
 	is_triggered_only = yes
 
 	option = {

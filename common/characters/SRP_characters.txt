@@ -44,21 +44,15 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = KNX_vagrant_one_advisor
-            allowed = {
-                original_tag = KNX
+            allowed = { original_tag = KNX }
+            visible = {
+                has_country_flag = KNX_vagrant_1_active
                 has_country_flag = KNX_vagrant_1_advisory_duty
+                NOT = { has_country_flag = KNX_vagrant_1_copy_b }
             }
             traits = { vagrant_1_nest_builder }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer trait_engineer }
-            skill = 5
-            attack_skill = 4
-            defense_skill = 6
-            planning_skill = 4
-            logistics_skill = 5
         }
     }
 
@@ -81,21 +75,15 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = KNX_vagrant_one_b_advisor
-            allowed = {
-                original_tag = KNX
+            allowed = { original_tag = KNX }
+            visible = {
+                has_country_flag = KNX_vagrant_1_active
                 has_country_flag = KNX_vagrant_1_advisory_duty
+                has_country_flag = KNX_vagrant_1_copy_b
             }
             traits = { vagrant_1_nest_builder }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer trait_engineer }
-            skill = 5
-            attack_skill = 4
-            defense_skill = 6
-            planning_skill = 4
-            logistics_skill = 5
         }
     }
 
@@ -113,21 +101,15 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = EFH_vagrant_2_advisor
-            allowed = {
-                original_tag = EFH
+            allowed = { original_tag = EFH }
+            visible = {
+                has_country_flag = EFH_vagrant_2_active
                 has_country_flag = EFH_vagrant_2_advisory_duty
+                NOT = { has_country_flag = EFH_vagrant_2_copy_b }
             }
             traits = { vagrant_2_combat_liaison }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer panzer_leader }
-            skill = 5
-            attack_skill = 6
-            defense_skill = 4
-            planning_skill = 4
-            logistics_skill = 4
         }
     }
 
@@ -145,21 +127,15 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = EFH_vagrant_2_b_advisor
-            allowed = {
-                original_tag = EFH
+            allowed = { original_tag = EFH }
+            visible = {
+                has_country_flag = EFH_vagrant_2_active
                 has_country_flag = EFH_vagrant_2_advisory_duty
+                has_country_flag = EFH_vagrant_2_copy_b
             }
             traits = { vagrant_2_combat_liaison }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer panzer_leader }
-            skill = 5
-            attack_skill = 6
-            defense_skill = 4
-            planning_skill = 4
-            logistics_skill = 4
         }
     }
 
@@ -178,21 +154,15 @@ characters = {
             slot = theorist
             idea_token = EFH_vagrant_3_advisor
             ledger = army
-            allowed = {
-                original_tag = EFH
+            allowed = { original_tag = EFH }
+            visible = {
+                has_country_flag = EFH_vagrant_3_active
                 has_country_flag = EFH_vagrant_3_advisory_duty
+                NOT = { has_country_flag = EFH_vagrant_3_copy_b }
             }
             traits = { vagrant_3_hyperbiology_researcher }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer trait_engineer }
-            skill = 5
-            attack_skill = 3
-            defense_skill = 6
-            planning_skill = 5
-            logistics_skill = 5
         }
     }
 
@@ -211,21 +181,15 @@ characters = {
             slot = theorist
             idea_token = EFH_vagrant_3_b_advisor
             ledger = army
-            allowed = {
-                original_tag = EFH
+            allowed = { original_tag = EFH }
+            visible = {
+                has_country_flag = EFH_vagrant_3_active
                 has_country_flag = EFH_vagrant_3_advisory_duty
+                has_country_flag = EFH_vagrant_3_copy_b
             }
             traits = { vagrant_3_hyperbiology_researcher }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer trait_engineer }
-            skill = 5
-            attack_skill = 3
-            defense_skill = 6
-            planning_skill = 5
-            logistics_skill = 5
         }
     }
 
@@ -244,21 +208,15 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = IRS_vagrant_4_advisor
-            allowed = {
-                original_tag = IRS
+            allowed = { original_tag = IRS }
+            visible = {
+                has_country_flag = IRS_vagrant_4_active
                 has_country_flag = IRS_vagrant_4_advisory_duty
+                NOT = { has_country_flag = IRS_vagrant_4_copy_b }
             }
             traits = { vagrant_4_iris_coordinator }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer infantry_leader }
-            skill = 6
-            attack_skill = 5
-            defense_skill = 5
-            planning_skill = 5
-            logistics_skill = 5
         }
     }
 
@@ -276,21 +234,15 @@ characters = {
         advisor = {
             slot = political_advisor
             idea_token = IRS_vagrant_4_b_advisor
-            allowed = {
-                original_tag = IRS
+            allowed = { original_tag = IRS }
+            visible = {
+                has_country_flag = IRS_vagrant_4_active
                 has_country_flag = IRS_vagrant_4_advisory_duty
+                has_country_flag = IRS_vagrant_4_copy_b
             }
             traits = { vagrant_4_iris_coordinator }
             cost = 0
             ai_will_do = { base = 10 }
-        }
-        corps_commander = {
-            traits = { career_officer infantry_leader }
-            skill = 6
-            attack_skill = 5
-            defense_skill = 5
-            planning_skill = 5
-            logistics_skill = 5
         }
     }
 

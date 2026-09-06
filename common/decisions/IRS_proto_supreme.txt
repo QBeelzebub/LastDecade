@@ -11,7 +11,7 @@ proto_supreme_raid_decisions = {
 		}
 
 		allowed = {
-			NOT = { is_parasite_nation = yes }
+			NOT = { SRP_is_parasite_tag = yes }
 		}
 
 		visible = {

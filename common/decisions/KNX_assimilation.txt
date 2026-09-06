@@ -79,14 +79,7 @@ knx_assimilation = {
 		days_remove = 14
 
 		remove_effect = {
-			FROM = {
-				remove_core_of = IRS
-				remove_dynamic_modifier = { modifier = irs_consumed_state }
-				clr_state_flag = irs_state_consumed
-				add_core_of = KNX
-				add_dynamic_modifier = { modifier = knx_consumed_state }
-				set_state_flag = knx_state_consumed
-			}
+			FROM = { SRP_absorb_state_for_KNX = yes }
 		}
 
 		ai_will_do = {
@@ -180,6 +173,10 @@ knx_assimilation = {
 				remove_dynamic_modifier = { modifier = irs_consumed_state }
 				clr_state_flag = irs_state_consumed
 				add_core_of = KNX
+				every_country = {
+					limit = { NOT = { is_full_parasite = yes } }
+					PREV = { remove_core_of = PREV }
+				}
 				add_dynamic_modifier = { modifier = knx_consumed_state }
 				set_state_flag = knx_state_consumed
 			}

@@ -297,6 +297,39 @@ focus_tree = {
 		available = { always = no }
 		completion_reward = { }
 	}
+	focus = {
+		id = SOV_raskovas_aviation_group
+		icon = GFX_goal_unknown
+		x = 2
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+}
+
+focus_tree = {
+	id = spanish_focus
+	country = { factor = 0 }
+	default = no
+	focus = {
+		id = SPA_a_great_spain
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+	focus = {
+		id = SPR_the_popular_front
+		icon = GFX_goal_unknown
+		x = 2
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
 }
 
 focus_tree = {
@@ -307,6 +340,42 @@ focus_tree = {
 		id = stub_usa_focus
 		icon = GFX_goal_unknown
 		x = 0
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_suspend_the_presecution
+		icon = GFX_goal_unknown
+		x = 2
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_democratic_socialism
+		icon = GFX_goal_unknown
+		x = 4
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_america_first
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 1
+		available = { always = no }
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_honor_the_confederacy
+		icon = GFX_goal_unknown
+		x = 8
 		y = 0
 		cost = 1
 		available = { always = no }

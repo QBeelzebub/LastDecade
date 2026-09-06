@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Left chain segment -->
+  <ellipse cx="38" cy="52" rx="11" ry="7" fill="none" stroke="#c9a52a" stroke-width="4" transform="rotate(-30 38 52)"/>
+  <ellipse cx="53" cy="61" rx="11" ry="7" fill="none" stroke="#c9a52a" stroke-width="4" transform="rotate(-30 53 61)"/>
+
+  <!-- Right chain segment -->
+  <ellipse cx="75" cy="67" rx="11" ry="7" fill="none" stroke="#c9a52a" stroke-width="4" transform="rotate(-30 75 67)"/>
+  <ellipse cx="90" cy="76" rx="11" ry="7" fill="none" stroke="#c9a52a" stroke-width="4" transform="rotate(-30 90 76)"/>
+
+  <!-- Break sparks -->
+  <rect x="62.5" y="52" width="3" height="9" fill="#c9a52a"/>
+  <rect x="62.5" y="52" width="3" height="9" fill="#c9a52a" transform="rotate(60 64 64)"/>
+  <rect x="62.5" y="52" width="3" height="9" fill="#c9a52a" transform="rotate(120 64 64)"/>
+</svg>

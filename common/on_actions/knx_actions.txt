@@ -14,4 +14,11 @@ on_actions = {
 			}
 		}
 	}
+
+	on_monthly_KNX = {
+		effect = {
+			KNX_grow_hive_forts_effect = yes
+			KNX_hive_state_development_effect = yes
+		}
+	}
 }

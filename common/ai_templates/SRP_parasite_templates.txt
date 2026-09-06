@@ -1,3 +1,4 @@
+
 parasite_infantry = {
 	available_for = {
 		IRS
@@ -8,6 +9,115 @@ parasite_infantry = {
 
 	upgrade_prio = {
 		base = 10
+	}
+
+	parasite_assault = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 4
+
+			modifier = {
+				factor = 0.4
+				has_tech = early_pure_parasites
+			}
+		}
+
+		target_template = {
+			regiments = {
+				rupter_pack = 12
+			}
+		}
+	}
+
+	parasite_primitive_host = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 3
+				has_tech = early_primitive_parasites
+			}
+		}
+
+		enable = {
+			has_tech = early_primitive_parasites
+		}
+
+		target_template = {
+			regiments = {
+				primitive_longarms = 4
+				primitive_reeker = 3
+				rupter_pack = 6
+			}
+		}
+	}
+
+	parasite_pure_swarm = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 4
+				has_tech = early_pure_parasites
+			}
+			modifier = {
+				factor = 0.5
+				has_tech = advanced_pure_parasites
+			}
+		}
+
+		enable = {
+			has_tech = early_pure_parasites
+		}
+
+		target_template = {
+			regiments = {
+				vigilante_battery = 4
+				primitive_tozoon = 8
+			}
+		}
+	}
+
+	parasite_evolved_assault = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 5
+				has_tech = advanced_pure_parasites
+			}
+		}
+
+		enable = {
+			has_tech = advanced_pure_parasites
+		}
+
+		target_template = {
+			regiments = {
+				monarch_hunter = 4
+				rupter_pack = 8
+			}
+		}
+	}
+}
+
+parasite_swarm_flood = {
+	available_for = {
+		IRS
+		KNX
+	}
+
+	role = militias
+
+	upgrade_prio = {
+		base = 6
 	}
 
 	parasite_swarm = {
@@ -23,12 +133,25 @@ parasite_infantry = {
 			}
 		}
 	}
+}
 
-	parasite_assault = {
-		reinforce_prio = 3
+parasite_garrison = {
+	available_for = {
+		IRS
+		KNX
+	}
+
+	role = garrison
+
+	upgrade_prio = {
+		base = 5
+	}
+
+	parasite_holdfast = {
+		reinforce_prio = 1
 
 		upgrade_prio = {
-			base = 6
+			base = 3
 		}
 
 		target_template = {
@@ -38,73 +161,285 @@ parasite_infantry = {
 		}
 	}
 
-	parasite_primitive_host = {
-		reinforce_prio = 3
+	parasite_carrier_watch = {
+		reinforce_prio = 0
 
 		upgrade_prio = {
-			base = 2
+			base = 6
 		}
 
 		target_template = {
 			regiments = {
-				primitive_longarms = 4
-				primitive_reeker = 4
+				carrier_brood = 6
+				rupter_pack = 2
 			}
 		}
 	}
 
-	parasite_pure_swarm = {
-		reinforce_prio = 2
+	parasite_relay_garrison = {
+		reinforce_prio = 0
 
 		upgrade_prio = {
-			base = 2
+			base = 8
+		}
+
+		enable = {
+			has_tech = late_preeminent_parasites
 		}
 
 		target_template = {
 			regiments = {
-				vigilante_battery = 4
-				rupter_pack = 8
+				carrier_brood = 6
+				rupter_pack = 2
 			}
-		}
-	}
 
-	parasite_evolved_assault = {
-		reinforce_prio = 3
-
-		upgrade_prio = {
-			base = 2
-		}
-
-		target_template = {
-			regiments = {
-				monarch_hunter = 4
-				rupter_pack = 8
+			support = {
+				adapted_summoner = 1
 			}
 		}
 	}
 }
 
-knx_infantry = {
+parasite_armor = {
 	available_for = {
+		IRS
 		KNX
 	}
 
-	role = infantry
+	role = armor
+
+	upgrade_prio = {
+		base = 7
+	}
+
+	parasite_armor_seed = {
+		reinforce_prio = 1
+
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			regiments = {
+				rupter_pack = 10
+			}
+		}
+	}
+
+	parasite_adapted_strike = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 4
+		}
+
+		enable = {
+			has_tech = late_preeminent_parasites
+		}
+
+		target_template = {
+			regiments = {
+				adapted_burrower = 4
+				rupter_pack = 8
+			}
+
+			support = {
+				adapted_summoner = 1
+			}
+
+			regimental_support = {
+				srp_bolster_regimental = 1
+			}
+		}
+	}
+
+	parasite_adapted_phalanx = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 3
+				has_tech = apex_preeminent_parasites
+			}
+		}
+
+		enable = {
+			has_tech = apex_preeminent_parasites
+		}
+
+		target_template = {
+			regiments = {
+				adapted_warden = 2
+				adapted_bolster = 2
+				adapted_burrower = 2
+				rupter_pack = 6
+			}
+
+			support = {
+				adapted_summoner = 1
+			}
+
+			regimental_support = {
+				srp_bolster_regimental = 1
+				srp_summoner_regimental = 1
+			}
+		}
+	}
+}
+
+parasite_rangers = {
+	available_for = {
+		IRS
+		KNX
+	}
+
+	role = rangers_role
+
+	upgrade_prio = {
+		base = 6
+	}
+
+	parasite_ranger_seed = {
+		reinforce_prio = 1
+
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			regiments = {
+				rupter_pack = 10
+			}
+		}
+	}
+
+	parasite_mangler_assault = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 4
+
+			modifier = {
+				factor = 0.4
+				has_tech = late_preeminent_parasites
+			}
+		}
+
+		enable = {
+			has_tech = assimilated_predators
+		}
+
+		target_template = {
+			regiments = {
+				mangler_pack = 4
+				rupter_pack = 8
+			}
+		}
+	}
+
+	parasite_apex_marauder = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 6
+				has_tech = late_preeminent_parasites
+			}
+		}
+
+		enable = {
+			has_tech = late_preeminent_parasites
+		}
+
+		target_template = {
+			regiments = {
+				srp_marauder = 4
+				rupter_pack = 6
+			}
+
+			regimental_support = {
+				srp_summoner_regimental = 1
+			}
+		}
+	}
+}
+
+parasite_landing_swarm = {
+	available_for = {
+		IRS
+		KNX
+	}
+
+	role = marines
 
 	upgrade_prio = {
 		base = 8
 	}
 
-	knx_striker = {
-		reinforce_prio = 3
+	parasite_wading_swarm = {
+		reinforce_prio = 2
 
 		upgrade_prio = {
-			base = 2
+			base = 6
 		}
 
 		target_template = {
 			regiments = {
-				vigilante_battery = 4
+				rupter_pack = 9
+				carrier_brood = 4
+			}
+		}
+	}
+
+	parasite_landing_vanguard = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 4
+
+			modifier = {
+				factor = 3
+				has_tech = late_preeminent_parasites
+			}
+		}
+
+		enable = {
+			has_tech = late_preeminent_parasites
+		}
+
+		target_template = {
+			regiments = {
+				adapted_burrower = 3
+				rupter_pack = 6
+			}
+		}
+	}
+}
+
+knx_irregulars = {
+	available_for = {
+		KNX
+	}
+
+	role = irregular_infantry
+
+	upgrade_prio = {
+		base = 4
+	}
+
+	knx_irregular_seed = {
+		reinforce_prio = 1
+
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			regiments = {
 				rupter_pack = 8
 			}
 		}
@@ -114,13 +449,47 @@ knx_infantry = {
 		reinforce_prio = 2
 
 		upgrade_prio = {
-			base = 2
+			base = 3
+		}
+
+		enable = {
+			has_tech = late_primitive_parasites
 		}
 
 		target_template = {
 			regiments = {
 				primitive_manducater = 6
 				rupter_pack = 4
+			}
+		}
+	}
+}
+
+parasite_hq = {
+	available_for = {
+		IRS
+		KNX
+	}
+
+	role = hq_role
+
+	upgrade_prio = {
+		base = 0
+	}
+
+	parasite_hq_default = {
+		upgrade_prio = {
+			base = 0
+		}
+
+		target_template = {
+			support = {
+				hq_dispatcher_relay = 1
+				hq_naval_relay = 1
+			}
+
+			regiments = {
+				hq_overseer_node = 3
 			}
 		}
 	}

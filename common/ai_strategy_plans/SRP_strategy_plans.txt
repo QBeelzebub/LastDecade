@@ -1,28 +1,4 @@
 
-EFH_canon_plan = {
-	name = "EFH canon research plan"
-	desc = ""
-
-	allowed = { original_tag = EFH }
-	enable  = { always = yes }
-	abort   = { always = no }
-
-	research = {
-		srp_industry_tech     = 18.0
-		srp_electronics_tech  = 14.0
-		srp_incendiary        = 14.0
-		srp_land_tech         = 12.0
-		srp_construction_tech = 10.0
-		srp_air_tech          = 10.0
-		nuclear               = 10.0
-		srp_artillery_tech    = 8.0
-	}
-
-	weight = {
-		factor = 1.0
-		modifier = { factor = 1.0 }
-	}
-}
 
 USA_canon_plan = {
 	name = "USA canon research plan"
@@ -40,6 +16,55 @@ USA_canon_plan = {
 		srp_naval_tech       = 10.0
 		srp_incendiary       = 10.0
 		srp_electronics_tech = 8.0
+	}
+
+	ai_national_focuses = {
+		USA_american_century
+
+		USA_atlantic_vigilance
+		USA_the_european_question
+		USA_conventional_overmatch
+		USA_containment_posture
+		USA_strategic_readiness
+		USA_cold_war_footing
+		USA_war_plan_north
+
+		USA_continental_sovereignty
+		USA_summit_skepticism
+		USA_domestic_stability
+		USA_cold_war_extension
+
+		USA_fire_protocol_adoption
+		USA_continental_incident_reporting
+		USA_incendiary_stockpile_program
+		USA_joint_containment_boards
+
+		USA_doctrine_reckoning
+		USA_bury_the_findings
+		USA_root_clearance_doctrine
+		USA_knox_county_response
+		USA_appalachian_cordon
+		USA_incendiary_clearance_push
+		USA_burn_knox_county
+
+		USA_canadian_theater_pre_positioning
+		USA_northern_logistics_command
+
+		USA_pentagon_review
+		USA_defense_appropriations
+		USA_procurement_debate
+		USA_technological_edge
+		USA_modern_us_military
+		USA_force_projection_command
+		USA_state_of_the_union
+		USA_the_national_mood
+		USA_populist_surge
+		USA_govern_the_union
+		USA_federal_authority
+		USA_domestic_agenda
+		USA_hemispheric_primacy
+		USA_domestic_containment_doctrine
+		USA_federal_quarantine_authority
 	}
 
 	weight = {
@@ -94,29 +119,6 @@ CHN_canon_plan = {
 	}
 }
 
-IRS_canon_plan = {
-	name = "IRS canon research plan"
-	desc = ""
-
-	allowed = { original_tag = IRS }
-	enable  = { always = yes }
-	abort   = { always = no }
-
-	research = {
-		srp_parasite_tech         = 25.0
-		basic_parasites           = 20.0
-		srp_parasite_support_tech = 15.0
-		parasite_buildings        = 15.0
-		srp_iris_tech             = 12.0
-		srp_industry_tech         = 12.0
-		srp_construction_tech     = 10.0
-	}
-
-	weight = {
-		factor = 1.0
-		modifier = { factor = 1.0 }
-	}
-}
 
 KNX_canon_plan = {
 	name = "KNX canon research plan"
@@ -141,27 +143,6 @@ KNX_canon_plan = {
 	}
 }
 
-
-EFH_historical_focus_plan = {
-	name = "EFH historical focus path"
-	desc = ""
-
-	allowed = { original_tag = EFH }
-	enable  = { is_historical_focus_on = yes }
-	abort_when_not_enabled = yes
-
-	ai_national_focuses = {
-		EFH_laytheo_orbital_logistics
-		EFH_doctrine_investment
-		EFH_fissile_plant_program
-		EFH_pacific_partnership
-	}
-
-	weight = {
-		factor = 1.0
-		modifier = { factor = 1.0 }
-	}
-}
 
 RSF_historical_focus_plan = {
 	name = "RSF historical focus path"
@@ -190,9 +171,12 @@ USA_historical_focus_plan = {
 	enable  = { is_historical_focus_on = yes }
 	abort_when_not_enabled = yes
 
-	ai_national_focuses = {
-		USA_summit_skepticism
-		USA_cyber_dominance
+	focus_factors = {
+		USA_summit_acceptance   = 0
+		USA_nuclear_superiority = 0
+		USA_own_the_failure     = 0
+		USA_knox_backchannel    = 0
+		USA_incendiary_doctrine = 0
 	}
 
 	weight = {

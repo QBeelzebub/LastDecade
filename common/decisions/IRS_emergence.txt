@@ -175,8 +175,8 @@ IRS_emergence_operations = {
 			tag = IRS
 		}
 
-		cost = 25
-		days_re_enable = 60
+		cost = 15
+		days_re_enable = 30
 
 		complete_effect = {
 			custom_effect_tooltip = IRS_ep_gain_5_tt

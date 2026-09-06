@@ -210,6 +210,58 @@ SRP_major_battleships = {
 		}
 	}
 }
+IRS_colossant_line = {
+	category = naval
+
+	available_for = {
+		IRS
+	}
+
+	roles = {
+		naval_capital_bb
+	}
+
+	priority = {
+		factor = 250
+	}
+
+	IRS_colossant_prime = {
+		priority = {
+			factor = 200
+		}
+
+		enable = {
+			has_tech = devourer_emergence
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 100
+			type = IRS_colossant_hull_1
+			modules = {
+				fixed_ship_torpedo_slot = IRS_shredder_array
+				fixed_ship_engine_slot = IRS_burst_propulsor
+				front_1_custom_slot = IRS_hunting_call_pheromone
+				mid_1_custom_slot = IRS_regenerative_tissue
+				rear_1_custom_slot = IRS_depth_tolerance
+			}
+		}
+
+		allowed_modules = {
+			IRS_acid_mantle
+			IRS_shredder_array
+			IRS_fin_cluster
+			IRS_current_channeling
+			IRS_burst_propulsor
+			IRS_schooling_pheromone
+			IRS_hunting_call_pheromone
+			IRS_alarm_response_pheromone
+			IRS_exoskeletal_carapace
+			IRS_regenerative_tissue
+			IRS_depth_tolerance
+		}
+	}
+}
 
 IRS_devourer_swarms = {
 	category = naval

@@ -167,6 +167,25 @@ garrison_generic = {
 		}
 	}
 
+	garrison_light = {
+		reinforce_prio = 0
+		custom_icon = 7
+
+		upgrade_prio = {
+			base = 3
+		}
+
+		target_template = {
+			regiments = {
+				infantry = 3
+			}
+		}
+
+		replace_at_match = 0.95
+		replace_with = garrison_generic
+		target_min_match = 0.3
+	}
+
 	garrison_generic = {
 		reinforce_prio = 0
 		custom_icon = 7
@@ -287,9 +306,37 @@ infantry_generic = {
 			}
 		}
 
-		replace_at_match = 1.5
-		replace_with = infantry_improved
-		target_min_match = 0.9
+		replace_at_match = 0.85
+		replace_with = infantry_marine
+		target_min_match = 0.35
+	}
+
+	infantry_marine = {
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				has_tech = srp_motorized_1
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				recon = 1
+			}
+
+			regiments = {
+				infantry = 9
+			}
+		}
+
+		replace_at_match = 0.9
+		replace_with = infantry_mid
+		target_min_match = 0.35
 	}
 
 	infantry_mid = {
@@ -299,7 +346,7 @@ infantry_generic = {
 
 			modifier = {
 				factor = 3
-				date > 1940.1.1
+				date > 2021.1.1
 			}
 		}
 
@@ -316,6 +363,79 @@ infantry_generic = {
 			regiments = {
 				infantry = 9
 				artillery_brigade = 2
+			}
+		}
+	}
+}
+
+motorized_generic = {
+
+	blocked_for = {
+		IRS
+		KNX
+	}
+
+	role = motorized
+
+	upgrade_prio = {
+		base = 3
+
+		modifier = {
+			factor = 2
+			has_tech = srp_motorized_1
+		}
+	}
+
+	motorized_rapid = {
+		reinforce_prio = 1
+		custom_icon = 7
+
+		upgrade_prio = {
+			base = 3
+		}
+
+		target_template = {
+
+			support = {
+				recon = 1
+				logistics_company = 1
+			}
+
+			regiments = {
+				motorized = 9
+			}
+		}
+
+		replace_at_match = 0.9
+		replace_with = motorized_rapid_upgraded
+		target_min_match = 0.35
+	}
+
+	motorized_rapid_upgraded = {
+		reinforce_prio = 1
+		custom_icon = 7
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 4
+				has_tech = srp_ifv_chassis_tech
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+				anti_air = 1
+			}
+
+			regiments = {
+				motorized = 6
+				mechanized = 3
 			}
 		}
 	}
@@ -407,6 +527,109 @@ super_heavy_generic = {
 			regiments = {
 				medium_armor = 2
 				motorized = 6
+			}
+		}
+	}
+}
+
+
+marines_generic = {
+
+	blocked_for = {
+		IRS
+		KNX
+	}
+
+	role = marines
+
+	upgrade_prio = {
+		base = 3
+
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+
+	marines_early = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 2
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+
+			regiments = {
+				srp_marine = 6
+			}
+		}
+
+		replace_at_match = 0.85
+		replace_with = marines_late
+		target_min_match = 0.35
+	}
+
+	marines_late = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				has_tech = srp_motorized_1
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+				artillery = 1
+			}
+
+			regiments = {
+				srp_marine = 9
+				artillery_brigade = 1
+			}
+		}
+	}
+}
+
+
+hq_generic = {
+
+	blocked_for = {
+		IRS
+		KNX
+	}
+
+	role = hq_role
+
+	upgrade_prio = {
+		base = 0
+	}
+
+	hq_default = {
+		upgrade_prio = {
+			base = 0
+		}
+
+		target_template = {
+			support = {
+				hq_support_company = 1
+				hq_naval_liaison = 1
+				hq_air_liaison = 1
+			}
+
+			regiments = {
+				hq_infantry = 3
 			}
 		}
 	}

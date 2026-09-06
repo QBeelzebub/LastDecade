@@ -1,7 +1,7 @@
 
 
 division_template = {
-	name = "Inborn Swarm"
+	name = "Rupter Pack"
 	force_allow_recruiting = yes
 	regiments = {
 		rupter_pack = { x = 0 y = 0 }
@@ -23,7 +23,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Rupter Pack"
+	name = "Inborn Swarm"
 	force_allow_recruiting = yes
 	regiments = {
 		rupter_pack = { x = 0 y = 0 }
@@ -43,7 +43,7 @@ division_template = {
 
 division_template = {
 	name = "Primitive Host"
-	force_allow_recruiting = yes
+	is_locked = yes
 	regiments = {
 		primitive_longarms = { x = 0 y = 0 }
 		primitive_longarms = { x = 0 y = 1 }
@@ -58,7 +58,7 @@ division_template = {
 
 division_template = {
 	name = "Pure Swarm"
-	force_allow_recruiting = yes
+	is_locked = yes
 	regiments = {
 		vigilante_battery = { x = 0 y = 0 }
 		vigilante_battery = { x = 0 y = 1 }
@@ -77,7 +77,7 @@ division_template = {
 
 division_template = {
 	name = "Evolved Assault"
-	force_allow_recruiting = yes
+	is_locked = yes
 	regiments = {
 		monarch_hunter = { x = 0 y = 0 }
 		monarch_hunter = { x = 0 y = 1 }
@@ -137,21 +137,21 @@ instant_effect = {
 units = {
 	division = {
 		name = "Ascension Host"
-		division_template = "Inborn Swarm"
+		division_template = "Rupter Pack"
 		location = 13013
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Atlantic Vanguard"
-		division_template = "Inborn Swarm"
+		division_template = "Rupter Pack"
 		location = 13013
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Second Brood"
-		division_template = "Inborn Swarm"
+		division_template = "Rupter Pack"
 		location = 13013
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9

@@ -9,6 +9,7 @@ categories = {
 				original_tag = EFH
 				original_tag = USA
 			}
+			check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals }
 		}
 
 		available = {
@@ -17,6 +18,20 @@ categories = {
 				check_variable = { var = SRP_orbital_thermo_warheads value = 0 compare = greater_than }
 				check_variable = { var = SRP_orbital_armed_warheads value = 0 compare = greater_than }
 			}
+		}
+	}
+
+	nuclear_raids = {
+		intel_source = air
+		free_targeting = yes
+		faction_influence_score_on_success = -100
+
+		visible = {
+			check_variable = { var = global.srp_nuclear_mode value = 1 compare = equals }
+		}
+
+		available = {
+			num_of_nukes > 0
 		}
 	}
 }

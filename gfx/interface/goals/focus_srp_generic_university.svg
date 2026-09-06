@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Mortarboard -->
+  <polygon points="64,20 80,28 64,36 48,28" fill="#c9a52a"/>
+  <rect x="77" y="28" width="2.5" height="10" fill="#c9a52a"/>
+  <circle cx="78" cy="40" r="2.5" fill="#c9a52a"/>
+
+  <!-- Pediment and entablature -->
+  <polygon points="64,44 92,62 36,62" fill="#c9a52a"/>
+  <rect x="40" y="62" width="48" height="6" fill="#c9a52a"/>
+
+  <!-- Columns -->
+  <rect x="44" y="68" width="6" height="20" fill="#c9a52a"/>
+  <rect x="57" y="68" width="6" height="20" fill="#c9a52a"/>
+  <rect x="70" y="68" width="6" height="20" fill="#c9a52a"/>
+  <rect x="83" y="68" width="6" height="20" fill="#c9a52a"/>
+
+  <!-- Steps -->
+  <rect x="36" y="88" width="56" height="4" fill="#c9a52a"/>
+  <rect x="30" y="92" width="68" height="4" fill="#c9a52a"/>
+</svg>

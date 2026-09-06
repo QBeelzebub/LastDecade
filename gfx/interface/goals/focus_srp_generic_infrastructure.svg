@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Towers -->
+  <rect x="40" y="42" width="7" height="40" fill="#c9a52a"/>
+  <rect x="81" y="42" width="7" height="40" fill="#c9a52a"/>
+
+  <!-- Cables -->
+  <path d="M24,70 Q34,50 43.5,44" fill="none" stroke="#c9a52a" stroke-width="3"/>
+  <path d="M43.5,44 Q64,64 84.5,44" fill="none" stroke="#c9a52a" stroke-width="3"/>
+  <path d="M84.5,44 Q94,50 104,70" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Hangers -->
+  <rect x="51.5" y="56" width="2.5" height="14" fill="#c9a52a"/>
+  <rect x="62.75" y="54" width="2.5" height="16" fill="#c9a52a"/>
+  <rect x="74" y="56" width="2.5" height="14" fill="#c9a52a"/>
+
+  <!-- Deck -->
+  <rect x="24" y="70" width="80" height="6" fill="#c9a52a"/>
+</svg>

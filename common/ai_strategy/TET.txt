@@ -1,0 +1,134 @@
+
+
+
+TET_bound_to_the_iris = {
+	allowed = { original_tag = TET }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend   id = IRS value = 750   }
+	ai_strategy = { type = alliance   id = IRS value = 1000  }
+	ai_strategy = { type = protect    id = IRS value = 300   }
+	ai_strategy = { type = support    id = IRS value = 200   }
+	ai_strategy = { type = antagonize id = IRS value = -1800 }
+	ai_strategy = { type = conquer    id = IRS value = -3000 }
+
+	ai_strategy = { type = befriend   id = KNX value = -900  }
+	ai_strategy = { type = alliance   id = KNX value = -2000 }
+	ai_strategy = { type = antagonize id = KNX value = 1200  }
+}
+
+TET_hates_humans = {
+	allowed = { original_tag = TET }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = AFR value = -900 }
+	ai_strategy = { type = befriend id = ASI value = -900 }
+	ai_strategy = { type = befriend id = CHN value = -900 }
+	ai_strategy = { type = befriend id = EFH value = -900 }
+	ai_strategy = { type = befriend id = JAP value = -900 }
+	ai_strategy = { type = befriend id = OCE value = -900 }
+	ai_strategy = { type = befriend id = RSF value = -900 }
+	ai_strategy = { type = befriend id = SAC value = -900 }
+	ai_strategy = { type = befriend id = SWR value = -900 }
+	ai_strategy = { type = befriend id = USA value = -900 }
+	ai_strategy = { type = alliance id = CHN value = -2000 }
+	ai_strategy = { type = alliance id = EFH value = -2000 }
+	ai_strategy = { type = alliance id = JAP value = -2000 }
+	ai_strategy = { type = alliance id = OCE value = -2000 }
+	ai_strategy = { type = alliance id = USA value = -2000 }
+
+	ai_strategy = { type = conquer    id = OCE value = 800 }
+	ai_strategy = { type = conquer    id = ASI value = 800 }
+	ai_strategy = { type = conquer    id = CHN value = 600 }
+	ai_strategy = { type = antagonize id = OCE value = 1200 }
+	ai_strategy = { type = antagonize id = ASI value = 1200 }
+}
+
+
+
+TET_brood_expansion = {
+	allowed = { original_tag = TET }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority id = east_indies value = 720 }
+	ai_strategy = { type = area_priority id = oceania     value = 320 }
+	ai_strategy = { type = area_priority id = asia        value = 200 }
+	ai_strategy = { type = area_priority id = pacific     value = 120 }
+
+	ai_strategy = { type = role_ratio id = marines  value = 320 }
+	ai_strategy = { type = build_army id = marines  value = 60  }
+	ai_strategy = { type = build_army id = infantry value = 60  }
+	ai_strategy = { type = build_army id = garrison value = 30  }
+}
+
+
+
+TET_devourer_swarm = {
+	allowed = { original_tag = TET }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = unit_ratio id = submarine value = 600 }
+	ai_strategy = { type = unit_ratio id = convoy    value = 40  }
+	ai_strategy = { type = equipment_production_factor id = submarine value = 200 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_devourer_hull value = 4 }
+	ai_strategy = { type = equipment_production_min_factories id = submarine value = 4 }
+	ai_strategy = { type = dockyard_to_military_factory_ratio value = 40 }
+
+	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_RAIDING value = -100 }
+	ai_strategy = { type = naval_mission_threshold id = MISSION_PATROL         value = -100 }
+
+	ai_strategy = { type = naval_dominance id = 74 value = 90 }
+	ai_strategy = { type = naval_dominance id = 93 value = 90 }
+	ai_strategy = { type = naval_dominance id = 72 value = 80 }
+	ai_strategy = { type = naval_dominance id = 80 value = 80 }
+	ai_strategy = { type = naval_dominance id = 91 value = 70 }
+	ai_strategy = { type = naval_dominance id = 92 value = 70 }
+	ai_strategy = { type = naval_dominance id = 75 value = 60 }
+	ai_strategy = { type = naval_dominance id = 71 value = 60 }
+
+	ai_strategy = { type = naval_convoy_raid_region id = 74 value = 300 }
+	ai_strategy = { type = naval_convoy_raid_region id = 72 value = 300 }
+	ai_strategy = { type = naval_convoy_raid_region id = 71 value = 250 }
+	ai_strategy = { type = naval_convoy_raid_region id = 75 value = 250 }
+
+	ai_strategy = { type = convoy_raiding_target id = OCE value = 300 }
+	ai_strategy = { type = convoy_raiding_target id = ASI value = 300 }
+	ai_strategy = { type = convoy_raiding_target id = CHN value = 250 }
+	ai_strategy = { type = convoy_raiding_target id = JAP value = 250 }
+	ai_strategy = { type = convoy_raiding_target id = EFH value = 200 }
+}
+
+TET_abyssal_landings = {
+	allowed = { original_tag = TET }
+	enable = { has_tech = abyssant_genesis }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = unit_ratio id = capital_ship value = 80 }
+	ai_strategy = { type = equipment_production_min_factories id = capital_ship value = 2 }
+
+	ai_strategy = { type = naval_invasion_focus            value = 320 }
+	ai_strategy = { type = naval_invasion_dominance_weight value = 35  }
+	ai_strategy = { type = ignore_army_incompetence        value = 1   }
+
+	ai_strategy = { type = invade id = OCE value = 440 }
+	ai_strategy = { type = invade id = ASI value = 440 }
+
+	ai_strategy = { type = naval_mission_threshold id = MISSION_NAVAL_INVASION_SUPPORT value = -100 }
+	ai_strategy = { type = invasion_unit_request area = east_indies value = 12 }
+}
+
+TET_island_air = {
+	allowed = { original_tag = TET }
+	enable = { has_tech = primitive_yelloweye_tech }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = strategic_air_importance id = 159 value = 26000 }
+	ai_strategy = { type = strategic_air_importance id = 158 value = 24000 }
+	ai_strategy = { type = strategic_air_importance id = 187 value = 20000 }
+	ai_strategy = { type = strategic_air_importance id = 160 value = 18000 }
+	ai_strategy = { type = strategic_air_importance id = 167 value = 16000 }
+}

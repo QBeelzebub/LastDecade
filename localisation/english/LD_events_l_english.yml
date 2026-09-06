@@ -20,13 +20,13 @@
  ldwar.11.a: "Two fronts, then. Hold the east."
 
  ldwar.20.t: "The Ground Will Not Wait"
- ldwar.20.d: "The joint assessment arrived through the health directorate rather than the general staff, which is itself the point. While the Federation and the United States have been spending divisions on each other, the infestation has taken ground that neither of them contested.\n\nThe recommendation is unsigned and unambiguous. Stop. Not a settlement, not a treaty, not an apology. Stop shooting at the Americans long enough that somebody is still holding the continent when this is over.\n\nWashington's health directorate is reading a document with the same conclusions in it."
+ ldwar.20.d: "The joint assessment arrived through the health directorate rather than the general staff, which is itself the point. While the Federation and the United States have been spending divisions on each other, the infestation has taken ground that neither of them contested.\n\nThe recommendation is unsigned and unambiguous. Stop. Not a settlement, not a treaty. Stop shooting at the Americans long enough that somebody is still holding the continent when this is over.\n\nWashington's health directorate is reading a document with the same conclusions in it."
  ldwar.20.a: "Open the channel. Nothing is conceded."
  ldwar.20.b: "Finish it first. The ecology can wait."
 
  ldwar.21.t: "The Federation Has Asked for Silence"
  ldwar.21.d: "Brussels is proposing a cessation with no territorial component, no recognition of anything, and no signature above the level of a service chief. Every disputed line stays exactly where the fighting left it.\n\nState reads it as capitulation dressed as prudence. The Surgeon General's office reads it as the only sane paragraph produced by either government this year. Both of them are in the room."
- ldwar.21.a: "Accept. We fight the ground, not each other."
+ ldwar.21.a: "Accept. The ground is the enemy now."
  ldwar.21.b: "Refuse. They opened this."
 
  ldwar.22.t: "The Guns Stop"
@@ -48,7 +48,7 @@
  ldwar.31.b: "Hold. Let the staff work the window."
 
  ldwar.32.t: "The County Burned Without Us"
- ldwar.32.d: "The window closed. The Federation issued four statements of concern, tabled two motions, and did not move a formation.\n\nWhat is left of the Knox network is not talking to Brussels, and the parts of the Federation's own apparatus that argued for intervention are not going to forget which way the vote went. An accord that cannot be invoked is a document about the past."
+ ldwar.32.d: "The window closed. The Federation issued four statements of concern, tabled two motions, and did not move a formation.\n\nWhat is left of the Knox network is not talking to Brussels, and the parts of the Federation's own apparatus that argued for intervention are not going to forget which way the vote went. The accord itself remains technically in force."
  ldwar.32.a: "It is on the record now."
 
  ldwar.33.t: "The Suspension Ends"
@@ -64,16 +64,16 @@
  LD_knox_window_running_tt: "§RThe Knox window runs for 90 days. If it expires, the county falls without the Federation and the accord is dead.§!"
 
  LD_canal_zone_agitation: "Canal Zone Agitation"
- LD_canal_zone_agitation_desc: "European contracts, Chinese capital, and a population that has worked out whose wages it is living on. The Zone is no longer a chokepoint the Americans merely hold. It is a chokepoint they have to keep."
+ LD_canal_zone_agitation_desc: "European contracts, Chinese capital, and a population that has worked out whose wages it is living on. A chokepoint the Americans held is now one they have to keep."
 
  LD_opportunist_offensive: "The Western Opportunity"
- LD_opportunist_offensive_desc: "The army moved west because the west was undefended, not because it was ready. Planning is fast and morale is high, and nobody at the top is willing to say aloud how thin the eastern line has become to pay for it."
+ LD_opportunist_offensive_desc: "The army moved west because the west was undefended. Readiness never came up. Planning is fast and morale is high, and nobody at the top is willing to say aloud how thin the eastern line has become to pay for it."
 
  LD_war_before_the_ground: "The War Comes First"
  LD_war_before_the_ground_desc: "The assessment was read, filed, and overruled. The Atlantic war continues and the containment effort is told to hold with what it has. The industry likes the decision. The public is beginning not to."
 
  LD_armed_truce: "The Armed Truce"
- LD_armed_truce_desc: "No treaty, no settlement, no signature worth framing. The guns stopped because the ground demanded it, and both general staffs spent the pause doing exactly what the other one was doing. Plants run, formations train, and nobody on either side of the Atlantic believes this is over."
+ LD_armed_truce_desc: "Nobody signed anything worth framing. The guns stopped because the ground demanded it, and both general staffs spent the pause doing exactly what the other one was doing. Plants run, formations train, and nobody on either side of the Atlantic believes this is over."
 
  LD_joint_offensive: "Coordinated Offensive"
  LD_joint_offensive_desc: "Two commands, one timetable. The offensives open in the same week against a country that has to answer both, and the planning cells have had the suspension to rehearse it."
@@ -100,7 +100,7 @@
  ldpro.2.a: "Match the distance."
 
  ldpro.3.t: "Verification Window Missed"
- ldpro.3.d: "The winter inspection of the Thule and Keflavik installations did not take place. The American side gave thirty days notice of a scheduling conflict, which is within their rights, and proposed a replacement window in the spring.\n\nThe replacement window has been proposed at ninety days notice rather than thirty. Our inspectorate notes, without recommendation, that ninety days is sufficient time to move anything that a thirty day window was designed to find. They have accepted the spring date."
+ ldpro.3.d: "The winter inspection of the Thule and Keflavik installations did not take place. The American side gave thirty days' notice of a scheduling conflict, which is within their rights, and proposed a replacement window in the spring.\n\nThe replacement window has been proposed at ninety days' notice rather than thirty. Our inspectorate notes, without recommendation, that ninety days is sufficient time to move anything that a thirty day window was designed to find. They have accepted the spring date."
  ldpro.3.a: "Accept the spring date."
 
  ldpro.4.t: "Intercept Over the Denmark Strait"
@@ -108,12 +108,12 @@
  ldpro.4.a: "Note it and continue the track."
 
  ldpro.5.t: "Orbital Notifications Discontinued"
- ldpro.5.d: "Since 1991 both powers have given seventy-two hours notice of imaging passes over the other's territory. The notice was never verifiable and was never really believed. It was given anyway, every week, for twenty-eight years.\n\nThe American State Department has informed the Secretariat that the practice is being discontinued as redundant. It was the last thing on the calendar that required the two governments to speak."
+ ldpro.5.d: "Since 1991 both powers have given seventy-two hours' notice of imaging passes over the other's territory. The notice was never verifiable and was never really believed. It was given anyway, every week, for twenty-eight years.\n\nThe American State Department has informed the Secretariat that the practice is being discontinued as redundant. It was the last thing on the calendar that required the two governments to speak."
  ldpro.5.a: "Strike it from the calendar."
 
 
  ldpro.10.t: "The Preparatory Programme Is Concluded"
- ldpro.10.d: "The continental works programme that has run since 2018 is closed. Its appropriations lapse at the end of the accounting period and will not be renewed, because the Federation now has an emergency to fund and emergencies are funded from somewhere.\n\nWhat was drafted, costed, argued over and left unfunded goes back into the archive, and the Secretariat has no intention of reopening it.\n\nEverything the Federation carries into what follows, it is carrying now."
+ ldpro.10.d: "The continental works programme that has run since 2018 is closed. Its appropriations lapse at the end of the accounting period and will not be renewed, because the Federation now has an emergency to fund and emergencies are funded from somewhere.\n\nWhat was drafted, costed, argued over and left unfunded goes back into the archive, and the Secretariat has no intention of reopening it.\n\nNothing in it was ever built."
  ldpro.10.a: "Close the file."
 
 
@@ -130,7 +130,6 @@
  EFH_mishandled_contamination_desc: "The inquiry found no individual at fault and recommended a continental sampling programme, which is the programme the Federation had declined to fund. Public health advisories issued from Brussels are now read as political documents."
 
 
- EFH_prologue_closed_tt: "The preparatory programme is closed. This was 2018 work and it is no longer 2018."
 
 
  LD_operation_laytheo: "Operation Laytheo"
@@ -171,7 +170,7 @@
  LD_laytheo_strike_the_bulb: "The Bulb"
  LD_laytheo_strike_the_bulb_desc: "There is no doctrine for this. There is an object, and there are people standing on it who have carried something up twenty two thousand kilometres of living world, and there is the rest of it."
 
- LD_laytheo_debug_open: "[DEBUG] Open Operation Laytheo"
+ LD_laytheo_debug_open: "(DEBUG) Open Operation Laytheo"
  LD_laytheo_debug_open_desc: "Placeholder entry point. The 2026 to 2029 spine that would set this flag does not exist yet."
 
 

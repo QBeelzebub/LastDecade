@@ -29,5 +29,11 @@ IRS_release_tethysic_puppet = {
 			adapted_devourer_strain = 1
 			popup = no
 		}
+
+		add_ideas = {
+			TET_brood_husbandry
+			TET_bound_supply
+			TET_brood_spawning
+		}
 	}
 }

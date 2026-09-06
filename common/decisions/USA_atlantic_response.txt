@@ -223,6 +223,7 @@ SRP_political_interference_category = {
 		complete_effect = {
 			set_country_flag = { flag = USA_counterintel_sweep_cd value = 1 days = 120 }
 			add_tech_bonus = {
+				name = USA_counterintelligence_sweep
 				bonus = 0.25
 				uses = 1
 				category = electronics

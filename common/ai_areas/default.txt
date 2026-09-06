@@ -1,0 +1,552 @@
+
+areas = {
+
+	suez = {
+        strategic_regions = {
+            128
+            28
+			232
+        }
+    }
+
+    scandinavia = {
+		strategic_regions = {
+            11
+            191
+            10
+            192
+            276
+            12
+            13
+            277
+            278
+        }
+    }
+
+    italy = {
+        strategic_regions = {
+            23
+            21
+        }
+    }
+
+    sardinia = {
+        strategic_regions = {
+            169
+        }
+    }
+
+	albania = {
+        strategic_regions = {
+            24
+        }
+    }
+
+	greater_balkans = {
+        strategic_regions = {
+            24
+            25
+            26
+        }
+    }
+
+    UK = {
+        strategic_regions = {
+            1 
+            2
+            3
+            4
+        }
+    }
+
+    UK_excluding_ni = {
+        strategic_regions = {
+            1 
+            2
+            3
+        }
+    }
+
+    north_africa = {
+        strategic_regions = {
+            128
+            225
+            126
+            182
+        }
+    }
+	
+	north_east_africa = {
+		strategic_regions = {
+			225
+			128
+			232
+		}
+	}
+
+	central_north_africa = {
+		 strategic_regions = {
+            225
+            126
+        }
+	}
+    
+	torch_landing_zone = {
+    	strategic_regions = {
+    		126
+			182
+    	}
+    }
+   
+   vichy_mainland = {
+    	strategic_regions = {
+    		20
+    	}
+    }
+
+	europe = {
+		continents = {
+			europe
+		}
+	}
+
+    mainland_europe = {
+        strategic_regions = {
+            208
+            19
+            20
+            5
+            41
+            209
+            210
+            23
+            21
+            7
+            6
+            8
+            22
+            38
+            39
+            37
+            27
+            24
+            26
+            25
+        }
+    }
+	
+	normandy_landing_zone = {
+        strategic_regions = {
+            208
+            20
+            19
+        }
+    }
+
+	north_america = {
+
+		continents = {
+			north_america
+		}
+	}
+
+	south_america = {
+
+		continents = {
+			south_america
+		}
+	}
+
+	africa = {
+
+		continents = {
+			africa
+		}
+	}
+
+	asia = {
+
+		continents = {
+			asia
+		}
+	}
+
+	middle_east = {
+
+		continents = {
+			middle_east
+		}
+	}
+
+	pacific = {
+
+		strategic_regions = {
+			105
+			180
+			97
+			32
+			84
+			95
+			94
+			177
+			172
+			78
+			109
+			160
+			83
+			167
+			91
+			178
+			179
+		}
+	}
+
+	oceania = {
+
+		strategic_regions = {
+			156
+			157
+			86
+			98
+			81
+			194
+			84
+			193
+		}
+	}
+	
+	home_islands = {
+		strategic_regions = {
+			76
+			154
+			299
+			300
+			160
+		}
+	}
+	
+	just_philippines = {
+		strategic_regions = {
+			160
+		}
+	}
+	
+	east_indies = {
+		strategic_regions = {
+			167
+			93
+			92
+			91
+			99
+			158
+			159
+			187
+		}
+	}
+	
+	burma = {
+		strategic_regions = {
+			189
+			142
+			141
+			295
+			294
+			293
+			292
+		}
+	}
+
+	horn_of_africa = {
+		strategic_regions = {
+			17
+			273
+			274
+		}
+	}
+	east_africa = {
+		strategic_regions = {
+			216
+			17
+			273
+			274
+			217
+			185
+			181
+		}
+	}
+	
+	defend_moscow_zone = {
+		strategic_regions = {
+			133
+			150
+			137
+		}
+	}
+	
+	belgian_congo = {
+		strategic_regions = {
+			227
+			271
+			272
+		}
+	}
+
+	sub_saharan_africa = {
+		strategic_regions = {
+			140
+			226
+			183
+			184
+			139
+			223
+		}
+	}
+
+	just_finland = {
+		strategic_regions = {
+			13
+			277
+ 			278
+		}
+	}
+
+	just_norway = {
+		strategic_regions = {
+			11
+			191
+		}
+	}
+
+	just_denmark_excluding_greenland = {
+		strategic_regions = {
+			275
+		}
+	}
+
+
+	just_iceland = {
+		strategic_regions = {
+			161
+		}
+	}
+
+	winter_war_front = {
+		strategic_regions = {
+			132
+			13
+			265
+		}
+	}
+
+	andaman_islands = {
+		strategic_regions = {
+			101
+		}
+	}
+
+	guam_area = {
+		strategic_regions = {
+			94
+		}
+	}
+
+	japan = {
+		strategic_regions = {
+			154
+			299
+			300
+		}
+	}
+	
+	us_west_coast = {
+		strategic_regions = {
+			78
+			80
+			75
+		}
+	}
+	
+	pearl_harbor_pacific_control_zone = {
+		strategic_regions = {
+			105
+			180
+			95
+		}
+	}
+
+	borneo_area = {
+		strategic_regions = {
+			159
+		}
+	}
+
+	sumatra_area = {
+		strategic_regions = {
+			187
+		}
+	}
+
+	java_area = {
+		strategic_regions = {
+			158
+		}
+	}
+
+	bismarck_sea_area = {
+		strategic_regions = {
+			84
+		}
+	}
+
+	kokoda_trail_area = {
+		strategic_regions = {
+			167
+		}
+	}
+
+	north_australia = {
+		strategic_regions = {
+			193
+		}
+	}
+	
+	micronesia_pacific_control_zone = {
+		strategic_regions = {
+			97
+			84
+			83
+		}
+	}
+	
+	mariana_pacific_control_zone = {
+		strategic_regions = {
+			78
+			94
+		}
+	}
+	
+	north_pacific_control_zone = {
+		strategic_regions = {
+			96
+			177
+		}
+	}
+	
+	home_islands_control_zone = {
+		strategic_regions = {
+			76
+			90
+		}
+	}
+	
+	western_med_control_zone = {
+		strategic_regions = {
+			68
+			169
+		}
+	}
+	
+	eastern_med_control_zone = {
+		strategic_regions = {
+			29
+			69
+		}
+	}
+	
+	italy_med_control_zone = {
+		strategic_regions = {
+			69
+			29
+			168
+			202
+		}
+	}
+	
+	med_invasion_zone = {
+		strategic_regions = {
+			169
+			29
+			68
+		}
+	}
+
+
+
+
+	irs_pernambuco_landing = {
+		strategic_regions = {
+			286
+			285
+			125
+			280
+		}
+	}
+
+	irs_gulf_of_guinea_landing = {
+		strategic_regions = {
+			62
+		}
+	}
+
+	irs_madagascar_landing = {
+		strategic_regions = {
+			181
+			185
+			139
+		}
+	}
+	human_africa_landing = {
+		strategic_regions = {
+			226
+			140
+			183
+			184
+		}
+	}
+
+	human_north_america_landing = {
+		strategic_regions = {
+			117
+			211
+			213
+			197
+			170
+		}
+	}
+
+
+	northern_theater = {
+		strategic_regions = {
+			234
+			233
+			213
+			220
+			121
+			197
+		}
+	}
+
+	efh_east_coast_landing = {
+		strategic_regions = {
+			197
+			117
+		}
+	}
+
+	knox_county = {
+		strategic_regions = {
+			214
+		}
+	}
+
+	knox_breakout = {
+		strategic_regions = {
+			214
+			198
+			120
+			117
+			211
+		}
+	}
+
+}

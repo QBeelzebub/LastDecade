@@ -1,0 +1,195 @@
+
+
+
+SRP_humans_hate_the_hive = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+	enable = { has_global_flag = parasites_emerged }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = IRS value = 1200 }
+	ai_strategy = { type = conquer    id = IRS value = 1000 }
+	ai_strategy = { type = befriend   id = IRS value = -900 }
+	ai_strategy = { type = alliance   id = IRS value = -2000 }
+	ai_strategy = { type = protect    id = IRS value = -400 }
+	ai_strategy = { type = support    id = IRS value = -400 }
+}
+
+SRP_humans_hate_knox = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+	enable = { country_exists = KNX }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = KNX value = 1200 }
+	ai_strategy = { type = conquer    id = KNX value = 1000 }
+	ai_strategy = { type = befriend   id = KNX value = -900 }
+	ai_strategy = { type = alliance   id = KNX value = -2000 }
+	ai_strategy = { type = protect    id = KNX value = -400 }
+	ai_strategy = { type = support    id = KNX value = -400 }
+}
+
+
+
+IRS_hates_humans = {
+	allowed = { original_tag = IRS }
+	enable = { has_global_flag = parasites_emerged }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = AFR value = -900 }
+	ai_strategy = { type = befriend id = ASI value = -900 }
+	ai_strategy = { type = befriend id = CHN value = -900 }
+	ai_strategy = { type = befriend id = EFH value = -900 }
+	ai_strategy = { type = befriend id = JAP value = -900 }
+	ai_strategy = { type = befriend id = OCE value = -900 }
+	ai_strategy = { type = befriend id = RSF value = -900 }
+	ai_strategy = { type = befriend id = SAC value = -900 }
+	ai_strategy = { type = befriend id = SWR value = -900 }
+	ai_strategy = { type = befriend id = USA value = -900 }
+	ai_strategy = { type = alliance id = AFR value = -2000 }
+	ai_strategy = { type = alliance id = ASI value = -2000 }
+	ai_strategy = { type = alliance id = CHN value = -2000 }
+	ai_strategy = { type = alliance id = EFH value = -2000 }
+	ai_strategy = { type = alliance id = JAP value = -2000 }
+	ai_strategy = { type = alliance id = OCE value = -2000 }
+	ai_strategy = { type = alliance id = RSF value = -2000 }
+	ai_strategy = { type = alliance id = SAC value = -2000 }
+	ai_strategy = { type = alliance id = SWR value = -2000 }
+	ai_strategy = { type = alliance id = USA value = -2000 }
+}
+
+KNX_hates_humans = {
+	allowed = { original_tag = KNX }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = AFR value = -900 }
+	ai_strategy = { type = befriend id = ASI value = -900 }
+	ai_strategy = { type = befriend id = CHN value = -900 }
+	ai_strategy = { type = befriend id = JAP value = -900 }
+	ai_strategy = { type = befriend id = OCE value = -900 }
+	ai_strategy = { type = befriend id = RSF value = -900 }
+	ai_strategy = { type = befriend id = SAC value = -900 }
+	ai_strategy = { type = befriend id = SWR value = -900 }
+	ai_strategy = { type = befriend id = USA value = -900 }
+	ai_strategy = { type = alliance id = AFR value = -2000 }
+	ai_strategy = { type = alliance id = ASI value = -2000 }
+	ai_strategy = { type = alliance id = CHN value = -2000 }
+	ai_strategy = { type = alliance id = JAP value = -2000 }
+	ai_strategy = { type = alliance id = OCE value = -2000 }
+	ai_strategy = { type = alliance id = RSF value = -2000 }
+	ai_strategy = { type = alliance id = SAC value = -2000 }
+	ai_strategy = { type = alliance id = SWR value = -2000 }
+	ai_strategy = { type = alliance id = USA value = -2000 }
+}
+
+SRP_hive_schism = {
+	allowed = {
+		OR = {
+			original_tag = IRS
+			original_tag = KNX
+		}
+	}
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend   id = IRS value = -900  }
+	ai_strategy = { type = befriend   id = KNX value = -900  }
+	ai_strategy = { type = alliance   id = IRS value = -2000 }
+	ai_strategy = { type = alliance   id = KNX value = -2000 }
+	ai_strategy = { type = antagonize id = IRS value = 1200  }
+	ai_strategy = { type = antagonize id = KNX value = 1200  }
+	ai_strategy = { type = conquer    id = IRS value = 800   }
+	ai_strategy = { type = conquer    id = KNX value = 800   }
+}
+
+
+
+CHN_backs_the_federation = {
+	allowed = { original_tag = CHN }
+	enable = {
+		country_exists = EFH
+		EFH = { has_country_flag = EFH_china_trade_active }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = support               id = EFH value = 200  }
+	ai_strategy = { type = send_lend_lease_desire id = EFH value = 300 }
+	ai_strategy = { type = send_volunteers_desire id = EFH value = 150 }
+	ai_strategy = { type = protect    id = EFH value = 60    }
+	ai_strategy = { type = antagonize id = EFH value = -1200 }
+	ai_strategy = { type = conquer    id = EFH value = -650  }
+	ai_strategy = { type = befriend   id = EFH value = -450  }
+	ai_strategy = { type = alliance   id = EFH value = -900  }
+	ai_strategy = { type = contain    id = EFH value = -300  }
+
+	ai_strategy = { type = antagonize id = USA value = 400  }
+	ai_strategy = { type = conquer    id = USA value = -900 }
+	ai_strategy = { type = alliance   id = USA value = -900 }
+}
+
+RSF_opportunist_offensive = {
+	allowed = { original_tag = RSF }
+	enable = { has_idea = LD_opportunist_offensive }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = EFH value = 1300 }
+	ai_strategy = { type = conquer    id = EFH value = 900  }
+	ai_strategy = { type = befriend   id = EFH value = -900 }
+	ai_strategy = { type = alliance   id = EFH value = -2000 }
+	ai_strategy = { type = area_priority id = mainland_europe value = 720 }
+	ai_strategy = { type = front_unit_request area = mainland_europe value = 260 }
+	ai_strategy = { type = front_armor_score id = EFH value = 500 }
+	ai_strategy = {
+		type = front_control
+		area = mainland_europe
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		priority = 200
+		ratio = 0.5
+	}
+	ai_strategy = { type = strategic_air_importance id = 38 value = 30000 }
+	ai_strategy = { type = strategic_air_importance id = 37 value = 26000 }
+	ai_strategy = { type = strategic_air_importance id = 7  value = 22000 }
+}
+
+RSF_stayed_out = {
+	allowed = { original_tag = RSF }
+	enable = {
+		has_global_flag = LD_second_summit_convened
+		NOT = { has_idea = LD_opportunist_offensive }
+		NOT = { has_war_with = EFH }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = EFH value = 500  }
+	ai_strategy = { type = conquer    id = EFH value = -650 }
+	ai_strategy = { type = befriend   id = EFH value = -450 }
+	ai_strategy = { type = alliance   id = EFH value = -1500 }
+	ai_strategy = { type = protect    id = EFH value = -180 }
+	ai_strategy = { type = avoid_starting_wars value = 200 }
+}

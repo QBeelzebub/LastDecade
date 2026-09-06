@@ -16,21 +16,8 @@ economy_decisions = {
 
 		days_remove = 120
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				num_of_factories < 30
-				factor = 0
-			}
-		}
-
 		modifier = {
 			production_speed_supply_node_factor = 3
-		}
-
-		complete_effect = {
-			set_variable = { node_goal = num_of_supply_nodes }
-			add_to_variable = { node_goal = 3 }
 		}
 
 		cancel_trigger = {

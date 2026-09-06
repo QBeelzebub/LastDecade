@@ -319,8 +319,7 @@ equipments = {
 		ap_attack = 0.3
 		air_attack = 0
 		lend_lease_cost = 1
-		build_cost_ic = 2.0
-		resources = { parasite_biomass = 1 }
+		build_cost_ic = 0.75
 	}
 	rupter_equipment_1 = {
 		year = 2022

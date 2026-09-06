@@ -38,6 +38,7 @@ knx_assimilation = {
 
 	visible = {
 		tag = KNX
+		has_game_rule = { rule = srp_state_absorb option = DECISION }
 		any_owned_state = {
 			check_variable = {
 				var = iris_infestation_level

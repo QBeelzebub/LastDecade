@@ -1,6 +1,6 @@
 
 EFH_aerorozvidka_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { original_tag = EFH }
 
@@ -17,7 +17,7 @@ EFH_aerorozvidka_mio = {
 	trait = {
 		token = EFH_aero_root
 		name = EFH_aero_root
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 2 y = 0 }
 
@@ -33,7 +33,7 @@ EFH_aerorozvidka_mio = {
 	trait = {
 		token = EFH_aero_t2a
 		name = EFH_aero_t2a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_aero_root
@@ -65,7 +65,7 @@ EFH_aerorozvidka_mio = {
 	trait = {
 		token = EFH_aero_t3a
 		name = EFH_aero_t3a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_aero_t2a
@@ -104,7 +104,7 @@ EFH_aerorozvidka_mio = {
 	trait = {
 		token = EFH_aero_t4
 		name = EFH_aero_t4
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_aero_t3a

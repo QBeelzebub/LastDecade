@@ -17,7 +17,7 @@ sp_land_IRS_adapted_beckon_cultivation = {
 		base = 1
 		modifier = {
 			factor = 3
-			FROM = { is_major = yes }
+			ROOT = { is_major = yes }
 		}
 	}
 
@@ -161,7 +161,7 @@ sp_air_IRS_aerial_genome_calibration = {
 		base = 1
 		modifier = {
 			factor = 4
-			FROM = { has_tech = adapted_yelloweye_tech }
+			ROOT = { has_tech = adapted_yelloweye_tech }
 		}
 	}
 

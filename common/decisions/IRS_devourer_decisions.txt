@@ -42,7 +42,7 @@ IRS_devourer_operations = {
 			has_country_flag = IRS_swarm_hunger_completed
 			any_controlled_state = {
 				is_coastal = yes
-				is_on_continent = asia
+				beckon_cluster > 0
 			}
 		}
 
@@ -86,7 +86,7 @@ IRS_devourer_operations = {
 			has_country_flag = IRS_swarm_hunger_completed
 			any_controlled_state = {
 				is_coastal = yes
-				is_on_continent = asia
+				beckon_cluster > 0
 			}
 		}
 
@@ -128,8 +128,9 @@ IRS_devourer_operations = {
 		available = {
 			original_tag = IRS
 			has_country_flag = IRS_swarm_hunger_completed
-			OR = {
-				any_controlled_state = { is_coastal = yes is_on_continent = europe }
+			any_controlled_state = {
+				is_coastal = yes
+				beckon_cluster > 0
 			}
 		}
 
@@ -173,7 +174,7 @@ IRS_devourer_operations = {
 			has_country_flag = IRS_swarm_hunger_completed
 			any_controlled_state = {
 				is_coastal = yes
-				is_on_continent = europe
+				beckon_cluster > 0
 			}
 		}
 
@@ -203,11 +204,12 @@ IRS_devourer_operations = {
 		ai_will_do = { base = 20 }
 	}
 
+
 	IRS_breach_south_american_coast = {
 		icon = GFX_decision_generic_operation
 
 		state_target = yes
-		on_map_mode = map_and_decisions_view
+		on_map_mode = map_only
 
 		highlight_states = {
 			highlight_states_trigger = {
@@ -237,8 +239,9 @@ IRS_devourer_operations = {
 		}
 
 		available = {
-			original_tag = IRS
+			original_tag = INV
 			has_tech = devourer_emergence
+			has_war_with = SAC
 			FROM = {
 				is_coastal = yes
 				is_on_continent = south_america
@@ -248,7 +251,8 @@ IRS_devourer_operations = {
 
 		cost = 150
 		days_remove = 21
-		fire_only_once = yes
+		fire_only_once = no
+		days_re_enable = 60
 
 		remove_effect = {
 			FROM = {
@@ -260,6 +264,7 @@ IRS_devourer_operations = {
 					level = 1
 					instant_build = yes
 				}
+				SRP_refresh_infestation_state = yes
 			}
 			country_event = { id = irs.2 days = 1 }
 		}

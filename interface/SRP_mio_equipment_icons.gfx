@@ -1,0 +1,224 @@
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_basic_parasite_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_pure_parasite_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_preeminent_parasite_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_rupter_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_mangler_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_primitive_longarms_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_primitive_reeker_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_primitive_summoner_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_support_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_primitive_manducater_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_primitive_tozoon_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_support_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_vigilante_battery_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_monarch_hunter_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_haunter_titan_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_marauder_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_host_parasite_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_herd_parasite_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_hollower_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_scourer_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_arbiter_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_culler_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_magistrate_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_dyadic_striker_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_paragon_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_carrier_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_support_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_overseer_caller_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_support_equipment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_burrower_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_bolster_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_warden_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_summoner_support_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_colony_carrier_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_dreadnaut_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_overlord_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_IRS_devourer_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_IRS_abyssant_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_yelloweye_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_skymaw_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_light_bomber_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_bogle_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_wraith_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_heavy_bomber_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_draconite_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_ifv_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_mechanized_hull.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_wheeled_ifv_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_motorized.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_mbt_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_medium_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_truck_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_motorized.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_rtg_infantry_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_offense.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_fpv_drone_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_support_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_nuclear_artillery_eq"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_fighter_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_strategic_bomber_airframe"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_battleship_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_battleship_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_carrier_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_destroyer_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_screen_utility.dds"
+	}
+	spriteType = {
+		name = "GFX_military_industrial_organization_srp_submarine_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_screen_utility.dds"
+	}
+}

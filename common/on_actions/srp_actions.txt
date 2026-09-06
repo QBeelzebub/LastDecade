@@ -2,12 +2,37 @@ on_actions = {
     on_monthly_IRS = {
         effect = {
             if = {
-                limit = { has_country_flag = IRS_phase_0_active }
+                limit = {
+                    has_country_flag = IRS_phase_0_active
+                    NOT = { has_country_flag = IRS_phase_1_active }
+                }
                 set_variable = { var = IRS_ep_gain_tmp value = 5 }
                 IRS_grant_scaled_ep = yes
             }
             if = {
                 limit = {
+                    has_country_flag = IRS_phase_1_active
+                    NOT = { has_country_flag = IRS_phase_2_active }
+                }
+                set_variable = { var = IRS_ep_gain_tmp value = 15 }
+                IRS_grant_scaled_ep = yes
+            }
+            if = {
+                limit = {
+                    has_country_flag = IRS_phase_2_active
+                    NOT = { has_country_flag = IRS_phase_3_active }
+                }
+                set_variable = { var = IRS_ep_gain_tmp value = 30 }
+                IRS_grant_scaled_ep = yes
+            }
+            if = {
+                limit = { has_country_flag = IRS_phase_3_active }
+                set_variable = { var = IRS_ep_gain_tmp value = 45 }
+                IRS_grant_scaled_ep = yes
+            }
+            if = {
+                limit = {
+                    has_country_flag = IRS_emerged
                     NOT = {
                         any_owned_state = {
                             is_controlled_by = ROOT
@@ -169,83 +194,10 @@ on_actions = {
                         max = 100
                     }
 
-                    set_variable      = { var = iris_infestation_bonus value = iris_infestation_level }
-                    multiply_variable = { var = iris_infestation_bonus value = 0.005 }
-                    
-                    set_variable      = { var = iris_infestation_biomass value = iris_infestation_level }
-                    multiply_variable = { var = iris_infestation_biomass value = 0.05 }
-
-                    set_variable      = { var = iris_infestation_penalty value = iris_infestation_level }
-                    multiply_variable = { var = iris_infestation_penalty value = -0.003 }
-
-                    set_variable      = { var = iris_infestation_attrition value = iris_infestation_level }
-                    multiply_variable = { var = iris_infestation_attrition value = 0.002 }
-
-                    set_variable      = { var = iris_infestation_upkeep value = iris_infestation_level }
-                    multiply_variable = { var = iris_infestation_upkeep value = 0.25 }
+                    SRP_recompute_infestation_derived = yes
                 }
 
-                if = {
-                    limit = {
-                        OR = {
-                            state_is_iris_bloc_controlled = yes
-                            is_controlled_by = KNX
-                        }
-                        check_variable = { iris_infestation_level > 0 }
-                    }
-                    if = {
-                        limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
-                        remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
-                    }
-                    if = {
-                        limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
-                        remove_dynamic_modifier = { modifier = beckon_iris_buff }
-                    }
-                    add_dynamic_modifier = {
-                        modifier = beckon_iris_buff
-                        days = 2
-                    }
-                }
-
-                if = {
-                    limit = {
-                        NOT = {
-                            OR = {
-                                state_is_iris_bloc_controlled = yes
-                                is_controlled_by = KNX
-                            }
-                        }
-                        check_variable = { iris_infestation_level > 0 }
-                    }
-                    if = {
-                        limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
-                        remove_dynamic_modifier = { modifier = beckon_iris_buff }
-                    }
-                    if = {
-                        limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
-                        remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
-                    }
-                    add_dynamic_modifier = {
-                        modifier = beckon_hostile_debuff
-                        days = 2
-                    }
-                }
-
-                if = {
-                    limit = {
-                        NOT = { check_variable = { iris_infestation_level > 0 } }
-                        has_dynamic_modifier = { modifier = beckon_iris_buff }
-                    }
-                    remove_dynamic_modifier = { modifier = beckon_iris_buff }
-                }
-
-                if = {
-                    limit = {
-                        NOT = { check_variable = { iris_infestation_level > 0 } }
-                        has_dynamic_modifier = { modifier = beckon_hostile_debuff }
-                    }
-                    remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
-                }
+                SRP_restamp_infestation_modifier = yes
 
                 if = {
                     limit = {
@@ -518,6 +470,72 @@ on_actions = {
                 }
 
                 if = {
+                    limit = { check_variable = { var = global.srp_absorb_days value = 0 compare = greater_than } }
+                    if = {
+                        limit = {
+                            check_variable = { iris_infestation_level > 99 }
+                            NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+                            NOT = { has_dynamic_modifier = { modifier = knx_consumed_state } }
+                            OR = {
+                                AND = {
+                                    is_owned_by = IRS
+                                    is_controlled_by = IRS
+                                }
+                                AND = {
+                                    is_owned_by = KNX
+                                    is_controlled_by = KNX
+                                }
+                            }
+                        }
+                        add_to_variable = { var = srp_absorb_progress value = 1 }
+                        if = {
+                            limit = {
+                                check_variable = {
+                                    var = srp_absorb_progress
+                                    value = global.srp_absorb_days
+                                    compare = greater_than_or_equals
+                                }
+                            }
+                            if = {
+                                limit = { is_owned_by = IRS }
+                                SRP_absorb_state_for_IRS = yes
+                            }
+                            if = {
+                                limit = {
+                                    is_owned_by = KNX
+                                    NOT = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+                                }
+                                SRP_absorb_state_for_KNX = yes
+                            }
+                            set_variable = { var = srp_absorb_progress value = 0 }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            check_variable = { var = srp_absorb_progress value = 0 compare = greater_than }
+                            OR = {
+                                NOT = { check_variable = { iris_infestation_level > 99 } }
+                                has_dynamic_modifier = { modifier = irs_consumed_state }
+                                has_dynamic_modifier = { modifier = knx_consumed_state }
+                                NOT = {
+                                    OR = {
+                                        AND = {
+                                            is_owned_by = IRS
+                                            is_controlled_by = IRS
+                                        }
+                                        AND = {
+                                            is_owned_by = KNX
+                                            is_controlled_by = KNX
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        set_variable = { var = srp_absorb_progress value = 0 }
+                    }
+                }
+
+                if = {
                     limit = {
                         check_variable = { global.srp_handover_enabled > 0 }
                         check_variable = { iris_infestation_level > 99 }
@@ -563,10 +581,16 @@ on_actions = {
                         NOT = { is_controlled_by = KNX }
                         NOT = { state_is_iris_bloc_owned = yes }
                         NOT = { is_owned_by = KNX }
+                        controller = {
+                            OR = {
+                                has_war_with = IRS
+                                has_war_with = KNX
+                            }
+                        }
                         any_neighbor_state = {
                             OR = {
-                                state_is_iris_bloc_controlled = yes
-                                is_controlled_by = KNX
+                                state_is_iris_bloc_owned = yes
+                                is_owned_by = KNX
                             }
                             check_variable = { iris_infestation_level > 24 }
                         }

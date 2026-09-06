@@ -1,0 +1,1337 @@
+
+western_europe = {
+	name = theater_western_europe
+	regions = {
+		19
+		5
+		7
+		208
+		6
+		18
+		1
+		275
+		20
+		42
+		21
+	}
+	cancel = {
+		OR = {
+			AND= {
+				original_tag = GER
+				has_war_with = SOV
+				219 = { is_controlled_by_ROOT_or_ally = no }
+			}
+			AND = {
+				FRA = {
+					is_in_faction_with = ROOT
+					has_capitulated = yes 
+				}
+			}
+			has_war = no 
+		}
+	}
+
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = europe}
+		}
+		modifier = {
+			add = 5
+			OR = {
+				has_war_with = FRA
+				has_war_with = GER
+				has_war_with = HOL
+				has_war_with = BEL
+			}
+		}
+		modifier = {
+			factor = 10
+			is_historical_focus_on = yes
+			original_tag = USA
+			is_in_faction_with = ENG
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+		modifier = {
+			factor = 0
+			original_tag = GER 
+			has_war_with = SOV
+			219 = { is_controlled_by_ROOT_or_ally = no }
+		}
+		modifier = {
+			factor = 0
+			original_tag = ENG 
+			FRA = {
+				is_in_faction_with = ROOT
+				has_capitulated = yes 
+			}
+		}
+	} 
+}
+
+eastern_europe = {
+	name = theater_eastern_europe
+	regions = {
+		8
+		38
+		22
+		39
+		206
+		37
+		27
+		132
+		131
+		130
+		133
+	}
+	cancel = {
+		has_war = no 
+	}
+
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = europe}
+		}
+		modifier = {
+			add = 1
+			OR = {
+				has_war_with = POL
+				has_war_with = CZE
+				has_war_with = SOV
+			}
+		}
+		modifier = {
+			add = 10
+			original_tag = SOV
+			has_war_with = GER
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+barbarossa_north = { 
+	name = theater_barbarossa_north
+	regions = {
+		37
+		132
+		206
+		9
+		13
+		265
+		150
+		278
+		279
+		277
+		12
+		191
+		46
+
+	}
+
+	cancel = {
+		NOT = { has_war_with = SOV }
+	}
+
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 5
+			original_tag = GER
+			has_war_with = SOV
+		}
+		modifier = {
+			add = 1
+			is_in_faction_with = GER
+			has_war_with = SOV
+		}
+
+	} 
+}
+
+barbarossa_center = { 
+	name = theater_barbarossa_center
+	regions = {
+		8
+		38
+		39
+		131
+		133
+		40
+		138
+		22
+		14
+
+	}
+	preferred_countries = {
+		GER SLO
+	}
+	cancel = {
+		NOT = { has_war_with = SOV }
+	}
+
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 10
+			original_tag = GER
+			has_war_with = SOV
+		}
+	} 
+}
+
+barbarossa_south = {
+	name = theater_barbarossa_south
+	regions = {
+		130
+		26
+		27
+		30
+		135
+		137
+		267
+		270
+		
+	}
+	cancel = {
+		NOT = { has_war_with = SOV }
+	}
+	preferred_countries = {
+		ROM ITA
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 5
+			OR = {
+				original_tag = GER
+				is_in_faction_with = GER 
+			}
+			has_war_with = SOV
+		}
+	} 
+}
+
+north_sea_region = {
+	name = theater_north_sea_region
+	regions = {
+		16
+		174
+		173
+		11
+		191
+		2
+		3
+		4
+		45
+		161
+		275
+		44
+		10
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				original_tag = ENG
+				has_war_with = ENG
+				original_tag = NOR
+				has_war_with = NOR
+				original_tag = ICE
+				has_war_with = ICE
+				original_tag = DEN
+				has_war_with = DEN
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+
+southern_europe = {
+	name = theater_southern_europe
+	regions = {
+		23
+		169
+		168
+		24
+		25
+		202
+		21
+		29
+		68
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = europe}
+		}
+		modifier = {
+			add = 2
+			OR = {
+				has_war_with = ITA
+				has_war_with = YUG
+				has_war_with = GRE
+				original_tag = ITA
+				original_tag = YUG
+				original_tag = GRE
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+black_sea_region = {
+	name = theater_black_sea_region
+	regions = {
+		30
+		129
+		26
+		25
+		130
+		135
+		134
+		202
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				controls_state = 341
+				controls_state = 211
+				controls_state = 971
+				controls_state = 137
+				controls_state = 231
+				controls_state = 192
+			}
+			any_enemy_country = {
+				controls_state = 341
+				controls_state = 211
+				controls_state = 971
+				controls_state = 137
+				controls_state = 231
+				controls_state = 192
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				original_tag = TUR
+				has_war_with = TUR
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+scandinavia = {
+	name = theater_scandinavia
+	regions = {
+		10
+		192
+		11
+		191
+		276
+		206
+		275
+		173
+		279
+		277
+		278
+		9
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = europe}
+		}
+		modifier = {
+			add = 2
+			OR = {
+				has_war_with = SWE
+				has_war_with = NOR
+				has_war_with = DEN
+				original_tag = SWE
+				original_tag = NOR
+				original_tag = DEN
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+north_africa = {
+	name = theater_north_africa
+	regions = {
+		225
+		128
+		29
+		126
+		182
+		48
+		68
+		69
+		100
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = africa }
+		}
+		modifier = {
+			add = 2
+				owns_any_state_of = {
+					448
+					458
+					907
+					447
+					459
+					461
+				}
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+			tag = ENG 
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+north_africa_uk = {
+	name = theater_north_africa
+	regions = {
+		128
+		225
+		29
+		126
+		182
+		48
+		68
+		69
+		100
+	}
+	cancel = {
+		
+	}
+	preferred_countries = {
+		AST SAF 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			original_tag = ENG
+		}
+		modifier = {
+			factor = 2
+				owns_any_state_of = {
+					448
+					458
+					907
+					447
+					459
+					461
+				}
+		}
+		modifier = {
+			factor = 5
+			is_historical_focus_on = yes 
+			tag = ENG 
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+			date < 1938.1.1
+		}
+	} 
+}
+
+east_africa = {
+	name = east_africa
+	regions = {
+		274
+		273
+		17
+		217
+		102
+		100
+		216
+		227
+		60
+		181
+		183
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = africa }
+		}
+		modifier = {
+			add = 1
+			owns_any_state_of = {
+				559
+				217
+				268
+				269
+				551
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+west_africa = {
+	name = theater_west_africa
+	regions = {
+		226
+		140
+		184
+		272
+		62
+		61
+		183
+		271
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = africa }
+		}
+		modifier = {
+			add = 1
+			owns_any_state_of = {
+				779
+				298
+				295
+				274
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+south_africa = {
+	name = theater_south_africa
+	regions = {
+		139
+		65
+		215
+		223
+		185
+		224
+		103
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = africa }
+		}
+		modifier = {
+			add = 1
+			owns_any_state_of = {
+				779
+				298
+				295
+				274
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+
+middle_east = {
+	name = middle_east
+	regions = {
+		232
+		237
+		28
+		129
+		240
+		196
+		238
+		236
+		239
+		116
+		298
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = middle_east }
+		}
+		modifier = {
+			add = 1
+			owns_any_state_of = {
+				454
+				554
+				291
+				292
+				293
+				294
+			}
+		}
+		modifier = {
+			add = 1
+			any_enemy_country = {
+				capital_scope = { is_on_continent = middle_east }
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+persia = {
+	name = theater_persia
+	regions = {
+		239
+		116
+		298
+		203
+		232
+		28
+		241
+		297
+		291
+		289
+		134
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			capital_scope = { is_on_continent = middle_east }
+		}
+		modifier = {
+			add = 1
+			OR = {
+				original_tag = PER
+				has_war_with = PER
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+chinese_coastline = {
+	name = theater_chinese_coastline
+	regions = {
+		77
+		76
+		143
+		247
+		164
+		155
+		248
+		75
+		186
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 5
+			OR = {
+				always = no
+				original_tag = JAP
+			}
+		}
+		modifier = {
+			add = 2
+			any_enemy_country = {
+				always = no
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+chinese_mainland = {
+	name = theater_chinese_mainland
+	regions = {
+		246
+		165
+		245
+		249
+		250
+		144
+		200
+		244
+		252
+		145
+		146
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			has_war = yes
+			OR = {
+				always = no
+				any_enemy_country = {
+					always = no
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+
+
+south_east_asia = {
+	name = theater_south_east_asia
+	regions = {
+		72
+		188
+		229
+		228
+		142
+		73
+		187
+		293
+		294
+		101
+		292
+			
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				any_enemy_country = {
+					OR = {
+						controls_state = 1021
+						controls_state = 336
+						controls_state = 289
+						controls_state = 671
+						controls_state = 672
+					}
+				}
+				controls_state = 1021
+				controls_state = 336
+				controls_state = 289
+				controls_state = 671
+				controls_state = 672
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+bengal = {
+	name = theater_bengal
+	regions = {
+		101
+		290
+		231
+		230
+		294
+		141
+		293
+		31
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				any_enemy_country = {
+					OR = {
+						controls_state = 320
+						controls_state = 423
+						controls_state = 431
+						controls_state = 431
+						controls_state = 995
+						controls_state = 289
+					}
+				}
+				controls_state = 320
+				controls_state = 423
+				controls_state = 431
+				controls_state = 431
+				controls_state = 995
+				controls_state = 289
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+northern_india = {
+	name = theater_northern_india
+	regions = {
+		153
+		190
+		162
+		289
+		291
+		296
+		251
+		297
+		104
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				any_enemy_country = {
+					OR = {
+						controls_state = 443
+						controls_state = 439
+						controls_state = 440
+						controls_state = 267
+					}
+				}
+				controls_state = 443
+				controls_state = 439
+				controls_state = 440
+				controls_state = 267
+				controls_state = 410
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+central_pacific = {
+	name = theater_central_pacific
+	regions = {
+		105
+		176
+		172
+		95
+		180
+		96
+		97
+		177
+		94
+		
+	}
+	cancel = {
+		AND = {
+			original_tag = USA
+			any_enemy_country = {
+				controls_state = 629
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			original_tag = USA
+			controls_state = 629
+		}
+		modifier = {
+			add = 1
+			has_war_with = JAP
+			controls_state = 629
+		}
+		modifier = {
+			add = 1
+			has_war_with = USA
+			any_enemy_country = {
+				controls_state = 629
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+
+	
+}
+
+us_west_coast = {
+	name = theater_us_west_coast
+	regions = {
+		89
+		115
+		114
+		171
+		218
+		118
+		33
+		105
+		176
+		88
+		235
+	}
+	cancel = {
+		AND = {
+			original_tag = USA
+			controls_state = 629
+		}
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 5
+			original_tag = USA
+			any_enemy_country = {
+				controls_state = 629
+			}
+		}
+		modifier = {
+			add = 2
+			has_war_with = USA
+			controls_state = 629
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+
+	
+}
+south_pacific = {
+	name = theater_south_pacific
+	regions = {
+		84
+		93
+		83
+		81
+		167
+		80
+		159
+		75
+		194
+		94
+		86
+		
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 2
+			OR = {
+				has_war_with = AST
+				is_in_faction_with = AST
+				original_tag = AST
+			}
+			has_navy_size = {
+				size > 40
+			}
+		}
+		modifier = {
+			add = 1
+			OR = {
+				capital_scope = {
+					is_on_continent = asia
+					is_on_continent = australia
+					is_on_continent = north_america
+					is_on_continent = south_america
+				}
+			}
+			has_navy_size = {
+				size > 150
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+japanese_home_islands = {
+	name = theater_japanese_home_islands
+	regions = {
+		154
+		299
+		300
+		79
+		90
+		76
+		87
+		94
+		177
+		78
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				has_war_with = JAP
+				original_tag = JAP
+			}
+			has_navy_size = {
+				size > 80
+			}
+		}
+		modifier = {
+			add = 10
+			has_war_with = JAP
+			has_navy_size = {
+				size > 150
+			}
+			controls_state = 648
+			controls_state = 645
+		}
+		modifier = {
+			add = 10
+			original_tag = JAP
+			any_enemy_country = {
+				controls_state = 645
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+
+us_east_coast = {
+	name = theater_us_east_coast
+	regions = {
+		54
+		170
+		197
+		117
+		211
+		55
+		213
+		214
+		198
+		119
+			
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				original_tag = USA
+				AND = {
+					has_war_with = USA
+					has_navy_size = {
+						size > 100
+					}
+					OR = {
+						capital_scope = { is_on_continent = europe }
+						capital_scope = { is_on_continent = south_america }
+						capital_scope = { is_on_continent = north_america }
+						capital_scope = { is_on_continent = africa }
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 2
+			has_war_with = USA
+			original_tag = GER
+			126 = { is_controlled_by_ROOT_or_ally = yes }
+			14 = { is_controlled_by_ROOT_or_ally = yes }
+			123 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+central_america = {
+	name = theater_central_america
+	regions = {
+		53
+		52
+		205
+		34
+		123
+		107
+		106
+		204
+		170
+		124
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				has_war_with = HON
+				has_war_with = MEX
+				has_war_with = GUA
+				has_war_with = CUB
+				has_war_with = NIC
+				has_war_with = COS
+				has_war_with = PAN
+				has_war_with = HAI
+				has_war_with = DOM
+			}
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+			OR = {
+				original_tag = GER
+				original_tag = ITA
+			}
+			NOT = { 126 = { is_controlled_by_ROOT_or_ally = yes } }
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+gran_columbia = {
+	name = theater_gran_columbia
+	regions = {
+		124
+		280
+		201
+		287
+		163
+		107
+		109
+		285
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				has_war_with = VEN
+				has_war_with = COL
+				has_war_with = ECU
+				has_war_with = PER
+				has_war_with = BOL
+			}
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+			OR = {
+				original_tag = GER
+				original_tag = ITA
+			}
+			NOT = { 126 = { is_controlled_by_ROOT_or_ally = yes } }
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+south_south_america = {
+	name = theater_south_south_america
+	regions = {
+		284
+		283
+		35
+		281
+		282
+		108
+		63
+		64
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			OR = {
+				has_war_with = ARG
+				has_war_with = URU
+				has_war_with = PAR
+				has_war_with = CHI
+			}
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+			OR = {
+				original_tag = GER
+				original_tag = ITA
+			}
+			NOT = { 126 = { is_controlled_by_ROOT_or_ally = yes } }
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}
+
+brazil = {
+	name = theater_brazil
+	regions = {
+		125
+		288
+		286
+		282
+		163
+		287
+		281
+		280
+		61
+		66
+	
+	}
+	cancel = {
+		has_war = no 
+	}
+	ai_will_do = {
+		base = 0 
+		modifier = {
+			add = 1
+			has_war_with = BRA
+		}
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+			OR = {
+				original_tag = GER
+				original_tag = ITA
+			}
+			NOT = { 126 = { is_controlled_by_ROOT_or_ally = yes } }
+		}
+		modifier = {
+			factor = 0
+			has_war = no 
+		}
+	} 
+}

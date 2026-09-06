@@ -339,6 +339,7 @@ technologies = {
 		allow = { NOT = { is_full_parasite = yes } }
 		enable_subunits = {
 			engineer
+			srp_sapper_regimental
 		}
 
 		research_cost = 1.0

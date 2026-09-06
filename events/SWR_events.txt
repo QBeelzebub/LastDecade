@@ -36,7 +36,7 @@ country_event = {
 	id = swr.2
 	title = swr.2.t
 	desc = swr.2.d
-	picture = GFX_report_event_war_news
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 

@@ -19,7 +19,7 @@ sp_land_stbn_tank_shell = {
 		base = 1
 		modifier = {
 			factor = 3
-			FROM = { has_tech = srp_nbc_sealing }
+			ROOT = { has_tech = srp_nbc_sealing }
 		}
 	}
 
@@ -186,7 +186,7 @@ sp_naval_stbn_shell = {
 		base = 1
 		modifier = {
 			factor = 2
-			FROM = { has_tech = srp_destroyer_hull_tech_2 }
+			ROOT = { has_tech = srp_destroyer_hull_tech_2 }
 		}
 	}
 
@@ -325,7 +325,7 @@ sp_naval_fusion_engine = {
 		base = 1
 		modifier = {
 			factor = 3
-			FROM = { has_tech = srp_carrier_hull_tech_2 }
+			ROOT = { has_tech = srp_carrier_hull_tech_2 }
 		}
 	}
 
@@ -454,7 +454,7 @@ sp_air_sf6_jet_engine = {
 		base = 1
 		modifier = {
 			factor = 3
-			FROM = { has_tech = srp_fighter_gen5 }
+			ROOT = { has_tech = srp_fighter_gen5 }
 		}
 	}
 
@@ -581,7 +581,7 @@ sp_land_parasite_weakpoint_algorithm = {
 		base = 1
 		modifier = {
 			factor = 4
-			FROM = { has_tech = srp_mbt_chassis2 }
+			ROOT = { has_tech = srp_mbt_chassis2 }
 		}
 	}
 
@@ -736,7 +736,7 @@ sp_naval_carrier_fuel_synthesis = {
 		base = 1
 		modifier = {
 			factor = 3
-			FROM = { has_tech = srp_carrier_hull_tech_1 }
+			ROOT = { has_tech = srp_carrier_hull_tech_1 }
 		}
 	}
 
@@ -856,13 +856,13 @@ sp_land_nuclear_artillery = {
 		base = 1
 		modifier = {
 			factor = 0
-			FROM = {
+			ROOT = {
 				NOT = { has_tech = srp_artillery_4 }
 			}
 		}
 		modifier = {
 			factor = 3
-			FROM = { is_major = yes }
+			ROOT = { is_major = yes }
 		}
 	}
 
@@ -1038,7 +1038,7 @@ sp_land_nanocomposite = {
 		base = 1
 		modifier = {
 			factor = 4
-			FROM = { has_tech = srp_spaced_composite_tech }
+			ROOT = { has_tech = srp_spaced_composite_tech }
 		}
 	}
 
@@ -1142,7 +1142,7 @@ sp_land_railgun = {
 		base = 1
 		modifier = {
 			factor = 3
-			FROM = { has_tech = srp_adv_armament }
+			ROOT = { has_tech = srp_adv_armament }
 		}
 	}
 

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Coin stack -->
+  <rect x="32" y="74" width="34" height="9" rx="4.5" fill="#c9a52a"/>
+  <rect x="32" y="64" width="34" height="9" rx="4.5" fill="#c9a52a"/>
+  <rect x="32" y="54" width="34" height="9" rx="4.5" fill="#c9a52a"/>
+
+  <!-- Percent sign -->
+  <circle cx="80" cy="50" r="7" fill="none" stroke="#c9a52a" stroke-width="4"/>
+  <circle cx="97" cy="80" r="7" fill="none" stroke="#c9a52a" stroke-width="4"/>
+  <rect x="84.5" y="43" width="5" height="44" fill="#c9a52a" transform="rotate(-34 87 65)"/>
+</svg>

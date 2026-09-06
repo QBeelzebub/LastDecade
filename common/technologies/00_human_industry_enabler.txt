@@ -102,4 +102,16 @@ technologies = {
 		}
 	}
 
+	LD_vanilla_nuclear_delivery_access = {
+		allow = {
+			always = no
+		}
+		research_cost = 1
+
+		enable_equipments = {
+			nuclear_missile_equipment_1
+			nuclear_missile_equipment_2
+		}
+	}
+
 }

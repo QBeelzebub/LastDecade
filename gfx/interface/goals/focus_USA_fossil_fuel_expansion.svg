@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Derrick legs -->
+  <polygon points="46,90 56,34 61,34 53,90" fill="#c9a52a"/>
+  <polygon points="82,90 72,34 67,34 75,90" fill="#c9a52a"/>
+
+  <!-- Crossbars and crown -->
+  <rect x="53" y="48" width="22" height="4" fill="#c9a52a"/>
+  <rect x="56" y="30" width="16" height="5" fill="#c9a52a"/>
+
+  <!-- Oil drop -->
+  <polygon points="64,62 70.5,75 57.5,75" fill="#c9a52a"/>
+  <circle cx="64" cy="79" r="7" fill="#c9a52a"/>
+</svg>

@@ -21,7 +21,7 @@
  TET_brood_expansion_desc: "The population spreads inland from the water's edge across every state it holds, thickening its grip on the territory it was given."
 
  TET_resonance: "Resonance with the Hive"
- TET_resonance_desc: "The brood keeps its signal aligned with the hive that seeded it. The separation is administrative, not biological. The two remain one genome speaking to itself across distance."
+ TET_resonance_desc: "The brood keeps its signal aligned with the hive that seeded it. The separation is administrative only. The two remain one genome speaking to itself across distance."
 
 
  autonomy_srp_integrated_brood: "Integrated Brood"

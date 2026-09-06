@@ -1,6 +1,6 @@
 
 TET_tethysic_mio = {
-	icon = GFX_idea_generic_navy_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
 
 	allowed = { original_tag = TET }
 	available = {
@@ -24,7 +24,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_genome_core
 		name = TET_tethysic_genome_core
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 		organization_modifier = {
@@ -43,7 +43,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_feeding_frenzy
 		name = TET_tethysic_feeding_frenzy
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = TET_tethysic_genome_core
@@ -59,7 +59,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_deep_adaptation
 		name = TET_tethysic_deep_adaptation
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = TET_tethysic_genome_core
@@ -76,7 +76,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_swarm_hunger
 		name = TET_tethysic_swarm_hunger
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = TET_tethysic_feeding_frenzy
@@ -102,7 +102,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_ocean_mastery
 		name = TET_tethysic_ocean_mastery
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = TET_tethysic_deep_adaptation
@@ -121,7 +121,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_abyssal_descent
 		name = TET_tethysic_abyssal_descent
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = TET_tethysic_swarm_hunger
@@ -138,7 +138,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_genome_devotion
 		name = TET_tethysic_genome_devotion
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = TET_tethysic_ocean_mastery
@@ -160,7 +160,7 @@ TET_tethysic_mio = {
 	trait = {
 		token = TET_tethysic_abyssant_genesis
 		name = TET_tethysic_abyssant_genesis
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = TET_tethysic_abyssal_descent

@@ -1,0 +1,198 @@
+
+
+parasite_unit_production = {
+	allowed = {
+		is_full_parasite = yes
+	}
+
+	enable = {
+		is_full_parasite = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ai_wanted_divisions_factor
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 60
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = garrison
+		value = 150
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = militias
+		value = 200
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marines
+		value = 150
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -4
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = basic_parasite_equipment
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = rupter_equipment
+		value = 22
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = carrier_equipment
+		value = 6
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = srp_bolster_membrane
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = srp_synaptic_ganglion
+		value = 1
+	}
+}
+
+parasite_primitive_early_production = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = early_primitive_parasites }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = primitive_longarms_equipment value = 1 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = primitive_reeker_equipment value = 1 }
+}
+
+parasite_pure_early_production = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = early_pure_parasites }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = vigilante_battery_equipment value = 2 }
+}
+
+parasite_primitive_late_production = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = late_primitive_parasites }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = primitive_manducater_equipment value = 1 }
+}
+
+parasite_pure_advanced_production = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = advanced_pure_parasites }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = monarch_hunter_equipment value = 2 }
+}
+
+parasite_late_production = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = late_preeminent_parasites }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = srp_burrower_chassis value = 1 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = srp_marauder_equipment value = 1 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = srp_warden_chassis value = 1 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = srp_bolster_chassis value = 1 }
+}
+
+parasite_ranger_production = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = assimilated_predators }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = build_army id = rangers_role value = 40 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = mangler_equipment value = 2 }
+}
+
+parasite_armor_deployment = {
+	allowed = { is_full_parasite = yes }
+	enable = { has_tech = late_preeminent_parasites }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = build_army id = armor value = 60 }
+}
+
+SRP_parasite_airforce_strategy = {
+	allowed = {
+		is_full_parasite = yes
+	}
+
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 80
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = srp_yelloweye_airframe
+		value = 2
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 50
+	}
+}

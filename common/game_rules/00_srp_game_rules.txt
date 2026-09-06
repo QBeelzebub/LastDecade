@@ -258,3 +258,65 @@ srp_lethal_events = {
 		allow_achievements = no
 	}
 }
+
+srp_nuclear_mechanics = {
+	name = "RULE_SRP_NUCLEAR_MECHANICS"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	default = {
+		name = ORBITAL
+		text = "RULE_OPTION_SRP_ORBITAL"
+		desc = "RULE_SRP_NUCLEAR_MECHANICS_ORBITAL_DESC"
+	}
+	option = {
+		name = SIMPLE
+		text = "RULE_OPTION_SRP_SIMPLE"
+		desc = "RULE_SRP_NUCLEAR_MECHANICS_SIMPLE_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = LORE
+		text = "RULE_OPTION_SRP_LORE"
+		desc = "RULE_SRP_NUCLEAR_MECHANICS_LORE_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_state_absorb = {
+	name = "RULE_SRP_STATE_ABSORB"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	default = {
+		name = DECISION
+		text = "RULE_SRP_STATE_DECISION"
+		desc = "RULE_SRP_STATE_DECISION_DESC"
+	}
+	option = {
+		name = INSTANT
+		text = "RULE_SRP_STATE_INSTANT"
+		desc = "RULE_SRP_STATE_INSTANT_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DAYS_30
+		text = "RULE_SRP_STATE_DAYS_30"
+		desc = "RULE_SRP_STATE_DAYS_30_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DAYS_60
+		text = "RULE_SRP_STATE_DAYS_60"
+		desc = "RULE_SRP_STATE_DAYS_60_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DAYS_90
+		text = "RULE_SRP_STATE_DAYS_90"
+		desc = "RULE_SRP_STATE_DAYS_90_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DAYS_180
+		text = "RULE_SRP_STATE_DAYS_180"
+		desc = "RULE_SRP_STATE_DAYS_180_DESC"
+		allow_achievements = no
+	}
+}

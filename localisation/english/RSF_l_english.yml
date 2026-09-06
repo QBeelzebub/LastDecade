@@ -14,7 +14,7 @@
  RSF_managed_oligarchy_desc: "They keep their wealth. Their silence becomes part of the arrangement. The deal is written. The cameras are off. Everyone smiles."
 
  RSF_inner_circle: "The Inner Circle"
- RSF_inner_circle_desc: "From the dust of the oligarch crisis, a small circle of capable technocrats and loyalists has emerged. Marenkov leads them. They will run the country's practical affairs while the political theater continues above them."
+ RSF_inner_circle_desc: "From the dust of the oligarch crisis, a small circle of capable technocrats and loyalists has emerged. Marenkov leads them. They will run the country's practical affairs while the political theatre continues above them."
 
  RSF_voices_in_the_factories: "Voices in the Factories"
  RSF_voices_in_the_factories_desc: "In Yekaterinburg, Kazan, and Nizhny Novgorod, the workers are organising into councils. They remain below the threshold of an open threat and are watching the government very carefully."
@@ -26,7 +26,7 @@
  RSF_sanctions_response_desc: "The European Federation has closed its markets, frozen Russian assets, and instructed its members to treat Russian diplomatic channels as hostile. We must decide what to do with the silence they have left us."
 
  RSF_pivot_east: "Pivot East"
- RSF_pivot_east_desc: "If Europe will not trade with us, others will. CHN has expressed quiet interest in Russia's resource sectors. This will cost us leverage we may never recover. But leverage is worthless if the economy collapses first."
+ RSF_pivot_east_desc: "If Europe will not trade with us, others will. China has expressed quiet interest in Russia's resource sectors. This will cost us leverage we may never recover. But leverage is worthless if the economy collapses first."
 
  RSF_autarky: "Fortress Russia"
  RSF_autarky_desc: "We need nothing from anyone. Every factory retools, every resource is consumed at home, and the people are told this is temporary."
@@ -35,7 +35,7 @@
  RSF_parasite_shock_desc: "The parasite incursions in the east are no longer a border problem. The 45th Army has gone quiet. Novosibirsk reports creatures in the streets. We were not prepared for this scale."
 
  RSF_desperate_measures: "Desperate Measures"
- RSF_desperate_measures_desc: "There are no good options left. There is only the question of who survives, and in what form."
+ RSF_desperate_measures_desc: "Conscription, requisition, scorched earth. The list is short and none of it comes cheap."
 
  RSF_peoples_council: "The People's Council Forms"
  RSF_peoples_council_desc: "The workers' councils in the Ural cities have voted to formalise. They are armed, organised, and no longer asking permission from Moscow. The People's Council of Sweramoa convenes for the first time."
@@ -50,10 +50,10 @@
  RSF_military_posture_desc: "Whatever is happening politically and economically, the military must be ready. We still have one of the largest arsenals on Earth."
 
  RSF_eastern_deployment: "General to the East"
- RSF_eastern_deployment_desc: "General Voronov volunteers to take command of the eastern forces. He understands what is coming. He goes anyway."
+ RSF_eastern_deployment_desc: "General Voronov volunteers to take command of the eastern forces. Nobody else wanted the job."
 
  RSF_nuclear_deterrent: "Nuclear Deterrent"
- RSF_nuclear_deterrent_desc: "While everything else falls apart, our nuclear arsenal remains intact. It is the one thing no one can take from us."
+ RSF_nuclear_deterrent_desc: "While everything else falls apart, our nuclear arsenal remains intact. The drills still run on schedule."
 
 
  rsf.1.t: "The State Cannot Hold"
@@ -68,7 +68,7 @@
  rsf.2.a: "We build something new."
 
  rsf.3.t: "The Billionaires' Table"
- rsf.3.d: "Arsenyev, Klenov, and Vassiliev are the three most powerful men in Russia who are not formally part of the government. They sit across the table from you with polite smiles and quiet threats.\n\nArsenyev wants exclusive contracts on the Siberian pipeline network. Klenov wants his son removed from a criminal investigation. Vassiliev wants a seat on the national security council.\n\nThey have not asked what Russia wants from them. They do not think they need to."
+ rsf.3.d: "Arsenyev, Klenov, and Vassiliev are the three most powerful men in Russia who are not formally part of the government. They sit across the table with polite smiles and quiet threats.\n\nArsenyev wants exclusive contracts on the Siberian pipeline network. Klenov wants his son removed from a criminal investigation. Vassiliev wants a seat on the national security council.\n\nThey have not asked what Russia wants from them. They do not think they need to."
  rsf.3.a: "Nationalise their assets. Remove their leverage."
  rsf.3.a_tt: "The nationalisation path becomes available. The oligarchs become enemies. Expect instability."
  rsf.3.b: "Accept their terms. Buy their cooperation."
@@ -77,11 +77,11 @@
  rsf.4.t: "The European Silence"
  rsf.4.d: "The European Federation's sanctions have now frozen roughly 40 billion euros in Russian state assets. The diplomatic channel has been reduced to a single cultural attache in Warsaw who relays messages no one responds to.\n\nOur foreign minister believes there is still a back channel available, with a quiet economic proposal that might reduce the pressure. Alternatively, we could treat the silence as the opening move in a longer conflict."
  rsf.4.a: "Propose an economic ceasefire through the back channel."
- rsf.4.a_tt: "Russia opens a quiet trade arrangement with the EF. Limited but real."
+ rsf.4.a_tt: "Russia opens a quiet trade arrangement with the European Federation. Limited but real."
  rsf.4.b: "Economic war is the only language they understand."
 
  rsf.5.t: "The Chinese Offer"
- rsf.5.d: "The CHN ambassador has made a formal approach through private channels. CHN is prepared to offer infrastructure investment and consumer goods contracts in exchange for long-term energy concessions and raw material supply agreements.\n\nThe terms favor CHN significantly. But they are real terms, from a counterparty that is still willing to talk."
+ rsf.5.d: "The Chinese ambassador has made a formal approach through private channels. China is prepared to offer infrastructure investment and consumer goods contracts in exchange for long-term energy concessions and raw material supply agreements.\n\nThe terms favour China significantly. But they are real terms, from a counterparty that is still willing to talk."
  rsf.5.a: "Accept the arrangement. We need the trade."
  rsf.5.b: "Their terms make us a resource colony. We decline."
 
@@ -90,8 +90,8 @@
  rsf.6.a: "Note the report. Continue operations."
 
  rsf.7.t: "Voices in the Factories"
- rsf.7.d: "The Kazan Workers' Assembly has voted to form a defence committee. Within 72 hours, similar committees have formed in Perm, Chelyabinsk, and Ufa. They are organising their own supply chains and recruiting their own security forces.\n\nThey have sent a delegation to Moscow. Their message is respectful but clear: the councils will defend the Urals whether or not the federal government supports them. They are asking for cooperation. They are not asking for permission."
- rsf.7.a: "Suppress the committees. Arrest the organizers."
+ rsf.7.d: "The Kazan Workers' Assembly has voted to form a defence committee. Within 72 hours, similar committees have formed in Perm, Chelyabinsk, and Ufa. They are organising their own supply chains and recruiting their own security forces.\n\nThey have sent a delegation to Moscow. Their message is respectful but clear: the councils will defend the Urals whether or not the federal government supports them. They are asking for cooperation."
+ rsf.7.a: "Suppress the committees. Arrest the organisers."
  rsf.7.b: "Engage with them. Send a government representative."
  rsf.7.b_tt: "When Sweramoa forms, it will have a stronger foundation."
 
@@ -105,20 +105,20 @@
  RSF_oligarch_compact_idea: "The Compact"
  RSF_oligarch_compact_idea_desc: "The oligarchs have been pacified with promises. Their cooperation is transactional. So is Russia's relationship with its own economy."
 
- RSF_efh_ceasefire_idea: "EF Back Channel"
+ RSF_efh_ceasefire_idea: "European Back Channel"
  RSF_efh_ceasefire_idea_desc: "A quiet economic arrangement has been established through unofficial channels. Neither side acknowledges it publicly. Both sides benefit modestly."
 
  RSF_efh_hostility_idea: "Economic Defiance"
  RSF_efh_hostility_idea_desc: "Russia has chosen confrontation over accommodation. The people support it. The cost has yet to become apparent."
 
  RSF_chinese_investment_idea: "CHN Investment Arrangement"
- RSF_chinese_investment_idea_desc: "Chinese infrastructure capital and consumer goods flow into Russia in exchange for long-term resource concessions. The terms favor CHN. The alternative was worse."
+ RSF_chinese_investment_idea_desc: "Chinese infrastructure capital and consumer goods flow into Russia in exchange for long-term resource concessions. The terms favour China. The alternative was worse."
 
  RSF_eastern_self_reliance_idea: "Eastern Self-Reliance"
  RSF_eastern_self_reliance_idea_desc: "Russia rejected the Chinese offer and is building its own eastern economic infrastructure. It is slower, more expensive, and entirely within Russian control."
 
  RSF_fortress_russia_idea: "Fortress Russia"
- RSF_fortress_russia_idea_desc: "Russia produces for itself. Every consumer good that was once imported is now rationed or manufactured domestically. The people endure."
+ RSF_fortress_russia_idea_desc: "Russia produces for itself. Every consumer good that was once imported is now rationed or manufactured domestically."
 
  RSF_nuclear_deterrent_idea: "Nuclear Deterrent"
  RSF_nuclear_deterrent_idea_desc: "Russia's nuclear arsenal is operationally ready and politically visible. No one will attack directly while these weapons exist."
@@ -147,7 +147,7 @@
  RSF_emergency_industrial_push_desc: "Mandate emergency production quotas across all state-controlled factories. 60-day surge at the cost of peacetime norms."
 
  RSF_emergency_conscription_decree: "Emergency Conscription Decree"
- RSF_emergency_conscription_decree_desc: "Lower the conscription age and call up reserve cohorts. The army grows, the social fabric frays."
+ RSF_emergency_conscription_decree_desc: "Lower the conscription age and call up reserve cohorts. The army grows. The social fabric frays."
 
  RSF_scorch_eastern_infrastructure: "Scorched Earth Order"
  RSF_scorch_eastern_infrastructure_desc: "Destroy the infrastructure of this state before it falls to parasite control. Power grids, rail junctions, road bridges. Leave nothing useful."
@@ -160,19 +160,19 @@
 
 
  SWR_council_of_twelve: "The Council of Twelve"
- SWR_council_of_twelve_desc: "The twelve senior council-commanders who organised the transition have convened to govern Sweramoa. A governing charter must be written. Defence must be organised. Something must be built."
+ SWR_council_of_twelve_desc: "The twelve senior council-commanders who organised the transition have convened to govern Sweramoa. A governing charter must be written. Defence cannot wait for the charter. Everything else waits."
 
  SWR_peoples_defense_force: "People's Defence Force"
- SWR_peoples_defense_force_desc: "The old army's hierarchy is gone. What remains are motivated volunteers and soldiers who chose to stay. We formalise them into a defence force built on council authority, not military tradition."
+ SWR_peoples_defense_force_desc: "The old army's hierarchy is gone. What remains are motivated volunteers and soldiers who chose to stay. We formalise them into a defence force built on council authority. The old traditions stay retired."
 
  SWR_propaganda_machine: "The Voice of Sweramoa"
  SWR_propaganda_machine_desc: "We need people to believe in Sweramoa before they have any reason to. The broadcasts go out. The councils are heroic. The old Russia was a failure. We are the future."
 
- SWR_volunteer_recruitment: "Open Enrollment"
+ SWR_volunteer_recruitment: "Open Enrolment"
  SWR_volunteer_recruitment_desc: "There are thousands who fled west from the parasite front. Many of them will fight for something worth fighting for. We give them that something."
 
  SWR_strategic_redoubt: "Strategic Redoubt"
- SWR_strategic_redoubt_desc: "We cannot hold every kilometer of what was Russia. We choose our ground carefully and dig in. The parasites will find us harder to dislodge than they expect."
+ SWR_strategic_redoubt_desc: "We cannot hold every kilometre of what was Russia. We choose our ground carefully and dig in. The parasites will find us harder to dislodge than they expect."
 
  SWR_revolutionary_courts: "Revolutionary Courts"
  SWR_revolutionary_courts_desc: "Those who collaborated with the old order, hoarded resources, or refused the councils face judgment. The courts are quick and they are not gentle."
@@ -191,7 +191,7 @@
  SWR_peoples_defense_force_idea_desc: "Sweramoa's military is organised around volunteer councils rather than a traditional command hierarchy. They fight because they chose to be there."
 
  SWR_revolutionary_fervor_idea: "Revolutionary Fervor"
- SWR_revolutionary_fervor_idea_desc: "The population is galvanized. Sweramoa is young enough that the revolution still feels real."
+ SWR_revolutionary_fervor_idea_desc: "The population is galvanised. Sweramoa is young enough that the revolution still feels real."
 
  SWR_iron_solidarity_idea: "Iron Solidarity"
  SWR_iron_solidarity_idea_desc: "Political commitment and military discipline have fused. The soldiers understand the stakes. They do not require convincing."
@@ -203,20 +203,20 @@
  swr.1.t: "A Question of Survival"
  swr.1.d: "The Council of Twelve has convened an emergency session on military research. The parasite advance into the former Russian heartland shows no sign of slowing, and our weapons programmes cannot keep pace with the threat.\n\nThe European Federation possesses RTG research and other anti-parasite technology that we do not. The question is how we pursue it, and what price we are willing to pay."
  swr.1.a: "Sweramoa builds its own weapons. We trust no one."
- swr.1.b: "Request EF assistance through formal channels."
- swr.1.c: "Make the EF understand what refusing us costs them."
- swr.1.c_tt: "Sweramoa has threatened the EF with its nuclear reserve. The EF will respond shortly."
+ swr.1.b: "Request Federation assistance through formal channels."
+ swr.1.c: "Make the Federation understand what refusing us costs them."
+ swr.1.c_tt: "Sweramoa has threatened the Federation with its nuclear reserve. The Federation will respond shortly."
 
  swr.2.t: "Sweramoa's Nuclear Ultimatum"
- swr.2.d: "A secured diplomatic communique from Sweramoa has been decoded by European Intelligence. Its contents are direct: the Council of Twelve has formally demanded access to our RTG weapons research, citing Sweramoa's inherited nuclear stockpile as leverage.\n\nWe cannot dismiss this. The stockpile is real, it is armed, and the council has demonstrated it is willing to use it as a bargaining instrument.\n\nThe demand is credible, and our response will shape what follows."
- swr.2.a: "Provide them the research. They are desperate, not hostile."
- swr.2.a_tt: "Sweramoa receives access to EF anti-parasite research. The Federation absorbs a small stability cost from the political fallout of complying under threat."
+ swr.2.d: "A secured diplomatic communique from Sweramoa has been decoded by European Intelligence. Its contents are direct: the Council of Twelve has formally demanded access to our RTG weapons research, citing Sweramoa's inherited nuclear stockpile as leverage.\n\nWe cannot dismiss this. The stockpile is real, it is armed, and the council has demonstrated it is willing to use it as a bargaining instrument.\n\nThe demand is credible."
+ swr.2.a: "Provide them the research. Desperation makes them predictable."
+ swr.2.a_tt: "Sweramoa receives access to Federation anti-parasite research. The Federation absorbs a small stability cost from the political fallout of complying under threat."
  swr.2.b: "We will not be coerced. Reject the ultimatum."
- swr.2.b_tt: "Sweramoa's research programme stalls. Relations with the EF are frozen for six months."
+ swr.2.b_tt: "Sweramoa's research programme stalls. Relations with the Federation are frozen for six months."
 
 
- SWR_ef_weapon_research_access: "EF Research Access"
+ SWR_ef_weapon_research_access: "Federation Research Access"
  SWR_ef_weapon_research_access_desc: "Sweramoa has obtained access to European Federation anti-parasite research, including preliminary RTG weapons data."
 
- SWR_efh_diplomatic_freeze: "EF Diplomatic Freeze"
- SWR_efh_diplomatic_freeze_desc: "The European Federation has suspended diplomatic and research channels with Sweramoa following the nuclear ultimatum. Sweramoa's access to EF scientific networks has been severed. The council is isolated."
+ SWR_efh_diplomatic_freeze: "Federation Diplomatic Freeze"
+ SWR_efh_diplomatic_freeze_desc: "The European Federation has suspended diplomatic and research channels with Sweramoa following the nuclear ultimatum. Sweramoa's access to Federation scientific networks has been severed. The council is isolated."

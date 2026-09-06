@@ -5,7 +5,7 @@
  vagrant_4_desc: "The Iris's own, and the most alien of the four. What it does when it is not fighting has never been established."
 
  host_parasite: "Host"
- host_parasite_desc: "A sub-surface organism that erupts to summon others and spray acid across armored positions."
+ host_parasite_desc: "A sub-surface organism that erupts to summon others and spray acid across armoured positions."
  herd_parasite: "Herd"
  herd_parasite_desc: "An evolved Host, larger and more saturating. Its emergence draws more organisms from the ground with it."
  hollower: "Hollower"
@@ -15,7 +15,7 @@
  arbiter: "Arbiter"
  arbiter_desc: "A precision organism engineered by VAGRANT-01, effective against both human formations and Iris parasite units."
  culler: "Culler"
- culler_desc: "An elimination-focused organism designed for targeted removal. Stays in contact until the target stops."
+ culler_desc: "Built to remove a single designated target. Stays in contact until the target stops."
  magistrate: "Magistrate"
  magistrate_desc: "VAGRANT-01's capstone organism. A phase-adaptive strike organ reconfigures between human-lethal and Iris-disruptive biochemistry depending on what it engages, backed by a dense adaptive membrane drawn from the Culler lineage. Built to have no bad matchup, rather than specialising the way Arbiter and Culler do."
 
@@ -26,7 +26,7 @@
 
 
  vagrant_1_nest_builder: "Nest Architect"
- vagrant_1_nest_builder_desc: "Builds infrastructure and defends it. Plans ten steps ahead and commits to none of them until the ground is ready. A contractor with aligned interests, not an ally."
+ vagrant_1_nest_builder_desc: "Builds infrastructure and defends it. Plans ten steps ahead and commits to none of them until the ground is ready. A contractor whose interests align, for now."
 
  vagrant_2_combat_liaison: "Combat Liaison"
  vagrant_2_combat_liaison_desc: "Functions as a direct interface between H&A command and the parasite front line. Its presence accelerates fieldwork and complicates every political meeting it attends."
@@ -117,7 +117,7 @@
  vagrant.3.a: "Welcome it back."
 
  vagrant.4.t: "The Second Has Returned"
- vagrant.4.d: "Both were gone at the same time. For four months there was nothing. The Second has reformed first. It scanned for the Third immediately on emergence. We do not know what that means to a parasite. We know what it means to us."
+ vagrant.4.d: "Both were gone at the same time. For four months there was nothing. The Second has reformed first. It scanned for the Third immediately on emergence. What that means to a parasite is not recorded."
  vagrant.4.a: "Welcome it back."
 
  vagrant.5.t: "The Third Has Returned"

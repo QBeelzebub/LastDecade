@@ -1,6 +1,6 @@
 ﻿l_english:
  SRP_moon_base: "Second Space Race: Moon Base"
- SRP_moon_base_desc: "The second space race, an interplanetary threat, and the Laytheo's launch costs have together made a permanent lunar base plausible for the first time. Helium-3 off the surface would put Europe's grid on full fusion.\nProgress: §Y[?SRP_moon_base_progress|0]%§!\nModules deployed: §Y[?SRP_moon_base_modules|0]§!/15\nSecurity: §Y[?SRP_moon_base_security|0]§!\nProcurement heat: §Y[?SRP_moon_base_procurement_heat|0]§!"
+ SRP_moon_base_desc: "The second space race, an interplanetary threat, and Laytheo's launch costs have together made a permanent lunar base plausible for the first time. Helium-3 off the surface would put Europe's grid on full fusion.\nProgress: §Y[?SRP_moon_base_progress|0]%§!\nModules deployed: §Y[?SRP_moon_base_modules|0]§!/15\nSecurity: §Y[?SRP_moon_base_security|0]§!\nProcurement heat: §Y[?SRP_moon_base_procurement_heat|0]§!"
  SRP_moon_base_status: "Moon Base Status"
  SRP_moon_base_status_desc: "Progress: §Y[?SRP_moon_base_progress|0]%§!\nModules deployed: §Y[?SRP_moon_base_modules|0]§!/15\nSecurity: §Y[?SRP_moon_base_security|0]§!\nProcurement heat: §Y[?SRP_moon_base_procurement_heat|0]§!\n\nThe programme is assembled from Earth-launched precision machinery and lunar-built bulk structures. After the construction yard comes online, rover bodies, shielding, pads, and simple frame elements can be fabricated from local regolith."
  SRP_moon_base_programme_initiation: "Authorise the Moon Base Programme"
@@ -48,13 +48,13 @@
  SRP_moon_base_expose_rival_scandal: "Expose Rival Procurement Scandal"
  SRP_moon_base_expose_rival_scandal_desc: "Turn their heat into headlines before anyone asks too many questions about your own hangars."
  SRP_lunar_race_pressure: "Lunar Race Pressure"
- SRP_lunar_race_pressure_desc: "The moon base programme has become a matter of national prestige, budget pressure, and scientific acceleration."
+ SRP_lunar_race_pressure_desc: "The moon base programme is a prestige project now, and the budget follows it."
  SRP_moon_base_active_base: "Active Lunar Outpost"
  SRP_moon_base_active_base_desc: "A real surface base exists now, fragile but politically electrifying."
  SRP_moon_base_he3_partial: "Pilot He-3 Operations"
  SRP_moon_base_he3_partial_desc: "The first helium-3 extraction and storage systems are producing useful data and modest industrial returns."
  SRP_moon_base_he3_full: "Lunar He-3 Supply Chain"
- SRP_moon_base_he3_full_desc: "Refined lunar helium-3 shipments are no longer a stunt. They are becoming part of the energy economy."
+ SRP_moon_base_he3_full_desc: "Regular helium-3 deliveries from the Moon have begun. Grid planners are starting to count on them."
  SRP_moon_base_research: "Lunar Research Complex"
  SRP_moon_base_research_desc: "The base's research complex gives scientists a clean platform for surface, orbital, and deep-space observation."
  SRP_moon_base_complete: "Completed Moon Base"
@@ -67,7 +67,7 @@
  basic_jet_engine: "Basic Afterburning Engine"
  basic_jet_engine_desc: "Standard afterburning turbofan. Reliable and widely used across 4th-generation fighter and strike platforms."
  IRMissile: "IR Missile"
- IRMissile_desc: "Infrared-guided air-to-air missile. Highly maneuverable with advanced infrared homing. Effective against a wide range of aerial targets."
+ IRMissile_desc: "Infrared-guided air-to-air missile. Highly manoeuvrable with advanced infrared homing. Effective against a wide range of aerial targets."
  bomb_locks: "Precision Bombing Systems"
  bomb_locks_desc: "Advanced targeting pods and guidance systems for precision-guided munitions. Enables accurate delivery against ground targets in contested environments."
  nuclear_bomb_locks: "Nuclear Bomb Locks"
@@ -79,7 +79,7 @@
  srp_wing_canard_delta: "Canard Delta Wings"
  srp_wing_canard_delta_desc: "Forward canards paired with a delta wing improve pitch response and low-speed handling. Favoured for close air support and engagements requiring tight manoeuvres at low altitude."
  EFH_ha_wing_canard_delta: "European Canard Delta Wings"
- EFH_ha_wing_canard_delta_desc: "Europe's signature wing configuration. A direct upgrade from the standard Delta Canard wing configuration."
+ EFH_ha_wing_canard_delta_desc: "Europe's signature wing configuration. A direct upgrade from the standard Canard Delta configuration."
  srp_wing_delta: "Delta Wings"
  srp_wing_delta_desc: "A pure delta configuration optimised for high-speed, high-altitude flight. Preferred for interception roles. Sacrifices agility for straight-line performance."
  srp_wing_tandem: "Tandem Wings"
@@ -132,7 +132,7 @@
 
  sp_naval_reward_stbn_naval_calibration: "Naval Calibration"
  sp_naval_reward_stbn_naval_calibration_desc: "The at-sea test firings are complete. The data will determine the final configuration of the STBN shell for fleet-wide deployment."
- sp_naval_reward_option_stbn_naval_calibration_penetration: "Prioritise armor-piercing performance"
+ sp_naval_reward_option_stbn_naval_calibration_penetration: "Prioritise armour-piercing performance"
  sp_naval_reward_option_stbn_naval_calibration_blast: "Prioritise blast yield per round"
 
  sp_naval_stbn_shell_bonus: "STBN Fleet Shells"
@@ -149,7 +149,7 @@
  sp_naval_reward_option_fusion_engine_full_load_stress_test: "Push the core to full load"
 
  sp_air_sf6_jet_engine: "SF6 Atmospheric Jet Engine"
- sp_air_sf6_jet_engine_desc: "Beckons vent sulfur hexafluoride into the lower atmosphere as a byproduct of parasite photosynthesis. At sufficient concentration, SF6 can be captured mid-flight and used as a supplementary oxidiser in a modified jet combustion cycle, yielding a considerable improvement in thrust-to-weight alongside a notable reduction in the range penalty typical of high-performance jet engines."
+ sp_air_sf6_jet_engine_desc: "Beckons vent sulfur hexafluoride into the lower atmosphere as a byproduct of parasite photosynthesis. At sufficient concentration, SF6 can be captured mid-flight and used as a supplementary oxidiser in a modified jet combustion cycle, for a big gain in thrust-to-weight and less of the range penalty high-performance jet engines usually pay."
 
  srp_sf6_engine_1x: "SF6 Turbojet (Single)"
  srp_sf6_engine_1x_desc: "Single SF6-cycle turbojet. Captures atmospheric sulfur hexafluoride through inlet scoops and routes it into the combustion chamber alongside standard oxidiser. Delivers significantly greater thrust and improved range efficiency compared to axial turbofans of equivalent size."
@@ -176,10 +176,10 @@
  sp_land_reward_option_weakpoint_data_calibration_comprehensive: "Full-spectrum targeting with a slower rollout"
 
  sp_naval_carrier_fuel_synthesis: "Onboard Jet Fuel Synthesis"
- sp_naval_carrier_fuel_synthesis_desc: "A carrier at sea cannot resupply its air wing indefinitely. By using surplus reactor power to run electrolysis at scale, it is theoretically possible to synthesize jet fuel directly from water, removing the fuel constraint from carrier air operations entirely and expanding the number of sorties the ship can support."
+ sp_naval_carrier_fuel_synthesis_desc: "A carrier at sea cannot resupply its air wing indefinitely. By using surplus reactor power to run electrolysis at scale, the ship synthesises jet fuel straight from seawater instead of waiting on tankers."
 
  srp_carrier_fuel_synthesis: "Electrolytic Fuel Synthesizer"
- srp_carrier_fuel_synthesis_desc: "A modular electrolysis array installed in the lower decks. Uses surplus reactor output to synthesize jet fuel from seawater. Increases the carrier's effective air wing capacity and reduces dependence on fleet replenishment."
+ srp_carrier_fuel_synthesis_desc: "A modular electrolysis array installed in the lower decks. Uses surplus reactor output to synthesise jet fuel from seawater. Increases the carrier's effective air wing capacity and reduces dependence on fleet replenishment."
 
  sp_naval_reward_fuel_synthesis_design: "Synthesis Plant Layout"
  sp_naval_reward_fuel_synthesis_design_desc: "The electrolysis array works. Locking in the final layout means deciding how far to push the validation runs before committing to production."
@@ -208,15 +208,15 @@
  sp_land_reward_nuclear_artillery_fissile_efficiency_desc: "A junior member of the team has devised a packing geometry that reduces the critical mass required per shell. The fissile material savings per unit are modest, but significant at scale."
  sp_land_reward_option_nuclear_artillery_fissile_efficiency: "Document the discovery and apply it to production"
 
- sp_land_nanocomposite: "Nanocomposite Armor"
- sp_land_nanocomposite_desc: "Conventional armor is reaching its limits. Chobham composites and spaced arrays offer diminishing returns. Engineered nanostructure composites represent the theoretical ceiling of passive protection: ceramic-matrix nanolaminates bonded to steel at the molecular level. The production process is slow and chromium-intensive, but the result is armor that defeats anything in current service."
+ sp_land_nanocomposite: "Nanocomposite Armour"
+ sp_land_nanocomposite_desc: "Conventional armour is reaching its limits. Chobham composites and spaced arrays offer diminishing returns. Engineered nanostructure composites represent the theoretical ceiling of passive protection: ceramic-matrix nanolaminates bonded to steel at the molecular level. The production process is slow and chromium-intensive, but the result is armour that defeats anything in current service."
 
  sp_land_reward_nanocomposite_synthesis_milestone: "Synthesis Breakthrough"
  sp_land_reward_nanocomposite_synthesis_milestone_desc: "The team has cracked the bonding process for the ceramic nanolaminate layers. The composite holds under simulated penetrator impact. Full production is still some way off, but the hardest problem is solved."
  sp_land_reward_option_nanocomposite_synthesis_milestone: "Continue on the current programme"
 
  sp_land_railgun: "Electromagnetic Railgun"
- sp_land_railgun_desc: "Conventional propellants are a chemical ceiling. An electromagnetic launcher accelerates a kinetic penetrator to velocities that make armor irrelevant, since no plate is thick enough to absorb the impact energy. The engineering problems are power storage, barrel erosion, and thermal management. The prototype works, though it remains far from production-ready."
+ sp_land_railgun_desc: "Conventional propellants are a chemical ceiling. An electromagnetic launcher accelerates a kinetic penetrator to velocities that make armour irrelevant, since no plate is thick enough to absorb the impact energy. The engineering problems are power storage, barrel erosion, and thermal management. The prototype works, though it remains far from production-ready."
 
  sp_land_reward_railgun_power_surge: "Power Surge"
  sp_land_reward_railgun_power_surge_desc: "A capacitor bank discharged unexpectedly during a live test. The degree of damage depends on how quickly the safety systems responded."
@@ -295,14 +295,14 @@
  srp_critical_nuclear_reserve_desc: "Warhead stockpile has fallen below operational minimums. Production penalties are in effect and all political decisions carry an increased review burden until the reserve is restored."
 
  srp_nuclear.1.t: "Emergency Council: Warhead Reserve Critical"
- srp_nuclear.1.d: "The joint chiefs have formally notified the council: the strategic warhead reserve has fallen below minimum operational threshold. Production reallocation has been authorised. Political capital will be consumed at elevated rates until the deficit is corrected."
+ srp_nuclear.1.d: "The joint chiefs have formally notified the council: the strategic warhead reserve has fallen below the minimum operational threshold. Production reallocation has been authorised. Political capital will be consumed at elevated rates until the deficit is corrected."
  srp_nuclear.1.a: "Understood. Prioritise production."
  srp_nuclear.2.t: "NSC/STRATCOM: Warhead Reserve Status"
  srp_nuclear.2.d: "STRATCOM has flagged a shortfall in the ready warhead inventory. The reserve is below the minimum threshold established in the nuclear posture review. SECDEF has authorised the production surge directive."
  srp_nuclear.2.a: "Activate the surge directive."
 
  sp_land_IRS_adapted_beckon_cultivation: "Adapted Beckon Cultivation"
- sp_land_IRS_adapted_beckon_cultivation_desc: "Standard Beckon Clusters draw biomass slowly from the surrounding root network. By calibrating growth conditions and selecting denser root stock, a refined cultivation structure can be cultivated, one that draws considerably more from the same infested ground."
+ sp_land_IRS_adapted_beckon_cultivation_desc: "Standard Beckon Clusters draw biomass slowly from the surrounding root network. With calibrated growth conditions and denser root stock, the refined structure draws considerably more from the same infested ground."
 
  sp_land_reward_adapted_beckon_growth_choice: "Growth Calibration"
  sp_land_reward_adapted_beckon_growth_choice_desc: "The cultivated stock is viable. The team must decide how aggressively to encourage its spread before locking in the final structure."
@@ -335,3 +335,7 @@
  sp_land_reward_option_loyal_strain_signature_drift_steady: "Hold the signature steady"
  sp_land_reward_option_loyal_strain_signature_drift_unstable: "Push through the instability"
 
+
+ sp_air_aerial_genome_calibration_accuracy: "Calibration Drift, Attack"
+ sp_air_aerial_genome_calibration_resilience: "Calibration Drift, Resilience"
+ sp_land_nanocomposite_interim_bonus: "Nanocomposite Synthesis"

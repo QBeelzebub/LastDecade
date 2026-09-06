@@ -1,0 +1,293 @@
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_unit_rupter_pack_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_mangler_pack_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_primitive_longarms_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_primitive_reeker_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_primitive_summoner_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_primitive_manducater_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_primitive_tozoon_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_vigilante_battery_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_monarch_hunter_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_haunter_titan_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_adapted_burrower_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_adapted_bolster_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_adapted_warden_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_adapted_summoner_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_colony_carrier_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_dreadnaut_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_overlord_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_ancient_overlord_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hibernal_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_cordon_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_marauder_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_vagrant_1_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_vagrant_2_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_vagrant_3_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_vagrant_4_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_host_parasite_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_herd_parasite_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hollower_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_scourer_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_arbiter_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_dyadic_striker_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_paragon_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_culler_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_magistrate_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_carrier_brood_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_overseer_caller_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_srp_rtg_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_atgm_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_atgm_regimental_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_atgm_support_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_bolster_regimental_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_drone_regimental_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_drone_support_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_sapper_regimental_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_summoner_regimental_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_spg_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_nuclear_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_marine_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+}

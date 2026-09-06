@@ -17,7 +17,7 @@ buildings = {
 		local_resources_parasite_biomass = 1
 	}
 	dispatcher = {
-		base_cost = 1500
+		base_cost = 4500
 		base_cost_conversion = 40
 		value = 1
 		icon_frame = 7
@@ -47,6 +47,7 @@ buildings = {
 			}
 		}
 		local_resources_parasite_biomass = 5
+		local_resources_oil = 3
 	}
 	nexus_hive = {
 		base_cost = 18000
@@ -65,6 +66,10 @@ buildings = {
 			modifiers = {
 				production_speed_buildings_factor = 0.05
 			}
+		}
+		state_modifiers = {
+			land_bunker_effectiveness_factor = 0.6
+			local_building_slots = 4
 		}
 		local_resources_nexus_biomass = 1
 	}
@@ -106,7 +111,7 @@ buildings = {
 		local_resources_parasite_biomass = 5
 	}
 	proto_supreme_beckon = {
-		base_cost = 20000
+		base_cost = 2000000
 		damage_factor = 0
 		is_buildable = no
 		disable_grow_animation = yes
@@ -142,7 +147,7 @@ buildings = {
 		hide_if_missing_tech = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 10
+			state_max = 5
 		}
 		repair_speed_factor = 0.5
 		icon_frame = 1

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Scroll -->
+  <rect x="36" y="44" width="56" height="44" fill="#c9a52a"/>
+  <rect x="36" y="44" width="56" height="5" fill="#c9a52a" opacity="0.5"/>
+  <rect x="36" y="83" width="56" height="5" fill="#c9a52a" opacity="0.5"/>
+  <rect x="44" y="44" width="3" height="44" fill="#0d1623"/>
+  <rect x="81" y="44" width="3" height="44" fill="#0d1623"/>
+
+  <!-- Star of authority -->
+  <polygon points="64,52 67.3,61.5 77.3,61.7 69.3,67.7 72.2,77.3 64,71.6 55.8,77.3 58.7,67.7 50.7,61.7 60.7,61.5" fill="#0d1623" transform="translate(0 0)"/>
+</svg>

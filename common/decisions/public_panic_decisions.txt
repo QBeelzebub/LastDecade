@@ -3,7 +3,7 @@ srp_public_confidence = {
     srp_emergency_broadcast = {
         icon = generic_political_actions
 
-        allowed = { NOT = { is_full_parasite = yes } }
+        allowed = { NOT = { SRP_is_parasite_tag = yes } }
 
         visible = {
             NOT = { is_full_parasite = yes }
@@ -42,7 +42,7 @@ srp_public_confidence = {
     srp_civilian_resilience = {
         icon = generic_political_actions
 
-        allowed = { NOT = { is_full_parasite = yes } }
+        allowed = { NOT = { SRP_is_parasite_tag = yes } }
 
         visible = {
             NOT = { is_full_parasite = yes }
@@ -81,7 +81,7 @@ srp_public_confidence = {
     srp_military_readiness_display = {
         icon = generic_army_support
 
-        allowed = { NOT = { is_full_parasite = yes } }
+        allowed = { NOT = { SRP_is_parasite_tag = yes } }
 
         visible = {
             NOT = { is_full_parasite = yes }
@@ -120,7 +120,7 @@ srp_public_confidence = {
     srp_civil_defense_act = {
         icon = generic_political_actions
 
-        allowed = { NOT = { is_full_parasite = yes } }
+        allowed = { NOT = { SRP_is_parasite_tag = yes } }
 
         visible = {
             NOT = { is_full_parasite = yes }
@@ -161,7 +161,7 @@ srp_public_confidence = {
     srp_impose_information_control = {
         icon = generic_political_actions
 
-        allowed = { NOT = { is_full_parasite = yes } }
+        allowed = { NOT = { SRP_is_parasite_tag = yes } }
 
         visible = {
             NOT = { is_full_parasite = yes }

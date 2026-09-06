@@ -8,6 +8,14 @@ opinion_modifiers = {
 		value = -75
 	}
 
+	LD_knx_efh_channel = {
+		value = 120
+	}
+
+	LD_knx_efh_partnership = {
+		value = 300
+	}
+
 	LD_rsf_hostile_to_efh = {
 		value = -40
 	}

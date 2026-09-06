@@ -29,6 +29,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_morale_factor = 0.02
+				political_power_gain = 0.5
 			}
 		}
 
@@ -43,6 +44,10 @@ ideas = {
 				supply_consumption_factor = -0.05
 				attrition = -0.08
 				planning_speed = 0.10
+				political_power_gain = 1.5
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				breakthrough_factor = 0.05
 			}
 		}
 
@@ -58,11 +63,12 @@ ideas = {
 				attrition = -0.21
 				planning_speed = 0.10
 				land_night_attack = 0.10
-				breakthrough_factor = 0.05
-				army_attack_factor = 0.03
+				breakthrough_factor = 0.12
+				army_attack_factor = 0.10
 				research_speed_factor = 0.05
 				army_speed_factor = 0.03
-				army_defence_factor = 0.03
+				army_defence_factor = 0.10
+				political_power_gain = 3
 			}
 		}
 
@@ -78,12 +84,13 @@ ideas = {
 				attrition = -0.30
 				planning_speed = 0.15
 				land_night_attack = 0.15
-				breakthrough_factor = 0.13
-				army_attack_factor = 0.10
+				breakthrough_factor = 0.25
+				army_attack_factor = 0.20
 				research_speed_factor = 0.10
 				army_speed_factor = 0.08
-				army_defence_factor = 0.10
+				army_defence_factor = 0.20
 				navy_submarine_attack_factor = 0.05
+				political_power_gain = 5
 			}
 		}
 

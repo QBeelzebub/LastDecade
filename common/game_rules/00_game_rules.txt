@@ -1,0 +1,179 @@
+
+
+allow_access = {
+	name = "RULE_ALLOW_MILITARY_ACCESS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_military_access_docking_rights"
+	default = {
+		name = "FREE"
+		text = RULE_OPTION_FREE
+		desc = "RULE_ALLOW_ACCESS_FREE_DESC"
+	}
+	option = {
+		name = "SAME_IDEOLOGY"
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_ACCESS_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "RULE_ALLOW_ACCESS_BLOCKED_DESC"
+	}
+}
+
+allow_lend_lease = {
+	name = "RULE_ALLOW_LEND_LEASE"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_lend_lease"
+	option = {
+		name = "FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_LEND_LEASE_FREE_DESC"
+	}
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_LEND_LEASE_LIMITED_DESC"
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = SAME_FACTION
+		text = "RULE_OPTION_SAME_FACTION"
+		desc = "RULE_ALLOW_LEND_LEASE_SAME_FACTION_DESC"
+	}
+	option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_LEND_LEASE_BLOCKED_DESC"
+	}
+}
+
+allow_guarantees = {
+	name = "RULE_ALLOW_GUARANTEES"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_guarantee_independence"
+	option = {
+		name = "ALWAYS_FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_GUARANTEES_FREE_DESC"
+	}
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_GUARANTEES_LIMITED_DESC"
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_GUARANTEES_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_GUARANTEES_BLOCKED_DESC"
+	}
+}
+
+allow_coups = {
+	name = "RULE_ALLOW_COUPS"
+	group = "RULE_GROUP_COVERT_ACTIONS"
+	icon = "GFX_coups"
+	option = {
+		name = FREE
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_COUPS_FREE_DESC"
+	}
+	option = {
+		name = AI_ONLY
+		text = "RULE_OPTION_AI_ONLY"
+		desc = "RULE_ALLOW_COUPS_AI_ONLY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
+	}
+}
+
+
+
+EFH_ai_behavior = {
+	name = "EFH_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "EFH_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "EFH_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "EFH_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+USA_ai_behavior = {
+	name = "USA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "USA_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "USA_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "USA_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+IRS_ai_behavior = {
+	name = "IRS_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "IRS_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "IRS_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "IRS_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+KNX_ai_behavior = {
+	name = "KNX_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "KNX_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "KNX_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "KNX_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+RSF_ai_behavior = {
+	name = "RSF_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "RSF_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "RSF_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "RSF_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+SWR_ai_behavior = {
+	name = "SWR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "SWR_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "SWR_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "SWR_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+TET_ai_behavior = {
+	name = "TET_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = { name = DEFAULT   text = "RULE_OPTION_DEFAULT" desc = "TET_AI_BEHAVIOR_DEFAULT_DESC" }
+	option  = { name = CAUTIOUS  text = "RULE_OPTION_SRP_CAUTIOUS"   desc = "TET_AI_BEHAVIOR_CAUTIOUS_DESC" }
+	option  = { name = AGGRESSIVE text = "RULE_OPTION_SRP_AGGRESSIVE" desc = "TET_AI_BEHAVIOR_AGGRESSIVE_DESC" }
+}
+
+srp_game_setup_placeholder = {
+	name = "RULE_SRP_SETUP_PLACEHOLDER"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_SRP_PLACEHOLDER_DEFAULT"
+		desc = "RULE_SRP_SETUP_PLACEHOLDER_DESC"
+	}
+}
+
+srp_gameplay_placeholder = {
+	name = "RULE_SRP_GAMEPLAY_PLACEHOLDER"
+	group = "RULE_GROUP_GAMEPLAY"
+	default = {
+		name = DEFAULT
+		text = "RULE_SRP_PLACEHOLDER_DEFAULT"
+		desc = "RULE_SRP_GAMEPLAY_PLACEHOLDER_DESC"
+	}
+}

@@ -109,6 +109,28 @@ on_actions = {
 					set_variable = { var = global.srp_scorched_earth value = 2 }
 				}
 
+				set_variable = { var = global.srp_absorb_days value = 0 }
+				if = {
+					limit = { has_game_rule = { rule = srp_state_absorb option = INSTANT } }
+					set_variable = { var = global.srp_absorb_days value = 1 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_state_absorb option = DAYS_30 } }
+					set_variable = { var = global.srp_absorb_days value = 30 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_state_absorb option = DAYS_60 } }
+					set_variable = { var = global.srp_absorb_days value = 60 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_state_absorb option = DAYS_90 } }
+					set_variable = { var = global.srp_absorb_days value = 90 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_state_absorb option = DAYS_180 } }
+					set_variable = { var = global.srp_absorb_days value = 180 }
+				}
+
 				set_variable = { var = global.srp_crisis_enabled value = 1 }
 				set_variable = { var = global.srp_crisis_intensity value = 1 }
 				if = {
@@ -118,6 +140,49 @@ on_actions = {
 				if = {
 					limit = { has_game_rule = { rule = srp_crisis_layer option = INTENSE } }
 					set_variable = { var = global.srp_crisis_intensity value = 2 }
+				}
+
+				set_variable = { var = global.srp_nuclear_mode value = 2 }
+				if = {
+					limit = { has_game_rule = { rule = srp_nuclear_mechanics option = SIMPLE } }
+					set_variable = { var = global.srp_nuclear_mode value = 1 }
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_nuclear_mechanics option = LORE } }
+					set_variable = { var = global.srp_nuclear_mode value = 0 }
+				}
+
+				if = {
+					limit = { check_variable = { var = global.srp_nuclear_mode value = 1 compare = equals } }
+					every_country = {
+						limit = {
+							exists = yes
+							NOT = { is_full_parasite = yes }
+						}
+						set_technology = { LD_vanilla_nuclear_delivery_access = 1 popup = no }
+					}
+				}
+
+				if = {
+					limit = { check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals } }
+					every_country = {
+						limit = { tag = EFH exists = yes }
+						set_variable = { var = SRP_nuclear_warheads value = 40 }
+					}
+					every_country = {
+						limit = { tag = USA exists = yes }
+						set_variable = { var = SRP_nuclear_warheads value = 30 }
+					}
+				}
+				else = {
+					every_country = {
+						limit = { tag = EFH exists = yes }
+						add_nuclear_bombs = 40
+					}
+					every_country = {
+						limit = { tag = USA exists = yes }
+						add_nuclear_bombs = 30
+					}
 				}
 			}
 		}

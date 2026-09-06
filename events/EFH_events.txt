@@ -85,9 +85,15 @@ news_event = {
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = { original_tag = EFH }
+			set_country_flag = EFH_summit_collapsed
+		}
+	}
+
 	option = {
 		name = efh.11.a
-		set_country_flag = EFH_summit_collapsed
 	}
 }
 
@@ -100,9 +106,15 @@ news_event = {
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = { original_tag = EFH }
+			news_event = { id = efh.11 days = 30 }
+		}
+	}
+
 	option = {
 		name = efh.10.a
-		news_event = { id = efh.11 days = 30 }
 	}
 }
 
@@ -117,18 +129,24 @@ news_event = {
 
 	immediate = {
 		set_global_flag = LD_second_summit_convened
+		if = {
+			limit = {
+				original_tag = EFH
+				check_variable = { EFH_USA_escalation > 79 }
+			}
+			country_event = { id = efh.20 days = 1 }
+		}
+		if = {
+			limit = {
+				original_tag = EFH
+				check_variable = { EFH_USA_escalation < 80 }
+			}
+			country_event = { id = efh.22 days = 1 }
+		}
 	}
 
 	option = {
 		name = efh.4.a
-		if = {
-			limit = { check_variable = { EFH_USA_escalation > 79 } }
-			country_event = { id = efh.20 days = 1 }
-		}
-		if = {
-			limit = { check_variable = { EFH_USA_escalation < 80 } }
-			country_event = { id = efh.22 days = 1 }
-		}
 	}
 }
 
@@ -159,7 +177,7 @@ country_event = {
 	id = efh.23
 	title = efh.23.t
 	desc = efh.23.d
-	picture = GFX_report_event_war_news
+	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 
 	trigger = {
@@ -366,7 +384,7 @@ country_event = {
 	id = efh.32
 	title = efh.32.t
 	desc = efh.32.d
-	picture = GFX_report_event_generic_intel
+	picture = GFX_report_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {
@@ -977,7 +995,7 @@ country_event = {
 	id = efh.53
 	title = efh.53.t
 	desc = efh.53.d
-	picture = GFX_report_event_generic_nuclear
+	picture = GFX_report_event_SOV_atomic_program_caught
 	is_triggered_only = yes
 
 	option = {
@@ -1196,6 +1214,7 @@ country_event = {
 	option = {
 		name = efh.112.a
 		add_tech_bonus = {
+			name = EFH_accelerated_specimen_studies
 			bonus = 0.15
 			uses = 1
 			category = srp_parasite_tech

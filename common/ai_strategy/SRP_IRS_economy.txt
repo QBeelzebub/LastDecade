@@ -1,0 +1,91 @@
+
+
+IRS_naval_swarm_strategy = {
+	allowed = { original_tag = IRS }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = unit_ratio                    id = capital_ship value = 60 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_colossant_hull value = 5 }
+	ai_strategy = { type = equipment_production_min_factories id = capital_ship value = 5 }
+	ai_strategy = { type = equipment_production_factor  id = capital_ship value = 100 }
+
+	ai_strategy = { type = unit_ratio                    id = submarine    value = 250 }
+	ai_strategy = { type = equipment_production_factor  id = submarine    value = 800 }
+
+	ai_strategy = { type = unit_ratio                    id = convoy       value = 20 }
+
+	ai_strategy = { type = naval_dominance  id = 62  value = 70 }
+
+	ai_strategy = { type = naval_mission_threshold  id = MISSION_NAVAL_INVASION_SUPPORT  value = -100 }
+	ai_strategy = { type = naval_mission_threshold  id = MISSION_PATROL                  value = -100 }
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_devourer_hull value = 8 }
+	ai_strategy = { type = equipment_production_min_factories id = submarine value = 8 }
+
+	ai_strategy = { type = convoy_raiding_target  id = EFH  value = 100 }
+	ai_strategy = { type = convoy_raiding_target  id = USA  value = 100 }
+	ai_strategy = { type = convoy_raiding_target  id = JAP  value = 100 }
+	ai_strategy = { type = convoy_raiding_target  id = RSF  value = 80  }
+	ai_strategy = { type = convoy_raiding_target  id = CHN  value = 80  }
+	ai_strategy = { type = convoy_raiding_target  id = AFR  value = 60  }
+	ai_strategy = { type = convoy_raiding_target  id = ASI  value = 60  }
+	ai_strategy = { type = convoy_raiding_target  id = OCE  value = 60  }
+	ai_strategy = { type = convoy_raiding_target  id = SAC  value = 60  }
+	ai_strategy = { type = convoy_raiding_target  id = SWR  value = 60  }
+}
+
+
+IRS_convoy_stage_1_bootstrap = {
+	allowed = { original_tag = IRS }
+	enable = {
+		NOT = { has_equipment = { convoy > 249 } }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_factor  id = convoy value = 120 }
+	ai_strategy = { type = equipment_production_min_factories id = convoy value = 6 }
+}
+
+IRS_convoy_stage_2_easing = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_equipment = { convoy > 249 }
+		NOT = { has_equipment = { convoy > 999 } }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_factor  id = convoy value = 100 }
+	ai_strategy = { type = equipment_production_min_factories id = convoy value = 2 }
+}
+
+IRS_convoy_stage_3_suppressed = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_equipment = { convoy > 999 }
+		NOT = { has_equipment = { convoy > 4999 } }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_factor  id = convoy value = -60 }
+	ai_strategy = { type = equipment_production_min_factories id = convoy value = 1 }
+}
+
+IRS_convoy_stage_4_saturated = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_equipment = { convoy > 4999 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_factor  id = convoy value = -500 }
+}
+
+IRS_logistics_strategy = {
+	allowed = { original_tag = IRS }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_production_min_factories_archetype id = parasite_supply_swarm value = 4 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = parasite_bio_rail     value = 2 }
+}

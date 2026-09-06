@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Chip -->
+  <rect x="37" y="53" width="3.5" height="6" fill="#c9a52a"/>
+  <rect x="44.25" y="53" width="3.5" height="6" fill="#c9a52a"/>
+  <rect x="51.5" y="53" width="3.5" height="6" fill="#c9a52a"/>
+  <rect x="37" y="81" width="3.5" height="6" fill="#c9a52a"/>
+  <rect x="44.25" y="81" width="3.5" height="6" fill="#c9a52a"/>
+  <rect x="51.5" y="81" width="3.5" height="6" fill="#c9a52a"/>
+  <rect x="34" y="56" width="3.5" height="6" fill="#c9a52a" transform="rotate(90 35.75 59)"/>
+  <rect x="34" y="63.25" width="3.5" height="6" fill="#c9a52a" transform="rotate(90 35.75 66.25)"/>
+  <rect x="34" y="70.5" width="3.5" height="6" fill="#c9a52a" transform="rotate(90 35.75 73.5)"/>
+  <rect x="62" y="56" width="3.5" height="6" fill="#c9a52a" transform="rotate(90 63.75 59)"/>
+  <rect x="62" y="63.25" width="3.5" height="6" fill="#c9a52a" transform="rotate(90 63.75 66.25)"/>
+  <rect x="62" y="70.5" width="3.5" height="6" fill="#c9a52a" transform="rotate(90 63.75 73.5)"/>
+  <rect x="40" y="56" width="28" height="28" rx="4" fill="#c9a52a"/>
+  <rect x="48.5" y="64.5" width="11" height="11" fill="#0d1623"/>
+  <rect x="52" y="68" width="4" height="4" fill="#c9a52a"/>
+
+  <!-- Up arrow -->
+  <rect x="84" y="52" width="9" height="40" fill="#c9a52a"/>
+  <polygon points="88.5,30 106,58 71,58" fill="#c9a52a"/>
+</svg>

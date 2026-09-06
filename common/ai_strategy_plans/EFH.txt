@@ -1,0 +1,98 @@
+
+EFH_canon_plan = {
+	name = "EFH canon pre-parasite war"
+	desc = "A strategy plan of canon EFH before the main parasite war starts."
+
+	allowed = { original_tag = EFH }
+	enable  = { always = yes }
+	abort = { always = no }
+	research = {
+		srp_land_tech         = 20.0
+		srp_industry_tech     = 20.0
+		srp_air_tech          = 15.0
+		srp_electronics_tech  = 15.0
+		srp_naval_tech        = 10.0
+		nuclear               = 10.0
+		srp_construction_tech = 10.0
+		srp_artillery_tech    = 8.0
+		srp_incendiary        = 8.0
+	}
+
+	ai_national_focuses = {
+		EFH_end_of_long_peace
+
+		EFH_atlantic_rivalry_doctrine
+		EFH_the_standoff
+		EFH_conventional_primacy
+		EFH_brinkmanship_posture
+		EFH_war_readiness_directive
+
+		EFH_federal_state_of_the_union
+		EFH_consolidate_federal_authority
+		EFH_the_federal_question
+		EFH_federalist_coalition
+		EFH_govern_the_federation
+		EFH_member_state_accord
+
+		EFH_continental_defense_review
+		EFH_standing_force_reform
+		EFH_force_structure_debate
+		EFH_professional_army
+		EFH_modern_federal_army
+		EFH_combined_arms_command
+
+		EFH_research_coordination
+		EFH_industrial_rnd
+		EFH_doctrine_investment
+		EFH_joint_training_command
+		EFH_federal_research_institute
+
+		EFH_federation_on_the_eve
+		EFH_federal_war_college
+		EFH_continental_war_plan
+
+		EFH_kaltkrieg_opening_posture
+		EFH_summit_position
+
+		EFH_second_space_race
+		EFH_runway_to_orbit_feasibility
+		EFH_laytheo_prototype_authorization
+		EFH_laytheo_first_flight
+		EFH_laytheo_orbital_logistics
+
+		EFH_summit_failure_response
+		EFH_northern_theater_preparation
+		EFH_northern_supply_groundwork
+		EFH_northern_war_authorization
+		EFH_northern_air_campaign
+
+		EFH_HA_hyperbiology_founded
+		EFH_HA_hyperbiology_research_fund
+		EFH_HA_hyperbiology_initial_findings
+
+		EFH_parasite_threat_assessment
+		EFH_dispatcher_identified
+
+		EFH_industrial_procurement_strategy
+		EFH_modernization_program
+		EFH_federal_mandate
+		EFH_global_positioning
+		EFH_pacific_partnership
+
+		EFH_eter_completion
+		EFH_industrial_surge
+		EFH_construction_acceleration
+		EFH_defense_conversion
+		EFH_industrial_core_expansion
+		EFH_fissile_foundation
+		EFH_fissile_plant_program
+	}
+	ideas = {
+
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = { factor = 1.0 }
+	}
+}

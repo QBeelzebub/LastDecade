@@ -1,7 +1,7 @@
 
 
 USA_lockheed_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { original_tag = USA }
 	equipment_type = { mio_cat_eq_all_small_plane srp_fighter_airframe }
@@ -174,7 +174,7 @@ USA_lockheed_mio = {
 
 
 USA_boeing_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { original_tag = USA }
 	equipment_type = { mio_cat_eq_all_large_plane }
@@ -303,7 +303,7 @@ USA_boeing_mio = {
 
 
 USA_northrop_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { original_tag = USA }
 	equipment_type = { srp_strategic_bomber_airframe }
@@ -434,7 +434,7 @@ USA_northrop_mio = {
 
 
 USA_raytheon_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = USA }
 	equipment_type = {
@@ -454,7 +454,7 @@ USA_raytheon_mio = {
 	trait = {
 		token = USA_raytheon_root
 		name = USA_raytheon_root
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 2 y = 0 }
 
@@ -474,7 +474,7 @@ USA_raytheon_mio = {
 	trait = {
 		token = USA_raytheon_t2a
 		name = USA_raytheon_t2a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = -1 y = 1 }
 		relative_position_id = USA_raytheon_root
@@ -492,7 +492,7 @@ USA_raytheon_mio = {
 	trait = {
 		token = USA_raytheon_t2b
 		name = USA_raytheon_t2b
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_raytheon_root
@@ -508,7 +508,7 @@ USA_raytheon_mio = {
 	trait = {
 		token = USA_raytheon_t3a
 		name = USA_raytheon_t3a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_raytheon_t2a
@@ -529,7 +529,7 @@ USA_raytheon_mio = {
 	trait = {
 		token = USA_raytheon_t3b
 		name = USA_raytheon_t3b
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_raytheon_t2b
@@ -549,7 +549,7 @@ USA_raytheon_mio = {
 	trait = {
 		token = USA_raytheon_t4
 		name = USA_raytheon_t4
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_raytheon_t3a
@@ -573,10 +573,10 @@ USA_raytheon_mio = {
 
 
 USA_general_dynamics_mio = {
-	icon = GFX_idea_generic_armor_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
 
 	allowed = { original_tag = USA }
-	equipment_type = { srp_mbt_chassis mechanized_equipment }
+	equipment_type = { srp_mbt_chassis srp_ifv_equipment }
 	research_categories = { srp_armor_tech srp_land_tech }
 
 	initial_trait = {
@@ -589,7 +589,7 @@ USA_general_dynamics_mio = {
 	trait = {
 		token = USA_general_dynamics_root
 		name = USA_general_dynamics_root
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 2 y = 0 }
 
@@ -609,7 +609,7 @@ USA_general_dynamics_mio = {
 	trait = {
 		token = USA_general_dynamics_t2a
 		name = USA_general_dynamics_t2a
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = -1 y = 1 }
 		relative_position_id = USA_general_dynamics_root
@@ -625,7 +625,7 @@ USA_general_dynamics_mio = {
 	trait = {
 		token = USA_general_dynamics_t2b
 		name = USA_general_dynamics_t2b
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_general_dynamics_root
@@ -641,7 +641,7 @@ USA_general_dynamics_mio = {
 	trait = {
 		token = USA_general_dynamics_t3a
 		name = USA_general_dynamics_t3a
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_general_dynamics_t2a
@@ -661,7 +661,7 @@ USA_general_dynamics_mio = {
 	trait = {
 		token = USA_general_dynamics_t3b
 		name = USA_general_dynamics_t3b
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_general_dynamics_t2b
@@ -681,7 +681,7 @@ USA_general_dynamics_mio = {
 	trait = {
 		token = USA_general_dynamics_t4
 		name = USA_general_dynamics_t4
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_general_dynamics_t3a
@@ -705,7 +705,7 @@ USA_general_dynamics_mio = {
 
 
 USA_hii_mio = {
-	icon = GFX_idea_generic_navy_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
 
 	allowed = { original_tag = USA }
 	equipment_type = { srp_carrier_hull srp_submarine_hull srp_destroyer_hull srp_battleship_hull }
@@ -721,7 +721,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_root
 		name = USA_hii_root
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 
@@ -742,7 +742,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t2a
 		name = USA_hii_t2a
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = USA_hii_root
@@ -758,7 +758,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t2b
 		name = USA_hii_t2b
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_hii_root
@@ -774,7 +774,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t3a
 		name = USA_hii_t3a
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_hii_t2a
@@ -794,7 +794,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t3b
 		name = USA_hii_t3b
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_hii_t2b
@@ -813,7 +813,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t4
 		name = USA_hii_t4
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_hii_t3a

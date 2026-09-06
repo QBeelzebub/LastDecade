@@ -4,7 +4,7 @@ srp_public_confidence = {
 	visible_when_empty = no
 
 	allowed = {
-		NOT = { is_full_parasite = yes }
+		NOT = { SRP_is_parasite_tag = yes }
 	}
 
 	visible = {
@@ -74,5 +74,8 @@ srp_warhead_production = {
 			original_tag = EFH
 			original_tag = USA
 		}
+	}
+	visible = {
+		check_variable = { var = global.srp_nuclear_mode value = 2 compare = equals }
 	}
 }

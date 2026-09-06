@@ -51,11 +51,7 @@ USA_knox_clearance_category = {
 		remove_effect = {
 			FROM = {
 				add_to_variable = { var = iris_infestation_level value = -8 }
-				clamp_variable = {
-					var = iris_infestation_level
-					min = 0
-					max = 100
-				}
+				SRP_refresh_infestation_state = yes
 			}
 		}
 
@@ -118,12 +114,8 @@ USA_knox_clearance_category = {
 		remove_effect = {
 			FROM = {
 				add_to_variable = { var = iris_infestation_level value = -16 }
-				clamp_variable = {
-					var = iris_infestation_level
-					min = 0
-					max = 100
-				}
 				damage_building = { type = beckon_cluster damage = 1 }
+				SRP_refresh_infestation_state = yes
 			}
 		}
 

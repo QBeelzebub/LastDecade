@@ -12,11 +12,11 @@
  knx_absorb_state: "Integrate [FROM.GetName]"
  knx_absorb_state_desc: "The infestation in [FROM.GetName] has reached total saturation. Knox can bind the ground into its own root network without giving it to the Iris."
  knx_override_iris_state: "Override Iris Root Network in [FROM.GetName]"
- knx_override_iris_state_desc: "The Iris has already consumed [FROM.GetName]. VAGRANT-01 can still unmake its root pattern, but the work is slower, costlier, and unmistakably hostile."
+ knx_override_iris_state_desc: "The Iris has already consumed [FROM.GetName]. VAGRANT-01 can still unmake its root pattern, but the work is slower and costlier. The old root pattern fights back the whole way."
  knx_nexus_relocation: "Knox Nexus Relocation"
  knx_nexus_relocation_desc: "The Knox hive can shift its active center to already-integrated ground."
  knx_relocate_nexus: "Relocate Knox Nexus to [FROM.GetName]"
- knx_relocate_nexus_desc: "The local nexus can be re-anchored in [FROM.GetName]. The movement is deliberate, slow, and difficult to reverse."
+ knx_relocate_nexus_desc: "The local nexus can be re-anchored in [FROM.GetName]. The movement is slow and hard to reverse."
 
 
  KNX: "Knox Exclusion Zone"
@@ -34,10 +34,10 @@
  KNX_neutrality: "Knox Exclusion Zone"
  KNX_neutrality_DEF: "the Knox Exclusion Zone"
  KNX_neutrality_ADJ: "Knox"
- KNX_LAST_DECADE_DESC: "Knox County is not present as an independent actor on Day 1. Tennessee begins under the United States. Around 2023, VAGRANT-01 emerges and the tag can be hotjoined."
+ KNX_LAST_DECADE_DESC: "Knox County is not present as an independent actor on Day 1. Tennessee begins under the United States. Around 2023, VAGRANT-01 emerges and Knox County becomes playable."
  KNX_focus: "Knox County Focus Tree"
  KNX_VAGRANT_ONE: "VAGRANT-01"
- KNX_VAGRANT_ONE_DESC: "The first stable Vagrant is not aligned with humanity or the Iris. Knox County is a civilization-building project. The county waits, reads, and acts only when the exchange is worth the cost."
+ KNX_VAGRANT_ONE_DESC: "The first stable Vagrant is not aligned with humanity or the Iris. Knox County is a civilisation-building project. The county waits, reads, and acts only when the exchange is worth the cost."
 
  KNX_silent_emergence: "Silent Emergence"
  KNX_silent_emergence_desc: "The county is no longer a county in the old sense. It is a local exception with roots, receivers, and a mind that understands systems before it understands borders."
@@ -48,11 +48,11 @@
  KNX_read_the_perimeter: "Read the Perimeter"
  KNX_read_the_perimeter_desc: "The first requirement is knowing what approaches the hive. Convoys, patrols, aircraft, refugee columns, and signal discipline all leave patterns."
  KNX_hive_construction_phase_1: "Hive Construction: Phase I"
- KNX_hive_construction_phase_1_desc: "The early structures are not human infrastructure. Root depth increases. Receiver density improves. Redundancy is grown, not built."
+ KNX_hive_construction_phase_1_desc: "The early structures are cultivated to hive specification. Root depth increases. Receiver density improves. Redundancy is grown in place."
  KNX_us_invisibility_continued: "Continue Invisibility"
  KNX_us_invisibility_continued_desc: "The United States has a category for anomalous infestation. It does not yet have a category for this. That gap remains useful."
  KNX_unacknowledged_efh_channel: "Unacknowledged EF Channel"
- KNX_unacknowledged_efh_channel_desc: "The Federation receives what Knox sends. The channel exists without trust, ceremony, or recognition."
+ KNX_unacknowledged_efh_channel_desc: "The Federation receives what Knox sends. Nothing about the channel is written down."
  KNX_resource_exchange_terms: "Resource Exchange Terms"
  KNX_resource_exchange_terms_desc: "Information has value. So does silence. The exchange rate is adjusted accordingly."
  KNX_price_of_silence: "The Price of Silence"
@@ -63,8 +63,8 @@
  KNX_anomalous_infestation: "Anomalous Infestation"
  KNX_anomalous_infestation_desc: "External observers read the county as a local infestation. The assessment is incomplete and operationally useful."
  KNX_transactional_logic: "Transactional Logic"
- KNX_transactional_logic_desc: "Knox does not form alliances in the human sense. It makes exchanges."
- KNX_civilization_project: "Civilization Project"
+ KNX_transactional_logic_desc: "Knox signs nothing that obliges it to fight for anyone. Exchanges only."
+ KNX_civilization_project: "Civilisation Project"
  KNX_civilization_project_desc: "The hive is an attempt to build a stable system on infested ground."
 
  KNX_dispatcher_inheritance_ns: "Dispatcher Inheritance"
@@ -72,7 +72,7 @@
  KNX_perimeter_reading: "Perimeter Reading"
  KNX_perimeter_reading_desc: "The county tracks patterns at its edge. Foot traffic, engines, aircraft routing, and transmission habits are all legible."
  KNX_hive_construction_phase_1_ns: "Hive Construction: Phase I"
- KNX_hive_construction_phase_1_ns_desc: "Early hive infrastructure favors Beckon depth, Dispatcher coverage, and local stability over outward pressure."
+ KNX_hive_construction_phase_1_ns_desc: "Early hive infrastructure favours Beckon depth, Dispatcher coverage, and local stability over outward pressure."
  KNX_us_invisibility: "American Misclassification"
  KNX_us_invisibility_desc: "American field reports continue to describe Knox as an anomalous local infestation. That mistake is permitted to continue."
  EFH_knox_intelligence_summary: "Knox Intelligence Summary"
@@ -88,11 +88,11 @@
  KNX_transactional_diplomacy_desc: "One-shot exchanges with outside actors. No alliance is implied."
  KNX_passive_listening: "Passive Listening"
  KNX_passive_listening_desc: "Let the traffic pass through the receivers. Most signals do not know they are speaking to Knox."
- KNX_send_intelligence_summary_to_EFH: "Send Intelligence Summary to EFH"
+ KNX_send_intelligence_summary_to_EFH: "Send Intelligence Summary to the Federation"
  KNX_send_intelligence_summary_to_EFH_desc: "Transmit a curated packet through an unacknowledged channel. The Federation receives value. Knox receives value. Nothing else is recorded."
 
  knx.1.t: "Emergence"
- knx.1.d: "The national guard in Knox County has stopped responding. Field teams report rooted growth and receiver structures. The county is gone."
+ knx.1.d: "The National Guard in Knox County has stopped responding. Field teams report rooted growth and receiver structures. The county is gone."
  knx.1.d_other: "Contact with Knox County, Tennessee has stopped. The last reports out describe rooted growth and receiver structures across the whole county. Nothing has come out of it since."
  knx.1.a: "What"
  knx.2.t: "Tennessee Containment Notice"
@@ -114,7 +114,7 @@
  KNX_brood_expansion_desc: "The strain is reliable. It is time to grow it."
 
  KNX_hive_construction_phase_2: "Hive Construction: Phase II"
- KNX_hive_construction_phase_2_desc: "The Knox network has stabilized. Phase two begins: additional growth nodes, deeper infrastructure, and the first cultivated biomass production that doesn't depend on what the Iris wants."
+ KNX_hive_construction_phase_2_desc: "The Knox network has stabilised. Phase two begins: additional growth nodes, deeper infrastructure, and the first cultivated biomass production that doesn't depend on what the Iris wants."
  KNX_food_sovereignty: "Food Sovereignty"
  KNX_food_sovereignty_desc: "Human survival in Knox County has always depended on what could be grown in soil that the Iris hasn't touched yet. Vagrant 1 has spent time studying which Beckon-adjacent land is safe and which isn't. The results are useful."
  KNX_appalachian_claim: "Appalachian Perimeter"
@@ -130,7 +130,7 @@
  KNX_loyal_strain_ns: "Loyal Strain Cultivated"
  KNX_loyal_strain_ns_desc: "Vagrant 1's personal parasite organisms carry a distinct biological signature. They do not respond to Iris signals."
  KNX_loyal_strain_matured_ns: "Loyal Strain, Full Expression"
- KNX_loyal_strain_matured_ns_desc: "The cultivated strain has matured into a stable, combat-ready form. It answers only to the Vagrant's own biological signature, never the Iris."
+ KNX_loyal_strain_matured_ns_desc: "The cultivated strain has matured into a stable, combat-ready form. It answers only to the Vagrant's own biological signature."
  KNX_personal_guard_ns: "Personal Guard Active"
  KNX_personal_guard_ns_desc: "A brood of loyal parasite organisms protects Knox County's territory and personnel."
  KNX_brood_expansion_ns: "Expanded Brood"
@@ -144,9 +144,9 @@
  KNX_first_accord_ns: "First Accord"
  KNX_first_accord_ns_desc: "A working agreement with the European Federation. Both parties exchange information and agree not to interfere with each other's operations."
  KNX_ef_formal_recognition_ns: "EF Partner Status"
- KNX_ef_formal_recognition_ns_desc: "Knox County is formally recognized by the European Federation as a strategic partner. The relationship has legal standing, which neither side entirely expected."
+ KNX_ef_formal_recognition_ns_desc: "Knox County is formally recognised by the European Federation as a strategic partner. The relationship has legal standing, which neither side entirely expected."
  EFH_knx_partner_ns: "Knox County Partnership"
- EFH_knx_partner_ns_desc: "The European Federation has formalized its relationship with Knox County. Vagrant 1's biological insights have begun filtering into H&A Hyperbiology's research pipeline."
+ EFH_knx_partner_ns_desc: "The European Federation has formalised its relationship with Knox County. Vagrant 1's biological insights have begun filtering into H&A Hyperbiology's research pipeline."
 
  KNX_loyal_strain_cultivation_tt: "Vagrant 1 begins cultivating parasites loyal to their unique biological signature. These organisms do not respond to Iris signals."
  KNX_appalachian_claim_tt: "Knox County's territorial claims into the Appalachian region become legally and militarily actionable."
@@ -157,31 +157,36 @@
  knx.4.a: "They know what they're doing."
 
  knx.5.t: "Hostile in the Waiting Room"
- knx.5.d: "A parasite-human hybrid entered the EF consulate in Toronto, survived being shot by security, and is currently waiting in a sealed room. They have not spoken further. They have left a single document on the desk: a name from our Hyperbiology roster."
+ knx.5.d: "A parasite-human hybrid entered the Federation consulate in Toronto, survived being shot by security, and is currently waiting in a sealed room. They have not spoken further. They have left a single document on the desk: a name from our Hyperbiology roster."
  knx.5.a: "Send the researcher. See what they want."
  knx.5.b: "Parasite contact protocol. Seal the building."
 
+ knx.6.t: "One Line in the Accord"
+ knx.6.d: "The accord as drafted covers resource transfers, disclosure limits and a schedule of contacts. Knox County has added a clause at the end asking the Federation to state publicly that an attack on the county would be treated as an attack on the Federation.\n\nThe cost of saying so is five points of political capital. The cost of the Americans reading it is not estimated."
+ knx.6.a: "Sign the clause as written."
+ knx.6.b: "Strike it. The rest stands."
+
 
  KNX_vagrant_genome_mio: "1st Vagrant Genome"
- KNX_vagrant_genome_mio_desc: "The Knox County Vagrant does not inherit a genome. It designs one. Its organisms are built with intent: precise, dual-purpose, and architecturally unlike anything in the Iris lineage. They are effective against humans and Iris parasites alike, which is not an accident."
+ KNX_vagrant_genome_mio_desc: "The Knox County Vagrant designs its own genome. Its organisms are built with intent: precise, dual-purpose, and architecturally unlike anything in the Iris lineage. They are effective against humans and Iris parasites alike, which is not an accident."
 
  KNX_vagrant_genome_core: "Vagrant Genome: Foundation"
  KNX_vagrant_genome_core_desc: "The first generation of hand-designed organisms. Even this baseline exceeds what unguided parasite evolution produces. The Vagrant understands what it is building and why."
 
  KNX_vagrant_dual_target: "Dual-Target Architecture"
- KNX_vagrant_dual_target_desc: "Organisms designed to engage both armored human equipment and Iris parasite units without significant performance loss against either. A narrow engineering window, and the Vagrant found it."
+ KNX_vagrant_dual_target_desc: "Organisms designed to engage both armoured human equipment and Iris parasite units without significant performance loss against either. A narrow engineering window, and the Vagrant found it."
 
  KNX_vagrant_adaptive_resilience: "Adaptive Resilience"
  KNX_vagrant_adaptive_resilience_desc: "Structural redundancy built into every organism. These do not stop functioning after the first hit. The Vagrant's designs survive contact longer than anything in the standard Iris line."
 
  KNX_vagrant_arbiter_release: "Arbiter Release"
- KNX_vagrant_arbiter_release_desc: "The dual-target architecture reaches operational maturity. The Arbiter is authorized: a precision organism designed to neutralize specific high-value targets in either human or parasite formations."
+ KNX_vagrant_arbiter_release_desc: "The dual-target architecture reaches operational maturity. The Arbiter is authorised: a precision organism designed to neutralise specific high-value targets in either human or parasite formations."
 
  KNX_vagrant_culler_protocol: "Culler Protocol"
- KNX_vagrant_culler_protocol_desc: "Adaptive resilience encoded into an elimination-focused body plan. The Culler is authorized: durable, high-attack, built to stay in contact until the target stops moving."
+ KNX_vagrant_culler_protocol_desc: "Adaptive resilience encoded into an elimination-focused body plan. The Culler is authorised: durable, high-attack, built to stay in contact until the target stops moving."
 
  KNX_vagrant_sovereignty: "Vagrant Sovereignty"
- KNX_vagrant_sovereignty_desc: "The 1st Vagrant genome at full expression. Their capability comes from the Vagrant's own design, separate from the Iris lineage."
+ KNX_vagrant_sovereignty_desc: "The 1st Vagrant genome at full expression. Its capability comes from the Vagrant's own design, separate from the Iris lineage."
 
 
  KNX_vagrant_genome_initial: "Vagrant Design Philosophy"
@@ -195,22 +200,24 @@
  KNX_share_strain_research: "Share Strain Research"
  KNX_share_strain_research_desc: "Pass a batch of strain data into the Hyperbiology channel. The Federation's parasite research moves faster for it. Knox keeps the lineage that matters."
  KNX_request_materiel_support: "Request Materiel Support"
- KNX_request_materiel_support_desc: "Draw on Federation logistics and field medicine as a recognized partner. The support arrives without ceremony and without an audit trail."
+ KNX_request_materiel_support_desc: "Draw on Federation logistics and field medicine as a recognised partner. The support arrives without ceremony and without an audit trail."
 
  EFH_knx_resource_exchange: "Knox Resource Exchange"
  EFH_knx_resource_exchange_desc: "Material arriving through Knox channels keeps Federation construction supplied past what the official ledgers can account for."
  EFH_knx_deep_intelligence: "Knox Perimeter Read"
  EFH_knx_deep_intelligence_desc: "A detailed picture of the Dispatcher perimeter, more complete than anything the Federation's own listening posts can assemble."
  EFH_knx_hyperbiology_exchange: "Knox Hyperbiology Channel"
- EFH_knx_hyperbiology_exchange_desc: "A standing collaboration with the 1st Vagrant. H&A's Hyperbiology program advances faster with a partner who can handle parasite material directly."
+ EFH_knx_hyperbiology_exchange_desc: "A standing collaboration with the 1st Vagrant. H&A's Hyperbiology programme advances faster with a partner who can handle parasite material directly."
  EFH_knx_strain_data: "Knox Strain Data"
  EFH_knx_strain_data_desc: "A current batch of strain analysis from Knox, feeding directly into Federation parasite research."
 
  KNX_dug_in_homeland: "Dug-In Homeland"
  KNX_dug_in_homeland_desc: "The First builds ground to be held. Every position is sited, layered, and prepared long before it is needed, and the ground gives up nothing cheaply."
 
- KNX_homeland_defense: "Homeland Defense"
+ KNX_homeland_defense: "Homeland Defence"
  KNX_homeland_defense_desc: "Extend the Kentucky model to new ground."
  KNX_fortify_root_stronghold: "Establish Root Stronghold"
- KNX_fortify_root_stronghold_desc: "Build out a target state the way Kentucky was built: layered defenses, buried supply, and prepared ground. Applies the Root Stronghold modifier permanently, giving the state the same defensive weight as the original homeland."
+ KNX_fortify_root_stronghold_desc: "Build out a target state the way Kentucky was built: layered defences, buried supply, and prepared ground. Applies the Root Stronghold modifier permanently, giving the state the same defensive weight as the original homeland."
 
+
+ sp_land_loyal_strain_expression_aggression: "Loyal Strain, Aggressive Expression"

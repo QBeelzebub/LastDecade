@@ -1,0 +1,21 @@
+
+on_actions = {
+
+	on_startup = {
+		effect = {
+			IRS = {
+				if = {
+					limit = {
+						difficulty > 2
+						difficulty < 4
+						NOT = { has_country_flag = IRS_emerged }
+					}
+					random_list = {
+						50 = { set_country_flag = IRS_collapse_unchecked }
+						50 = { set_country_flag = IRS_collapse_adaptive }
+					}
+				}
+			}
+		}
+	}
+}

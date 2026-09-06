@@ -32,6 +32,8 @@ on_actions = {
 
 
 					set_country_flag = EFH_prologue_closed
+
+					complete_national_focus = EFH_kaltkrieg_opening_posture
 				}
 
 				EFH = {

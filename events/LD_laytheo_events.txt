@@ -19,7 +19,7 @@ country_event = {
 	id = laytheo.2
 	title = laytheo.2.t
 	desc = laytheo.2.d
-	picture = GFX_report_event_generic_sky
+	picture = GFX_report_event_generic_research_lab
 
 	is_triggered_only = yes
 
@@ -34,7 +34,7 @@ country_event = {
 	id = laytheo.3
 	title = laytheo.3.t
 	desc = laytheo.3.d
-	picture = GFX_report_event_generic_sky
+	picture = GFX_report_event_generic_research_lab
 
 	is_triggered_only = yes
 
@@ -49,7 +49,7 @@ country_event = {
 	id = laytheo.4
 	title = laytheo.4.t
 	desc = laytheo.4.d
-	picture = GFX_report_event_generic_sky
+	picture = GFX_report_event_generic_research_lab
 
 	is_triggered_only = yes
 

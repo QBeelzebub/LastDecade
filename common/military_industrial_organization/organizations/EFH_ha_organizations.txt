@@ -1,7 +1,7 @@
 
 
 EFH_ha_land_mio = {
-	icon = GFX_idea_generic_armor_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
 
 	allowed = { original_tag = EFH }
 
@@ -18,7 +18,7 @@ EFH_ha_land_mio = {
 	trait = {
 		token = EFH_ha_land_root
 		name = EFH_ha_land_root
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 2 y = 0 }
 
@@ -38,7 +38,7 @@ EFH_ha_land_mio = {
 	trait = {
 		token = EFH_ha_land_t2a
 		name = EFH_ha_land_t2a
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_ha_land_root
@@ -54,7 +54,7 @@ EFH_ha_land_mio = {
 	trait = {
 		token = EFH_ha_land_t2b
 		name = EFH_ha_land_t2b
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_land_root
@@ -70,7 +70,7 @@ EFH_ha_land_mio = {
 	trait = {
 		token = EFH_ha_land_t3a
 		name = EFH_ha_land_t3a
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_land_t2a
@@ -94,7 +94,7 @@ EFH_ha_land_mio = {
 	trait = {
 		token = EFH_ha_land_t3b
 		name = EFH_ha_land_t3b
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_land_t2b
@@ -118,7 +118,7 @@ EFH_ha_land_mio = {
 	trait = {
 		token = EFH_ha_land_t4
 		name = EFH_ha_land_t4
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_land_t3a
@@ -146,7 +146,7 @@ EFH_ha_land_mio = {
 
 
 EFH_ha_naval_mio = {
-	icon = GFX_idea_generic_navy_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
 
 	allowed = { original_tag = EFH }
 	equipment_type = { srp_carrier_hull srp_submarine_hull srp_destroyer_hull srp_battleship_hull }
@@ -162,7 +162,7 @@ EFH_ha_naval_mio = {
 	trait = {
 		token = EFH_ha_naval_root
 		name = EFH_ha_naval_root
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 
@@ -183,7 +183,7 @@ EFH_ha_naval_mio = {
 	trait = {
 		token = EFH_ha_naval_t2a
 		name = EFH_ha_naval_t2a
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_ha_naval_root
@@ -200,7 +200,7 @@ EFH_ha_naval_mio = {
 	trait = {
 		token = EFH_ha_naval_t2b
 		name = EFH_ha_naval_t2b
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_naval_root
@@ -216,7 +216,7 @@ EFH_ha_naval_mio = {
 	trait = {
 		token = EFH_ha_naval_t3a
 		name = EFH_ha_naval_t3a
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_naval_t2a
@@ -240,7 +240,7 @@ EFH_ha_naval_mio = {
 	trait = {
 		token = EFH_ha_naval_t3c
 		name = EFH_ha_naval_t3c
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_naval_t2b
@@ -264,7 +264,7 @@ EFH_ha_naval_mio = {
 	trait = {
 		token = EFH_ha_naval_t4
 		name = EFH_ha_naval_t4
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_naval_t3a
@@ -291,7 +291,7 @@ EFH_ha_naval_mio = {
 
 
 EFH_ha_aerospace_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { original_tag = EFH }
 	equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_large_plane }
@@ -483,7 +483,7 @@ EFH_ha_aerospace_mio = {
 
 
 EFH_ha_ordnance_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = EFH }
 	equipment_type = {
@@ -505,7 +505,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_root
 		name = EFH_ha_ord_root
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 2 y = 0 }
 
@@ -525,7 +525,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_t2a
 		name = EFH_ha_ord_t2a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_ha_ord_root
@@ -542,7 +542,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_t2b
 		name = EFH_ha_ord_t2b
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_ord_root
@@ -558,7 +558,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_t3a
 		name = EFH_ha_ord_t3a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_ord_t2a
@@ -582,7 +582,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_t3b
 		name = EFH_ha_ord_t3b
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_ord_t2b
@@ -606,7 +606,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_t4
 		name = EFH_ha_ord_t4
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_ord_t3a
@@ -634,7 +634,7 @@ EFH_ha_ordnance_mio = {
 	trait = {
 		token = EFH_ha_ord_t5_nuclear
 		name = EFH_ha_ord_t5_nuclear
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_ord_t4
@@ -661,13 +661,13 @@ EFH_ha_ordnance_mio = {
 
 
 EFH_ha_logistics_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = EFH }
 	equipment_type = {
 		support_equipment
-		motorized_equipment
-		mechanized_equipment
+		srp_truck_equipment
+		srp_ifv_equipment
 		infantry_equipment
 	}
 	research_categories = { srp_motorized_tech srp_land_tech srp_armor_tech }
@@ -682,7 +682,7 @@ EFH_ha_logistics_mio = {
 	trait = {
 		token = EFH_ha_log_root
 		name = EFH_ha_log_root
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 2 y = 0 }
 
@@ -702,7 +702,7 @@ EFH_ha_logistics_mio = {
 	trait = {
 		token = EFH_ha_log_t2a
 		name = EFH_ha_log_t2a
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_ha_log_root
@@ -718,7 +718,7 @@ EFH_ha_logistics_mio = {
 	trait = {
 		token = EFH_ha_log_t2b
 		name = EFH_ha_log_t2b
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_log_root
@@ -734,7 +734,7 @@ EFH_ha_logistics_mio = {
 	trait = {
 		token = EFH_ha_log_t3a
 		name = EFH_ha_log_t3a
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_log_t2a
@@ -758,7 +758,7 @@ EFH_ha_logistics_mio = {
 	trait = {
 		token = EFH_ha_log_t3b
 		name = EFH_ha_log_t3b
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_log_t2b
@@ -782,7 +782,7 @@ EFH_ha_logistics_mio = {
 	trait = {
 		token = EFH_ha_log_t4
 		name = EFH_ha_log_t4
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_log_t3a
@@ -809,7 +809,7 @@ EFH_ha_logistics_mio = {
 
 
 EFH_ha_hyperbiology_mio = {
-	icon = GFX_idea_generic_research_organization
+	icon = GFX_idea_generic_electronics_concern_2
 
 	allowed = { original_tag = EFH }
 	available = {
@@ -999,7 +999,7 @@ EFH_ha_hyperbiology_mio = {
 }
 
 EFH_ha_thermonuclear_mio = {
-	icon = GFX_idea_generic_research_organization
+	icon = GFX_idea_generic_electronics_concern_2
 
 	allowed = { original_tag = EFH }
 	equipment_type = { mio_cat_eq_srp_nuclear mio_cat_eq_srp_rtg }
@@ -1019,7 +1019,7 @@ EFH_ha_thermonuclear_mio = {
 	trait = {
 		token = EFH_ha_thermo_root
 		name = EFH_ha_thermo_root
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 2 y = 0 }
 
@@ -1035,7 +1035,7 @@ EFH_ha_thermonuclear_mio = {
 	trait = {
 		token = EFH_ha_thermo_t2a
 		name = EFH_ha_thermo_t2a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_ha_thermo_root
@@ -1069,7 +1069,7 @@ EFH_ha_thermonuclear_mio = {
 	trait = {
 		token = EFH_ha_thermo_t3a
 		name = EFH_ha_thermo_t3a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_ha_thermo_t2a
@@ -1127,7 +1127,7 @@ EFH_ha_thermonuclear_mio = {
 	trait = {
 		token = EFH_ha_thermo_t4
 		name = EFH_ha_thermo_t4
-		icon = GFX_generic_mio_department_icon_special_forces
+		icon = GFX_generic_mio_department_icon_support_equipment
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_ha_thermo_t3a

@@ -5,17 +5,92 @@ SRP_recompute_infestation_derived = {
 	set_variable = { var = iris_infestation_bonus value = iris_infestation_level }
 	multiply_variable = { var = iris_infestation_bonus value = 0.005 }
 
+	set_variable = { var = iris_infestation_supply value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_supply value = 0.02 }
+
 	set_variable = { var = iris_infestation_biomass value = iris_infestation_level }
 	multiply_variable = { var = iris_infestation_biomass value = 0.05 }
 
 	set_variable = { var = iris_infestation_penalty value = iris_infestation_level }
-	multiply_variable = { var = iris_infestation_penalty value = -0.003 }
+	multiply_variable = { var = iris_infestation_penalty value = -0.005 }
 
 	set_variable = { var = iris_infestation_attrition value = iris_infestation_level }
-	multiply_variable = { var = iris_infestation_attrition value = 0.002 }
+	multiply_variable = { var = iris_infestation_attrition value = -0.002 }
 
-	set_variable = { var = iris_infestation_upkeep value = iris_infestation_level }
-	multiply_variable = { var = iris_infestation_upkeep value = 0.25 }
+	set_variable = { var = iris_infestation_suppression value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_suppression value = -0.008 }
+
+	set_variable = { var = iris_infestation_decay value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_decay value = 0.008 }
+}
+
+SRP_restamp_infestation_modifier = {
+	if = {
+		limit = {
+			OR = {
+				state_is_iris_bloc_controlled = yes
+				is_controlled_by = KNX
+			}
+			check_variable = { iris_infestation_level > 0 }
+		}
+		if = {
+			limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
+			remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+		}
+		if = {
+			limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
+			remove_dynamic_modifier = { modifier = beckon_iris_buff }
+		}
+		add_dynamic_modifier = {
+			modifier = beckon_iris_buff
+			days = 2
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					state_is_iris_bloc_controlled = yes
+					is_controlled_by = KNX
+				}
+			}
+			check_variable = { iris_infestation_level > 0 }
+		}
+		if = {
+			limit = { has_dynamic_modifier = { modifier = beckon_iris_buff } }
+			remove_dynamic_modifier = { modifier = beckon_iris_buff }
+		}
+		if = {
+			limit = { has_dynamic_modifier = { modifier = beckon_hostile_debuff } }
+			remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+		}
+		add_dynamic_modifier = {
+			modifier = beckon_hostile_debuff
+			days = 2
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = { check_variable = { iris_infestation_level > 0 } }
+			has_dynamic_modifier = { modifier = beckon_iris_buff }
+		}
+		remove_dynamic_modifier = { modifier = beckon_iris_buff }
+	}
+
+	if = {
+		limit = {
+			NOT = { check_variable = { iris_infestation_level > 0 } }
+			has_dynamic_modifier = { modifier = beckon_hostile_debuff }
+		}
+		remove_dynamic_modifier = { modifier = beckon_hostile_debuff }
+	}
+}
+
+SRP_refresh_infestation_state = {
+	SRP_recompute_infestation_derived = yes
+	SRP_restamp_infestation_modifier = yes
 }
 
 IRS_refresh_dormancy_adaptation = {
@@ -141,9 +216,10 @@ IRS_perform_emergence = {
 		add_state_core = 901
 		add_state_core = 902
 
+		set_capital = { state = 274 }
+
 		load_oob = "IRS_2020"
 
-		remove_ideas = IRS_dormant_emergence
 		add_ideas = IRS_active_emergence
 
 		if = {

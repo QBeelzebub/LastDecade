@@ -448,7 +448,7 @@ technologies = {
 
 		categories = { srp_land_tech srp_electronics_tech }
 
-		enable_subunits = { srp_drone_support }
+		enable_subunits = { srp_drone_support srp_drone_regimental }
 		enable_equipments = { srp_fpv_drone_equipment_1 }
 
 		recon_factor = 0.03

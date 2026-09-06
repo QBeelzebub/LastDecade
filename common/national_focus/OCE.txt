@@ -204,6 +204,7 @@ focus_tree = {
 		prerequisite = { focus = OCE_mobilize_the_nation }
 		completion_reward = {
 			add_tech_bonus = {
+				name = OCE_university_funding
 				bonus = 0.5
 				uses = 1
 				category = industry
@@ -221,6 +222,7 @@ focus_tree = {
 		prerequisite = { focus = OCE_university_funding }
 		completion_reward = {
 			add_tech_bonus = {
+				name = OCE_applied_sciences
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine

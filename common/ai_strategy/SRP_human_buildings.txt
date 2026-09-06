@@ -22,6 +22,7 @@ SRP_human_build_peacetime = {
 	ai_strategy = { type = building_target  id = infrastructure      value = 4  }
 	ai_strategy = { type = building_target  id = radar_station       value = 2  }
 	ai_strategy = { type = building_target  id = dockyard            value = 4  }
+	ai_strategy = { type = building_target  id = air_base            value = 3 }
 }
 
 SRP_human_build_wartime = {
@@ -47,6 +48,7 @@ SRP_human_build_wartime = {
 	ai_strategy = { type = building_target  id = infrastructure      value = 3  }
 	ai_strategy = { type = building_target  id = industrial_complex  value = 4  }
 	ai_strategy = { type = building_target  id = dockyard            value = 6  }
+	ai_strategy = { type = building_target  id = air_base            value = 10 }
 }
 
 SRP_major_power_build_peacetime = {
@@ -61,11 +63,14 @@ SRP_major_power_build_peacetime = {
 	enable = { has_war = no }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target  id = industrial_complex  value = 14 }
-	ai_strategy = { type = building_target  id = arms_factory        value = 10 }
-	ai_strategy = { type = building_target  id = radar_station       value = 6  }
-	ai_strategy = { type = building_target  id = infrastructure      value = 5  }
+	ai_strategy = { type = building_target  id = industrial_complex  value = 16 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 12 }
+	ai_strategy = { type = building_target  id = radar_station       value = 3  }
+	ai_strategy = { type = building_target  id = infrastructure      value = 6  }
 	ai_strategy = { type = building_target  id = dockyard            value = 10 }
+	ai_strategy = { type = building_target  id = air_base            value = 5 }
+	ai_strategy = { type = building_target  id = srp_fusion_reactor  value = 1  }
+	ai_strategy = { type = building_target  id = anti_air_building   value = 4 }
 }
 
 SRP_major_power_build_wartime = {
@@ -80,10 +85,12 @@ SRP_major_power_build_wartime = {
 	enable = { has_war = yes }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target  id = arms_factory        value = 35 }
-	ai_strategy = { type = building_target  id = anti_air_building   value = 14 }
-	ai_strategy = { type = building_target  id = radar_station       value = 8  }
-	ai_strategy = { type = building_target  id = industrial_complex  value = 6  }
-	ai_strategy = { type = building_target  id = infrastructure      value = 4  }
-	ai_strategy = { type = building_target  id = dockyard            value = 14 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 38 }
+	ai_strategy = { type = building_target  id = anti_air_building   value = 12 }
+	ai_strategy = { type = building_target  id = radar_station       value = 3  }
+	ai_strategy = { type = building_target  id = industrial_complex  value = 8  }
+	ai_strategy = { type = building_target  id = infrastructure      value = 6  }
+	ai_strategy = { type = building_target  id = dockyard            value = 12 }
+	ai_strategy = { type = building_target  id = srp_fusion_reactor  value = 2  }
+	ai_strategy = { type = building_target  id = air_base            value = 5  }
 }

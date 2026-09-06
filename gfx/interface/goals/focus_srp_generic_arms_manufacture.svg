@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Rifle, diagonal -->
+  <polygon points="30,64 44,56 48,64 44,70 34,70" fill="#c9a52a" transform="rotate(45 64 64)"/>
+  <rect x="46" y="56" width="22" height="9" fill="#c9a52a" transform="rotate(45 64 64)"/>
+  <rect x="68" y="58" width="26" height="5" fill="#c9a52a" transform="rotate(45 64 64)"/>
+  <polygon points="52,65 60,65 58,76 52,74" fill="#c9a52a" transform="rotate(45 64 64)"/>
+  <polygon points="44,65 50,65 47,74 43,72" fill="#c9a52a" transform="rotate(45 64 64)"/>
+
+  <!-- Manufacturing gear -->
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(0 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(45 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(90 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(135 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(180 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(225 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(270 90 38)"/>
+  <rect x="87.5" y="23.5" width="5" height="6" fill="#c9a52a" transform="rotate(315 90 38)"/>
+  <circle cx="90" cy="38" r="10" fill="#c9a52a"/>
+  <circle cx="90" cy="38" r="4" fill="#0d1623"/>
+</svg>

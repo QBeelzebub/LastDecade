@@ -679,3 +679,600 @@ TET = {
 		"Octavus" "Nonus" "Decimus"
 	}
 }
+
+
+SOV = {
+	male = { names = { Aleksandr Dmitri Ivan Mikhail Nikolai Pavel Sergei Viktor Yuri } }
+	female = { names = { Anna Ekaterina Irina Larisa Nadezhda Olga Svetlana Tatiana } }
+	surnames = { Antonov Egorov Fedorov Ivanov Kuznetsov Morozov Novikov Orlov Petrov Sokolov Volkov Zaitsev }
+	callsigns = { "Grom" "Kometa" "Molniya" "Sokol" "Strela" "Vikhr" }
+}
+
+CZE = {
+	male = { names = { Jakub Jan Josef Karel Martin Ondrej Pavel Petr Tomas Vaclav } }
+	female = { names = { Alena Eva Hana Jana Katerina Lucie Marie Tereza Veronika } }
+	surnames = { Cerny Dvorak Horak Kral Kucera Marek Novak Pokorny Prochazka Svoboda Vesely Zeman }
+	callsigns = { "Bourak" "Jestrab" "Orel" "Sokol" "Vlk" }
+}
+
+SLO = {
+	male = { names = { Andrej Jozef Juraj Marek Milan Miroslav Peter Stefan Tomas Vladimir } }
+	female = { names = { Andrea Daniela Jana Katarina Lucia Maria Monika Zuzana } }
+	surnames = { Balaz Bartos Hudak Kovac Lukac Molnar Novak Polak Tomasik Varga Zilinsky }
+	callsigns = { "Bystrina" "Hrom" "Rys" "Tatran" "Vlk" }
+}
+
+ROM = {
+	male = { names = { Adrian Andrei Constantin Cristian Gheorghe Ion Marius Mihai Nicolae Radu } }
+	female = { names = { Ana Cristina Elena Gabriela Ioana Maria Mihaela Simona } }
+	surnames = { Barbu Constantinescu Dumitru Georgescu Ionescu Marin Munteanu Popa Popescu Radulescu Stoica Vasile }
+	callsigns = { "Fulger" "Lupul" "Soimul" "Vulturul" "Zimbrul" }
+}
+
+AST = {
+	male = { names = { Andrew Bruce Cameron Darren Ethan Jack Liam Nathan Ryan Scott } }
+	female = { names = { Amelia Charlotte Ella Georgia Hannah Isla Matilda Olivia Zoe } }
+	surnames = { Anderson Bennett Campbell Clarke Fraser Harrison Kelly Mitchell Murray Thompson Walker Wright }
+	callsigns = { "Bunyip" "Dingo" "Kestrel" "Stockman" "Waratah" }
+}
+
+SAF = {
+	male = { names = { Andre Christiaan Daniel Francois Hendrik Johannes Pieter Riaan Stefan Willem } }
+	female = { names = { Annelie Elmarie Hester Ilse Karien Marlize Nadia Suzanne } }
+	surnames = { Botha Coetzee Fourie Kruger Nel Pretorius Steyn Venter Viljoen Wessels }
+	callsigns = { "Aardwolf" "Karoo" "Kudu" "Ratel" "Rooikat" }
+}
+
+ENG = {
+	male = { names = { Alfred Charles Edward George Harold Henry James Oliver Thomas William } }
+	female = { names = { Alice Beatrice Catherine Eleanor Emily Florence Margaret Rosalind Victoria } }
+	surnames = { Ashworth Bramley Carlisle Fairfax Hollis Marchant Pemberton Rutherford Sinclair Thorne Whitby Wycliffe }
+	callsigns = { "Bulldog" "Harrier" "Lancer" "Merlin" "Reaper" }
+}
+
+BEL = {
+	male = { names = { Antoine Bart Dirk Etienne Geert Jean Luc Marc Pieter Wouter } }
+	female = { names = { Annelies Camille Elise Griet Isabelle Katrien Lieve Sophie } }
+	surnames = { Claes Dekker Dumont Janssens Lambert Maes Peeters Vandenberghe Vermeulen Willems }
+	callsigns = { "Ardenne" "Draak" "Everzwijn" "Leeuw" "Meuse" }
+}
+
+GRE = {
+	male = { names = { Andreas Dimitrios Georgios Ioannis Konstantinos Nikolaos Panagiotis Stavros Vasilios Yiannis } }
+	female = { names = { Athina Eleni Georgia Katerina Maria Sofia Vasiliki Zoi } }
+	surnames = { Alexiou Christou Dimitriou Georgiou Karagiannis Nikolaidis Pappas Petrou Stavrou Vlachos }
+	callsigns = { "Aetos" "Kerveros" "Leonidas" "Thyella" "Triaina" }
+}
+
+HOL = {
+	male = { names = { Bram Daan Hendrik Jeroen Joost Maarten Pieter Sander Thijs Willem } }
+	female = { names = { Anouk Femke Ingrid Lotte Maaike Saskia Willemijn Yvonne } }
+	surnames = { Bakker Bos Dekker Jansen Meijer Mulder Smit Visser Vos Willems }
+	callsigns = { "Kraai" "Meeuw" "Nachtwacht" "Oranje" "Storm" }
+}
+
+
+D01 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D02 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D03 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D04 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D05 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D06 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D07 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D08 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D09 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D10 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D11 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D12 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D13 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D14 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D15 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D16 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D17 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D18 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D19 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D20 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D21 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D22 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D23 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D24 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D25 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D26 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D27 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D28 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D29 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D30 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D31 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D32 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D33 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D34 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D35 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D36 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D37 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D38 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D39 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D40 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D41 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D42 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D43 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D44 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D45 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D46 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D47 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D48 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D49 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D50 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D51 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D52 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D53 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D54 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D55 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D56 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D57 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D58 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D59 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D60 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D61 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D62 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D63 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D64 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D65 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D66 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D67 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D68 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D69 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D70 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D71 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D72 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D73 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D74 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}
+
+D75 = {
+	male = { names = { Adrian Anton Emil Felix Henrik Julian Lukas Marek Nikolai Stefan Tomas Viktor } }
+	female = { names = { Adela Elina Hanna Irena Karin Lena Marta Nadia Petra Sonia Vera Zofia } }
+	surnames = { Adler Bauer Falk Haas Keller Lindqvist Marek Novak Petrov Reiter Sandor Vogel Weiss Zeman }
+	callsigns = { "Anvil" "Beacon" "Cinder" "Drift" "Ember" "Flint" "Halyard" "Ingot" }
+}

@@ -24,6 +24,7 @@ country_event = {
 				add_ideas = KNX_dug_in_homeland
 				set_technology = {
 					knx_vagrant_one_manifestation = 1
+					nexus_flesh_refinement = 1
 					popup = no
 				}
 				add_equipment_to_stockpile = {
@@ -58,11 +59,24 @@ country_event = {
 			}
 			KNX = {
 				set_capital = { state = 369 }
+				KNX_grow_hive_forts_effect = yes
 			}
 			KNX = {
 				add_equipment_to_stockpile = {
 					type = pure_parasite_equipment_1
 					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = rupter_equipment_1
+					amount = 8000
+				}
+				add_equipment_to_stockpile = {
+					type = vigilante_battery_equipment_1
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = primitive_manducater_equipment_1
+					amount = 1500
 				}
 				load_oob = "KNX_initial_army"
 			}
@@ -150,5 +164,33 @@ country_event = {
 		EFH = { set_country_flag = KNX_vagrant_contact_rejected }
 		KNX = { set_country_flag = KNX_vagrant_contact_rejected_by_efh }
 		add_political_power = -25
+	}
+}
+
+
+country_event = {
+	id = knx.6
+	title = knx.6.t
+	desc = knx.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = knx.6.a
+		ai_chance = { base = 10 }
+		add_political_power = -5
+		if = {
+			limit = { NOT = { KNX = { is_guaranteed_by = EFH } } }
+			give_guarantee = KNX
+		}
+		set_country_flag = EFH_knox_guarantee_given
+		KNX = { set_country_flag = KNX_efh_guarantee_held }
+	}
+
+	option = {
+		name = knx.6.b
+		ai_chance = { base = 2 }
+		set_country_flag = EFH_knox_guarantee_refused
+		KNX = { set_country_flag = KNX_efh_guarantee_refused }
 	}
 }

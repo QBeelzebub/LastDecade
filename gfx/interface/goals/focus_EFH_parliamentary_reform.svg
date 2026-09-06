@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Pediment and entablature -->
+  <polygon points="64,34 96,52 32,52" fill="#c9a52a"/>
+  <rect x="38" y="52" width="54" height="7" fill="#c9a52a"/>
+
+  <!-- Columns -->
+  <rect x="42" y="59" width="7" height="24" fill="#c9a52a"/>
+  <rect x="55" y="59" width="7" height="24" fill="#c9a52a"/>
+  <rect x="68" y="59" width="7" height="24" fill="#c9a52a"/>
+  <rect x="81" y="59" width="7" height="24" fill="#c9a52a"/>
+
+  <!-- Steps -->
+  <rect x="38" y="83" width="54" height="5" fill="#c9a52a"/>
+  <rect x="32" y="88" width="66" height="5" fill="#c9a52a"/>
+</svg>

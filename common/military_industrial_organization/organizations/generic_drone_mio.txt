@@ -1,6 +1,6 @@
 
 srp_generic_drone_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { NOT = { is_full_parasite = yes } }
 
@@ -31,7 +31,7 @@ srp_generic_drone_mio = {
 	trait = {
 		token = srp_drone_t2a
 		name = srp_drone_t2a
-		icon = GFX_generic_mio_department_icon_artillery_quality
+		icon = GFX_generic_mio_department_icon_artillery
 
 		position = { x = -1 y = 1 }
 		relative_position_id = srp_drone_root

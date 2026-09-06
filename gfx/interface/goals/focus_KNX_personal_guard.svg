@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Three spearhead pillars, middle tallest, 16px gaps -->
+  <polygon points="15,108 15,56 26,30 37,56 37,108" fill="#c9a52a"/>
+  <polygon points="53,108 53,44 64,18 75,44 75,108" fill="#c9a52a"/>
+  <polygon points="91,108 91,56 102,30 113,56 113,108" fill="#c9a52a"/>
+</svg>

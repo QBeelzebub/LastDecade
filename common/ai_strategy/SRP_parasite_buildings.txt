@@ -19,7 +19,29 @@ parasite_no_human_buildings = {
 	ai_strategy = { type = building_target id = naval_supply_hub value = 0 }
 	ai_strategy = { type = building_target id = naval_headquarters value = 0 }
 
-	ai_strategy = { type = building_target id = beckon_cluster value = 3 }
+	ai_strategy = { type = building_target id = beckon_cluster value = 40 }
+
+	ai_strategy = { type = building_target id = nexus_hive value = 1 }
+}
+
+parasite_airfields = {
+	allowed = {
+		is_full_parasite = yes
+	}
+	enable = { has_tech = primitive_yelloweye_tech }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = air_base value = 25 }
+}
+
+KNX_hive_fortification = {
+	allowed = { original_tag = KNX }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 20 }
+	ai_strategy = { type = building_target id = biomass_pool value = 2 }
+	ai_strategy = { type = building_target id = nexus_hive value = 1 }
 }
 
 parasite_wartime_beckon_push = {
@@ -31,7 +53,7 @@ parasite_wartime_beckon_push = {
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target id = beckon_cluster value = 6 }
+	ai_strategy = { type = building_target id = beckon_cluster value = 120 }
 }
 
 IRS_phase2_beckon_saturation = {
@@ -42,5 +64,5 @@ IRS_phase2_beckon_saturation = {
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target id = beckon_cluster value = 10 }
+	ai_strategy = { type = building_target id = beckon_cluster value = 200 }
 }

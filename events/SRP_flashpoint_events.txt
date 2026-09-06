@@ -57,7 +57,7 @@ country_event = {
 	id = srp_flashpoint.3
 	title = srp_flashpoint.3.t
 	desc = srp_flashpoint.3.d
-	picture = GFX_report_event_usa_new_navy
+	picture = GFX_report_event_usa_destroyers
 	is_triggered_only = yes
 
 	option = {

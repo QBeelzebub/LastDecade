@@ -18,7 +18,7 @@ focus_tree = {
 		x = 10
 		y = -7
 		cost = 3.75
-		ai_will_do = { base = 15 }
+		ai_will_do = { base = 30 }
 		completion_reward = {
 			add_political_power = 30
 			hidden_effect = {
@@ -70,9 +70,16 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_the_european_question }
 		mutually_exclusive = { focus = USA_conventional_overmatch }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_gate_escalation_rivalry_tt
+				check_variable = { EFH_USA_escalation > 49 }
+			}
+			check_variable = { EFH_USA_escalation > 49 }
+		}
 		completion_reward = {
 			hidden_effect = {
 				USA_ind_nuclear_superiority = yes
@@ -130,7 +137,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 6 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = USA_containment_posture }
 		completion_reward = {
 			add_political_power = 20
@@ -220,7 +227,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_the_national_mood }
 		mutually_exclusive = { focus = USA_establishment_consensus }
 		completion_reward = {
@@ -244,7 +251,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_the_national_mood }
 		mutually_exclusive = { focus = USA_populist_surge }
 		completion_reward = {
@@ -362,7 +369,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_procurement_debate }
 		mutually_exclusive = { focus = USA_arsenal_of_democracy }
 		completion_reward = {
@@ -372,6 +379,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_technical_directorate_tt
 			set_country_flag = USA_procurement_tech
 			add_tech_bonus = {
+				name = USA_technological_edge
 				bonus = 0.5
 				uses = 1
 				category = electronics
@@ -387,7 +395,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 10 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_procurement_debate }
 		mutually_exclusive = { focus = USA_technological_edge }
 		completion_reward = {
@@ -412,6 +420,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 30
 			add_tech_bonus = {
+				name = USA_modern_us_military
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine
@@ -436,6 +445,7 @@ focus_tree = {
 				limit = { has_country_flag = USA_procurement_tech }
 				custom_effect_tooltip = USA_groundwork_procurement_tech_tt
 				add_tech_bonus = {
+					name = USA_force_projection_command
 					bonus = 0.5
 					uses = 1
 					category = electronics
@@ -458,7 +468,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 5 }
+		ai_will_do = { base = 1 }
 		allow_branch = { has_global_flag = before_the_storm }
 		prerequisite = { focus = USA_state_of_the_union }
 		completion_reward = {
@@ -477,7 +487,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 3.75
-		ai_will_do = { base = 5 }
+		ai_will_do = { base = 1 }
 		allow_branch = { has_global_flag = before_the_storm }
 		prerequisite = { focus = USA_defense_appropriations }
 		completion_reward = {
@@ -493,7 +503,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = USA_modern_us_military }
 		completion_reward = {
 			army_experience = 40
@@ -513,7 +523,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_containment_posture }
 		completion_reward = {
 			army_experience = 25
@@ -531,7 +541,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		ai_will_do = { base = 8 }
+		ai_will_do = { base = 1 }
 		prerequisite = { focus = USA_govern_the_union }
 		completion_reward = {
 			add_political_power = 30
@@ -554,6 +564,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 0.75
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = USA_cold_war_footing }
 		completion_reward = {
 			hidden_effect = {
@@ -584,9 +595,7 @@ focus_tree = {
 			}
 			country_event = { id = usa.66 days = 1 }
 		}
-		ai_will_do = {
-			base = 70
-		}
+		ai_will_do = { base = 30 }
 	}
 
 	focus = {
@@ -607,9 +616,7 @@ focus_tree = {
 			}
 			country_event = { id = usa.67 days = 1 }
 		}
-		ai_will_do = {
-			base = 30
-		}
+		ai_will_do = { base = 2 }
 	}
 
 	focus = {
@@ -619,6 +626,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 3
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_continental_sovereignty }
 		completion_reward = {
 			add_stability = 0.05
@@ -678,6 +686,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 7.5
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_cold_war_extension }
 		available = {
 			custom_trigger_tooltip = {
@@ -708,6 +717,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_fire_protocol_adoption }
 		completion_reward = {
 			set_country_flag = USA_anomalous_infestation_reporting
@@ -728,6 +738,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_fire_protocol_adoption }
 		completion_reward = {
 			add_tech_bonus = {
@@ -747,6 +758,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_continental_incident_reporting }
 		completion_reward = {
 			set_country_flag = USA_joint_containment_boards_active
@@ -762,6 +774,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 7.5
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_cold_war_extension }
 		completion_reward = {
 			set_country_flag = USA_canadian_theater_pre_positioned
@@ -788,6 +801,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_canadian_theater_pre_positioning }
 		completion_reward = {
 			set_country_flag = USA_northern_logistics_command_active
@@ -804,6 +818,7 @@ focus_tree = {
 		x = 7
 		y = 0
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			375 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			371 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
@@ -823,6 +838,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_fossil_fuel_expansion }
 		mutually_exclusive = { focus = USA_civilian_resilience }
 		completion_reward = {
@@ -845,6 +861,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_fossil_fuel_expansion }
 		mutually_exclusive = { focus = USA_wartime_mobilization }
 		completion_reward = {
@@ -868,6 +885,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_wartime_mobilization focus = USA_civilian_resilience }
 		completion_reward = {
 			376 = { add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes } }
@@ -888,8 +906,10 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			add_tech_bonus = {
+				name = USA_federal_research_grants
 				bonus = 0.5
 				uses = 1
 				category = electronics
@@ -904,9 +924,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_federal_research_grants }
 		completion_reward = {
 			add_tech_bonus = {
+				name = USA_darpa_programs
 				bonus = 0.5
 				uses = 1
 				category = armor
@@ -923,11 +945,10 @@ focus_tree = {
 		cost = 5.25
 		prerequisite = { focus = USA_darpa_programs }
 		mutually_exclusive = { focus = USA_incendiary_doctrine }
-		ai_will_do = {
-			factor = 40
-		}
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			add_tech_bonus = {
+				name = USA_cyber_dominance
 				bonus = 0.75
 				uses = 1
 				category = srp_cyber_tech
@@ -945,11 +966,10 @@ focus_tree = {
 		cost = 5.25
 		prerequisite = { focus = USA_darpa_programs }
 		mutually_exclusive = { focus = USA_cyber_dominance }
-		ai_will_do = {
-			factor = 60
-		}
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			add_tech_bonus = {
+				name = USA_incendiary_doctrine
 				bonus = 0.75
 				uses = 1
 				category = srp_incendiary
@@ -966,6 +986,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_domestic_agenda }
 		completion_reward = {
 			add_political_power = 75
@@ -979,6 +1000,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_deregulation_act }
 		mutually_exclusive = { focus = USA_market_liberalization }
 		completion_reward = {
@@ -1006,6 +1028,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_deregulation_act }
 		mutually_exclusive = { focus = USA_populist_economics }
 		completion_reward = {
@@ -1033,6 +1056,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5.25
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_populist_economics focus = USA_market_liberalization }
 		completion_reward = {
 			add_political_power = 100
@@ -1048,6 +1072,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 7.5
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_force_projection_command }
 		completion_reward = {
 			army_experience = 75
@@ -1073,6 +1098,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_joint_containment_boards }
 		completion_reward = {
 			add_political_power = 50
@@ -1092,6 +1118,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_hemispheric_primacy }
 		completion_reward = {
 			army_experience = 25
@@ -1108,6 +1135,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 5.25
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_secure_the_approaches }
 		completion_reward = {
 			add_political_power = 50
@@ -1126,6 +1154,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_hemispheric_primacy }
 		available = {
 			custom_trigger_tooltip = {
@@ -1154,6 +1183,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_domestic_containment_doctrine }
 		completion_reward = {
 			add_stability = 0.05
@@ -1173,6 +1203,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 7.5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_pan_american_pressure focus = USA_federal_quarantine_authority }
 		completion_reward = {
 			army_experience = 50
@@ -1191,6 +1222,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 3.75
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = USA_joint_containment_boards }
 		available = {
 			date > 2022.1.1
@@ -1200,6 +1232,10 @@ focus_tree = {
 				USA_for_doctrine_reckoning = yes
 			}
 			custom_effect_tooltip = USA_hemispheric_posture_tt
+			create_intelligence_agency = {
+				name = "Office of Special Threat Intelligence"
+				icon = GFX_intelligence_agency_logo_usa
+			}
 			country_event = { id = usa.4 days = 1 }
 		}
 	}
@@ -1211,6 +1247,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_doctrine_reckoning }
 		mutually_exclusive = { focus = USA_bury_the_findings }
 		completion_reward = {
@@ -1218,11 +1255,8 @@ focus_tree = {
 				USA_res_dispatcher_blindspot = yes
 			}
 			custom_effect_tooltip = USA_technical_directorate_tt
-			create_intelligence_agency = {
-				name = "Office of Special Threat Intelligence"
-				icon = GFX_intelligence_agency_logo_usa
-			}
 			add_tech_bonus = {
+				name = USA_own_the_failure
 				bonus = 0.75
 				uses = 1
 				category = srp_incendiary
@@ -1246,12 +1280,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_doctrine_reckoning }
 		mutually_exclusive = { focus = USA_own_the_failure }
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.03
 			add_tech_bonus = {
+				name = USA_bury_the_findings
 				bonus = 0.5
 				uses = 1
 				category = srp_incendiary
@@ -1268,6 +1304,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5.25
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = USA_own_the_failure focus = USA_bury_the_findings }
 		completion_reward = {
 			add_ideas = USA_root_clearance_doctrine_spirit
@@ -1275,6 +1312,7 @@ focus_tree = {
 			if = {
 				limit = { has_country_flag = USA_owned_doctrine_failure }
 				add_tech_bonus = {
+					name = USA_root_clearance_doctrine
 					bonus = 0.5
 					uses = 1
 					category = srp_incendiary
@@ -1292,6 +1330,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		ai_will_do = { base = 30 }
 		prerequisite = { focus = USA_root_clearance_doctrine }
 		available = {
 			has_global_flag = KNX_silent_emergence_fired
@@ -1369,6 +1408,7 @@ focus_tree = {
 		prerequisite = { focus = USA_appalachian_cordon }
 		completion_reward = {
 			add_tech_bonus = {
+				name = USA_incendiary_clearance_push
 				bonus = 0.5
 				uses = 1
 				category = srp_incendiary
@@ -1388,7 +1428,7 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = USA_incendiary_clearance_push }
 		available = {
-			date > 2023.6.1
+			date > 2023.9.1
 			country_exists = KNX
 		}
 		completion_reward = {
@@ -1416,6 +1456,7 @@ focus_tree = {
 		x = 22
 		y = 0
 		cost = 3.75
+		ai_will_do = { base = 5 }
 		completion_reward = {
 			add_political_power = 50
 			hidden_effect = {
@@ -1434,6 +1475,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_great_power_doctrine }
 		available = {
 			OR = {
@@ -1459,6 +1501,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 7.5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_monroe_doctrine_reassertion }
 		completion_reward = {
 			hidden_effect = {
@@ -1477,6 +1520,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 7.5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_expel_EFH_influence }
 		completion_reward = {
 			set_country_flag = USA_hemisphere_claimed
@@ -1504,6 +1548,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 5 }
 		prerequisite = { focus = USA_great_power_doctrine }
 		completion_reward = {
 			add_political_power = 25
@@ -1522,6 +1567,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5.25
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_pacific_containment }
 		completion_reward = {
 			set_country_flag = USA_china_embargo_active
@@ -1540,6 +1586,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 7.5
+		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_beijing_confrontation }
 		available = {
 			EFH = { has_country_flag = EFH_japan_aligned }

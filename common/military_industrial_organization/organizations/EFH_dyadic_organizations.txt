@@ -1,6 +1,6 @@
 
 EFH_dyadic_beckon_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = EFH }
 	available = {
@@ -138,11 +138,9 @@ EFH_dyadic_beckon_mio = {
 
 		available = {
 			EFH = {
-				OR = {
-					has_character = EFH_vagrant_3
-					has_character = EFH_vagrant_3_reborn
-				}
+				has_country_flag = EFH_vagrant_3_active
 				has_country_flag = EFH_vagrant_3_advisory_duty
+				NOT = { has_country_flag = EFH_vagrant_3_fallen }
 			}
 		}
 

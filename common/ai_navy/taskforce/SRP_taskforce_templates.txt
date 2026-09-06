@@ -18,6 +18,8 @@ SRP_small_patrol_destroyers = {
 		factor = 6
 	}
 
+	keep_updated = yes
+
 	mission = { naval_patrol }
 	min_composition = {
 		destroyer = { amount = 1 }
@@ -46,6 +48,8 @@ SRP_convoy_escort_destroyers = {
 	ai_will_do = {
 		factor = 5
 	}
+
+	keep_updated = yes
 
 	mission = { convoy_escort }
 	min_composition = {
@@ -76,12 +80,45 @@ SRP_sub_raider_wolfpack = {
 		factor = 4
 	}
 
+	keep_updated = yes
+
 	mission = { convoy_raiding }
 	min_composition = {
 		submarine = { amount = 1 }
 	}
 	optimal_composition = {
 		submarine = { amount = 6 }
+	}
+}
+
+SRP_human_invasion_escort = {
+	allowed = {
+		OR = {
+			original_tag = AFR
+			original_tag = ASI
+			original_tag = CHN
+			original_tag = EFH
+			original_tag = JAP
+			original_tag = OCE
+			original_tag = RSF
+			original_tag = SAC
+			original_tag = SWR
+			original_tag = USA
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	keep_updated = yes
+
+	mission = { naval_invasion_support }
+	min_composition = {
+		destroyer = { amount = 2 }
+	}
+	optimal_composition = {
+		destroyer = { amount = 6 }
 	}
 }
 
@@ -93,6 +130,8 @@ IRS_devourer_raiding_pack = {
 	ai_will_do = {
 		factor = 10
 	}
+
+	keep_updated = yes
 
 	mission = { convoy_raiding }
 	min_composition = {
@@ -112,11 +151,56 @@ IRS_devourer_patrol_pack = {
 		factor = 6
 	}
 
+	keep_updated = yes
+
 	mission = { naval_patrol }
 	min_composition = {
 		devourer_submarine = { amount = 1 }
 	}
 	optimal_composition = {
 		devourer_submarine = { amount = 6 }
+	}
+}
+
+
+IRS_colossant_line = {
+	allowed = {
+		original_tag = IRS
+	}
+
+	ai_will_do = {
+		factor = 12
+	}
+
+	keep_updated = yes
+
+	mission = { naval_invasion_support }
+	min_composition = {
+		colossant_capital = { amount = 1 }
+	}
+	optimal_composition = {
+		colossant_capital = { amount = 2 }
+		devourer_submarine = { amount = 6 }
+	}
+}
+
+IRS_devourer_invasion_escort = {
+	allowed = {
+		original_tag = IRS
+	}
+
+	ai_will_do = {
+		factor = 8
+	}
+
+	keep_updated = yes
+
+	mission = { naval_invasion_support }
+	min_composition = {
+		devourer_submarine = { amount = 2 }
+	}
+	optimal_composition = {
+		devourer_submarine = { amount = 8 }
+		abyssant_submarine = { amount = 4 }
 	}
 }

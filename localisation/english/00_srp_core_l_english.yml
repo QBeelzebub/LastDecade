@@ -209,8 +209,8 @@
 
  srp_land_tech: "Land Systems"
  srp_land_tech_research: "Land Systems Research Speed"
- srp_armor_tech: "Armored Vehicles"
- srp_armor_tech_research: "Armored Vehicle Research Speed"
+ srp_armor_tech: "Armoured Vehicles"
+ srp_armor_tech_research: "Armoured Vehicle Research Speed"
  srp_motorized_tech: "Motorized & Mechanized"
  srp_motorized_tech_research: "Motorized Research Speed"
  srp_artillery_tech: "Artillery"
@@ -248,7 +248,9 @@
  industrial_infrastructure: "Industrial Infrastructure"
  industrial_infrastructure_desc: "Basic Industrial Infrastructure."
  srp_fissile_extractor: "Fissile Plant"
- srp_fissile_extractor_desc: "A facility designed to extract and process fissile materials for use in combat nuclear applications.\nProvides +3 £resources_strip|8"
+ srp_fissile_extractor_desc: "A facility designed to extract and process fissile materials for use in combat nuclear applications.\n\nBase: §Y3§! £resources_strip|8 per level, §Y1§! per state.\n$srp_fissile_extraction_1$: §G4§! £resources_strip|8 per level, up to §G3§! per state.\n$srp_fissile_extraction_2$: §G5§! £resources_strip|8 per level, up to §G4§! per state.\n$srp_fissile_extraction_3$: §G6§! £resources_strip|8 per level, up to §G5§! per state."
+ srp_fissile_extractor_amount: "$VALUE|Y0=$"
+ srp_fissile_extractor_resource: "£resources_strip|$FRAME$"
  srp_fissile_extractor_plural: "Fissile Plants"
  srp_fusion_reactor: "Fusion Reactor"
  srp_fusion_reactor_desc: "A grid-scale fusion power facility, providing abundant energy to the surrounding industrial base while its excess output is harnessed directly for production, functioning as additional factories."
@@ -290,7 +292,7 @@
  EFH_HNA_lunar_policy_procurement_tt: "H&A creates a deniable procurement office. Several launch vehicles should consider becoming less unattended."
 
  EFH_fusion_economy: "Commercial Fusion Power"
- EFH_fusion_economy_desc: "First grid-scale tokamak facilities went online 2017. Energy scarcity is effectively solved. Industrial output decoupled from fossil fuel supply chains."
+ EFH_fusion_economy_desc: "The first grid-scale tokamak facilities went online in 2017. Energy scarcity is effectively solved. Industrial output decoupled from fossil fuel supply chains."
  EFH_RTG_ideas: "Iris Countertechnology"
  EFH_RTG_ideas_desc: "Early development of technologies to counter the Iris threat. Detection systems, incendiary compounds, and containment protocols, in that order of urgency."
  EFH_TAD_idea: "Total American Death"
@@ -531,7 +533,7 @@
  srp_last_decade_t4_parasite: "Spreading Network"
  srp_last_decade_t4_parasite_desc: "The network has reclaimed lost ground. Luxsynthesis output and Dispatcher coordination both run ahead of baseline across the expanding territory."
  srp_last_decade_t4_human: "Strained Resources"
- srp_last_decade_t4_human_desc: "Supply lines and research programmes are increasingly disrupted. Political institutions struggle to keep pace with the deteriorating situation."
+ srp_last_decade_t4_human_desc: "Supply lines and research programmes are increasingly disrupted. Events are moving faster than the institutions meant to manage them."
 
  srp_last_decade_t5_parasite: "Network Ascendant"
  srp_last_decade_t5_parasite_desc: "The network operates at its highest recorded efficiency. Nothing in it is waiting on anything else."
@@ -539,7 +541,7 @@
  srp_last_decade_t5_human_desc: "The world's remaining institutions are buckling under the weight of a war that should have ended years ago. Ministries are triaging which of their statutory duties to stop performing."
 
 
- IRS_last_decade_threshold_difficulty_tt: "Only available on the Elite difficulty, The Last Decade."
+ IRS_last_decade_threshold_difficulty_tt: "Only available on the Telotic difficulty, The Last Decade."
 
  MATCHMAKING_FILTER_NOPASSWORD: "No password"
  MATCHMAKING_FILTER_NOTFULL: "Not Full"
@@ -670,22 +672,6 @@
  FE_NO: "No"
  YES: "Yes"
  NO: "No"
- FE_DIFFICULTY_CUSTOM: "Configure custom game rules."
- FE_DIFFICULTY_CUSTOM_BTN: "Custom Game Rules"
- FE_DIFFICULTY: "Difficulty"
- FE_DIFFICULTY_VERY_EASY: "Containment"
- FE_DIFFICULTY_VERY_EASY_TOOLTIP: "Quarantine lines hold. The network is contained, and humanity's institutions still function at near full capacity."
- FE_DIFFICULTY_EASY: "Breach"
- FE_DIFFICULTY_EASY_TOOLTIP: "Containment is failing in isolated sectors. Resistance still holds the advantage, but cracks are showing."
- FE_DIFFICULTY_NORMAL: "Open War"
- FE_DIFFICULTY_NORMAL_TOOLTIP: "Neither side holds a clear advantage. The war for the world is fought on even terms."
- FE_DIFFICULTY_HARD: "Collapse"
- FE_DIFFICULTY_HARD_TOOLTIP: "The network is spreading faster than it can be contained. Humanity's institutions are buckling under the strain."
- FE_DIFFICULTY_VERY_HARD: "Telotic"
- FE_DIFFICULTY_VERY_HARD_TOOLTIP: "The network operates at full capacity across reclaimed territory, while what remains of humanity fights for the time it has left. The Telotic lineage stirs, and the clock runs out faster than anyone can hold it back."
- FE_DIFFICULTY_UNKNOWN: "Secret Difficulty"
- FE_DIFFICULTY_MODIFIER_PLAYER_TOOLTIP: "\n\nPlayer:\n$PLAYERMOD$"
- FE_DIFFICULTY_MODIFIER_AI_TOOLTIP: "\n\nAI:\n$AIMOD$"
  FE_IRONMAN_MP_BLOCKED: "§RIronman mode cannot be played in multiplayer.§!"
  FE_CUSTOM_DIFFICULTY_TOOLTIP: "Applied to: $COUNTRIES$\n$MODIFIER$"
  FE_RESET: "Reset All"
@@ -720,14 +706,13 @@
  ACHIEVEMENTS_NOT_OK: "§RCannot get Achievements.§!"
  ACHIEVEMENTS_MOSTLY_NOT_OK: "§RCannot get most Achievements.§!"
  diff_strong_ai_generic: "Stronger AI"
- custom_diff_strong_ger: "Strengthen Germany"
- custom_diff_strong_ita: "Strengthen Italy"
- custom_diff_strong_sov: "Strengthen Soviet"
- custom_diff_strong_fra: "Strengthen France"
- custom_diff_strong_eng: "Strengthen United Kingdom"
- custom_diff_strong_usa: "Strengthen USA"
- custom_diff_strong_jap: "Strengthen Japan"
- custom_diff_strong_chi: "Strengthen China"
+ srp_diff_strong_efh: "Strengthen the European Federation"
+ srp_diff_strong_usa: "Strengthen the United States"
+ srp_diff_strong_rsf: "Strengthen Russia"
+ srp_diff_strong_swr: "Strengthen Sweramoa"
+ srp_diff_strong_irs: "Strengthen the Iris"
+ srp_diff_strong_knx: "Strengthen the Knox Exclusion Zone"
+ srp_diff_strong_tet: "Strengthen the Tethysic Brood"
  achievement_has_joined_faction: "Has joined a faction"
  achievement_has_dropped_nuke: "Has used a nuclear bomb"
  achievement_france_surrender: "France has surrendered"
@@ -791,14 +776,14 @@ knox_county: "Knox County"
  train_equipment: "Train"
  train_equipment_desc: "Trains transport supplies from the Supply Capital to Supply Hubs connected by rail. Without them, front-line forces go critically undersupplied."
  train_equipment_1: "Civilian Train"
- train_equipment_1_desc: "Requisitioned civilian freight rolling stock. Cheap to produce and easy to replace, but unarmored and vulnerable to attack."
+ train_equipment_1_desc: "Requisitioned civilian freight rolling stock. Cheap to produce and easy to replace, but unarmoured and vulnerable to attack."
  train_equipment_2: "Military Train"
- train_equipment_2_desc: "Reinforced rolling stock built for wartime logistics. Armored bodywork and hardened couplings make it far more survivable than requisitioned civilian equipment."
+ train_equipment_2_desc: "Reinforced rolling stock built for wartime logistics. Armoured bodywork and hardened couplings make it far more survivable than requisitioned civilian equipment."
 
  ld_civilian_train: "Civilian Requisition"
  ld_civilian_train_desc: "Nationalises civilian freight infrastructure for military logistics. Cheap trains, fast to produce. The baseline for keeping armies supplied across rail networks."
  ld_military_train: "Military Train Programme"
- ld_military_train_desc: "Dedicated military rolling stock with armored construction. Substantially more survivable than requisitioned civilian trains, at higher production cost."
+ ld_military_train_desc: "Dedicated military rolling stock with armoured construction. Substantially more survivable than requisitioned civilian trains, at higher production cost."
 
  STATE_CATEGORY_srp_megaregion: "Megaregion"
  srp_megaregion: "Megaregion"
@@ -833,8 +818,8 @@ knox_county: "Knox County"
  EFH_south_american_outreach: "South American Outreach"
  EFH_south_american_outreach_desc: "The Federation begins a quiet economic campaign in South America. Infrastructure investment, trade credits, and diplomatic personnel establish a foothold in what the United States considers its backyard."
 
- EFH_SAC_infrastructure_program: "SAC Infrastructure Programme"
- EFH_SAC_infrastructure_program_desc: "The Federation construction contracts in the South American Confederation become impossible to hide. Washington notices. The era of quiet competition is ending."
+ EFH_SAC_infrastructure_program: "South American Infrastructure Programme"
+ EFH_SAC_infrastructure_program_desc: "The Federation's construction contracts in the South American Confederation become impossible to hide. Washington notices. The era of quiet competition is ending."
 
  EFH_hemispheric_challenge: "Hemispheric Challenge"
  EFH_hemispheric_challenge_desc: "The Federation formally asserts an interest in the Western Hemisphere's stability. The Monroe Doctrine has a challenger for the first time in a century."
@@ -891,57 +876,57 @@ knox_county: "Knox County"
  USA_monroe_doctrine_reassertion: "Monroe Doctrine Reassertion"
  USA_monroe_doctrine_reassertion_desc: "The Federation has moved into the Western Hemisphere. The United States formally reasserts the Monroe Doctrine: the Americas are not a stage for European power games."
 
- USA_expel_EFH_influence: "Expel EFH Influence"
+ USA_expel_EFH_influence: "Expel European Influence"
  USA_expel_EFH_influence_desc: "American economic pressure targets Federation markets. Trade barriers go up across the Western Hemisphere. Federation contracts in South America are declared unwelcome."
 
  USA_western_hemisphere_bloc: "Western Hemisphere Bloc"
- USA_western_hemisphere_bloc_desc: "The United States formalises its hemispheric alliance. If the Federation will not back down from the Americas, America will not back down either. The standoff has found its fault line."
+ USA_western_hemisphere_bloc_desc: "The United States formalizes its hemispheric alliance. If the Federation will not back down from the Americas, America will not back down either. The standoff has found its fault line."
 
  USA_pacific_containment: "Pacific Containment"
  USA_pacific_containment_desc: "The United States reinforces its Pacific security guarantees. Japan, South Korea, and the broader Pacific rim are placed firmly within the American umbrella."
 
  USA_beijing_confrontation: "Beijing Confrontation"
- USA_beijing_confrontation_desc: "Washington signals to Beijing that its relationship with the Federation will have consequences. Trade restrictions are tightened, the pressure is on."
+ USA_beijing_confrontation_desc: "Washington signals to Beijing that its relationship with the Federation will have consequences. Trade restrictions are tightened. The pressure is on."
 
- USA_pacific_war_authorization: "Pacific War Authorisation"
- USA_pacific_war_authorization_desc: "With Federation entrenched in Japan and the Pacific containment line drawn, the United States authorises military action if necessary. The cold war is becoming something else."
+ USA_pacific_war_authorization: "Pacific War Authorization"
+ USA_pacific_war_authorization_desc: "With the Federation entrenched in Japan and the Pacific containment line drawn, the United States authorizes military action if necessary. The cold war is becoming something else."
 
 
 
 
 
  USA_efh_market_exclusion: "American Market Exclusion"
- USA_efh_market_exclusion_desc: "The United States has shut American markets to EFH."
+ USA_efh_market_exclusion_desc: "The United States has shut American markets to the European Federation."
 
 
 
 
- USA_pacific_containment_tt: "The USA secures the Pacific rim against Federation expansion."
+ USA_pacific_containment_tt: "The United States secures the Pacific rim against Federation expansion."
 
 
  efh_geo.1.t: "The Pacific Pact is Signed"
  efh_geo.1.d: "Japan has formally aligned with the European Federation. The defence pact is public, the terms are binding, and Washington has received its copy. The Pacific balance has shifted in a way that will be difficult to reverse."
  efh_geo.1.a: "A new era in European-Pacific relations begins."
- efh_geo_japan_pact_tt: "USA is informed of the Japan-Federation defence pact."
+ efh_geo_japan_pact_tt: "The United States is informed of the Japan-Federation defence pact."
 
  efh_geo.2.t: "Beijing Considers Its Position"
  efh_geo.2.d: "The Federation's Eurasian buffer doctrine has placed China at a decision point. Beijing can lean toward the European partnership, or it can maintain the careful neutrality that has served it well. The choice is Beijing's to make."
- efh_geo.2.a: "China leans toward EFH. The Eurasian buffer doctrine holds."
+ efh_geo.2.a: "China leans toward the Federation. The Eurasian buffer doctrine holds."
  efh_geo.2.b: "China remains neutral. Better to wait and see."
  efh_geo_china_efh_tt: "China formally tilts toward the Federation's diplomatic position."
  efh_geo_china_neutral_tt: "China chooses strategic neutrality for now."
 
- efh_geo.3.t: "EFH Claims Hemispheric Interest"
+ efh_geo.3.t: "The Federation Claims Hemispheric Interest"
  efh_geo.3.d: "The Federation has formally declared a stake in Western Hemisphere stability. Washington is reading the communique with fury. The Monroe Doctrine has a challenger."
  efh_geo.3.a: "The Federation is in the Americas. Let Washington respond."
- efh_geo_hemispheric_tt: "USA receives news of the Federation's hemispheric challenge."
+ efh_geo_hemispheric_tt: "The United States receives news of the Federation's hemispheric challenge."
 
- usa_efh_war.1.t: "EFH Moves Into the Americas"
+ usa_efh_war.1.t: "The Federation Enters the Americas"
  usa_efh_war.1.d: "Intelligence confirms what was suspected: the Federation is establishing a real economic and strategic presence in South America, in sectors and at a scale that no commercial case explains."
  usa_efh_war.1.a: "Issue a formal protest. The Monroe Doctrine applies."
  usa_efh_war.1.b: "Monitor the situation. No reason to escalate yet."
 
- usa_efh_war.2.t: "EFH Has Japan"
+ usa_efh_war.2.t: "The Federation Has Japan"
  usa_efh_war.2.d: "The Pacific Defence Pact is confirmed. Japan, which Washington considered a reliable partner, has signed a formal security arrangement with the European Federation. The Pacific strategic map has changed."
  usa_efh_war.2.a: "Demand Japan reconsider. This will not stand."
  usa_efh_war.2.b: "Accelerate Pacific containment. We need to reinforce our own position."
@@ -955,7 +940,7 @@ knox_county: "Knox County"
  SRP_political_interference_category: "Political Operations"
  SRP_political_interference_category_desc: "Quiet operations to shape the rival power's internal politics, without moving forces or firing shots."
 
- USA_stoke_ef_separatism: "Back EF Separatist Movements"
+ USA_stoke_ef_separatism: "Back Federation Separatist Movements"
  USA_stoke_ef_separatism_desc: "American intelligence channels can quietly fund and amplify movements inside Federation that want stronger regional autonomy from H&A's grip. It won't fracture Europe overnight, but it makes Brussels harder to govern."
  USA_stoke_ef_separatism_tt: "Increases Federation separatist pressure and Sovereigntist party vote share."
  USA_groundwork_separatism_tt: "The pre-crisis Atlantic intelligence groundwork deepens the operation: additional separatist pressure and Sovereigntist support."
@@ -965,12 +950,12 @@ knox_county: "Knox County"
  USA_fund_ha_lobbying_external_tt: "Shifts the Federation's internal balance of power toward H&A Corporation."
 
  EFH_back_us_credibility: "Endorse American Crisis Leadership"
- EFH_back_us_credibility_desc: "A public statement of confidence in Washington's parasite response costs Federation little but gives the American government political breathing room. A stable United States is a more predictable partner."
- EFH_back_us_credibility_tt: "Improves USA public trust in federal institutions."
+ EFH_back_us_credibility_desc: "A public statement of confidence in Washington's parasite response costs the Federation little but gives the American government political breathing room. A stable United States is a more predictable partner."
+ EFH_back_us_credibility_tt: "Improves American public trust in federal institutions."
 
  EFH_undermine_us_narrative: "Leak American Crisis Failures"
  EFH_undermine_us_narrative_desc: "European intelligence has documented American mishandling of the parasite situation in exquisite detail. The files are embarrassing. Releasing them to international press would make Washington's job considerably harder."
- EFH_undermine_us_narrative_tt: "Damages USA public trust in federal institutions."
+ EFH_undermine_us_narrative_tt: "Damages American public trust in federal institutions."
 
 
  EFH_establish_atlantic_network: "Establish the Atlantic Network"
@@ -989,9 +974,9 @@ knox_county: "Knox County"
 
  EFH_propose_research_accord: "Propose Anti-Parasite Research Accord"
  EFH_propose_research_accord_desc: "A research-sharing arrangement with Washington. The Federation wants American bioanalysis data, Washington wants European field containment data, and neither side has said yet whether that is a trade."
- EFH_propose_research_accord_tt: "The Federation immediately begins consolidated research. USA receives a proposal event and may accept or decline."
+ EFH_propose_research_accord_tt: "The Federation immediately begins consolidated research. The United States receives a proposal event and may accept or decline."
 
- efh_geo.4.t: "EFH Proposes a Research Accord"
+ efh_geo.4.t: "Brussels Proposes a Research Accord"
  efh_geo.4.d: "Brussels is reaching out. The European Federation has proposed a formal exchange of parasite research data, consolidating American bioanalysis findings with European field containment records. The science case is sound. The political case is more complicated."
  efh_geo.4.a: "Accept. This is bigger than our rivalry."
  efh_geo.4.b: "Decline. We are not ready to share this data with Europe."
@@ -1007,5 +992,6 @@ knox_county: "Knox County"
  EFH_joint_research_accord_desc: "The Federation and the United States have agreed to pool parasite research data. Shared containment protocols and bioanalysis records are accelerating the scientific effort on both fronts."
 
  USA_joint_research_accord: "Joint Research Accord"
- USA_joint_research_accord_desc: "The United States has agreed to share parasite research data with EFH. European field containment records are filling gaps in American bioanalysis programmes."
+ USA_joint_research_accord_desc: "The United States has agreed to share parasite research data with the European Federation. European field containment records are filling gaps in American bioanalysis programs."
+
 

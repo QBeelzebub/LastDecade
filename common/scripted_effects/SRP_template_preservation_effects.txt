@@ -149,27 +149,27 @@ SRP_preserve_ai_templates_effect = {
 			limit = { is_ai = yes }
 			if = {
 				limit = { has_template = "Inborn Swarm" }
-				set_division_template_lock = { division_template = "Inborn Swarm" is_locked = yes }
+				set_division_template_lock = { division_template = "Inborn Swarm" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Inborn Swarm" force_allow_recruiting = yes }
 			}
 			if = {
 				limit = { has_template = "Rupter Pack" }
-				set_division_template_lock = { division_template = "Rupter Pack" is_locked = yes }
+				set_division_template_lock = { division_template = "Rupter Pack" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Rupter Pack" force_allow_recruiting = yes }
 			}
 			if = {
-				limit = { has_template = "Primitive Host" }
-				set_division_template_lock = { division_template = "Primitive Host" is_locked = yes }
+				limit = { has_template = "Primitive Host" has_tech = early_primitive_parasites }
+				set_division_template_lock = { division_template = "Primitive Host" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Primitive Host" force_allow_recruiting = yes }
 			}
 			if = {
-				limit = { has_template = "Pure Swarm" }
-				set_division_template_lock = { division_template = "Pure Swarm" is_locked = yes }
+				limit = { has_template = "Pure Swarm" has_tech = early_pure_parasites }
+				set_division_template_lock = { division_template = "Pure Swarm" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Pure Swarm" force_allow_recruiting = yes }
 			}
 			if = {
-				limit = { has_template = "Evolved Assault" }
-				set_division_template_lock = { division_template = "Evolved Assault" is_locked = yes }
+				limit = { has_template = "Evolved Assault" has_tech = advanced_pure_parasites }
+				set_division_template_lock = { division_template = "Evolved Assault" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Evolved Assault" force_allow_recruiting = yes }
 			}
 		}
@@ -184,15 +184,15 @@ SRP_preserve_ai_templates_effect = {
 				set_division_template_lock = { division_template = "Rupter Pack" is_locked = no }
 			}
 			if = {
-				limit = { has_template = "Primitive Host" }
+				limit = { has_template = "Primitive Host" has_tech = early_primitive_parasites }
 				set_division_template_lock = { division_template = "Primitive Host" is_locked = no }
 			}
 			if = {
-				limit = { has_template = "Pure Swarm" }
+				limit = { has_template = "Pure Swarm" has_tech = early_pure_parasites }
 				set_division_template_lock = { division_template = "Pure Swarm" is_locked = no }
 			}
 			if = {
-				limit = { has_template = "Evolved Assault" }
+				limit = { has_template = "Evolved Assault" has_tech = advanced_pure_parasites }
 				set_division_template_lock = { division_template = "Evolved Assault" is_locked = no }
 			}
 		}
@@ -233,22 +233,22 @@ SRP_preserve_ai_templates_effect = {
 			limit = { is_ai = yes }
 			if = {
 				limit = { has_template = "Knox Irregular" }
-				set_division_template_lock = { division_template = "Knox Irregular" is_locked = yes }
+				set_division_template_lock = { division_template = "Knox Irregular" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Knox Irregular" force_allow_recruiting = yes }
 			}
 			if = {
 				limit = { has_template = "Knox Vanguard" }
-				set_division_template_lock = { division_template = "Knox Vanguard" is_locked = yes }
+				set_division_template_lock = { division_template = "Knox Vanguard" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Knox Vanguard" force_allow_recruiting = yes }
 			}
 			if = {
 				limit = { has_template = "Knox Striker" }
-				set_division_template_lock = { division_template = "Knox Striker" is_locked = yes }
+				set_division_template_lock = { division_template = "Knox Striker" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Knox Striker" force_allow_recruiting = yes }
 			}
 			if = {
 				limit = { has_template = "Knox Phantom" }
-				set_division_template_lock = { division_template = "Knox Phantom" is_locked = yes }
+				set_division_template_lock = { division_template = "Knox Phantom" is_locked = no }
 				set_division_force_allow_recruiting = { division_template = "Knox Phantom" force_allow_recruiting = yes }
 			}
 		}

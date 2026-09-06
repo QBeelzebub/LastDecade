@@ -1,0 +1,130 @@
+
+
+IRS_expansion_strategy = {
+	allowed = { original_tag = IRS }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = africa         value = 30 }
+	ai_strategy = { type = area_priority  id = europe         value = 50 }
+	ai_strategy = { type = area_priority  id = middle_east    value = 40 }
+	ai_strategy = { type = area_priority  id = asia           value = 30 }
+	ai_strategy = { type = area_priority  id = south_america  value = 30 }
+	ai_strategy = { type = area_priority  id = north_america  value = 25 }
+	ai_strategy = { type = area_priority  id = pacific        value = 25 }
+	ai_strategy = { type = area_priority  id = oceania        value = 20 }
+}
+
+IRS_Kill_SAC = {
+	allowed = { original_tag = IRS }
+	enable = { has_war_with = SAC }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = invade id = SAC value = 150 }
+	ai_strategy = { type = conquer id = SAC value = 300 }
+
+	ai_strategy = { type = naval_dominance id = 61 value = 100 }
+	ai_strategy = { type = naval_dominance id = 62 value = 100 }
+	ai_strategy = { type = naval_dominance id = 66 value = 100 }
+
+	ai_strategy = { type = area_priority         id   = irs_pernambuco_landing  value = 400 }
+	ai_strategy = { type = invasion_unit_request area = irs_pernambuco_landing  value = 15  }
+	ai_strategy = { type = invasion_unit_request tag  = SAC                     value = 20  }
+
+	ai_strategy = { type = naval_invasion_focus  value = 50 }
+
+	ai_strategy = { type = role_ratio  id = marines  value = 30 }
+	ai_strategy = { type = build_army  id = marines  value = 40 }
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.15
+		states = { 274 558 777 }
+		area = irs_pernambuco_landing
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+}
+
+IRS_madagascar_landing_drive = {
+	allowed = { original_tag = IRS }
+	enable = { has_war_with = AFR }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_invasion_focus  value = 15 }
+	ai_strategy = { type = invade  id = AFR  value = 40 }
+
+	ai_strategy = { type = naval_dominance  id = 102  value = 100 }
+	ai_strategy = { type = naval_dominance  id = 103  value = 100 }
+
+	ai_strategy = { type = area_priority         id   = irs_madagascar_landing  value = 60 }
+	ai_strategy = { type = invasion_unit_request area = irs_madagascar_landing  value = 6  }
+}
+
+IRS_prepare_for_south_america = {
+	allowed = { original_tag = IRS }
+	enable = {
+		OR = {
+			has_completed_focus = IRS_south_american_vectors
+			has_war_with = SAC
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = prepare_for_war id = SAC value = 60 }
+	ai_strategy = { type = naval_invasion_focus            value = 30 }
+	ai_strategy = { type = naval_invasion_dominance_weight value = 30 }
+	ai_strategy = { type = ignore_army_incompetence value = 1 }
+}
+
+
+
+
+IRS_phase1_africa_aggression = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_country_flag = IRS_phase_1_active
+		NOT = { has_country_flag = IRS_phase_2_active }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = conquer    id = AFR  value = 200 }
+	ai_strategy = { type = antagonize id = AFR  value = 100 }
+}
+
+IRS_phase2_continental_aggression = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_country_flag = IRS_phase_2_active
+		NOT = { has_country_flag = IRS_phase_2_full_complete }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = EFH  value = 200 }
+	ai_strategy = { type = antagonize id = RSF  value = 150 }
+	ai_strategy = { type = antagonize id = CHN  value = 100 }
+	ai_strategy = { type = conquer    id = EFH  value = 200 }
+	ai_strategy = { type = conquer    id = RSF  value = 150 }
+}
+
+IRS_phase2_global_aggression = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_country_flag = IRS_phase_2_full_complete
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = EFH  value = 300 }
+	ai_strategy = { type = antagonize id = USA  value = 300 }
+	ai_strategy = { type = antagonize id = RSF  value = 250 }
+	ai_strategy = { type = antagonize id = JAP  value = 250 }
+	ai_strategy = { type = antagonize id = CHN  value = 200 }
+	ai_strategy = { type = antagonize id = SAC  value = 200 }
+	ai_strategy = { type = antagonize id = ASI  value = 150 }
+	ai_strategy = { type = antagonize id = OCE  value = 150 }
+	ai_strategy = { type = antagonize id = SWR  value = 100 }
+	ai_strategy = { type = conquer    id = EFH  value = 300 }
+	ai_strategy = { type = conquer    id = USA  value = 300 }
+	ai_strategy = { type = conquer    id = JAP  value = 250 }
+	ai_strategy = { type = conquer    id = RSF  value = 200 }
+}

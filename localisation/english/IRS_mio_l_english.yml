@@ -25,7 +25,7 @@
  IRS_iris_sovereign_genome_desc: "The Iris genome at full expression. What it produces sits in a different category from everything before it. The Bogle and Wraith lines are authorised."
 
  IRS_vitreous_beckon_mio: "Vitreous"
- IRS_vitreous_beckon_mio_desc: "A sub-surface supreme organism in orbit of the Iris. Vitreous does not operate on the surface. Its genome specialises in underground root architecture and the organisms that sustain the network from below."
+ IRS_vitreous_beckon_mio_desc: "A sub-surface supreme organism in orbit of the Iris. Its genome specialises in underground root architecture and the organisms that sustain the network from below."
 
  IRS_vitreous_genome_core: "Vitreous Genome: Foundation"
  IRS_vitreous_genome_core_desc: "The baseline expression of the Vitreous genome. Its organisms are built for staying power and endurance rather than raw aggression."
@@ -40,13 +40,13 @@
  IRS_vitreous_beckon_growth_desc: "Vitreous extends its root architecture further into production coordination. The Tozoon genus becomes viable for surface deployment."
 
  IRS_vitreous_acid_genome: "Acid Genome"
- IRS_vitreous_acid_genome_desc: "Concentrated acid secretion, refined through multiple underground generations. The Host genus emerges: a summons-capable organism with armor-melting projectors."
+ IRS_vitreous_acid_genome_desc: "Concentrated acid secretion, refined through multiple underground generations. The Host genus emerges: a summons-capable organism with armour-melting projectors."
 
  IRS_vitreous_deep_emergence: "Deep Emergence"
  IRS_vitreous_deep_emergence_desc: "The Vitreous genome at its deepest expression. The Herd genus, evolved from Hosts, can sustain prolonged surface engagement and coordinate further organisms from below."
 
  IRS_tromos_beckon_mio: "Tromos"
- IRS_tromos_beckon_mio_desc: "The Tromos supreme organism developed its genome consuming a civilisation slightly less advanced than humanity. Its organisms reflect that heritage: structured, siege-capable, built for systematic clearance of fortified positions."
+ IRS_tromos_beckon_mio_desc: "The Tromos supreme organism developed its genome consuming a civilisation slightly less advanced than this one. Its organisms reflect that heritage: structured, siege-capable, built for systematic clearance of fortified positions."
 
  IRS_tromos_genome_core: "Tromos Genome: Foundation"
  IRS_tromos_genome_core_desc: "The baseline expression of the Tromos genome. Unlike organisms of purely biological lineage, Tromos organisms carry an inherited instinct for organised assault."
@@ -58,7 +58,7 @@
  IRS_tromos_assault_strain_desc: "A faster, more aggressive breed optimised for rapid position clearance. Speed and forward pressure over durability."
 
  IRS_tromos_fortification_breach: "Fortification Breach"
- IRS_tromos_fortification_breach_desc: "The siege lineage reaches its functional peak. Hollowers emerge from this genome: organisms built to hollow through armored positions from the outside in."
+ IRS_tromos_fortification_breach_desc: "The siege lineage reaches its functional peak. Hollowers emerge from this genome: organisms built to hollow through armoured positions from the outside in."
 
  IRS_tromos_rapid_clearance: "Rapid Clearance"
  IRS_tromos_rapid_clearance_desc: "The assault strain matures into a doctrine of fast sweeping pressure. The Vigilante-class gains production authorisation through the Tromos network."
@@ -118,7 +118,7 @@
  IRS_sinic_coordinator_strain_desc: "Urban organisms evolved alongside a coordination instinct. They operate in tighter formation and hold together under fire better than open-terrain breeds."
 
  IRS_sinic_siege_adaptation: "Siege Adaptation"
- IRS_sinic_siege_adaptation_desc: "Years of forcing through barricaded positions have produced organisms with specific instincts for structural penetration. Armor and reinforced walls slow them less than expected."
+ IRS_sinic_siege_adaptation_desc: "Years of forcing through barricaded positions have produced organisms with specific instincts for structural penetration. Armour and reinforced walls slow them less than expected."
 
  IRS_sinic_swarm_coordination: "Swarm Coordination"
  IRS_sinic_swarm_coordination_desc: "The coordinator strain reaches operational maturity. Summoners are authorised: organisms capable of drawing others toward a target simultaneously across multiple approach vectors."
@@ -127,7 +127,7 @@
  IRS_sinic_vigilance_strain_desc: "Fortification expertise consolidated into a specialised genus. Vigilante-class organisms are authorised as living artillery within the Sinic root network."
 
  IRS_sinic_city_genome: "City Genome"
- IRS_sinic_city_genome_desc: "The Sinic genome fully expressed. The organisms it produces are built for the last environments humanity still defends: dense, fortified, and expensive to hold."
+ IRS_sinic_city_genome_desc: "The Sinic genome fully expressed. The organisms it produces are built for the last environments anyone still defends: dense, fortified, and expensive to hold."
 
  IRS_ferritic_mio: "Ferritic"
  IRS_ferritic_mio_desc: "A root beckon expressed through extreme membrane density. Its organisms trade speed for mass, layering themselves against anything the surviving militaries can still bring to bear."

@@ -2,8 +2,11 @@
 set_country_flag = is_parasite_nation
 set_rule = { can_join_factions = no }
 recruit_character = KNX_vagrant_one
+recruit_character = KNX_vagrant_one_reborn
 recruit_character = KNX_sci_land
 set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.7
 
 create_corps_commander = {
 	name = "Unit Designation K-4"

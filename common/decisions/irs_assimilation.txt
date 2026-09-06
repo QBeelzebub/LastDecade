@@ -7,7 +7,7 @@ irs_assimilation = {
 
 		highlight_states = {
 			highlight_states_trigger = {
-				is_owned_by = IRS
+				is_owned_by = ROOT
 				check_variable = {
 					var = iris_infestation_level
 					value = 99
@@ -33,7 +33,8 @@ irs_assimilation = {
 
 		target_trigger = {
 			FROM = {
-				is_owned_by = IRS
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
 				check_variable = {
 					var = iris_infestation_level
 					value = 99
@@ -51,7 +52,8 @@ irs_assimilation = {
 		available = {
 			tag = IRS
 			FROM = {
-				is_owned_by = IRS
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
 				check_variable = {
 					var = iris_infestation_level
 					value = 99
@@ -65,7 +67,7 @@ irs_assimilation = {
 		cancel_trigger = {
 			FROM = {
 				OR = {
-					NOT = { is_owned_by = IRS }
+					NOT = { is_owned_by = ROOT }
 					check_variable = {
 						var = iris_infestation_level
 						value = 50
@@ -75,35 +77,16 @@ irs_assimilation = {
 			}
 		}
 
-		cost = 100
+		cost = 75
 		days_remove = 14
 
 		remove_effect = {
-			FROM = {
-				add_core_of = IRS
-				add_dynamic_modifier = { modifier = irs_consumed_state }
-				set_state_flag = irs_state_consumed
-				remove_building = { type = industrial_complex level = 20 }
-				remove_building = { type = arms_factory level = 20 }
-				remove_building = { type = infrastructure level = 5 }
-				remove_building = { type = dockyard level = 20 }
-				remove_building = { type = synthetic_refinery level = 3 }
-				remove_building = { type = fuel_silo level = 20 }
-				remove_building = { type = radar_station level = 6 }
-				remove_building = { type = rocket_site level = 3 }
-				remove_building = { type = energy_infrastructure level = 1 }
-				remove_building = { type = industrial_infrastructure level = 1 }
-				add_building_construction = {
-					type = beckon_cluster
-					level = 1
-				}
-			}
-			set_variable = { var = IRS_ep_gain_tmp value = 25 }
-			IRS_grant_scaled_ep = yes
+			FROM = { SRP_absorb_state_for_IRS = yes }
+			custom_effect_tooltip = IRS_ep_gain_25_tt
 		}
 
 		ai_will_do = {
-			base = 800
+			base = 8
 		}
 	}
 
@@ -114,11 +97,11 @@ irs_nexus_relocation = {
 		icon = GFX_decision_generic_political_discourse
 
 		state_target = yes
-		on_map_mode = map_and_decisions_view
+		on_map_mode = map_only
 
 		highlight_states = {
 			highlight_states_trigger = {
-				is_owned_by = IRS
+				is_owned_by = ROOT
 				has_state_flag = irs_state_consumed
 				NOT = { is_capital = yes }
 			}
@@ -130,7 +113,8 @@ irs_nexus_relocation = {
 
 		target_trigger = {
 			FROM = {
-				is_owned_by = IRS
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
 				has_state_flag = irs_state_consumed
 				NOT = { is_capital = yes }
 			}
@@ -143,7 +127,8 @@ irs_nexus_relocation = {
 		available = {
 			tag = IRS
 			FROM = {
-				is_owned_by = IRS
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
 				has_state_flag = irs_state_consumed
 				NOT = { is_capital = yes }
 			}

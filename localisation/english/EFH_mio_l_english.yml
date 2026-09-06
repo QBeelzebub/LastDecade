@@ -25,7 +25,7 @@
  EFH_rheinmetall_t3b_desc: "New generation tungsten and DU penetrators matched to the 130mm cannon system. Armour penetration at combat ranges increases sharply, and follow-through energy enables reliable crew kill against current-generation MBTs."
 
  EFH_rheinmetall_t4: "Rheinmetall Combat System Integration"
- EFH_rheinmetall_t4_desc: "The full Rheinmetall package, combining active protection, next-generation fire control, and the 130mm cannon system into a single certified platform upgrade. Contractually administered by the Federation Ministry of Defence rather than H&A, strengthening federal procurement authority."
+ EFH_rheinmetall_t4_desc: "Active protection, next-generation fire control, and the 130mm cannon system, certified together as a single platform upgrade. Contractually administered by the Federation Ministry of Defence rather than H&A, strengthening federal procurement authority."
 
  EFH_knds_land_mio: "KNDS"
  EFH_knds_land_mio_desc: "The Franco-German joint venture responsible for the EMBT programme and successor to Nexter and Krauss-Maffei Wegmann. KNDS emphasises crew ergonomics, sustained rate of fire, and extended operational range over raw penetration figures."
@@ -58,7 +58,7 @@
  EFH_tkms_naval_initial_desc: "Established manufacturing tolerances and quality controls from the Type 212 programme. Baseline reliability improvement across all contracted hulls."
 
  EFH_tkms_root: "TKMS Hull Engineering"
- EFH_tkms_root_desc: "TKMS begins Federation naval contracts, applying decades of submarine and frigate construction expertise to improve overall fleet reliability and reduce construction costs."
+ EFH_tkms_root_desc: "Decades of submarine and frigate construction move under Federation contract. Hull quality goes up and yard costs come down."
 
  EFH_tkms_t2a: "Non-Magnetic Hull Composition"
  EFH_tkms_t2a_desc: "Widespread adoption of non-magnetic steel alloys and composite hull sections derived from the Type 212 programme. Hulls become more resilient and harder to acquire by magnetic anomaly detectors."
@@ -82,7 +82,7 @@
  EFH_naval_group_initial_desc: "Early production standards from the Porte-Avions Nouvelle Generation programme. Baseline reliability improvement across all contracted hulls."
 
  EFH_naval_group_root: "Naval Group Hull Engineering"
- EFH_naval_group_root_desc: "Naval Group begins Federation naval contracts, applying French carrier construction expertise to improve fleet reliability and reduce operational downtime."
+ EFH_naval_group_root_desc: "French carrier-building expertise enters Federation service. Ships spend less time in refit and more time at sea."
 
  EFH_naval_group_t2a: "Nuclear Carrier Propulsion"
  EFH_naval_group_t2a_desc: "K2 nuclear reactors derived from the Charles de Gaulle programme power the next carrier generation. Range is effectively unlimited, and the carrier air wing can sustain sorties without concern for fuel logistics."
@@ -91,7 +91,7 @@
  EFH_naval_group_t2b_desc: "The FDI frigate design is refined for Federation service, with emphasis on towed-array sonar, hull-mounted active sonar, and integrated torpedo defence. The result is a fleet escort that actively hunts submarines rather than simply avoiding them."
 
  EFH_naval_group_t3a: "Carrier Air Wing Integration"
- EFH_naval_group_t3a_desc: "Naval Group's carrier design philosophy is proven across Federation fleet operations. Carrier strength and sustained sortie rate increase substantially, and the nuclear propulsion plant eliminates range as a planning constraint."
+ EFH_naval_group_t3a_desc: "Naval Group's carrier design philosophy is proven across Federation fleet operations. Carrier strength and sustained sortie rate increase substantially."
 
  EFH_naval_group_t3b: "Barracuda Submarine Integration"
  EFH_naval_group_t3b_desc: "Naval Group's Barracuda-class SSN design is incorporated into Federation fleet architecture, bringing nuclear-powered submarine capability to the anti-submarine screen and substantially improving underwater detection."
@@ -100,7 +100,7 @@
  EFH_naval_group_t4_desc: "Nuclear carriers, ASW frigates and Barracuda submarines finally operate as one instrument rather than three procurement lines. Range stops being a planning constraint."
 
  EFH_airbus_aerospace_mio: "Airbus Defence & Space"
- EFH_airbus_aerospace_mio_desc: "The European aerospace consortium responsible for the Eurofighter, the A400M, and the FCAS next-generation fighter programme. Airbus brings scale, interoperability, and deep government integration that no purely private competitor can match."
+ EFH_airbus_aerospace_mio_desc: "The European aerospace consortium responsible for the Eurofighter, the A400M, and the FCAS next-generation fighter programme. French and German state shareholding gives Airbus a procurement position no purely private competitor can match."
 
  EFH_airbus_aero_initial: "Eurofighter Fleet Baseline"
  EFH_airbus_aero_initial_desc: "Consolidated Eurofighter production and maintenance contracts establish baseline production efficiency and component reliability across the fleet."
@@ -148,7 +148,7 @@
  EFH_diehl_t4_desc: "Full certification of the IRIS-T family as the Federation standard air defence solution. Suppressing a Diehl-covered formation from the air costs more sorties than most air arms have."
 
  EFH_mbda_ordnance_mio: "MBDA"
- EFH_mbda_ordnance_mio_desc: "The European guided-weapons consortium, responsible for the Exocet, the Meteor, and the SPEAR family of precision munitions. MBDA does not build artillery or armour: it makes everything else hit what it is aimed at, from any range, against any target."
+ EFH_mbda_ordnance_mio_desc: "The European guided-weapons consortium, responsible for the Exocet, the Meteor, and the SPEAR family of precision munitions. Artillery and armour are other firms' business. MBDA makes everything else hit what it is aimed at, from any range, against any target."
 
  EFH_mbda_ord_initial: "Precision Munitions Baseline"
  EFH_mbda_ord_initial_desc: "Consolidated MBDA production standards applied to Federation ordnance contracts. Baseline cost reduction across the guided and unguided munitions portfolio."
@@ -262,7 +262,7 @@
  EFH_ha_aero_root_desc: "H&A Aerospace applies a shared engineering baseline across all production contracts. Components are standardised and built to last under field conditions."
 
  EFH_ha_aero_t2a: "The European Wing Configuration"
- EFH_ha_aero_t2a_desc: "H&A Aerospace formalises its delta canard doctrine. The configuration trades some top-end speed for exceptional maneuverability, and H&A's manufacturing refinements bring the production cost premium back under control."
+ EFH_ha_aero_t2a_desc: "H&A Aerospace formalises its delta canard doctrine. The configuration trades some top-end speed for exceptional manoeuvrability, and H&A's manufacturing refinements bring the production cost premium back under control."
 
  EFH_ha_aero_t2b: "Advanced Avionics Suite"
  EFH_ha_aero_t2b_desc: "Sensor integration programme derived from Beckon pattern mapping. H&A Aerospace equips its aircraft with targeting and strike systems that outperform anything military contractors were producing before 2020."
@@ -304,7 +304,7 @@
  EFH_ha_ord_t4_desc: "H&A Ordnance consolidates its artillery and anti-armour research into a unified operational doctrine. The EF's ground divisions receive better weapons at lower cost."
 
  EFH_ha_ord_t5_nuclear: "Nuclear Artillery Programme"
- EFH_ha_ord_t5_nuclear_desc: "The yield is small. The delivery is precise. The authorisation was difficult to obtain. H&A Ordnance's nuclear artillery rounds represent a threshold that, once crossed, changes the character of the EF's ground war permanently."
+ EFH_ha_ord_t5_nuclear_desc: "The yield is small. The delivery is precise. The authorisation was difficult to obtain. From here on, the EF's ground war includes tactical nuclear artillery."
 
  EFH_ha_logistics_mio: "H&A Logistics Division"
  EFH_ha_logistics_mio_desc: "H&A's logistics arm. Manages motorised transport, mechanised vehicle programmes, and field support equipment procurement for the European Federation. When the supply lines hold, the EF holds."
@@ -393,7 +393,7 @@
   efh_hna.3.a: "Our legal team will handle it."
 
   efh_hna.4.t: "H&A Hyperbiology: Division Established"
-  efh_hna.4.d: "H&A Corporation has formally established the Hyperbiology Division, tasked with conducting atmospheric and biological research into the SF6 anomalies at the centre of the EF lawsuit. Publicly, this is a scientific defence. In practice, Hyperbiology is being asked to document something that no institution has properly studied. The MIO is now available for assignment in the contractor interface."
+  efh_hna.4.d: "H&A Corporation has formally established the Hyperbiology Division, tasked with conducting atmospheric and biological research into the SF6 anomalies at the centre of the EF lawsuit. Publicly, this is a scientific defence. In practice, Hyperbiology is being asked to document something that no institution has properly studied. Hyperbiology is ready to take Federation contracts."
   efh_hna.4.a: "Science will settle this."
 
   efh_hna.5.t: "SF6 Case: Competing Datasets"
@@ -433,10 +433,10 @@
  EFH_dyadic_contained_cluster_seeding_desc: "H&A engineers a fully contained biomass production facility. Dyadic organisms are cultivated under controlled laboratory conditions, generating a stable supply of parasite biomass with no risk of wild infestation spreading to surrounding territories."
 
  EFH_dyadic_combat_strain_refinement: "Combat Strain Refinement"
- EFH_dyadic_combat_strain_refinement_desc: "The Dyadic Striker sub-caste is isolated and selectively bred for frontline combat. Unlike generalist Dyadic organisms, Strikers are purpose-engineered for aggressive field deployment alongside human anti-armor elements."
+ EFH_dyadic_combat_strain_refinement_desc: "The Dyadic Striker sub-caste is isolated and selectively bred for frontline combat. Unlike generalist Dyadic organisms, Strikers are purpose-engineered for aggressive field deployment alongside human anti-armour elements."
 
  EFH_dyadic_two_species_army: "Two Species Army"
- EFH_dyadic_two_species_army_desc: "The integration of Dyadic forces into the Federation's military doctrine is complete. Human and Dyadic units operate as a unified field formation, each compensating for the other's tactical limitations. H&A's managed symbiosis programme has produced a military capability no other nation can replicate. Requires the Vagrant to be alive and serving in an advisory capacity, this doctrine cannot function without active guidance."
+ EFH_dyadic_two_species_army_desc: "The integration of Dyadic forces into the Federation's military doctrine is complete. Human and Dyadic units operate as a unified field formation, each compensating for the other's tactical limitations. H&A's managed symbiosis programme has produced a military capability no other nation can replicate. Requires the Vagrant to be alive and serving in an advisory capacity."
 
  EFH_contained_beckon_cluster: "Contained Beckon Cluster"
  EFH_contained_beckon_cluster_desc: "A sealed H&A biomass cultivation facility. Dyadic organisms are maintained in controlled conditions, producing parasite biomass for the Federation's integrated force structures. Unlike wild beckon clusters, this facility poses no infestation risk to the surrounding population."
@@ -471,7 +471,7 @@
  EFH_dyadic_striker_tech_desc: "The Dyadic Striker sub-caste is cleared for field deployment."
 
  dyadic_striker: "Dyadic Striker Pack"
- dyadic_striker_desc: "An aggressive Dyadic sub-caste selectively bred by H&A for frontline assault. Trained to operate alongside human anti-armor elements, Dyadic Strikers prioritise armored target suppression while maintaining docility toward allied personnel."
+ dyadic_striker_desc: "An aggressive Dyadic sub-caste selectively bred by H&A for frontline assault. Trained to operate alongside human anti-armour elements, Dyadic Strikers prioritise armoured target suppression while maintaining docility toward allied personnel."
 
  EFH_dyadic_unlock_paragon: "Paragon"
  EFH_dyadic_unlock_paragon_desc: "H&A has cleared the Paragon organism for field deployment."
@@ -504,7 +504,7 @@
  EFH_saab_t3b_desc: "Active electronically scanned array radars are fitted across the fighter line, dramatically improving detection range and resistance to jamming. Air superiority is contested at distances the previous generation could not reach."
 
  EFH_saab_t4: "Saab Integrated Air System"
- EFH_saab_t4_desc: "The complete Saab package: an agile fighter line, AESA sensors, and the GlobalEye picture fused into a single networked air system that sees first and strikes first."
+ EFH_saab_t4_desc: "An agile fighter line, AESA sensors, and the GlobalEye picture fused into a single networked air system that sees first and strikes first."
 
  EFH_heckler_koch_infantry_mio: "Heckler & Koch"
  EFH_heckler_koch_infantry_mio_desc: "Germany's premier small-arms manufacturer, supplier of the standard service rifles of half of Europe. H&K combines exacting machining standards with modern soldier-systems integration."
@@ -531,10 +531,12 @@
  EFH_hk_t3b_desc: "Next-generation composite plate and trauma protection sharply reduce infantry losses under fire, keeping formations at strength deeper into an engagement."
 
  EFH_hk_t4: "H&K Infantry Combat System"
- EFH_hk_t4_desc: "The full H&K package: precise, reliable small arms paired with modern protection and soldier-systems integration, certified across Federation line formations."
+ EFH_hk_t4_desc: "Precise, reliable small arms paired with modern protection and soldier-systems integration, certified across Federation line formations."
 
  EFH_mio_funding: "H&A Research Funding"
  EFH_mio_funding_desc: "Decisions related to funding H&A Hyperbiology research."
  EFH_fund_hyperbiology: "Allocate Industrial Budget to Hyperbiology"
  EFH_fund_hyperbiology_desc: "Redirect a major portion of our GDP to fund Hyperbiology operations."
 
+
+ EFH_hyperbiology_disclosure_tech_bonus: "Hyperbiology Disclosure"

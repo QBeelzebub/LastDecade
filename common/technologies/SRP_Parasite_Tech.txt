@@ -478,6 +478,8 @@ technologies = {
 			adapted_burrower
 			adapted_bolster
 			adapted_summoner
+			srp_summoner_regimental
+			srp_bolster_regimental
 		}
 
 		enable_equipments = {
@@ -728,8 +730,13 @@ technologies = {
 		start_year = 2022
 		force_use_small_tech_layout = yes
 
+		naval_invasion_capacity = 100
+		naval_invasion_plan_cap = 2
+		naval_invasion_division_cap = 8
+
 		enable_equipments = {
 			IRS_devourer_hull_1
+			IRS_colossant_hull_1
 		}
 		enable_equipment_modules = {
 			IRS_acid_mantle

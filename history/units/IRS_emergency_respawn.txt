@@ -1,21 +1,21 @@
 units = {
 	division = {
 		name = "Resurgent Brood"
-		division_template = "Inborn Swarm"
+		division_template = "Rupter Pack"
 		location = 8039
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "Resurgent Brood"
-		division_template = "Inborn Swarm"
+		division_template = "Rupter Pack"
 		location = 1951
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "Resurgent Brood"
-		division_template = "Inborn Swarm"
+		division_template = "Rupter Pack"
 		location = 10919
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7

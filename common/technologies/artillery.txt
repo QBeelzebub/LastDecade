@@ -406,6 +406,7 @@ technologies = {
 		enable_subunits = {
 			srp_atgm_brigade
 			srp_atgm_support
+			srp_atgm_regimental
 		}
 
 		research_cost = 1.0

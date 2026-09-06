@@ -139,6 +139,7 @@ technologies = {
 
 		enable_equipments = {
 			srp_ifv_equipment_1
+			srp_wheeled_ifv_equipment_1
 		}
 		enable_subunits = {
 			motorized

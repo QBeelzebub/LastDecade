@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0d1623"/>
+  <!-- Gold border -->
+  <rect x="4" y="4" width="120" height="120" fill="none" stroke="#c9a52a" stroke-width="3"/>
+
+  <!-- Flask neck and rim -->
+  <rect x="55" y="28" width="18" height="4" fill="#c9a52a"/>
+  <rect x="59" y="32" width="10" height="14" fill="#c9a52a"/>
+
+  <!-- Flask body -->
+  <polygon points="59,46 42,88 86,88 69,46" fill="#c9a52a"/>
+  <!-- Liquid -->
+  <polygon points="46.9,76 81.1,76 85.2,86 42.8,86" fill="#0d1623"/>
+  <circle cx="58" cy="81" r="2.5" fill="#c9a52a"/>
+  <circle cx="68" cy="80.5" r="2" fill="#c9a52a"/>
+
+  <!-- Neck bubbles -->
+  <circle cx="64" cy="40" r="1.8" fill="#0d1623"/>
+  <circle cx="64" cy="35" r="1.4" fill="#0d1623"/>
+</svg>

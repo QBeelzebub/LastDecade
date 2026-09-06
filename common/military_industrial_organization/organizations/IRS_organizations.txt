@@ -1,11 +1,26 @@
 
 
 IRS_iris_beckon_mio = {
-	icon = GFX_idea_generic_research_organization
+	icon = GFX_idea_generic_electronics_concern_2
 
 	allowed = { original_tag = IRS }
 
-	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	equipment_type = {
+		basic_parasite_equipment
+		pure_parasite_equipment
+		preeminent_parasite_equipment
+		rupter_equipment
+		mangler_equipment
+		primitive_longarms_equipment
+		primitive_reeker_equipment
+		primitive_summoner_equipment
+		primitive_manducater_equipment
+		primitive_tozoon_equipment
+		vigilante_battery_equipment
+		monarch_hunter_equipment
+		haunter_titan_equipment
+		srp_marauder_equipment
+	}
 	research_categories = { infantry_weapons }
 
 	initial_trait = {
@@ -156,7 +171,7 @@ IRS_iris_beckon_mio = {
 
 
 IRS_vitreous_beckon_mio = {
-	icon = GFX_idea_generic_research_organization
+	icon = GFX_idea_generic_electronics_concern_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -165,7 +180,7 @@ IRS_vitreous_beckon_mio = {
 		}
 	}
 
-	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment host_parasite_equipment herd_parasite_equipment }
 	research_categories = { infantry_weapons }
 
 	initial_trait = {
@@ -301,7 +316,7 @@ IRS_vitreous_beckon_mio = {
 
 
 IRS_tromos_beckon_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -310,7 +325,7 @@ IRS_tromos_beckon_mio = {
 		}
 	}
 
-	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment }
+	equipment_type = { basic_parasite_equipment pure_parasite_equipment preeminent_parasite_equipment hollower_equipment scourer_equipment }
 	research_categories = { infantry_weapons }
 
 	initial_trait = {
@@ -448,7 +463,7 @@ IRS_tromos_beckon_mio = {
 
 
 IRS_boreic_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -590,7 +605,7 @@ IRS_boreic_mio = {
 
 
 IRS_alclidic_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -734,7 +749,7 @@ IRS_alclidic_mio = {
 
 
 IRS_sinic_mio = {
-	icon = GFX_idea_generic_infantry_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -879,7 +894,7 @@ IRS_sinic_mio = {
 
 
 IRS_ferritic_mio = {
-	icon = GFX_idea_generic_armor_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -902,7 +917,7 @@ IRS_ferritic_mio = {
 	trait = {
 		token = IRS_ferritic_genome_core
 		name = IRS_ferritic_genome_core
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 2 y = 0 }
 
@@ -922,7 +937,7 @@ IRS_ferritic_mio = {
 	trait = {
 		token = IRS_ferritic_membrane_hardening
 		name = IRS_ferritic_membrane_hardening
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = -1 y = 1 }
 		relative_position_id = IRS_ferritic_genome_core
@@ -938,7 +953,7 @@ IRS_ferritic_mio = {
 	trait = {
 		token = IRS_ferritic_crushing_musculature
 		name = IRS_ferritic_crushing_musculature
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 1 y = 1 }
 		relative_position_id = IRS_ferritic_genome_core
@@ -955,7 +970,7 @@ IRS_ferritic_mio = {
 	trait = {
 		token = IRS_ferritic_bastion_genome
 		name = IRS_ferritic_bastion_genome
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = 0 y = 1 }
 		relative_position_id = IRS_ferritic_membrane_hardening
@@ -975,7 +990,7 @@ IRS_ferritic_mio = {
 	trait = {
 		token = IRS_ferritic_siege_genome
 		name = IRS_ferritic_siege_genome
-		icon = GFX_generic_mio_department_icon_tank_medium
+		icon = GFX_generic_mio_department_icon_tank_medium_tank
 
 		position = { x = 0 y = 1 }
 		relative_position_id = IRS_ferritic_crushing_musculature
@@ -995,7 +1010,7 @@ IRS_ferritic_mio = {
 	trait = {
 		token = IRS_ferritic_apex_plating
 		name = IRS_ferritic_apex_plating
-		icon = GFX_generic_mio_department_icon_tank_heavy
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank
 
 		position = { x = 1 y = 1 }
 		relative_position_id = IRS_ferritic_bastion_genome
@@ -1017,7 +1032,7 @@ IRS_ferritic_mio = {
 }
 
 IRS_tethysic_mio = {
-	icon = GFX_idea_generic_navy_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {
@@ -1042,7 +1057,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_genome_core
 		name = IRS_tethysic_genome_core
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 		organization_modifier = {
@@ -1061,7 +1076,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_feeding_frenzy
 		name = IRS_tethysic_feeding_frenzy
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = IRS_tethysic_genome_core
@@ -1077,7 +1092,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_deep_adaptation
 		name = IRS_tethysic_deep_adaptation
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = IRS_tethysic_genome_core
@@ -1094,7 +1109,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_swarm_hunger
 		name = IRS_tethysic_swarm_hunger
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = IRS_tethysic_feeding_frenzy
@@ -1120,7 +1135,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_ocean_mastery
 		name = IRS_tethysic_ocean_mastery
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = IRS_tethysic_deep_adaptation
@@ -1139,7 +1154,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_abyssant_genesis
 		name = IRS_tethysic_abyssant_genesis
-		icon = GFX_generic_mio_department_icon_ship_big
+		icon = GFX_generic_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = IRS_tethysic_swarm_hunger
@@ -1173,7 +1188,7 @@ IRS_tethysic_mio = {
 
 
 srp_yelloweye_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { is_parasite_nation = yes }
 	available = { always = yes }
@@ -1316,7 +1331,7 @@ srp_yelloweye_mio = {
 
 
 IRS_plutonic_mio = {
-	icon = GFX_idea_generic_air_organization
+	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = { original_tag = IRS }
 	available = {

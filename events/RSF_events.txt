@@ -5,7 +5,7 @@ country_event = {
 	id = rsf.1
 	title = rsf.1.t
 	desc = rsf.1.d
-	picture = GFX_report_event_generic_collapse
+	picture = GFX_report_event_generic_ruins
 
 	is_triggered_only = yes
 
@@ -35,7 +35,7 @@ country_event = {
 	id = rsf.2
 	title = rsf.2.t
 	desc = rsf.2.d
-	picture = GFX_report_event_generic_collapse
+	picture = GFX_report_event_generic_ruins
 
 	is_triggered_only = yes
 
@@ -159,7 +159,7 @@ country_event = {
 	id = rsf.6
 	title = rsf.6.t
 	desc = rsf.6.d
-	picture = GFX_report_event_war_news
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 

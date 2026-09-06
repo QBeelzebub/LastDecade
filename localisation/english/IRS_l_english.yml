@@ -4,15 +4,15 @@
  IRS_archetype_iris: "Lineage: Iris"
  IRS_archetype_iris_desc: "The hive grows along no single specialisation. A balanced lineage, capable in every register and peerless in none. The default expression of the Iris organism, and the easiest to sustain."
  IRS_archetype_vitreous: "Lineage: Vitreous"
- IRS_archetype_vitreous_desc: "The hive commits to the subterranean. Root lattices, acid digestion, and infestation spread before open war. Patient, defensive, and pervasive, it gives ground slowly and takes it permanently."
+ IRS_archetype_vitreous_desc: "The hive commits to the subterranean. Root lattices, acid digestion, and infestation spread before open war. It gives ground slowly and takes it permanently, patient in defence and constant in spread."
  IRS_archetype_tromos: "Lineage: Tromos"
  IRS_archetype_tromos_desc: "The hive commits to the assault. Siege organisms, fortification breach, and rapid clearance of dense ground. It strikes overwhelmingly and breaks easily, a hammer with no shield."
  IRS_archetype_adaptive: "Lineage: Adaptive"
  IRS_archetype_adaptive_desc: "The hive refuses to commit. It cultivates a little of every lineage and the peak of none, trading apex strength for reach and flexibility. It is never caught without an answer, and never holds the strongest one."
  IRS_archetype_unchecked: "Lineage: Unchecked"
- IRS_archetype_unchecked_desc: "The hive grows without restraint. Every lineage expresses at once, with no coordinating intelligence holding it back. Everything is available to it, and nothing about it is controlled."
+ IRS_archetype_unchecked_desc: "The hive grows without restraint. Every lineage expresses at once, with no coordinating intelligence holding it back. Everything is available to it, and none of it is aimed."
  IRS_archetype_telotic: "Lineage: Telotic"
- IRS_archetype_telotic_desc: "The hive commits to convergence. Every lineage the network has ever produced expresses within the same organism, fully coordinated rather than competing for resources. Where the unchecked growth is raw and uncontrolled, this is the same totality with purpose behind it: nothing held back, and nothing wasted."
+ IRS_archetype_telotic_desc: "The hive commits to convergence. Every lineage the network has ever produced expresses within the same organism, fully coordinated rather than competing for resources. Where the unchecked growth is raw and uncontrolled, this is the same totality with purpose behind it."
  IRS_archetype_iris_spirit: "Iris Lineage"
  IRS_archetype_iris_spirit_desc: "Balanced expression. Modest gains across attack, defence, and organisation, with no compensating weakness."
  IRS_archetype_vitreous_spirit: "Vitreous Lineage"
@@ -30,7 +30,7 @@
  basic_parasites: "Inborn parasites"
  basic_parasites_desc: "These inborn parasites are the first to spread the infection. Limited combat capability, weak to even a kitchen knife. They will get stronger."
  beckon: "Beckon"
- beckon_desc: "A rooted parasite structure, a physical appendage of the Source sent from underground. Infests the surrounding territory with Biomass, spawning Iris forces and making occupation deeply hostile to any non-Iris presence. Fire remains its primary weakness."
+ beckon_desc: "A rooted parasite structure, a physical appendage of the Source sent from underground. Infests the surrounding territory with biomass, spawning Iris forces and making occupation deeply hostile to any non-Iris presence. Fire remains its primary weakness."
 
  beckon_iris_buff: "Beckon Root Network"
  beckon_iris_buff_desc: "Beckon root systems are present in this state, bolstering parasite rejuvenation, improving soil nutrition and accelerating territorial infestation. Citizens are dying (75/day)."
@@ -50,7 +50,7 @@
  irs.1.d: "The dominant powers of this world have turned on one another. Attention is divided. Defences are fractured. The infestation can spread further while they bleed."
  irs.1.a: "Expand."
 
- irs_root_beckon_discovery_desc: "Decisions related to locating and unlocking Earth-adapted root beckon genomes."
+ irs_root_beckon_discovery_desc: "Decisions for locating and unlocking Earth-adapted root beckon genomes."
  infestation_decision: "Infestation Operations"
  infestation_decision_desc: "Coordinated efforts to contain, damage, or eradicate Iris Beckon structures.\n\n§YContested states:§! [?LD_contested_states|0]\n§YContainment standing:§! [GetLDContainmentTier]\n\nA state is contested once its infestation passes 25, which is the point at which it begins seeding the states next to it."
  EFH_civilian_measures: "Civilian Decisions"
@@ -72,6 +72,13 @@
  BECKON_STAGE_I: "Stage I: Emerging"
  BECKON_STAGE_NONE: "Residual Infestation"
 
+ hq_overseer_node: "Overseer Node"
+ hq_overseer_node_desc: "Command organism fielded inside an army headquarters. Holds the local signal picture and passes orders down the swarm."
+ hq_dispatcher_relay: "Dispatcher Relay"
+ hq_dispatcher_relay_desc: "Relay tissue that keeps an army in contact with the Dispatcher across distance."
+ hq_naval_relay: "Landing Relay"
+ hq_naval_relay_desc: "Relay tissue tuned for water crossings. Holds coordination through a landing, when signal is at its worst."
+
  rupter_pack: "Rupter Pack"
  rupter_pack_desc: "Fast inborn attackers used to overrun isolated resistance and spread local infestation."
  mangler_pack: "Mangler Pack"
@@ -81,7 +88,7 @@
  primitive_reeker: "Primitive Reeker"
  primitive_reeker_desc: "Fast hunter-killers that do not break off a pursuit once it has started."
  primitive_summoner: "Primitive Summoner"
- primitive_summoner_desc: "Coordinator organism that amplifies the swarm, sustains the local battle mass, and drags fights out in the Iris' favour."
+ primitive_summoner_desc: "Coordinator organism that amplifies the swarm, sustains the local battle mass, and drags fights out in the Iris's favour."
  primitive_manducater: "Primitive Manducater"
  primitive_manducater_desc: "Ambush predators specialised for broken terrain, darkness, and sudden close assault."
  primitive_tozoon: "Primitive Tozoon"
@@ -93,11 +100,11 @@
  haunter_titan: "Haunter Titan"
  haunter_titan_desc: "Massive elite warform serving as the apex linebreaker of the Iris ground army."
  adapted_warden: "Adapted Warden"
- adapted_warden_desc: "Designable Phase Five warform encased in Beckon gel that defeats conventional ballistics entirely. Shockwave-capable. Built to destroy armored assets."
+ adapted_warden_desc: "Designable Phase Five warform encased in Beckon gel that defeats conventional ballistics entirely. Shockwave-capable. Built to destroy armoured assets."
  srp_marauder: "Marauder"
  srp_marauder_desc: "Phase Five organism built around area-effect shockwave attacks. Grouped formations and infrastructure take the worst of it. Prioritises destruction over defence."
  adapted_burrower: "Adapted Burrower"
- adapted_burrower_desc: "Designable tunneling ambush organism. Surfaces beneath enemy lines for a brutal alpha strike before withdrawing underground."
+ adapted_burrower_desc: "Designable tunnelling ambush organism. Surfaces beneath enemy lines for a brutal alpha strike before withdrawing underground."
  adapted_bolster: "Adapted Bolster"
  adapted_bolster_desc: "Designable heavy bruiser carrying a resonance organ that hardens and accelerates the local swarm's coordination."
  adapted_summoner: "Adapted Summoner"
@@ -142,11 +149,11 @@
  advanced_preeminent_parasites: "Advanced Preeminent Parasites"
  advanced_preeminent_parasites_desc: "Fully developed elite warforms with the strength to crack defended fronts by force."
  late_preeminent_parasites: "Phase Five Emergence"
- late_preeminent_parasites_desc: "The emergence of Phase Five organisms marks a new order of threat. The Adapted line and Marauders dwarf anything encountered before, with Beckon gel coating that renders conventional arms ineffective and shockwave attacks that can cripple armored columns."
+ late_preeminent_parasites_desc: "The emergence of Phase Five organisms marks a new order of threat. The Adapted line and Marauders dwarf anything encountered before, with Beckon gel coating that renders conventional arms ineffective and shockwave attacks that can cripple armoured columns."
  nexus_mastery: "Nexus Mastery"
  nexus_mastery_desc: "Deeper control of Beckons, Dispatchers, and hive-growth logistics tightens the entire Iris war machine."
  ancient_manifestation: "Ancient Manifestation"
- ancient_manifestation_desc: "At this stage the Iris no longer merely grows armies. It invites ancient expressions of the infestation into the war itself."
+ ancient_manifestation_desc: "At this stage the Iris goes beyond growing armies: ancient expressions of the infestation enter the war itself."
  apex_preeminent_parasites: "Apex Manifestation"
  apex_preeminent_parasites_desc: "The pinnacle of Phase Five biology. Colony Carriers, Dreadnauts, and Overlords are organisms built to anchor and break entire fronts."
 
@@ -167,7 +174,7 @@
 
  basic_parasite_equipment: "Basic Parasite Biomass"
  basic_parasite_equipment_1: "Basic Parasite Biomass"
- basic_parasite_equipment_desc: "Foundational unspecialized biomass required for production of all parasites."
+ basic_parasite_equipment_desc: "Unspecialised biomass required for the production of all parasites."
  pure_parasite_equipment: "Pure Parasite Biomass"
  pure_parasite_equipment_desc: "Refined biological matter suitable for stabilising and reproducing Pure-tier warforms."
  pure_parasite_equipment_1: "Pure Parasite Biomass"
@@ -228,7 +235,7 @@
  IRS_vitreous_auto_1: "Deep Lattice"
  IRS_vitreous_auto_1_desc: "Vitreous extends its root network outward, accelerating the growth of beckon infrastructure across the Iris's holdings."
  IRS_vitreous_auto_2: "Subterranean Web"
- IRS_vitreous_auto_2_desc: "Centuries of tunneling have made Vitreous a master of underground logistics. Its knowledge passes through the Iris, reducing the burden on surface supply lines."
+ IRS_vitreous_auto_2_desc: "Centuries of tunnelling have made Vitreous a master of underground logistics. Its knowledge passes through the Iris, reducing the burden on surface supply lines."
  IRS_vitreous_auto_3: "The Emergence"
  IRS_vitreous_auto_3_desc: "Vitreous stirs fully. Its genome propagates through the Iris's ground forces, hardening their defensive instinct."
 
@@ -241,7 +248,7 @@
  IRS_tromos_auto_1: "Hollow Networks"
  IRS_tromos_auto_1_desc: "Tromos absorbed the infrastructure of an entire civilisation. That knowledge now flows into the Iris, easing the burden of movement and supply."
  IRS_tromos_auto_2: "Structural Memory"
- IRS_tromos_auto_2_desc: "Tromos consumed fortresses, command bunkers, defensive lines. Its genome carries the memory of how they were broken. IRS forces inherit that knowledge."
+ IRS_tromos_auto_2_desc: "Tromos consumed fortresses, command bunkers, defensive lines. Its genome carries the memory of how they were broken. Iris forces inherit that knowledge."
  IRS_tromos_auto_3: "The Template"
  IRS_tromos_auto_3_desc: "Tromos offers the Iris a glimpse of a completed world."
 
@@ -251,14 +258,14 @@
  IRS_vitreous_root_lattice: "Root Lattice"
  IRS_vitreous_root_lattice_desc: "Vitreous's subterranean root networks accelerate the growth of beckon infrastructure across infested territories."
  IRS_vitreous_subterranean_web: "Subterranean Web"
- IRS_vitreous_subterranean_web_desc: "Vitreous tunneling doctrine reduces surface exposure for IRS logistics, cutting supply consumption and limiting attrition losses."
+ IRS_vitreous_subterranean_web_desc: "Vitreous tunnelling doctrine reduces surface exposure for hive logistics, cutting supply consumption and limiting attrition losses."
  IRS_vitreous_the_emergence: "The Emergence"
- IRS_vitreous_the_emergence_desc: "Vitreous genome propagation hardens IRS ground forces, improving defensive capacity and deliberate planning."
+ IRS_vitreous_the_emergence_desc: "Vitreous genome propagation hardens the hive's ground forces, improving defensive capacity and deliberate planning."
 
  IRS_tromos_hollow_networks: "Hollow Networks"
- IRS_tromos_hollow_networks_desc: "The absorbed road and supply network of a dead civilisation feeds IRS logistics, reducing consumption and improving movement."
+ IRS_tromos_hollow_networks_desc: "The absorbed road and supply network of a dead civilisation feeds hive logistics, reducing consumption and improving movement."
  IRS_tromos_structural_memory: "Structural Memory"
- IRS_tromos_structural_memory_desc: "Tromos has broken fortifications on a planetary scale. Its genome translates into raw breakthrough capacity for IRS assault forces."
+ IRS_tromos_structural_memory_desc: "Tromos has broken fortifications on a planetary scale. Its genome translates into raw breakthrough capacity for the hive's assault forces."
  IRS_tromos_the_template: "The Template"
  IRS_tromos_the_template_desc: "A civilisation's worth of digested knowledge accelerates the Iris's own research, compressing centuries of adaptation into years."
 
@@ -277,11 +284,13 @@
  IRS_devourer_hull_2: "Adapted Devourer Swarm"
  IRS_abyssant_hull: "Abyssant"
  IRS_abyssant_hull_1: "Abyssant Mk.I"
+ IRS_colossant_hull: "Colossant"
+ IRS_colossant_hull_1: "Colossant Mk.I"
 
  devourer_emergence: "Aquatic Parasite Emergence"
  devourer_emergence_desc: "The Iris has catalogued a distinct parasite lineage that hunts in open water. These devourer swarms evolved to pursue ocean prey: schools of fish, marine megafauna, and anything else that moves. They strip shipping routes bare."
  adapted_devourer_strain: "Adapted Devourer Strain"
- adapted_devourer_strain_desc: "Observation of devourers attacking vessels has given the Iris a foundation to direct their evolution. The acid composition shifts to eat through painted steel. Pack signaling grows sharper. These are no longer incidental threats to shipping."
+ adapted_devourer_strain_desc: "Observation of devourers attacking vessels has given the Iris a foundation to direct their evolution. The acid composition shifts to eat through painted steel. Pack signalling grows sharper. These are no longer incidental threats to shipping."
  abyssant_genesis: "Abyssant Genesis"
  abyssant_genesis_desc: "A new species. The Iris built something else from the substrate up instead of refining the devourer. Larger, specialised, and aimed at ships."
  tethysic_devourer_genome: "Tethysic Genome Integration"
@@ -290,7 +299,7 @@
  IRS_acid_mantle: "Acid Fangs"
  IRS_acid_mantle_desc: "Secretory tissue lining the fangs produces an acid calibrated to dissolve metal alloys. Slowly penetrates hull plating."
  IRS_shredder_array: "Shredder Array"
- IRS_shredder_array_desc: "A dense cluster of hardened feeding appendages optimised for mass consumption. High damage throughput against unarmored targets."
+ IRS_shredder_array_desc: "A dense cluster of hardened feeding appendages optimised for mass consumption. High damage throughput against unarmoured targets."
 
  IRS_fin_cluster: "Fin Cluster"
  IRS_fin_cluster_desc: "Broad fin array adapted for efficient sustained swimming. Balanced speed and endurance."
@@ -318,7 +327,7 @@
  IRS_crushing_maw: "Crushing Maw"
  IRS_crushing_maw_desc: "Collapses hull sections through sustained pressure and tearing."
  IRS_corrosive_maw: "Corrosive Maw"
- IRS_corrosive_maw_desc: "Acid-saturated mandibles engineered to eat through armored plating. Reduced raw damage, extreme penetration against capital ship hulls."
+ IRS_corrosive_maw_desc: "Acid-saturated mandibles engineered to eat through armoured plating. Reduced raw damage, extreme penetration against capital ship hulls."
 
  IRS_abyssant_jet_locomotion: "Jet Locomotion"
  IRS_abyssant_jet_locomotion_desc: "High-output musculature for direct pursuit. Maximises speed at the cost of endurance."
@@ -343,7 +352,7 @@
  IRS_devourer_operations_desc: "Direct the deployment of aquatic parasite swarms against maritime targets."
 
  IRS_seed_feeding_grounds: "Seed Feeding Grounds"
- IRS_seed_feeding_grounds_desc: "Dispatch coordinated devourer tides into active shipping lanes. The swarms self-propagate along trade routes, consuming crew and cargo alike. Global shipping loss is a feature, not a side effect."
+ IRS_seed_feeding_grounds_desc: "Dispatch coordinated devourer tides into active shipping lanes. The swarms self-propagate along trade routes, consuming crew and cargo alike. Global shipping loss is the point."
  IRS_seed_feeding_grounds_tt: "Deploys devourer swarms into ocean shipping lanes. Grants [IRS_devourer_feeding_grounds] for 180 days."
 
  IRS_devourer_feeding_grounds: "Feeding Grounds Active"
@@ -356,7 +365,7 @@
  IRS_establish_colony_pacific: "Seed the Pacific"
  IRS_establish_colony_pacific_desc: "The Pacific is the largest uncontested corridor on the planet. Establishing a self-sustaining presence here is slow and resource-intensive. Once embedded, it cannot be swept. The ocean is too large to clear."
  IRS_establish_colony_north_atlantic: "Seed the North Atlantic"
- IRS_establish_colony_north_atlantic_desc: "The North Atlantic is the lifeline between Europe and the Americas. Seeding it permanently cuts the jugular of the western alliance's supply chain. The colonies will breed in the cold water. They are adapted for it."
+ IRS_establish_colony_north_atlantic_desc: "The North Atlantic is the lifeline between Europe and the Americas. Seeding it permanently cuts that lifeline. The colonies will breed in the cold water. They are adapted for it."
 
  IRS_sea_colony_tier_1: "Sea Colony Network (1/4)"
  IRS_sea_colony_tier_1_desc: "One ocean basin has been permanently seeded. A self-sustaining devourer colony breeds at depth without direction. Convoy losses through infested lanes are ongoing."
@@ -374,9 +383,9 @@
  IRS_tethysic_swarm_hunger: "Swarm Hunger"
  IRS_tethysic_swarm_hunger_desc: "The feeding drive is honed to its limit. Devourer schools sustain attack longer and hit harder on every pass."
  IRS_tethysic_ocean_mastery: "Ocean Mastery"
- IRS_tethysic_ocean_mastery_desc: "Open water is no barrier. Devourer tides reach any shipping lane, surfacing without warning from depth."
+ IRS_tethysic_ocean_mastery_desc: "Devourer tides reach any shipping lane, surfacing without warning from depth."
  IRS_tethysic_abyssant_genesis: "Abyssant Genesis"
- IRS_tethysic_abyssant_genesis_desc: "The TETHYSIC genome has been pushed beyond its limits. What emerges is no longer a devourer. The Iris built it from the water up as a dedicated ship-killer."
+ IRS_tethysic_abyssant_genesis_desc: "The Tethysic genome has been pushed past its limits. What emerges is the Abyssant, a dedicated ship-killer grown from the water up."
  IRS_abyssant_requires_proof_tt: "Locked until a Tethysic puppet completes its own Abyssant Genesis."
 
 
@@ -418,8 +427,10 @@
  IRS_ep_gain_15_tt: "§G+15 Evolution Points§!"
  IRS_ep_gain_20_tt: "§G+20 Evolution Points§!"
  IRS_ep_gain_25_tt: "§G+25 Evolution Points§!"
+ IRS_rail_spine_trunk_tt: "§GThe root spine reaches inland from the coast§!"
+ IRS_rail_spine_spoke_tt: "§GThe root spine branches from the inland node§!"
 
-
+ IRS_ep_cost_20_tt: "§R-20 Evolution Points§!"
  IRS_ep_cost_50_tt: "§R-50 Evolution Points§!"
  IRS_ep_cost_60_tt: "§R-60 Evolution Points§!"
  IRS_ep_cost_80_tt: "§R-80 Evolution Points§!"
@@ -462,11 +473,11 @@
  IRS_evolution_1_desc: "Parasite organisms no longer require ideal conditions to spread. They hunt in darkness, coordinate without hesitation, and consume without constraint."
 
  IRS_evolution_2: "Evolution State: Assimilation"
- IRS_evolution_2_desc: "The phase of true assimilation begins. The boundary between territory and organism starts to dissolve."
+ IRS_evolution_2_desc: "Assimilated hosts hold what the swarm takes. The boundary between territory and organism starts to dissolve."
 
 
  IRS_early_biomass_idea: "Early Biomass Network"
- IRS_early_biomass_idea_desc: "Crude but functional. The first biomass pools provide a cost basis for expansion."
+ IRS_early_biomass_idea_desc: "Crude but functional. The first biomass pools fund early expansion."
 
  IRS_root_network_idea: "Root Network"
  IRS_root_network_idea_desc: "Subsurface root channels reduce attrition and supply strain across all controlled territory."
@@ -551,7 +562,7 @@
  IRS_vector_northward: "Study the Northern Approaches"
  IRS_vector_northward_desc: "Still inbound, the Iris traces the dry corridors that lead north from its chosen ground, toward the Sahel and the Mediterranean rim. After landfall, this is the road it will walk first."
  IRS_vector_continental: "Study the Continental Interior"
- IRS_vector_continental_desc: "Still inbound, the Iris maps the breadth of the continent behind its chosen ground, the river basins and forest belts of central and eastern Africa. After landfall, it will spread inward before it spreads far."
+ IRS_vector_continental_desc: "On approach, the Iris maps the breadth of the continent behind its chosen ground, the river basins and forest belts of central and eastern Africa. After landfall, it will spread inward before it spreads far."
  IRS_vector_atlantic: "Study the Far Shore"
  IRS_vector_atlantic_desc: "Still inbound, the Iris lets its attention drift west across the ocean, toward the distant continent on the other side. After landfall, the long crossing will already be on its mind."
  IRS_cultivate_lineage: "Cultivate the Lineage"
@@ -632,7 +643,7 @@
 
 
  IRS_phase_2_complete: "Phase 3: Global Reach"
- IRS_phase_2_complete_desc: "Africa is consuming. South America is seeded. The Iris has broken the geographic limits that defined its first two years."
+ IRS_phase_2_complete_desc: "Africa is being consumed. South America is seeded. The Iris has broken the geographic limits that defined its first two years."
 
  IRS_ep_gate_tt_350: "Requires 350 Evolution Points"
 
@@ -640,7 +651,7 @@
  IRS_african_campaign_idea_desc: "The Iris wages coordinated war across the African continent. Assault organisms push harder and break through fortified lines with greater consistency."
 
  IRS_consumption_wave_idea: "Consumption Wave"
- IRS_consumption_wave_idea_desc: "The advance does not pause to consolidate. Organisms consume as they move, reducing supply strain and leaving consumed ground too hostile for counteroffensives."
+ IRS_consumption_wave_idea_desc: "The advance consumes as it moves, reducing supply strain and leaving consumed ground too hostile for counteroffensives."
 
  IRS_coastal_seeding_idea: "Coastal Seeding"
  IRS_coastal_seeding_idea_desc: "Root networks thread through coastal sediment and port infrastructure."
@@ -664,7 +675,7 @@
  IRS_sac_foothold_idea_desc: "The Iris has established a presence in South America. New emergence points multiply the angles of attack available to the swarm."
 
  IRS_evolution_3: "Evolution State: Global Reach"
- IRS_evolution_3_desc: "The Iris is no longer a continental presence. Its roots reach across ocean floors. Its spores drift above new continents. The war has entered a new order of scale."
+ IRS_evolution_3_desc: "The Iris is no longer a continental presence. Its roots reach across ocean floors. Its spores drift above new continents. The war spans hemispheres now."
 
  IRS_phase0_beckon_expansion: "Beckon Expansion"
  IRS_phase0_beckon_expansion_desc: "Beckon clusters take root and deepen."
@@ -708,7 +719,12 @@
  IRS_transoceanic_breach_idea_desc: "The invasion of South America is underway. Organism aggression and breakthrough capacity are elevated for the initial assault."
 
 
- IRS_dormancy_adapt_tt: "§GThe dormancy adaptation deepens§!"
+ IRS_dormancy_adapt_deep_tt: "§GThe dormancy adaptation deepens§!"
+ IRS_dormancy_adapt_surface_tt: "§GThe dormancy adaptation rises§!"
+ IRS_dormancy_adapt_held_tt: "§GThe dormancy adaptation tightens§!"
+ IRS_dormancy_adapt_loose_tt: "§GThe dormancy adaptation loosens§!"
+ IRS_dormancy_adapt_centre_tt: "§GThe dormancy adaptation settles§!"
+ IRS_dormancy_adapt_thin_tt: "§GThe dormancy adaptation widens§!"
 
  IRS_dormancy_adaptation: "Dormancy Adaptation"
  IRS_dormancy_adaptation_desc: "Two years of settled behaviour, carried into the landfall. What the organism practised while it was inbound is what it is good at once it is here."
@@ -808,7 +824,7 @@
 
 
  IRS_phase1_nocturnal_adaptation: "Nocturnal Assault Doctrine"
- IRS_phase1_nocturnal_adaptation_desc: "The rupters are conditioned to strike at night. Soldiers falter in the dark, the swarm does not. Night attacks become a defining feature of the parasite's warfare."
+ IRS_phase1_nocturnal_adaptation_desc: "The rupters are conditioned to strike at night. Soldiers falter in the dark. The swarm does not. Night attacks become a defining feature of the parasite's warfare."
 
  IRS_phase1_rupter_aggression: "Industrial Aggression"
  IRS_phase1_rupter_aggression_desc: "The beckon clusters are pushed to their production limits. A surge of military material floods the swarm's front lines. The capital hive expands to accommodate the demand."
@@ -817,7 +833,7 @@
  IRS_phase1_spore_dispersal_desc: "Spore release rates are doubled. The biological footprint of the hive accelerates outward. Beckon clusters rise faster than any engineering corps could manage."
 
  IRS_phase1_hive_resonance: "Hive Resonance"
- IRS_phase1_hive_resonance_desc: "The distributed will of the hive aligns into a coherent signal. Research processes accelerate as the swarm shares knowledge collectively. A dividend of evolution is paid in full."
+ IRS_phase1_hive_resonance_desc: "The distributed will of the hive aligns into a coherent signal. Research processes accelerate as the swarm shares knowledge collectively. For the first time the hive agrees with itself."
 
 
  IRS_phase1_root_expansion: "Root Network Expansion"
@@ -883,7 +899,7 @@
 
  IRS_release_tethysic_puppet: "Establish the Tethysic Brood-State"
  IRS_release_tethysic_puppet_desc: "Once the Indonesian cluster is fully consumed, the hive lets the genome there organise into a self-directing brood-state. It administers its own water-line under the hive's direction, an integrated subject with no path back to independence, relieving the central will of regional management. Its separate line of development is also the only one that can prove the Tethysic genome to maturity."
- IRS_release_tethysic_puppet_tt: "Releases the Tethysic Brood on the consumed West Java cluster (West Java, South Sumatra, Eastern Kalimantan, Interior Borneo), which it owns and cannot be separated from. Permanently integrated, it can neither gain independence nor be annexed. Requires the whole cluster consumed first. The brood develops the Tethysic genome on its own. Completing its apex is what unlocks the Abyssant for the hive."
+ IRS_release_tethysic_puppet_tt: "Releases the Tethysic Brood on the consumed West Java cluster (West Java, South Sumatra, Eastern Kalimantan, Interior Borneo), which it owns and which cannot be separated from it. Permanently integrated, it can neither gain independence nor be annexed. Requires the whole cluster consumed first. The brood develops the Tethysic genome on its own. Completing its apex is what unlocks the Abyssant for the hive."
 
 
  IRS_rupter_assault_doctrine: "Rupter Assault Doctrine"
@@ -893,13 +909,13 @@
  IRS_wartime_surge_desc: "The beckon clusters push military production to unsustainable limits. The surge cannot last, but while it does, the swarm floods the front with equipment."
 
  IRS_spore_drive_idea: "Spore Drive"
- IRS_spore_drive_idea_desc: "Spore release rates are dramatically increased across all hive territories. Beckon clusters rise faster. The infestation signature spreads ahead of the army."
+ IRS_spore_drive_idea_desc: "Spore release rates rise across all hive territories. Beckon clusters rise faster. The infestation signature spreads ahead of the army."
 
  IRS_consumption_pace_idea: "Consumption Pace"
- IRS_consumption_pace_idea_desc: "The hive digests its gains at a rapid pace."
+ IRS_consumption_pace_idea_desc: "The hive digests its gains quickly."
 
  IRS_deep_inland_surge: "Deep Inland Surge"
- IRS_deep_inland_surge_desc: "A coordinated surge of biological construction pushes into the interior of every held state. Building slots fill, the hive grows denser."
+ IRS_deep_inland_surge_desc: "A coordinated surge of biological construction pushes into the interior of every held state. Building slots fill. The hive grows denser."
 
  IRS_global_signal_idea: "Global Signal"
  IRS_global_signal_idea_desc: "The parasite broadcasts on frequencies only Root Beckons can receive."

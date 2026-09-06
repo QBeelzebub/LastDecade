@@ -136,4 +136,5 @@ SRP_orbital_remove_satellite_effect = {
 	clamp_variable = { var = SRP_military_satellites min = 0 max = 999 }
 	clamp_variable = { var = SRP_surveillance_satellites min = 0 max = 999 }
 	clamp_variable = { var = SRP_total_satellites min = 0 max = 999 }
+	SRP_orbital_recalculate_surveillance_effect = yes
 }

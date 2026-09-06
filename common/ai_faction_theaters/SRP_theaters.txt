@@ -1,0 +1,393 @@
+
+
+srp_south_america = {
+	name = theater_brazil
+	regions = {
+		226
+		48
+		61
+		66
+		286
+		285
+		125
+		288
+		163
+		280
+		282
+		287
+		281
+		140
+	}
+	can_skip_first_region = yes
+
+	preferred_countries = {
+		IRS
+		KNX
+	}
+
+	cancel = {
+		has_war = no
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = { add = 60 capital_scope = { is_on_continent = africa } }
+		modifier = { add = 60 capital_scope = { is_on_continent = south_america } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_madagascar = {
+	name = east_africa
+	regions = {
+		181
+		103
+		185
+		139
+		65
+		223
+		224
+		215
+	}
+	can_skip_first_region = yes
+
+	cancel = {
+		has_war = no
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 15
+			capital_scope = { is_on_continent = africa }
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+srp_africa = {
+	name = theater_west_africa
+	regions = {
+		226
+		140
+		184
+		272
+		62
+		61
+		183
+		271
+	}
+	can_skip_first_region = yes
+
+	cancel = {
+		has_war = no
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 20
+			capital_scope = { is_on_continent = africa }
+		}
+		modifier = {
+			add = 10
+			owns_any_state_of = { 780 700 298 779 701 558 }
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+srp_east_africa = {
+	name = east_africa
+	regions = { 274 273 17 217 102 100 216 227 60 181 183 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = africa } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_north_africa = {
+	name = theater_north_africa
+	regions = { 225 128 29 126 182 48 68 69 100 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = africa } }
+		modifier = { add = 10 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_western_europe = {
+	name = theater_western_europe
+	regions = { 19 5 7 208 6 18 1 275 20 42 21 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = europe } }
+		modifier = { add = 10 any_enemy_country = { capital_scope = { is_on_continent = europe } } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_eastern_europe = {
+	name = theater_eastern_europe
+	regions = { 8 38 22 39 206 37 27 132 131 130 133 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_russia = {
+	name = theater_eastern_europe
+	regions = { 37 132 206 9 13 265 150 278 279 277 12 191 46 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_southern_europe = {
+	name = theater_southern_europe
+	regions = { 23 169 168 24 25 202 21 29 68 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_north_sea = {
+	name = theater_north_sea_region
+	regions = { 16 174 173 11 191 2 3 4 45 161 275 44 10 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_scandinavia = {
+	name = theater_scandinavia
+	regions = { 10 192 11 191 276 206 275 173 279 277 278 9 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 12 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_middle_east = {
+	name = middle_east
+	regions = { 232 237 28 129 240 196 238 236 239 116 298 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = middle_east } }
+		modifier = { add = 10 capital_scope = { is_on_continent = asia } }
+		modifier = { add = 10 capital_scope = { is_on_continent = europe } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_persia = {
+	name = theater_persia
+	regions = { 239 116 298 203 232 28 241 297 291 289 134 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 12 capital_scope = { is_on_continent = middle_east } }
+		modifier = { add = 10 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_india = {
+	name = theater_northern_india
+	regions = { 153 190 162 289 291 296 251 297 104 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_bengal = {
+	name = theater_bengal
+	regions = { 101 290 231 230 294 141 293 31 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 12 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_south_east_asia = {
+	name = theater_south_east_asia
+	regions = { 72 188 229 228 142 73 187 293 294 101 292 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_china_coast = {
+	name = theater_chinese_coastline
+	regions = { 77 76 143 247 164 155 248 75 186 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_china_mainland = {
+	name = theater_chinese_mainland
+	regions = { 246 165 245 249 250 144 200 244 252 145 146 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_japan = {
+	name = theater_japanese_home_islands
+	regions = { 154 299 300 79 90 76 87 94 177 78 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = asia } }
+		modifier = { add = 10 any_enemy_country = { capital_scope = { is_on_continent = asia } } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_central_pacific = {
+	name = theater_central_pacific
+	regions = { 105 176 172 95 180 96 97 177 94 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 12 capital_scope = { is_on_continent = north_america } }
+		modifier = { add = 12 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_south_pacific = {
+	name = theater_south_pacific
+	regions = { 84 93 83 81 167 80 159 75 194 94 86 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 12 capital_scope = { is_on_continent = australia } }
+		modifier = { add = 10 capital_scope = { is_on_continent = asia } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_us_west_coast = {
+	name = theater_us_west_coast
+	regions = { 89 115 114 171 218 118 33 105 176 88 235 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = north_america } }
+		modifier = { add = 10 any_enemy_country = { capital_scope = { is_on_continent = north_america } } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_us_east_coast = {
+	name = theater_us_east_coast
+	regions = { 54 170 197 117 211 55 213 214 198 119 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 20 capital_scope = { is_on_continent = north_america } }
+		modifier = { add = 10 any_enemy_country = { capital_scope = { is_on_continent = north_america } } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_central_america = {
+	name = theater_central_america
+	regions = { 53 52 205 34 123 107 106 204 170 124 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = north_america } }
+		modifier = { add = 10 capital_scope = { is_on_continent = south_america } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_gran_columbia = {
+	name = theater_gran_columbia
+	regions = { 124 280 201 287 163 107 109 285 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = south_america } }
+		modifier = { add = 10 any_enemy_country = { capital_scope = { is_on_continent = south_america } } }
+		modifier = { factor = 0 has_war = no }
+	}
+}
+
+srp_southern_cone = {
+	name = theater_south_south_america
+	regions = { 284 283 35 281 282 108 }
+	can_skip_first_region = yes
+	cancel = { has_war = no }
+	ai_will_do = {
+		base = 0
+		modifier = { add = 15 capital_scope = { is_on_continent = south_america } }
+		modifier = { add = 10 any_enemy_country = { capital_scope = { is_on_continent = south_america } } }
+		modifier = { factor = 0 has_war = no }
+	}
+}

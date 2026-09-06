@@ -1,0 +1,76 @@
+
+KNX_grow_hive_forts_effect = {
+	every_owned_state = {
+		limit = {
+			is_controlled_by = PREV
+			nexus_hive > 0
+		}
+
+		if = {
+			limit = { nexus_hive > 1 }
+			set_building_level = {
+				type = bunker
+				level = 8
+				province = {
+					all_provinces = yes
+					level < 8
+				}
+			}
+		}
+
+		if = {
+			limit = { NOT = { nexus_hive > 1 } }
+			set_building_level = {
+				type = bunker
+				level = 4
+				province = {
+					all_provinces = yes
+					level < 4
+				}
+			}
+		}
+	}
+
+	every_owned_state = {
+		limit = {
+			is_controlled_by = PREV
+			has_dynamic_modifier = { modifier = knx_root_stronghold }
+		}
+
+		set_building_level = {
+			type = bunker
+			level = 10
+			province = {
+				all_provinces = yes
+				level < 10
+			}
+		}
+	}
+}
+
+
+KNX_clear_human_industry_effect = {
+	if = {
+		limit = {
+			industrial_complex > 0
+			beckon_cluster > 2
+		}
+		remove_building = { type = industrial_complex level = 20 }
+	}
+
+	if = { limit = { arms_factory > 0 }              remove_building = { type = arms_factory level = 20 } }
+	if = { limit = { dockyard > 0 }                  remove_building = { type = dockyard level = 20 } }
+	if = { limit = { synthetic_refinery > 0 }        remove_building = { type = synthetic_refinery level = 20 } }
+	if = { limit = { fuel_silo > 0 }                 remove_building = { type = fuel_silo level = 20 } }
+	if = { limit = { radar_station > 0 }             remove_building = { type = radar_station level = 20 } }
+	if = { limit = { rocket_site > 0 }               remove_building = { type = rocket_site level = 20 } }
+	if = { limit = { energy_infrastructure > 0 }     remove_building = { type = energy_infrastructure level = 20 } }
+	if = { limit = { industrial_infrastructure > 0 } remove_building = { type = industrial_infrastructure level = 20 } }
+}
+
+KNX_hive_state_development_effect = {
+	every_owned_state = {
+		limit = { is_controlled_by = PREV }
+		KNX_clear_human_industry_effect = yes
+	}
+}

@@ -11,6 +11,7 @@ on_actions = {
 		}
 	}
 
+
 	on_monthly_EFH = {
 		effect = {
 			if = {
@@ -25,92 +26,12 @@ on_actions = {
 			if = {
 				limit = {
 					has_country_flag = EFH_vagrant_2_active
-					NOT = { has_character = EFH_vagrant_2 }
-					NOT = { has_character = EFH_vagrant_2_reborn }
-					NOT = { has_country_flag = EFH_vagrant_2_recovering }
-					NOT = { has_country_flag = EFH_vagrant_2_copy_b }
-				}
-				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
-				set_country_flag = EFH_vagrant_2_recruit_b
-				if = {
-					limit = { has_country_flag = EFH_vagrant_3_recovering }
-					country_event = { id = vagrant.4 days = 120 }
-				}
-				if = {
-					limit = { NOT = { has_country_flag = EFH_vagrant_3_recovering } }
-					country_event = { id = vagrant.2 days = 60 }
-				}
-			}
-
-			if = {
-				limit = {
-					has_country_flag = EFH_vagrant_2_active
-					NOT = { has_character = EFH_vagrant_2 }
-					NOT = { has_character = EFH_vagrant_2_reborn }
-					NOT = { has_country_flag = EFH_vagrant_2_recovering }
-					has_country_flag = EFH_vagrant_2_copy_b
-				}
-				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
-				set_country_flag = EFH_vagrant_2_recruit_a
-				if = {
-					limit = { has_country_flag = EFH_vagrant_3_recovering }
-					country_event = { id = vagrant.4 days = 120 }
-				}
-				if = {
-					limit = { NOT = { has_country_flag = EFH_vagrant_3_recovering } }
-					country_event = { id = vagrant.2 days = 60 }
-				}
-			}
-
-			if = {
-				limit = {
-					has_country_flag = EFH_vagrant_3_active
-					NOT = { has_character = EFH_vagrant_3 }
-					NOT = { has_character = EFH_vagrant_3_reborn }
-					NOT = { has_country_flag = EFH_vagrant_3_recovering }
-					NOT = { has_country_flag = EFH_vagrant_3_copy_b }
-				}
-				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
-				set_country_flag = EFH_vagrant_3_recruit_b
-				if = {
-					limit = { has_country_flag = EFH_vagrant_2_recovering }
-					country_event = { id = vagrant.5 days = 120 }
-				}
-				if = {
-					limit = { NOT = { has_country_flag = EFH_vagrant_2_recovering } }
-					country_event = { id = vagrant.3 days = 60 }
-				}
-			}
-
-			if = {
-				limit = {
-					has_country_flag = EFH_vagrant_3_active
-					NOT = { has_character = EFH_vagrant_3 }
-					NOT = { has_character = EFH_vagrant_3_reborn }
-					NOT = { has_country_flag = EFH_vagrant_3_recovering }
-					has_country_flag = EFH_vagrant_3_copy_b
-				}
-				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
-				set_country_flag = EFH_vagrant_3_recruit_a
-				if = {
-					limit = { has_country_flag = EFH_vagrant_2_recovering }
-					country_event = { id = vagrant.5 days = 120 }
-				}
-				if = {
-					limit = { NOT = { has_country_flag = EFH_vagrant_2_recovering } }
-					country_event = { id = vagrant.3 days = 60 }
-				}
-			}
-
-			if = {
-				limit = {
-					has_country_flag = EFH_vagrant_2_active
 					has_country_flag = EFH_vagrant_2_field_duty
 					NOT = { has_country_flag = EFH_vagrant_2_recovering }
 					NOT = { has_equipment = { vagrant_2_core = 1 } }
 					NOT = { has_country_flag = EFH_vagrant_2_copy_b }
 				}
-				retire_character = EFH_vagrant_2
+				EFH_vagrant_2 = { remove_unit_leader_role = yes }
 				clr_country_flag = EFH_vagrant_2_field_duty
 				set_country_flag = EFH_vagrant_2_fallen
 				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
@@ -133,7 +54,7 @@ on_actions = {
 					NOT = { has_equipment = { vagrant_2_core = 1 } }
 					has_country_flag = EFH_vagrant_2_copy_b
 				}
-				retire_character = EFH_vagrant_2_reborn
+				EFH_vagrant_2_reborn = { remove_unit_leader_role = yes }
 				clr_country_flag = EFH_vagrant_2_field_duty
 				set_country_flag = EFH_vagrant_2_fallen
 				set_country_flag = { flag = EFH_vagrant_2_recovering days = 62 }
@@ -157,7 +78,7 @@ on_actions = {
 					NOT = { has_equipment = { vagrant_3_core = 1 } }
 					NOT = { has_country_flag = EFH_vagrant_3_copy_b }
 				}
-				retire_character = EFH_vagrant_3
+				EFH_vagrant_3 = { remove_unit_leader_role = yes }
 				clr_country_flag = EFH_vagrant_3_field_duty
 				set_country_flag = EFH_vagrant_3_fallen
 				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
@@ -180,7 +101,7 @@ on_actions = {
 					NOT = { has_equipment = { vagrant_3_core = 1 } }
 					has_country_flag = EFH_vagrant_3_copy_b
 				}
-				retire_character = EFH_vagrant_3_reborn
+				EFH_vagrant_3_reborn = { remove_unit_leader_role = yes }
 				clr_country_flag = EFH_vagrant_3_field_duty
 				set_country_flag = EFH_vagrant_3_fallen
 				set_country_flag = { flag = EFH_vagrant_3_recovering days = 62 }
@@ -212,38 +133,12 @@ on_actions = {
 			if = {
 				limit = {
 					has_country_flag = IRS_vagrant_4_active
-					NOT = { has_character = IRS_vagrant_4 }
-					NOT = { has_character = IRS_vagrant_4_reborn }
-					NOT = { has_country_flag = IRS_vagrant_4_recovering }
-					NOT = { has_country_flag = IRS_vagrant_4_copy_b }
-				}
-				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
-				set_country_flag = IRS_vagrant_4_recruit_b
-				country_event = { id = vagrant.6 days = 30 }
-			}
-
-			if = {
-				limit = {
-					has_country_flag = IRS_vagrant_4_active
-					NOT = { has_character = IRS_vagrant_4 }
-					NOT = { has_character = IRS_vagrant_4_reborn }
-					NOT = { has_country_flag = IRS_vagrant_4_recovering }
-					has_country_flag = IRS_vagrant_4_copy_b
-				}
-				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
-				set_country_flag = IRS_vagrant_4_recruit_a
-				country_event = { id = vagrant.6 days = 30 }
-			}
-
-			if = {
-				limit = {
-					has_country_flag = IRS_vagrant_4_active
 					has_country_flag = IRS_vagrant_4_field_duty
 					NOT = { has_country_flag = IRS_vagrant_4_recovering }
 					NOT = { has_equipment = { vagrant_4_core = 1 } }
 					NOT = { has_country_flag = IRS_vagrant_4_copy_b }
 				}
-				retire_character = IRS_vagrant_4
+				IRS_vagrant_4 = { remove_unit_leader_role = yes }
 				clr_country_flag = IRS_vagrant_4_field_duty
 				set_country_flag = IRS_vagrant_4_fallen
 				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
@@ -259,7 +154,7 @@ on_actions = {
 					NOT = { has_equipment = { vagrant_4_core = 1 } }
 					has_country_flag = IRS_vagrant_4_copy_b
 				}
-				retire_character = IRS_vagrant_4_reborn
+				IRS_vagrant_4_reborn = { remove_unit_leader_role = yes }
 				clr_country_flag = IRS_vagrant_4_field_duty
 				set_country_flag = IRS_vagrant_4_fallen
 				set_country_flag = { flag = IRS_vagrant_4_recovering days = 32 }
@@ -275,37 +170,12 @@ on_actions = {
 			if = {
 				limit = {
 					has_country_flag = KNX_vagrant_1_active
-					NOT = { has_character = KNX_vagrant_one }
-					NOT = { has_character = KNX_vagrant_one_reborn }
-					NOT = { has_country_flag = KNX_vagrant_1_recovering }
-					NOT = { has_country_flag = KNX_vagrant_1_copy_b }
-				}
-				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
-				set_country_flag = KNX_vagrant_1_recruit_b
-				country_event = { id = vagrant.7 days = 45 }
-			}
-
-			if = {
-				limit = {
-					has_country_flag = KNX_vagrant_1_active
-					NOT = { has_character = KNX_vagrant_one }
-					NOT = { has_character = KNX_vagrant_one_reborn }
-					NOT = { has_country_flag = KNX_vagrant_1_recovering }
-					has_country_flag = KNX_vagrant_1_copy_b
-				}
-				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
-				set_country_flag = KNX_vagrant_1_recruit_a
-				country_event = { id = vagrant.7 days = 45 }
-			}
-
-			if = {
-				limit = {
-					has_country_flag = KNX_vagrant_1_active
 					has_country_flag = KNX_vagrant_1_field_duty
 					NOT = { has_country_flag = KNX_vagrant_1_recovering }
 					NOT = { has_equipment = { vagrant_1_core = 1 } }
 					NOT = { has_country_flag = KNX_vagrant_1_copy_b }
 				}
+				KNX_vagrant_one = { remove_unit_leader_role = yes }
 				clr_country_flag = KNX_vagrant_1_field_duty
 				set_country_flag = KNX_vagrant_1_fallen
 				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }
@@ -321,7 +191,7 @@ on_actions = {
 					NOT = { has_equipment = { vagrant_1_core = 1 } }
 					has_country_flag = KNX_vagrant_1_copy_b
 				}
-				retire_character = KNX_vagrant_one_reborn
+				KNX_vagrant_one_reborn = { remove_unit_leader_role = yes }
 				clr_country_flag = KNX_vagrant_1_field_duty
 				set_country_flag = KNX_vagrant_1_fallen
 				set_country_flag = { flag = KNX_vagrant_1_recovering days = 47 }

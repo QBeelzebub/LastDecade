@@ -1,19 +1,24 @@
 beckon_iris_buff = {
     icon = "GFX_goal_generic_secret_weapon"
 
-    local_supplies = iris_infestation_bonus
+    local_supplies_for_controller = iris_infestation_supply
     enemy_truck_attrition_factor = iris_infestation_bonus
     enemy_attrition = iris_infestation_bonus
     state_resource_parasite_biomass = iris_infestation_biomass
+
+    resistance_target = iris_infestation_suppression
+    resistance_growth = iris_infestation_suppression
+    required_garrison_factor = iris_infestation_suppression
+    resistance_decay = iris_infestation_decay
+    resistance_damage_to_garrison = iris_infestation_suppression
 }
 
 beckon_hostile_debuff = {
     icon = "GFX_goal_generic_dangerous_deal"
 
     local_supplies = iris_infestation_penalty
-    attrition = iris_infestation_attrition
+    enemy_attrition = iris_infestation_attrition
     local_manpower = iris_infestation_attrition
-    weekly_manpower = iris_infestation_upkeep
 }
 
 irs_consumed_state = {
@@ -39,14 +44,13 @@ knx_integrated_ground_resistance = {
     icon = "GFX_goal_generic_defence"
 
     local_supplies = -0.05
-    attrition = 0.02
+    enemy_attrition = -0.02
 }
 
 knx_root_stronghold = {
     icon = "GFX_goal_generic_fortify_city"
 
-    army_defence_factor = 0.35
-    air_defence_factor = 0.25
+    land_bunker_effectiveness_factor = 0.75
     local_supplies_for_controller = 0.25
     enemy_local_supplies = -0.20
     enemy_attrition = 0.25
@@ -62,7 +66,7 @@ spore_burst_contamination = {
 	icon = "GFX_goal_generic_dangerous_deal"
 
 	local_supplies = -0.12
-	attrition = 0.04
+	enemy_attrition = -0.04
 	local_manpower = -0.08
 }
 
@@ -91,7 +95,7 @@ fallout_thermonuclear = {
 }
 
 public_panic_modifier = {
-    icon = "GFX_goal_generic_pp_unity_low"
+    icon = "GFX_goal_generic_political_pressure"
 
     stability_factor = public_panic_stab_factor
     political_power_factor = public_panic_pp_factor
