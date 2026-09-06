@@ -41,6 +41,7 @@ KNX_besieged = {
 	ai_strategy = { type = front_unit_request area = knox_county value = 280 }
 
 	ai_strategy = {
+		
 		type = front_control
 		area = knox_county
 		ordertype = front
