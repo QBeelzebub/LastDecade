@@ -2,3 +2,7 @@
 telotic_lethal_events_enabled = {
 	has_game_rule = { rule = srp_lethal_events option = ENABLED }
 }
+
+srp_ai_story_mode = {
+	NOT = { has_global_flag = srp_ai_play_to_win }
+}

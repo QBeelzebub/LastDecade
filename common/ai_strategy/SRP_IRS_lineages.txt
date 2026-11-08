@@ -1,0 +1,208 @@
+
+
+
+IRS_front_control_rush = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_war = yes
+		NOT = { surrender_progress > 0.15 }
+		OR = {
+			has_country_flag = IRS_archetype_tromos
+			has_country_flag = IRS_archetype_unchecked
+			has_country_flag = IRS_archetype_telotic
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_control  tag = AFR  ratio = 0.2  priority = 100  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = SAC  ratio = 0.2  priority = 100  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = EFH  ratio = 0.2  priority = 100  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = USA  ratio = 0.2  priority = 100  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = RSF  ratio = 0.2  priority = 100  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = CHN  ratio = 0.2  priority = 100  ordertype = front  execution_type = rush  execute_order = yes }
+
+	ai_strategy = { type = front_control  tag = SAC  ratio = 0.2  priority = 100  ordertype = invasion  execution_type = rush  execute_order = yes }
+}
+
+IRS_front_control_balanced = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_war = yes
+		NOT = { surrender_progress > 0.15 }
+		OR = {
+			has_country_flag = IRS_archetype_iris
+			has_country_flag = IRS_archetype_adaptive
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_control  tag = AFR  ratio = 0.45  priority = 50  ordertype = front  execution_type = balanced }
+	ai_strategy = { type = front_control  tag = SAC  ratio = 0.45  priority = 50  ordertype = front  execution_type = balanced }
+	ai_strategy = { type = front_control  tag = EFH  ratio = 0.45  priority = 50  ordertype = front  execution_type = balanced }
+	ai_strategy = { type = front_control  tag = USA  ratio = 0.45  priority = 50  ordertype = front  execution_type = balanced }
+	ai_strategy = { type = front_control  tag = RSF  ratio = 0.45  priority = 50  ordertype = front  execution_type = balanced }
+	ai_strategy = { type = front_control  tag = CHN  ratio = 0.45  priority = 50  ordertype = front  execution_type = balanced }
+}
+
+IRS_front_control_careful = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_war = yes
+		NOT = { surrender_progress > 0.15 }
+		has_country_flag = IRS_archetype_vitreous
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_control  tag = AFR  ratio = 0.8  priority = 50  ordertype = front  execution_type = careful  manual_attack = no }
+	ai_strategy = { type = front_control  tag = SAC  ratio = 0.8  priority = 50  ordertype = front  execution_type = careful  manual_attack = no }
+	ai_strategy = { type = front_control  tag = EFH  ratio = 0.8  priority = 50  ordertype = front  execution_type = careful  manual_attack = no }
+	ai_strategy = { type = front_control  tag = USA  ratio = 0.8  priority = 50  ordertype = front  execution_type = careful  manual_attack = no }
+	ai_strategy = { type = front_control  tag = RSF  ratio = 0.8  priority = 50  ordertype = front  execution_type = careful  manual_attack = no }
+	ai_strategy = { type = front_control  tag = CHN  ratio = 0.8  priority = 50  ordertype = front  execution_type = careful  manual_attack = no }
+}
+
+IRS_front_control_last_ditch = {
+	allowed = { original_tag = IRS }
+	enable = { surrender_progress > 0.15 }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_control  tag = AFR  ratio = 0  priority = 250  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = SAC  ratio = 0  priority = 250  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = EFH  ratio = 0  priority = 250  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = USA  ratio = 0  priority = 250  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = RSF  ratio = 0  priority = 250  ordertype = front  execution_type = rush  execute_order = yes }
+	ai_strategy = { type = front_control  tag = CHN  ratio = 0  priority = 250  ordertype = front  execution_type = rush  execute_order = yes }
+}
+
+
+IRS_front_control_eaten_ground = {
+	allowed = { original_tag = IRS }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_control  tag = AFR  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = SAC  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = EFH  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = USA  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = RSF  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = CHN  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = JAP  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = ASI  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = OCE  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = SWR  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+	ai_strategy = { type = front_control  tag = KNX  ratio = 0  priority = 200  ordertype = front  execution_type = rush  execute_order = yes  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+
+	ai_strategy = { type = front_unit_request  value = 240  state_trigger = { check_variable = { iris_infestation_level > 49 } } }
+}
+
+
+IRS_lineage_iris_posture = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_archetype_iris }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 150 }
+	ai_strategy = { type = garrison                   value = 300 }
+	ai_strategy = { type = front_unit_request         value = 90  }
+
+	ai_strategy = { type = naval_invasion_focus value = 80 }
+	ai_strategy = { type = unit_ratio id = submarine    value = 300 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 40 }
+	ai_strategy = { type = air_factory_balance value = 40 }
+}
+
+
+IRS_lineage_vitreous_posture = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_archetype_vitreous }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = garrison                   value = 900 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 200 }
+	ai_strategy = { type = front_unit_request         value = 40  }
+
+	ai_strategy = { type = naval_invasion_focus value = -80 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = -100 }
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 60 }
+	ai_strategy = { type = air_factory_balance value = -60 }
+}
+
+
+IRS_lineage_tromos_posture = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_archetype_tromos }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_unit_request         value = 280 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 300 }
+	ai_strategy = { type = garrison                   value = -300 }
+
+	ai_strategy = { type = ignore_army_incompetence value = 1 }
+
+	ai_strategy = { type = air_factory_balance value = 90 }
+	ai_strategy = { type = unit_ratio id = cas value = 400 }
+
+	ai_strategy = { type = role_ratio id = marines value = 60 }
+	ai_strategy = { type = naval_invasion_focus value = 120 }
+}
+
+
+IRS_lineage_adaptive_posture = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_archetype_adaptive }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 180 }
+	ai_strategy = { type = garrison                   value = 400 }
+	ai_strategy = { type = front_unit_request         value = 140 }
+
+	ai_strategy = { type = naval_invasion_focus value = 100 }
+	ai_strategy = { type = unit_ratio id = submarine value = 200 }
+	ai_strategy = { type = air_factory_balance value = 50 }
+
+	ai_strategy = { type = intelligence_agency_usable_factories value = 3 }
+}
+
+
+IRS_lineage_unchecked_posture = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_archetype_unchecked }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 420 }
+	ai_strategy = { type = front_unit_request         value = 300 }
+	ai_strategy = { type = garrison                   value = -500 }
+	ai_strategy = { type = ignore_army_incompetence value = 1 }
+
+	ai_strategy = { type = naval_invasion_focus value = -100 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = -200 }
+	ai_strategy = { type = air_factory_balance value = -80 }
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 80 }
+}
+
+
+IRS_lineage_telotic_posture = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_archetype_telotic }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 500 }
+	ai_strategy = { type = front_unit_request         value = 400  }
+	ai_strategy = { type = garrison                   value = 700  }
+	ai_strategy = { type = ignore_army_incompetence value = 1 }
+
+	ai_strategy = { type = naval_invasion_focus            value = 600 }
+	ai_strategy = { type = naval_invasion_dominance_weight value = 10  }
+	ai_strategy = { type = unit_ratio id = submarine    value = 400 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 300 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_colossant_hull value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_devourer_hull  value = 12 }
+
+	ai_strategy = { type = air_factory_balance value = 150 }
+	ai_strategy = { type = unit_ratio id = cas value = 600 }
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 120 }
+	ai_strategy = { type = role_ratio id = marines value = 80 }
+}

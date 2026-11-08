@@ -1,0 +1,159 @@
+CHN_business_personality = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_completed_focus = CHN_business_as_usual
+        country_exists = JAP
+        has_war = no
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = JAP value = 50 }
+    ai_strategy = { type = conquer id = JAP value = -200 }
+}
+
+CHN_aggressive_personality = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_completed_focus = CHN_power_seeking
+        country_exists = JAP
+        has_war = no
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = antagonize id = JAP value = 100 }
+    ai_strategy = { type = conquer id = JAP value = -200 }
+    ai_strategy = { type = befriend id = JAP value = -150 }
+    ai_strategy = { type = alliance id = JAP value = -1000 }
+    ai_strategy = { type = protect id = JAP value = -50 }
+    ai_strategy = { type = support id = JAP value = -160 }
+    ai_strategy = { type = contain id = JAP value = 100 }
+}
+
+CHN_efh_partnership = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_country_flag = CHN_efh_aligned
+        NOT = { has_country_flag = CHN_usa_aligned }
+        NOT = { is_in_faction_with = USA }
+        has_war = no
+        is_subject = no
+        has_capitulated = no
+        country_exists = EFH
+        EFH = { is_subject = no has_capitulated = no }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = EFH value = 150 }
+    ai_strategy = { type = antagonize id = EFH value = -300 }
+    ai_strategy = { type = conquer id = EFH value = -400 }
+    ai_strategy = { type = alliance id = EFH value = -400 }
+    ai_strategy = { type = protect id = EFH value = -40 }
+}
+
+CHN_usa_partnership = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_country_flag = CHN_usa_aligned
+        NOT = { has_country_flag = CHN_efh_aligned }
+        NOT = { is_in_faction_with = EFH }
+        has_war = no
+        is_subject = no
+        has_capitulated = no
+        country_exists = USA
+        USA = { is_subject = no has_capitulated = no }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = USA value = 150 }
+    ai_strategy = { type = antagonize id = USA value = -300 }
+    ai_strategy = { type = conquer id = USA value = -400 }
+    ai_strategy = { type = alliance id = USA value = -400 }
+    ai_strategy = { type = protect id = USA value = -40 }
+}
+
+CHN_fissile_research = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_completed_focus = CHN_fissile_materials
+        NOT = { has_tech = srp_fissile_extraction_1 }
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = research_weight_factor id = srp_fissile_extraction_1 value = 50 }
+}
+
+CHN_compute_research_1 = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_completed_focus = CHN_compute_research
+        NOT = { has_tech = srp_compute_1 }
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = research_weight_factor id = srp_compute_1 value = 50 }
+}
+
+CHN_compute_research_2 = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_completed_focus = CHN_compute_research
+        has_tech = srp_compute_1
+        NOT = { has_tech = srp_compute_2 }
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = research_weight_factor id = srp_compute_2 value = 50 }
+}
+
+CHN_compute_research_3 = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_completed_focus = CHN_advanced_compute
+        has_tech = srp_compute_2
+        NOT = { has_tech = srp_compute_3 }
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = research_weight_factor id = srp_compute_3 value = 50 }
+}
+
+CHN_hive_coalition = {
+    allowed = { original_tag = CHN }
+    enable = {
+        has_war_with = IRS
+        country_exists = EFH
+        EFH = { has_war_with = IRS }
+        NOT = { has_war_with = EFH }
+        NOT = { is_in_faction_with = USA }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = EFH value = 400 }
+}
+
+CHN_hive_coalition_outside_pact = {
+    allowed = { original_tag = CHN }
+    enable = {
+        srp_ai_story_mode = yes
+        has_war_with = IRS
+        country_exists = EFH
+        EFH = { has_war_with = IRS }
+        NOT = { has_war_with = EFH }
+        NOT = { is_in_faction_with = USA }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = alliance id = EFH value = -1500 }
+}
+
+CHN_japan_common_cause = {
+    allowed = { original_tag = CHN }
+    enable = {
+        country_exists = JAP
+        NOT = { has_war_with = JAP }
+        OR = {
+            AND = { has_war_with = USA JAP = { has_war_with = USA } }
+            AND = { has_war_with = EFH JAP = { has_war_with = EFH } }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = { type = befriend id = JAP value = 300 }
+    ai_strategy = { type = protect  id = JAP value = 100 }
+    ai_strategy = { type = conquer  id = JAP value = -300 }
+}

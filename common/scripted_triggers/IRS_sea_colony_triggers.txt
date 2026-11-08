@@ -1,0 +1,30 @@
+IRS_sea_colony_coast_count_met = {
+	if = {
+		limit = { has_idea = IRS_sea_colony_tier_3 }
+		any_controlled_state = {
+			count = 4
+			is_coastal = yes
+			beckon_cluster > 0
+		}
+	}
+	if = {
+		limit = { has_idea = IRS_sea_colony_tier_2 }
+		any_controlled_state = {
+			count = 3
+			is_coastal = yes
+			beckon_cluster > 0
+		}
+	}
+	if = {
+		limit = { has_idea = IRS_sea_colony_tier_1 }
+		any_controlled_state = {
+			count = 2
+			is_coastal = yes
+			beckon_cluster > 0
+		}
+	}
+	any_controlled_state = {
+		is_coastal = yes
+		beckon_cluster > 0
+	}
+}

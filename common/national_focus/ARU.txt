@@ -1,0 +1,191 @@
+focus_tree = {
+	id = ARU_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ARU
+		}
+	}
+
+	continuous_focus_position = { x = 10 y = 1200 }
+
+	focus = {
+		id = ARU_the_baghdad_secretariat
+		icon = GFX_focus_ARU_the_baghdad_secretariat
+		x = 8
+		y = 0
+		cost = 5
+		ai_will_do = { base = 10 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+
+	focus = {
+		id = ARU_the_compact_holds
+		icon = GFX_focus_ARU_the_compact_holds
+		prerequisite = { focus = ARU_the_baghdad_secretariat }
+		x = 4
+		y = 1
+		cost = 7
+		ai_will_do = { base = 6 }
+		completion_reward = {
+			swap_ideas = { remove_idea = ARU_nine_seats add_idea = ARU_the_compact }
+		}
+	}
+
+	focus = {
+		id = ARU_the_kurdish_seat
+		icon = GFX_focus_ARU_the_kurdish_seat
+		prerequisite = { focus = ARU_the_compact_holds }
+		x = 4
+		y = 2
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+
+	focus = {
+		id = ARU_the_oil_compact
+		icon = GFX_focus_ARU_the_oil_compact
+		prerequisite = { focus = ARU_the_baghdad_secretariat }
+		x = 8
+		y = 1
+		cost = 7
+		ai_will_do = { base = 5 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 676 state = 1011 state = 859 }
+					is_controlled_by = ROOT
+				}
+				add_resource = { type = oil amount = 8 }
+			}
+		}
+	}
+
+	focus = {
+		id = ARU_the_gulf_terminals
+		icon = GFX_focus_ARU_the_gulf_terminals
+		prerequisite = { focus = ARU_the_oil_compact }
+		x = 8
+		y = 2
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 1011 state = 291 }
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = ARU_sign_oil_for_wheat
+		icon = GFX_focus_ARU_sign_oil_for_wheat
+		prerequisite = { focus = ARU_the_gulf_terminals }
+		x = 8
+		y = 3
+		cost = 7
+		ai_will_do = { base = 5 }
+		available = {
+			country_exists = CHN
+			NOT = { has_war_with = CHN }
+		}
+		completion_reward = {
+			add_ideas = ARU_oil_for_wheat
+			CHN = { add_opinion_modifier = { target = ROOT modifier = ARU_CHN_trade } }
+			add_opinion_modifier = { target = CHN modifier = ARU_CHN_trade }
+		}
+	}
+
+
+	focus = {
+		id = ARU_the_baghdad_garrison
+		icon = GFX_focus_ARU_the_baghdad_garrison
+		prerequisite = { focus = ARU_the_baghdad_secretariat }
+		x = 13
+		y = 1
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			army_experience = 15
+			if = {
+				limit = { 291 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				291 = { add_building_construction = { type = bunker level = 2 province = 2097 instant_build = yes } }
+			}
+		}
+	}
+
+	focus = {
+		id = ARU_watch_the_red_sea
+		icon = GFX_focus_ARU_watch_the_red_sea
+		prerequisite = { focus = ARU_the_baghdad_garrison }
+		x = 12
+		y = 2
+		cost = 7
+		ai_will_do = { base = 6 }
+		available = { has_global_flag = parasites_emerged }
+		completion_reward = {
+			add_ideas = ARU_the_red_sea_watch
+			every_owned_state = {
+				limit = {
+					OR = { state = 293 state = 992 state = 679 state = 856 }
+					is_controlled_by = ROOT
+				}
+				add_building_construction = { type = coastal_bunker level = 1 province = { all_provinces = yes limit_to_coastal = yes } instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = ARU_the_air_umbrella
+		icon = GFX_focus_ARU_the_air_umbrella
+		prerequisite = { focus = ARU_the_baghdad_garrison }
+		x = 14
+		y = 2
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			air_experience = 10
+			every_owned_state = {
+				limit = {
+					OR = { state = 554 state = 291 }
+					is_controlled_by = ROOT
+					free_building_slots = { building = air_base size > 1 }
+				}
+				add_building_construction = { type = air_base level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = ARU_the_canal_docket
+		icon = GFX_focus_ARU_the_canal_docket
+		prerequisite = { focus = ARU_watch_the_red_sea }
+		x = 12
+		y = 3
+		cost = 5
+		ai_will_do = { base = 4 }
+		available = {
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+		completion_reward = {
+			add_political_power = 25
+			EFH = { add_opinion_modifier = { target = ROOT modifier = ARU_EFH_docket } }
+			add_opinion_modifier = { target = EFH modifier = ARU_EFH_docket }
+		}
+	}
+}

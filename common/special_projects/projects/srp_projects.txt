@@ -857,7 +857,7 @@ sp_land_nuclear_artillery = {
 		modifier = {
 			factor = 0
 			ROOT = {
-				NOT = { has_tech = srp_artillery_4 }
+				NOT = { has_tech = srp_artillery_3 }
 			}
 		}
 		modifier = {
@@ -868,7 +868,7 @@ sp_land_nuclear_artillery = {
 
 	available = {
 		FROM = {
-			has_tech = srp_artillery_4
+			has_tech = srp_artillery_3
 		}
 	}
 

@@ -13,233 +13,873 @@ focus_tree = {
 
 
 	focus = {
-		id = CHN_mobilize_the_nation
-		icon = GFX_focus_srp_generic_mobilize
-		x = 6
+		id = CHN_business_as_usual
+		icon = GFX_focus_CHN_business_as_usual
+		mutually_exclusive = { focus = CHN_power_seeking }
+		x = 16
 		y = 0
-		cost = 7.5
+		cost = 5
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 0.5 is_historical_focus_on = no }
+		}
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
 			add_political_power = 50
+			add_ideas = CHN_continuity_policy
+			if = {
+				limit = { 608 = { is_owned_by = ROOT } }
+				608 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = { 608 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = no } } }
+				608 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			}
+			if = {
+				limit = { 608 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = infrastructure size > 0 } } }
+				608 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			}
+		}
+	}
+	focus = {
+		id = CHN_Moore_Threads_investment
+		icon = GFX_focus_CHN_Moore_Threads_investment
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 10
+		y = 1
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHN_Moore_Threads_investment
+				bonus = 0.5
+				uses = 1
+				technology = srp_precision_mfg
+			}
+			if = {
+				limit = { 524 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = infrastructure size > 0 } } }
+				524 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = { 524 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = no } } }
+				524 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			}
 		}
 	}
 
 
-	focus = {
-		id = CHN_crisis_governance
-		icon = GFX_focus_srp_generic_crisis_governance
-		relative_position_id = CHN_mobilize_the_nation
-		x = -6
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_mobilize_the_nation }
-		completion_reward = {
-			add_stability = 0.10
-			add_political_power = 50
-		}
-	}
+
 
 	focus = {
-		id = CHN_popular_mandate
-		icon = GFX_focus_srp_generic_popular_mandate
-		relative_position_id = CHN_crisis_governance
-		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_crisis_governance }
+		id = CHN_export_mentality
+		icon = GFX_focus_CHN_export_mentality
+		prerequisite = { focus = CHN_resource_contracts }
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = { base = 1 }
 		completion_reward = {
 			add_stability = 0.05
-			add_war_support = 0.05
 			add_political_power = 25
-		}
-	}
-
-	focus = {
-		id = CHN_wartime_mandate
-		icon = GFX_focus_srp_generic_wartime_mandate
-		relative_position_id = CHN_popular_mandate
-		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_popular_mandate }
-		completion_reward = {
-			add_war_support = 0.10
-			add_political_power = 50
-		}
-	}
-
-
-	focus = {
-		id = CHN_industrial_base
-		icon = GFX_focus_srp_generic_industrial_base
-		relative_position_id = CHN_mobilize_the_nation
-		x = -2
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_mobilize_the_nation }
-		completion_reward = {
-			capital_scope = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			if = {
+				limit = { 592 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				592 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 				}
+			}
+		}
+	}
+ 
+	focus = {
+		id = CHN_power_seeking
+		icon = GFX_focus_CHN_power_seeking
+		mutually_exclusive = { focus = CHN_business_as_usual }
+		x = 20
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		completion_reward = {
+			add_ideas = CHN_assertive_policy
+			army_experience = 15
+			if = {
+				limit = { 608 = { is_owned_by = ROOT } }
+				608 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = { 608 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = arms_factory size > 1 include_locked = no } } }
+				608 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			}
+			if = {
+				limit = { 608 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = infrastructure size > 0 } } }
+				608 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			}
 		}
 	}
 
 	focus = {
-		id = CHN_arms_manufacture
-		icon = GFX_focus_srp_generic_arms_manufacture
-		relative_position_id = CHN_industrial_base
-		x = 0
+		id = CHN_align_EFH
+		icon = GFX_focus_CHN_align_EFH
+		prerequisite = { focus = CHN_business_as_usual }
+		x = 30
 		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_industrial_base }
+		cost = 5
+		available = {
+			country_exists = EFH
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_offer_pending }
+			NOT = { has_country_flag = CHN_usa_offer_pending }
+			EFH = { has_war = no is_subject = no has_capitulated = no }
+		}
+		ai_will_do = { base = 1 }
 		completion_reward = {
-			capital_scope = {
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			CHN_request_efh_partnership_effect = yes
+			set_country_flag = { flag = CHN_efh_retry_cd days = 180 }
+		}
+	}
+	focus = {
+		id = CHN_align_USA
+		icon = GFX_focus_CHN_align_USA
+		prerequisite = { focus = CHN_business_as_usual }
+		mutually_exclusive = { focus = CHN_european_pact }
+		x = 34
+		y = 1
+		cost = 5
+		available = {
+			country_exists = USA
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = EFH }
+			NOT = { has_country_flag = CHN_efh_aligned }
+			NOT = { has_country_flag = CHN_efh_offer_pending }
+			NOT = { has_country_flag = CHN_usa_offer_pending }
+			USA = { has_war = no is_subject = no has_capitulated = no }
+		}
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		completion_reward = {
+			CHN_request_usa_partnership_effect = yes
+			set_country_flag = { flag = CHN_usa_retry_cd days = 180 }
+		}
+	}
+
+
+
+
+	focus = {
+		id = CHN_shangai_industrial_investment
+		icon = GFX_focus_CHN_shangai_industrial_investment
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 6
+		y = 1
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			if = {
+				limit = { 613 = { is_owned_by = ROOT } }
+				613 = { add_extra_state_shared_building_slots = 3 }
+			}
+			if = {
+				limit = { 613 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 1 include_locked = no } } }
+				613 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			}
+			if = {
+				limit = { 613 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = infrastructure size > 0 } } }
+				613 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = { 613 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = no } } }
+				613 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 			}
 		}
 	}
 
-	focus = {
-		id = CHN_war_economy
-		icon = GFX_focus_srp_generic_war_economy
-		relative_position_id = CHN_arms_manufacture
-		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_arms_manufacture }
-		completion_reward = {
-			capital_scope = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
 
 	focus = {
-		id = CHN_infrastructure_push
-		icon = GFX_focus_srp_generic_infrastructure
-		relative_position_id = CHN_mobilize_the_nation
+		id = CHN_offshore_oil_drilling
+		icon = GFX_focus_CHN_offshore_oil_drilling
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
 		x = 2
 		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_mobilize_the_nation }
+		cost = 5
+		ai_will_do = { base = 1 }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { infrastructure < 10 }
-				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			if = {
+				limit = { 524 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				add_resource = {
+					type = oil
+					amount = 10
+					state = 524
+				}
 			}
-			random_owned_controlled_state = {
-				limit = { infrastructure < 10 }
-				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-			}
-			random_owned_controlled_state = {
-				limit = { infrastructure < 10 }
-				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			if = {
+				limit = { NOT = { 524 = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+				random_owned_controlled_state = {
+					limit = { is_coastal = yes }
+					add_resource = { type = oil amount = 10 }
+				}
 			}
 		}
 	}
-
 	focus = {
-		id = CHN_resource_extraction
-		icon = GFX_focus_srp_generic_resource_extraction
-		relative_position_id = CHN_infrastructure_push
+		id = CHN_fissile_materials
+		icon = GFX_focus_CHN_fissile_materials
+		prerequisite = { focus = CHN_offshore_oil_drilling }
 		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_infrastructure_push }
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
 		completion_reward = {
-			capital_scope = {
-				add_resource = { type = steel amount = 8 }
-				add_resource = { type = aluminium amount = 4 }
+			add_tech_bonus = {
+				name = CHN_fissile_materials
+				bonus = 0.75
+				uses = 1
+				technology = srp_fissile_extraction_1
+				technology = srp_fissile_extraction_2
 			}
 		}
 	}
 
 	focus = {
-		id = CHN_logistics_network
-		icon = GFX_focus_srp_generic_logistics_network
-		relative_position_id = CHN_resource_extraction
-		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_resource_extraction }
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { infrastructure < 10 }
-				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-			}
-			random_owned_controlled_state = {
-				limit = { infrastructure < 10 }
-				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-			}
-		}
-	}
-
-
-	focus = {
-		id = CHN_university_funding
-		icon = GFX_focus_srp_generic_university
-		relative_position_id = CHN_mobilize_the_nation
+		id = CHN_inland_investment
+		icon = GFX_focus_CHN_inland_investment
+		prerequisite = { focus = CHN_shangai_industrial_investment }
 		x = 6
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_mobilize_the_nation }
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
 		completion_reward = {
-			add_tech_bonus = {
-				name = CHN_university_funding
-				bonus = 0.5
-				uses = 1
-				category = industry
+			if = {
+				limit = { 1037 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				1037 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_coastal = no free_building_slots = { building = industrial_complex size > 1 include_locked = no } }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
 		}
 	}
 
 	focus = {
-		id = CHN_applied_sciences
-		icon = GFX_focus_srp_generic_applied_sciences
-		relative_position_id = CHN_university_funding
-		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_university_funding }
+		id = CHN_precision_tooling
+		icon = GFX_focus_CHN_precision_tooling
+		prerequisite = { focus = CHN_inland_investment }
+		x = 6
+		y = 3
+		cost = 5
+		ai_will_do = { base = 1 }
 		completion_reward = {
-			add_tech_bonus = {
-				name = CHN_applied_sciences
-				bonus = 0.5
-				uses = 1
-				category = land_doctrine
+			add_tech_bonus = { name = CHN_precision_tooling bonus = 0.75 uses = 1 technology = srp_automated_mfg }
+		}
+	}
+
+	focus = {
+		id = CHN_industrial_continuity
+		icon = GFX_focus_CHN_industrial_continuity
+		prerequisite = { focus = CHN_precision_tooling }
+		x = 6
+		y = 4
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = CHN_industrial_continuity bonus = 0.75 uses = 1 technology = srp_dispersed_industry technology = srp_underground_mfg }
+			if = {
+				limit = { 1037 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				1037 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_coastal = no free_building_slots = { building = arms_factory size > 1 include_locked = no } }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 			}
 		}
 	}
 
 	focus = {
-		id = CHN_tech_acceleration
-		icon = GFX_focus_srp_generic_tech_acceleration
-		relative_position_id = CHN_applied_sciences
-		x = 0
-		y = 1
-		cost = 7.5
-		prerequisite = { focus = CHN_applied_sciences }
+		id = CHN_strategic_metals
+		icon = GFX_focus_CHN_strategic_metals
+		prerequisite = { focus = CHN_offshore_oil_drilling }
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
 		completion_reward = {
-			add_research_slot = 1
+			random_owned_controlled_state = {
+				limit = { is_coastal = no }
+				add_resource = { type = steel amount = 12 }
+				add_resource = { type = aluminium amount = 8 }
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_extraction_plants
+		icon = GFX_focus_CHN_extraction_plants
+		prerequisite = { focus = CHN_fissile_materials }
+		x = 0
+		y = 3
+		cost = 5
+		available = { has_tech = srp_fissile_extraction_1 }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = no free_building_slots = { building = srp_fissile_extractor size > 0 include_locked = no } }
+				add_building_construction = { type = srp_fissile_extractor level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_resource_contracts
+		icon = GFX_focus_CHN_resource_contracts
+		prerequisite = { focus = CHN_strategic_metals }
+		prerequisite = { focus = CHN_fissile_materials }
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = { name = CHN_resource_contracts bonus = 0.50 uses = 1 technology = srp_logistics_1 technology = srp_logistics_2 }
+		}
+	}
+
+	focus = {
+		id = CHN_wafer_fabrication
+		icon = GFX_focus_CHN_wafer_fabrication
+		prerequisite = { focus = CHN_Moore_Threads_investment }
+		x = 10
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 1 include_locked = no } }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			add_ideas = CHN_semiconductor_industry_1
+		}
+	}
+
+	focus = {
+		id = CHN_advanced_packaging
+		icon = GFX_focus_CHN_advanced_packaging
+		prerequisite = { focus = CHN_wafer_fabrication }
+		prerequisite = { focus = CHN_precision_tooling }
+		x = 10
+		y = 4
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			swap_ideas = { remove_idea = CHN_semiconductor_industry_1 add_idea = CHN_semiconductor_industry_2 }
+			add_tech_bonus = { name = CHN_advanced_packaging bonus = 0.75 uses = 1 technology = srp_compute_5 }
+		}
+	}
+
+	focus = {
+		id = CHN_compute_research
+		icon = GFX_focus_CHN_compute_research
+		prerequisite = { focus = CHN_Moore_Threads_investment }
+		x = 12
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = CHN_compute_research bonus = 0.75 uses = 1 technology = srp_compute_1 technology = srp_compute_2 }
+		}
+	}
+
+	focus = {
+		id = CHN_data_centers
+		icon = GFX_focus_CHN_data_centers
+		prerequisite = { focus = CHN_compute_research }
+		x = 12
+		y = 3
+		cost = 5
+		available = { has_tech = srp_compute_1 }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = srp_data_center size > 0 include_locked = no } }
+				add_building_construction = { type = srp_data_center level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_advanced_compute
+		icon = GFX_focus_CHN_advanced_compute
+		prerequisite = { focus = CHN_data_centers }
+		x = 12
+		y = 4
+		cost = 5
+		available = { has_tech = srp_compute_2 }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = CHN_advanced_compute bonus = 0.75 uses = 1 technology = srp_compute_3 technology = srp_compute_4 }
+		}
+	}
+
+	focus = {
+		id = CHN_chip_dominance
+		icon = GFX_focus_CHN_chip_dominance
+		prerequisite = { focus = CHN_advanced_packaging }
+		prerequisite = { focus = CHN_advanced_compute }
+		x = 10
+		y = 5
+		cost = 5
+		available = { has_tech = srp_compute_3 }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			swap_ideas = { remove_idea = CHN_semiconductor_industry_2 add_idea = CHN_semiconductor_industry_3 }
+			custom_effect_tooltip = CHN_compute_exports_tt
+		}
+	}
+
+	focus = {
+		id = CHN_technical_colleges
+		icon = GFX_focus_CHN_technical_colleges
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 14
+		y = 1
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = CHN_technical_colleges bonus = 0.50 uses = 1 technology = srp_advanced_construction technology = srp_modular_industry }
+		}
+	}
+
+	focus = {
+		id = CHN_national_laboratories
+		icon = GFX_focus_CHN_national_laboratories
+		prerequisite = { focus = CHN_technical_colleges }
+		prerequisite = { focus = CHN_compute_research }
+		x = 14
+		y = 3
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = { add_research_slot = 1 }
+	}
+
+	focus = {
+		id = CHN_efh_trade
+		icon = GFX_focus_CHN_efh_trade
+		prerequisite = { focus = CHN_align_EFH }
+		x = 32
+		y = 5
+		cost = 5
+		available = {
+			has_completed_focus = CHN_export_mentality
+			has_country_flag = CHN_efh_aligned
+			country_exists = EFH
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			EFH = { has_war = no is_subject = no has_capitulated = no }
+		}
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			EFH = { CHN_request_efh_trade_effect = yes }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = CHN_fusion_licence
+		icon = GFX_focus_CHN_fusion_licence
+		prerequisite = { focus = CHN_align_EFH }
+		x = 30
+		y = 3
+		cost = 5
+		available = {
+			has_completed_focus = CHN_fissile_materials
+			has_country_flag = CHN_efh_aligned
+			country_exists = EFH
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_fusion_offer_pending }
+			NOT = { has_country_flag = CHN_fusion_licensed }
+			NOT = { has_tech = srp_fusion_reactor_1 }
+			EFH = { has_tech = srp_fusion_reactor_1 has_war = no is_subject = no has_capitulated = no }
+		}
+		bypass = { has_tech = srp_fusion_reactor_1 }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			CHN_request_fusion_licence_effect = yes
+			set_country_flag = { flag = CHN_fusion_retry_cd days = 180 }
+		}
+	}
+
+	focus = {
+		id = CHN_fusion_construction
+		icon = GFX_focus_CHN_fusion_construction
+		prerequisite = { focus = CHN_fissile_materials }
+		x = 4
+		y = 3
+		cost = 5
+		available = { has_tech = srp_fusion_reactor_1 }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					NOT = { commercial_nuclear_reactor > 0 }
+					free_building_slots = { building = srp_fusion_reactor size > 0 include_locked = no }
+				}
+				add_building_construction = { type = srp_fusion_reactor level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_canal_initiative
+		icon = GFX_focus_CHN_canal_initiative
+		prerequisite = { focus = CHN_efh_trade }
+		x = 32
+		y = 6
+		cost = 5
+		available = {
+			has_country_flag = CHN_efh_aligned
+			has_country_flag = CHN_efh_trade_accepted
+			NOT = { has_country_flag = CHN_usa_aligned }
+			country_exists = EFH
+			country_exists = USA
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = USA }
+			EFH = { has_war = no is_subject = no has_capitulated = no NOT = { is_in_faction_with = USA } }
+			USA = { has_war = no is_subject = no has_capitulated = no }
+			685 = { is_owned_by = USA is_controlled_by = USA }
+			NOT = { has_global_flag = LD_panama_settled }
+			NOT = { has_global_flag = LD_panama_war_opened }
+			NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+			NOT = { has_global_flag = LD_first_atlantic_war_ended }
+			NOT = { has_global_flag = LD_second_atlantic_war_open }
+		}
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = CHN_efh_aligned
+					has_country_flag = CHN_efh_trade_accepted
+					NOT = { has_country_flag = CHN_usa_aligned }
+					country_exists = EFH
+					country_exists = USA
+					has_war = no
+					is_subject = no
+					has_capitulated = no
+					NOT = { is_in_faction_with = USA }
+					EFH = { has_war = no is_subject = no has_capitulated = no NOT = { is_in_faction_with = USA } }
+					USA = { has_war = no is_subject = no has_capitulated = no }
+					685 = { is_owned_by = USA is_controlled_by = USA }
+					NOT = { has_global_flag = LD_panama_settled }
+					NOT = { has_global_flag = LD_panama_war_opened }
+					NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+					NOT = { has_global_flag = LD_first_atlantic_war_ended }
+					NOT = { has_global_flag = LD_second_atlantic_war_open }
+				}
+				set_country_flag = CHN_canal_initiative
+			}
+			custom_effect_tooltip = CHN_canal_monthly_tt
+		}
+	}
+
+	focus = {
+		id = CHN_european_pact
+		icon = GFX_focus_CHN_european_pact
+		prerequisite = { focus = CHN_efh_trade }
+		mutually_exclusive = { focus = CHN_align_USA }
+		x = 34
+		y = 6
+		cost = 8
+		available = {
+			has_country_flag = CHN_efh_aligned
+			has_country_flag = CHN_efh_trade_accepted
+			NOT = { has_country_flag = CHN_usa_aligned }
+			country_exists = EFH
+			is_subject = no
+			has_capitulated = no
+			is_in_faction = no
+			EFH = {
+				is_faction_leader = yes
+				is_subject = no
+				has_capitulated = no
+				OR = {
+					has_war_with = IRS
+					has_war_with = KNX
+				}
+			}
+		}
+		ai_will_do = { base = 0 }
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = EFH
+					is_in_faction = no
+					EFH = { is_faction_leader = yes }
+				}
+				EFH = { add_to_faction = CHN }
+			}
+			add_political_power = 25
+			set_country_flag = CHN_european_pact_member
+		}
+	}
+
+	focus = {
+		id = CHN_army_review
+		icon = GFX_focus_CHN_army_review
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 18
+		y = 1
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = { army_experience = 25 }
+	}
+
+	focus = {
+		id = CHN_army_logistics
+		icon = GFX_focus_CHN_army_logistics
+		prerequisite = { focus = CHN_army_review }
+		x = 18
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_ideas = CHN_army_supply_1
+			add_tech_bonus = { name = CHN_army_logistics bonus = 0.75 uses = 1 technology = tech_logistics_company technology = tech_logistics_company_2 }
+		}
+	}
+
+	focus = {
+		id = CHN_field_workshops
+		icon = GFX_focus_CHN_field_workshops
+		prerequisite = { focus = CHN_army_logistics }
+		x = 18
+		y = 3
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = { name = CHN_field_workshops bonus = 0.75 uses = 1 technology = tech_maintenance_company technology = tech_maintenance_company_2 }
+		}
+	}
+
+	focus = {
+		id = CHN_inland_supply
+		icon = GFX_focus_CHN_inland_supply
+		prerequisite = { focus = CHN_army_logistics }
+		x = 16
+		y = 3
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			if = {
+				limit = { 608 = { is_owned_by = ROOT is_controlled_by = ROOT } 615 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				build_railway = { level = 2 start_state = 608 target_state = 615 build_only_on_allied = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_coastal = no free_building_slots = { building = infrastructure size > 0 } }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_tech_bonus = { name = CHN_inland_supply bonus = 0.75 uses = 1 technology = srp_logistics_3 }
+		}
+	}
+
+	focus = {
+		id = CHN_reserve_depots
+		icon = GFX_focus_CHN_reserve_depots
+		prerequisite = { focus = CHN_inland_supply }
+		prerequisite = { focus = CHN_field_workshops }
+		x = 18
+		y = 4
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			swap_ideas = { remove_idea = CHN_army_supply_1 add_idea = CHN_army_supply_2 }
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = CHN_domestic_aircraft
+		icon = GFX_focus_CHN_domestic_aircraft
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 22
+		y = 1
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			air_experience = 20
+			add_tech_bonus = { name = CHN_domestic_aircraft bonus = 0.75 uses = 1 technology = srp_fighter_gen4 technology = srp_fighter_gen45 }
+		}
+	}
+
+	focus = {
+		id = CHN_aircraft_production
+		icon = GFX_focus_CHN_aircraft_production
+		prerequisite = { focus = CHN_domestic_aircraft }
+		x = 22
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = arms_factory size > 1 include_locked = no } }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_tech_bonus = { name = CHN_aircraft_production bonus = 0.50 uses = 1 technology = srp_cas_1 technology = srp_cas_drone }
+		}
+	}
+
+	focus = {
+		id = CHN_dispersed_airfields
+		icon = GFX_focus_CHN_dispersed_airfields
+		prerequisite = { focus = CHN_aircraft_production }
+		x = 22
+		y = 3
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = no free_building_slots = { building = air_base size > 1 } }
+				add_building_construction = { type = air_base level = 2 instant_build = yes }
+			}
+			air_experience = 25
+		}
+	}
+
+	focus = {
+		id = CHN_escort_design
+		icon = GFX_focus_CHN_escort_design
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 26
+		y = 1
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			navy_experience = 20
+			add_tech_bonus = { name = CHN_escort_design bonus = 0.75 uses = 1 technology = srp_destroyer_hull_tech_1 technology = srp_destroyer_hull_tech_2 }
+		}
+	}
+
+	focus = {
+		id = CHN_escort_yards
+		icon = GFX_focus_CHN_escort_yards
+		prerequisite = { focus = CHN_escort_design }
+		x = 26
+		y = 2
+		cost = 5
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes free_building_slots = { building = dockyard size > 1 include_locked = no } }
+				add_building_construction = { type = dockyard level = 2 instant_build = yes }
+			}
+			navy_experience = 15
+		}
+	}
+
+	focus = {
+		id = CHN_coastal_defense
+		icon = GFX_focus_CHN_coastal_defense
+		prerequisite = { focus = CHN_escort_yards }
+		x = 26
+		y = 3
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			if = {
+				limit = { 613 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = coastal_bunker province = 7014 size > 1 } } }
+				613 = { add_building_construction = { type = coastal_bunker province = 7014 level = 2 instant_build = yes } }
+			}
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = CHN_coastal_air_defense
+		icon = GFX_focus_CHN_coastal_air_defense
+		prerequisite = { focus = CHN_coastal_defense }
+		prerequisite = { focus = CHN_aircraft_production }
+		x = 24
+		y = 4
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes free_building_slots = { building = anti_air_building size > 1 } }
+				add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+			}
+			add_tech_bonus = { name = CHN_coastal_air_defense bonus = 0.50 uses = 1 technology = srp_fighter_gen5 }
+		}
+	}
+
+	focus = {
+		id = CHN_public_survival_plan
+		icon = GFX_focus_CHN_public_survival_plan
+		prerequisite = { focus = CHN_business_as_usual focus = CHN_power_seeking }
+		x = 20
+		y = 1
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			clr_country_flag = CHN_media_cd
+		}
+	}
+
+	focus = {
+		id = CHN_civil_defense
+		icon = GFX_focus_CHN_civil_defense
+		prerequisite = { focus = CHN_public_survival_plan }
+		x = 20
+		y = 2
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_stability = 0.03
+			add_tech_bonus = { name = CHN_civil_defense bonus = 0.50 uses = 1 technology = tech_field_hospital technology = tech_field_hospital_2 }
+		}
+	}
+
+	focus = {
+		id = CHN_emergency_coordination
+		icon = GFX_focus_CHN_emergency_coordination
+		prerequisite = { focus = CHN_civil_defense }
+		x = 20
+		y = 3
+		cost = 5
+		available = { OR = { has_war = yes has_global_flag = parasites_emerged } }
+		ai_will_do = { base = 1 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			clr_country_flag = CHN_peoples_war_cd
 		}
 	}
 }

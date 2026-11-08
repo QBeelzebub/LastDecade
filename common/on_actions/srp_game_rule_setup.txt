@@ -89,6 +89,20 @@ on_actions = {
 					set_variable = { var = global.srp_parasite_aggression value = 3 }
 				}
 
+				if = {
+					limit = { has_game_rule = { rule = srp_ai_behaviour option = PLAY_TO_WIN } }
+					set_global_flag = srp_ai_play_to_win
+				}
+
+				if = {
+					limit = { has_game_rule = { rule = srp_public_panic option = LOW } }
+					set_global_flag = srp_panic_gains_low
+				}
+				if = {
+					limit = { has_game_rule = { rule = srp_public_panic option = HIGH } }
+					set_global_flag = srp_panic_gains_high
+				}
+
 				set_variable = { var = global.srp_ep_income_mult value = 1 }
 				if = {
 					limit = { has_game_rule = { rule = srp_evolution_economy option = LEAN } }

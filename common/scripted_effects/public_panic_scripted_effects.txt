@@ -1,6 +1,98 @@
 
+SRP_public_panic_tension_mult_effect = {
+    set_variable = { var = public_panic_tension_mult value = 1 }
+    if = { limit = { threat > 0.05 } set_variable = { var = public_panic_tension_mult value = 1.2 } }
+    if = { limit = { threat > 0.10 } set_variable = { var = public_panic_tension_mult value = 1.4 } }
+    if = { limit = { threat > 0.15 } set_variable = { var = public_panic_tension_mult value = 1.6 } }
+    if = { limit = { threat > 0.20 } set_variable = { var = public_panic_tension_mult value = 1.8 } }
+    if = { limit = { threat > 0.25 } set_variable = { var = public_panic_tension_mult value = 2 } }
+    if = { limit = { threat > 0.35 } set_variable = { var = public_panic_tension_mult value = 2.2 } }
+    if = { limit = { threat > 0.45 } set_variable = { var = public_panic_tension_mult value = 2.4 } }
+    if = { limit = { threat > 0.55 } set_variable = { var = public_panic_tension_mult value = 2.6 } }
+    if = { limit = { threat > 0.70 } set_variable = { var = public_panic_tension_mult value = 2.8 } }
+    if = { limit = { threat > 0.90 } set_variable = { var = public_panic_tension_mult value = 3 } }
+}
+
+SRP_public_panic_tension_floor_effect = {
+    set_variable = { var = public_panic_floor value = 0 }
+    if = { limit = { threat > 0.05 } set_variable = { var = public_panic_floor value = 25 } }
+    if = { limit = { threat > 0.10 } set_variable = { var = public_panic_floor value = 50 } }
+    if = { limit = { threat > 0.15 } set_variable = { var = public_panic_floor value = 75 } }
+    if = { limit = { threat > 0.20 } set_variable = { var = public_panic_floor value = 100 } }
+    if = { limit = { threat > 0.25 } set_variable = { var = public_panic_floor value = 125 } }
+    if = { limit = { threat > 0.35 } set_variable = { var = public_panic_floor value = 175 } }
+    if = { limit = { threat > 0.45 } set_variable = { var = public_panic_floor value = 225 } }
+    if = { limit = { threat > 0.55 } set_variable = { var = public_panic_floor value = 275 } }
+    if = { limit = { threat > 0.70 } set_variable = { var = public_panic_floor value = 350 } }
+    if = { limit = { threat > 0.90 } set_variable = { var = public_panic_floor value = 450 } }
+}
+SRP_public_panic_own_floor_effect = {
+    if = {
+        limit = { check_variable = { public_panic_peak_states < num_owned_controlled_states } }
+        set_variable = { var = public_panic_peak_states value = num_owned_controlled_states }
+    }
+    set_variable = { var = public_panic_own_floor value = public_panic_peak_states }
+    subtract_from_variable = { var = public_panic_own_floor value = num_owned_controlled_states }
+    multiply_variable = { var = public_panic_own_floor value = 8 }
+
+    set_variable = { public_panic_infested_states = 0 }
+    every_controlled_state = {
+        limit = { check_variable = { iris_infestation_level > 49 } }
+        PREV = { add_to_variable = { public_panic_infested_states = 1 } }
+    }
+    multiply_variable = { var = public_panic_infested_states value = 5 }
+    add_to_variable = { var = public_panic_own_floor value = public_panic_infested_states }
+
+    if = {
+        limit = {
+            any_enemy_country = { is_full_parasite = yes }
+        }
+        add_to_variable = { var = public_panic_own_floor value = 50 }
+    }
+    clamp_variable = { var = public_panic_own_floor min = 0 max = 400 }
+}
+
+
 SRP_recalculate_public_panic_effect = {
+    SRP_public_panic_tension_mult_effect = yes
+    set_temp_variable = { panic_delta = public_panic }
+    subtract_from_temp_variable = { panic_delta = public_panic_last }
+    if = {
+        limit = { check_variable = { panic_delta > 0 } }
+        subtract_from_variable = { var = public_panic value = panic_delta }
+        multiply_temp_variable = { panic_delta = public_panic_tension_mult }
+        if = {
+            limit = { has_global_flag = srp_panic_gains_low }
+            multiply_temp_variable = { panic_delta = 0.5 }
+        }
+        if = {
+            limit = { has_global_flag = srp_panic_gains_high }
+            multiply_temp_variable = { panic_delta = 1.5 }
+        }
+        if = {
+            limit = { has_country_flag = EFH_attenborough_in_office }
+            multiply_temp_variable = { panic_delta = 0.9 }
+        }
+        add_to_variable = { var = public_panic value = panic_delta }
+    }
+
+    SRP_public_panic_tension_floor_effect = yes
+    add_to_variable = { var = public_panic_floor value = public_panic_own_floor }
+    if = {
+        limit = { has_country_flag = EFH_lauterbach_in_office }
+        add_to_variable = { var = public_panic_floor value = 50 }
+    }
+    if = {
+        limit = { has_country_flag = EFH_armageddon_declared }
+        set_variable = { var = public_panic_floor value = 900 }
+    }
+    if = {
+        limit = { check_variable = { public_panic < public_panic_floor } }
+        set_variable = { var = public_panic value = public_panic_floor }
+    }
+
     clamp_variable = { var = public_panic min = 0 max = 1000 }
+    set_variable = { var = public_panic_last value = public_panic }
 
 
     set_variable = { var = public_panic_stab_factor value = 0 }

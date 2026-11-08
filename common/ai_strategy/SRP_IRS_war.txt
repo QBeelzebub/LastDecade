@@ -1,18 +1,262 @@
 
 
-IRS_expansion_strategy = {
+
+IRS_area_dormant = {
 	allowed = { original_tag = IRS }
-	enable = { always = yes }
+	enable = { NOT = { has_war = yes } }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = area_priority  id = africa         value = 30 }
-	ai_strategy = { type = area_priority  id = europe         value = 50 }
-	ai_strategy = { type = area_priority  id = middle_east    value = 40 }
-	ai_strategy = { type = area_priority  id = asia           value = 30 }
-	ai_strategy = { type = area_priority  id = south_america  value = 30 }
-	ai_strategy = { type = area_priority  id = north_america  value = 25 }
-	ai_strategy = { type = area_priority  id = pacific        value = 25 }
-	ai_strategy = { type = area_priority  id = oceania        value = 20 }
+	ai_strategy = { type = area_priority  id = africa         value = 240 }
+	ai_strategy = { type = area_priority  id = europe         value = 40  }
+	ai_strategy = { type = area_priority  id = middle_east    value = 40  }
+	ai_strategy = { type = area_priority  id = asia           value = 40  }
+	ai_strategy = { type = area_priority  id = south_america  value = 40  }
+	ai_strategy = { type = area_priority  id = north_america  value = 40  }
+	ai_strategy = { type = area_priority  id = pacific        value = 40  }
+	ai_strategy = { type = area_priority  id = oceania        value = 40  }
+}
+
+IRS_area_african_war = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_war_with = AFR
+		NOT = { has_completed_focus = IRS_suez_crossing }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = africa         value = 720  }
+	ai_strategy = { type = area_priority  id = middle_east    value = 80   }
+	ai_strategy = { type = area_priority  id = europe         value = -160 }
+	ai_strategy = { type = area_priority  id = asia           value = -160 }
+	ai_strategy = { type = area_priority  id = south_america  value = -160 }
+	ai_strategy = { type = area_priority  id = north_america  value = -160 }
+	ai_strategy = { type = area_priority  id = pacific        value = -160 }
+	ai_strategy = { type = area_priority  id = oceania        value = -160 }
+}
+
+IRS_area_transatlantic = {
+	allowed = { original_tag = IRS }
+	enable = { has_war_with = SAC }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = south_america  value = 640  }
+	ai_strategy = { type = area_priority  id = north_america  value = 80   }
+	ai_strategy = { type = area_priority  id = asia           value = -160 }
+	ai_strategy = { type = area_priority  id = pacific        value = -160 }
+	ai_strategy = { type = area_priority  id = oceania        value = -160 }
+
+	ai_strategy = { type = naval_dominance  id = 62  value = 80 }
+	ai_strategy = { type = naval_dominance  id = 61  value = 90 }
+	ai_strategy = { type = naval_dominance  id = 66  value = 90 }
+	ai_strategy = { type = naval_dominance  id = 59  value = 90 }
+
+	ai_strategy = { type = naval_mission_threshold  id = MISSION_CONVOY_RAIDING  value = 120 }
+}
+
+IRS_area_suez_push = {
+	allowed = { original_tag = IRS }
+	enable = {
+		OR = {
+			NOT = { country_exists = AFR }
+			AFR = { num_of_controlled_states < 3 }
+			has_completed_focus = IRS_suez_crossing
+		}
+		OR = {
+			has_war_with = EFH
+			AND = {
+				OR = {
+					has_war_with = CHN
+					has_war_with = ARU
+				}
+				has_completed_focus = IRS_suez_crossing
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = suez           value = 760 }
+	ai_strategy = { type = area_priority  id = middle_east    value = 480 }
+	ai_strategy = { type = area_priority  id = africa         value = 160 }
+
+	ai_strategy = { type = front_unit_request  area = suez  value = 300 }
+
+	ai_strategy = { type = front_control
+		area = suez
+		ordertype = front
+		execution_type = rush
+		priority = 200
+		ratio = 0.7
+		execute_order = yes
+	}
+
+	ai_strategy = { type = strategic_air_importance id = 128 value = 30000 }
+	ai_strategy = { type = strategic_air_importance id = 232 value = 26000 }
+}
+
+IRS_area_middle_east = {
+	allowed = { original_tag = IRS }
+	enable = {
+		has_completed_focus = IRS_suez_crossing
+		NOT = { has_completed_focus = IRS_turn_east }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = middle_east    value = 560  }
+
+	ai_strategy = { type = front_unit_request                tag = ARU  value = 200 }
+	ai_strategy = { type = force_concentration_target_weight tag = ARU  value = 40  }
+	ai_strategy = { type = front_unit_request                tag = CHN  value = 80  }
+
+	ai_strategy = { type = front_control
+		area = middle_east
+		ordertype = front
+		execution_type = rush
+		priority = 180
+		ratio = 0.5
+		execute_order = yes
+	}
+}
+
+IRS_area_middle_east_europe_holds = {
+	allowed = { original_tag = IRS }
+	enable = {
+		srp_ai_story_mode = yes
+		has_completed_focus = IRS_suez_crossing
+		NOT = { has_completed_focus = IRS_turn_east }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority                     id  = europe  value = -480 }
+	ai_strategy = { type = invade                            id  = EFH     value = -200 }
+	ai_strategy = { type = force_concentration_target_weight tag = EFH     value = -30  }
+	ai_strategy = { type = area_priority                     id  = irs_anatolia  value = -480 }
+	ai_strategy = { type = front_unit_request                area = irs_anatolia value = -200 }
+}
+
+IRS_red_sea_flank = {
+	allowed = { original_tag = IRS }
+	enable = {
+		OR = {
+			679 = { controller = { has_war_with = ROOT } }
+			293 = { controller = { has_war_with = ROOT } }
+		}
+		NOT = { has_completed_focus = IRS_turn_east }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_invasion_focus  value = 60 }
+	ai_strategy = { type = area_priority         id   = irs_red_sea_landing  value = 400 }
+	ai_strategy = { type = invasion_unit_request area = irs_red_sea_landing  value = 40  }
+
+	ai_strategy = { type = front_control  area = irs_red_sea_landing  ratio = 0.2  priority = 150  ordertype = invasion  execution_type = rush  execute_order = yes }
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.12
+		states = { 550 549 268 }
+		area = irs_red_sea_landing
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+
+	ai_strategy = { type = front_control
+		area = irs_red_sea_landing
+		ordertype = front
+		execution_type = rush
+		priority = 200
+		ratio = 0.5
+		execute_order = yes
+	}
+}
+
+IRS_area_china = {
+	allowed = { original_tag = IRS }
+	enable = { has_completed_focus = IRS_turn_east }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = asia           value = 640  }
+	ai_strategy = { type = area_priority  id = middle_east    value = 160  }
+	ai_strategy = { type = conquer        id = CHN            value = 300  }
+	ai_strategy = { type = front_unit_request  area = asia    value = 250  }
+	ai_strategy = { type = front_unit_request                tag = CHN  value = 200  }
+	ai_strategy = { type = force_concentration_target_weight tag = CHN  value = 60   }
+}
+
+IRS_area_china_europe_holds = {
+	allowed = { original_tag = IRS }
+	enable = {
+		srp_ai_story_mode = yes
+		has_completed_focus = IRS_turn_east
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority                     id  = europe  value = -480 }
+	ai_strategy = { type = conquer                           id  = EFH     value = -200 }
+	ai_strategy = { type = front_unit_request                tag = EFH     value = -100 }
+	ai_strategy = { type = force_concentration_target_weight tag = EFH     value = -50  }
+	ai_strategy = { type = area_priority                     id  = irs_anatolia  value = -480 }
+	ai_strategy = { type = front_unit_request                area = irs_anatolia value = -200 }
+}
+
+IRS_area_central_america = {
+	allowed = { original_tag = IRS }
+	enable = {
+		OR = {
+			has_war_with = USA
+			has_war_with = SAC
+		}
+		OR = {
+			NOT = { country_exists = SAC }
+			SAC = { has_capitulated = yes }
+			SAC = { num_of_controlled_states < 6 }
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = north_america  value = 320 }
+	ai_strategy = { type = front_unit_request  area = north_america  value = 200 }
+	ai_strategy = { type = force_concentration_front_factor  area = north_america  value = 40 }
+	ai_strategy = { type = front_control
+		area = north_america
+		ordertype = front
+		execution_type = rush
+		priority = 150
+		ratio = 0.4
+		execute_order = yes
+	}
+
+	ai_strategy = { type = strategic_air_importance id = 34  value = 26000 }
+	ai_strategy = { type = strategic_air_importance id = 205 value = 20000 }
+
+	ai_strategy = { type = invade                 id   = USA                          value = 150 }
+	ai_strategy = { type = area_priority          id   = irs_central_america_landing  value = 300 }
+	ai_strategy = { type = invasion_unit_request  area = irs_central_america_landing  value = 30  }
+	ai_strategy = { type = naval_dominance        id   = 53  value = 100 }
+	ai_strategy = { type = ignore_army_incompetence value = 1 }
+}
+
+IRS_area_global = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_phase_2_full_complete }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = europe         value = 640 }
+	ai_strategy = { type = area_priority  id = north_america  value = 400 }
+	ai_strategy = { type = area_priority  id = asia           value = 320 }
+	ai_strategy = { type = area_priority  id = middle_east    value = 320 }
+	ai_strategy = { type = area_priority  id = africa         value = 240 }
+	ai_strategy = { type = area_priority  id = south_america  value = 240 }
+	ai_strategy = { type = area_priority  id = pacific        value = 160 }
+	ai_strategy = { type = area_priority  id = oceania        value = 80  }
+}
+
+IRS_amphibious_appetite = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_phase_2_full_complete }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_invasion_focus value = 150 }
+	ai_strategy = { type = role_ratio id = marines value = 20 }
 }
 
 IRS_Kill_SAC = {
@@ -20,21 +264,37 @@ IRS_Kill_SAC = {
 	enable = { has_war_with = SAC }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = invade id = SAC value = 150 }
-	ai_strategy = { type = conquer id = SAC value = 300 }
+	ai_strategy = { type = invade id = SAC value = 300 }
+	ai_strategy = { type = conquer id = SAC value = 150 }
 
 	ai_strategy = { type = naval_dominance id = 61 value = 100 }
 	ai_strategy = { type = naval_dominance id = 62 value = 100 }
 	ai_strategy = { type = naval_dominance id = 66 value = 100 }
+	ai_strategy = { type = naval_dominance id = 59 value = 100 }
+	ai_strategy = { type = naval_dominance id = 53 value = 90  }
 
 	ai_strategy = { type = area_priority         id   = irs_pernambuco_landing  value = 400 }
-	ai_strategy = { type = invasion_unit_request area = irs_pernambuco_landing  value = 15  }
+	ai_strategy = { type = invasion_unit_request area = irs_pernambuco_landing  value = 60  }
 	ai_strategy = { type = invasion_unit_request tag  = SAC                     value = 20  }
 
 	ai_strategy = { type = naval_invasion_focus  value = 50 }
 
 	ai_strategy = { type = role_ratio  id = marines  value = 30 }
 	ai_strategy = { type = build_army  id = marines  value = 40 }
+	ai_strategy = { type = role_ratio  id = naval_capital_bb value = 50 }
+
+	ai_strategy = { type = front_unit_request area = south_america value = 280 }
+	ai_strategy = { type = force_concentration_front_factor area = south_america value = 60 }
+	ai_strategy = {
+		type = front_control
+		area = south_america
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		priority = 200
+		ratio = 0.5
+	}
+	ai_strategy = { type = ai_wanted_divisions_factor value = 120 }
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -44,6 +304,23 @@ IRS_Kill_SAC = {
 		subtract_invasions_from_need = yes
 		subtract_fronts_from_need = yes
 	}
+}
+
+IRS_sac_before_europe = {
+	allowed = { original_tag = IRS }
+	enable = {
+		srp_ai_story_mode = yes
+		has_war_with = SAC
+		SAC = { has_capitulated = no }
+		SAC = { num_of_controlled_states > 5 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority                     id  = europe  value = -400 }
+	ai_strategy = { type = conquer                           id  = EFH     value = -150 }
+	ai_strategy = { type = front_unit_request                tag = EFH     value = -100 }
+	ai_strategy = { type = force_concentration_target_weight tag = SAC     value = 50   }
+	ai_strategy = { type = force_concentration_target_weight tag = EFH     value = -40  }
 }
 
 IRS_madagascar_landing_drive = {
@@ -58,7 +335,7 @@ IRS_madagascar_landing_drive = {
 	ai_strategy = { type = naval_dominance  id = 103  value = 100 }
 
 	ai_strategy = { type = area_priority         id   = irs_madagascar_landing  value = 60 }
-	ai_strategy = { type = invasion_unit_request area = irs_madagascar_landing  value = 6  }
+	ai_strategy = { type = invasion_unit_request area = irs_madagascar_landing  value = 12  }
 }
 
 IRS_prepare_for_south_america = {
@@ -75,6 +352,107 @@ IRS_prepare_for_south_america = {
 	ai_strategy = { type = naval_invasion_focus            value = 30 }
 	ai_strategy = { type = naval_invasion_dominance_weight value = 30 }
 	ai_strategy = { type = ignore_army_incompetence value = 1 }
+
+
+	ai_strategy = { type = equipment_variant_production_factor id = IRS_devourer_hull value = 60 }
+	ai_strategy = { type = equipment_production_min_factories  id = submarine         value = 6 }
+}
+
+
+IRS_seas_mediterranean = {
+	allowed = { original_tag = IRS }
+	enable = { has_war_with = EFH }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance id = 68  value = 70  }
+	ai_strategy = { type = naval_dominance id = 29  value = 70  }
+	ai_strategy = { type = naval_dominance id = 69  value = 70  }
+	ai_strategy = { type = naval_dominance id = 169 value = 50  }
+	ai_strategy = { type = naval_dominance id = 168 value = 50  }
+	ai_strategy = { type = naval_dominance id = 202 value = 50  }
+	ai_strategy = { type = invade id = EFH value = 200 }
+}
+
+IRS_seas_red_sea = {
+	allowed = { original_tag = IRS }
+	enable = {
+		OR = {
+			AND = {
+				has_war_with = CHN
+				has_completed_focus = IRS_suez_crossing
+			}
+			has_war_with = EFH
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance id = 100 value = 100 }
+	ai_strategy = { type = naval_dominance id = 104 value = 90  }
+}
+
+IRS_seas_indian_ocean = {
+	allowed = { original_tag = IRS }
+	enable = { has_country_flag = IRS_global_phase_active }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance id = 60  value = 90 }
+	ai_strategy = { type = naval_dominance id = 85  value = 80 }
+	ai_strategy = { type = naval_dominance id = 101 value = 90 }
+	ai_strategy = { type = naval_dominance id = 71  value = 70 }
+}
+
+IRS_seas_oceania = {
+	allowed = { original_tag = IRS }
+	enable = { has_war_with = OCE }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = naval_dominance id = 99 value = 80 }
+	ai_strategy = { type = naval_dominance id = 92 value = 90 }
+	ai_strategy = { type = naval_dominance id = 91 value = 90 }
+	ai_strategy = { type = naval_dominance id = 93 value = 80 }
+	ai_strategy = { type = naval_dominance id = 81 value = 70 }
+	ai_strategy = { type = naval_dominance id = 86 value = 70 }
+	ai_strategy = { type = invade id = OCE value = 150 }
+}
+
+IRS_tethysic_sea_road = {
+	allowed = { original_tag = IRS }
+	enable = {
+		country_exists = TET
+		has_war_with = CHN
+		OR = {
+			srp_ai_story_mode = no
+			NOT = { country_exists = SAC }
+			SAC = { has_capitulated = yes }
+			SAC = { num_of_controlled_states < 6 }
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority id = east_indies value = 320 }
+	ai_strategy = { type = invade        id = CHN         value = 200 }
+
+	ai_strategy = { type = naval_dominance id = 71 value = 80 }
+	ai_strategy = { type = naval_dominance id = 72 value = 90 }
+	ai_strategy = { type = naval_dominance id = 93 value = 90 }
+	ai_strategy = { type = naval_dominance id = 75 value = 80 }
+}
+
+IRS_colossant_crossing = {
+	allowed = { original_tag = IRS }
+	enable = {
+		OR = {
+			has_completed_focus = IRS_south_american_vectors
+			has_war_with = SAC
+		}
+		has_navy_size = { size < 24 type = capital_ship }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = equipment_variant_production_factor id = IRS_colossant_hull value = 100 }
+	ai_strategy = { type = equipment_production_factor         id = capital_ship       value = 100 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_colossant_hull value = 8 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 140 }
 }
 
 

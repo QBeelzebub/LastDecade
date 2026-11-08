@@ -1,0 +1,227 @@
+
+SRP_ai_law_tier_1 = {
+	OR = {
+		has_war = yes
+		has_global_flag = parasites_emerged
+		threat > 0.25
+		AND = {
+			OR = { tag = EFH tag = USA }
+			check_variable = { EFH_USA_escalation > 64 }
+		}
+	}
+}
+
+SRP_ai_law_tier_2 = {
+	has_war = yes
+}
+
+SRP_ai_law_tier_3 = {
+	has_war = yes
+	OR = {
+		any_enemy_country = { OR = { tag = IRS tag = KNX } }
+		has_war_with_major = yes
+		surrender_progress > 0.10
+	}
+}
+
+SRP_ai_law_tier_4 = {
+	has_war = yes
+	OR = {
+		surrender_progress > 0.25
+		AND = {
+			surrender_progress > 0.15
+			OR = {
+				has_idea = srp_emergency_command_economy
+				has_idea = srp_total_supply_lockdown
+				has_idea = srp_desperate_enlistment
+			}
+		}
+	}
+}
+
+
+SRP_law_want_econ_4 = {
+	SRP_ai_law_tier_4 = yes
+	OR = { has_war_support > 0.70 has_idea = srp_emergency_command_economy }
+}
+SRP_law_want_econ_3 = {
+	NOT = { SRP_law_want_econ_4 = yes }
+	SRP_ai_law_tier_3 = yes
+	OR = { has_war_support > 0.50 has_idea = srp_total_war_production }
+}
+SRP_law_want_econ_2 = {
+	NOT = { SRP_law_want_econ_4 = yes }
+	NOT = { SRP_law_want_econ_3 = yes }
+	SRP_ai_law_tier_2 = yes
+	OR = { has_war_support > 0.25 has_idea = srp_wartime_direction }
+}
+SRP_law_want_econ_1 = {
+	NOT = { SRP_law_want_econ_4 = yes }
+	NOT = { SRP_law_want_econ_3 = yes }
+	NOT = { SRP_law_want_econ_2 = yes }
+	SRP_ai_law_tier_1 = yes
+	OR = { has_war_support > 0.10 has_idea = srp_crisis_mobilization }
+}
+SRP_law_want_econ_0 = {
+	NOT = { SRP_law_want_econ_4 = yes }
+	NOT = { SRP_law_want_econ_3 = yes }
+	NOT = { SRP_law_want_econ_2 = yes }
+	NOT = { SRP_law_want_econ_1 = yes }
+}
+
+SRP_law_want_trade_4 = {
+	SRP_ai_law_tier_4 = yes
+	OR = { has_war_support > 0.55 has_idea = srp_total_supply_lockdown }
+}
+SRP_law_want_trade_3 = {
+	NOT = { SRP_law_want_trade_4 = yes }
+	SRP_ai_law_tier_3 = yes
+	OR = { has_war_support > 0.35 has_idea = srp_emergency_rationing }
+}
+SRP_law_want_trade_2 = {
+	NOT = { SRP_law_want_trade_4 = yes }
+	NOT = { SRP_law_want_trade_3 = yes }
+	SRP_ai_law_tier_2 = yes
+}
+SRP_law_want_trade_1 = {
+	NOT = { SRP_law_want_trade_4 = yes }
+	NOT = { SRP_law_want_trade_3 = yes }
+	NOT = { SRP_law_want_trade_2 = yes }
+	SRP_ai_law_tier_1 = yes
+}
+SRP_law_want_trade_0 = {
+	NOT = { SRP_law_want_trade_4 = yes }
+	NOT = { SRP_law_want_trade_3 = yes }
+	NOT = { SRP_law_want_trade_2 = yes }
+	NOT = { SRP_law_want_trade_1 = yes }
+}
+
+SRP_law_want_mob_4 = {
+	SRP_ai_law_tier_4 = yes
+	OR = { has_war_support > 0.60 has_idea = srp_desperate_enlistment }
+}
+SRP_law_want_mob_3 = {
+	NOT = { SRP_law_want_mob_4 = yes }
+	SRP_ai_law_tier_3 = yes
+	OR = { has_war_support > 0.40 has_idea = srp_universal_conscription }
+}
+SRP_law_want_mob_2 = {
+	NOT = { SRP_law_want_mob_4 = yes }
+	NOT = { SRP_law_want_mob_3 = yes }
+	SRP_ai_law_tier_2 = yes
+	OR = { has_war_support > 0.25 has_idea = srp_national_service_requirement }
+}
+SRP_law_want_mob_1 = {
+	NOT = { SRP_law_want_mob_4 = yes }
+	NOT = { SRP_law_want_mob_3 = yes }
+	NOT = { SRP_law_want_mob_2 = yes }
+	SRP_ai_law_tier_1 = yes
+	OR = { has_war_support > 0.10 has_idea = srp_selective_service }
+}
+SRP_law_want_mob_0 = {
+	NOT = { SRP_law_want_mob_4 = yes }
+	NOT = { SRP_law_want_mob_3 = yes }
+	NOT = { SRP_law_want_mob_2 = yes }
+	NOT = { SRP_law_want_mob_1 = yes }
+}
+
+SRP_law_want_irs_apex = {
+	has_country_flag = IRS_phase_2_active
+	OR = { check_variable = { IRS_evolution_points > 199 } has_idea = IRS_apex_consumption }
+}
+SRP_law_want_irs_surge = {
+	NOT = { SRP_law_want_irs_apex = yes }
+	has_country_flag = IRS_phase_1_active
+	OR = { check_variable = { IRS_evolution_points > 49 } has_idea = IRS_surge_directive }
+}
+SRP_law_want_irs_passive = {
+	NOT = { has_war = yes }
+	NOT = { has_country_flag = IRS_phase_1_active }
+}
+SRP_law_want_irs_cultivation = {
+	NOT = { SRP_law_want_irs_apex = yes }
+	NOT = { SRP_law_want_irs_surge = yes }
+	NOT = { SRP_law_want_irs_passive = yes }
+}
+
+SRP_law_want_irs_dominion = {
+	has_country_flag = IRS_phase_3_active
+	OR = { check_variable = { IRS_evolution_points > 299 } has_idea = IRS_ecological_dominion }
+}
+SRP_law_want_irs_total = {
+	NOT = { SRP_law_want_irs_dominion = yes }
+	has_country_flag = IRS_phase_2_active
+	OR = { check_variable = { IRS_evolution_points > 149 } has_idea = IRS_total_assimilation }
+}
+SRP_law_want_irs_aggressive = {
+	NOT = { SRP_law_want_irs_dominion = yes }
+	NOT = { SRP_law_want_irs_total = yes }
+	has_country_flag = IRS_phase_1_active
+	OR = { check_variable = { IRS_evolution_points > 49 } has_idea = IRS_aggressive_absorption }
+}
+SRP_law_want_irs_digestion = {
+	NOT = { SRP_law_want_irs_dominion = yes }
+	NOT = { SRP_law_want_irs_total = yes }
+	NOT = { SRP_law_want_irs_aggressive = yes }
+}
+
+SRP_law_want_knx_open = {
+	has_war = yes
+	OR = { has_war_support > 0.55 has_idea = KNX_open_campaign }
+}
+SRP_law_want_knx_active = {
+	NOT = { SRP_law_want_knx_open = yes }
+	has_war = yes
+	OR = { has_war_support > 0.30 has_idea = KNX_active_expansion }
+}
+SRP_law_want_knx_opportunist = {
+	NOT = { SRP_law_want_knx_open = yes }
+	NOT = { SRP_law_want_knx_active = yes }
+	OR = { has_war = yes has_war_support > 0.10 has_idea = KNX_opportunist_footing }
+}
+SRP_law_want_knx_hidden = {
+	NOT = { SRP_law_want_knx_open = yes }
+	NOT = { SRP_law_want_knx_active = yes }
+	NOT = { SRP_law_want_knx_opportunist = yes }
+}
+
+SRP_law_want_knx_alignment = {
+	any_country = { is_ally_with = KNX }
+	OR = { has_war_support > 0.25 has_idea = KNX_strategic_alignment }
+}
+SRP_law_want_knx_dialogue = {
+	NOT = { SRP_law_want_knx_alignment = yes }
+	any_country = { is_ally_with = KNX }
+}
+SRP_law_want_knx_isolation = {
+	NOT = { any_country = { is_ally_with = KNX } }
+}
+
+SRP_law_want_knx_emergency = {
+	has_war = yes
+	OR = { has_war_support > 0.60 has_idea = KNX_emergency_spawning }
+}
+SRP_law_want_knx_brood = {
+	NOT = { SRP_law_want_knx_emergency = yes }
+	OR = {
+		AND = {
+			has_war = yes
+			OR = { has_war_support > 0.35 has_idea = KNX_full_brood_expansion }
+		}
+		AND = {
+			has_country_flag = KNX_emerged
+			has_war = no
+			date > 2024.1.1
+		}
+	}
+}
+SRP_law_want_knx_selective = {
+	NOT = { SRP_law_want_knx_emergency = yes }
+	NOT = { SRP_law_want_knx_brood = yes }
+	OR = { has_war = yes has_country_flag = KNX_emerged }
+}
+SRP_law_want_knx_minimal = {
+	NOT = { SRP_law_want_knx_emergency = yes }
+	NOT = { SRP_law_want_knx_brood = yes }
+	NOT = { SRP_law_want_knx_selective = yes }
+}

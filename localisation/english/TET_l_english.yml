@@ -2,7 +2,7 @@
 
 
  TET_root_brood: "The Tethysic Genome"
- TET_root_brood_desc: "The genome left in the West Java shallows organises itself into a self-directing population. It is the hive's water-line, made administratively separate."
+ TET_root_brood_desc: "The genome left in the West Java shallows organises itself into a population of its own. It is the hive's water-line, split off to work the coast."
 
  TET_genome_study: "Genome Concentration"
  TET_genome_study_desc: "The brood turns its limited capacity inward, mapping the Tethysic line in detail. Understanding the genome is the precondition for advancing it."
@@ -11,48 +11,51 @@
  TET_deep_adaptation_desc: "The brood's organisms are conditioned for deeper water and longer submersion. Greater range across the shelf translates directly into more ground the brood can work."
 
  TET_abyssal_proving: "Abyssal Proving"
- TET_abyssal_proving_desc: "The genome is pushed toward its deepest expression. The brood cannot complete this alone. The proof is its industrial line maturing to the abyssal form. This focus clears the path."
- TET_abyssal_proving_tt: "Drives the brood toward its naval apex. The Tethysic genome is proven by completing the brood's industrial capstone, which is what lets the hive field the Abyssant."
+ TET_abyssal_proving_desc: "The brood starts pushing the genome toward its deepest form. The Abyssant sits at the end of the brood's genome line, and this focus opens the way to it."
+ TET_abyssal_proving_tt: "Drives the brood toward its naval apex. The Tethysic genome is proven by completing the brood's genetic capstone, which is what lets the hive field the Abyssant."
 
  TET_coastal_colonies: "Coastal Colonies"
- TET_coastal_colonies_desc: "The brood seeds the shoreline with dedicated growth. Shallow-water capacity expands and the foundations for a working naval base are laid."
+ TET_coastal_colonies_desc: "The brood seeds the shoreline with dedicated growth. Shallow-water capacity expands, and the coast starts producing the brood's water organisms."
 
  TET_brood_expansion: "Brood Expansion"
  TET_brood_expansion_desc: "The population spreads inland from the water's edge across every state it holds, thickening its grip on the territory it was given."
 
  TET_resonance: "Resonance with the Hive"
- TET_resonance_desc: "The brood keeps its signal aligned with the hive that seeded it. The separation is administrative only. The two remain one genome speaking to itself across distance."
+ TET_resonance_desc: "The brood stays in contact with the hive that seeded it. The two remain one genome speaking to itself across distance."
 
 
  autonomy_srp_integrated_brood: "Integrated Brood"
 
 
+ TET_tidal_rooting: "Tidal Rooting"
+ TET_tidal_rooting_desc: "The brood's first year ashore goes into the ground under it. Clusters come up faster than anything human ever built on that coast."
+
  TET_tethysic_mio: "Tethysic Brood"
- TET_tethysic_mio_desc: "The brood's whole industrial output is the Tethysic genome and nothing else. Where the hive divides its attention across many lineages, the brood pours all of it into one, and its line of organisms runs correspondingly deeper."
+ TET_tethysic_mio_desc: "The brood grows the Tethysic genome and nothing else. The hive splits itself across many lineages, the brood puts everything into one, and its line runs deeper for it."
 
  TET_tethysic_initial: "Tethysic Devotion: Baseline"
  TET_tethysic_initial_desc: "The brood's starting commitment to the water genome."
 
  TET_tethysic_genome_core: "Tethysic Genome: Foundation"
- TET_tethysic_genome_core_desc: "The mapped foundation of the brood's genome. The Devourer line originates here, as it does for the hive, but the brood has nothing else to study."
+ TET_tethysic_genome_core_desc: "The base of the brood's genome. The Devourer line starts here, same as in the hive, but the brood has nothing else to study."
 
  TET_tethysic_feeding_frenzy: "Feeding Frenzy"
- TET_tethysic_feeding_frenzy_desc: "The brood's organisms are conditioned to press an engagement rather than break it. Strike and durability both rise."
+ TET_tethysic_feeding_frenzy_desc: "The brood's organisms keep pressing an attack once it starts. Strike and durability both rise."
 
  TET_tethysic_deep_adaptation: "Deep Adaptation"
  TET_tethysic_deep_adaptation_desc: "Conditioning for deeper, longer submersion. The organisms range further and run quieter beneath the surface."
 
  TET_tethysic_swarm_hunger: "Swarm Hunger"
- TET_tethysic_swarm_hunger_desc: "Coordinated mass feeding. The brood's strike line reaches its mature predatory form."
+ TET_tethysic_swarm_hunger_desc: "Coordinated mass feeding. The brood's strike line reaches maturity."
 
  TET_tethysic_ocean_mastery: "Ocean Mastery"
- TET_tethysic_ocean_mastery_desc: "Full command of the open water. Range, speed, and concealment reach the limit of the standard line."
+ TET_tethysic_ocean_mastery_desc: "Range, speed and concealment reach the limit of the standard line."
 
  TET_tethysic_abyssal_descent: "Abyssal Descent"
  TET_tethysic_abyssal_descent_desc: "Past the limit the hive stops at, the brood keeps going down. Pressure depths the generalist line never adapts to become ordinary ground for it."
 
  TET_tethysic_genome_devotion: "Total Devotion"
- TET_tethysic_genome_devotion_desc: "Nothing in the brood is spent on anything but this genome. The undivided focus shows in how little the brood ever has to relearn."
+ TET_tethysic_genome_devotion_desc: "Nothing in the brood is spent on anything but this genome."
 
  TET_tethysic_abyssant_genesis: "Abyssant Genesis"
- TET_tethysic_abyssant_genesis_desc: "The genome reaches its deepest expression. The Abyssant line becomes buildable here, and the brood's success proves the Tethysic genome to maturity, the precondition the hive itself depends on to field the form."
+ TET_tethysic_abyssant_genesis_desc: "The Abyssant becomes buildable. Getting here also proves the Tethysic genome for the hive, which cannot field Abyssants until the brood does it first."

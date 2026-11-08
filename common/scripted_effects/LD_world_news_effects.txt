@@ -1,0 +1,109 @@
+
+LD_world_news_tick_effect = {
+	if = {
+		limit = {
+			date > 2018.2.6
+			date < 2018.3.1
+			NOT = { has_global_flag = ldnews_roadster }
+		}
+		set_global_flag = ldnews_roadster
+		log = "LDNEWS ldnews.2 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.2 hours = 6 }
+	}
+
+	if = {
+		limit = {
+			date > 2018.7.15
+			date < 2018.8.15
+			NOT = { has_global_flag = ldnews_world_cup }
+			219 = { is_controlled_by = RSF }
+		}
+		set_global_flag = ldnews_world_cup
+		log = "LDNEWS ldnews.3 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.3 hours = 6 }
+	}
+
+	if = {
+		limit = {
+			date > 2019.4.10
+			date < 2019.5.10
+			NOT = { has_global_flag = ldnews_black_hole }
+		}
+		set_global_flag = ldnews_black_hole
+		log = "LDNEWS ldnews.4 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.4 hours = 6 }
+	}
+
+	if = {
+		limit = {
+			date > 2020.7.24
+			date < 2020.8.24
+			NOT = { has_global_flag = ldnews_tokyo_games }
+			has_global_flag = parasites_emerged
+			282 = {
+				is_controlled_by = JAP
+				check_variable = { iris_infestation_level < 25 }
+			}
+		}
+		set_global_flag = ldnews_tokyo_games
+		log = "LDNEWS ldnews.5 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.5 hours = 6 }
+	}
+
+	if = {
+		limit = {
+			date > 2024.5.11
+			date < 2024.6.15
+			NOT = { has_global_flag = ldnews_europapa }
+			138 = {
+				is_controlled_by = EFH
+				check_variable = { iris_infestation_level < 50 }
+			}
+		}
+		set_global_flag = ldnews_europapa
+		log = "LDNEWS ldnews.1 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.1 hours = 6 }
+	}
+
+	if = {
+		limit = {
+			date > 2024.5.11
+			date < 2024.6.15
+			NOT = { has_global_flag = ldnews_europapa }
+			NOT = {
+				138 = {
+					is_controlled_by = EFH
+					check_variable = { iris_infestation_level < 50 }
+				}
+			}
+		}
+		set_global_flag = ldnews_europapa
+		log = "LDNEWS ldnews.6 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.6 hours = 6 }
+	}
+
+	if = {
+		limit = {
+			date > 2024.7.26
+			date < 2024.8.26
+			NOT = { has_global_flag = ldnews_paris_games }
+			16 = {
+				is_controlled_by = EFH
+				check_variable = { iris_infestation_level < 25 }
+			}
+		}
+		set_global_flag = ldnews_paris_games
+		log = "LDNEWS ldnews.7 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.7 hours = 6 }
+	}
+	if = {
+		limit = {
+			date > 2024.7.26
+			date < 2024.8.26
+			NOT = { has_global_flag = ldnews_paris_games }
+		}
+		set_global_flag = ldnews_paris_games
+		log = "LDNEWS ldnews.8 fired from [This.GetTag], [GetDateText]"
+		news_event = { id = ldnews.8 hours = 6 }
+	}
+}

@@ -1,5 +1,16 @@
 ideas = {
 	country = {
+		EFH_northern_establishment = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 2.0
+				winter_attrition_factor = -0.50
+				heat_attrition_factor = 0.15
+			}
+		}
+
 		EFH_RTG_ideas_ns = {
 			name = EFH_RTG_ideas
 			picture = GER_attack_usa
@@ -149,6 +160,7 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
+				research_speed_factor = 0.02
 			}
 		}
 
@@ -157,6 +169,7 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
+				experience_gain_air_factor = 0.10
 			}
 		}
 
@@ -437,7 +450,6 @@ ideas = {
 		}
 
 
-
 		EFH_joint_parasite_command_standing = {
 			picture = generic_political_support
 			allowed = { always = no }
@@ -567,8 +579,5 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
-
-
-
 	}
 }

@@ -1,0 +1,75 @@
+
+IND_affairs = {
+
+	IND_renew_the_tariff_schedule = {
+		icon = generic_construction
+		allowed = { original_tag = IND }
+		visible = { has_country_flag = IND_china_trade_open }
+		available = {
+			country_exists = CHN
+			NOT = { has_war_with = CHN }
+		}
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 365
+		ai_will_do = { base = 5 }
+		complete_effect = {
+			add_timed_idea = { idea = IND_tariff_round days = 180 }
+			CHN = { add_opinion_modifier = { target = ROOT modifier = IND_CHN_tariff_round } }
+		}
+	}
+
+	IND_reinforce_the_passes = {
+		icon = generic_fortification
+		allowed = { original_tag = IND }
+		visible = { has_completed_focus = IND_mountain_divisions }
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = { base = 3 }
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 441 state = 442 state = 987 state = 445 }
+					is_controlled_by = ROOT
+				}
+				add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes }
+			}
+		}
+	}
+}
+
+ARU_affairs = {
+
+	ARU_review_the_contract = {
+		icon = generic_construction
+		allowed = { original_tag = ARU }
+		visible = { has_idea = ARU_oil_for_wheat }
+		available = {
+			country_exists = CHN
+			NOT = { has_war_with = CHN }
+		}
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 365
+		ai_will_do = { base = 5 }
+		complete_effect = {
+			add_timed_idea = { idea = ARU_contract_round days = 180 }
+		}
+	}
+
+	ARU_call_the_nine_seats = {
+		icon = generic_political_discourse
+		allowed = { original_tag = ARU }
+		available = { has_stability < 0.80 }
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 180
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 4 has_stability < 0.40 }
+		}
+		complete_effect = {
+			add_stability = 0.03
+		}
+	}
+}

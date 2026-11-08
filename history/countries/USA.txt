@@ -37,6 +37,10 @@ recruit_character = USA_sci_land
 recruit_character = USA_sci_naval
 recruit_character = USA_sci_air
 
+recruit_character = USA_boris_johnson
+recruit_character = USA_anthony_fauci
+recruit_character = USA_alex_jones
+
 create_field_marshal = {
 	name = "Marcus Bradford"
 	gfx = "GFX_Portrait_USA_Generic_land_1"

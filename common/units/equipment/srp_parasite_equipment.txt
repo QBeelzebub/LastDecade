@@ -297,6 +297,19 @@ equipments = {
 		priority = 10
 	}
 
+	parasite_bio_rail_2 = {
+		year = 2023
+		archetype = parasite_bio_rail
+		parent = parasite_bio_rail_1
+		priority = 15
+		reliability = 0.9
+		armor_value = 5
+		build_cost_ic = 26
+		resources = {
+			parasite_biomass = 2
+		}
+	}
+
 
 
 	rupter_equipment = {
@@ -319,7 +332,7 @@ equipments = {
 		ap_attack = 0.3
 		air_attack = 0
 		lend_lease_cost = 1
-		build_cost_ic = 0.75
+		build_cost_ic = 0.5
 	}
 	rupter_equipment_1 = {
 		year = 2022

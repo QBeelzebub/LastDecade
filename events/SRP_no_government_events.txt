@@ -1,0 +1,39 @@
+add_namespace = srp_nogov
+
+
+country_event = {
+	id = srp_nogov.1
+	title = srp_nogov.1.t
+	desc = srp_nogov.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	immediate = {
+		SRP_nogov_collapse_effect = yes
+		if = { limit = { is_debug = yes } log = "LDLOG|[GetDate]|[Root.GetTag]|nogov|collapse" }
+	}
+
+	option = {
+		name = srp_nogov.1.a
+		ai_chance = { base = 100 }
+	}
+}
+
+
+country_event = {
+	id = srp_nogov.2
+	title = srp_nogov.2.t
+	desc = srp_nogov.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	immediate = {
+		SRP_nogov_reform_effect = yes
+		if = { limit = { is_debug = yes } log = "LDLOG|[GetDate]|[Root.GetTag]|nogov|reformed" }
+	}
+
+	option = {
+		name = srp_nogov.2.a
+		ai_chance = { base = 100 }
+	}
+}

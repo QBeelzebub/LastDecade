@@ -8,6 +8,16 @@ ideas = {
             }
             removal_cost = -1
         }
+        TET_tidal_rooting = {
+            picture = generic_production_bonus
+            allowed = { always = no }
+            removal_cost = -1
+            modifier = {
+                production_speed_beckon_cluster_factor = 1.0
+                production_speed_naval_base_factor = 0.5
+                production_speed_buildings_factor = 0.25
+            }
+        }
         SRP_lunar_race_pressure = {
             picture = generic_economic_increase
             allowed = { always = no }

@@ -28,40 +28,31 @@ news_event = {
 
 country_event = {
 	id = efh_geo.2
-	title = efh_geo.2.t
-	desc = efh_geo.2.d
-	picture = GFX_report_event_generic_read_write
+	hidden = yes
 	is_triggered_only = yes
 
-	option = {
-		name = efh_geo.2.a
-		ai_chance = { base = 60 }
-		set_country_flag = EFH_china_leaning_efh
-		add_political_power = 40
+	immediate = {
 		if = {
-			limit = { has_completed_focus = EFH_eurasian_buffer_doctrine }
-			hidden_effect = {
-				add_to_variable = { EFH_gov_army_org_factor = -0.04 }
-				add_to_variable = { EFH_gov_war_support_factor = -0.05 }
-				add_to_variable = { EFH_gov_supply_consumption_factor = 0.03 }
-				EFH_refresh_gov = yes
+			limit = { country_exists = CHN country_exists = EFH }
+			CHN = {
+				CHN_reconcile_efh_buffer_effect = yes
+				if = {
+					limit = {
+						is_subject = no
+						has_capitulated = no
+						NOT = { has_war_with = EFH }
+						NOT = { is_in_faction_with = USA }
+						NOT = { has_country_flag = CHN_usa_aligned }
+						NOT = { has_country_flag = CHN_efh_aligned }
+						NOT = { has_country_flag = CHN_efh_offer_pending }
+						NOT = { has_country_flag = CHN_usa_offer_pending }
+						EFH = { is_subject = no has_capitulated = no }
+					}
+					set_country_flag = { flag = CHN_efh_offer_pending value = 1 days = 60 }
+					country_event = { id = chn_diplomacy.7 days = 1 }
+				}
 			}
 		}
-		add_ideas = EFH_sino_efh_partnership
-		if = {
-			limit = { country_exists = CHN }
-			CHN = { add_ideas = CHN_efh_partnership }
-		}
-		EFH_bop_very_low_ef_effect = yes
-		custom_effect_tooltip = efh_geo_china_efh_tt
-	}
-
-	option = {
-		name = efh_geo.2.b
-		ai_chance = { base = 40 }
-		set_country_flag = EFH_china_neutral
-		add_political_power = 15
-		custom_effect_tooltip = efh_geo_china_neutral_tt
 	}
 }
 

@@ -5,8 +5,8 @@ characters = {
 		name = "Ashley Woods"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_POL_maria_koszutska }
-			army = { small = GFX_idea_CZE_milada_horakova }
+			civilian = { large = "GFX_portrait_generic_europe_female_04" }
+			army = { small = "GFX_idea_europe_generic_operative_female_22" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -71,8 +71,8 @@ characters = {
 		name = "Roberta Metsola"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_idea_ENG_sylvia_pankhurst }
+			civilian = { large = "GFX_portrait_generic_europe_female_05" }
+			army = { small = "GFX_idea_europe_generic_operative_female_3" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -88,8 +88,8 @@ characters = {
 		name = "Manon Aubry"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_idea_dolores_ibarruri }
+			civilian = { large = "GFX_portrait_generic_europe_female_01" }
+			army = { small = "GFX_idea_europe_generic_operative_female_7" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -121,8 +121,8 @@ characters = {
 		name = "Margrethe Vestager"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_idea_POR_maria_lamas }
+			civilian = { large = "GFX_portrait_generic_europe_female_10" }
+			army = { small = "GFX_idea_europe_generic_operative_female_10" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -205,8 +205,8 @@ characters = {
 		name = "Ska Keller"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_portrait_GER_leni_riefenstahl_small }
+			civilian = { large = "GFX_portrait_generic_europe_female_03" }
+			army = { small = "GFX_idea_europe_generic_operative_female_17" }
 		}
 		advisor = {
 			slot = theorist
@@ -392,8 +392,8 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_eva_braun
-				small = GFX_idea_SPR_antonia_adroher_i_pascual
+				large = "GFX_portrait_generic_europe_female_13"
+				small = "GFX_idea_europe_generic_operative_female_11"
 			}
 		}
 		advisor = {
@@ -431,8 +431,8 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_eva_braun
-				small = GFX_idea_SPR_federica_montseny
+				large = "GFX_portrait_generic_europe_female_07"
+				small = "GFX_idea_europe_generic_operative_female_25"
 			}
 		}
 		advisor = {
@@ -463,7 +463,7 @@ characters = {
 		name = "Giulia Russo"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
+			civilian = { large = "GFX_portrait_generic_europe_female_06" }
 		}
 		country_leader = {
 			ideology = marxism
@@ -532,6 +532,458 @@ characters = {
 			skills = {
 				specialization_air = 2
 			}
+		}
+	}
+
+
+	EFH_carsten_breuer = {
+		name = "Carsten Breuer"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_2
+				small = GFX_idea_europe_generic_land_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_carsten_breuer
+			allowed = { original_tag = EFH }
+			visible = { has_completed_focus = EFH_federal_emergency_protocols }
+			traits = { EFH_crisis_staff_general }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_christian_drosten = {
+		name = "Christian Drosten"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_2 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_christian_drosten
+			allowed = { original_tag = EFH }
+			visible = { has_completed_focus = EFH_continental_disease_surveillance }
+			traits = { EFH_outbreak_virologist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_kaja_kallas = {
+		name = "Kaja Kallas"
+		gender = female
+		portraits = {
+			civilian = { large = "GFX_portrait_generic_europe_female_12" }
+			army = { small = "GFX_idea_europe_generic_operative_female_4" }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_kaja_kallas
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_wartime_kallas_unlocked }
+			traits = { EFH_baltic_hawk }
+			cost = 150
+			ai_will_do = { base = 5 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_politician_go } }
+		}
+	}
+
+	EFH_mark_rutte = {
+		name = "Mark Rutte"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_4 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_mark_rutte
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_wartime_rutte_unlocked }
+			traits = { EFH_teflon }
+			cost = 150
+			ai_will_do = { base = 5 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_politician_go } }
+		}
+	}
+
+	EFH_olaf_scholz = {
+		name = "Olaf Scholz"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_1 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_olaf_scholz
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_wartime_scholz_unlocked }
+			traits = { EFH_scholzomat }
+			cost = 150
+			ai_will_do = { base = 5 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_politician_go } }
+		}
+	}
+
+	EFH_christine_lagarde = {
+		name = "Christine Lagarde"
+		gender = female
+		portraits = {
+			civilian = { large = "GFX_portrait_generic_europe_female_14" }
+			army = { small = "GFX_idea_europe_generic_operative_female_16" }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_christine_lagarde
+			allowed = { original_tag = EFH }
+			visible = { has_completed_focus = EFH_defense_conversion }
+			traits = { war_industrialist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_boris_johnson = {
+		name = "Boris Johnson"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_5 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_boris_johnson
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_wartime_boris_unlocked }
+			traits = { LD_blustering_optimist }
+			cost = 100
+			ai_will_do = { base = 2 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_boris_go } }
+		}
+	}
+
+	EFH_matthias_kroger = {
+		name = "Matthias Kröger"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_6 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_matthias_kroger
+			allowed = { original_tag = EFH }
+			visible = {
+				any_military_industrial_organization = {
+					has_mio_trait = EFH_ha_hyper_t3a
+				}
+			}
+			traits = { EFH_ha_liaison }
+			cost = 150
+			ai_will_do = { base = 2 }
+			on_add = {
+				owner = { EFH_bop_low_ha_effect = yes }
+			}
+		}
+	}
+
+	EFH_tomasz_wrona = {
+		name = "Tomasz Wrona"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_3
+				small = GFX_idea_europe_generic_land_3
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = EFH_tomasz_wrona
+			ledger = army
+			allowed = { original_tag = EFH }
+			visible = { has_completed_focus = EFH_federal_cordon_doctrine }
+			traits = { fortification_engineer }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_mikkel_aasen = {
+		name = "Mikkel Aasen"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_land_4
+				small = GFX_idea_europe_generic_land_4
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = EFH_mikkel_aasen
+			allowed = { original_tag = EFH }
+			visible = { has_completed_focus = EFH_defensible_lines }
+			traits = { army_chief_entrenchment_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_pieter_janssens = {
+		name = "Pieter Janssens"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_2
+				small = GFX_idea_europe_generic_navy_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = EFH_pieter_janssens
+			allowed = { original_tag = EFH }
+			visible = { has_global_flag = LD_first_atlantic_war_ended }
+			traits = { EFH_convoy_escort_chief }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	EFH_rob_bauer = {
+		name = "Rob Bauer"
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_1
+				small = GFX_idea_europe_generic_navy_1
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = EFH_rob_bauer
+			ledger = navy
+			allowed = { original_tag = EFH }
+			visible = { has_completed_focus = EFH_joint_anti_parasite_command }
+			traits = { navy_fleet_logistics_2 }
+			cost = 100
+			ai_will_do = { base = 5 }
+		}
+	}
+
+
+	EFH_liz_truss = {
+		name = "Liz Truss"
+		gender = female
+		portraits = {
+			civilian = { large = "GFX_portrait_generic_europe_female_08" }
+			army = { small = "GFX_idea_europe_generic_operative_female_23" }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_liz_truss
+			allowed = { original_tag = EFH }
+			visible = {
+				has_global_flag = parasites_emerged
+				NOT = { has_country_flag = EFH_truss_gone }
+			}
+			traits = { EFH_bold_fiscal_vision }
+			cost = 100
+			ai_will_do = { base = 1 }
+			on_add = {
+				ROOT = {
+					set_country_flag = EFH_truss_in_office
+					country_event = { id = efh_advisor.1 days = 49 }
+				}
+			}
+			on_remove = {
+				ROOT = {
+					clr_country_flag = EFH_truss_in_office
+					set_country_flag = EFH_truss_gone
+					set_country_flag = EFH_larry_saw_truss_go
+					add_timed_idea = { idea = EFH_market_confidence_collapse days = 180 }
+				}
+			}
+		}
+	}
+
+	EFH_larry_the_cat = {
+		name = "Larry"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_6 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_larry_the_cat
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_larry_unlocked }
+			traits = { LD_chief_mouser }
+			cost = 25
+			ai_will_do = { base = 3 }
+			on_add = {
+				ROOT = {
+					set_country_flag = EFH_larry_hired
+					set_country_flag = EFH_larry_in_office
+					if = {
+						limit = { has_country_flag = EFH_palmerston_in_office }
+						add_ideas = EFH_cat_feud
+					}
+				}
+			}
+			on_remove = {
+				ROOT = {
+					clr_country_flag = EFH_larry_in_office
+					if = {
+						limit = { has_idea = EFH_cat_feud }
+						remove_ideas = EFH_cat_feud
+					}
+				}
+			}
+		}
+	}
+
+	EFH_palmerston_the_cat = {
+		name = "Palmerston"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_5 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_palmerston_the_cat
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_larry_hired }
+			traits = { LD_foreign_office_mouser }
+			cost = 25
+			ai_will_do = { base = 1 }
+			on_add = {
+				ROOT = {
+					set_country_flag = EFH_palmerston_in_office
+					if = {
+						limit = { has_country_flag = EFH_larry_in_office }
+						add_ideas = EFH_cat_feud
+					}
+				}
+			}
+			on_remove = {
+				ROOT = {
+					clr_country_flag = EFH_palmerston_in_office
+					if = {
+						limit = { has_idea = EFH_cat_feud }
+						remove_ideas = EFH_cat_feud
+					}
+				}
+			}
+		}
+	}
+
+	EFH_emmanuel_macron = {
+		name = "Emmanuel Macron"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_2 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_emmanuel_macron
+			allowed = { original_tag = EFH }
+			visible = { has_global_flag = parasites_emerged }
+			traits = { EFH_jupiter }
+			cost = 150
+			ai_will_do = { base = 3 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_politician_go } }
+		}
+	}
+
+	EFH_karl_lauterbach = {
+		name = "Karl Lauterbach"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_3 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_karl_lauterbach
+			allowed = { original_tag = EFH }
+			visible = { has_country_flag = EFH_wartime_lauterbach_unlocked }
+			traits = { EFH_perpetual_warning }
+			cost = 150
+			ai_will_do = { base = 3 }
+			on_add = { ROOT = { set_country_flag = EFH_lauterbach_in_office } }
+			on_remove = {
+				ROOT = {
+					clr_country_flag = EFH_lauterbach_in_office
+					set_country_flag = EFH_larry_saw_politician_go
+				}
+			}
+		}
+	}
+
+	EFH_david_attenborough = {
+		name = "David Attenborough"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_1 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_david_attenborough
+			allowed = { original_tag = EFH }
+			visible = { has_global_flag = parasites_emerged }
+			traits = { EFH_calm_narrator }
+			cost = 150
+			ai_will_do = { base = 4 }
+			on_add = { ROOT = { set_country_flag = EFH_attenborough_in_office } }
+			on_remove = { ROOT = { clr_country_flag = EFH_attenborough_in_office } }
+		}
+	}
+
+	EFH_jeremy_clarkson = {
+		name = "Jeremy Clarkson"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_europe_generic_6 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_jeremy_clarkson
+			allowed = { original_tag = EFH }
+			visible = { has_global_flag = parasites_emerged }
+			traits = { EFH_agricultural_commissioner }
+			cost = 100
+			ai_will_do = { base = 2 }
+			on_add = { ROOT = { set_country_flag = EFH_clarkson_in_office } }
+			on_remove = { ROOT = { clr_country_flag = EFH_clarkson_in_office } }
+		}
+	}
+
+	EFH_viktor_orban = {
+		name = "Viktor Orbán"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_europe_generic_4 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_viktor_orban
+			allowed = { original_tag = EFH }
+			visible = { has_global_flag = parasites_emerged }
+			traits = { EFH_serial_vetoer }
+			cost = 150
+			ai_will_do = { base = 1 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_politician_go } }
+		}
+	}
+
+	EFH_gunther_fehlinger_jahn = {
+		name = "Gunther Fehlinger-Jahn"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_europe_generic_5 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = EFH_gunther_fehlinger_jahn
+			allowed = { original_tag = EFH }
+			traits = { EFH_dissolve_russia }
+			cost = 100
+			ai_will_do = { base = 1 }
+			on_remove = { ROOT = { set_country_flag = EFH_larry_saw_politician_go } }
 		}
 	}
 }

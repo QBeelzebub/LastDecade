@@ -49,6 +49,9 @@ USA_prepare_for_northern_war = {
 	ai_strategy = { type = prepare_for_war id = EFH value = 1500 }
 	ai_strategy = { type = area_priority id = northern_theater value = 400 }
 
+	ai_strategy = { type = ai_wanted_divisions_factor value = 120 }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 40 }
+
 	ai_strategy = { type = theatre_distribution_demand_increase id = 357 value = 8 }
 	ai_strategy = { type = theatre_distribution_demand_increase id = 358 value = 6 }
 }
@@ -60,6 +63,13 @@ USA_northern_theater_construction = {
 		NOT = { has_global_flag = LD_second_atlantic_war_open }
 	}
 	abort_when_not_enabled = yes
+
+	ai_strategy = { type = prepare_for_war id = EFH value = 1500 }
+
+	ai_strategy = { type = theatre_distribution_demand_increase id = 357 value = 10 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 358 value = 8 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 360 value = 6 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 393 value = 6 }
 
 	ai_strategy = { type = build_building id = air_base target = 357 value = 10 }
 	ai_strategy = { type = build_building id = air_base target = 358 value = 10 }
@@ -73,6 +83,12 @@ USA_northern_theater_construction = {
 	ai_strategy = { type = build_building id = anti_air_building target = 358 value = 100 }
 	ai_strategy = { type = build_building id = anti_air_building target = 359 value = 80  }
 	ai_strategy = { type = build_building id = anti_air_building target = 361 value = 80  }
+
+	ai_strategy = { type = role_ratio  id = marines value = 20 }
+	ai_strategy = { type = build_army  id = marines value = 10 }
+
+	ai_strategy = { type = role_ratio  id = armor value = 20 }
+	ai_strategy = { type = build_army  id = armor value = 10 }
 }
 
 
@@ -86,6 +102,10 @@ USA_first_atlantic_war = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = { type = antagonize id = EFH value = 1400 }
+
+	ai_strategy = { type = ai_wanted_divisions_factor value = 200 }
+	ai_strategy = { type = force_build_armies value = 100 }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 45 }
 
 	ai_strategy = { type = area_priority id = northern_theater       value = 700 }
 	ai_strategy = { type = area_priority id = efh_east_coast_landing value = 480 }
@@ -123,6 +143,16 @@ USA_first_atlantic_war = {
 
 	ai_strategy = { type = convoy_raiding_target id = EFH value = 400 }
 	ai_strategy = { type = raid_target_country   id = EFH value = 150 }
+}
+
+USA_first_atlantic_war_no_landings = {
+	allowed = { original_tag = USA }
+	enable = {
+		srp_ai_story_mode = yes
+		has_war_with = EFH
+		NOT = { has_global_flag = LD_second_atlantic_war_open }
+	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = { type = invade id = EFH value = -300 }
 }
@@ -133,21 +163,6 @@ USA_burn_knox_county_war = {
 	allowed = { original_tag = USA }
 	enable = { has_war_with = KNX }
 	abort_when_not_enabled = yes
-
-	ai_strategy = { type = area_priority id = knox_county value = 800 }
-	ai_strategy = { type = front_unit_request area = knox_county value = 280 }
-
-	ai_strategy = {
-		type = front_control
-		area = knox_county
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-		priority = 250
-		ratio = 0.5
-	}
-	ai_strategy = { type = force_concentration_factor value = 30 }
-	ai_strategy = { type = force_concentration_front_factor area = knox_county value = 80 }
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -165,6 +180,58 @@ USA_burn_knox_county_war = {
 	ai_strategy = { type = build_army id = suppression value = 25 }
 }
 
+USA_knox_siege = {
+	allowed = { original_tag = USA }
+	enable = {
+		srp_ai_story_mode = yes
+		has_war_with = KNX
+		KNX = { is_ai = yes }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority id = knox_county value = 60 }
+	ai_strategy = { type = front_unit_request area = knox_county value = -30 }
+	ai_strategy = { type = force_concentration_front_factor area = knox_county value = -80 }
+	ai_strategy = { type = strategic_air_importance id = 214 value = -20000 }
+
+	ai_strategy = {
+		type = front_control
+		area = knox_county
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		priority = 250
+		ratio = 0.5
+	}
+}
+
+USA_knox_assault = {
+	allowed = { original_tag = USA }
+	enable = {
+		has_war_with = KNX
+		OR = {
+			KNX = { is_ai = no }
+			srp_ai_story_mode = no
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority id = knox_county value = 800 }
+	ai_strategy = { type = front_unit_request area = knox_county value = 280 }
+	ai_strategy = { type = force_concentration_factor value = 30 }
+	ai_strategy = { type = force_concentration_front_factor area = knox_county value = 80 }
+
+	ai_strategy = {
+		type = front_control
+		area = knox_county
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		priority = 250
+		ratio = 0.5
+	}
+}
+
 
 
 USA_second_atlantic_war = {
@@ -174,9 +241,20 @@ USA_second_atlantic_war = {
 
 	ai_strategy = { type = antagonize id = EFH value = 1400 }
 
-	ai_strategy = { type = area_priority id = knox_county              value = 800 }
+	ai_strategy = { type = area_priority id = northern_theater         value = 760 }
 	ai_strategy = { type = area_priority id = efh_east_coast_landing   value = 640 }
-	ai_strategy = { type = area_priority id = northern_theater         value = 520 }
+	ai_strategy = { type = area_priority id = knox_county              value = -300 }
+	ai_strategy = { type = front_unit_request area = northern_theater  value = 200 }
+
+	ai_strategy = {
+		type = front_control
+		area = northern_theater
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		priority = 100
+		ratio = 0.6
+	}
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -190,7 +268,7 @@ USA_second_atlantic_war = {
 	ai_strategy = { type = ai_wanted_divisions_factor value = 260 }
 	ai_strategy = { type = force_build_armies value = 100 }
 	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 45 }
-	ai_strategy = { type = air_factory_balance value = 30 }
+	ai_strategy = { type = air_factory_balance value = 70 }
 
 	ai_strategy = { type = naval_dominance id = 54  value = 100 }
 	ai_strategy = { type = naval_dominance id = 55  value = 90  }
@@ -212,6 +290,9 @@ USA_atlantic_air_war = {
 	}
 	abort_when_not_enabled = yes
 
+	ai_strategy = { type = air_factory_balance value = 60 }
+	ai_strategy = { type = unit_ratio id = cas value = 60 }
+	ai_strategy = { type = equipment_production_min_factories id = cas value = 6 }
 	ai_strategy = { type = strategic_air_importance id = 234 value = 30000 }
 	ai_strategy = { type = strategic_air_importance id = 233 value = 26000 }
 	ai_strategy = { type = strategic_air_importance id = 197 value = 26000 }
@@ -275,4 +356,27 @@ USA_personality = {
 	ai_strategy = { type = befriend id = SAC value = 150 }
 
 	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 30 }
+}
+
+USA_efh_overreach = {
+	allowed = { original_tag = USA }
+	enable = {
+		srp_ai_story_mode = yes
+		has_war_with = EFH
+		EFH = {
+			is_ai = yes
+			surrender_progress > 0.1
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = EFH
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = no
+		priority = 400
+	}
 }

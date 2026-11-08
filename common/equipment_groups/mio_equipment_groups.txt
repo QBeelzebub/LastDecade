@@ -93,6 +93,7 @@ mio_cat_eq_all_small_plane = {
 		cv_small_plane_airframe
 		srp_fighter_airframe
 		srp_helicopter_airframe
+		srp_ucav_equipment
 	}
 }
 

@@ -173,4 +173,16 @@ equipment_modules = {
 
 		xp_cost = 4
 	}
+
+	srp_asw_drone = {
+		abbreviation = "asd"
+		category = ship_depth_charge
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			sub_attack = 12
+			sub_detection = 5
+			build_cost_ic = 250
+		}
+		xp_cost = 2
+	}
 }

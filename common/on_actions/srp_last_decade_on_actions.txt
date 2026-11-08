@@ -91,6 +91,14 @@ on_actions = {
 				}
 				add_to_variable = { IRS_evolution_points = 2 }
 			}
+
+			if = {
+				limit = {
+					tag = IRS
+					exists = yes
+				}
+				IRS_monthly_absorbed_state_income = yes
+			}
 		}
 	}
 }

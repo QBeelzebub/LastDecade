@@ -1,22 +1,22 @@
 ﻿l_english:
 
  ldwar.1.t: "Chinese Money in the Canal Zone"
- ldwar.1.d: "Three port concessions on the Pacific side of the Canal have changed hands this quarter. The paperwork is European. The capital behind it is not, and the Federation's trade normalisation with Beijing is why it moves at all.\n\nNobody in Brussels arranged this. Everybody in Brussels understands what it is worth. Washington administers the locks and does not own the ledger any more, and the Zone's own population has noticed which flag the wages come under."
- ldwar.1.a: "Press it. The Zone is a pressure point now."
+ ldwar.1.d: "Three port concessions on the Pacific side of the Canal have changed hands this quarter. The paperwork is European. The capital behind it is not, and the Federation's trade normalisation with Beijing is why it moves at all.\n\nNobody in Amsterdam arranged this. Everybody in Amsterdam understands what it is worth. Washington administers the locks and does not own the ledger any more, and the Zone's own population has noticed which flag the wages come under."
+ ldwar.1.a: "Press the advantage."
  ldwar.1.b: "Keep it commercial. The option keeps."
 
  ldwar.2.t: "European Paper, Chinese Money"
  ldwar.2.d: "Commerce and Treasury agree on the finding and disagree on the response. Federation-flagged concessions in the Canal Zone are being financed out of Beijing through European intermediaries, and the arrangement is legal in every jurisdiction it touches.\n\nThe locks are still American. The economy around them is being bought in a currency Washington does not set."
  ldwar.2.a: "Tighten the Zone. This stops here."
- ldwar.2.b: "Let it ride. A crackdown is what they want."
+ ldwar.2.b: "Let it ride. No crackdown."
 
  ldwar.10.t: "The Federation Is Busy"
  ldwar.10.d: "Europe is at war across the Atlantic. Its western garrisons are thin, its air is committed north, and its attention has not been this far from our border in forty years.\n\nThe eastern front is still burning. The General Staff is aware. It is also aware that a chance like this does not come back, and that Russia has never once been forgiven for the last time it waited."
- ldwar.10.a: "Move west. Now, while they cannot look at us."
- ldwar.10.b: "Hold. We cannot carry two fronts and we know it."
+ ldwar.10.a: "Move west while they cannot look."
+ ldwar.10.b: "Hold. Two fronts is too many."
 
  ldwar.11.t: "Russia Moves West"
- ldwar.11.d: "Russian formations have crossed into the Federation's eastern approaches while the bulk of the army is committed to the Atlantic theatre. The timing is not a coincidence and the intelligence directorate will spend a decade explaining why it was not anticipated.\n\nThe Federation is now fighting two wars in opposite directions, and a third one is growing in the soil of a continent nobody is defending."
+ ldwar.11.d: "Russian formations have crossed into the Federation's eastern approaches while most of the army is committed to the Atlantic theatre. The intelligence directorate did not see it coming.\n\nThe Federation is now fighting two wars in opposite directions, with the infestation spreading behind both."
  ldwar.11.a: "Two fronts, then. Hold the east."
 
  ldwar.20.t: "The Ground Will Not Wait"
@@ -25,7 +25,7 @@
  ldwar.20.b: "Finish it first. The ecology can wait."
 
  ldwar.21.t: "The Federation Has Asked for Silence"
- ldwar.21.d: "Brussels is proposing a cessation with no territorial component, no recognition of anything, and no signature above the level of a service chief. Every disputed line stays exactly where the fighting left it.\n\nState reads it as capitulation dressed as prudence. The Surgeon General's office reads it as the only sane paragraph produced by either government this year. Both of them are in the room."
+ ldwar.21.d: "Amsterdam is proposing a cessation with no territorial component, no recognition of anything, and no signature above the level of a service chief. Every disputed line stays exactly where the fighting left it.\n\nState reads it as capitulation dressed as prudence. The Surgeon General's office reads it as the only sane paragraph produced by either government this year. Both of them are in the room."
  ldwar.21.a: "Accept. The ground is the enemy now."
  ldwar.21.b: "Refuse. They opened this."
 
@@ -43,12 +43,12 @@
  ldwar.30.b: "Not yet. The corridor keeps."
 
  ldwar.31.t: "They Are Burning the County"
- ldwar.31.d: "The American clearance operation in Knox County has stopped being a clearance operation. It is an eradication campaign against a partner the Federation has an accord with, and the accord does not contain the word 'defence' anywhere in it, which both parties understood when they signed it.\n\nThe corridor will not hold indefinitely. Whatever the Federation intends to do about this, it has a season to decide in, and Knox is capable of counting the days as accurately as anyone in Brussels."
- ldwar.31.a: "Intervene. Now, while there is a county left."
+ ldwar.31.d: "The American clearance operation in Knox County has stopped being a clearance operation. It is an eradication campaign against a partner the Federation has an accord with, and the accord does not contain the word 'defence' anywhere in it, which both parties understood when they signed it.\n\nThe corridor will not hold indefinitely. Whatever the Federation intends to do about this, it has a season to decide in, and Knox is capable of counting the days as accurately as anyone in Amsterdam."
+ ldwar.31.a: "Intervene while there is a county left."
  ldwar.31.b: "Hold. Let the staff work the window."
 
  ldwar.32.t: "The County Burned Without Us"
- ldwar.32.d: "The window closed. The Federation issued four statements of concern, tabled two motions, and did not move a formation.\n\nWhat is left of the Knox network is not talking to Brussels, and the parts of the Federation's own apparatus that argued for intervention are not going to forget which way the vote went. The accord itself remains technically in force."
+ ldwar.32.d: "The window closed. The Federation issued four statements of concern, tabled two motions, and did not move a formation.\n\nWhat is left of the Knox network is not talking to Amsterdam, and the parts of the Federation's own apparatus that argued for intervention are not going to forget which way the vote went. The accord itself remains technically in force."
  ldwar.32.a: "It is on the record now."
 
  ldwar.33.t: "The Suspension Ends"
@@ -56,7 +56,7 @@
  ldwar.33.a: "Then we finish what we suspended."
 
  ldwar.34.t: "The Atlantic War Resumes"
- ldwar.34.d: "The suspension between the European Federation and the United States has ended. Neither government describes it as a new war, because neither government ever described the last one as finished.\n\nThe difference this time is that the fighting is happening on a continent where the ground itself is hostile to both armies, and that a third party in the Appalachians is coordinating its offensives with Brussels."
+ ldwar.34.d: "The suspension between the European Federation and the United States has ended. Neither government describes it as a new war, because neither government ever described the last one as finished.\n\nThe difference this time is that the fighting is happening on a continent where the ground itself is hostile to both armies, and that a third party in the Appalachians is coordinating its offensives with Amsterdam."
  ldwar.34.a: "The decade continues."
 
  LD_panama_track_opened_tt: "§YThe Canal Zone resistance track opens now. Bolster and suppress decisions become available to both powers under EF-US Standoff.§!"
@@ -70,13 +70,16 @@
  LD_opportunist_offensive_desc: "The army moved west because the west was undefended. Readiness never came up. Planning is fast and morale is high, and nobody at the top is willing to say aloud how thin the eastern line has become to pay for it."
 
  LD_war_before_the_ground: "The War Comes First"
- LD_war_before_the_ground_desc: "The assessment was read, filed, and overruled. The Atlantic war continues and the containment effort is told to hold with what it has. The industry likes the decision. The public is beginning not to."
+ LD_war_before_the_ground_desc: "The assessment was read, filed, and overruled. The Atlantic war continues and the containment effort is told to hold with what it has. The industry likes the decision. Voters are beginning not to."
 
  LD_armed_truce: "The Armed Truce"
  LD_armed_truce_desc: "Nobody signed anything worth framing. The guns stopped because the ground demanded it, and both general staffs spent the pause doing exactly what the other one was doing. Plants run, formations train, and nobody on either side of the Atlantic believes this is over."
 
  LD_joint_offensive: "Coordinated Offensive"
  LD_joint_offensive_desc: "Two commands, one timetable. The offensives open in the same week against a country that has to answer both, and the planning cells have had the suspension to rehearse it."
+
+ LD_federation_air_offensive: "Air Bridge to Kentucky"
+ LD_federation_air_offensive_desc: "The first war was lost on the ground the Americans could reinforce faster. The Federation spent the truce on airframes and crews, and the second war opens with the air arm it should have had in the first."
 
  LD_second_war_mobilisation: "The Suspension Ends"
  LD_second_war_mobilisation_desc: "The country was told the war was over and then told it was not. What that costs in patience it returns in mobilisation, and the plants never actually stopped."
@@ -100,7 +103,7 @@
  ldpro.2.a: "Match the distance."
 
  ldpro.3.t: "Verification Window Missed"
- ldpro.3.d: "The winter inspection of the Thule and Keflavik installations did not take place. The American side gave thirty days' notice of a scheduling conflict, which is within their rights, and proposed a replacement window in the spring.\n\nThe replacement window has been proposed at ninety days' notice rather than thirty. Our inspectorate notes, without recommendation, that ninety days is sufficient time to move anything that a thirty day window was designed to find. They have accepted the spring date."
+ ldpro.3.d: "The winter inspection of the Thule and Keflavik installations did not take place. The American side gave thirty days' notice of a scheduling conflict, which is within their rights, and proposed a replacement window in the spring.\n\nThe replacement window has been proposed at ninety days' notice rather than thirty. Our inspectorate notes, without recommendation, that ninety days is sufficient time to move anything that a thirty-day window was designed to find. They have accepted the spring date."
  ldpro.3.a: "Accept the spring date."
 
  ldpro.4.t: "Intercept Over the Denmark Strait"
@@ -127,7 +130,7 @@
 
 
  EFH_mishandled_contamination: "The Rhone Inquiry"
- EFH_mishandled_contamination_desc: "The inquiry found no individual at fault and recommended a continental sampling programme, which is the programme the Federation had declined to fund. Public health advisories issued from Brussels are now read as political documents."
+ EFH_mishandled_contamination_desc: "The inquiry found no individual at fault and recommended a continental sampling programme, which is the programme the Federation had declined to fund. Public health advisories issued from Amsterdam are now read as political documents."
 
 
 
@@ -179,7 +182,7 @@
  laytheo.1.a: "Then it flies thin."
 
  laytheo.2.t: "Iris Orbit"
- laytheo.2.d: "Day 4,100. The Laytheo achieves orbit around a body twenty two thousand three hundred and twenty three kilometres across, and the crew report, at length and in the flat voice of people who rehearsed this, that it is not a planet and does not look like one. The moon is visible from the flight deck. It is not where it should be. It has not been for two years."
+ laytheo.2.d: "Day 4,100. The Laytheo achieves orbit around a body twenty-two thousand three hundred and twenty-three kilometres across, and the crew report, at length and in the flat voice of people who rehearsed this, that it is not a planet and does not look like one. The moon is visible from the flight deck. It is not where it should be. It has not been for two years."
  laytheo.2.a: "Begin the descent."
 
  laytheo.3.t: "Coordination Ends"
@@ -272,4 +275,112 @@
  upgrade_LD_parasite_hunters_desc: "Stand up dedicated counter-infiltration teams, hardening the agency and denying the hive new recruits."
  upgrade_LD_field_decryption: "Field Decryption"
  upgrade_LD_field_decryption_desc: "Mobile cryptology units that pull more out of intercepted parasite traffic."
+
+
+ ldwar.40.t: "Beijing Raises the Canal"
+ ldwar.40.d: "Chinese container traffic to Federation ports runs through Panama. The Suez alternative adds nineteen days and a transit schedule Beijing has refused twice already.\n\nThe Chinese foreign ministry proposes a conference on the administration of the canal, co-sponsored, with the Federation's name printed alongside its own on the invitation. Washington will read that invitation as an ultimatum, which is the reading Beijing intends.\n\nThe conference convenes in six weeks with or without a second signature."
+ ldwar.40.a: "Print our name on it."
+ ldwar.40.b: "Let Beijing table it alone."
+ ldwar.41.t: "An Invitation to Panama"
+ ldwar.41.d: "The European Federation and China have jointly proposed that administration of the canal pass to an international commission. The proposal names seven seats. Three are European, two are Chinese, and the two that remain are described as regional.\n\nThe waterway was built by Americans, is operated by Americans, and carries a fifth of everything this country sells. Their delegation is already in the air.\n\nCongress wants an answer before it lands."
+ ldwar.41.a: "Tell them the canal is American."
+ ldwar.41.b: "Give them the commission."
+ ldwar.42.t: "War Over the Canal"
+ ldwar.42.d: "The European Federation and the United States are at war. The Chinese declaration followed inside the day, which is faster than either foreign ministry managed to publish a statement explaining it.\n\nThe stated dispute is the administration of a waterway eighty-two kilometres long."
+ ldwar.42.a: "The decade continues."
+ LD_panama_summit_convened_tt: "§YThe conference goes to Washington. If it is refused there, the Federation and China open the war together and no nuclear exchange precedes it.§!"
+
+ LD_canal_accord: "The Canal Accord"
+ LD_canal_accord_desc: "A joint position with Beijing on the administration of the Panama Canal, published in two languages and drafted in neither capital. Federation freight through the isthmus is now a Chinese interest as well, which is worth a great deal right up until the moment it is worth a war."
+ LD_canal_expeditionary: "No Fleet Yet"
+ LD_canal_expeditionary_desc: "China is in this war for a freight lane and has nothing that can cross an ocean to fight in it. What it can send is aircraft, machine tools, and enough finished equipment to keep somebody else's divisions in the field. The naval programme is scheduled for the decade after this one."
+ LD_canal_conceded: "The Commission"
+ LD_canal_conceded_desc: "Seven seats, two of them American, on a body that now decides which hulls transit and what they pay. The canal is still there and the flag over the administration building has not changed. Neither has anybody's opinion of the government that agreed to it."
+
+
+ geo_volunteers.1.t: "Africa Falls Under Assault"
+ geo_volunteers.1.d: "The Iris has attacked the African Confederation. Our forces are watching. The question is whether we commit."
+ geo_volunteers.1.a: "Send what we can. Africa must hold."
+ geo_volunteers.1.b: "We cannot afford it right now."
+
+ SRP_volunteers_to_africa_idea: "Volunteers to Africa"
+ SRP_volunteers_to_africa_idea_desc: "Our volunteers are fighting on the African front against the parasites."
+
+
+ efh_geo.1.t: "The Pacific Pact is Signed"
+ efh_geo.1.d: "Japan has formally aligned with the European Federation. The defence pact is public, the terms are binding, and Washington has received its copy."
+ efh_geo.1.a: "Tokyo is with us."
+ efh_geo_japan_pact_tt: "The United States is informed of the Japan-Federation defence pact."
+
+ efh_geo.2.t: "Beijing Considers Its Position"
+ efh_geo.2.d: "The Federation's Eurasian buffer doctrine puts China at a decision point. Beijing can lean toward the European partnership, or keep the careful neutrality that has served it well."
+ efh_geo.2.a: "China leans toward the Federation."
+ efh_geo.2.b: "China stays neutral for now."
+ efh_geo_china_efh_tt: "China formally tilts toward the Federation's diplomatic position."
+ efh_geo_china_neutral_tt: "China chooses strategic neutrality for now."
+
+ efh_geo.3.t: "The Federation Claims Hemispheric Interest"
+ efh_geo.3.d: "The Federation has formally declared a stake in Western Hemisphere stability. Washington has the communique."
+ efh_geo.3.a: "Let Washington respond."
+ efh_geo_hemispheric_tt: "The United States receives news of the Federation's hemispheric challenge."
+
+ usa_efh_war.1.t: "The Federation Enters the Americas"
+ usa_efh_war.1.d: "Intelligence confirms what was suspected: the Federation is establishing a real economic and strategic presence in South America, in sectors and at a scale that no commercial case explains."
+ usa_efh_war.1.a: "Protest. The Monroe Doctrine applies."
+ usa_efh_war.1.b: "Watch and wait."
+
+ usa_efh_war.2.t: "The Federation Has Japan"
+ usa_efh_war.2.d: "The Pacific Defence Pact is confirmed. Japan, a partner we counted on, has signed a formal security arrangement with the European Federation."
+ usa_efh_war.2.a: "Demand Japan reconsider. This will not stand."
+ usa_efh_war.2.b: "Accelerate Pacific containment."
+
+ usa_efh_war.3.t: "The Ultimatum"
+ usa_efh_war.3.d: "The standoff has run out of room. Both governments have drawn lines neither will give up. Someone must blink. Or someone must fire."
+ usa_efh_war.3.a: "Issue the ultimatum."
+ usa_efh_war.3.b: "Stand down. Find another way."
+
+
+ SRP_political_interference_category: "Political Operations"
+ SRP_political_interference_category_desc: "Quiet operations to shape the rival power's internal politics, without moving forces or firing shots."
+
+ USA_stoke_ef_separatism: "Back Federation Separatist Movements"
+ USA_stoke_ef_separatism_desc: "American intelligence can quietly fund the movements inside the Federation that want power back from Amsterdam. It won't break Europe up, but it makes it harder to govern."
+ USA_stoke_ef_separatism_tt: "Increases Federation separatist pressure and Sovereigntist party vote share."
+ USA_groundwork_separatism_tt: "The pre-crisis Atlantic intelligence groundwork deepens the operation: additional separatist pressure and Sovereigntist support."
+
+ USA_fund_ha_lobbying_external: "Fund H&A Lobbying Networks"
+ USA_fund_ha_lobbying_external_desc: "Washington has always preferred a corporate-run Europe to a statist one. H&A's pro-market agenda aligns with American interests, and their parliamentary contacts don't ask too many questions about where the money comes from."
+ USA_fund_ha_lobbying_external_tt: "Shifts the Federation's internal balance of power toward H&A Corporation."
+
+ EFH_back_us_credibility: "Endorse American Crisis Leadership"
+ EFH_back_us_credibility_desc: "A public statement of confidence in Washington's parasite response costs the Federation little but gives the American government political breathing room. A stable United States is a more predictable partner."
+ EFH_back_us_credibility_tt: "Improves American public trust in federal institutions."
+
+ EFH_undermine_us_narrative: "Leak American Crisis Failures"
+ EFH_undermine_us_narrative_desc: "European intelligence has documented American mishandling of the parasite situation in exquisite detail. The files are embarrassing. Releasing them to international press would make Washington's job considerably harder."
+ EFH_undermine_us_narrative_tt: "Damages American public trust in federal institutions."
+
+
+ EFH_propose_research_accord: "Propose Anti-Parasite Research Accord"
+ EFH_propose_research_accord_desc: "A research-sharing arrangement with Washington. The Federation wants American bioanalysis data, Washington wants European field containment data, and neither side has said yet whether that is a trade."
+ EFH_propose_research_accord_tt: "The Federation immediately begins consolidated research. The United States receives a proposal event and may accept or decline."
+
+ efh_geo.4.t: "Amsterdam Proposes a Research Accord"
+ efh_geo.4.d: "The European Federation proposes a formal exchange of parasite research: our bioanalysis findings for their field containment records. The science case is sound. The political case is more complicated."
+ efh_geo.4.a: "Accept. This is bigger than our rivalry."
+ efh_geo.4.b: "Decline. Not with Europe."
+
+ efh_geo.5.t: "Washington Has Replied"
+ efh_geo.5.d: "The United States has responded to our research accord proposal."
+ efh_geo.5.a: "Understood. We continue with what we have."
+ efh_geo_accord_accepted_tt: "The United States accepted the accord. Both parties gain consolidated research access."
+ efh_geo_accord_declined_tt: "The United States declined. The Federation's own research programme proceeds independently."
+
+
+ EFH_joint_research_accord: "Joint Research Accord"
+ EFH_joint_research_accord_desc: "The Federation and the United States have agreed to pool parasite research data. Shared containment protocols and bioanalysis records are accelerating the scientific effort on both fronts."
+
+ USA_joint_research_accord: "Joint Research Accord"
+ USA_joint_research_accord_desc: "The United States has agreed to share parasite research data with the European Federation. European field containment records are filling gaps in American bioanalysis programs."
+
 

@@ -228,6 +228,64 @@ AFR = {
 	}
 }
 
+IND = {
+	male = {
+		names = {
+			Aarav Abhishek Aditya Ajay Akash Amit Anand Anil Arjun Arun Ashok Asif Bilal
+			Rahul Deepak Dev Farhan Ganesh Gaurav Harish Imran Jagdish Karan Kiran Krishna
+			Manish Manoj Mohan Mukesh Naveen Nikhil Omar Pradeep Prakash Rajesh Rakesh Ravi
+			Rohit Sameer Sandeep Sanjay Shahid Shiv Siddharth Sunil Suresh Tariq Usman
+			Varun Venkat Vijay Vikram Vinod Yusuf Zubair Gurpreet Harjit Arindam Subhash
+		}
+	}
+	female = {
+		names = {
+			Aarti Aisha Ananya Anjali Asha Ayesha Deepa Divya Farah Fatima Geeta Hina
+			Indira Isha Jaya Kavita Lakshmi Leela Madhuri Meena Neha Nisha Pooja Priya
+			Radha Rani Rekha Ritu Sadia Sana Sarita Shabnam Shreya Sita Sunita Tanvi
+			Uma Usha Vandana Zainab Zara Mitali Ruksana Harpreet Simran Kamala Nandini
+		}
+	}
+	surnames = {
+		Agarwal Ahmed Ali Banerjee Bhatt Bose Chatterjee Chaudhry Das Desai Dutta
+		Gill Gupta Hussain Iyer Jain Joshi Kapoor Khan Kohli Kumar Malik Mehta Menon
+		Mishra Mukherjee Nair Patel Pillai Qureshi Rao Reddy Saxena Shah Sharma Siddiqui
+		Singh Sinha Sharif Thakur Trivedi Verma Yadav Rahman Chowdhury Sandhu Naidu
+	}
+	callsigns = {
+		"Garuda" "Monsoon" "Cobra" "Tiger" "Deccan" "Indus" "Ganga" "Thar" "Aravalli"
+		"Kestrel" "Mongoose" "Nilgiri" "Sundarban" "Vindhya" "Banyan" "Shikra" "Teak"
+	}
+}
+
+ARU = {
+	male = {
+		names = {
+			Abdullah Adel Ahmad Ali Amjad Anas Ayman Bassam Faisal Fadi Faris Ghassan
+			Hamad Hamid Hani Hassan Haidar Hussein Ibrahim Issa Jamal Kamal Karim Khaled
+			Mahmoud Majid Marwan Mazen Mohammed Mustafa Nabil Nasser Omar Qasim Rami Saad
+			Saleh Sami Samir Talal Tariq Walid Yaser Youssef Zaid Ziad Rebin Shvan Azad
+		}
+	}
+	female = {
+		names = {
+			Aisha Amal Amira Asma Dalia Dana Farah Fatima Ghada Hala Hanan Hiba Huda
+			Iman Jamila Khadija Layla Lina Maha Mariam Mona Nadia Noor Rania Reem Rima
+			Salma Samira Sana Suha Wafa Yasmin Zainab Zeina Shirin Rozhin Nasrin
+		}
+	}
+	surnames = {
+		Abbas Al-Amin Al-Ani Al-Harbi Al-Hashimi Al-Jaburi Al-Khatib Al-Mutairi
+		Al-Najjar Al-Qahtani Al-Rashid Al-Saadi Al-Shammari Al-Tamimi Al-Zahrani
+		Barzani Darwish Haddad Hamdan Haydari Kassab Khoury Mansour Nasrallah Qasimi
+		Rahimi Saleh Sayegh Shaker Talabani Yassin Zubaidi Haddadin Obeidat Masri
+	}
+	callsigns = {
+		"Saker" "Simoom" "Oryx" "Euphrates" "Tigris" "Najd" "Dahna" "Shamal" "Wadi"
+		"Falcon" "Hawk" "Cedar" "Date Palm" "Sandgrouse" "Jebel" "Hammada" "Qibli"
+	}
+}
+
 OCE = {
 	male = {
 		names = {

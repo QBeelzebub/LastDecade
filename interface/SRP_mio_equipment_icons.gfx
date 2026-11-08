@@ -136,6 +136,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
 	}
 	spriteType = {
+		name = "GFX_military_industrial_organization_IRS_colossant_hull"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
+	}
+	spriteType = {
 		name = "GFX_military_industrial_organization_IRS_abyssant_hull"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
 	}
@@ -220,5 +224,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_military_industrial_organization_srp_submarine_hull"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_screen_utility.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_mio_department_icon_ship_capital_ship"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
 	}
 }

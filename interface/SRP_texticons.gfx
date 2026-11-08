@@ -290,4 +290,54 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_unit_srp_burn_company_icon_small"
+		texturefile = "gfx/texticons/support_engineer_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_quarantine_company_icon_small"
+		texturefile = "gfx/texticons/support_military_police_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_light_bomber_swarm_icon_small"
+		texturefile = "gfx/texticons/unit_air_tac_bomber_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_srp_ucav_icon_small"
+		texturefile = "gfx/texticons/unit_air_fighter_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_helicopter_icon_small"
+		texturefile = "gfx/texticons/unit_air_cas_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_overseer_node_icon_small"
+		texturefile = "gfx/texticons/hq_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_hq_dispatcher_relay_icon_small"
+		texturefile = "gfx/texticons/hq_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_hq_naval_relay_icon_small"
+		texturefile = "gfx/texticons/hq_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_yelloweye_swarm_icon_small"
+		texturefile = "gfx/texticons/plane_niche_1.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -9,6 +9,8 @@ on_actions = {
                     NOT = { is_full_parasite = yes }
                 }
                 set_variable = { var = public_panic value = 20 }
+                set_variable = { var = public_panic_last value = 20 }
+                SRP_public_panic_own_floor_effect = yes
                 SRP_recalculate_public_panic_effect = yes
             }
         }
@@ -31,20 +33,13 @@ on_actions = {
             if = {
                 limit = {
                     exists = yes
-                    tag = EFH
-                    has_country_flag = EFH_armageddon_declared
-                }
-                set_variable = { var = public_panic value = 1000 }
-                SRP_recalculate_public_panic_effect = yes
-            }
-            if = {
-                limit = {
-                    exists = yes
                     NOT = { is_full_parasite = yes }
-                    NOT = { has_country_flag = EFH_armageddon_declared }
-                    check_variable = { public_panic > 0 }
                 }
-                add_to_variable = { var = public_panic value = -10 }
+                SRP_public_panic_own_floor_effect = yes
+                if = {
+                    limit = { check_variable = { public_panic > 0 } }
+                    add_to_variable = { var = public_panic value = -10 }
+                }
                 SRP_recalculate_public_panic_effect = yes
             }
         }

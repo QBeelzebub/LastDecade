@@ -1,14 +1,14 @@
 ﻿l_english:
  IRS_active_emergence: "Emergence"
- IRS_active_emergence_desc: "The dormancy is over. The hive pours out of the deep ground and onto the continent, every strain moving at once toward the same horizon. While the surge holds, the swarm strikes harder, holds its coordination under fire, and sustains itself off the land it consumes."
+ IRS_active_emergence_desc: "We are out of the ground and on the mainland. While the surge lasts, every strain attacks harder and feeds off the land it takes."
  IRS_archetype_iris: "Lineage: Iris"
- IRS_archetype_iris_desc: "The hive grows along no single specialisation. A balanced lineage, capable in every register and peerless in none. The default expression of the Iris organism, and the easiest to sustain."
+ IRS_archetype_iris_desc: "The hive grows along no single specialisation. A balanced lineage, capable in every register and peerless in none. The Iris' own."
  IRS_archetype_vitreous: "Lineage: Vitreous"
  IRS_archetype_vitreous_desc: "The hive commits to the subterranean. Root lattices, acid digestion, and infestation spread before open war. It gives ground slowly and takes it permanently, patient in defence and constant in spread."
  IRS_archetype_tromos: "Lineage: Tromos"
- IRS_archetype_tromos_desc: "The hive commits to the assault. Siege organisms, fortification breach, and rapid clearance of dense ground. It strikes overwhelmingly and breaks easily, a hammer with no shield."
+ IRS_archetype_tromos_desc: "The hive commits to the assault. Siege organisms, fortification breach, and rapid clearance of dense ground. It strikes overwhelmingly and breaks easily."
  IRS_archetype_adaptive: "Lineage: Adaptive"
- IRS_archetype_adaptive_desc: "The hive refuses to commit. It cultivates a little of every lineage and the peak of none, trading apex strength for reach and flexibility. It is never caught without an answer, and never holds the strongest one."
+ IRS_archetype_adaptive_desc: "The hive keeps a working form of every lineage, none of them at the peak. It moves and trains faster than a committed lineage, and fights without a weak front."
  IRS_archetype_unchecked: "Lineage: Unchecked"
  IRS_archetype_unchecked_desc: "The hive grows without restraint. Every lineage expresses at once, with no coordinating intelligence holding it back. Everything is available to it, and none of it is aimed."
  IRS_archetype_telotic: "Lineage: Telotic"
@@ -38,6 +38,8 @@
  beckon_hostile_debuff_desc: "Beckon roots have infested this state, degrading logistics and steadily killing its population (20/day). Citizens are desperate enough to defend themselves, so local manpower has risen."
  irs_consumed_state: "Fully Consumed"
  irs_consumed_state_desc: "This state has been completely swallowed by Beckons. The population is collapsing."
+ irs_hive_bloat: "Overgrown Hive"
+ irs_hive_bloat_desc: "The Iris holds more ground than it can tend. New Beckons take longer to raise."
  state_resource_parasite_biomass: "Parasite Biomass Production"
  state_resource_fissile_material: "£resources_strip|8 Fissile Material Production"
 
@@ -46,7 +48,7 @@
  world.1.a: "Stand with the Federation."
  world.1.b: "This is not our war."
 
- irs.1.t: "An oppurtunity"
+ irs.1.t: "An Opportunity"
  irs.1.d: "The dominant powers of this world have turned on one another. Attention is divided. Defences are fractured. The infestation can spread further while they bleed."
  irs.1.a: "Expand."
 
@@ -226,7 +228,7 @@
 
  IRS_daughters_awakening: "The Daughters Stir"
  IRS_daughters_awakening_desc: "Something vast moves beyond the atmosphere. The Iris reaches further than this world and further than this sun. Two of its daughters have been here far longer than us, each shaped by worlds they have already finished."
- IRS_daughters_ep_gate_tt: "The Iris must have achieved basic proliferation before its will can extend to the daughters."
+ IRS_daughters_ep_gate_tt: "The Iris must have achieved basic proliferation before its will can extend to the daughters. Requires 1 Evolution Point (current: [?IRS_evolution_points|0])"
  IRS_daughters_awakening_tt: "Both Vitreous and Tromos are now reachable. Their autonomous focuses may be initiated."
 
  IRS_vitreous_contact: "Breathless"
@@ -291,6 +293,10 @@
  devourer_emergence_desc: "The Iris has catalogued a distinct parasite lineage that hunts in open water. These devourer swarms evolved to pursue ocean prey: schools of fish, marine megafauna, and anything else that moves. They strip shipping routes bare."
  adapted_devourer_strain: "Adapted Devourer Strain"
  adapted_devourer_strain_desc: "Observation of devourers attacking vessels has given the Iris a foundation to direct their evolution. The acid composition shifts to eat through painted steel. Pack signalling grows sharper. These are no longer incidental threats to shipping."
+ devourer_ambush_hunting: "Ambush Hunting"
+ devourer_ambush_hunting_desc: "Devourer packs run deep between contacts and rise only to attack. Surface ships get less warning before the first exchange, and the pack is already in position when it comes."
+ devourer_convoy_hunting: "Convoy Hunting"
+ devourer_convoy_hunting_desc: "The Iris points its packs at supply lines, though it hardly needs to. Devourers attack anything that moves, and merchant shipping moves constantly, slowly, and with little to defend it. Raids find more convoys, and fewer ships get away once caught."
  abyssant_genesis: "Abyssant Genesis"
  abyssant_genesis_desc: "A new species. The Iris built something else from the substrate up instead of refining the devourer. Larger, specialised, and aimed at ships."
  tethysic_devourer_genome: "Tethysic Genome Integration"
@@ -370,7 +376,7 @@
  IRS_sea_colony_tier_1: "Sea Colony Network (1/4)"
  IRS_sea_colony_tier_1_desc: "One ocean basin has been permanently seeded. A self-sustaining devourer colony breeds at depth without direction. Convoy losses through infested lanes are ongoing."
  IRS_sea_colony_tier_2: "Sea Colony Network (2/4)"
- IRS_sea_colony_tier_2_desc: "Two ocean basins are permanently infested. The colonies propagate independently, feeding and breeding without IRS oversight. Global shipping is under sustained biological pressure."
+ IRS_sea_colony_tier_2_desc: "Two ocean basins are permanently infested. The colonies propagate independently, feeding and breeding without oversight. Global shipping is under sustained biological pressure."
  IRS_sea_colony_tier_3: "Sea Colony Network (3/4)"
  IRS_sea_colony_tier_3_desc: "Three ocean basins are permanently seeded. Most major trade corridors pass through infested waters. Convoy losses are now a structural feature of the global economy."
  IRS_sea_colony_tier_4: "Sea Colony Network (4/4)"
@@ -401,7 +407,7 @@
 
 
  IRS_phase_1_proliferation: "Phase 1: Proliferation"
- IRS_phase_1_proliferation_desc: "Phase 1: Rupters, the cheapest swarm unit are created wherever there is infested terrain... We can truly begin now."
+ IRS_phase_1_proliferation_desc: "Phase 1: Rupters, the cheapest swarm unit, are created wherever there is infested terrain... We can truly begin now."
 
 
 
@@ -418,8 +424,8 @@
  IRS_phase_2_assimilation_desc: "The phase of true assimilation begins. Hosts emerge from the infected population. The line between prey and parasite starts to blur."
 
 
- IRS_ep_gate_tt_50: "Requires 50 Evolution Points"
- IRS_ep_gate_tt_150: "Requires 150 Evolution Points"
+ IRS_ep_gate_tt_50: "Requires 50 Evolution Points (current: [?IRS_evolution_points|0])"
+ IRS_ep_gate_tt_150: "Requires 150 Evolution Points (current: [?IRS_evolution_points|0])"
 
 
  IRS_ep_gain_5_tt: "§G+5 Evolution Points§!"
@@ -441,8 +447,6 @@
  IRS_evolution_points_category_desc: "The Iris advances by consuming, infesting, and assimilating. Evolution Points accumulate through biological pressure and actions. They are required to pass into new phases, and the phase gates read the running total without ever spending it. Anything bought here is paid for in phase progress. \nCurrent Evolution Points: [?IRS_evolution_points]"
 
 
- IRS_ep_catalyze_evolution: "Catalyze Evolution"
- IRS_ep_catalyze_evolution_desc: "Direct political pressure accelerates the Iris's biological clock. Gain 30 Evolution Points. 30-day cooldown."
 
  IRS_ep_sacrifice_swarm: "Sacrifice Organisms"
  IRS_ep_sacrifice_swarm_desc: "Fifty rupters are broken down and fed back into the evolutionary cycle. Gain 25 Evolution Points. Requires 50 rupters in stockpile. 15-day cooldown."
@@ -709,6 +713,13 @@
  IRS_transoceanic_breach: "Transoceanic Breach"
  IRS_transoceanic_breach_desc: "The crossing is complete. The South American Confederation wakes to war on its own soil. Root networks are already growing beneath its cities."
 
+ IRS_suez_crossing: "Through the Suez"
+ IRS_suez_crossing_desc: "The canal is the only road out of Africa that needs no fleet. The Federation holds it, and past it lie the Levant and Arabia. Most of the brood goes at the canal. A smaller part crosses the Red Sea at the southern strait."
+ IRS_suez_crossing_tt: "§RDeclares war§! on whoever owns the Suez Canal, and on every country holding Arab land in the Middle East."
+
+ IRS_turn_east: "East to China"
+ IRS_turn_east_desc: "Syria and Iraq are ours, and the road beyond them runs to China. Most of the brood turns east. On the Federation's front we only need to hold what we already have."
+
  IRS_phase3_expansion_idea: "Phase 3 Directive"
  IRS_phase3_expansion_idea_desc: "The Iris operates at a global scale."
 
@@ -858,6 +869,29 @@
  IRS_phase2_dormant_transit: "Dormant Transit Preparations"
  IRS_phase2_dormant_transit_desc: "Devourer elements are adapted for long-range oceanic transit in a dormant state. Togo's naval infrastructure is expanded to support the transoceanic deployment."
 
+ IRS_phase2_tethysic_tide: "Into Warm Water"
+ IRS_phase2_tethysic_tide_desc: "The road east by land runs through the Federation's canal and half of Asia. The sea reaches Java sooner. The warm water off its coast already carries us."
+ IRS_phase2_tethysic_tide_tt: "Starts the §YTethysic tide§! on §YWest Java§!: infestation rises by 10 at once and by 0.25 a day after that, and cleanup on the ground does nothing against it. At 100 the owner gives up the coast and the §YTethysic Brood§! comes ashore there, at war with them. Roughly a year."
+ IRS_tethysic_tide_modifier: "Tethysic Tide"
+ IRS_tethysic_tide_modifier_desc: "Infestation is reaching this coast from the sea. Cleanup on land does nothing against it, and it keeps rising until the coast is lost."
+
+ irs_tethys.1.t: "Contamination on the Java Coast"
+ irs_tethys.1.d: "Monitoring stations in West Java report infestation along the shoreline, rising week on week. There is no overland source. Every positive sample comes from tidal flats, harbors and river mouths. Containment teams went in, and the inland burns have not slowed what keeps arriving with the water."
+ irs_tethys.1.a: "Keep the stations reporting."
+ irs_tethys.2.t: "Landfall on Java"
+ irs_tethys.2.d: "Infestation along the West Java coast has reached saturation. Last night Devourers went through the harbors while Reekers came ashore at a dozen points along the beaches, and the coastal garrisons stopped answering. The army can pull back to the interior and leave the coast to it. The alternative is to burn the coast down to bare ground and hold what is left, at a price the province will carry for years."
+ irs_tethys.2.a: "Pull back to the interior."
+ irs_tethys.2.a_tt: "§YWest Java§! is abandoned. What came ashore holds it, and it is at war with us."
+ irs_tethys.2.b: "Burn the coast and hold."
+ irs_tethys.2.b_tt: "Infestation in §YWest Java§! drops to 40 and the province loses infrastructure. The burnt coast yields less for a year. The tide keeps coming, and this choice returns when it reaches 100 again."
+ irs_tethys.2.b_tt_2: "Infestation in §YWest Java§! only drops to 60 this time. It has grown in below where the fire reaches. The province loses infrastructure and yields less for a year. The tide keeps coming."
+ irs_tethys.2.b_tt_3: "Infestation in §YWest Java§! only drops to 80. Burning buys weeks now, not months. The province loses infrastructure and yields less for a year."
+ IRS_scorched_coast: "Scorched Coast"
+ IRS_scorched_coast_desc: "The coast was burnt down to bare ground to hold the tide back. Little is left to work or live on."
+ irs_tethys.3.t: "Ashore on Java"
+ irs_tethys.3.d: "The coast of Java is ours, and the Tethysic Brood holds it. It is at war with the humans who lived there. It will take the islands around it the way water takes low ground. From here the sea reaches China."
+ irs_tethys.3.a: "Let it spread."
+
 
  IRS_phase3_deep_inland: "Deep Inland Colonisation"
  IRS_phase3_deep_inland_desc: "The hive pushes deep into every territory it holds, expanding building capacity across all owned states. The surge lasts six months before the pace normalises."
@@ -893,7 +927,7 @@
  IRS_manifestation_primer_idea: "Manifestation Groundwork"
  IRS_manifestation_primer_idea_desc: "Early structural research toward a future manifestation modestly accelerates the hive's broader research effort."
 
- IRS_ep_gate_tt_800: "Requires 800 Evolution Points"
+ IRS_ep_gate_tt_800: "Requires 800 Evolution Points (current: [?IRS_evolution_points|0])"
  IRS_ep_gain_60_tt: "+60 Evolution Points"
 
 

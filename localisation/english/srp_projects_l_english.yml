@@ -2,7 +2,10 @@
  SRP_moon_base: "Second Space Race: Moon Base"
  SRP_moon_base_desc: "The second space race, an interplanetary threat, and Laytheo's launch costs have together made a permanent lunar base plausible for the first time. Helium-3 off the surface would put Europe's grid on full fusion.\nProgress: §Y[?SRP_moon_base_progress|0]%§!\nModules deployed: §Y[?SRP_moon_base_modules|0]§!/15\nSecurity: §Y[?SRP_moon_base_security|0]§!\nProcurement heat: §Y[?SRP_moon_base_procurement_heat|0]§!"
  SRP_moon_base_status: "Moon Base Status"
- SRP_moon_base_status_desc: "Progress: §Y[?SRP_moon_base_progress|0]%§!\nModules deployed: §Y[?SRP_moon_base_modules|0]§!/15\nSecurity: §Y[?SRP_moon_base_security|0]§!\nProcurement heat: §Y[?SRP_moon_base_procurement_heat|0]§!\n\nThe programme is assembled from Earth-launched precision machinery and lunar-built bulk structures. After the construction yard comes online, rover bodies, shielding, pads, and simple frame elements can be fabricated from local regolith."
+ SRP_moon_base_status_desc: "Progress: §Y[?SRP_moon_base_progress|0]%§!\nModules deployed: §Y[?SRP_moon_base_modules|0]§!/15\nSecurity: §Y[?SRP_moon_base_security|0]§!\nProcurement heat: §Y[?SRP_moon_base_procurement_heat|0]§!\nEach point of Security is a 10% chance to stop a rival's sabotage, up to 40%.\n\nThe programme is assembled from Earth-launched precision machinery and lunar-built bulk structures. After the construction yard comes online, rover bodies, shielding, pads, and simple frame elements can be fabricated from local regolith."
+ SRP_moon_base_poach_rival_tt: "The rival programme loses §R1%§! progress, unless its Security stops it."
+ SRP_moon_base_booster_rival_tt: "The rival programme loses §R2%§! progress, unless its Security stops it."
+ SRP_moon_base_scandal_rival_tt: "The rival's procurement scandal goes public, unless its Security stops it."
  SRP_moon_base_programme_initiation: "Authorise the Moon Base Programme"
  SRP_moon_base_programme_initiation_desc: "Commit the state to a permanent lunar surface programme. The Federation relies on Laytheo and H&A's lunar architecture work. The United States relies on its national launch and aerospace base."
  SRP_moon_base_module_01_site_survey: "Lunar Site Survey Package"
@@ -125,7 +128,7 @@
  sp_land_reward_option_stbn_calibration_live_fire_validation: "Push for live fire validation"
 
  srp_tank_stbn_cannon: "STBN Cannon"
- srp_tank_stbn_cannon_desc: "A modified high-pressure cannon chambered for STBN rounds. The barrel is coated in lead to prevent radiation sickness for crews. The shells are composed of a nuclear heating element, and a small nuclear payload that is triggered when the projectile comes to a stop or is exposed to a beckon's internal pressure."
+ srp_tank_stbn_cannon_desc: "A modified high-pressure cannon chambered for STBN rounds. The barrel is coated in lead to prevent radiation sickness for crews. The shells are composed of a nuclear heating element, and a small nuclear payload that is triggered when the projectile comes to a stop or is exposed to a Beckon's internal pressure."
 
  sp_naval_stbn_shell: "STBN Fleet Ammunition Programme"
  sp_naval_stbn_shell_desc: "Adapting the STBN warhead principle to naval gun calibres. The physics remain the same: SF6 injection, membrane penetration, and internal detonation. Delivery systems, handling procedures, and blast containment requirements are entirely different at sea."
@@ -138,7 +141,7 @@
  sp_naval_stbn_shell_bonus: "STBN Fleet Shells"
 
  sp_naval_fusion_engine: "Carrier Fusion Engine"
- sp_naval_fusion_engine_desc: "The commercial fusion reactor that went online in 2020 was a landmark, but it was a stationary machine the size of a city block. Engineering a compact magnetic confinement core for a supercarrier is a different problem, especially under combat vibration, saltwater corrosion, and missile damage."
+ sp_naval_fusion_engine_desc: "The commercial fusion reactors that went online in 2017 were a landmark, but they were stationary machines the size of a city block. Engineering a compact magnetic confinement core for a supercarrier is a different problem, especially under combat vibration, saltwater corrosion, and missile damage."
 
  srp_carrier_fusion_engine: "Fusion Drive"
  srp_carrier_fusion_engine_desc: "A compact magnetic confinement fusion drive. Generates substantially greater thrust than the nuclear reactors it replaces. Fuel requirements are negligible. The additional power output also benefits onboard systems."
@@ -149,7 +152,7 @@
  sp_naval_reward_option_fusion_engine_full_load_stress_test: "Push the core to full load"
 
  sp_air_sf6_jet_engine: "SF6 Atmospheric Jet Engine"
- sp_air_sf6_jet_engine_desc: "Beckons vent sulfur hexafluoride into the lower atmosphere as a byproduct of parasite photosynthesis. At sufficient concentration, SF6 can be captured mid-flight and used as a supplementary oxidiser in a modified jet combustion cycle, for a big gain in thrust-to-weight and less of the range penalty high-performance jet engines usually pay."
+ sp_air_sf6_jet_engine_desc: "Beckons vent sulfur hexafluoride into the lower atmosphere as a byproduct of luxsynthesis. At sufficient concentration, SF6 can be captured mid-flight and used as a supplementary oxidiser in a modified jet combustion cycle, for a big gain in thrust-to-weight and less of the range penalty high-performance jet engines usually pay."
 
  srp_sf6_engine_1x: "SF6 Turbojet (Single)"
  srp_sf6_engine_1x_desc: "Single SF6-cycle turbojet. Captures atmospheric sulfur hexafluoride through inlet scoops and routes it into the combustion chamber alongside standard oxidiser. Delivers significantly greater thrust and improved range efficiency compared to axial turbofans of equivalent size."
@@ -187,7 +190,7 @@
  sp_naval_reward_option_fuel_synthesis_full_deck_trial: "Trial the system at full deck scale"
 
  sp_land_nuclear_artillery: "Nuclear Artillery"
- sp_land_nuclear_artillery_desc: "Strategic nuclear weapons are a deterrent. Tactical nuclear artillery is a tool. The challenge is miniaturising a nuclear warhead enough for self-propelled artillery while keeping the gun intact and the crew alive long enough to relocate."
+ sp_land_nuclear_artillery_desc: "The challenge is miniaturising a nuclear warhead enough for self-propelled artillery while keeping the gun intact and the crew alive long enough to relocate."
 
  srp_nuclear_artillery_eq: "Tactical Nuclear Shell"
  srp_nuclear_artillery_eq_desc: "A miniaturised nuclear warhead designed for artillery delivery. SF6-triggered detonation sequence adapted from the STBN anti-parasite programme. The blast does not distinguish between biological and conventional targets."
@@ -246,7 +249,7 @@
  SRP_orbital_surveillance_tier_1: "Orbital Surveillance Net I"
  SRP_orbital_surveillance_tier_1_desc: "A small orbital constellation improves strategic collection and gives analysts a steadier picture of hostile movement."
  SRP_orbital_surveillance_tier_2: "Orbital Surveillance Net II"
- SRP_orbital_surveillance_tier_2_desc: "Coverage is broad enough to support military intelligence across multiple theaters."
+ SRP_orbital_surveillance_tier_2_desc: "Coverage is broad enough to support military intelligence across multiple theatres."
  SRP_orbital_surveillance_tier_3: "Orbital Surveillance Net III"
  SRP_orbital_surveillance_tier_3_desc: "Persistent orbital observation is now part of the national command system."
  SRP_orbital_surveillance_tier_4: "Orbital Surveillance Net IV"

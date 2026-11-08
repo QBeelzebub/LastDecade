@@ -32,11 +32,11 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_long_peace = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_long_peace_tt
 			EFH_bop_very_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.60 days = 2 }
+				news_event = { id = efh.60 days = 2 }
 			}
 		}
 	}
@@ -91,7 +91,7 @@ focus_tree = {
 			add_political_power = 30
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.50 days = 1 }
+				news_event = { id = efh.50 days = 1 }
 			}
 		}
 	}
@@ -116,7 +116,7 @@ focus_tree = {
 			EFH_bop_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.51 days = 1 }
+				news_event = { id = efh.51 days = 1 }
 			}
 		}
 	}
@@ -142,7 +142,7 @@ focus_tree = {
 			EFH_party_clamp_support_effect = yes
 			EFH_party_check_separatist_thresholds_effect = yes
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.52 days = 1 }
+			news_event = { id = efh.52 days = 1 }
 		}
 	}
 
@@ -161,7 +161,7 @@ focus_tree = {
 			EFH_bop_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.77 days = 2 }
+				news_event = { id = efh.77 days = 2 }
 			}
 		}
 	}
@@ -200,8 +200,8 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_long_peace_dividend = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
-			country_event = { id = efh.102 days = 5 }
+			custom_effect_tooltip = EFH_ind_long_peace_dividend_tt
+			news_event = { id = efh.102 days = 5 }
 		}
 	}
 
@@ -234,7 +234,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_standing_force_reform = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_standing_force_reform_tt
 			army_experience = 25
 			add_stability = 0.03
 			EFH_bop_very_low_ef_effect = yes
@@ -255,7 +255,7 @@ focus_tree = {
 			add_political_power = 25
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.72 days = 2 }
+				news_event = { id = efh.72 days = 2 }
 			}
 		}
 	}
@@ -275,8 +275,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_professional_army = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_professional_army_tt
 			set_country_flag = EFH_doctrine_professional
+			custom_effect_tooltip = EFH_later_doctrine_professional_tt
 			add_tech_bonus = {
 				name = EFH_professional_army
 				bonus = 0.5
@@ -301,8 +302,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_mass_mobilization = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_mass_mobilization_tt
 			set_country_flag = EFH_doctrine_mass
+			custom_effect_tooltip = EFH_later_doctrine_mass_tt
 			add_manpower = 25000
 			EFH_bop_very_low_ef_effect = yes
 		}
@@ -342,12 +344,12 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_combined_arms_command = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_combined_arms_command_tt
 			add_command_power = 100
 			EFH_bop_very_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.73 days = 1 }
+				news_event = { id = efh.73 days = 1 }
 			}
 		}
 	}
@@ -403,9 +405,10 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nuc_nuclear_brinkmanship = yes
 			}
-			custom_effect_tooltip = EFH_nuclear_program_tt
+			custom_effect_tooltip = EFH_nuc_nuclear_brinkmanship_tt
 			mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 3000 }
 			set_country_flag = EFH_standoff_nuclear
+			custom_effect_tooltip = EFH_later_standoff_nuclear_tt
 			SRP_escalate_medium_effect = yes
 			EFH_bop_very_low_ef_effect = yes
 			country_event = { id = efh.53 days = 30 }
@@ -427,14 +430,15 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_conventional_primacy = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_conventional_primacy_tt
 			mio:EFH_ha_land_mio = { add_mio_funds = 3000 }
 			set_country_flag = EFH_standoff_conventional
+			custom_effect_tooltip = EFH_later_standoff_conventional_tt
 			SRP_escalate_low_effect = yes
 			EFH_bop_very_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.67 days = 1 }
+				news_event = { id = efh.67 days = 1 }
 			}
 		}
 	}
@@ -469,7 +473,7 @@ focus_tree = {
 			SRP_escalate_low_effect = yes
 			EFH_bop_very_low_ef_effect = yes
 			custom_effect_tooltip = EFH_northern_intelligence_posture_tt
-			country_event = { id = efh.82 days = 2 }
+			news_event = { id = efh.82 days = 2 }
 		}
 	}
 
@@ -506,7 +510,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_war_readiness = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_war_readiness_tt
 			EFH_bop_very_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
@@ -530,9 +534,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_alignment_initiative = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_alignment_initiative_tt
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.69 days = 3 }
+			news_event = { id = efh.69 days = 3 }
 		}
 	}
 
@@ -550,7 +554,7 @@ focus_tree = {
 			set_country_flag = EFH_japan_early_contact
 			EFH_bop_very_low_ef_effect = yes
 			custom_effect_tooltip = EFH_tokyo_dialogue_tt
-			country_event = { id = efh.70 days = 1 }
+			news_event = { id = efh.70 days = 1 }
 		}
 	}
 
@@ -568,8 +572,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nav_pacific_security = yes
 			}
-			custom_effect_tooltip = EFH_naval_command_tt
+			custom_effect_tooltip = EFH_nav_pacific_security_tt
 			set_country_flag = EFH_japan_security_path
+			custom_effect_tooltip = EFH_later_japan_security_tt
 			navy_experience = 50
 			SRP_escalate_low_effect = yes
 			EFH_bop_low_ef_effect = yes
@@ -590,8 +595,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_techno_industrial = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_techno_industrial_tt
 			set_country_flag = EFH_japan_techno_path
+			custom_effect_tooltip = EFH_later_japan_techno_tt
 			add_tech_bonus = {
 				name = EFH_techno_industrial_compact
 				bonus = 0.5
@@ -615,7 +621,7 @@ focus_tree = {
 			add_political_power = 30
 			set_country_flag = EFH_japan_axis_formed
 			EFH_bop_low_ef_effect = yes
-			country_event = { id = efh.54 days = 1 }
+			news_event = { id = efh.54 days = 1 }
 			custom_effect_tooltip = EFH_efh_japan_axis_tt
 		}
 	}
@@ -642,7 +648,7 @@ focus_tree = {
 			}
 			EFH_bop_very_low_ef_effect = yes
 			custom_effect_tooltip = EFH_eastern_outreach_tt
-			country_event = { id = efh.71 days = 2 }
+			news_event = { id = efh.71 days = 2 }
 		}
 	}
 
@@ -662,12 +668,12 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_prepared_federation = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_prepared_federation_tt
 			set_country_flag = EFH_federation_consolidated
 			EFH_bop_very_low_ef_effect = yes
 			if = {
 				limit = { NOT = { has_country_flag = EFH_legacy_2020_baseline } }
-				country_event = { id = efh.78 days = 1 }
+				news_event = { id = efh.78 days = 1 }
 			}
 		}
 	}
@@ -686,7 +692,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_war_college = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_war_college_tt
 			add_tech_bonus = {
 				name = EFH_federal_war_college
 				bonus = 0.5
@@ -694,7 +700,7 @@ focus_tree = {
 				category = land_doctrine
 			}
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.79 days = 2 }
+			news_event = { id = efh.79 days = 2 }
 		}
 	}
 
@@ -713,7 +719,7 @@ focus_tree = {
 			set_country_flag = EFH_us_war_plan_drawn
 			add_war_support = 0.05
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.80 days = 1 }
+			news_event = { id = efh.80 days = 1 }
 		}
 	}
 
@@ -732,7 +738,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_pacific_framework = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_pacific_framework_tt
 			set_country_flag = EFH_pacific_framework_set
 			5 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			EFH_bop_very_low_ef_effect = yes
@@ -754,7 +760,7 @@ focus_tree = {
 			add_political_power = 30
 			add_stability = 0.03
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.55 days = 2 }
+			news_event = { id = efh.55 days = 2 }
 		}
 	}
 
@@ -775,10 +781,11 @@ focus_tree = {
 			add_to_variable = { var = EFH_party_sovereigntist value = -5 }
 			add_to_variable = { var = EFH_separatist_pressure value = -12 }
 			set_country_flag = EFH_civic_path_demos
+			custom_effect_tooltip = EFH_later_civic_demos_tt
 			EFH_party_clamp_support_effect = yes
 			EFH_party_check_separatist_thresholds_effect = yes
 			EFH_bop_low_ef_effect = yes
-			country_event = { id = efh.56 days = 1 }
+			news_event = { id = efh.56 days = 1 }
 		}
 	}
 
@@ -800,10 +807,11 @@ focus_tree = {
 			add_to_variable = { var = EFH_party_volt value = -2 }
 			add_to_variable = { var = EFH_separatist_pressure value = -6 }
 			set_country_flag = EFH_civic_path_homelands
+			custom_effect_tooltip = EFH_later_civic_homelands_tt
 			EFH_party_clamp_support_effect = yes
 			EFH_party_check_separatist_thresholds_effect = yes
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.57 days = 1 }
+			news_event = { id = efh.57 days = 1 }
 		}
 	}
 
@@ -821,7 +829,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_prosperity_dividend = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_prosperity_dividend_tt
 			1 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			5 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			EFH_bop_very_low_ef_effect = yes
@@ -844,7 +852,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_public_institutions = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_public_institutions_tt
 			EFH_bop_low_ef_effect = yes
 		}
 	}
@@ -863,9 +871,16 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_corporate_commons = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_corporate_commons_tt
+			mio:EFH_ha_logistics_mio = { add_mio_funds = 3000 }
+			1 = { add_extra_state_shared_building_slots = 1 }
+			5 = { add_extra_state_shared_building_slots = 1 }
+			7 = { add_extra_state_shared_building_slots = 1 }
+			add_to_variable = { var = EFH_separatist_pressure value = 3 }
+			EFH_party_clamp_support_effect = yes
+			EFH_party_check_separatist_thresholds_effect = yes
 			EFH_bop_low_ha_effect = yes
-			country_event = { id = efh.58 days = 1 }
+			news_event = { id = efh.58 days = 1 }
 		}
 	}
 
@@ -883,7 +898,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_society_on_the_eve = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_society_on_the_eve_tt
 			set_country_flag = EFH_civil_society_prepared
 			EFH_bop_very_low_ef_effect = yes
 			if = {
@@ -931,10 +946,11 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_biosecurity = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_biosecurity_tt
 			set_country_flag = EFH_biosecurity_prepared
+			custom_effect_tooltip = EFH_later_biosecurity_tt
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.92 days = 1 }
+			news_event = { id = efh.92 days = 1 }
 		}
 	}
 
@@ -952,9 +968,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_biocontainment = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_biocontainment_tt
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.93 days = 1 }
+			news_event = { id = efh.93 days = 1 }
 		}
 	}
 
@@ -1026,7 +1042,7 @@ focus_tree = {
 			add_political_power = 15
 			set_country_flag = EFH_us_intel_ops_unlocked
 			custom_effect_tooltip = EFH_intel_ops_unlocked_tt
-			country_event = { id = efh.103 days = 1 }
+			news_event = { id = efh.103 days = 1 }
 		}
 	}
 
@@ -1042,10 +1058,10 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				EFH_mil_canadian_commitment = yes
+				SRP_escalate_high_effect = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_canadian_commitment_tt
 			army_experience = 25
-			SRP_escalate_medium_effect = yes
 			set_country_flag = EFH_second_summit_incident
 			custom_effect_tooltip = EFH_canadian_divisions_deploy_tt
 			if = {
@@ -1061,7 +1077,7 @@ focus_tree = {
 				hidden_effect = {
 					EFH_mil_northern_professional_edge = yes
 				}
-				custom_effect_tooltip = EFH_military_focus_tt
+				custom_effect_tooltip = EFH_mil_northern_professional_edge_tt
 			}
 			if = {
 				limit = { has_country_flag = EFH_doctrine_mass }
@@ -1122,7 +1138,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_northern_logistics = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_northern_logistics_tt
 			army_experience = 15
 			EFH_bop_low_ef_effect = yes
 		}
@@ -1141,6 +1157,8 @@ focus_tree = {
 			has_country_flag = EFH_second_summit_incident
 		}
 		completion_reward = {
+			set_country_flag = EFH_northern_war_authorized
+			SRP_escalate_high_effect = yes
 			news_event = { id = efh.4 days = 1 }
 		}
 	}
@@ -1159,7 +1177,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_air_air_northern_commitment = yes
 			}
-			custom_effect_tooltip = EFH_air_command_tt
+			custom_effect_tooltip = EFH_air_air_northern_commitment_tt
 			custom_effect_tooltip = EFH_air_deploy_tt
 			hidden_effect = { country_event = { id = efh.24 days = 14 } }
 		}
@@ -1182,7 +1200,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_air_post_boston_doctrine = yes
 			}
-			custom_effect_tooltip = EFH_air_command_tt
+			custom_effect_tooltip = EFH_air_post_boston_doctrine_tt
 		}
 	}
 
@@ -1200,7 +1218,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_kaltkrieg_doctrine = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_kaltkrieg_doctrine_tt
 			add_to_variable = { var = EFH_party_ave value = 2 }
 			add_to_variable = { var = EFH_party_continuity value = 1 }
 			add_to_variable = { var = EFH_party_volt value = -1 }
@@ -1231,7 +1249,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nuc_nuclear_deterrence = yes
 			}
-			custom_effect_tooltip = EFH_nuclear_program_tt
+			custom_effect_tooltip = EFH_nuc_nuclear_deterrence_tt
 				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 3000 }
 			if = {
 				limit = { has_country_flag = EFH_standoff_nuclear }
@@ -1261,7 +1279,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nav_japan_sphere_anchor = yes
 			}
-			custom_effect_tooltip = EFH_naval_command_tt
+			custom_effect_tooltip = EFH_nav_japan_sphere_anchor_tt
 			if = {
 				limit = { has_country_flag = EFH_japan_axis_formed }
 				custom_effect_tooltip = EFH_groundwork_japan_axis_tt
@@ -1290,9 +1308,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_trade_bloc_expansion = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_trade_bloc_expansion_tt
 			add_political_power = 15
-			country_event = { id = efh.85 days = 2 }
+			news_event = { id = efh.85 days = 2 }
 		}
 	}
 
@@ -1315,7 +1333,7 @@ focus_tree = {
 			}
 			SRP_escalate_medium_effect = yes
 			custom_effect_tooltip = EFH_economic_pressure_tt
-			country_event = { id = efh.86 days = 1 }
+			news_event = { id = efh.86 days = 1 }
 		}
 	}
 
@@ -1371,7 +1389,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_panama_economic_presence = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_panama_economic_presence_tt
 			SRP_escalate_low_effect = yes
 		}
 	}
@@ -1392,7 +1410,7 @@ focus_tree = {
 			}
 			SRP_escalate_medium_effect = yes
 			custom_effect_tooltip = EFH_panama_cores_tt
-			country_event = { id = efh.89 days = 1 }
+			news_event = { id = efh.89 days = 1 }
 		}
 	}
 
@@ -1414,7 +1432,7 @@ focus_tree = {
 					occupier = USA
 					occupied = EFH
 				}
-				start_resistance = EFH
+				if = { limit = { NOT = { has_resistance = yes } } start_resistance = EFH }
 				set_resistance = 30
 				add_resistance_target = {
 					amount = 50
@@ -1440,14 +1458,14 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_orbital_competitive_pressure = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_orbital_competitive_pressure_tt
 			add_to_variable = { var = EFH_party_astra value = 3 }
 			add_to_variable = { var = EFH_party_volt value = 1 }
 			add_to_variable = { var = EFH_party_continuity value = -2 }
 			add_to_variable = { var = EFH_party_social_green value = -1 }
 			add_to_variable = { var = EFH_party_sovereigntist value = -1 }
 			EFH_party_clamp_support_effect = yes
-			country_event = { id = efh.74 days = 3 }
+			news_event = { id = efh.74 days = 3 }
 		}
 	}
 
@@ -1482,7 +1500,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = EFH_laytheo_in_development
-			country_event = { id = efh.2 days = 1 }
+			news_event = { id = efh.2 days = 1 }
 		}
 	}
 
@@ -1502,8 +1520,8 @@ focus_tree = {
 			hidden_effect = {
 				EFH_lay_laytheo_operational = yes
 			}
-			custom_effect_tooltip = EFH_laytheo_program_tt
-			country_event = { id = efh.3 days = 1 }
+			custom_effect_tooltip = EFH_lay_laytheo_operational_tt
+			news_event = { id = efh.3 days = 1 }
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1530,10 +1548,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_lay_laytheo_surveillance = yes
 			}
-			custom_effect_tooltip = EFH_laytheo_program_tt
-			set_country_flag = EFH_laytheo_beckon_detection_active
+			custom_effect_tooltip = EFH_lay_laytheo_surveillance_tt
 			custom_effect_tooltip = EFH_laytheo_beckon_detection_tt
-			country_event = { id = efh.75 days = 1 }
+			news_event = { id = efh.75 days = 1 }
 		}
 	}
 
@@ -1552,11 +1569,10 @@ focus_tree = {
 			hidden_effect = {
 				EFH_lay_laytheo_orbital_logistics = yes
 			}
-			custom_effect_tooltip = EFH_laytheo_program_tt
-			set_country_flag = EFH_laytheo_orbital_access
+			custom_effect_tooltip = EFH_lay_laytheo_orbital_logistics_tt
 			set_country_flag = HA_lunar_programme_approved
 			custom_effect_tooltip = EFH_laytheo_orbital_logistics_tt
-			country_event = { id = efh.76 days = 1 }
+			news_event = { id = efh.76 days = 1 }
 		}
 	}
 
@@ -1573,7 +1589,6 @@ focus_tree = {
 				tooltip = parasites_emerged_focus_tt
 				has_global_flag = parasites_emerged
 			}
-			has_global_flag = parasites_emerged
 			if = {
 				limit = { has_country_flag = EFH_HA_hyper_founded_in_progress }
 				set_temp_variable = { temp_focus_days = @EFH_HA_hyper_founded_weeks }
@@ -1728,7 +1743,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_hyperbiology_findings = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_hyperbiology_findings_tt
 			add_ideas = EFH_first_beckon_confidence
 			EFH_bop_very_low_ha_effect = yes
 			custom_effect_tooltip = EFH_HA_hyperbiology_initial_findings_tt
@@ -1743,10 +1758,10 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 5
-		ai_will_do = { base = 5 }
+		ai_will_do = { base = 40 }
 		prerequisite = { focus = EFH_HA_hyperbiology_initial_findings }
 		available = {
-			date > 2023.1.1
+			date > 2022.1.1
 		}
 		completion_reward = {
 			set_country_flag = EFH_hyperbiology_expanded
@@ -1768,9 +1783,9 @@ focus_tree = {
 				hidden_effect = {
 					EFH_gov_hyperbiology_oversight_drag = yes
 				}
-				custom_effect_tooltip = EFH_federal_authority_tt
+				custom_effect_tooltip = EFH_gov_hyperbiology_oversight_drag_tt
 			}
-			country_event = { id = efh.104 days = 1 }
+			news_event = { id = efh.104 days = 1 }
 		}
 	}
 
@@ -1787,9 +1802,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_hyperbiology_facilities = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_hyperbiology_facilities_tt
 			EFH_bop_very_low_ha_effect = yes
-			country_event = { id = efh.105 days = 1 }
+			news_event = { id = efh.105 days = 1 }
 		}
 	}
 
@@ -1800,17 +1815,40 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		ai_will_do = { base = 2 }
+		ai_will_do = { base = 40 }
 		prerequisite = { focus = EFH_expand_hyperbiology }
 		completion_reward = {
 			set_country_flag = EFH_harvesting_groundwork
 			hidden_effect = {
 				EFH_res_live_specimen_program = yes
 			}
-			custom_effect_tooltip = EFH_research_directorate_tt
+			custom_effect_tooltip = EFH_res_live_specimen_program_tt
 			mio:EFH_ha_hyperbiology_mio = { add_mio_funds = 3000 }
 			EFH_bop_low_ha_effect = yes
-			country_event = { id = efh.106 days = 1 }
+			news_event = { id = efh.106 days = 1 }
+		}
+	}
+
+	focus = {
+		id = EFH_declare_on_the_hive
+		icon = GFX_goal_generic_major_war
+		relative_position_id = EFH_live_specimen_acquisition
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = { base = 200 }
+		prerequisite = { focus = EFH_live_specimen_acquisition }
+		available = {
+			country_exists = IRS
+			NOT = { has_war_with = IRS }
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = IRS
+				type = annex_everything
+			}
+			add_war_support = 0.05
+			EFH_bop_low_ha_effect = yes
 		}
 	}
 
@@ -1831,7 +1869,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = EFH_parasite_warfare_tt
 			EFH_bop_very_low_ha_effect = yes
-			country_event = { id = efh.107 days = 1 }
+			news_event = { id = efh.107 days = 1 }
 		}
 	}
 
@@ -1961,7 +1999,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EFH_fusion_regulatory_framework
+		id = EFH_fusion_licensing_act
 		icon = GFX_focus_EFH_eter_completion
 		relative_position_id = EFH_eter_completion
 		x = -2
@@ -1970,24 +2008,10 @@ focus_tree = {
 		ai_will_do = { base = 2 }
 		prerequisite = { focus = EFH_eter_completion }
 		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = EFH_fusion_licensing_act
-		icon = GFX_focus_EFH_eter_completion
-		relative_position_id = EFH_eter_completion
-		x = -2
-		y = 2
-		cost = 3.75
-		ai_will_do = { base = 1 }
-		prerequisite = { focus = EFH_fusion_regulatory_framework }
-		completion_reward = {
 			set_technology = {
 				srp_fusion_reactor_1 = 1
 			}
-			add_political_power = 50
+			add_political_power = 100
 		}
 	}
 
@@ -2135,7 +2159,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_training_command = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_training_command_tt
 			EFH_bop_very_low_ef_effect = yes
 		}
 	}
@@ -2153,6 +2177,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_para_xenobiology_directorate = yes
 			}
+			custom_effect_tooltip = EFH_para_xenobiology_directorate_tt
 			custom_effect_tooltip = EFH_parasite_warfare_tt
 			EFH_bop_very_low_ef_effect = yes
 		}
@@ -2188,7 +2213,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 15
 			set_country_flag = EFH_ha_procurement_open
-			country_event = { id = efh.61 days = 2 }
+			news_event = { id = efh.61 days = 2 }
 		}
 	}
 
@@ -2206,8 +2231,9 @@ focus_tree = {
 			add_political_power = -30
 			add_research_slot = 1
 			set_country_flag = EFH_procurement_ha_path
+			custom_effect_tooltip = EFH_later_procurement_ha_tt
 			EFH_bop_low_ha_effect = yes
-			country_event = { id = efh.62 days = 1 }
+			news_event = { id = efh.62 days = 1 }
 		}
 	}
 
@@ -2225,10 +2251,12 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_supply_chain_leadership = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_supply_chain_leadership_tt
+			7 = { add_extra_state_shared_building_slots = 2 }
+			5 = { add_extra_state_shared_building_slots = 2 }
 			set_country_flag = EFH_procurement_ef_path
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.63 days = 1 }
+			news_event = { id = efh.63 days = 1 }
 		}
 	}
 
@@ -2251,7 +2279,7 @@ focus_tree = {
 					add_resource = { type = aluminium amount = 50 }
 				}
 			}
-			country_event = { id = efh.64 days = 1 }
+			news_event = { id = efh.64 days = 1 }
 		}
 	}
 
@@ -2269,8 +2297,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_procurement_framework = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_procurement_framework_tt
 			set_country_flag = EFH_procurement_framework_set
+			custom_effect_tooltip = EFH_later_procurement_framework_tt
 			if = {
 				limit = { has_country_flag = EFH_procurement_ha_path }
 				custom_effect_tooltip = EFH_procurement_framework_ha_tt
@@ -2324,7 +2353,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_civil_mobilization = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_civil_mobilization_tt
 			add_to_variable = { var = EFH_separatist_pressure value = 6 }
 			EFH_party_check_separatist_thresholds_effect = yes
 			if = {
@@ -2352,7 +2381,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_member_state_compact = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_member_state_compact_tt
 			add_to_variable = { var = EFH_separatist_pressure value = -10 }
 			EFH_party_check_separatist_thresholds_effect = yes
 			EFH_bop_very_low_ef_effect = yes
@@ -2395,7 +2424,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_arsenal_of_regulation = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_arsenal_of_regulation_tt
 		}
 	}
 
@@ -2427,7 +2456,7 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = EFH_parasite_threat_assessed
 			}
-			country_event = { id = efh.96 days = 1 }
+			news_event = { id = efh.96 days = 1 }
 		}
 	}
 
@@ -2444,7 +2473,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_res_parasite_monitoring = yes
 			}
-			custom_effect_tooltip = EFH_research_directorate_tt
+			custom_effect_tooltip = EFH_res_parasite_monitoring_tt
 			EFH_bop_very_low_ef_effect = yes
 			if = {
 				limit = { has_country_flag = EFH_biosecurity_prepared }
@@ -2475,8 +2504,8 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_federal_emergency_protocols = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
-			country_event = { id = efh.97 days = 1 }
+			custom_effect_tooltip = EFH_gov_federal_emergency_protocols_tt
+			news_event = { id = efh.97 days = 1 }
 			hidden_effect = {
 				add_to_variable = { var = public_panic value = -150 }
 				SRP_recalculate_public_panic_effect = yes
@@ -2508,9 +2537,10 @@ focus_tree = {
 			hidden_effect = {
 				EFH_para_anti_parasite_command = yes
 			}
+			custom_effect_tooltip = EFH_para_anti_parasite_command_tt
 			custom_effect_tooltip = EFH_parasite_warfare_tt
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.98 days = 1 }
+			news_event = { id = efh.98 days = 1 }
 		}
 	}
 
@@ -2527,9 +2557,11 @@ focus_tree = {
 		mutually_exclusive = { focus = EFH_contracted_field_response }
 		completion_reward = {
 			set_country_flag = EFH_cordon_path
+			custom_effect_tooltip = EFH_later_cordon_tt
 			hidden_effect = {
 				EFH_para_federal_cordon = yes
 			}
+			custom_effect_tooltip = EFH_para_federal_cordon_tt
 			custom_effect_tooltip = EFH_parasite_warfare_tt
 			hidden_effect = {
 				add_to_variable = { var = public_panic value = -75 }
@@ -2552,13 +2584,15 @@ focus_tree = {
 		mutually_exclusive = { focus = EFH_federal_cordon_doctrine }
 		completion_reward = {
 			set_country_flag = EFH_contracted_path
+			custom_effect_tooltip = EFH_later_contracted_tt
 			hidden_effect = {
 				EFH_para_contracted_response = yes
 			}
+			custom_effect_tooltip = EFH_para_contracted_response_tt
 			custom_effect_tooltip = EFH_parasite_warfare_tt
 			mio:EFH_ha_land_mio = { add_mio_funds = 3000 }
 			EFH_bop_low_ha_effect = yes
-			country_event = { id = efh.109 days = 1 }
+			news_event = { id = efh.109 days = 1 }
 		}
 	}
 
@@ -2609,7 +2643,8 @@ focus_tree = {
 				EFH_mil_joint_exercise = yes
 				EFH_mil_equipment_standard = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_equipment_standard_tt
+			custom_effect_tooltip = EFH_mil_joint_exercise_tt
 		}
 	}
 
@@ -2638,7 +2673,7 @@ focus_tree = {
 					add_political_power = 25
 				}
 			}
-			country_event = { id = efh.31 days = 1 }
+			news_event = { id = efh.31 days = 1 }
 		}
 	}
 
@@ -2656,7 +2691,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nuc_thermonuclear_priority = yes
 			}
-			custom_effect_tooltip = EFH_nuclear_program_tt
+			custom_effect_tooltip = EFH_nuc_thermonuclear_priority_tt
 				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 4000 }
 			army_experience = 15
 			EFH_bop_very_low_ha_effect = yes
@@ -2677,7 +2712,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_logistics_militarization = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_logistics_militarization_tt
 				mio:EFH_ha_logistics_mio = { add_mio_funds = 4000 }
 			EFH_bop_very_low_ha_effect = yes
 		}
@@ -2705,9 +2740,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_governance_suspension = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_governance_suspension_tt
 			EFH_bop_low_ha_effect = yes
-			country_event = { id = efh.99 days = 1 }
+			news_event = { id = efh.99 days = 1 }
 		}
 	}
 
@@ -2734,7 +2769,7 @@ focus_tree = {
 			custom_effect_tooltip = EFH_parasite_warfare_tt
 				mio:EFH_ha_thermonuclear_mio = { add_mio_funds = 5000 }
 			EFH_bop_very_low_ha_effect = yes
-			country_event = { id = efh.100 days = 1 }
+			news_event = { id = efh.100 days = 1 }
 		}
 	}
 
@@ -2811,9 +2846,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_mil_defensible_lines = yes
 			}
-			custom_effect_tooltip = EFH_military_focus_tt
+			custom_effect_tooltip = EFH_mil_defensible_lines_tt
 			add_stability = 0.03
-			country_event = { id = efh.101 days = 1 }
+			news_event = { id = efh.101 days = 1 }
 		}
 	}
 
@@ -2840,7 +2875,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nav_atlantic_fleet = yes
 			}
-			custom_effect_tooltip = EFH_naval_command_tt
+			custom_effect_tooltip = EFH_nav_atlantic_fleet_tt
 		}
 	}
 
@@ -2864,7 +2899,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nav_naval_doctrine = yes
 			}
-			custom_effect_tooltip = EFH_naval_command_tt
+			custom_effect_tooltip = EFH_nav_naval_doctrine_tt
 			EFH_bop_very_low_ef_effect = yes
 		}
 	}
@@ -2888,7 +2923,7 @@ focus_tree = {
 				category = srp_naval_tech
 			}
 			EFH_bop_very_low_ha_effect = yes
-			country_event = { id = efh.94 days = 2 }
+			news_event = { id = efh.94 days = 2 }
 		}
 	}
 
@@ -2915,7 +2950,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_air_tactical_air = yes
 			}
-			custom_effect_tooltip = EFH_air_command_tt
+			custom_effect_tooltip = EFH_air_tactical_air_tt
 		}
 	}
 
@@ -2939,7 +2974,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_air_strategic_air = yes
 			}
-			custom_effect_tooltip = EFH_air_command_tt
+			custom_effect_tooltip = EFH_air_strategic_air_tt
 			EFH_bop_very_low_ef_effect = yes
 		}
 	}
@@ -2963,7 +2998,7 @@ focus_tree = {
 				category = srp_air_tech
 			}
 			EFH_bop_very_low_ha_effect = yes
-			country_event = { id = efh.95 days = 2 }
+			news_event = { id = efh.95 days = 2 }
 		}
 	}
 
@@ -2988,7 +3023,7 @@ focus_tree = {
 		id = EFH_fissile_foundation
 		icon = GFX_focus_EFH_eter_completion
 		relative_position_id = EFH_eter_completion
-		x = 1
+		x = 2
 		y = 5
 		cost = 5
 		ai_will_do = { base = 5 }
@@ -3015,7 +3050,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nuc_fissile_industry = yes
 			}
-			custom_effect_tooltip = EFH_nuclear_program_tt
+			custom_effect_tooltip = EFH_nuc_fissile_industry_tt
 		}
 	}
 
@@ -3035,7 +3070,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_civil_expansion = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_civil_expansion_tt
 		}
 	}
 
@@ -3053,7 +3088,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_nuc_nuclear_fuel_cycle = yes
 			}
-			custom_effect_tooltip = EFH_nuclear_program_tt
+			custom_effect_tooltip = EFH_nuc_nuclear_fuel_cycle_tt
 		}
 	}
 
@@ -3072,7 +3107,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_reconstruction_bureau = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_reconstruction_bureau_tt
 		}
 	}
 
@@ -3093,7 +3128,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_global_posture = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_global_posture_tt
 			EFH_bop_very_low_ef_effect = yes
 		}
 	}
@@ -3114,7 +3149,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_japan_sphere_deepened = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_japan_sphere_deepened_tt
 			EFH_bop_very_low_ef_effect = yes
 			custom_effect_tooltip = EFH_japan_sphere_tt
 			if = {
@@ -3150,7 +3185,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_res_japan_tech_coop = yes
 			}
-			custom_effect_tooltip = EFH_research_directorate_tt
+			custom_effect_tooltip = EFH_res_japan_tech_coop_tt
 			EFH_bop_very_low_ef_effect = yes
 		}
 	}
@@ -3172,7 +3207,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_pacific_defense_pact = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_pacific_defense_pact_tt
 			SRP_escalate_medium_effect = yes
 			EFH_bop_low_ef_effect = yes
 			news_event = { id = efh_geo.1 days = 1 }
@@ -3217,9 +3252,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_sac_economic_presence = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_sac_economic_presence_tt
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.87 days = 2 }
+			news_event = { id = efh.87 days = 2 }
 			if = {
 				limit = { has_country_flag = EFH_sac_early_contact }
 				custom_effect_tooltip = EFH_groundwork_sac_tt
@@ -3241,7 +3276,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_sac_infrastructure = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_sac_infrastructure_tt
 			set_country_flag = EFH_SAC_infrastructure_built
 			USA = { set_country_flag = EFH_SAC_sphere_detected }
 			SRP_escalate_low_effect = yes
@@ -3266,7 +3301,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_hemispheric_doctrine = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_hemispheric_doctrine_tt
 			SRP_escalate_high_effect = yes
 			EFH_bop_low_ef_effect = yes
 			news_event = { id = efh_geo.3 days = 1 }
@@ -3290,9 +3325,9 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_beijing_channel = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_beijing_channel_tt
 			EFH_bop_very_low_ef_effect = yes
-			country_event = { id = efh.88 days = 2 }
+			news_event = { id = efh.88 days = 2 }
 			if = {
 				limit = { has_country_flag = EFH_china_early_contact }
 				custom_effect_tooltip = EFH_groundwork_china_tt
@@ -3314,7 +3349,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_ind_sino_efh_trade = yes
 			}
-			custom_effect_tooltip = EFH_industrial_base_tt
+			custom_effect_tooltip = EFH_ind_sino_efh_trade_tt
 			set_country_flag = EFH_china_trade_active
 			USA = { set_country_flag = EFH_china_trade_detected }
 			SRP_escalate_low_effect = yes
@@ -3336,7 +3371,7 @@ focus_tree = {
 			hidden_effect = {
 				EFH_gov_eurasian_buffer = yes
 			}
-			custom_effect_tooltip = EFH_federal_authority_tt
+			custom_effect_tooltip = EFH_gov_eurasian_buffer_tt
 			SRP_escalate_low_effect = yes
 			EFH_bop_low_ef_effect = yes
 			country_event = { id = efh_geo.2 days = 1 }

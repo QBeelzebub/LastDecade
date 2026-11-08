@@ -1,0 +1,16 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "LD_beckon_globe_window"
+		position = { x = -96 y = 20 }
+		size = { width = 49 height = 49 }
+		Orientation = UPPER_RIGHT
+
+		iconType = {
+			name = "LD_beckon_globe_icon"
+			spriteType = "GFX_LD_beckon_globe_strip"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "LD_BECKON_GLOBE_TT"
+		}
+	}
+}

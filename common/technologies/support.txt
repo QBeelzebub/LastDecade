@@ -1,23 +1,7 @@
 technologies = {
-	srp_infrared = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2022
-		land_night_attack = 0.2
-		folder = {
-			name = support_folder
-			position = { x = 0 y = 0 }
-		}
-
-		categories = { srp_parasite_support_tech }
-
-		
-
-		ai_will_do = {
-			base = 2
-		}
-	}
 	tech_support = {
+		research_cost = 1.0
+		start_year = 2018
 		allow = { NOT = { is_full_parasite = yes } }
 		enable_equipments = {
 			support_equipment_1
@@ -60,10 +44,10 @@ technologies = {
 	tech_signal_company_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2024
+		start_year = 2022
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 0 y = 9 }
 		}
 
 		categories = {
@@ -72,34 +56,11 @@ technologies = {
 			electronics
 		}
 
-		coordination_bonus = 0.05
+		coordination_bonus = 0.1
 		army_org_factor = 0.02
 
-		path = {
-			leads_to_tech = tech_signal_company_3
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = { base = 2 }
-	}
-
-	tech_signal_company_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2028
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 0 }
-		}
-
-		categories = {
-			support_tech
-			signal_company_tech
-			electronics
-		}
-
-		coordination_bonus = 0.05
 		planning_speed = 0.05
+
 		recon_factor = 0.03
 
 		ai_will_do = { base = 2 }
@@ -117,7 +78,7 @@ technologies = {
 		start_year = 2018
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 2 y = 0 }
 		}
 
 		categories = {
@@ -131,6 +92,10 @@ technologies = {
 			leads_to_tech = tech_field_hospital_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = srp_quarantine_engineers
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = {
 			base = 3
@@ -140,10 +105,10 @@ technologies = {
 	tech_field_hospital_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2025
+		start_year = 2023
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 2 y = 12 }
 		}
 
 		categories = {
@@ -151,33 +116,8 @@ technologies = {
 			hospital_tech
 		}
 
-		land_reinforce_rate = 0.04
-		experience_loss_factor = -0.05
-
-		path = {
-			leads_to_tech = tech_field_hospital_3
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = { base = 2 }
-	}
-
-	tech_field_hospital_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2029
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 0 }
-		}
-
-		categories = {
-			support_tech
-			hospital_tech
-		}
-
-		land_reinforce_rate = 0.05
-		experience_loss_factor = -0.05
+		land_reinforce_rate = 0.09
+		experience_loss_factor = -0.1
 		army_org_factor = 0.02
 
 		ai_will_do = { base = 2 }
@@ -195,7 +135,7 @@ technologies = {
 		start_year = 2018
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 6 y = 0 }
 		}
 
 		categories = {
@@ -218,10 +158,10 @@ technologies = {
 	tech_logistics_company_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2024
+		start_year = 2022
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 6 y = 9 }
 		}
 
 		categories = {
@@ -229,33 +169,8 @@ technologies = {
 			logistics_tech
 		}
 
-		supply_consumption_factor = -0.05
-		out_of_supply_factor = -0.05
-
-		path = {
-			leads_to_tech = tech_logistics_company_3
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = { base = 2 }
-	}
-
-	tech_logistics_company_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2028
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 0 }
-		}
-
-		categories = {
-			support_tech
-			logistics_tech
-		}
-
-		supply_consumption_factor = -0.05
-		out_of_supply_factor = -0.06
+		supply_consumption_factor = -0.1
+		out_of_supply_factor = -0.11
 		army_org_factor = 0.02
 
 		ai_will_do = { base = 2 }
@@ -272,7 +187,7 @@ technologies = {
 		start_year = 2018
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 8 y = 0 }
 		}
 
 		categories = {
@@ -284,6 +199,10 @@ technologies = {
 			leads_to_tech = tech_recon_company_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = srp_wheeled_recon
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = { base = 3 }
 	}
@@ -291,10 +210,10 @@ technologies = {
 	tech_recon_company_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2024
+		start_year = 2022
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 8 y = 9 }
 		}
 
 		categories = {
@@ -302,33 +221,8 @@ technologies = {
 			recon_tech
 		}
 
-		recon_factor = 0.05
-		army_core_attack_factor = 0.03
-
-		path = {
-			leads_to_tech = tech_recon_company_3
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = { base = 2 }
-	}
-
-	tech_recon_company_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2028
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 0 }
-		}
-
-		categories = {
-			support_tech
-			recon_tech
-		}
-
-		recon_factor = 0.05
-		army_core_attack_factor = 0.04
+		recon_factor = 0.1
+		army_core_attack_factor = 0.07
 		planning_speed = 0.03
 
 		ai_will_do = { base = 2 }
@@ -346,7 +240,7 @@ technologies = {
 		start_year = 2018
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 12 y = 0 }
 		}
 
 		categories = {
@@ -358,6 +252,10 @@ technologies = {
 			leads_to_tech = tech_engineer_company_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = srp_burn_teams
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = { base = 3 }
 	}
@@ -365,10 +263,10 @@ technologies = {
 	tech_engineer_company_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2025
+		start_year = 2023
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 12 y = 12 }
 		}
 
 		categories = {
@@ -376,35 +274,9 @@ technologies = {
 			engineers_tech
 		}
 
-		max_dig_in = 1
-		dig_in_speed_factor = 0.05
-		army_defence_factor = 0.02
-
-		path = {
-			leads_to_tech = tech_engineer_company_3
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = { base = 2 }
-	}
-
-	tech_engineer_company_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2028
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 0 }
-		}
-
-		categories = {
-			support_tech
-			engineers_tech
-		}
-
-		max_dig_in = 1
-		dig_in_speed_factor = 0.08
-		army_defence_factor = 0.03
+		max_dig_in = 2
+		dig_in_speed_factor = 0.13
+		army_defence_factor = 0.05
 		army_core_defence_factor = 0.03
 
 		ai_will_do = { base = 2 }
@@ -421,7 +293,7 @@ technologies = {
 		start_year = 2021
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 16 y = 6 }
 		}
 
 		categories = {
@@ -439,43 +311,18 @@ technologies = {
 	tech_maintenance_company_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2025
+		start_year = 2023
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 16 y = 12 }
 		}
 
 		categories = {
 			support_tech
 		}
 
-		experience_loss_factor = -0.05
-		army_org_factor = 0.02
-
-		path = {
-			leads_to_tech = tech_maintenance_company_3
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = { base = 2 }
-	}
-
-	tech_maintenance_company_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2029
-		folder = {
-			name = support_folder
-			position = { x = 4 y = 0 }
-		}
-
-		categories = {
-			support_tech
-		}
-
-		experience_loss_factor = -0.05
-		army_org_factor = 0.03
-
+		experience_loss_factor = -0.1
+		army_org_factor = 0.05
 		maintenance_company = {
 			reliability_factor = 0.05
 		}
@@ -487,15 +334,14 @@ technologies = {
 	tech_support_equipment_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
-		start_year = 2024
-
+		start_year = 2022
 		enable_equipments = {
 			support_equipment_2
 		}
 
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 18 y = 9 }
 		}
 
 		categories = {
@@ -516,7 +362,7 @@ technologies = {
 		start_year = 2018
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 0 }
+			position = { x = 20 y = 0 }
 		}
 
 		path = {
@@ -541,7 +387,7 @@ technologies = {
 		start_year = 2023
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 0 }
+			position = { x = 20 y = 12 }
 		}
 
 		categories = {
@@ -549,5 +395,104 @@ technologies = {
 		}
 
 		ai_will_do = { base = 5 }
+	}
+
+	srp_wheeled_recon = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = support_folder
+			position = { x = 10 y = 3 }
+		}
+
+		categories = { support_tech recon_tech cat_armored_cars }
+
+		enable_subunits = { armored_car_recon }
+		enable_equipments = { armored_car_equipment_1 }
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_quarantine_engineers = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = support_folder
+			position = { x = 4 y = 9 }
+		}
+
+		categories = { support_tech hospital_tech srp_parasite_tech }
+
+		dependencies = { srp_containment = 1 }
+
+		enable_subunits = { srp_quarantine_company }
+
+		ai_will_do = { base = 3 }
+	}
+
+	srp_burn_teams = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2021
+
+		folder = {
+			name = support_folder
+			position = { x = 14 y = 6 }
+		}
+
+		categories = { support_tech engineers_tech srp_incendiary }
+
+		dependencies = { srp_incendiary1 = 1 }
+
+		enable_subunits = { srp_burn_company }
+
+		path = {
+			leads_to_tech = srp_root_burning_kits
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = { base = 3 }
+	}
+
+	srp_root_burning_kits = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 2.0
+		start_year = 2022
+
+		folder = {
+			name = support_folder
+			position = { x = 14 y = 9 }
+		}
+
+		categories = { support_tech engineers_tech srp_incendiary }
+
+		dependencies = { srp_incendiary2 = 1 }
+
+		enable_subunits = { srp_burn_regimental }
+
+		srp_burn_company = { soft_attack = 0.15 }
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_gendarmerie = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2018
+
+		folder = {
+			name = support_folder
+			position = { x = 18 y = 0 }
+		}
+
+		categories = { support_tech military_police_tech }
+
+		enable_subunits = { military_police }
+
+		ai_will_do = { base = 2 }
 	}
 }

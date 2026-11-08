@@ -68,6 +68,14 @@ SRP_escalate_high_effect = {
 	USA = { add_to_variable = { EFH_USA_escalation = 20 } SRP_recalc_escalation_idea = yes }
 }
 
+SRP_escalate_summit_ratchet_effect = {
+	set_temp_variable = { SRP_ratchet = EFH_summit_holds }
+	multiply_temp_variable = { SRP_ratchet = 4 }
+	add_to_temp_variable = { SRP_ratchet = 4 }
+	EFH = { add_to_variable = { EFH_USA_escalation = SRP_ratchet } SRP_recalc_escalation_idea = yes }
+	USA = { add_to_variable = { EFH_USA_escalation = SRP_ratchet } SRP_recalc_escalation_idea = yes }
+}
+
 SRP_escalate_drift_effect = {
 	EFH = { add_to_variable = { EFH_USA_escalation = 3 } SRP_recalc_escalation_idea = yes }
 	USA = { add_to_variable = { EFH_USA_escalation = 3 } SRP_recalc_escalation_idea = yes }

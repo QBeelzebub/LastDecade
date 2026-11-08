@@ -14,7 +14,7 @@ technologies = {
 		}
 		enable_building = {
 			building = dispatcher
-			level = 10
+			level = 1
 		}
 	}
 
@@ -212,6 +212,10 @@ technologies = {
 			leads_to_tech = deterrent_parasites
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = parasite_dispatcher_fields
+			research_cost_coeff = 1
+		}
 		folder = {
 			name = parasite_folder
 			position = { x = 4 y = 6 }
@@ -221,6 +225,29 @@ technologies = {
 			base = 4
 			modifier = { factor = 2 has_war = yes }
 		}
+	}
+
+	parasite_dispatcher_fields = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = parasite_folder
+			position = { x = 4 y = 8 }
+		}
+
+		categories = { srp_iris_tech }
+
+		enable_building = {
+			building = dispatcher
+			level = 3
+		}
+
+		ai_will_do = { base = 2 }
 	}
 
 	late_primitive_parasites = {
@@ -278,6 +305,10 @@ technologies = {
 			leads_to_tech = early_pure_parasites
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = parasite_rail_swarm_2
+			research_cost_coeff = 1
+		}
 		folder = {
 			name = parasite_folder
 			position = { x = 6 y = 10 }
@@ -288,12 +319,32 @@ technologies = {
 		}
 	}
 
+	parasite_rail_swarm_2 = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = parasite_folder
+			position = { x = 6 y = 12 }
+		}
+
+		categories = { srp_iris_tech }
+
+		enable_equipments = { parasite_bio_rail_2 }
+
+		ai_will_do = { base = 2 }
+	}
+
 	early_pure_parasites = {
 		allow = {
 			is_parasite_nation = yes
 		}
 
-		research_cost = 6
+		research_cost = 5
 		start_year = 2022
 		force_use_small_tech_layout = yes
 
@@ -332,8 +383,8 @@ technologies = {
 			is_parasite_nation = yes
 		}
 
-		research_cost = 7
-		start_year = 2023
+		research_cost = 5
+		start_year = 2022
 		force_use_small_tech_layout = yes
 
 		enable_subunits = {
@@ -395,8 +446,8 @@ technologies = {
 			is_parasite_nation = yes
 		}
 
-		research_cost = 8
-		start_year = 2024
+		research_cost = 6
+		start_year = 2023
 		force_use_small_tech_layout = yes
 
 		enable_equipments = {
@@ -430,8 +481,8 @@ technologies = {
 			is_parasite_nation = yes
 		}
 
-		research_cost = 9
-		start_year = 2025
+		research_cost = 6
+		start_year = 2024
 		force_use_small_tech_layout = yes
 
 		enable_subunits = {
@@ -468,8 +519,8 @@ technologies = {
 			is_parasite_nation = yes
 		}
 
-		research_cost = 9
-		start_year = 2025
+		research_cost = 7
+		start_year = 2024
 		force_use_small_tech_layout = yes
 
 		enable_subunits = {
@@ -652,8 +703,8 @@ technologies = {
 	vagrant_manifestation = {
 		allow = {
 			is_parasite_nation = yes
-			has_tech = ancient_manifestation
 		}
+		dependencies = { ancient_manifestation = 1 }
 
 		research_cost = 12
 		start_year = 2027
@@ -738,6 +789,10 @@ technologies = {
 			IRS_devourer_hull_1
 			IRS_colossant_hull_1
 		}
+
+		navy_submarine_attack_factor = 0.15
+		navy_capital_ship_attack_factor = 0.10
+		naval_speed_factor = 0.10
 		enable_equipment_modules = {
 			IRS_acid_mantle
 			IRS_shredder_array
@@ -757,6 +812,14 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = adapted_devourer_strain
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = devourer_ambush_hunting
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = devourer_convoy_hunting
 			research_cost_coeff = 1
 		}
 		folder = {
@@ -782,6 +845,11 @@ technologies = {
 			IRS_devourer_hull_2
 		}
 
+		navy_submarine_attack_factor = 0.20
+		navy_capital_ship_attack_factor = 0.15
+		navy_org_factor = 0.10
+		naval_speed_factor = 0.10
+
 		categories = {
 			srp_iris_tech
 		}
@@ -792,6 +860,58 @@ technologies = {
 
 		ai_will_do = {
 			base = 2
+		}
+	}
+
+	devourer_ambush_hunting = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 3
+		start_year = 2023
+		force_use_small_tech_layout = yes
+
+		navy_visibility = -0.20
+		naval_enemy_positioning_in_initial_attack = -0.15
+		navy_submarine_attack_factor = 0.10
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	devourer_convoy_hunting = {
+		allow = {
+			is_parasite_nation = yes
+		}
+
+		research_cost = 3
+		start_year = 2023
+		force_use_small_tech_layout = yes
+
+		convoy_raiding_efficiency_factor = 0.25
+		naval_enemy_retreat_chance = -0.25
+		naval_detection = 0.10
+
+		categories = {
+			srp_iris_tech
+		}
+		folder = {
+			name = parasite_folder
+			position = { x = 4 y = 14 }
+		}
+
+		ai_will_do = {
+			base = 3
 		}
 	}
 

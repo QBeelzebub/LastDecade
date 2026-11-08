@@ -47,14 +47,63 @@ EFH_prepare_for_1st_canadian = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = { type = prepare_for_war id = USA value = 1500 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 276 value = 24 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 862 value = 14 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 468 value = 10 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 465 value = 6  }
 
-	ai_strategy = { type = theatre_distribution_demand_increase id = 276 value = 10 }
-	ai_strategy = { type = theatre_distribution_demand_increase id = 331 value = 5  }
+	ai_strategy = { type = area_priority id = northern_theater value = 760 }
 
-	ai_strategy = { type = area_priority id = northern_theater value = 400 }
-
-	ai_strategy = { type = role_ratio  id = marines value = 200 }
+	ai_strategy = { type = role_ratio  id = marines value = 20 }
 	ai_strategy = { type = build_army  id = marines value = 10 }
+
+	ai_strategy = { type = role_ratio  id = armor value = 20 }
+	ai_strategy = { type = build_army  id = armor value = 10 }
+}
+
+EFH_usa_watch = {
+	allowed = { original_tag = EFH }
+	enable = {
+		country_exists = USA
+		NOT = { is_in_faction_with = USA }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = prepare_for_war id = USA value = 400 }
+	ai_strategy = { type = area_priority id = northern_theater value = 320 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 276 value = 8 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 862 value = 6 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 466 value = 5 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 465 value = 4 }
+}
+
+EFH_usa_watch_after_truce = {
+	allowed = { original_tag = EFH }
+	enable = {
+		country_exists = USA
+		has_global_flag = LD_first_atlantic_war_ended
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = prepare_for_war id = USA value = 700 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 276 value = 12 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 862 value = 9 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 466 value = 7 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 465 value = 5 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 464 value = 3 }
+}
+
+EFH_usa_watch_at_war = {
+	allowed = { original_tag = EFH }
+	enable = { has_war_with = USA }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = theatre_distribution_demand_increase id = 276 value = 18 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 862 value = 12 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 466 value = 9 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 465 value = 6 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 464 value = 4 }
+	ai_strategy = { type = theatre_distribution_demand_increase id = 468 value = 8 }
 }
 
 EFH_northern_theater_construction = {
@@ -110,7 +159,7 @@ EFH_first_atlantic_war = {
 		type = front_control
 		area = northern_theater
 		ordertype = front
-		execution_type = careful
+		execution_type = balanced
 		execute_order = yes
 		priority = 100
 		ratio = 0.6
@@ -146,12 +195,13 @@ EFH_second_atlantic_war = {
 
 	ai_strategy = { type = antagonize id = USA value = 1400 }
 
-	ai_strategy = { type = area_priority id = knox_county              value = 720 }
-	ai_strategy = { type = area_priority id = efh_east_coast_landing   value = 640 }
-	ai_strategy = { type = area_priority id = northern_theater         value = 400 }
+	ai_strategy = { type = area_priority id = northern_theater         value = 760 }
+	ai_strategy = { type = area_priority id = efh_east_coast_landing   value = 520 }
+	ai_strategy = { type = area_priority id = knox_county              value = 400 }
 
-	ai_strategy = { type = front_unit_request area = knox_county            value = 260 }
-	ai_strategy = { type = front_unit_request area = efh_east_coast_landing value = 200 }
+	ai_strategy = { type = front_unit_request area = northern_theater       value = 260 }
+	ai_strategy = { type = front_unit_request area = efh_east_coast_landing value = 120 }
+	ai_strategy = { type = front_armor_score  id   = USA                    value = 400 }
 
 	ai_strategy = {
 		type = front_control
@@ -161,6 +211,15 @@ EFH_second_atlantic_war = {
 		execute_order = yes
 		priority = 200
 		ratio = 0.5
+	}
+	ai_strategy = {
+		type = front_control
+		area = northern_theater
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		priority = 100
+		ratio = 0.6
 	}
 	ai_strategy = { type = force_concentration_factor value = 25 }
 	ai_strategy = { type = force_concentration_front_factor area = knox_county value = 60 }
@@ -193,6 +252,10 @@ EFH_atlantic_air_war = {
 	enable = { has_war_with = USA }
 	abort_when_not_enabled = yes
 
+	ai_strategy = { type = air_factory_balance value = 60 }
+	ai_strategy = { type = unit_ratio id = cas value = 60 }
+	ai_strategy = { type = equipment_production_min_factories id = cas value = 6 }
+
 	ai_strategy = { type = strategic_air_importance id = 234 value = 30000 }
 	ai_strategy = { type = strategic_air_importance id = 233 value = 26000 }
 	ai_strategy = { type = strategic_air_importance id = 213 value = 22000 }
@@ -211,10 +274,13 @@ EFH_knox_corridor_air = {
 	allowed = { original_tag = EFH }
 	enable = { has_idea = LD_joint_offensive }
 	abort_when_not_enabled = yes
-
-	ai_strategy = { type = strategic_air_importance id = 214 value = 35000 }
-	ai_strategy = { type = strategic_air_importance id = 198 value = 14000 }
-	ai_strategy = { type = strategic_air_importance id = 120 value = 12000 }
+	ai_strategy = { type = air_factory_balance value = 90 }
+	ai_strategy = { type = unit_ratio id = cas value = 120 }
+	ai_strategy = { type = equipment_production_min_factories id = cas value = 10 }
+	ai_strategy = { type = equipment_production_factor id = cas value = 120 }
+	ai_strategy = { type = strategic_air_importance id = 214 value = 55000 }
+	ai_strategy = { type = strategic_air_importance id = 198 value = 44000 }
+	ai_strategy = { type = strategic_air_importance id = 120 value = 42000 }
 }
 
 
@@ -249,6 +315,45 @@ EFH_hive_front = {
 
 	ai_strategy = { type = garrison value = 300 }
 	ai_strategy = { type = garrison_reinforcement_priority value = 200 }
+}
+
+EFH_two_front_war = {
+	allowed = { original_tag = EFH }
+	enable = {
+		has_war_with = IRS
+		has_war_with = USA
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority  id = europe                  value = 400  }
+	ai_strategy = { type = area_priority  id = north_africa            value = 200  }
+	ai_strategy = { type = area_priority  id = suez                    value = 200  }
+	ai_strategy = { type = area_priority  id = efh_east_coast_landing  value = -300 }
+	ai_strategy = { type = invade         id = USA                     value = -250 }
+	ai_strategy = { type = front_unit_request  tag = IRS  value = 200 }
+}
+
+EFH_atlantic_and_eastern_war = {
+	allowed = { original_tag = EFH }
+	enable = {
+		has_war_with = USA
+		has_war_with = RSF
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = area_priority      id   = mainland_europe   value = -300 }
+	ai_strategy = { type = front_unit_request area = mainland_europe   value = -140 }
+	ai_strategy = { type = area_priority      id   = northern_theater  value = 200  }
+	ai_strategy = { type = front_unit_request area = northern_theater  value = 120  }
+
+	ai_strategy = {
+		type = front_control
+		tag = RSF
+		ordertype = front
+		execute_order = no
+		priority = 150
+		ratio = 0
+	}
 }
 
 EFH_eastern_front = {
@@ -399,8 +504,9 @@ EFH_personality = {
 	allowed = { original_tag = EFH }
 	enable = { NOT = { has_global_flag = LD_second_atlantic_war_open } }
 	abort_when_not_enabled = yes
-
-	ai_strategy = { type = ai_wanted_divisions_factor value = 40 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 60 }
+	ai_strategy = { type = role_ratio id = marines value = 10 }
+	ai_strategy = { type = build_army id = marines value = 5 }
 	ai_strategy = { type = protect id = JAP value = 60 }
 	ai_strategy = { type = protect id = CHN value = 80 }
 	ai_strategy = { type = befriend id = CHN value = 150 }
@@ -410,11 +516,82 @@ EFH_total_war = {
 	allowed = { original_tag = EFH }
 	enable = { has_global_flag = LD_second_atlantic_war_open }
 	abort_when_not_enabled = yes
-
 	ai_strategy = { type = ai_wanted_divisions_factor value = 420 }
 	ai_strategy = { type = force_build_armies value = 100 }
 	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 35 }
-	ai_strategy = { type = air_factory_balance value = 30 }
+	ai_strategy = { type = air_factory_balance value = 60 }
 	ai_strategy = { type = protect id = CHN value = 80 }
 }
 
+EFH_air_over_kentucky = {
+	allowed = { original_tag = EFH }
+	enable = {
+		has_global_flag = LD_second_atlantic_war_open
+		has_war_with = USA
+		country_exists = KNX
+		KNX = { has_war_with = USA }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = strategic_air_importance id = 214 value = 30000 }
+}
+
+
+EFH_hive_coalition = {
+	allowed = { original_tag = EFH }
+	enable = { has_war_with = IRS }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = CHN value = 400 }
+	ai_strategy = { type = alliance id = JAP value = 600 }
+}
+
+EFH_hive_coalition_chn_outside_pact = {
+	allowed = { original_tag = EFH }
+	enable = {
+		srp_ai_story_mode = yes
+		has_war_with = IRS
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = alliance id = CHN value = -1500 }
+}
+
+EFH_hive_coalition_usa = {
+	allowed = { original_tag = EFH }
+	enable = {
+		has_war_with = IRS
+		country_exists = USA
+		USA = { has_war_with = IRS }
+		NOT = { has_war_with = USA }
+		has_global_flag = LD_second_atlantic_war_open
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = alliance id = USA value = 2500 }
+	ai_strategy = { type = befriend id = USA value = 600 }
+}
+
+EFH_usa_overreach = {
+	allowed = { original_tag = EFH }
+	enable = {
+		srp_ai_story_mode = yes
+		has_war_with = USA
+		USA = {
+			is_ai = yes
+			surrender_progress > 0.2
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = USA
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = no
+		priority = 400
+	}
+	ai_strategy = { type = invade id = USA value = -1000 }
+}

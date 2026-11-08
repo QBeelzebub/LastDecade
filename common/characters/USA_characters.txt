@@ -4,7 +4,7 @@ characters = {
 	USA_victor_harlan = {
 		name = "Victor Harlan"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_william_dudley_pelley }
+			civilian = { large = "GFX_Portrait_Europe_Generic_3" }
 		}
 		country_leader = {
 			ideology = fascism_ideology
@@ -17,7 +17,7 @@ characters = {
 		name = "Rosa Delgado"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
+			civilian = { large = "GFX_portrait_generic_southamerica_female_03" }
 		}
 		country_leader = {
 			ideology = marxism
@@ -29,7 +29,7 @@ characters = {
 	USA_james_thornton = {
 		name = "James Thornton"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_charles_lindbergh }
+			civilian = { large = "GFX_portrait_generic_europe_male_14" }
 		}
 		country_leader = {
 			ideology = despotism
@@ -43,8 +43,8 @@ characters = {
 		name = "Janet Yellen"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_idea_POL_wanda_wasilewska }
+			civilian = { large = "GFX_portrait_generic_europe_female_15" }
+			army = { small = "GFX_idea_europe_generic_operative_female_21" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -60,8 +60,8 @@ characters = {
 		name = "Kamala Harris"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_idea_ENG_sylvia_pankhurst }
+			civilian = { large = "GFX_portrait_generic_india_female_03" }
+			army = { small = "GFX_idea_india_generic_operative_female_1" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -73,12 +73,65 @@ characters = {
 		}
 	}
 
+	USA_boris_johnson = {
+		name = "Boris Johnson"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_3 }
+			army = { small = GFX_idea_USA_generic_2 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_boris_johnson
+			allowed = { original_tag = USA }
+			visible = { has_global_flag = parasites_emerged }
+			traits = { LD_blustering_optimist }
+			cost = 100
+			ai_will_do = { base = 2 }
+		}
+	}
+
+	USA_anthony_fauci = {
+		name = "Anthony Fauci"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_2 }
+			army = { small = GFX_idea_USA_generic_3 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_anthony_fauci
+			allowed = { original_tag = USA }
+			visible = { has_completed_focus = USA_federal_quarantine_authority }
+			traits = { USA_institutional_scientist }
+			cost = 150
+			ai_will_do = { base = 5 }
+		}
+	}
+
+	USA_alex_jones = {
+		name = "Alex Jones"
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+			army = { small = GFX_idea_USA_generic_1 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_alex_jones
+			allowed = { original_tag = USA }
+			visible = { has_country_flag = USA_wartime_jones_unlocked }
+			traits = { USA_frogs_were_right }
+			cost = 100
+			ai_will_do = { base = 1 }
+			on_add = { ROOT = { set_country_flag = USA_jones_in_office } }
+			on_remove = { ROOT = { clr_country_flag = USA_jones_in_office } }
+		}
+	}
+
 	USA_nancy_pelosi = {
 		name = "Nancy Pelosi"
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_GER_eva_braun }
-			army = { small = GFX_idea_dolores_ibarruri }
+			civilian = { large = "GFX_portrait_generic_europe_female_11" }
+			army = { small = "GFX_idea_generic_political_advisor_female_europe" }
 		}
 		advisor = {
 			slot = political_advisor
@@ -93,7 +146,7 @@ characters = {
 	USA_pete_buttigieg = {
 		name = "Pete Buttigieg"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_europe_male_03" }
 			army = { small = GFX_idea_USA_generic_1 }
 		}
 		advisor = {
@@ -109,7 +162,7 @@ characters = {
 	USA_marco_rubio = {
 		name = "Marco Rubio"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_southamerica_male_02" }
 			army = { small = GFX_idea_USA_generic_2 }
 		}
 		advisor = {
@@ -125,7 +178,7 @@ characters = {
 	USA_elon_musk = {
 		name = "Elon Musk"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_europe_male_15" }
 			army = { small = GFX_idea_USA_generic_3 }
 		}
 		advisor = {
@@ -141,7 +194,7 @@ characters = {
 	USA_bernie_sanders = {
 		name = "Bernie Sanders"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_europe_male_12" }
 			army = { small = GFX_idea_USA_generic_1 }
 		}
 		advisor = {
@@ -157,7 +210,7 @@ characters = {
 	USA_john_bolton = {
 		name = "John Bolton"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_europe_male_09" }
 			army = { small = GFX_idea_USA_generic_2 }
 		}
 		advisor = {
@@ -173,7 +226,7 @@ characters = {
 	USA_lloyd_austin = {
 		name = "Lloyd Austin"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_africa_male_05" }
 			army = { small = GFX_idea_USA_generic_3 }
 		}
 		advisor = {
@@ -190,7 +243,7 @@ characters = {
 	USA_mark_milley = {
 		name = "Mark Milley"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_europe_male_13" }
 			army = { small = GFX_idea_USA_generic_land_1 }
 		}
 		advisor = {
@@ -207,7 +260,7 @@ characters = {
 	USA_cq_brown = {
 		name = "CQ Brown"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_africa_male_06" }
 			army = { small = GFX_idea_USA_generic_land_2 }
 		}
 		advisor = {
@@ -224,7 +277,7 @@ characters = {
 	USA_michael_gilday = {
 		name = "Michael Gilday"
 		portraits = {
-			civilian = { large = GFX_portrait_USA_franklin_delano_roosevelt }
+			civilian = { large = "GFX_portrait_generic_europe_male_16" }
 			army = { small = GFX_idea_USA_generic_navy_1 }
 		}
 		advisor = {

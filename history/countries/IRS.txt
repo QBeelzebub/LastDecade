@@ -130,8 +130,7 @@ oob = "IRS_ascension_army"
 	set_country_flag = IRS_emerged
 	set_global_flag = parasites_emerged
 	add_ideas = IRS_active_emergence
-	set_country_flag = IRS_archetype_iris
-	add_ideas = IRS_archetype_iris_spirit
+	add_research_slot = 1
 	set_technology = { inborn_parasites = 1 }
 	capital = 274
 }
@@ -184,5 +183,18 @@ create_equipment_variant = {
 		front_1_custom_slot = IRS_abyssant_dense_carapace
 		mid_1_custom_slot = IRS_abyssant_vibration_array
 		rear_1_custom_slot = IRS_abyssant_echolocation_sac
+	}
+}
+
+create_equipment_variant = {
+	name = "Colossant Prime"
+	type = IRS_colossant_hull_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = IRS_shredder_array
+		fixed_ship_engine_slot = IRS_current_channeling
+		front_1_custom_slot = IRS_hunting_call_pheromone
+		mid_1_custom_slot = IRS_regenerative_tissue
+		rear_1_custom_slot = IRS_exoskeletal_carapace
 	}
 }

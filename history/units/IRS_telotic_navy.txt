@@ -1,0 +1,29 @@
+
+units = {
+	fleet = {
+		name = "Gulf Swarm"
+		naval_base = 2050
+		task_force = {
+			name = "Deep Water Brood"
+			location = 2050
+			ship = { name = "Colossant 1-DROWN" definition = battleship start_experience_factor = 0.4 equipment = { IRS_colossant_hull_1 = { amount = 1 owner = IRS version_name = "Colossant Prime" } } }
+			ship = { name = "Colossant 2-SWALLOW" definition = battleship start_experience_factor = 0.4 equipment = { IRS_colossant_hull_1 = { amount = 1 owner = IRS version_name = "Colossant Prime" } } }
+			ship = { name = "Devourer 4-RIPTIDE" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+			ship = { name = "Devourer 6-UNDERTOW" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+			ship = { name = "Devourer 9-SILT" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+			ship = { name = "Devourer 12-BRINE" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+		}
+	}
+	fleet = {
+		name = "Bight Swarm"
+		naval_base = 2050
+		task_force = {
+			name = "Coastal Brood"
+			location = 2050
+			ship = { name = "Devourer 15-SHOAL" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+			ship = { name = "Devourer 18-WRACKLINE" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+			ship = { name = "Devourer 21-SPUME" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+			ship = { name = "Devourer 24-EBB" definition = submarine start_experience_factor = 0.3 equipment = { IRS_devourer_hull_1 = { amount = 1 owner = IRS version_name = "Devourer Alpha-Type" } } }
+		}
+	}
+}

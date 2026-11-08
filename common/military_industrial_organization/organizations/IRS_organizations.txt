@@ -1,5 +1,6 @@
 
 
+
 IRS_iris_beckon_mio = {
 	icon = GFX_idea_generic_electronics_concern_2
 
@@ -48,7 +49,7 @@ IRS_iris_beckon_mio = {
 		production_bonus = {
 			production_cost_factor = -0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -64,7 +65,7 @@ IRS_iris_beckon_mio = {
 			production_efficiency_gain_factor = 0.08
 			production_resource_need_factor = -0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -81,7 +82,7 @@ IRS_iris_beckon_mio = {
 			max_strength = 0.05
 			breakthrough = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -121,7 +122,7 @@ IRS_iris_beckon_mio = {
 		production_bonus = {
 			production_cost_factor = -0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -207,7 +208,7 @@ IRS_vitreous_beckon_mio = {
 		production_bonus = {
 			production_efficiency_gain_factor = 0.06
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -223,7 +224,7 @@ IRS_vitreous_beckon_mio = {
 			production_cost_factor = -0.06
 			production_efficiency_gain_factor = 0.06
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -240,7 +241,7 @@ IRS_vitreous_beckon_mio = {
 			breakthrough = 0.05
 			hard_attack = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -353,7 +354,7 @@ IRS_tromos_beckon_mio = {
 		production_bonus = {
 			production_cost_factor = -0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -369,7 +370,7 @@ IRS_tromos_beckon_mio = {
 			hard_attack = 0.06
 			breakthrough = 0.06
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -385,7 +386,7 @@ IRS_tromos_beckon_mio = {
 			soft_attack = 0.06
 			maximum_speed = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -500,7 +501,7 @@ IRS_boreic_mio = {
 		production_bonus = {
 			production_cost_factor = -0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -516,7 +517,7 @@ IRS_boreic_mio = {
 			defense = 0.06
 			max_strength = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -532,7 +533,7 @@ IRS_boreic_mio = {
 			soft_attack = 0.06
 			breakthrough = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -642,7 +643,7 @@ IRS_alclidic_mio = {
 		production_bonus = {
 			production_efficiency_gain_factor = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -658,7 +659,7 @@ IRS_alclidic_mio = {
 			soft_attack = 0.06
 			breakthrough = 0.06
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -675,7 +676,7 @@ IRS_alclidic_mio = {
 			max_strength = 0.06
 			reliability = 0.03
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -786,7 +787,7 @@ IRS_sinic_mio = {
 		production_bonus = {
 			production_cost_factor = -0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -803,7 +804,7 @@ IRS_sinic_mio = {
 			max_strength = 0.05
 			soft_attack = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -820,7 +821,7 @@ IRS_sinic_mio = {
 			breakthrough = 0.06
 			ap_attack = 0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -931,7 +932,7 @@ IRS_ferritic_mio = {
 		production_bonus = {
 			production_cost_factor = -0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -947,7 +948,7 @@ IRS_ferritic_mio = {
 			armor_value = 0.08
 			defense = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -964,7 +965,7 @@ IRS_ferritic_mio = {
 			hard_attack = 0.05
 			breakthrough = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -1041,7 +1042,7 @@ IRS_tethysic_mio = {
 		}
 	}
 
-	equipment_type = { IRS_devourer_hull IRS_abyssant_hull }
+	equipment_type = { IRS_devourer_hull IRS_abyssant_hull IRS_colossant_hull }
 	research_categories = { srp_iris_tech }
 	initial_trait = {
 		name = IRS_tethysic_initial
@@ -1057,7 +1058,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_genome_core
 		name = IRS_tethysic_genome_core
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 		organization_modifier = {
@@ -1070,13 +1071,13 @@ IRS_tethysic_mio = {
 		production_bonus = {
 			production_cost_factor = -0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
 		token = IRS_tethysic_feeding_frenzy
 		name = IRS_tethysic_feeding_frenzy
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = IRS_tethysic_genome_core
@@ -1086,13 +1087,13 @@ IRS_tethysic_mio = {
 			torpedo_attack = 0.08
 			max_strength = 0.05
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
 		token = IRS_tethysic_deep_adaptation
 		name = IRS_tethysic_deep_adaptation
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = IRS_tethysic_genome_core
@@ -1103,13 +1104,13 @@ IRS_tethysic_mio = {
 			naval_range = 0.10
 			reliability = 0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
 		token = IRS_tethysic_swarm_hunger
 		name = IRS_tethysic_swarm_hunger
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = IRS_tethysic_feeding_frenzy
@@ -1135,7 +1136,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_ocean_mastery
 		name = IRS_tethysic_ocean_mastery
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = IRS_tethysic_deep_adaptation
@@ -1154,7 +1155,7 @@ IRS_tethysic_mio = {
 	trait = {
 		token = IRS_tethysic_abyssant_genesis
 		name = IRS_tethysic_abyssant_genesis
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = IRS_tethysic_swarm_hunger
@@ -1223,7 +1224,7 @@ srp_yelloweye_mio = {
 		production_bonus = {
 			production_cost_factor = -0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -1239,7 +1240,7 @@ srp_yelloweye_mio = {
 			air_ground_attack = 0.08
 			air_attack = 0.10
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -1256,7 +1257,7 @@ srp_yelloweye_mio = {
 			air_range = 0.10
 			reliability = 0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -1367,7 +1368,7 @@ IRS_plutonic_mio = {
 		production_bonus = {
 			production_cost_factor = -0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -1383,7 +1384,7 @@ IRS_plutonic_mio = {
 			air_defence = 0.08
 			reliability = 0.04
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {
@@ -1399,7 +1400,7 @@ IRS_plutonic_mio = {
 			air_ground_attack = 0.08
 			air_attack = 0.08
 		}
-		ai_will_do = { base = 0 }
+		ai_will_do = { base = 2 }
 	}
 
 	trait = {

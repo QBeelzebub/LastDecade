@@ -1,0 +1,107 @@
+ideas = {
+	country = {
+
+		IND_one_india = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.15
+				production_speed_buildings_factor = -0.10
+				stability_factor = 0.05
+				conscription_factor = 0.10
+			}
+		}
+
+		IND_one_india_2 = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.05
+				conscription_factor = 0.10
+			}
+		}
+
+		IND_the_karakoram_ledger = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		IND_the_coast_watch = {
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		IND_tariff_round = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		ARU_nine_seats = {
+			picture = generic_economic_crisis
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.20
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		ARU_the_compact = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+
+		ARU_oil_for_wheat = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		ARU_contract_round = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		ARU_the_red_sea_watch = {
+			picture = generic_morale_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+	}
+}

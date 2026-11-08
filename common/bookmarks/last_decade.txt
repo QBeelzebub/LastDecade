@@ -95,6 +95,18 @@ bookmarks = {
 			label = { label_human_nations }
 			minor = yes
 		}
+		IND = {
+			history = "IND_LAST_DECADE_DESC"
+			ideology = democratic
+			label = { label_human_nations }
+			minor = yes
+		}
+		ARU = {
+			history = "ARU_LAST_DECADE_DESC"
+			ideology = neutrality
+			label = { label_human_nations }
+			minor = yes
+		}
 		SAC = {
 			history = "SAC_LAST_DECADE_DESC"
 			ideology = communism

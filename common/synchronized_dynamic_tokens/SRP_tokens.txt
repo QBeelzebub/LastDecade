@@ -3,3 +3,5 @@ vagrant_1_core
 vagrant_2_core
 vagrant_3_core
 vagrant_4_core
+rupter_equipment
+carrier_equipment

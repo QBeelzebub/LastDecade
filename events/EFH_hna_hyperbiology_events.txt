@@ -286,11 +286,11 @@ news_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh_hna.3
 	title = efh_hna.3.t
 	desc = efh_hna.3.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	immediate = {

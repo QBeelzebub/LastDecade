@@ -10,8 +10,15 @@ EFH_eurasian_coordination = {
 		}
 
 		available = {
-			has_country_flag = EFH_china_leaning_efh
 			country_exists = CHN
+			NOT = { has_war_with = CHN }
+			CHN = {
+				has_country_flag = CHN_efh_aligned
+				NOT = { has_country_flag = CHN_usa_aligned }
+				has_capitulated = no
+			}
+			has_country_flag = EFH_china_leaning_efh
+			CHN = { has_country_flag = CHN_efh_trade_accepted }
 		}
 
 		cost = 50
@@ -48,8 +55,14 @@ EFH_eurasian_coordination = {
 		}
 
 		available = {
-			has_country_flag = EFH_china_leaning_efh
 			country_exists = CHN
+			NOT = { has_war_with = CHN }
+			CHN = {
+				has_country_flag = CHN_efh_aligned
+				NOT = { has_country_flag = CHN_usa_aligned }
+				has_capitulated = no
+			}
+			has_country_flag = EFH_china_leaning_efh
 			NOT = { has_idea = EFH_sino_research_exchange_active }
 		}
 
@@ -78,6 +91,13 @@ EFH_eurasian_coordination = {
 		}
 
 		available = {
+			country_exists = CHN
+			NOT = { has_war_with = CHN }
+			CHN = {
+				has_country_flag = CHN_efh_aligned
+				NOT = { has_country_flag = CHN_usa_aligned }
+				has_capitulated = no
+			}
 			has_country_flag = EFH_china_leaning_efh
 			country_exists = IRS
 		}

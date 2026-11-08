@@ -1,11 +1,11 @@
 
 add_namespace = ldpro
 
-country_event = {
+news_event = {
 	id = ldpro.1
 	title = ldpro.1.t
 	desc = ldpro.1.d
-	picture = GFX_report_event_generic_conference
+	picture = GFX_news_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -14,11 +14,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = ldpro.2
 	title = ldpro.2.t
 	desc = ldpro.2.d
-	picture = GFX_report_event_generic_naval_treaty
+	picture = GFX_news_event_generic_naval_treaty
 
 	is_triggered_only = yes
 
@@ -27,11 +27,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = ldpro.3
 	title = ldpro.3.t
 	desc = ldpro.3.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 
 	is_triggered_only = yes
 
@@ -40,11 +40,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = ldpro.4
 	title = ldpro.4.t
 	desc = ldpro.4.d
-	picture = GFX_report_event_generic_bombers
+	picture = GFX_news_event_fighters
 
 	is_triggered_only = yes
 
@@ -53,11 +53,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = ldpro.5
 	title = ldpro.5.t
 	desc = ldpro.5.d
-	picture = GFX_report_event_generic_research_lab
+	picture = GFX_news_event_generic_research_lab
 
 	is_triggered_only = yes
 
@@ -66,11 +66,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = ldpro.10
 	title = ldpro.10.t
 	desc = ldpro.10.d
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
 

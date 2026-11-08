@@ -1,0 +1,55 @@
+characters = {
+
+
+	IND_Leader = {
+		name = "Asha Raval"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_generic_india_female_06"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+			desc = IND_Leader_DESC
+			expire = "2035.1.1"
+			id = -1
+		}
+	}
+
+	IND_meera_raghavan = {
+		name = "Meera Raghavan"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_generic_india_female_02"
+				small = "GFX_idea_generic_political_advisor_female_asia"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = IND_meera_raghavan_token
+			allowed = { original_tag = IND }
+			traits = { captain_of_industry }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+
+	IND_harish_menon = {
+		name = "Harish Menon"
+		portraits = {
+			army = {
+				large = "GFX_Portrait_The_Raj_Army_Generic_2"
+				small = "GFX_idea_RAJ_army_generic_2"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = IND_harish_menon_token
+			allowed = { original_tag = IND }
+			traits = { army_chief_defensive_2 }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+}

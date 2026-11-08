@@ -1,0 +1,1480 @@
+
+LD_log_diplomacy_EFH_effect = {
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|EFH|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_USA_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|USA|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_CHN_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|CHN|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_JAP_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|JAP|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_SAC_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|SAC|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_RSF_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|RSF|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_IRS_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = KNX }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = KNX } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = KNX } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = KNX } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = KNX value < -10 } NOT = { has_opinion = { target = KNX value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = KNX value > 10 } NOT = { has_opinion = { target = KNX value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = KNX value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_KNX = ld_code } } }
+			set_variable = { LD_dip_KNX = ld_code }
+			log = "LDLOG|[GetDate]|IRS|relation|KNX guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}
+
+LD_log_diplomacy_KNX_effect = {
+	if = {
+		limit = { country_exists = EFH }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = EFH } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = EFH } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = EFH } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = EFH value < -10 } NOT = { has_opinion = { target = EFH value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = EFH value > 10 } NOT = { has_opinion = { target = EFH value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = EFH value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_EFH = ld_code } } }
+			set_variable = { LD_dip_EFH = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|EFH guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = USA }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = USA } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = USA } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = USA } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = USA value < -10 } NOT = { has_opinion = { target = USA value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = USA value > 10 } NOT = { has_opinion = { target = USA value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = USA value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_USA = ld_code } } }
+			set_variable = { LD_dip_USA = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|USA guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = CHN }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = CHN } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = CHN } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = CHN } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = CHN value < -10 } NOT = { has_opinion = { target = CHN value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = CHN value > 10 } NOT = { has_opinion = { target = CHN value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = CHN value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_CHN = ld_code } } }
+			set_variable = { LD_dip_CHN = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|CHN guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = JAP }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = JAP } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = JAP } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = JAP } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = JAP value < -10 } NOT = { has_opinion = { target = JAP value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = JAP value > 10 } NOT = { has_opinion = { target = JAP value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = JAP value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_JAP = ld_code } } }
+			set_variable = { LD_dip_JAP = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|JAP guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = SAC }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = SAC } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = SAC } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = SAC } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = SAC value < -10 } NOT = { has_opinion = { target = SAC value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = SAC value > 10 } NOT = { has_opinion = { target = SAC value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = SAC value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_SAC = ld_code } } }
+			set_variable = { LD_dip_SAC = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|SAC guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = RSF }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = RSF } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = RSF } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = RSF } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = RSF value < -10 } NOT = { has_opinion = { target = RSF value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = RSF value > 10 } NOT = { has_opinion = { target = RSF value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = RSF value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_RSF = ld_code } } }
+			set_variable = { LD_dip_RSF = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|RSF guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+	if = {
+		limit = { country_exists = IRS }
+		set_temp_variable = { ld_g = 0 }
+		set_temp_variable = { ld_a = 0 }
+		set_temp_variable = { ld_f = 0 }
+		set_temp_variable = { ld_o = 3 }
+		if = { limit = { has_guaranteed = IRS } set_temp_variable = { ld_g = 1 } }
+		if = { limit = { has_military_access_to = IRS } set_temp_variable = { ld_a = 1 } }
+		if = { limit = { is_in_faction_with = IRS } set_temp_variable = { ld_f = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -50 } } set_temp_variable = { ld_o = 1 } }
+		if = { limit = { has_opinion = { target = IRS value < -10 } NOT = { has_opinion = { target = IRS value < -50 } } } set_temp_variable = { ld_o = 2 } }
+		if = { limit = { has_opinion = { target = IRS value > 10 } NOT = { has_opinion = { target = IRS value > 50 } } } set_temp_variable = { ld_o = 4 } }
+		if = { limit = { has_opinion = { target = IRS value > 50 } } set_temp_variable = { ld_o = 5 } }
+		set_temp_variable = { ld_code = ld_g }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_a }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_f }
+		multiply_temp_variable = { ld_code = 10 }
+		add_to_temp_variable = { ld_code = ld_o }
+		if = {
+			limit = { NOT = { check_variable = { LD_dip_IRS = ld_code } } }
+			set_variable = { LD_dip_IRS = ld_code }
+			log = "LDLOG|[GetDate]|KNX|relation|IRS guar=[?ld_g|0] access=[?ld_a|0] faction=[?ld_f|0] opinion=[?ld_o|0]"
+		}
+	}
+}

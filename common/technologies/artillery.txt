@@ -5,7 +5,6 @@ technologies = {
 		allow = { NOT = { is_full_parasite = yes } }
 		enable_equipments = {
 			artillery_equipment_2
-			artillery_equipment_3
 		}
 
 		research_cost = 1.0
@@ -56,12 +55,14 @@ technologies = {
 		}
 
 		research_cost = 1.2
-		start_year = 2023
+		start_year = 2021
 
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 2 }
 		}
+
+		enable_equipments = { artillery_equipment_srp_incendiary }
 
 		path = {
 			leads_to_tech = srp_artillery_3
@@ -85,61 +86,20 @@ technologies = {
 	srp_artillery_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		artillery = {
-			soft_attack = 0.05
-		}
+			soft_attack = 0.1		}
 		artillery_brigade = {
-			soft_attack = 0.1
-		}
+			soft_attack = 0.2		}
 		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
+			soft_attack = 0.2		}
 
 		research_cost = 1.5
-		start_year = 2026
-
+		start_year = 2023
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 4 }
 		}
 
-		path = {
-			leads_to_tech = srp_artillery_4
-			research_cost_coeff = 1
-		}
-
-		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
-			mio_cat_artillery
-			srp_artillery_tech
-			srp_land_tech
-		}
-		special_project_specialization = { specialization_land }
-
-		ai_will_do = {
-			base = 3
-		}
-	}
-
-	srp_artillery_4 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		artillery = {
-			soft_attack = 0.05
-		}
-		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
-
-		research_cost = 2.0
-		start_year = 2029
-
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 6 }
-		}
+		enable_equipments = { artillery_equipment_3 }
 
 		path = {
 			leads_to_tech = srp_nuclear_artillery
@@ -156,7 +116,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 
 		ai_will_do = {
-			base = 2
+			base = 3
 		}
 	}
 
@@ -208,6 +168,8 @@ technologies = {
 			anti_air_equipment_1
 		}
 
+		enable_building = { building = anti_air_building level = 3 }
+
 		research_cost = 1.0
 		start_year = 2018
 
@@ -238,23 +200,23 @@ technologies = {
 	srp_aa_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		anti_air = {
-			air_attack = 0.1
-		}
+			air_attack = 0.2		}
 		enable_equipments = {
 			anti_air_equipment_2
 		}
-		tech_air_damage_factor = -0.02
-
+		tech_air_damage_factor = -0.05
 		research_cost = 1.5
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = artillery_folder
 			position = { x = -4 y = 4 }
 		}
 
+		static_anti_air_damage_factor = 0.15
+		enable_building = { building = anti_air_building level = 4 }
+
 		path = {
-			leads_to_tech = srp_aa_3
+			leads_to_tech = srp_point_defence_laser
 			research_cost_coeff = 1
 		}
 
@@ -269,36 +231,6 @@ technologies = {
 
 		ai_will_do = {
 			base = 3
-		}
-	}
-
-	srp_aa_3 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		anti_air = {
-			air_attack = 0.1
-		}
-		tech_air_damage_factor = -0.03
-		static_anti_air_damage_factor = 0.15
-
-		research_cost = 2.0
-		start_year = 2028
-
-		folder = {
-			name = artillery_folder
-			position = { x = -4 y = 6 }
-		}
-
-		categories = {
-			artillery
-			cat_anti_air
-			mio_cat_all_artillery_equipment
-			srp_artillery_tech
-			srp_land_tech
-		}
-		special_project_specialization = { specialization_land specialization_air }
-
-		ai_will_do = {
-			base = 2
 		}
 	}
 
@@ -338,23 +270,16 @@ technologies = {
 	srp_rocket_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		category_rocket_artillery = {
-			soft_attack = 0.15
-		}
+			soft_attack = 0.3		}
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
 
 		research_cost = 1.5
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 4 }
-		}
-
-		path = {
-			leads_to_tech = srp_rocket_3
-			research_cost_coeff = 1
 		}
 
 		categories = {
@@ -365,19 +290,47 @@ technologies = {
 		}
 		special_project_specialization = { specialization_air }
 
+		path = {
+			leads_to_tech = srp_thermobaric_rockets
+			research_cost_coeff = 1
+		}
+
 		ai_will_do = {
 			base = 3
 		}
 	}
 
-	srp_rocket_3 = {
+	srp_point_defence_laser = {
 		allow = { NOT = { is_full_parasite = yes } }
-		category_rocket_artillery = {
-			soft_attack = 0.15
+		research_cost = 2.0
+		start_year = 2023
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 6 }
 		}
 
+		categories = {
+			cat_anti_air
+			artillery
+			srp_artillery_tech
+			srp_land_tech
+			mio_cat_all_artillery_equipment
+		}
+		special_project_specialization = { specialization_land }
+
+		enable_equipments = { anti_air_equipment_3 }
+		enable_building = { building = anti_air_building level = 5 }
+
+		static_anti_air_damage_factor = 0.15
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_thermobaric_rockets = {
+		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2028
+		start_year = 2023
 
 		folder = {
 			name = artillery_folder
@@ -385,16 +338,20 @@ technologies = {
 		}
 
 		categories = {
-			rocketry
-			mio_cat_all_artillery_equipment
+			artillery
+			mot_rockets
 			srp_artillery_tech
 			srp_land_tech
+			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_land }
 
-		ai_will_do = {
-			base = 2
-		}
+		enable_equipments = { motorized_rocket_equipment_1 }
+		enable_subunits = { motorized_rocket_brigade }
+
+		rocket_artillery = { soft_attack = 0.10 }
+
+		ai_will_do = { base = 2 }
 	}
 
 
@@ -442,8 +399,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 2 }

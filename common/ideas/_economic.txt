@@ -25,11 +25,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
-				modifier = {
-					factor = 0
-					has_war = yes
-				}
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_econ_0 = yes }
 			}
 		}
 
@@ -57,11 +54,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 10
-					has_war = yes
-					NOT = { has_war_support > 0.40 }
-				}
+				modifier = { add = 2000 SRP_law_want_econ_1 = yes }
 			}
 		}
 
@@ -89,12 +82,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 15
-					has_war = yes
-					has_war_support > 0.30
-					NOT = { has_war_support > 0.55 }
-				}
+				modifier = { add = 2000 SRP_law_want_econ_2 = yes }
 			}
 		}
 
@@ -124,13 +112,34 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 10
-					has_war = yes
-					is_major = yes
-					has_war_support > 0.55
-					NOT = { has_war_support > 0.75 }
-				}
+				modifier = { add = 2000 SRP_law_want_econ_3 = yes }
+			}
+		}
+
+		srp_nogov_salvage_economy = {
+			cost = 0
+			removal_cost = -1
+
+			visible = { has_idea = SRP_no_functioning_government }
+			available = { always = no }
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = civilian_economy
+
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				industrial_capacity_factory = -0.30
+				production_factory_max_efficiency_factor = -0.25
+				production_speed_buildings_factor = -0.50
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
 			}
 		}
 
@@ -161,12 +170,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 5
-					has_war = yes
-					is_major = yes
-					has_war_support > 0.75
-				}
+				modifier = { add = 2000 SRP_law_want_econ_4 = yes }
 			}
 		}
 
@@ -196,11 +200,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
-				modifier = {
-					factor = 0
-					has_war = yes
-				}
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_irs_passive = yes }
 			}
 		}
 
@@ -222,7 +223,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 2
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_irs_cultivation = yes }
 			}
 		}
 
@@ -257,11 +259,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 10
-					check_variable = { IRS_evolution_points > 49 }
-					NOT = { check_variable = { IRS_evolution_points > 199 } }
-				}
+				modifier = { add = 2000 SRP_law_want_irs_surge = yes }
 			}
 		}
 
@@ -300,10 +298,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					check_variable = { IRS_evolution_points > 199 }
-				}
+				modifier = { add = 2000 SRP_law_want_irs_apex = yes }
 			}
 		}
 
@@ -326,11 +321,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
-				modifier = {
-					factor = 0
-					has_war = yes
-				}
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_knx_hidden = yes }
 			}
 		}
 
@@ -353,16 +345,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					NOT = { has_war = yes }
-					has_war_support > 0.10
-				}
-				modifier = {
-					add = 6
-					has_war = yes
-					NOT = { has_war_support > 0.45 }
-				}
+				modifier = { add = 2000 SRP_law_want_knx_opportunist = yes }
 			}
 		}
 
@@ -386,12 +369,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					has_war = yes
-					has_war_support > 0.30
-					NOT = { has_war_support > 0.55 }
-				}
+				modifier = { add = 2000 SRP_law_want_knx_active = yes }
 			}
 		}
 
@@ -420,11 +398,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					has_war = yes
-					has_war_support > 0.55
-				}
+				modifier = { add = 2000 SRP_law_want_knx_open = yes }
 			}
 		}
 
@@ -447,7 +421,7 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
+				factor = 1100
 			}
 		}
 	}
@@ -477,11 +451,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 3
-				modifier = {
-					factor = 0
-					has_war = yes
-				}
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_trade_0 = yes }
 			}
 		}
 
@@ -505,16 +476,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 5
-					NOT = { has_war = yes }
-					is_major = yes
-				}
-				modifier = {
-					add = 10
-					has_war = yes
-					NOT = { has_war_support > 0.40 }
-				}
+				modifier = { add = 2000 SRP_law_want_trade_1 = yes }
 			}
 		}
 
@@ -544,12 +506,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 10
-					has_war = yes
-					has_war_support > 0.30
-					NOT = { has_war_support > 0.55 }
-				}
+				modifier = { add = 2000 SRP_law_want_trade_2 = yes }
 			}
 		}
 
@@ -578,13 +535,31 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					has_war = yes
-					is_major = yes
-					has_war_support > 0.50
-					NOT = { has_war_support > 0.70 }
-				}
+				modifier = { add = 2000 SRP_law_want_trade_3 = yes }
+			}
+		}
+
+		srp_nogov_no_exports = {
+			cost = 0
+			removal_cost = -1
+
+			visible = { has_idea = SRP_no_functioning_government }
+			available = { always = no }
+
+			allowed = {
+				NOT = { is_full_parasite = yes }
+			}
+
+			picture = isolation
+
+			modifier = {
+				min_export = 0
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
 			}
 		}
 
@@ -614,12 +589,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 5
-					has_war = yes
-					is_major = yes
-					has_war_support > 0.70
-				}
+				modifier = { add = 2000 SRP_law_want_trade_4 = yes }
 			}
 		}
 
@@ -647,11 +617,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
-				modifier = {
-					factor = 0
-					check_variable = { IRS_evolution_points > 49 }
-				}
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_irs_digestion = yes }
 			}
 		}
 
@@ -685,11 +652,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 10
-					check_variable = { IRS_evolution_points > 49 }
-					NOT = { check_variable = { IRS_evolution_points > 149 } }
-				}
+				modifier = { add = 2000 SRP_law_want_irs_aggressive = yes }
 			}
 		}
 
@@ -724,11 +687,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					check_variable = { IRS_evolution_points > 149 }
-					NOT = { check_variable = { IRS_evolution_points > 299 } }
-				}
+				modifier = { add = 2000 SRP_law_want_irs_total = yes }
 			}
 		}
 
@@ -763,10 +722,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 6
-					check_variable = { IRS_evolution_points > 299 }
-				}
+				modifier = { add = 2000 SRP_law_want_irs_dominion = yes }
 			}
 		}
 
@@ -794,13 +750,8 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
-				modifier = {
-					factor = 0
-					any_country = {
-						is_ally_with = KNX
-					}
-				}
+				factor = 0
+				modifier = { add = 2000 SRP_law_want_knx_isolation = yes }
 			}
 		}
 
@@ -827,7 +778,7 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 2
+				factor = 0
 			}
 		}
 
@@ -856,12 +807,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 8
-					any_country = {
-						is_ally_with = KNX
-					}
-				}
+				modifier = { add = 2000 SRP_law_want_knx_dialogue = yes }
 			}
 		}
 
@@ -895,13 +841,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					add = 10
-					any_country = {
-						is_ally_with = KNX
-					}
-					has_war_support > 0.25
-				}
+				modifier = { add = 2000 SRP_law_want_knx_alignment = yes }
 			}
 		}
 
@@ -928,7 +868,7 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 5
+				factor = 1100
 			}
 		}
 	}

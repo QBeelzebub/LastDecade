@@ -83,7 +83,7 @@ knx_assimilation = {
 		}
 
 		ai_will_do = {
-			base = 80
+			base = 200
 		}
 	}
 
@@ -183,7 +183,7 @@ knx_assimilation = {
 		}
 
 		ai_will_do = {
-			base = 80
+			base = 200
 		}
 	}
 }

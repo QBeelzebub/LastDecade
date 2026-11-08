@@ -208,6 +208,36 @@ garrison_generic = {
 				infantry = 4
 			}
 		}
+
+		replace_at_match = 0.9
+		replace_with = garrison_quarantine
+		target_min_match = 0.4
+	}
+
+	garrison_quarantine = {
+		reinforce_prio = 0
+		custom_icon = 7
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 4
+				has_tech = srp_quarantine_engineers
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				srp_quarantine_company = 1
+			}
+
+			regiments = {
+				infantry = 4
+			}
+		}
 	}
 }
 
@@ -365,6 +395,38 @@ infantry_generic = {
 				artillery_brigade = 2
 			}
 		}
+
+		replace_at_match = 0.9
+		replace_with = infantry_clearance
+		target_min_match = 0.4
+	}
+
+	infantry_clearance = {
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 4
+				has_tech = srp_burn_teams
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				srp_burn_company = 1
+				recon = 1
+				logistics_company = 1
+				anti_tank = 1
+			}
+
+			regiments = {
+				infantry = 9
+				artillery_brigade = 2
+			}
+		}
 	}
 }
 
@@ -428,7 +490,7 @@ motorized_generic = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				armored_car_recon = 1
 				logistics_company = 1
 				anti_air = 1
 			}
@@ -548,6 +610,11 @@ marines_generic = {
 		modifier = {
 			factor = 3
 			has_war = yes
+		}
+
+		modifier = {
+			factor = 0
+			NOT = { has_tech = srp_marine_battalions }
 		}
 	}
 

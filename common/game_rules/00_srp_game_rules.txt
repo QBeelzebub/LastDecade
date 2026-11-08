@@ -30,11 +30,10 @@ srp_infestation_growth = {
 srp_state_handover = {
 	name = "RULE_SRP_STATE_HANDOVER"
 	group = "RULE_GROUP_SRP_LAST_DECADE"
-	option = {
+	default = {
 		name = OFF
 		text = "RULE_OPTION_SRP_OFF"
 		desc = "RULE_SRP_STATE_HANDOVER_OFF_DESC"
-		allow_achievements = no
 	}
 	option = {
 		name = SLOW
@@ -42,10 +41,11 @@ srp_state_handover = {
 		desc = "RULE_SRP_STATE_HANDOVER_SLOW_DESC"
 		allow_achievements = no
 	}
-	default = {
+	option = {
 		name = NORMAL
 		text = "RULE_OPTION_SRP_NORMAL"
 		desc = "RULE_SRP_STATE_HANDOVER_NORMAL_DESC"
+		allow_achievements = no
 	}
 	option = {
 		name = FAST
@@ -199,6 +199,44 @@ srp_parasite_aggression = {
 	}
 }
 
+srp_ai_behaviour = {
+	name = "RULE_SRP_AI_BEHAVIOUR"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	default = {
+		name = STORY
+		text = "RULE_OPTION_SRP_STORY"
+		desc = "RULE_SRP_AI_BEHAVIOUR_STORY_DESC"
+	}
+	option = {
+		name = PLAY_TO_WIN
+		text = "RULE_OPTION_SRP_PLAY_TO_WIN"
+		desc = "RULE_SRP_AI_BEHAVIOUR_PLAY_TO_WIN_DESC"
+		allow_achievements = no
+	}
+}
+
+srp_public_panic = {
+	name = "RULE_SRP_PUBLIC_PANIC"
+	group = "RULE_GROUP_SRP_LAST_DECADE"
+	option = {
+		name = LOW
+		text = "RULE_OPTION_SRP_LOW"
+		desc = "RULE_SRP_PUBLIC_PANIC_LOW_DESC"
+		allow_achievements = no
+	}
+	default = {
+		name = NORMAL
+		text = "RULE_OPTION_SRP_NORMAL"
+		desc = "RULE_SRP_PUBLIC_PANIC_NORMAL_DESC"
+	}
+	option = {
+		name = HIGH
+		text = "RULE_OPTION_SRP_HIGH"
+		desc = "RULE_SRP_PUBLIC_PANIC_HIGH_DESC"
+		allow_achievements = no
+	}
+}
+
 srp_evolution_economy = {
 	name = "RULE_SRP_EVOLUTION_ECONOMY"
 	group = "RULE_GROUP_SRP_LAST_DECADE"
@@ -317,6 +355,6 @@ srp_state_absorb = {
 		name = DAYS_180
 		text = "RULE_SRP_STATE_DAYS_180"
 		desc = "RULE_SRP_STATE_DAYS_180_DESC"
-		allow_achievements = no
+		allow_achievements = yes
 	}
 }

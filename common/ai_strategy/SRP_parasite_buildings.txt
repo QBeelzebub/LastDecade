@@ -34,6 +34,14 @@ parasite_airfields = {
 	ai_strategy = { type = building_target id = air_base value = 25 }
 }
 
+IRS_invasion_ports = {
+	allowed = { original_tag = IRS }
+	enable = { has_war_with = SAC }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = naval_base value = 12 }
+}
+
 KNX_hive_fortification = {
 	allowed = { original_tag = KNX }
 	enable = { always = yes }

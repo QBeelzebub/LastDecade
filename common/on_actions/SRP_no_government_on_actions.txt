@@ -1,0 +1,43 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					exists = yes
+					NOT = { is_full_parasite = yes }
+				}
+				SRP_nogov_record_start_effect = yes
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					exists = yes
+					NOT = { is_full_parasite = yes }
+				}
+				if = {
+					limit = { NOT = { has_variable = srp_starting_states } }
+					SRP_nogov_record_start_effect = yes
+				}
+				if = {
+					limit = {
+						NOT = { has_idea = SRP_no_functioning_government }
+						any_enemy_country = { is_full_parasite = yes }
+						SRP_nogov_in_scraps = yes
+					}
+					country_event = { id = srp_nogov.1 }
+				}
+				if = {
+					limit = {
+						has_idea = SRP_no_functioning_government
+						SRP_nogov_recovered = yes
+					}
+					country_event = { id = srp_nogov.2 }
+				}
+			}
+		}
+	}
+}

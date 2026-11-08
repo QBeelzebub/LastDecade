@@ -1,0 +1,56 @@
+on_actions = {
+
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = IND
+						original_tag = ARU
+					}
+					is_ai = yes
+				}
+				set_rule = { can_join_factions = no }
+			}
+		}
+	}
+
+	on_offer_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CHN
+						is_ai = yes
+						NOT = { has_country_flag = CHN_usa_aligned }
+					}
+					OR = {
+						original_tag = USA
+						is_in_faction_with = USA
+					}
+				}
+				FROM = { country_event = { id = ldfaction.1 days = 1 } }
+			}
+		}
+	}
+
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHN
+					is_ai = yes
+					NOT = { has_country_flag = CHN_usa_aligned }
+					FROM = {
+						OR = {
+							original_tag = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+				country_event = { id = ldfaction.1 days = 1 }
+			}
+		}
+	}
+}

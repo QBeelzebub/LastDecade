@@ -24,9 +24,86 @@ opinion_modifiers = {
 		value = -30
 	}
 
+
+
 	trade_deal = {
 		trade = yes
 		value = 30
 		decay = 1
+	}
+	CHN_aggressive_JAP = {
+		trade = no
+		value = -40
+	}
+	CHN_align_EFH = {
+		trade = yes
+		value = 40
+	}
+	CHN_align_USA = {
+		trade = yes
+		value = 40
+	}
+	CHN_dealign_EFH = {
+		trade = yes
+		value = -40
+	}
+	CHN_dealign_USA = {
+		trade = yes
+		value = -40
+	}
+
+	JAP_CHN_old_war = {
+		value = -25
+	}
+	JAP_CHN_trade = {
+		trade = yes
+		value = 30
+	}
+	JAP_CHN_common_cause = {
+		value = 80
+		decay = 1
+	}
+	JAP_treaty_partner = {
+		value = 25
+	}
+	JAP_pacific_trade = {
+		trade = yes
+		value = 30
+	}
+	JAP_honolulu_channel = {
+		value = 20
+	}
+	JAP_federal_shipping = {
+		value = -15
+	}
+	JAP_clause_refused = {
+		value = -20
+		decay = 1
+	}
+	IND_CHN_trade = {
+		trade = yes
+		value = 25
+	}
+	IND_CHN_tariff_round = {
+		trade = yes
+		value = 10
+		decay = 1
+	}
+	IND_CHN_no_bases = {
+		value = -15
+	}
+	IND_EFH_correspondence = {
+		value = 20
+	}
+	ARU_CHN_trade = {
+		trade = yes
+		value = 25
+	}
+	ARU_CHN_arms = {
+		value = 30
+		decay = 1
+	}
+	ARU_EFH_docket = {
+		value = 15
 	}
 }

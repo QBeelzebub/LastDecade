@@ -1,0 +1,9 @@
+IND_affairs = {
+	icon = generic_industry
+	allowed = { original_tag = IND }
+}
+
+ARU_affairs = {
+	icon = generic_industry
+	allowed = { original_tag = ARU }
+}

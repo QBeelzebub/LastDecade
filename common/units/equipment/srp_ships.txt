@@ -749,6 +749,31 @@ equipments = {
 		naval_dominance_factor = 470
 	}
 
+	srp_destroyer_hull_littoral = {
+		abbreviation = "slc"
+		year = 2020
+		archetype = srp_destroyer_hull
+		parent = srp_destroyer_hull_1
+		priority = 1990
+		module_slots = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_torpedo_slot = inherit
+			fixed_ship_engine_slot = inherit
+			mid_1_custom_slot = inherit
+		}
+		default_modules = {
+			mid_1_custom_slot = empty
+		}
+		max_strength = 50
+		naval_speed = 38
+		naval_range = 2500
+		surface_visibility = 12
+		naval_dominance_factor = 30
+	}
+
 
 	srp_submarine_hull = {
 		year = 2018
@@ -1025,22 +1050,22 @@ equipments = {
 		lg_attack = 0
 		hg_armor_piercing = 0
 		hg_attack = 0
-		torpedo_attack = 2
+		torpedo_attack = 4
 		sub_attack = 0
 		anti_air_attack = 0
 		armor_value = 0
 
-		max_organisation = 20
+		max_organisation = 28
 
 		surface_detection = 5
 		sub_detection = 0
 		surface_visibility = 3
 		sub_visibility = 14
-		naval_speed = 18
+		naval_speed = 22
 		reliability = 0.85
 
-		naval_range = 4000
-		max_strength = 25
+		naval_range = 4500
+		max_strength = 40
 
 		fuel_consumption = 0
 
@@ -1150,22 +1175,22 @@ equipments = {
 		lg_attack = 0
 		hg_armor_piercing = 0
 		hg_attack = 0
-		torpedo_attack = 5
+		torpedo_attack = 12
 		sub_attack = 0
 		anti_air_attack = 0
-		armor_value = 5
+		armor_value = 10
 
-		max_organisation = 35
+		max_organisation = 45
 
 		surface_detection = 15
 		sub_detection = 0
 		surface_visibility = 5
 		sub_visibility = 8
-		naval_speed = 20
+		naval_speed = 24
 		reliability = 0.75
 
 		naval_range = 7000
-		max_strength = 120
+		max_strength = 220
 
 		fuel_consumption = 0
 
@@ -1239,22 +1264,22 @@ equipments = {
 		lg_attack = 0
 		hg_armor_piercing = 0
 		hg_attack = 0
-		torpedo_attack = 4
+		torpedo_attack = 10
 		sub_attack = 0
 		anti_air_attack = 0
-		armor_value = 0
+		armor_value = 20
 
-		max_organisation = 40
+		max_organisation = 55
 
-		surface_detection = 8
+		surface_detection = 22
 		sub_detection = 0
 		surface_visibility = 22
 		sub_visibility = 0
-		naval_speed = 14
+		naval_speed = 22
 		reliability = 0.85
 
-		naval_range = 4000
-		max_strength = 120
+		naval_range = 5500
+		max_strength = 400
 
 		fuel_consumption = 0
 
@@ -1263,7 +1288,7 @@ equipments = {
 			parasite_biomass = 4
 		}
 		manpower = 400
-		naval_dominance_factor = 60
+		naval_dominance_factor = 120
 		naval_weather_penalty_factor = 1
 	}
 
@@ -1274,6 +1299,6 @@ equipments = {
 		archetype = IRS_colossant_hull
 		priority = 3200
 		module_slots = inherit
-		naval_dominance_factor = 200
+		naval_dominance_factor = 280
 	}
 }

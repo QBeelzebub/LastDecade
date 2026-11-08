@@ -58,6 +58,12 @@ on_actions = {
 				add_opinion_modifier = { target = EFH modifier = LD_efh_usa_friction }
 			}
 
+			if = {
+				limit = { country_exists = JAP country_exists = CHN }
+				JAP = { add_opinion_modifier = { target = CHN modifier = JAP_CHN_old_war } }
+				CHN = { add_opinion_modifier = { target = JAP modifier = JAP_CHN_old_war } }
+			}
+
 			RSF = {
 				add_opinion_modifier = { target = EFH modifier = LD_rsf_hostile_to_efh }
 				add_opinion_modifier = { target = CHN modifier = LD_rsf_hostile_to_chn }

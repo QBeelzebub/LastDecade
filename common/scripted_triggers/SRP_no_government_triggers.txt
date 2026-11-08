@@ -1,0 +1,15 @@
+SRP_nogov_in_scraps = {
+	has_variable = srp_original_capital
+	var:srp_original_capital = { NOT = { is_controlled_by = ROOT } }
+	check_variable = { srp_nogov_scraps_line > num_owned_controlled_states }
+}
+
+SRP_nogov_recovered = {
+	OR = {
+		AND = {
+			has_variable = srp_original_capital
+			var:srp_original_capital = { is_controlled_by = ROOT }
+		}
+		check_variable = { srp_nogov_recover_line < num_owned_controlled_states }
+	}
+}

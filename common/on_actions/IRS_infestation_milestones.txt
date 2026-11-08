@@ -289,6 +289,42 @@ on_actions = {
                 }
             }
 
+            if = {
+                limit = { 16 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_paris_100 } }
+                set_country_flag = IRS_milestone_paris_100
+                add_named_threat = { threat = 3 name = SRP_threat_paris_lost }
+            }
+            if = {
+                limit = { 126 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_london_100 } }
+                set_country_flag = IRS_milestone_london_100
+                add_named_threat = { threat = 3 name = SRP_threat_london_lost }
+            }
+            if = {
+                limit = { 64 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_berlin_100 } }
+                set_country_flag = IRS_milestone_berlin_100
+                add_named_threat = { threat = 3 name = SRP_threat_berlin_lost }
+            }
+            if = {
+                limit = { 219 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_moscow_100 } }
+                set_country_flag = IRS_milestone_moscow_100
+                add_named_threat = { threat = 3 name = SRP_threat_moscow_lost }
+            }
+            if = {
+                limit = { 282 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_tokyo_100 } }
+                set_country_flag = IRS_milestone_tokyo_100
+                add_named_threat = { threat = 3 name = SRP_threat_tokyo_lost }
+            }
+            if = {
+                limit = { 358 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_newyork_100 } }
+                set_country_flag = IRS_milestone_newyork_100
+                add_named_threat = { threat = 3 name = SRP_threat_newyork_lost }
+            }
+            if = {
+                limit = { 608 = { check_variable = { iris_infestation_level > 99 } } NOT = { has_country_flag = IRS_milestone_beijing_100 } }
+                set_country_flag = IRS_milestone_beijing_100
+                add_named_threat = { threat = 3 name = SRP_threat_beijing_lost }
+            }
+
         }
     }
 }

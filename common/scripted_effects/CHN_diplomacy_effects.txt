@@ -1,0 +1,284 @@
+CHN_request_efh_partnership_effect = {
+	custom_effect_tooltip = CHN_diplomacy_efh_request_tt
+	log = "CHNDIPL request effect entered, scope=[This.GetTag]"
+	if = {
+		limit = {
+			tag = CHN
+			country_exists = EFH
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = EFH }
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_aligned }
+			NOT = { has_country_flag = CHN_efh_offer_pending }
+			NOT = { has_country_flag = CHN_usa_offer_pending }
+			EFH = { is_subject = no has_capitulated = no }
+		}
+		log = "CHNDIPL request effect guard PASSED, queuing chn_diplomacy.1 on EFH"
+		set_country_flag = { flag = CHN_efh_offer_pending value = 1 days = 60 }
+		EFH = { country_event = { id = chn_diplomacy.1 days = 1 } }
+	}
+	else = {
+		log = "CHNDIPL request effect guard FAILED, scope=[This.GetTag]"
+		CHN_log_efh_partnership_blockers_effect = yes
+	}
+}
+
+CHN_log_efh_partnership_blockers_effect = {
+	if = { limit = { NOT = { tag = CHN } } log = "CHNDIPL blocker: scope is not CHN" }
+	if = { limit = { NOT = { country_exists = EFH } } log = "CHNDIPL blocker: EFH does not exist" }
+	if = { limit = { is_subject = yes } log = "CHNDIPL blocker: CHN is a subject" }
+	if = { limit = { has_capitulated = yes } log = "CHNDIPL blocker: CHN has capitulated" }
+	if = { limit = { has_war_with = EFH } log = "CHNDIPL blocker: CHN at war with EFH" }
+	if = { limit = { is_in_faction_with = USA } log = "CHNDIPL blocker: CHN in faction with USA" }
+	if = { limit = { has_country_flag = CHN_usa_aligned } log = "CHNDIPL blocker: CHN_usa_aligned set" }
+	if = { limit = { has_country_flag = CHN_efh_aligned } log = "CHNDIPL blocker: CHN_efh_aligned already set" }
+	if = { limit = { has_country_flag = CHN_efh_offer_pending } log = "CHNDIPL state: CHN_efh_offer_pending set (blocks a new request, not an answer)" }
+	if = { limit = { has_country_flag = CHN_usa_offer_pending } log = "CHNDIPL blocker: CHN_usa_offer_pending set" }
+	if = { limit = { country_exists = EFH EFH = { OR = { is_subject = yes has_capitulated = yes } } } log = "CHNDIPL blocker: EFH is a subject or capitulated" }
+}
+
+CHN_request_usa_partnership_effect = {
+	custom_effect_tooltip = CHN_diplomacy_usa_request_tt
+	if = {
+		limit = {
+			tag = CHN
+			country_exists = USA
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = USA }
+			NOT = { is_in_faction_with = EFH }
+			NOT = { has_country_flag = CHN_efh_aligned }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_offer_pending }
+			NOT = { has_country_flag = CHN_usa_offer_pending }
+			USA = { is_subject = no has_capitulated = no }
+		}
+		set_country_flag = { flag = CHN_usa_offer_pending value = 1 days = 60 }
+		USA = { country_event = { id = chn_diplomacy.2 days = 1 } }
+	}
+}
+
+CHN_accept_efh_partnership_effect = {
+	log = "CHNDIPL accept effect entered, scope=[This.GetTag]"
+	if = {
+		limit = {
+			tag = CHN
+			country_exists = EFH
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = EFH }
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_aligned }
+			EFH = { is_subject = no has_capitulated = no }
+		}
+		log = "CHNDIPL accept effect guard PASSED, setting CHN_efh_aligned"
+		set_country_flag = CHN_efh_aligned
+		clr_country_flag = CHN_efh_offer_pending
+		clr_country_flag = CHN_usa_offer_pending
+		if = {
+			limit = { NOT = { has_idea = CHN_efh_partnership } }
+			add_ideas = CHN_efh_partnership
+		}
+		EFH = {
+			set_country_flag = EFH_china_contact
+			set_country_flag = EFH_china_leaning_efh
+			clr_country_flag = EFH_china_neutral
+			if = {
+				limit = { NOT = { has_idea = EFH_sino_efh_partnership } }
+				add_ideas = EFH_sino_efh_partnership
+				add_political_power = 40
+				EFH_bop_very_low_ef_effect = yes
+			}
+			if = {
+				limit = { CHN = { NOT = { is_guaranteed_by = EFH } } }
+				give_guarantee = CHN
+			}
+		}
+		CHN_reconcile_efh_buffer_effect = yes
+	}
+	else = {
+		log = "CHNDIPL accept effect guard FAILED, scope=[This.GetTag]"
+		CHN_log_efh_partnership_blockers_effect = yes
+	}
+}
+
+CHN_reconcile_efh_buffer_effect = {
+	if = {
+		limit = {
+			tag = CHN
+			has_country_flag = CHN_efh_aligned
+			country_exists = EFH
+			EFH = {
+				has_completed_focus = EFH_eurasian_buffer_doctrine
+				NOT = { has_country_flag = EFH_china_buffer_replaced }
+			}
+		}
+		EFH = {
+			set_country_flag = EFH_china_buffer_replaced
+			add_to_variable = { EFH_gov_army_org_factor = -0.04 }
+			add_to_variable = { EFH_gov_war_support_factor = -0.05 }
+			add_to_variable = { EFH_gov_supply_consumption_factor = 0.03 }
+			EFH_refresh_gov = yes
+		}
+	}
+}
+
+CHN_request_efh_trade_effect = {
+	if = {
+		limit = {
+			tag = EFH
+			country_exists = CHN
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = CHN }
+			CHN = {
+				is_subject = no
+				has_capitulated = no
+				has_completed_focus = CHN_export_mentality
+				has_country_flag = CHN_efh_aligned
+				NOT = { has_country_flag = CHN_usa_aligned }
+				NOT = { has_country_flag = CHN_efh_trade_accepted }
+				NOT = { has_country_flag = CHN_efh_trade_pending }
+			}
+		}
+		log = "CHNDIPL trade request guard PASSED, queuing chn_diplomacy.4 on [This.GetTag]"
+		CHN = { set_country_flag = { flag = CHN_efh_trade_pending value = 1 days = 60 } }
+		country_event = { id = chn_diplomacy.4 days = 1 }
+	}
+}
+
+CHN_accept_efh_trade_effect = {
+	log = "CHNDIPL trade accept entered, scope=[This.GetTag]"
+	if = {
+		limit = {
+			tag = CHN
+			country_exists = EFH
+			has_completed_focus = CHN_export_mentality
+			has_country_flag = CHN_efh_aligned
+			is_subject = no
+			has_capitulated = no
+			EFH = { is_subject = no has_capitulated = no }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_war_with = EFH }
+			NOT = { has_country_flag = CHN_efh_trade_accepted }
+		}
+		set_country_flag = CHN_efh_trade_accepted
+		clr_country_flag = CHN_efh_trade_pending
+		EFH = {
+			set_country_flag = EFH_china_contact
+			set_country_flag = EFH_china_trade_active
+		}
+		if = {
+			limit = { country_exists = USA }
+			USA = { set_country_flag = EFH_china_trade_detected }
+		}
+		log = "CHNDIPL CHN_efh_trade_accepted is SET"
+	}
+	else = {
+		log = "CHNDIPL trade accept guard FAILED, scope=[This.GetTag]"
+		if = { limit = { NOT = { has_completed_focus = CHN_export_mentality } } log = "CHNDIPL blocker: export mentality not done" }
+		if = { limit = { NOT = { has_country_flag = CHN_efh_aligned } } log = "CHNDIPL blocker: CHN_efh_aligned not set" }
+		if = { limit = { has_country_flag = CHN_usa_aligned } log = "CHNDIPL blocker: CHN_usa_aligned set" }
+		if = { limit = { has_war_with = EFH } log = "CHNDIPL blocker: CHN at war with EFH" }
+		if = { limit = { has_country_flag = CHN_efh_trade_accepted } log = "CHNDIPL blocker: trade already accepted" }
+	}
+}
+
+CHN_resolve_canal_effect = {
+	if = {
+		limit = {
+			tag = USA
+			country_exists = EFH
+			country_exists = CHN
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = EFH }
+			NOT = { has_war_with = CHN }
+			NOT = { is_in_faction_with = EFH }
+			NOT = { is_in_faction_with = CHN }
+			NOT = { has_global_flag = LD_panama_settled }
+			NOT = { has_global_flag = LD_panama_war_opened }
+			NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+			685 = { is_owned_by = USA is_controlled_by = USA }
+			EFH = {
+				has_country_flag = LD_panama_summit_active
+				NOT = { has_war_with = CHN }
+				is_subject = no
+				has_capitulated = no
+			}
+			CHN = {
+				has_country_flag = CHN_efh_aligned
+				has_country_flag = CHN_efh_trade_accepted
+				has_country_flag = CHN_canal_initiative
+				OR = { is_in_faction = no is_in_faction_with = EFH }
+				NOT = { has_country_flag = CHN_usa_aligned }
+				is_subject = no
+				has_capitulated = no
+			}
+		}
+		if = {
+			limit = { has_country_flag = CHN_canal_refusal }
+			set_global_flag = LD_panama_war_opened
+			if = {
+				limit = { EFH = { is_faction_leader = yes } CHN = { is_in_faction = no } }
+				EFH = { add_to_faction = CHN }
+			}
+			EFH = { declare_war_on = { target = USA type = annex_everything } }
+			CHN = {
+				declare_war_on = { target = USA type = annex_everything }
+				if = {
+					limit = { has_war_with = USA }
+					add_ideas = LD_canal_expeditionary
+					set_country_flag = CHN_canal_war
+				}
+			}
+			add_war_support = 0.05
+			USA_trust_low_gain_effect = yes
+			news_event = { id = ldwar.42 days = 1 }
+		}
+		if = {
+			limit = { NOT = { has_country_flag = CHN_canal_refusal } }
+			set_global_flag = LD_panama_settled
+			add_ideas = LD_canal_conceded
+			USA_trust_medium_loss_effect = yes
+			685 = {
+				add_core_of = EFH
+				set_state_owner_to = EFH
+				set_state_controller_to = EFH
+			}
+			SRP_deescalate_medium_effect = yes
+			SRP_deescalate_medium_effect = yes
+			EFH = {
+				add_political_power = 100
+				EFH_bop_high_ef_effect = yes
+			}
+			CHN = { add_political_power = 75 }
+		}
+		EFH = { clr_country_flag = LD_panama_summit_active }
+	}
+}
+
+CHN_request_fusion_licence_effect = {
+	custom_effect_tooltip = CHN_diplomacy_fusion_request_tt
+	if = {
+		limit = {
+			tag = CHN
+			has_country_flag = CHN_efh_aligned
+			country_exists = EFH
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = EFH }
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_fusion_licensed }
+			NOT = { has_country_flag = CHN_fusion_offer_pending }
+			NOT = { has_tech = srp_fusion_reactor_1 }
+			EFH = { has_tech = srp_fusion_reactor_1 is_subject = no has_capitulated = no }
+		}
+		set_country_flag = { flag = CHN_fusion_offer_pending value = 1 days = 60 }
+		EFH = { country_event = { id = chn_diplomacy.3 days = 1 } }
+	}
+}

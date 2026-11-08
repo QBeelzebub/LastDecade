@@ -12773,6 +12773,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_srp_generic_tech_acceleration.dds"
 		legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_focus_srp_generic_business_as_usual"
+		texturefile = "gfx/interface/goals/focus_srp_generic_industrial_base.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_srp_generic_power_seeking"
+		texturefile = "gfx/interface/goals/focus_srp_generic_war_economy.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_srp_generic_align_europe"
+		texturefile = "gfx/interface/goals/focus_srp_generic_popular_mandate.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_srp_generic_align_america"
+		texturefile = "gfx/interface/goals/focus_srp_generic_crisis_governance.dds"
+		legacy_lazy_load = no
+	}
 
 	SpriteType = {
 		name = "GFX_focus_RSF_iron_grip"
@@ -12980,6 +13000,221 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_USA_burn_knox_county"
 		texturefile = "gfx/interface/goals/focus_USA_burn_knox_county.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_business_as_usual"
+		texturefile = "gfx/interface/goals/focus_CHN_business_as_usual.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_Moore_Threads_investment"
+		texturefile = "gfx/interface/goals/focus_CHN_Moore_Threads_investment.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_export_mentality"
+		texturefile = "gfx/interface/goals/focus_CHN_export_mentality.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_power_seeking"
+		texturefile = "gfx/interface/goals/focus_CHN_power_seeking.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_align_EFH"
+		texturefile = "gfx/interface/goals/focus_CHN_align_EFH.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_align_USA"
+		texturefile = "gfx/interface/goals/focus_CHN_align_USA.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_shangai_industrial_investment"
+		texturefile = "gfx/interface/goals/focus_CHN_shangai_industrial_investment.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_offshore_oil_drilling"
+		texturefile = "gfx/interface/goals/focus_CHN_offshore_oil_drilling.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_fissile_materials"
+		texturefile = "gfx/interface/goals/focus_CHN_fissile_materials.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_inland_investment"
+		texturefile = "gfx/interface/goals/focus_CHN_inland_investment.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_precision_tooling"
+		texturefile = "gfx/interface/goals/focus_CHN_precision_tooling.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_industrial_continuity"
+		texturefile = "gfx/interface/goals/focus_CHN_industrial_continuity.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_strategic_metals"
+		texturefile = "gfx/interface/goals/focus_CHN_strategic_metals.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_extraction_plants"
+		texturefile = "gfx/interface/goals/focus_CHN_extraction_plants.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_resource_contracts"
+		texturefile = "gfx/interface/goals/focus_CHN_resource_contracts.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_wafer_fabrication"
+		texturefile = "gfx/interface/goals/focus_CHN_wafer_fabrication.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_advanced_packaging"
+		texturefile = "gfx/interface/goals/focus_CHN_advanced_packaging.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_compute_research"
+		texturefile = "gfx/interface/goals/focus_CHN_compute_research.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_data_centers"
+		texturefile = "gfx/interface/goals/focus_CHN_data_centers.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_advanced_compute"
+		texturefile = "gfx/interface/goals/focus_CHN_advanced_compute.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_chip_dominance"
+		texturefile = "gfx/interface/goals/focus_CHN_chip_dominance.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_technical_colleges"
+		texturefile = "gfx/interface/goals/focus_CHN_technical_colleges.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_national_laboratories"
+		texturefile = "gfx/interface/goals/focus_CHN_national_laboratories.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_efh_trade"
+		texturefile = "gfx/interface/goals/focus_CHN_efh_trade.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_fusion_licence"
+		texturefile = "gfx/interface/goals/focus_CHN_fusion_licence.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_fusion_construction"
+		texturefile = "gfx/interface/goals/focus_CHN_fusion_construction.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_canal_initiative"
+		texturefile = "gfx/interface/goals/focus_CHN_canal_initiative.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_european_pact"
+		texturefile = "gfx/interface/goals/focus_CHN_european_pact.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_army_review"
+		texturefile = "gfx/interface/goals/focus_CHN_army_review.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_army_logistics"
+		texturefile = "gfx/interface/goals/focus_CHN_army_logistics.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_field_workshops"
+		texturefile = "gfx/interface/goals/focus_CHN_field_workshops.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_inland_supply"
+		texturefile = "gfx/interface/goals/focus_CHN_inland_supply.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_reserve_depots"
+		texturefile = "gfx/interface/goals/focus_CHN_reserve_depots.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_domestic_aircraft"
+		texturefile = "gfx/interface/goals/focus_CHN_domestic_aircraft.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_aircraft_production"
+		texturefile = "gfx/interface/goals/focus_CHN_aircraft_production.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_dispersed_airfields"
+		texturefile = "gfx/interface/goals/focus_CHN_dispersed_airfields.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_escort_design"
+		texturefile = "gfx/interface/goals/focus_CHN_escort_design.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_escort_yards"
+		texturefile = "gfx/interface/goals/focus_CHN_escort_yards.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_coastal_defense"
+		texturefile = "gfx/interface/goals/focus_CHN_coastal_defense.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_coastal_air_defense"
+		texturefile = "gfx/interface/goals/focus_CHN_coastal_air_defense.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_public_survival_plan"
+		texturefile = "gfx/interface/goals/focus_CHN_public_survival_plan.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_civil_defense"
+		texturefile = "gfx/interface/goals/focus_CHN_civil_defense.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_CHN_emergency_coordination"
+		texturefile = "gfx/interface/goals/focus_CHN_emergency_coordination.dds"
 		legacy_lazy_load = no
 	}
 }

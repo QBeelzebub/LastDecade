@@ -1,6 +1,18 @@
 on_actions = {
     on_monthly_IRS = {
         effect = {
+            set_variable = { irs_bloat_construction = num_of_military_factories }
+            subtract_from_variable = { irs_bloat_construction = 300 }
+            multiply_variable = { irs_bloat_construction = -0.002 }
+            clamp_variable = { var = irs_bloat_construction min = -0.6 max = 0 }
+            if = {
+                limit = { has_dynamic_modifier = { modifier = irs_hive_bloat } }
+                remove_dynamic_modifier = { modifier = irs_hive_bloat }
+            }
+            if = {
+                limit = { check_variable = { irs_bloat_construction < 0 } }
+                add_dynamic_modifier = { modifier = irs_hive_bloat }
+            }
             if = {
                 limit = {
                     has_country_flag = IRS_phase_0_active
@@ -122,6 +134,15 @@ on_actions = {
                         add_to_variable = { var = infest_growth_delta value = 2.4 }
                     }
 
+                    if = {
+                        limit = {
+                            has_dynamic_modifier = { modifier = IRS_tethysic_tide_modifier }
+                            NOT = { state_is_iris_bloc_controlled = yes }
+                            NOT = { is_controlled_by = KNX }
+                        }
+                        add_to_variable = { var = infest_growth_delta value = 0.25 }
+                    }
+
                     multiply_variable = { var = infest_growth_delta value = global.srp_infest_growth_mult }
                     add_to_variable = { var = iris_infestation_level value = infest_growth_delta }
 
@@ -143,6 +164,7 @@ on_actions = {
                                 }
                             }
                             NOT = { has_dynamic_modifier = { modifier = spore_burst_contamination } }
+                            NOT = { has_dynamic_modifier = { modifier = IRS_tethysic_tide_modifier } }
                             check_variable = { iris_infestation_level > 0 }
                         }
                         set_variable = { var = infest_decay_delta value = 0 }
@@ -425,6 +447,10 @@ on_actions = {
                     }
 
                     multiply_variable = { var = infest_spread_delta value = global.srp_spread_mult }
+                    if = {
+                        limit = { controller = { has_country_flag = EFH_lauterbach_in_office } }
+                        multiply_variable = { var = infest_spread_delta value = 0.75 }
+                    }
                     add_to_variable = { var = iris_infestation_level value = infest_spread_delta }
                 }
                 }

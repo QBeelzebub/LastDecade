@@ -2,7 +2,7 @@ SRP_human_fighter_multirole = {
 	category = air
 
 	available_for = {
-		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+		AFR ARU ASI CHN IND EFH JAP OCE RSF SAC SWR USA
 	}
 
 	roles = {
@@ -106,7 +106,7 @@ SRP_human_cas_multirole = {
 	category = air
 
 	available_for = {
-		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+		AFR ARU ASI CHN IND EFH JAP OCE RSF SAC SWR USA
 	}
 
 	roles = {
@@ -162,7 +162,7 @@ SRP_human_naval_strike_multirole = {
 	category = air
 
 	available_for = {
-		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+		AFR ARU ASI CHN IND EFH JAP OCE RSF SAC SWR USA
 	}
 
 	roles = {
@@ -310,120 +310,4 @@ SRP_major_early_nuclear_strat = {
 			srp_stealth_coating
 		}
 	}	
-}
-
-SRP_yelloweye_equip = {
-	category = air
-	available_for = {
-		IRS KNX TET
-	}
-	roles = {
-		air_cas
-	}
-	priority = {
-		factor = 40
-	}
-
-	srp_yelloweye_primitive = {
-		priority = {
-			factor = 100
-		}
-
-		enable = {
-			has_tech = primitive_yelloweye_tech
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 100
-			type = srp_yelloweye_airframe_1
-			modules = {
-				fixed_main_weapon_slot = srp_yelloweye_bile_spitter
-				engine_type_slot = srp_yelloweye_propulsion_1
-				special_type_slot_1 = srp_yelloweye_wing_membrane_1
-				special_type_slot_2 = srp_yelloweye_acid_glands
-			}
-		}
-
-		allowed_modules = {
-			srp_yelloweye_spine_volley
-			srp_yelloweye_bile_spitter
-			srp_yelloweye_propulsion_1
-			srp_yelloweye_wing_membrane_1
-			srp_yelloweye_acid_glands
-			srp_yelloweye_eye_cluster
-			srp_yelloweye_calibration_node
-		}
-	}
-
-	srp_yelloweye_adapted = {
-		priority = {
-			factor = 150
-		}
-
-		enable = {
-			has_tech = adapted_yelloweye_tech
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 100
-			type = srp_yelloweye_airframe_2
-			modules = {
-				fixed_main_weapon_slot = srp_yelloweye_corrosive_spit
-				engine_type_slot = srp_yelloweye_propulsion_2
-				special_type_slot_1 = srp_yelloweye_wing_membrane_2
-				special_type_slot_2 = srp_yelloweye_regrowth_tissue
-			}
-		}
-
-		allowed_modules = {
-			srp_yelloweye_corrosive_spit
-			srp_yelloweye_spine_volley
-			srp_yelloweye_bile_spitter
-			srp_yelloweye_propulsion_2
-			srp_yelloweye_propulsion_1
-			srp_yelloweye_wing_membrane_2
-			srp_yelloweye_wing_membrane_1
-			srp_yelloweye_regrowth_tissue
-			srp_yelloweye_acid_glands
-			srp_yelloweye_eye_cluster
-			srp_yelloweye_calibration_node
-		}
-	}
-
-	srp_skymaw = {
-		priority = {
-			factor = 200
-		}
-
-		enable = {
-			has_tech = skymaw_genesis
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 100
-			type = srp_skymaw_airframe_1
-			modules = {
-				fixed_main_weapon_slot = srp_skymaw_plasma_bile
-				fixed_auxiliary_weapon_slot_1 = srp_skymaw_great_maw
-				engine_type_slot = srp_yelloweye_propulsion_2
-				special_type_slot_1 = srp_skymaw_storm_wings
-				special_type_slot_2 = srp_skymaw_regenerative_hide
-			}
-		}
-
-		allowed_modules = {
-			srp_skymaw_plasma_bile
-			srp_skymaw_great_maw
-			srp_yelloweye_corrosive_spit
-			srp_yelloweye_propulsion_2
-			srp_skymaw_storm_wings
-			srp_yelloweye_wing_membrane_2
-			srp_skymaw_regenerative_hide
-			srp_skymaw_dense_carapace
-			srp_skymaw_sensory_crown
-		}
-	}
 }

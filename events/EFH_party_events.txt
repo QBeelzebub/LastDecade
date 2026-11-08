@@ -74,6 +74,7 @@ country_event = {
 	}
 }
 
+
 news_event = {
 	id = efh_party.2
 	major = yes
@@ -134,38 +135,39 @@ news_event = {
 	option = { name = efh_party.7.a }
 }
 
-country_event = {
+
+news_event = {
 	id = efh_party.20
 	title = efh_party.20.t
 	desc = efh_party.20.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally
 	is_triggered_only = yes
 	option = { name = efh_party.20.a }
 }
 
-country_event = {
+news_event = {
 	id = efh_party.21
 	title = efh_party.21.t
 	desc = efh_party.21.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_gathering_protest
 	is_triggered_only = yes
 	option = { name = efh_party.21.a }
 }
 
-country_event = {
+news_event = {
 	id = efh_party.22
 	title = efh_party.22.t
 	desc = efh_party.22.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_parliament
 	is_triggered_only = yes
 	option = { name = efh_party.22.a }
 }
 
-country_event = {
+news_event = {
 	id = efh_party.23
 	title = efh_party.23.t
 	desc = efh_party.23.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 	option = { name = efh_party.23.a }
 }

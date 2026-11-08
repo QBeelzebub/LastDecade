@@ -807,4 +807,12 @@ script_enum_equipment_bonus_type = {
 	srp_fpv_drone_equipment
 	srp_fpv_drone_equipment_1
 	srp_fpv_drone_equipment_2
+	infantry_equipment3
+	srp_rtg_infantry_equipment_2
+	srp_ifv_equipment_apc
+	artillery_equipment_srp_incendiary
+	srp_ucav_equipment
+	srp_ucav_equipment_1
+	srp_destroyer_hull_littoral
+	parasite_bio_rail_2
 }

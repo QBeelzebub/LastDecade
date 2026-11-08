@@ -2,6 +2,8 @@ beckon_iris_buff = {
     icon = "GFX_goal_generic_secret_weapon"
 
     local_supplies_for_controller = iris_infestation_supply
+    supply_factor = iris_infestation_supply_factor
+    enemy_local_supplies = iris_infestation_enemy_supply
     enemy_truck_attrition_factor = iris_infestation_bonus
     enemy_attrition = iris_infestation_bonus
     state_resource_parasite_biomass = iris_infestation_biomass
@@ -19,6 +21,11 @@ beckon_hostile_debuff = {
     local_supplies = iris_infestation_penalty
     enemy_attrition = iris_infestation_attrition
     local_manpower = iris_infestation_attrition
+}
+
+irs_hive_bloat = {
+    icon = "GFX_goal_generic_dangerous_deal"
+    production_speed_buildings_factor = irs_bloat_construction
 }
 
 irs_consumed_state = {
@@ -51,7 +58,8 @@ knx_root_stronghold = {
     icon = "GFX_goal_generic_fortify_city"
 
     land_bunker_effectiveness_factor = 0.75
-    local_supplies_for_controller = 0.25
+    local_supplies_for_controller = 1.50
+    supply_factor = 1.00
     enemy_local_supplies = -0.20
     enemy_attrition = 0.25
 }
@@ -68,6 +76,21 @@ spore_burst_contamination = {
 	local_supplies = -0.12
 	enemy_attrition = -0.04
 	local_manpower = -0.08
+}
+
+IRS_tethysic_tide_modifier = {
+	icon = "GFX_goal_generic_dangerous_deal"
+
+	local_supplies = -0.10
+	local_manpower = -0.05
+}
+
+IRS_scorched_coast = {
+	icon = "GFX_goal_generic_dangerous_deal"
+
+	local_manpower = -0.50
+	local_building_slots_factor = -0.25
+	local_resources_factor = -0.25
 }
 
 IRS_evolutionary_surge_modifier = {

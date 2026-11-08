@@ -134,26 +134,3 @@ instant_effect = {
 	}
 }
 
-units = {
-	division = {
-		name = "Ascension Host"
-		division_template = "Rupter Pack"
-		location = 13013
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-	}
-	division = {
-		name = "Atlantic Vanguard"
-		division_template = "Rupter Pack"
-		location = 13013
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-	}
-	division = {
-		name = "Second Brood"
-		division_template = "Rupter Pack"
-		location = 13013
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-	}
-}

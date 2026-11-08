@@ -1,0 +1,68 @@
+
+JAP_china_wary = {
+	allowed = { original_tag = JAP }
+	enable = {
+		country_exists = CHN
+		NOT = { has_war_with = CHN }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = CHN value = 20 }
+	ai_strategy = { type = contain  id = CHN value = 40 }
+	ai_strategy = { type = alliance id = CHN value = -300 }
+	ai_strategy = { type = conquer  id = CHN value = -100 }
+}
+
+JAP_china_common_cause = {
+	allowed = { original_tag = JAP }
+	enable = {
+		country_exists = CHN
+		NOT = { has_war_with = CHN }
+		OR = {
+			AND = { has_war_with = USA CHN = { has_war_with = USA } }
+			AND = { has_war_with = EFH CHN = { has_war_with = EFH } }
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = CHN value = 300 }
+	ai_strategy = { type = protect  id = CHN value = 100 }
+	ai_strategy = { type = support  id = CHN value = 100 }
+	ai_strategy = { type = alliance id = CHN value = 300 }
+	ai_strategy = { type = contain  id = CHN value = -40 }
+}
+
+JAP_china_asian_front = {
+	allowed = { original_tag = JAP }
+	enable = { has_war_with = CHN }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = conquer            id  = CHN value = 150 }
+	ai_strategy = { type = front_unit_request tag = CHN value = 50  }
+}
+
+JAP_leans_washington = {
+	allowed = { original_tag = JAP }
+	enable = {
+		has_country_flag = JAP_usa_leaning
+		country_exists = USA
+		NOT = { has_war_with = USA }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = USA value = 150 }
+	ai_strategy = { type = protect  id = USA value = 50 }
+}
+
+JAP_leans_amsterdam = {
+	allowed = { original_tag = JAP }
+	enable = {
+		has_country_flag = JAP_efh_leaning
+		country_exists = EFH
+		NOT = { has_war_with = EFH }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = EFH value = 150 }
+	ai_strategy = { type = protect  id = EFH value = 50 }
+}

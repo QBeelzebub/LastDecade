@@ -5,7 +5,7 @@ on_actions = {
 				limit = { date > 2019.12.31 }
 				EFH = {
 					set_country_flag = EFH_sf6_lawsuit_active
-					country_event = { id = efh_hna.3 days = 14 }
+					news_event = { id = efh_hna.3 days = 14 }
 				}
 			}
 		}

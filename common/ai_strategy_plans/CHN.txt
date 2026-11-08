@@ -1,0 +1,234 @@
+CHN_calm = {
+    name = "Pragmatic China"
+    desc = "Historical economic continuity."
+    allowed = { original_tag = CHN }
+    enable = {
+        is_historical_focus_on = yes
+        NOT = { has_completed_focus = CHN_business_as_usual }
+        NOT = { has_completed_focus = CHN_power_seeking }
+    }
+    abort_when_not_enabled = yes
+    ai_national_focuses = { CHN_business_as_usual }
+    focus_factors = { CHN_power_seeking = 0 }
+    weight = { factor = 1.0 }
+}
+
+CHN_aggressive = {
+    name = "Assertive China"
+    desc = "Power Seeking with either foreign sponsor."
+    allowed = { original_tag = CHN }
+    enable = {
+        NOT = { is_historical_focus_on = yes }
+        NOT = { has_completed_focus = CHN_business_as_usual }
+        NOT = { has_completed_focus = CHN_power_seeking }
+    }
+    abort_when_not_enabled = yes
+    ai_national_focuses = { CHN_power_seeking }
+    focus_factors = { CHN_business_as_usual = 0 }
+    weight = { factor = 1.0 }
+}
+
+CHN_economic_foundation = {
+    name = "Chinese industrial and resource foundation"
+    desc = "Factories, chipmaking and domestic resources before foreign trade."
+    allowed = { original_tag = CHN }
+    enable = {
+        has_war = no
+        has_capitulated = no
+        OR = {
+            has_completed_focus = CHN_business_as_usual
+            has_completed_focus = CHN_power_seeking
+        }
+        NOT = {
+            AND = {
+                has_completed_focus = CHN_shangai_industrial_investment
+                has_completed_focus = CHN_Moore_Threads_investment
+                has_completed_focus = CHN_offshore_oil_drilling
+                has_completed_focus = CHN_fissile_materials
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_national_focuses = {
+        CHN_shangai_industrial_investment
+        CHN_Moore_Threads_investment
+        CHN_offshore_oil_drilling
+        CHN_fissile_materials
+    }
+    weight = { factor = 1.0 }
+}
+
+CHN_peacetime_development = {
+    name = "Chinese peacetime development"
+    desc = "Industry, resources and semiconductor capacity, with a usable escort fleet."
+    allowed = { original_tag = CHN }
+    enable = {
+        has_war = no
+        has_capitulated = no
+        OR = {
+            has_completed_focus = CHN_business_as_usual
+            has_completed_focus = CHN_power_seeking
+        }
+    }
+    abort_when_not_enabled = yes
+    focus_factors = {
+        CHN_shangai_industrial_investment = 3
+        CHN_inland_investment = 3
+        CHN_precision_tooling = 3
+        CHN_industrial_continuity = 2
+        CHN_Moore_Threads_investment = 3
+        CHN_wafer_fabrication = 5
+        CHN_advanced_packaging = 3
+        CHN_compute_research = 3
+        CHN_data_centers = 3
+        CHN_advanced_compute = 3
+        CHN_chip_dominance = 5
+        CHN_technical_colleges = 3
+        CHN_national_laboratories = 5
+        CHN_offshore_oil_drilling = 3
+        CHN_fissile_materials = 3
+        CHN_strategic_metals = 3
+        CHN_extraction_plants = 3
+        CHN_resource_contracts = 3
+        CHN_export_mentality = 3
+        CHN_align_EFH = 5
+        CHN_align_USA = 5
+        CHN_efh_trade = 5
+        CHN_fusion_licence = 5
+        CHN_fusion_construction = 5
+        CHN_canal_initiative = 3
+        CHN_army_review = 2
+        CHN_army_logistics = 2
+        CHN_field_workshops = 1
+        CHN_inland_supply = 2
+        CHN_reserve_depots = 2
+        CHN_domestic_aircraft = 2
+        CHN_aircraft_production = 2
+        CHN_dispersed_airfields = 1
+        CHN_escort_design = 2
+        CHN_escort_yards = 2
+        CHN_coastal_defense = 1
+        CHN_coastal_air_defense = 1
+        CHN_public_survival_plan = 2
+        CHN_civil_defense = 2
+        CHN_emergency_coordination = 2
+    }
+    research = { srp_compute_tech = 15 }
+    weight = { factor = 1.0 }
+}
+
+CHN_historical_efh_route = {
+    name = "Chinese Federation trade route"
+    desc = "Early fusion access and resource-backed trade without waiting on a blocked sponsor."
+    allowed = { original_tag = CHN }
+    enable = {
+        is_historical_focus_on = yes
+        has_war = no
+        is_subject = no
+        has_capitulated = no
+        has_completed_focus = CHN_business_as_usual
+        has_completed_focus = CHN_shangai_industrial_investment
+        has_completed_focus = CHN_Moore_Threads_investment
+        has_completed_focus = CHN_offshore_oil_drilling
+        has_completed_focus = CHN_fissile_materials
+        NOT = { has_country_flag = CHN_usa_aligned }
+        NOT = { has_country_flag = CHN_usa_offer_pending }
+        NOT = { is_in_faction_with = USA }
+    }
+    abort_when_not_enabled = yes
+    ai_national_focuses = {
+        CHN_align_EFH
+        CHN_fusion_licence
+        CHN_fusion_construction
+        CHN_strategic_metals
+        CHN_resource_contracts
+        CHN_export_mentality
+        CHN_efh_trade
+        CHN_canal_initiative
+        CHN_wafer_fabrication
+        CHN_inland_investment
+        CHN_precision_tooling
+        CHN_compute_research
+        CHN_technical_colleges
+        CHN_national_laboratories
+        CHN_advanced_packaging
+    }
+    focus_factors = { CHN_align_USA = 0 }
+    weight = { factor = 1.0 }
+}
+
+CHN_efh_route_compatibility = {
+    name = "Chinese Federation route compatibility"
+    desc = "An American commitment excludes the Federation sponsor branch."
+    allowed = { original_tag = CHN }
+    enable = {
+        OR = {
+            has_country_flag = CHN_usa_aligned
+            has_country_flag = CHN_usa_offer_pending
+            is_in_faction_with = USA
+            has_war_with = EFH
+        }
+    }
+    abort_when_not_enabled = yes
+    focus_factors = {
+        CHN_align_EFH = 0
+        CHN_efh_trade = 0
+        CHN_fusion_licence = 0
+        CHN_canal_initiative = 0
+    }
+    weight = { factor = 1.0 }
+}
+
+CHN_usa_route_compatibility = {
+    name = "Chinese American route compatibility"
+    desc = "A Federation commitment excludes the American sponsor branch."
+    allowed = { original_tag = CHN }
+    enable = {
+        OR = {
+            has_country_flag = CHN_efh_aligned
+            has_country_flag = CHN_efh_offer_pending
+            is_in_faction_with = EFH
+            has_war_with = USA
+        }
+    }
+    abort_when_not_enabled = yes
+    focus_factors = { CHN_align_USA = 0 }
+    weight = { factor = 1.0 }
+}
+
+CHN_wartime_development = {
+    name = "Chinese wartime development"
+    desc = "Supply, replacement production and civil defense before peacetime exports."
+    allowed = { original_tag = CHN }
+    enable = {
+        has_war = yes
+        has_capitulated = no
+    }
+    abort_when_not_enabled = yes
+    focus_factors = {
+        CHN_army_review = 5
+        CHN_army_logistics = 5
+        CHN_field_workshops = 3
+        CHN_inland_supply = 5
+        CHN_reserve_depots = 5
+        CHN_public_survival_plan = 5
+        CHN_civil_defense = 3
+        CHN_emergency_coordination = 3
+        CHN_shangai_industrial_investment = 3
+        CHN_inland_investment = 3
+        CHN_precision_tooling = 3
+        CHN_industrial_continuity = 5
+        CHN_domestic_aircraft = 3
+        CHN_aircraft_production = 5
+        CHN_dispersed_airfields = 3
+        CHN_escort_design = 3
+        CHN_escort_yards = 3
+        CHN_coastal_defense = 3
+        CHN_coastal_air_defense = 3
+        CHN_offshore_oil_drilling = 2
+        CHN_strategic_metals = 2
+        CHN_export_mentality = 0.2
+        CHN_resource_contracts = 0.2
+    }
+    weight = { factor = 1.0 }
+}

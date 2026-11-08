@@ -65,7 +65,7 @@ parasite_unit_production = {
 	ai_strategy = {
 		type = equipment_production_min_factories_archetype
 		id = carrier_equipment
-		value = 6
+		value = 1
 	}
 
 	ai_strategy = {
@@ -195,4 +195,16 @@ SRP_parasite_airforce_strategy = {
 		id = fighter
 		value = 50
 	}
+}
+
+parasite_pp_spending = {
+	allowed = {
+		is_full_parasite = yes
+	}
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = pp_spend_priority id = relation  value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = decision  value = 100 }
 }

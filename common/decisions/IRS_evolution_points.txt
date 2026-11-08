@@ -1,27 +1,6 @@
 IRS_evolution_points_category = {
 
 
-	IRS_ep_catalyze_evolution = {
-		icon = generic_political_actions
-		visible = { has_country_flag = IRS_phase_0_active }
-		available = {
-			NOT = { has_country_flag = IRS_ep_catalyze_cooldown }
-		}
-		cost = 75
-		fire_only_once = no
-		complete_effect = {
-			set_variable = { var = IRS_ep_gain_tmp value = 30 }
-			IRS_grant_scaled_ep = yes
-			set_country_flag = { flag = IRS_ep_catalyze_cooldown value = 1 days = 30 }
-		}
-		ai_will_do = {
-			base = 15
-			modifier = {
-				add = 10
-				has_war = yes
-			}
-		}
-	}
 
 	IRS_ep_sacrifice_swarm = {
 		icon = generic_army_manpower
@@ -42,7 +21,7 @@ IRS_evolution_points_category = {
 			set_country_flag = { flag = IRS_ep_sacrifice_cooldown value = 1 days = 15 }
 		}
 		ai_will_do = {
-			base = 5
+			base = 0
 			modifier = {
 				add = 25
 				has_equipment = { rupter_equipment > 200 }
@@ -155,7 +134,13 @@ IRS_evolution_points_category = {
 			base = 0
 			modifier = {
 				add = 20
-				check_variable = { IRS_evolution_points > 199 }
+				OR = {
+					AND = {
+						has_country_flag = IRS_phase_3_active
+						check_variable = { IRS_evolution_points > 199 }
+					}
+					check_variable = { IRS_evolution_points > 859 }
+				}
 			}
 		}
 	}
@@ -272,7 +257,13 @@ IRS_evolution_points_category = {
 			base = 0
 			modifier = {
 				add = 15
-				check_variable = { IRS_evolution_points > 249 }
+				OR = {
+					AND = {
+						has_country_flag = IRS_phase_3_active
+						check_variable = { IRS_evolution_points > 249 }
+					}
+					check_variable = { IRS_evolution_points > 879 }
+				}
 			}
 		}
 	}

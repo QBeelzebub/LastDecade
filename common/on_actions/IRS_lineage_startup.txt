@@ -8,12 +8,19 @@ on_actions = {
 					limit = {
 						difficulty > 2
 						difficulty < 4
-						NOT = { has_country_flag = IRS_emerged }
 					}
 					random_list = {
 						50 = { set_country_flag = IRS_collapse_unchecked }
 						50 = { set_country_flag = IRS_collapse_adaptive }
 					}
+				}
+
+				if = {
+					limit = {
+						has_country_flag = IRS_emerged
+						NOT = { has_country_flag = IRS_lineage_resolved }
+					}
+					IRS_stamp_lineage_by_difficulty = yes
 				}
 			}
 		}

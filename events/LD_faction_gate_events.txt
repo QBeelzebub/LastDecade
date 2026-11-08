@@ -1,0 +1,22 @@
+add_namespace = ldfaction
+
+country_event = {
+	id = ldfaction.1
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				original_tag = CHN
+				is_in_faction_with = USA
+				NOT = { has_country_flag = CHN_usa_aligned }
+			}
+			leave_faction = yes
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|CHN|faction_gate|left the USA's faction, no USA path"
+			}
+		}
+	}
+}

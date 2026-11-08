@@ -176,7 +176,7 @@
  BEFORE_THE_STORM: "Before the Storm"
  BEFORE_THE_STORM_DESC: "The year is 2018. The world stands at the edge of an era it does not yet know is ending. Two years remain before the bacterial presence in West Africa becomes undeniable. Use this start for a fuller geopolitical experience before the crisis."
  IRS_BTS_DESC: "The Iris drifts in orbit, unseen. Its seed colony rests on a remote Atlantic island, incubating. In two years it will be ready to emerge."
- EFH_LAST_DECADE_DESC: "The European Federation is almost the sole world hegemon, forged in the heat of WW2 and its victory. The seventy years since have been the most productive in European history."
+ EFH_LAST_DECADE_DESC: "The European Federation is almost the sole world hegemon, founded in Prague in 1942, in the middle of the First Euro-American War. The decades since have been the most productive in European history."
  USA_LAST_DECADE_DESC: "America remains the dominant power outside the European sphere. Its military is unmatched, its economy vast, and its institutions untested by anything like what is coming."
  IRS_LAST_DECADE_DESC: "The Iris is a living planet, and every parasite on Earth came from it. Three worlds have already been consumed. Earth is the fourth."
  JAP_LAST_DECADE_DESC: "Japan has bound itself closely to the European Federation, trading sovereignty for stability. A prosperous island nation on a planet that is about to stop being stable."
@@ -185,12 +185,13 @@
  SAC_LAST_DECADE_DESC: "The South American Confederation is a democratic alliance of several Latin American nations."
  OCE_LAST_DECADE_DESC: "The Pacific nations formed Oceania out of necessity rather than ambition. Remote, dispersed, and easily overlooked. In a few years that will look like an advantage."
 
- label_parasite_factions: "Parasite Factions\n\nPlay as the Iris (IRS) or the Knox County Anomaly (KNX), the parasite nations consuming Earth from within."
+ label_parasite_factions: "Parasite Factions\n\nPlay as the Iris or the Knox County Anomaly, the parasite nations consuming Earth from within."
  label_human_nations: "Human Nations\n\nPlay as one of the human nations responding to the rising parasite threat."
 
- EFH_URSULA: "Ursula Von Der Leyen"
- EFH_URSULA_DESC: "Ursula Von Der Leyen exists here, not for long I will prolly change her to be somebody else but idk who rn."
- RSF_Leader: "Russian President"
+ EFH_LUKAS_BRENNER: "Lukas Brenner"
+ EFH_LUKAS_BRENNER_DESC: "Austrian. President of the Council of Ministers, at the head of the Federal Continuity Coalition."
+ RSF_Leader: "Arkady Voronov"
+ RSF_Leader_DESC: "President of the Russian Federation."
  IRS_PARTY: "Beckon organised parasites"
  IRS_PARTY_LONG: "Parasiticism organised by the Iris Supreme Beckon on Krest"
  Iris_Leader: "Iris Supreme Beckon"
@@ -198,12 +199,12 @@
  Iris_Eternal: "Infestation"
  IRS_Leader_Trait: "The first Beckon"
  TROTSKY_DESC: "Demsoc Trans Commie. Not associated with the historical trotsky. Just happens to have the same name. Was asked to run elections, said 'no' and nobody bothered to do anything about it."
- AFR_Leader_DESC: "The leader of the African Union"
- CHN_Leader_DESC: "The leader of China"
- OCE_Leader_DESC: "The leader of Oceania"
- SAC_Leader_DESC: "The leader of the South American Confederation"
- USA_Leader_DESC: "The leader of the United States"
- JAP_Leader_DESC: "The leader of Japan"
+ AFR_Leader_DESC: "Chairman of the African Union, governing from Cairo."
+ CHN_Leader_DESC: "General Secretary of the Communist Party and President of the People's Republic of China."
+ OCE_Leader_DESC: "Prime Minister of Oceania."
+ SAC_Leader_DESC: "President of the South American Confederation, governing from São Paulo."
+ USA_Leader_DESC: "President of the United States."
+ JAP_Leader_DESC: "Prime Minister of Japan, at the head of a coalition that has kept the Pacific Treaty and the import bill steady for six years."
  parasite_folder: "Parasite Technologies"
  parasite_folder_desc: "Parasite technologies. Includes everything from inborns through vagrants to preeminents."
 
@@ -240,9 +241,9 @@
 
 
  beckon_cluster: "Beckon Cluster"
- beckon_cluster_desc: "Dense root network structure associated with Iris infestation. Rapid growth observed in contaminated zones. Primary target for containment and eradication efforts."
- dispatcher: "The Dispatcher"
- dispatcher_desc: "Mobile command and control organism for Beckon Cluster operations. Capable of coordinating multiple Beckon Clusters simultaneously. Highly resilient to conventional countermeasures."
+ beckon_cluster_desc: "A dense stand of Beckons on one shared root network. Their bulbs run luxsynthesis on the light and soil around them, turning it into biomass and new organisms."
+ dispatcher: "Dispatcher Cluster"
+ dispatcher_desc: "Nexus-Class command and control organism. Coordinates and directs parasites, relays information and creates deterrent-class parasites. Highly resilient to conventional countermeasures."
  energy_infrastructure: "Energy Infrastructure"
  energy_infrastructure_desc: "Basic Energy Infrastructure."
  industrial_infrastructure: "Industrial Infrastructure"
@@ -277,271 +278,38 @@
  iris_focus: "Iris Focus Tree"
  EFH_focus: "European Federation Focus Tree"
  USA_focus: "United States Focus Tree"
- EFH_Ryland: "Conscript Ryland into Laytheo"
- EFH_HNA_independence: "H&A Independence"
- EFH_HNA_independence_desc: "H&A has grown beyond a simple contractor. Granting the company room to operate on its own terms opens doors the Federation government could never open directly."
- EFH_HNA_independence_tt: "H&A begins acting on its own authority. Their first independent initiative will conclude shortly."
- EFH_HNA_autonomous_placeholder: "H&A: Lunar Architecture Office"
- EFH_HNA_autonomous_placeholder_desc: "H&A's first autonomous office begins designing the industrial, legal, and launch framework for a sustained lunar programme."
- EFH_HNA_ORIGINATOR: "H&A"
- EFH_HNA_working_on_focus_tt: "§YH&A§! is working on this focus.\nProgress: §Y$FLAG_DAYS$§!/[?temp_focus_days] days"
- EFH_HNA_focus_not_started_tt: "This initiative belongs to H&A. Grant them independence first."
- EFH_HNA_lunar_programme_approved_tt: "Unlocks the §YMoon Base Programme§! once Laytheo has completed its first flight."
- EFH_HNA_lunar_policy_public_tt: "H&A adopts a supervised public mandate for lunar work."
- EFH_HNA_lunar_policy_corporate_tt: "H&A adopts an aggressive corporate acceleration model for lunar work."
- EFH_HNA_lunar_policy_procurement_tt: "H&A creates a deniable procurement office. Several launch vehicles should consider becoming less unattended."
 
- EFH_fusion_economy: "Commercial Fusion Power"
- EFH_fusion_economy_desc: "The first grid-scale tokamak facilities went online in 2017. Energy scarcity is effectively solved. Industrial output decoupled from fossil fuel supply chains."
- EFH_RTG_ideas: "Iris Countertechnology"
- EFH_RTG_ideas_desc: "Early development of technologies to counter the Iris threat. Detection systems, incendiary compounds, and containment protocols, in that order of urgency."
- EFH_TAD_idea: "Total American Death"
- EFH_TAD_idea_desc: "The United States has been the primary source of anti-EF propaganda and subversion. The Federation has committed itself to the complete eradication of the United States as a geopolitical entity."
- USA_fire_protocol_confidence: "Fire Protocol Confidence"
- USA_fire_protocol_confidence_desc: "Initial field reports show that fire works against early organisms. The conclusion is reassuring. The confidence drawn from it is premature."
- EFH_first_vagrant_info: "Knox county research"
- EFH_first_vagrant_info_desc: "A series of classified files about vagrant and parasite biology. As well as notes on the American military. Written by the 1st vagrant."
 
  PRODUCTION_MATERIALS_FISSILE_MATERIAL: "Fissile Material"
  fissile_material_desc: "Fissile material used in advanced energy systems and nuclear weaponry. Critical for industrial and military applications. Obtained through mining, enrichment, or trade."
 
 
 
- CHN_mobilize_the_nation: "Mobilise the Nation"
- CHN_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
-
- CHN_crisis_governance: "Crisis Governance"
- CHN_crisis_governance_desc: "Emergency administration moves the decisions into a smaller room. Fewer people have to be convinced of anything now."
-
- CHN_popular_mandate: "Popular Mandate"
- CHN_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
-
- CHN_wartime_mandate: "Wartime Mandate"
- CHN_wartime_mandate_desc: "The emergency powers get written into law, with an end date nobody expects to honour."
-
- CHN_industrial_base: "Expand the Industrial Base"
- CHN_industrial_base_desc: "Civilian factory construction accelerates. The programme is costed through 2027."
-
- CHN_arms_manufacture: "Arms Manufacture"
- CHN_arms_manufacture_desc: "New military plants, sited inland where the maps still say inland is safe."
-
- CHN_war_economy: "War Economy"
- CHN_war_economy_desc: "The economy converts to war production in full. The paperwork calls it temporary."
-
- CHN_infrastructure_push: "Infrastructure Push"
- CHN_infrastructure_push_desc: "Roads and rail get rebuilt on the routes we still control. The rest of the map is left off the plan."
-
- CHN_resource_extraction: "Resource Extraction"
- CHN_resource_extraction_desc: "Mining and extraction expand to whatever we can reach without an escort. Imports are no longer something to plan around."
-
- CHN_logistics_network: "Logistics Network"
- CHN_logistics_network_desc: "Supply runs deeper into our own territory than it used to, because that is where the fronts are now."
-
- CHN_university_funding: "University Funding"
- CHN_university_funding_desc: "Research funding goes up. The universities that are still open take it and do not ask how long it lasts."
-
- CHN_applied_sciences: "Applied Sciences"
- CHN_applied_sciences_desc: "Funding moves to whatever can be built this year. The longer programmes are quietly wound down."
-
- CHN_tech_acceleration: "Technology Acceleration"
- CHN_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
-
-
- JAP_mobilize_the_nation: "Mobilise the Nation"
- JAP_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
-
- JAP_crisis_governance: "Crisis Governance"
- JAP_crisis_governance_desc: "Emergency administration moves the decisions into a smaller room. Fewer people have to be convinced of anything now."
-
- JAP_popular_mandate: "Popular Mandate"
- JAP_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
-
- JAP_wartime_mandate: "Wartime Mandate"
- JAP_wartime_mandate_desc: "The emergency powers get written into law, with an end date nobody expects to honour."
-
- JAP_industrial_base: "Expand the Industrial Base"
- JAP_industrial_base_desc: "Civilian factory construction accelerates. The programme is costed through 2027."
-
- JAP_arms_manufacture: "Arms Manufacture"
- JAP_arms_manufacture_desc: "New military plants, sited inland where the maps still say inland is safe."
-
- JAP_war_economy: "War Economy"
- JAP_war_economy_desc: "The economy converts to war production in full. The paperwork calls it temporary."
-
- JAP_infrastructure_push: "Infrastructure Push"
- JAP_infrastructure_push_desc: "Roads and rail get rebuilt on the routes we still control. The rest of the map is left off the plan."
-
- JAP_resource_extraction: "Resource Extraction"
- JAP_resource_extraction_desc: "Mining and extraction expand to whatever we can reach without an escort. Imports are no longer something to plan around."
-
- JAP_logistics_network: "Logistics Network"
- JAP_logistics_network_desc: "Supply runs deeper into our own territory than it used to, because that is where the fronts are now."
-
- JAP_university_funding: "University Funding"
- JAP_university_funding_desc: "Research funding goes up. The universities that are still open take it and do not ask how long it lasts."
-
- JAP_applied_sciences: "Applied Sciences"
- JAP_applied_sciences_desc: "Funding moves to whatever can be built this year. The longer programmes are quietly wound down."
-
- JAP_tech_acceleration: "Technology Acceleration"
- JAP_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
-
-
- OCE_mobilize_the_nation: "Mobilise the Nation"
- OCE_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
-
- OCE_crisis_governance: "Crisis Governance"
- OCE_crisis_governance_desc: "Emergency administration moves the decisions into a smaller room. Fewer people have to be convinced of anything now."
-
- OCE_popular_mandate: "Popular Mandate"
- OCE_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
-
- OCE_wartime_mandate: "Wartime Mandate"
- OCE_wartime_mandate_desc: "The emergency powers get written into law, with an end date nobody expects to honour."
-
- OCE_industrial_base: "Expand the Industrial Base"
- OCE_industrial_base_desc: "Civilian factory construction accelerates. The programme is costed through 2027."
-
- OCE_arms_manufacture: "Arms Manufacture"
- OCE_arms_manufacture_desc: "New military plants, sited inland where the maps still say inland is safe."
-
- OCE_war_economy: "War Economy"
- OCE_war_economy_desc: "The economy converts to war production in full. The paperwork calls it temporary."
-
- OCE_infrastructure_push: "Infrastructure Push"
- OCE_infrastructure_push_desc: "Roads and rail get rebuilt on the routes we still control. The rest of the map is left off the plan."
-
- OCE_resource_extraction: "Resource Extraction"
- OCE_resource_extraction_desc: "Mining and extraction expand to whatever we can reach without an escort. Imports are no longer something to plan around."
-
- OCE_logistics_network: "Logistics Network"
- OCE_logistics_network_desc: "Supply runs deeper into our own territory than it used to, because that is where the fronts are now."
-
- OCE_university_funding: "University Funding"
- OCE_university_funding_desc: "Research funding goes up. The universities that are still open take it and do not ask how long it lasts."
-
- OCE_applied_sciences: "Applied Sciences"
- OCE_applied_sciences_desc: "Funding moves to whatever can be built this year. The longer programmes are quietly wound down."
-
- OCE_tech_acceleration: "Technology Acceleration"
- OCE_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
-
-
- SAC_mobilize_the_nation: "Mobilise the Nation"
- SAC_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
-
- SAC_crisis_governance: "Crisis Governance"
- SAC_crisis_governance_desc: "Emergency administration moves the decisions into a smaller room. Fewer people have to be convinced of anything now."
-
- SAC_popular_mandate: "Popular Mandate"
- SAC_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
-
- SAC_wartime_mandate: "Wartime Mandate"
- SAC_wartime_mandate_desc: "The emergency powers get written into law, with an end date nobody expects to honour."
-
- SAC_industrial_base: "Expand the Industrial Base"
- SAC_industrial_base_desc: "Civilian factory construction accelerates. The programme is costed through 2027."
-
- SAC_arms_manufacture: "Arms Manufacture"
- SAC_arms_manufacture_desc: "New military plants, sited inland where the maps still say inland is safe."
-
- SAC_war_economy: "War Economy"
- SAC_war_economy_desc: "The economy converts to war production in full. The paperwork calls it temporary."
-
- SAC_infrastructure_push: "Infrastructure Push"
- SAC_infrastructure_push_desc: "Roads and rail get rebuilt on the routes we still control. The rest of the map is left off the plan."
-
- SAC_resource_extraction: "Resource Extraction"
- SAC_resource_extraction_desc: "Mining and extraction expand to whatever we can reach without an escort. Imports are no longer something to plan around."
-
- SAC_logistics_network: "Logistics Network"
- SAC_logistics_network_desc: "Supply runs deeper into our own territory than it used to, because that is where the fronts are now."
-
- SAC_university_funding: "University Funding"
- SAC_university_funding_desc: "Research funding goes up. The universities that are still open take it and do not ask how long it lasts."
-
- SAC_applied_sciences: "Applied Sciences"
- SAC_applied_sciences_desc: "Funding moves to whatever can be built this year. The longer programmes are quietly wound down."
-
- SAC_tech_acceleration: "Technology Acceleration"
- SAC_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
-
-
- AFR_mobilize_the_nation: "Mobilise the Nation"
- AFR_mobilize_the_nation_desc: "With the quickly worsening state of the world, we have no choice but to prepare our nation for conflict."
-
- AFR_crisis_governance: "Crisis Governance"
- AFR_crisis_governance_desc: "Emergency administration moves the decisions into a smaller room. Fewer people have to be convinced of anything now."
-
- AFR_popular_mandate: "Popular Mandate"
- AFR_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
-
- AFR_wartime_mandate: "Wartime Mandate"
- AFR_wartime_mandate_desc: "The emergency powers get written into law, with an end date nobody expects to honour."
-
- AFR_industrial_base: "Expand the Industrial Base"
- AFR_industrial_base_desc: "Civilian factory construction accelerates. The programme is costed through 2027."
-
- AFR_arms_manufacture: "Arms Manufacture"
- AFR_arms_manufacture_desc: "New military plants, sited inland where the maps still say inland is safe."
-
- AFR_war_economy: "War Economy"
- AFR_war_economy_desc: "The economy converts to war production in full. The paperwork calls it temporary."
-
- AFR_infrastructure_push: "Infrastructure Push"
- AFR_infrastructure_push_desc: "Roads and rail get rebuilt on the routes we still control. The rest of the map is left off the plan."
-
- AFR_resource_extraction: "Resource Extraction"
- AFR_resource_extraction_desc: "Mining and extraction expand to whatever we can reach without an escort. Imports are no longer something to plan around."
-
- AFR_logistics_network: "Logistics Network"
- AFR_logistics_network_desc: "Supply runs deeper into our own territory than it used to, because that is where the fronts are now."
-
- AFR_university_funding: "University Funding"
- AFR_university_funding_desc: "Research funding goes up. The universities that are still open take it and do not ask how long it lasts."
-
- AFR_applied_sciences: "Applied Sciences"
- AFR_applied_sciences_desc: "Funding moves to whatever can be built this year. The longer programmes are quietly wound down."
-
- AFR_tech_acceleration: "Technology Acceleration"
- AFR_tech_acceleration_desc: "A dedicated research division is stood up, staffed by whoever could be spared from the work already running."
-
- liberty_ethos_focus_desc: "Civil institutions hold their shape under pressure. Harder to push the country somewhere it does not want to go, and easier to spend political capital when it counts."
- militarism_focus_desc: "The armed forces are treated as an instrument of policy rather than a last resort. Wars are justified faster and provoke less alarm abroad."
- volunteer_corps_focus_desc: "A standing framework for sending troops to other people's wars, and a lower bar for doing it."
- foreign_expeditions_focus_desc: "Expeditionary deployments are treated as training. Larger contingents go out, and the army learns from what happens to them."
- why_we_fight_focus_desc: "The public has been told what the war is for, in terms it accepts. The country absorbs losses that would otherwise end it."
- military_youth_focus_desc: "Military instruction begins before conscription age. Recruits arrive already knowing the basics, and there are more of them."
- paramilitarism_focus_desc: "Armed organisations outside the regular chain of command. Useful manpower, and formations that hold together under strain."
- political_commissars_focus_desc: "Political officers attached to units. Morale is maintained and the home front stays quiet, by whichever means the posting requires."
- ideological_fanaticism_focus_desc: "Belief substituted for calculation. The country will keep fighting well past the point where it should have stopped."
-
-
 
 
 
  srp_last_decade_t1_parasite: "Contained Growth"
- srp_last_decade_t1_parasite_desc: "Containment efforts have disrupted the luxsynthesis cycle across much of the network. Biomass conversion runs below capacity, and the Dispatcher network struggles to relay coordination signals through damaged territory."
+ srp_last_decade_t1_parasite_desc: "Containment efforts are disrupting the luxsynthesis cycle across much of the network. Biomass conversion runs below capacity, and the Dispatcher network struggles to relay coordination signals."
  srp_last_decade_t1_human: "Coordinated Response"
- srp_last_decade_t1_human_desc: "Surviving institutions remain intact and well coordinated. Nothing has yet been asked of them that they were not already built to do."
+ srp_last_decade_t1_human_desc: "Institutions are intact and well coordinated. Nothing has yet been asked of them that they were not already built to do."
 
  srp_last_decade_t2_parasite: "Early Setbacks"
- srp_last_decade_t2_parasite_desc: "Pockets of the network remain cut off from the wider luxsynthesis cycle, slowing biomass conversion and Dispatcher coordination in affected territory."
+ srp_last_decade_t2_parasite_desc: "Parts of the network sit outside the luxsynthesis cycle. Biomass conversion and Dispatcher relays both run slow there."
  srp_last_decade_t2_human: "Holding the Line"
- srp_last_decade_t2_human_desc: "Institutions are under strain and still largely functional. The disruption is measurable and nobody has had to explain it publicly yet."
+ srp_last_decade_t2_human_desc: "Institutions are under strain and still largely functional."
 
  srp_last_decade_t4_parasite: "Spreading Network"
- srp_last_decade_t4_parasite_desc: "The network has reclaimed lost ground. Luxsynthesis output and Dispatcher coordination both run ahead of baseline across the expanding territory."
+ srp_last_decade_t4_parasite_desc: "Luxsynthesis runs ahead of what the network needs, and the Dispatchers relay with room to spare. Growth comes easily."
  srp_last_decade_t4_human: "Strained Resources"
- srp_last_decade_t4_human_desc: "Supply lines and research programmes are increasingly disrupted. Events are moving faster than the institutions meant to manage them."
+ srp_last_decade_t4_human_desc: "Supply lines are thin and research is underfunded. Institutions are stretched before anything has tested them."
 
  srp_last_decade_t5_parasite: "Network Ascendant"
  srp_last_decade_t5_parasite_desc: "The network operates at its highest recorded efficiency. Nothing in it is waiting on anything else."
  srp_last_decade_t5_human: "Last Decade: Diminished Capacity"
- srp_last_decade_t5_human_desc: "The world's remaining institutions are buckling under the weight of a war that should have ended years ago. Ministries are triaging which of their statutory duties to stop performing."
+ srp_last_decade_t5_human_desc: "Governments start the decade short on money, staff and patience. Ministries are already deciding which of their duties to drop first."
 
 
- IRS_last_decade_threshold_difficulty_tt: "Only available on the Telotic difficulty, The Last Decade."
+ IRS_last_decade_threshold_difficulty_tt: "Only available on the Telotic difficulty: The Last Decade."
 
  MATCHMAKING_FILTER_NOPASSWORD: "No password"
  MATCHMAKING_FILTER_NOTFULL: "Not Full"
@@ -750,7 +518,7 @@
  FE_OTHER_COUNTRIES: "Other Countries"
  FE_RANDOM_COUNTRY_ERROR_NO_COUNTRIES: "No valid countries"
 
- srp_TITLE: "Scape & Run"
+ srp_TITLE: "Overwinter"
  the_call: "The Call"
  prey: "Prey"
  parasite: "Parasite"
@@ -771,19 +539,8 @@
  fathomless: "Fathomless"
  sorrow: "Sorrow"
  serenity: "Serenity"
-knox_county: "Knox County"
+ knox_county: "Knox County"
 
- train_equipment: "Train"
- train_equipment_desc: "Trains transport supplies from the Supply Capital to Supply Hubs connected by rail. Without them, front-line forces go critically undersupplied."
- train_equipment_1: "Civilian Train"
- train_equipment_1_desc: "Requisitioned civilian freight rolling stock. Cheap to produce and easy to replace, but unarmoured and vulnerable to attack."
- train_equipment_2: "Military Train"
- train_equipment_2_desc: "Reinforced rolling stock built for wartime logistics. Armoured bodywork and hardened couplings make it far more survivable than requisitioned civilian equipment."
-
- ld_civilian_train: "Civilian Requisition"
- ld_civilian_train_desc: "Nationalises civilian freight infrastructure for military logistics. Cheap trains, fast to produce. The baseline for keeping armies supplied across rail networks."
- ld_military_train: "Military Train Programme"
- ld_military_train_desc: "Dedicated military rolling stock with armoured construction. Substantially more survivable than requisitioned civilian trains, at higher production cost."
 
  STATE_CATEGORY_srp_megaregion: "Megaregion"
  srp_megaregion: "Megaregion"
@@ -793,205 +550,6 @@ knox_county: "Knox County"
  SRP_european_pact_name: "European Pact"
  SRP_parasite_hive_name: "The Hive"
 
-
- geo_volunteers.1.t: "Africa Falls Under Assault"
- geo_volunteers.1.d: "The Iris parasite faction has declared war on the African Confederation. Our forces are watching. The question is whether we commit."
- geo_volunteers.1.a: "Send what we can. Africa must hold."
- geo_volunteers.1.b: "We cannot afford to get involved right now."
-
- SRP_volunteers_to_africa_idea: "Volunteers to Africa"
- SRP_volunteers_to_africa_idea_desc: "Our forces have joined the African front against the parasite assault. The commitment has hardened national resolve."
-
-
- EFH_global_positioning: "Global Positioning"
- EFH_global_positioning_desc: "The European Federation is not content to remain a regional power. The Pacific, East Asia and South America are all in play."
-
- EFH_pacific_partnership: "Pacific Partnership"
- EFH_pacific_partnership_desc: "Japan has long sat in the Federation's sphere of influence. Now the Federation formalises that relationship, deepening economic and strategic ties against American encroachment."
-
- EFH_japan_tech_exchange: "Japan Technology Exchange"
- EFH_japan_tech_exchange_desc: "The Federation and Japan open a joint technology corridor."
-
- EFH_pacific_defense_pact: "Pacific Defence Pact"
- EFH_pacific_defense_pact_desc: "The Federation formally guarantees Japan's security. The pact is announced publicly, drawing a line the United States cannot ignore. The Pacific balance has shifted."
-
- EFH_south_american_outreach: "South American Outreach"
- EFH_south_american_outreach_desc: "The Federation begins a quiet economic campaign in South America. Infrastructure investment, trade credits, and diplomatic personnel establish a foothold in what the United States considers its backyard."
-
- EFH_SAC_infrastructure_program: "South American Infrastructure Programme"
- EFH_SAC_infrastructure_program_desc: "The Federation's construction contracts in the South American Confederation become impossible to hide. Washington notices. The era of quiet competition is ending."
-
- EFH_hemispheric_challenge: "Hemispheric Challenge"
- EFH_hemispheric_challenge_desc: "The Federation formally asserts an interest in the Western Hemisphere's stability. The Monroe Doctrine has a challenger for the first time in a century."
-
- EFH_beijing_channel: "Beijing Back-Channel"
- EFH_beijing_channel_desc: "Away from public scrutiny, the Federation opens a diplomatic channel with Beijing. Both sides have reasons to want a counterweight to Washington's global presence."
-
- EFH_trade_normalization: "Trade Normalisation"
- EFH_trade_normalization_desc: "The Federation and China normalise trade relations. New contracts flow through European ports. The United States takes note with considerable displeasure."
-
- EFH_eurasian_buffer_doctrine: "Eurasian Buffer Doctrine"
- EFH_eurasian_buffer_doctrine_desc: "The Federation signals that China is a natural buffer against American influence in Eurasia. The question is whether Beijing agrees, and how far it is willing to lean."
-
-
-
- EFH_japan_sphere_tt: "Japan is drawn deeper into the Federation's security and economic sphere."
-
-
-
-
-
-
-
-
-
-
- EFH_sino_efh_partnership: "Sino-European Partnership"
- EFH_sino_efh_partnership_desc: "Beijing has answered the buffer doctrine in the only language that matters: agreement. Trade runs both ways, research is shared, and the two continental powers coordinate against a threat neither can face alone. The relationship is pragmatic on both sides, and the more durable for it."
-
- EFH_sino_research_exchange_active: "Sino-European Research Exchange"
- EFH_sino_research_exchange_active_desc: "Joint laboratories and shared findings on parasite biology and containment. The exchange is temporary by design, renewed only while both governments find it useful."
-
- CHN_efh_partnership: "European Partnership"
- CHN_efh_partnership_desc: "China has tilted toward the European Federation rather than wait out the decade in isolation. The arrangement steadies Beijing's institutions and opens European markets, for as long as the partnership serves Chinese interests."
-
- EFH_eurasian_coordination: "Eurasian Coordination"
-
- EFH_sino_logistics_corridor: "Open a Sino-European Logistics Corridor"
- EFH_sino_logistics_corridor_desc: "Route Chinese industrial output through the partnership to reinforce European production. Renewable while the corridor stays open."
- EFH_sino_logistics_corridor_tt: "Adds steel to the capital region for 180 days."
- EFH_sino_trade_groundwork_tt: "Trade normalisation keeps the corridor cheap to run: additional political power."
-
- EFH_sino_research_exchange: "Convene a Sino-European Research Exchange"
- EFH_sino_research_exchange_desc: "Stand up joint laboratories on parasite biology and containment. Grants a temporary research bonus while the exchange runs."
-
- EFH_sino_eastern_intelligence: "Share the Eastern Infestation Picture"
- EFH_sino_eastern_intelligence_desc: "Pool what Beijing and Brussels each know about the parasite advance across the Asian landmass. A one-time intelligence hand-off on the Iris."
- EFH_sino_contact_groundwork_tt: "The Beijing back-channel makes the first hand-off larger: additional intelligence on the Iris."
-
-
- USA_great_power_doctrine: "Great Power Doctrine"
- USA_great_power_doctrine_desc: "The United States reaffirms itself as the world's leading power. The Federation's growing ambitions will not go unanswered."
-
- USA_monroe_doctrine_reassertion: "Monroe Doctrine Reassertion"
- USA_monroe_doctrine_reassertion_desc: "The Federation has moved into the Western Hemisphere. The United States formally reasserts the Monroe Doctrine: the Americas are not a stage for European power games."
-
- USA_expel_EFH_influence: "Expel European Influence"
- USA_expel_EFH_influence_desc: "American economic pressure targets Federation markets. Trade barriers go up across the Western Hemisphere. Federation contracts in South America are declared unwelcome."
-
- USA_western_hemisphere_bloc: "Western Hemisphere Bloc"
- USA_western_hemisphere_bloc_desc: "The United States formalizes its hemispheric alliance. If the Federation will not back down from the Americas, America will not back down either. The standoff has found its fault line."
-
- USA_pacific_containment: "Pacific Containment"
- USA_pacific_containment_desc: "The United States reinforces its Pacific security guarantees. Japan, South Korea, and the broader Pacific rim are placed firmly within the American umbrella."
-
- USA_beijing_confrontation: "Beijing Confrontation"
- USA_beijing_confrontation_desc: "Washington signals to Beijing that its relationship with the Federation will have consequences. Trade restrictions are tightened. The pressure is on."
-
- USA_pacific_war_authorization: "Pacific War Authorization"
- USA_pacific_war_authorization_desc: "With the Federation entrenched in Japan and the Pacific containment line drawn, the United States authorizes military action if necessary. The cold war is becoming something else."
-
-
-
-
-
- USA_efh_market_exclusion: "American Market Exclusion"
- USA_efh_market_exclusion_desc: "The United States has shut American markets to the European Federation."
-
-
-
-
- USA_pacific_containment_tt: "The United States secures the Pacific rim against Federation expansion."
-
-
- efh_geo.1.t: "The Pacific Pact is Signed"
- efh_geo.1.d: "Japan has formally aligned with the European Federation. The defence pact is public, the terms are binding, and Washington has received its copy. The Pacific balance has shifted in a way that will be difficult to reverse."
- efh_geo.1.a: "A new era in European-Pacific relations begins."
- efh_geo_japan_pact_tt: "The United States is informed of the Japan-Federation defence pact."
-
- efh_geo.2.t: "Beijing Considers Its Position"
- efh_geo.2.d: "The Federation's Eurasian buffer doctrine has placed China at a decision point. Beijing can lean toward the European partnership, or it can maintain the careful neutrality that has served it well. The choice is Beijing's to make."
- efh_geo.2.a: "China leans toward the Federation. The Eurasian buffer doctrine holds."
- efh_geo.2.b: "China remains neutral. Better to wait and see."
- efh_geo_china_efh_tt: "China formally tilts toward the Federation's diplomatic position."
- efh_geo_china_neutral_tt: "China chooses strategic neutrality for now."
-
- efh_geo.3.t: "The Federation Claims Hemispheric Interest"
- efh_geo.3.d: "The Federation has formally declared a stake in Western Hemisphere stability. Washington is reading the communique with fury. The Monroe Doctrine has a challenger."
- efh_geo.3.a: "The Federation is in the Americas. Let Washington respond."
- efh_geo_hemispheric_tt: "The United States receives news of the Federation's hemispheric challenge."
-
- usa_efh_war.1.t: "The Federation Enters the Americas"
- usa_efh_war.1.d: "Intelligence confirms what was suspected: the Federation is establishing a real economic and strategic presence in South America, in sectors and at a scale that no commercial case explains."
- usa_efh_war.1.a: "Issue a formal protest. The Monroe Doctrine applies."
- usa_efh_war.1.b: "Monitor the situation. No reason to escalate yet."
-
- usa_efh_war.2.t: "The Federation Has Japan"
- usa_efh_war.2.d: "The Pacific Defence Pact is confirmed. Japan, which Washington considered a reliable partner, has signed a formal security arrangement with the European Federation. The Pacific strategic map has changed."
- usa_efh_war.2.a: "Demand Japan reconsider. This will not stand."
- usa_efh_war.2.b: "Accelerate Pacific containment. We need to reinforce our own position."
-
- usa_efh_war.3.t: "The Ultimatum"
- usa_efh_war.3.d: "The diplomatic standoff has reached its end. Both the United States and the European Federation have drawn lines neither is willing to abandon. Someone must blink. Or someone must fire."
- usa_efh_war.3.a: "Issue the ultimatum. If they do not withdraw, we will make them."
- usa_efh_war.3.b: "We cannot fight this war. Stand down and find another path."
-
-
- SRP_political_interference_category: "Political Operations"
- SRP_political_interference_category_desc: "Quiet operations to shape the rival power's internal politics, without moving forces or firing shots."
-
- USA_stoke_ef_separatism: "Back Federation Separatist Movements"
- USA_stoke_ef_separatism_desc: "American intelligence channels can quietly fund and amplify movements inside Federation that want stronger regional autonomy from H&A's grip. It won't fracture Europe overnight, but it makes Brussels harder to govern."
- USA_stoke_ef_separatism_tt: "Increases Federation separatist pressure and Sovereigntist party vote share."
- USA_groundwork_separatism_tt: "The pre-crisis Atlantic intelligence groundwork deepens the operation: additional separatist pressure and Sovereigntist support."
-
- USA_fund_ha_lobbying_external: "Fund H&A Lobbying Networks"
- USA_fund_ha_lobbying_external_desc: "Washington has always preferred a corporate-run Europe to a statist one. H&A's pro-market agenda aligns with American interests, and their parliamentary contacts don't ask too many questions about where the money comes from."
- USA_fund_ha_lobbying_external_tt: "Shifts the Federation's internal balance of power toward H&A Corporation."
-
- EFH_back_us_credibility: "Endorse American Crisis Leadership"
- EFH_back_us_credibility_desc: "A public statement of confidence in Washington's parasite response costs the Federation little but gives the American government political breathing room. A stable United States is a more predictable partner."
- EFH_back_us_credibility_tt: "Improves American public trust in federal institutions."
-
- EFH_undermine_us_narrative: "Leak American Crisis Failures"
- EFH_undermine_us_narrative_desc: "European intelligence has documented American mishandling of the parasite situation in exquisite detail. The files are embarrassing. Releasing them to international press would make Washington's job considerably harder."
- EFH_undermine_us_narrative_tt: "Damages American public trust in federal institutions."
-
-
- EFH_establish_atlantic_network: "Establish the Atlantic Network"
- EFH_establish_atlantic_network_desc: "Intelligence operations against American interests are authorised. A permanent collection network inside the United States requires money, patience, and people willing to disappear into American life for years. The federal services have all three."
- EFH_atlantic_network_groundwork_tt: "The pre-crisis northern intelligence groundwork shortens the build-up: 25 Political Power recovered and additional intelligence on American forces."
-
- EFH_intel_procurement_espionage: "Procurement Espionage"
- EFH_intel_procurement_espionage_desc: "American defence procurement leaks like any other bureaucracy. Contract documents, test data, and supplier specifications can be bought, copied, or photographed. Each operation carries a risk of exposure."
- EFH_procurement_espionage_risk_tt: "75% chance of clean extraction (+10 Political Power). 25% chance of exposure (EF-US escalation rises, American war support rises)."
-
- EFH_intel_canadian_listening_posts: "Canadian Listening Posts"
- EFH_intel_canadian_listening_posts_desc: "The intelligence groundwork laid on the northern frontier before the crisis makes a permanent signals presence possible. Listening stations along the Canadian border watch American military traffic around the clock. Washington will eventually notice."
- EFH_canadian_listening_posts_idea: "Canadian Listening Posts"
- EFH_canadian_listening_posts_idea_desc: "Signals stations on the northern frontier track American military traffic."
-
-
- EFH_propose_research_accord: "Propose Anti-Parasite Research Accord"
- EFH_propose_research_accord_desc: "A research-sharing arrangement with Washington. The Federation wants American bioanalysis data, Washington wants European field containment data, and neither side has said yet whether that is a trade."
- EFH_propose_research_accord_tt: "The Federation immediately begins consolidated research. The United States receives a proposal event and may accept or decline."
-
- efh_geo.4.t: "Brussels Proposes a Research Accord"
- efh_geo.4.d: "Brussels is reaching out. The European Federation has proposed a formal exchange of parasite research data, consolidating American bioanalysis findings with European field containment records. The science case is sound. The political case is more complicated."
- efh_geo.4.a: "Accept. This is bigger than our rivalry."
- efh_geo.4.b: "Decline. We are not ready to share this data with Europe."
-
- efh_geo.5.t: "Washington Has Replied"
- efh_geo.5.d: "The United States has responded to our research accord proposal."
- efh_geo.5.a: "Understood. We continue with what we have."
- efh_geo_accord_accepted_tt: "The United States accepted the accord. Both parties gain consolidated research access."
- efh_geo_accord_declined_tt: "The United States declined. The Federation's own research programme proceeds independently."
-
-
- EFH_joint_research_accord: "Joint Research Accord"
- EFH_joint_research_accord_desc: "The Federation and the United States have agreed to pool parasite research data. Shared containment protocols and bioanalysis records are accelerating the scientific effort on both fronts."
-
- USA_joint_research_accord: "Joint Research Accord"
- USA_joint_research_accord_desc: "The United States has agreed to share parasite research data with the European Federation. European field containment records are filling gaps in American bioanalysis programs."
+ LD_BECKON_GLOBE_TT: "§HThe Spread§!\nStates the hive holds or has more than half infested: §R[?global.LD_hive_states|0]§! of [?global.LD_world_states|0].\n\nWorld tension is the figure under the globe."
 
 

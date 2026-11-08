@@ -86,7 +86,7 @@ irs_assimilation = {
 		}
 
 		ai_will_do = {
-			base = 8
+			base = 200
 		}
 	}
 

@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		EFH_market_confidence_collapse = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = idea_great_depression
+			modifier = {
+				stability_factor = -0.08
+				political_power_factor = -0.15
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		EFH_cat_feud = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				stability_factor = -0.03
+				political_power_factor = -0.05
+			}
+		}
+
+		EFH_tractor_incident = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+}

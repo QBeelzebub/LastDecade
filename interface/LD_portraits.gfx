@@ -1,0 +1,48 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_portrait_USA_donald_trump"
+		texturefile = "gfx/leaders/LD/USA_donald_trump.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LD_iris"
+		texturefile = "gfx/leaders/LD/iris.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LD_tethys"
+		texturefile = "gfx/leaders/LD/tethys.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LD_vagrant_purple"
+		texturefile = "gfx/leaders/LD/vagrant_purple.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LD_vagrant_yellow"
+		texturefile = "gfx/leaders/LD/vagrant_yellow.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LD_vagrant_pink"
+		texturefile = "gfx/leaders/LD/vagrant_pink.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LD_vagrant_red"
+		texturefile = "gfx/leaders/LD/vagrant_red.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LD_vagrant_purple"
+		texturefile = "gfx/interface/ideas/LD_vagrant_purple.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LD_vagrant_yellow"
+		texturefile = "gfx/interface/ideas/LD_vagrant_yellow.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LD_vagrant_pink"
+		texturefile = "gfx/interface/ideas/LD_vagrant_pink.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LD_vagrant_red"
+		texturefile = "gfx/interface/ideas/LD_vagrant_red.dds"
+	}
+}

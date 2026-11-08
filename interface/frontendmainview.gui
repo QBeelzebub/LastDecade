@@ -19,7 +19,20 @@ guiTypes = {
 			quadTextureSprite ="GFX_frontend_bg"
 			alwaystransparent = yes
 		}
-		
+
+		containerWindowType = {
+			name = "srp_title_layer"
+			position = { x=0 y=0 }
+			size = { width = 100% height = 100% }
+			clipping = no
+
+			background = {
+				name = "srp_title_bg"
+				quadTextureSprite ="GFX_srp_title_bg"
+				alwaystransparent = yes
+			}
+		}
+
 	}
 	
 	containerWindowType = {
@@ -212,7 +225,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="frontend_game_logo"
-			spriteType = "GFX_frontend_game_logo"
+			spriteType = "GFX_srp_blank"
 			position = { x= 20 y = 20 }
 		}
 		
@@ -221,12 +234,12 @@ guiTypes = {
 	
 	containerWindowType = {
 		name ="mainmenu_panel_upperright"
-		position = { x=0 y =-1 }
-		show_position = { x=-256 y =-1 }
+		position = { x=0 y =-190 }
+		show_position = { x=-256 y =-190 }
 		animation_type = decelerated
 		animation_time = 1000					
-		size = { width = 256 height = 768}
-		Orientation = upper_right
+		size = { width = 256 height = 190}
+		Orientation = lower_right
 
 		ButtonType = {
 			name = "achievements_button"
@@ -238,35 +251,35 @@ guiTypes = {
 		iconType =
 		{
 			name ="frontend_dev_logo"
-			spriteType = "GFX_frontend_dev_logo"
-			position = { x= 15 y = 15 }
+			spriteType = "GFX_srp_ha_logo"
+			position = { x= 136 y = 15 }
 		}
 		
 		iconType =
 		{
 			name ="pdx_int_logo"
-			spriteType = "GFX_pdx_int_logo"
+			spriteType = "GFX_srp_blank"
 			position = { x= 135 y = 15 }
-		}		
-		
+		}
+
 	}		
 
 	containerWindowType = {
 		name = "mainmenu_single_player"
-		position = { x=0 y =0}
+		position = { x=230 y =0}
 		size = { width = 320 height = 395}
-		Orientation = CENTER
+		Orientation = CENTER_LEFT
 		Origo = center	
 				
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
+			quadTextureSprite ="GFX_srp_menu_panel"
 		}
 		
 		ButtonType = {
 			name = "sp_continue_button"
 			position = { x = 16 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_green"	
 			buttonText = "FE_CONTINUE"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -308,7 +321,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_new_button"
 			position = { x = 16 y = 58 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_green"	
 			buttonText = "FE_NEW"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -318,7 +331,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_load_button"
 			position = {  x = 16 y = 98 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_blue"	
 			buttonText = "MENU_BAR_LOAD"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -328,7 +341,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_tutorial_button"
 			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_amber"	
 			buttonText = "FE_TUTORIAL"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -338,7 +351,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_back_button"
 			position = { x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_red"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
 			clicksound = click_close
@@ -349,25 +362,25 @@ guiTypes = {
 
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=0 y =0}
-		size = { width = 320 height = 450 }
-		Orientation = CENTER
+		position = { x=230 y =0}
+		size = { width = 320 height = 390 }
+		Orientation = CENTER_LEFT
 		Origo = center		
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 320 y = 575 }
+			position = { x = 320 y = 390 }
 		}
 				
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
+			quadTextureSprite ="GFX_srp_menu_panel"
 		}
 			
 		ButtonType = {
 			name = "single_player_button"
 			position = { x = 16 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			quadTextureSprite ="GFX_srp_menu_button_green"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
 			clicksound = click_default			
@@ -377,7 +390,7 @@ guiTypes = {
 		ButtonType = {
 			name = "multi_player_button"
 			position = { x = 16 y = 58}
-			quadTextureSprite ="GFX_main_lobby_button"
+			quadTextureSprite ="GFX_srp_menu_button_blue"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
 			clicksound = click_default
@@ -394,7 +407,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 0 y = 411 }
+			position = { x = 0 y = 346 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -407,7 +420,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name = "srp_mod_version_label"
-			position = { x = 0 y = 555 }
+			position = { x = 0 y = 364 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -419,14 +432,14 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 0 y = 539 }
+			position = { x = 0 y = 346 }
 		}
 		
 		
 		ButtonType = {
 			name = "settings_button"
 			position = { x = 16 y = 98 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_grey"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -436,7 +449,7 @@ guiTypes = {
 		buttonType = {
 			name = "career_profile_button"
 			position = { x = 16 y = 138 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			quadTextureSprite ="GFX_srp_menu_button_amber"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -455,7 +468,7 @@ guiTypes = {
 		buttonType = {
 			name = "friends_button"
 			position = { x = 16 y = 178 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			quadTextureSprite ="GFX_srp_menu_button_teal"
 			buttonText = "MENU_BAR_FRIENDS"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -465,7 +478,7 @@ guiTypes = {
 		ButtonType = {
 			name = "credits_button"
 			position = {  x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_purple"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
@@ -475,7 +488,7 @@ guiTypes = {
 		ButtonType = {
 			name = "nudge_button"
 			position = { x = 16 y = 258 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_srp_menu_button_grey"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
 		}
@@ -483,7 +496,7 @@ guiTypes = {
 		ButtonType = {
 			name = "exit_button"
 			position = { x = 16 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			quadTextureSprite ="GFX_srp_menu_button_red"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
 			clicksound = click_default
@@ -493,13 +506,13 @@ guiTypes = {
 
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = -2000 y = 336 }
 			spriteType = "GFX_main_lobby_divider"
 		}
 
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 16 y = 352 }
+			position = { x = -2000 y = 352 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -514,7 +527,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "subscription_widget_simp_chinese"
-			position = { x = 16 y = 352 }
+			position = { x = -2000 y = 352 }
 			size = { width = 288 height = 108 }
 			hide = yes
 
@@ -532,7 +545,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "subscription_widget_subscribed"
-			position = { x = 16 y = 352 }
+			position = { x = -2000 y = 352 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -549,24 +562,24 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "mainmenu_social_buttons"
-		position = { x=-50 y=25 }	
+		position = { x=180 y=280 }	
 		size = { width = 240 height = 90 }
-		Orientation = center	
+		Orientation = center_left	
 		origo = center
 		
 		positionType = {
 			name = "position_without_social_gui"
-			position = { x = 0 y = 175 }
+			position = { x = 230 y = 280 }
 		}
 
 		positionType = {
 			name = "subscription_position"
-			position = { x = -50 y = 109 }
+			position = { x = 180 y = 280 }
 		}
 
 		positionType = {
 			name = "subscription_position_without_social_gui"
-			position = { x = 0 y = 239 }
+			position = { x = 230 y = 280 }
 		}
 		
 		containerWindowType = {
@@ -613,87 +626,37 @@ guiTypes = {
 				pdx_tooltip = "SOCIAL_NEW_FRIEND"
 			}
 		}
-        containerWindowType = {
-            name = "first_row"
-			position = { x=48 y=-17 }
-            ButtonType = {
-                name = "homepage_button"
-                position = { x=0 y=0 }
-                quadTextureSprite ="homepage"
-                clicksound = click_default
-                pdx_tooltip = "MENU_HOMEPAGE"
-                scale = 0.9
-            }
-            ButtonType = {
-                name = "forum_button"
-                position = { x=36 y=0 }
-                quadTextureSprite ="forum"
-                clicksound = click_default
-                pdx_tooltip = "MENU_FORUM"
-                web_link = "http://forum.paradoxplaza.com/forum/forumdisplay.php?844-Hearts-of-Iron-IV"
-                scale = 0.9
-            }
-            ButtonType = {
-                name = "discord_button"
-                position = { x=72 y=0 }
-                quadTextureSprite ="discord"
-                pdx_tooltip = "MENU_DISCORD"
-                web_link = "https://discord.gg/hoi4"
-                scale = 0.9
-            }
-            ButtonType = {
-                name = "privacy_policy_button"
-                position = { x=108 y=0 }
-                quadTextureSprite ="privacy"
-                pdx_tooltip = "MENU_PRIVACY_POLICY"
-                scale = 0.9
-            }
-        }
-        containerWindowType = {
-            name = "second_row"
-			position = { x=30 y=19 }
-            ButtonType = {
-                name = "bluesky_button"
-                position = { x=0 y=0 }
-                quadTextureSprite ="bluesky"
-                pdx_tooltip = "MENU_BLUESKY"
-                web_link = "https://bsky.app/profile/hoi.paradoxinteractive.com"
-                scale = 0.9
-            }
-            ButtonType = {
-                name = "twitter_button"
-                position = { x=36 y=0 }
-                quadTextureSprite ="x"
-                pdx_tooltip = "MENU_X"
-                web_link = "https://x.com/hoi_game"
-                scale = 0.9
-            }
-            ButtonType = {
-                name = "facebook_button"
-                position = { x=72 y=0 }
-                quadTextureSprite ="facebook"
-                clicksound = click_default
-                pdx_tooltip = "MENU_FACEBOOK"
-                web_link = "https://www.facebook.com/Heartsofiron"
-                scale = 0.9
-            }
-            ButtonType = {
-                name = "instagram_button"
-                position = { x=108 y=0 }
-                quadTextureSprite ="instagram"
-                pdx_tooltip = "MENU_INSTAGRAM"
-                web_link = "https://www.instagram.com/hearts_of_iron_pdx"
-                scale = 0.9
-            }
-
-            ButtonType = {
-                name = "youtube_button"
-                position = { x=144 y=0 }
-                quadTextureSprite ="youtube"
-                pdx_tooltip = "MENU_YOUTUBE"
-                web_link = "https://www.youtube.com/@HeartsOfIronOfficial"
-                scale = 0.9
-            }
+		containerWindowType = {
+			name = "first_row"
+			position = { x=84 y=0 }
+			ButtonType = {
+				name = "srp_overwinter_button"
+				position = { x=0 y=0 }
+				quadTextureSprite ="GFX_srp_icon_overwinter"
+				clicksound = click_default
+				pdx_tooltip = "SRP_MENU_OVERWINTER"
+				web_link = "https://overwinter.eu"
+				scale = 0.9
+			}
+			ButtonType = {
+				name = "srp_hona_button"
+				position = { x=40 y=0 }
+				quadTextureSprite ="GFX_srp_icon_hona"
+				clicksound = click_default
+				pdx_tooltip = "SRP_MENU_HONA"
+				web_link = "https://guns.lol/Hona"
+				scale = 0.9
+			}
+			ButtonType = {
+				name = "homepage_button"
+				position = { x=-2000 y=0 }
+				quadTextureSprite ="GFX_srp_blank"
+			}
+			ButtonType = {
+				name = "privacy_policy_button"
+				position = { x=-2000 y=0 }
+				quadTextureSprite ="GFX_srp_blank"
+			}
 		}
 	}
 

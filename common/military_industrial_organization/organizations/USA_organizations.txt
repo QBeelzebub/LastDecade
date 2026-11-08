@@ -721,7 +721,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_root
 		name = USA_hii_root
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 
@@ -742,7 +742,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t2a
 		name = USA_hii_t2a
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = USA_hii_root
@@ -758,7 +758,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t2b
 		name = USA_hii_t2b
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_hii_root
@@ -774,7 +774,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t3a
 		name = USA_hii_t3a
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_hii_t2a
@@ -794,7 +794,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t3b
 		name = USA_hii_t3b
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = USA_hii_t2b
@@ -813,7 +813,7 @@ USA_hii_mio = {
 	trait = {
 		token = USA_hii_t4
 		name = USA_hii_t4
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = USA_hii_t3a

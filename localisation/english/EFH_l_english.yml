@@ -1,5 +1,5 @@
 ﻿l_english:
- EFH_power_balance: "Federal vs H&A influence"
+ EFH_power_balance: "Federal - H&A influence"
  EFH_federal_authority_side: "European Federation"
  EFH_ha_corporation_side: "H&A Corporation"
 
@@ -13,105 +13,105 @@
  EFH_bop_ha_total_range: "Corporate Capture"
 
  EFH_bop_ef_low_idea: "Federal Consensus"
- EFH_bop_ef_low_idea_desc: "The European Federation's parliament holds a clear mandate. Political capital flows freely through established channels."
+ EFH_bop_ef_low_idea_desc: "The European Federation's parliament operates with little interruption."
  EFH_bop_ef_medium_idea: "Federal Primacy"
- EFH_bop_ef_medium_idea_desc: "The federal government has reasserted its authority over the defence and security apparatus. H&A operates under tighter oversight."
+ EFH_bop_ef_medium_idea_desc: "The federal government has complete authority over the defence and security apparatus. H&A operates within the confines of the law."
  EFH_bop_ef_total_idea: "Federal Dominance"
- EFH_bop_ef_total_idea_desc: "Brussels is firmly in control. H&A answers to the parliament now, whatever its board minutes say. The army follows a single chain of command."
+ EFH_bop_ef_total_idea_desc: "Amsterdam has complete oversight & control over the Federation. H&A is strictly regulated."
 
  EFH_bop_ha_low_idea: "Corporate Influence"
- EFH_bop_ha_low_idea_desc: "H&A's growing role in the parasite response has earned it real political weight. Its recommendations carry more than they used to."
+ EFH_bop_ha_low_idea_desc: "H&A skirts the law when possible for the public good. Rumours of corruption begin to surface."
  EFH_bop_ha_medium_idea: "Corporate Authority"
- EFH_bop_ha_medium_idea_desc: "H&A now shapes policy as much as it follows it. Its logistics networks and research arms are things the government cannot do without."
+ EFH_bop_ha_medium_idea_desc: "H&A shapes policy when necessary. Its logistics networks and research arms are things Europe cannot do without."
  EFH_bop_ha_total_idea: "Corporate Capture"
- EFH_bop_ha_total_idea_desc: "The line between the European Federation and H&A has all but disappeared. The corporation funds the wars, supplies the armies, and increasingly writes the laws."
+ EFH_bop_ha_total_idea_desc: "The line between the European Federation and H&A has all but disappeared. H&A acts as a driving force of progress."
 
  EFH_balance_of_power_category: "Federal-Corporate Balance"
 
- EFH_assert_federal_authority: "Assert Federal Authority"
- EFH_assert_federal_authority_desc: "The federal government asserts its primacy over the direction of European policy. Spending political capital this way sends a clear signal to Brussels and H&A alike: the state still sets the agenda."
+ EFH_assert_federal_authority: "Regulatory posturing"
+ EFH_assert_federal_authority_desc: "Amsterdam makes the record clear. It will consistently favour its citizens rather than corporations. Maybe through a STRONGLY worded letter."
 
  EFH_ha_lobby_parliament: "H&A Lobbies Parliament"
- EFH_ha_lobby_parliament_desc: "H&A spends its influence on parliamentary opinion. Nothing is offered in a room that keeps minutes."
+ EFH_ha_lobby_parliament_desc: "H&A spends its influence on parliamentary opinion."
 
 
  EFH_ha_controversial_researcher: "Controversial Hyperbio Employee"
- EFH_ha_controversial_researcher_desc: "Leads the Hyperbiology division's most sensitive work. Her relationship with the Federation's resident vagrants is a subject nobody in administration wants to put in writing."
+ EFH_ha_controversial_researcher_desc: "Leads the Hyperbiology division's most sensitive work. Hates being publicised."
 
- EFH_honorable_socdem: "Honorable Social Democrat"
- EFH_honorable_socdem_desc: "A committed defender of democratic values and the social contract. Principled. Respected. The polling data from his districts has been trending in a direction his colleagues find difficult to explain."
+ EFH_honorable_socdem: "Honourable Social Democrat"
+ EFH_honorable_socdem_desc: "A committed defender of democratic values and the social contract, with support on both the left and the right."
 
  EFH_ashley_woods: "Ashley Woods"
- EFH_ashley_woods_desc: "Star employee of H&A's Hyperbiology division and refuses to treat what she studies as mere weapons research. Her internal reports have a habit of clearing a room. She keeps filing them. Deeply antisocial."
+ EFH_ashley_woods_desc: "Founding employee of H&A's Hyperbiology division, instrumental in its functioning. Rarely writes reports or any form of documentation. Deeply antisocial."
 
  EFH_henrik_jorgensen: "Henrik Jørgensen"
- EFH_henrik_jorgensen_desc: "A Social Democrat from Aarhus. Longtime advocate for workers' rights, fair wages, and the kind of strong institutions that keep society together. Deeply honorable. Very popular at home."
+ EFH_henrik_jorgensen_desc: "A Social Democrat from Aarhus. Longtime advocate for workers' rights, fair wages, and the kind of strong institutions that keep society together. Deeply honourable. Very popular at home."
 
  EFH_guy_verhofstadt: "Guy Verhofstadt"
- EFH_guy_verhofstadt_desc: "Has been making the case for a unified Europe since before most of his colleagues entered politics. On a first-name basis with every minister on the continent."
+ EFH_guy_verhofstadt_desc: "Has been making the case for a more unified Europe since before most of his colleagues entered politics. On a first-name basis with every minister on the continent."
 
  EFH_roberta_metsola: "Roberta Metsola"
- EFH_roberta_metsola_desc: "Speaker of the European Parliament, which is now the institution the Federation shows the public. She has held the chair through four governments and has never lost a confidence vote."
+ EFH_roberta_metsola_desc: "Speaker of the European Parliament, more public-facing than the president. She has held the chair through four governments and has never lost a confidence vote."
 
  EFH_manon_aubry: "Manon Aubry"
- EFH_manon_aubry_desc: "Came up through the left flank and never pretended otherwise. Her coalition work is effective precisely because everyone knows where she stands."
+ EFH_manon_aubry_desc: "Far left and proud of it. Coalition partners like working with her because her demands never change."
 
  EFH_charles_michel: "Charles Michel"
  EFH_charles_michel_desc: "Former Council president. Has survived more internal crises than most people know about, largely because he saw them coming first."
 
  EFH_margrethe_vestager: "Margrethe Vestager"
- EFH_margrethe_vestager_desc: "Spent years forcing multinationals to pay their bills and didn't stop when the apocalypse started. The Federation's supply chains function because someone is watching the numbers."
+ EFH_margrethe_vestager_desc: "Spent years forcing multinationals to pay their tax bills. Has never been invited to a single one of their Christmas parties. The Federation's supply chains function because of her."
 
  EFH_thierry_breton: "Thierry Breton"
- EFH_thierry_breton_desc: "Built factories before he built policy. Treats industrial capacity as a strategic asset and has the background to prove it. Has never missed a production deadline in his life."
+ EFH_thierry_breton_desc: "Built factories before he got approval. Treats industrial capacity as a strategic asset. Vowed to kill himself if he ever misses a production deadline."
 
  EFH_daniel_freund: "Daniel Freund"
- EFH_daniel_freund_desc: "Came to Brussels to fix the institution and has been at it ever since. He publishes what he finds, which is why his inbox is always full."
+ EFH_daniel_freund_desc: "Came to Amsterdam to fix the institution and has been at it ever since. He publishes what he finds, which is why his inbox is always full."
 
  EFH_jens_stoltenberg: "Jens Stoltenberg"
- EFH_jens_stoltenberg_desc: "Ran NATO for longer than most of his peers held any office. The Federation inherited his contact list and his conviction that maritime lanes decide wars."
+ EFH_jens_stoltenberg_desc: "Norwegian, and a fixture in Amsterdam since before most of the current cabinet arrived. Brought his contact list with him, and the conviction that maritime lanes decide wars."
 
  EFH_josep_borrell: "Josep Borrell"
  EFH_josep_borrell_desc: "Never let diplomacy become an excuse to avoid the harder question of force. His briefings on ground warfare doctrine are blunter than the civil service prefers. The military prefers them for exactly that reason."
 
  EFH_ska_keller: "Ska Keller"
- EFH_ska_keller_desc: "Came to defence through climate policy and never left. Her models of long-range air deployment aren't dependent on anything but herself."
+ EFH_ska_keller_desc: "Came to defence through climate policy and never left. Runs her own models for long-range air deployment and trusts nobody else's."
 
  EFH_thierry_burkhard: "Thierry Burkhard"
- EFH_thierry_burkhard_desc: "Chief of the Defence Staff. His approach to the parasite front is methodical and aggressive in equal measure."
+ EFH_thierry_burkhard_desc: "Chief of the Defence Staff. Methodical and aggressive in equal measure, which his staff find exhausting."
 
  EFH_eberhard_zorn: "Eberhard Zorn"
- EFH_eberhard_zorn_desc: "Former German Inspector General. Spent years arguing that European armies needed to move faster. The parasite war proved him right, and he has been very busy since."
+ EFH_eberhard_zorn_desc: "Former German Inspector General. Spent years pushing to cut the time it takes the army to buy and field new equipment."
 
  EFH_claudio_graziano: "Claudio Graziano"
- EFH_claudio_graziano_desc: "Former chair of the EU Military Committee. His doctrine of layered defensive lines is the standard template for holding parasite advance zones, and he has not been surprised by one yet."
+ EFH_claudio_graziano_desc: "Former chair of the Federation's Military Committee. Believes in defensive lines, and in more defensive lines behind those."
 
  EFH_pierre_vandier: "Pierre Vandier"
- EFH_pierre_vandier_desc: "Chief of the Naval Staff. Considers naval superiority a precondition for everything else the Federation wants to achieve, and has the deployment records to argue it."
+ EFH_pierre_vandier_desc: "Chief of the Naval Staff. Considers naval superiority the precondition for everything else the Federation wants."
 
  EFH_kay_achim_schoenbach: "Kay-Achim Schönbach"
- EFH_kay_achim_schoenbach_desc: "Former German Navy Inspector. His understanding of littoral and supply-interdiction operations has aged well in a world where coastal corridors are contested at every point."
+ EFH_kay_achim_schoenbach_desc: "Former German Navy Inspector. Knows littoral and supply-interdiction work better than anyone else in the Federation's navy."
 
  EFH_stephane_mille: "Stéphane Mille"
- EFH_stephane_mille_desc: "Chief of the Air and Space Force. His doctrine integrates air support directly into ground operations rather than treating it as a separate theatre."
+ EFH_stephane_mille_desc: "Chief of the Air and Space Force. His doctrine integrates air support directly into ground operations rather than treating it as a separate matter."
 
  EFH_ingo_gerhartz: "Ingo Gerhartz"
  EFH_ingo_gerhartz_desc: "German Air Force Inspector. Has run exercises in conditions that ground most conventional aircraft. His squadrons fly in weather other commands won't file a plan for."
 
  EFH_alfons_mais: "Alfons Mais"
- EFH_alfons_mais_desc: "Was the first senior officer to state publicly that the Federation's infantry was not ready for a war of this kind. He then spent the next three years making sure it was."
+ EFH_alfons_mais_desc: "Wrote publicly that the army 'stands more or less bare'. Three days later parliament found a hundred billion for it."
 
  EFH_robert_brieger: "Robert Brieger"
- EFH_robert_brieger_desc: "Austrian general and former EU Military Committee chair. His armoured doctrine was written for a conventional opponent and has been revised twice since the parasite front opened. Both revisions held."
+ EFH_robert_brieger_desc: "Austrian general and former chair of the Federation's Military Committee. Wrote most of the armoured doctrine the Federation uses today."
 
  EFH_margarita_robles: "Margarita Robles"
- EFH_margarita_robles_desc: "Former Spanish Defence Minister, now in uniform. Her strength is logistics: she understands that armies do not move without systems, and systems do not function without oversight."
+ EFH_margarita_robles_desc: "Former Spanish Defence Minister, now in uniform. Her strength is logistics."
 
  EFH_henrique_gouveia: "Henrique Gouveia e Melo"
- EFH_henrique_gouveia_desc: "Portuguese Admiral. His experience with submarine doctrine in the Atlantic has translated directly into the contested coastal corridors the Federation relies on."
+ EFH_henrique_gouveia_desc: "Portuguese admiral with a career in Atlantic submarine doctrine, which is most of what the Federation's coastal corridors need."
 
  EFH_clara_font: "Clara Font i Arnau"
- EFH_clara_font_desc: "Catalan air general who made her name in contested-airspace operations over the Mediterranean. Has a particular talent for establishing and maintaining air superiority in environments with no clean front line."
+ EFH_clara_font_desc: "Catalan air general who made her name in contested-airspace operations over the Mediterranean, where there was never a clean front line."
 
  EFH_friedrich_haas_desc: "A senior Federation administrator who concluded, sometime around the third year of the parasite war, that consensus government was a luxury no one could afford. His emergency powers framework was well-designed. He never gave them back."
 
@@ -140,7 +140,7 @@
  EFH_campaign_for_volt: "Boost Volt Europa"
  EFH_campaign_for_volt_desc: "Back Volt's technocratic federalist campaign across the metropolitan networks."
  EFH_campaign_for_ave: "Boost Ave Europa"
- EFH_campaign_for_ave_desc: "Support Ave Europa's campaign for a stronger, sovereign, civilisational federation."
+ EFH_campaign_for_ave_desc: "Back Ave Europa's campaign for a stronger, more 'masculine' Federation. It's gonna cost a lot of marble."
  EFH_campaign_for_continuity: "Boost the Continuity Coalition"
  EFH_campaign_for_continuity_desc: "Steady the establishment coalition that has governed the Federation through the long peace."
  EFH_campaign_for_social_green: "Boost the Social-Green Compact"
@@ -157,7 +157,7 @@
  EFH_party_astra_mandate: "Astra Europa Mandate"
  EFH_party_astra_mandate_desc: "Astra Europa governs on reform faster than the ministries can absorb. The pace unsettles slower institutions."
  EFH_party_volt_mandate: "Volt Europa Mandate"
- EFH_party_volt_mandate_desc: "Volt Europa has formed a progressive technocratic government. Brussels hums with clean dashboards, civic platforms, and policy pilots. The military wing finds the mood too gentle."
+ EFH_party_volt_mandate_desc: "Volt Europa has formed a progressive technocratic government. Amsterdam hums with clean dashboards, civic platforms, and policy pilots. The military wing finds the mood too gentle."
  EFH_party_ave_mandate: "Ave Europa Mandate"
  EFH_party_ave_mandate_desc: "Ave Europa governs as a hard-edged federalist movement built on defence spending and a single European identity. Nobody in the cabinet is relaxed."
  EFH_party_continuity_mandate: "Continuity Coalition Mandate"
@@ -169,7 +169,7 @@
  EFH_separatist_unrest: "Separatist Unrest"
  EFH_separatist_unrest_desc: "Movements for national restoration have left the margins and entered the streets, parliaments, and barracks."
  EFH_restoration_referendum_crisis: "Restoration Referendum Crisis"
- EFH_restoration_referendum_crisis_desc: "The argument over reform is finished. The open question is whether the member nations still consent to be governed from Brussels."
+ EFH_restoration_referendum_crisis_desc: "The argument over reform is finished. The open question is whether the member nations still consent to be governed from Amsterdam."
 
  efh_party.2.t: "Astra Europa Wins the Federal Election"
  efh_party.2.d: "Astra Europa has assembled a federal majority on promises of technological acceleration, democratic federation, and a Europe brave enough to build upward rather than merely hold together."
@@ -196,10 +196,10 @@
  efh_party.21.d: "Regional assemblies and national committees now demand formal votes on restored statehood. The federal government has scheduled nothing and refused nothing."
  efh_party.21.a: "The crisis is constitutional now."
  efh_party.22.t: "The Movements Subside"
- efh_party.22.d: "The demonstrations thin out and the committees lose their quorum. The federal answer, patient where it could have been heavy-handed, has taken the heat out of the restoration cause for now. The old flags go back into the cupboards and the argument goes back into the committee rooms."
+ efh_party.22.d: "The demonstrations thin out and the committees lose their quorum. The old flags go back into the cupboards and the argument goes back into the committee rooms."
  efh_party.22.a: "The centre has steadied."
  efh_party.23.t: "The Referendum Question Recedes"
- efh_party.23.d: "With the pressure off, the regional assemblies quietly drop their demands for votes on restored statehood. What was a constitutional crisis becomes, again, a parliamentary grievance the Federation knows how to live with. The federal government has bought itself room, if not a settlement."
+ efh_party.23.d: "With the pressure off, the regional assemblies quietly drop their demands for referenda. It is a parliamentary grievance again, one the Federation knows how to live with."
  efh_party.23.a: "A crisis deferred is a crisis survived."
  efh_party.30.t: "The Dissolution Congress"
  efh_party.30.d: "The Restoration Front has forced the final question into the chamber: will the Federation concede the return of the old nations, or suppress the restoration movement by force?"
@@ -298,13 +298,13 @@
  EFH_panama_pressure_desc: "The summit failed. What it left behind is a very specific question: who controls the Panama Canal, and on whose terms. The Federation opens a diplomatic channel."
 
  EFH_panama_deals: "Canal Zone Economic Footprint"
- EFH_panama_deals_desc: "Trade agreements, infrastructure investment, and port access arrangements. Individually modest. Cumulatively, they establish that the Federation belongs in this region."
+ EFH_panama_deals_desc: "Trade agreements, port access and a few infrastructure contracts in the Canal Zone. None of them is large. Together they give the Federation a real stake in the region."
 
  EFH_panama_cores: "Canal Zone: Territorial Claim"
  EFH_panama_cores_desc: "The Federation formally asserts a historical and strategic claim on the Panama Canal Zone. A legal position is established. A negotiated outcome is preferred. A military one remains available."
 
  EFH_panama_resistance: "Operation: Pressure Valve"
- EFH_panama_resistance_desc: "Federation intelligence assets are activated in the Canal Zone. Civilian resistance to American administration is quietly encouraged. Nothing traceable leads back to Brussels."
+ EFH_panama_resistance_desc: "Federation intelligence assets are activated in the Canal Zone. Civilian resistance to American administration is quietly encouraged. Nothing traceable leads back to Amsterdam."
 
 
  EFH_panama_cores_tt: "Asserts the Federation's claim to the Canal Zone and stokes the resistance against American rule."
@@ -320,20 +320,20 @@
  EFH_summit_failure_response: "Reassessment"
  EFH_summit_failure_response_desc: "The summit failed. The Federation draws its conclusions. The posture that was softened for diplomacy is restored. Intelligence operations against American interests are approved."
 
- EFH_northern_theater_preparation: "The Northern Theater"
- EFH_northern_theater_preparation_desc: "Quebec and Newfoundland remain contested. The Federation commits regular army formations to the northern frontier. The logistical strain is accepted. The positioning is not optional."
+ EFH_northern_theater_preparation: "The Northern Theatre"
+ EFH_northern_theater_preparation_desc: "Quebec and Newfoundland remain contested. Regular army formations move to the northern frontier, and supplying them across the Atlantic is expensive."
 
  EFH_northern_supply_groundwork: "Groundwork"
- EFH_northern_supply_groundwork_desc: "The northern frontier has one road worth the name and no depots behind it. Newfoundland's port is enlarged into a theater terminal, rail is run west to Southern Ontario, and forward supply is dug in at Ottawa and Toronto. An army that cannot be fed cannot hold a line, only stand on one."
+ EFH_northern_supply_groundwork_desc: "The northern frontier has one road worth the name and no depots behind it. Newfoundland's port is enlarged into a theatre terminal, rail is run west to Southern Ontario, and forward supply is dug in at Ottawa and Toronto."
 
  EFH_northern_war_authorization: "Northern Escalation Authorisation"
- EFH_northern_war_authorization_desc: "The second summit is over. The diplomatic track is no longer available. Authorisation to engage American forces in the northern theater is issued."
+ EFH_northern_war_authorization_desc: "The second summit is over. The diplomatic track is no longer available. Authorisation to engage American forces in the northern theatre is issued."
 
  EFH_northern_air_campaign: "Northern Air Exercises"
- EFH_northern_air_campaign_desc: "A significant portion of Federation air strength is committed to the Canadian theater. Sortie rates are high. Air dominance over the northern approaches is the operational priority."
+ EFH_northern_air_campaign_desc: "A significant portion of Federation air strength is committed to the Canadian theatre. Sortie rates are high. Air dominance over the northern approaches is the operational priority."
 
  EFH_northern_air_doctrine: "Atlantic Naval Exercises"
- EFH_northern_air_doctrine_desc: "The Boston engagement has been reviewed. The doctrine board convenes with the loss figures in front of it."
+ EFH_northern_air_doctrine_desc: "Air wings and the fleet exercise together over the Atlantic approaches. The interim procedures written after Boston are replaced with ones that have actually been tested."
 
  EFH_kaltkrieg_doctrine_reform: "Kaltkrieg Military Doctrine"
  EFH_kaltkrieg_doctrine_reform_desc: "Federation ground force doctrine is formally revised for a peer-competitor conflict with the United States. The adjustments are methodical. They have been overdue for years."
@@ -345,10 +345,10 @@
  EFH_sphere_retention_japan_desc: "Japan's continued alignment with the Federation is not guaranteed. American pressure is consistent. The Federation commits the diplomatic and economic capital necessary to hold it."
 
  EFH_trade_bloc_offensive: "Trade Bloc Offensive"
- EFH_trade_bloc_offensive_desc: "The Federation moves to draw South American and Chinese markets further into the European economic sphere. The objective is to deepen structural dependence on Federation trade routes before the cold war runs hot."
+ EFH_trade_bloc_offensive_desc: "The Federation pushes South American and Chinese trade further onto European routes. The more of it runs through Europe, the harder it is for Washington to pull back."
 
  EFH_economic_pressure_campaign: "Stock Market Pressure"
- EFH_economic_pressure_campaign_desc: "European markets are closed to American financial instruments. The move is surgical, deniable as a policy preference, and designed to land where it hurts most. Washington will understand the message."
+ EFH_economic_pressure_campaign_desc: "European markets are closed to American financial instruments for two years. Amsterdam describes it as a policy preference."
 
  EFH_africa_resources: "The African Question"
  EFH_africa_resources_desc: "The Congo basin holds significant fissile material deposits. Both the Federation and the United States are aware of this. The Federation is moving first."
@@ -364,7 +364,7 @@
  EFH_africa_resources_tt: "Initiates Federation resource competition with the United States in the African uranium zone. Congolese uranium begins moving to Federation stockpiles."
 
  EFH_congo_fissile_concessions: "Secure Congo Fissile Concessions"
- EFH_congo_fissile_concessions_desc: "European negotiators are leveraging the Federation's head start in the Congo basin to lock in preferential fissile material shipments before Washington can counter-offer."
+ EFH_congo_fissile_concessions_desc: "European negotiators use the Federation's head start in the Congo basin to lock in fissile shipments before Washington can make a counter-offer."
  EFH_congo_fissile_concessions_tt: "Increases fissile material production at the capital by 3 for 180 days."
 
 
@@ -372,7 +372,7 @@
  EFH_second_space_race_desc: "American orbital activity has expanded sharply since the summit collapsed. The Federation's review board confirms a widening capability gap. A competitive orbital programme is authorised."
 
  EFH_runway_to_orbit_feasibility: "Commission Laytheo"
- EFH_runway_to_orbit_feasibility_desc: "A reusable atmospheric-entry vehicle study is commissioned. The central question is whether per-flight operational cost can be reduced enough to make orbital deployment a routine logistical act rather than a strategic event."
+ EFH_runway_to_orbit_feasibility_desc: "A study into a reusable spaceplane that takes off and lands on a runway. The question is whether each flight can be made cheap enough to launch satellites every week."
 
  EFH_laytheo_prototype_authorization: "Laytheo: Prototype Authorisation"
  EFH_laytheo_prototype_authorization_desc: "The feasibility study returned a positive result. A contractor has been selected. Prototype construction is authorised."
@@ -406,7 +406,7 @@
  EFH_kaltkrieg_concluded_desc: "The war is over. The threat framing that held Federation public support together for forty years has dissolved. Stability improves while war support evaporates."
 
  EFH_kaltkrieg_legacy: "Kaltkrieg Legacy"
- EFH_kaltkrieg_legacy_desc: "The institutions shaped by four decades of rivalry remain. The doctrine written inside it. The political capital generated by a conclusion that most people thought impossible."
+ EFH_kaltkrieg_legacy_desc: "The institutions and doctrine built over four decades of rivalry are still standing, and ending it has earned the government a great deal of political capital."
 
  EFH_panama_access: "Panama Canal Access"
  EFH_panama_access_desc: "Unencumbered Federation naval transit through the Canal is now settled."
@@ -427,7 +427,7 @@
 
 
  EFH_haa_aerospace_contract: "H&A Aerospace Contract"
- EFH_haa_aerospace_contract_desc: "H&A Aerospace is leading the Laytheo programme. Nobody else in Europe has the engineering depth. The political implications of that arrangement are noted and accepted."
+ EFH_haa_aerospace_contract_desc: "H&A Aerospace leads the Laytheo programme. Nobody else in Europe has the engineering depth, which gives H&A a say in how Europe reaches orbit."
 
  EFH_haa_timeline_compression: "H&A Timeline Compression"
  EFH_haa_timeline_compression_desc: "H&A's existing supply chain and engineering depth are pulling the prototype build ahead of the programme schedule."
@@ -436,7 +436,7 @@
  EFH_airbus_contract_desc: "The established consortium is managing the Laytheo build. Known workforce. Known supply chains."
 
  EFH_esa_contract: "ESA Directorate Contract"
- EFH_esa_contract_desc: "The ESA Directorate is leading the Laytheo programme. The timeline is longer, though the programme at least stays in federal hands. The papers approve. The schedule does not care."
+ EFH_esa_contract_desc: "The ESA Directorate leads the Laytheo programme. It keeps the programme in federal hands and takes longer to do it."
 
  EFH_esa_timeline_penalty: "ESA Programme Schedule"
  EFH_esa_timeline_penalty_desc: "ESA's institutional procurement processes are proceeding at their own pace. The programme will not be rushed."
@@ -450,7 +450,7 @@
 
 
  efh.1.t: "Laytheo Programme: Contractor Selection"
- efh.1.d: "The review board has presented its findings. Three contractors are viable. The differences in cost, timeline, and institutional alignment are significant."
+ efh.1.d: "The review board has three viable contractors for Laytheo: H&A Aerospace, the Airbus Consortium and the ESA Directorate. They differ on cost, speed and who ends up owning the programme."
  efh.1.a: "H&A Aerospace. It has already proven itself in the 1st space race."
  efh.1.b: "The Airbus Consortium. Expertise in atmospheric flight, lacking in spaceflight."
  efh.1.c: "The ESA. The programme belongs to the Federation, not to a contractor."
@@ -467,7 +467,7 @@
 
 
  efh.4.t: "The Second Canadian Summit"
- efh.4.d: "The second Canadian summit convenes over the disputed Eastern territories. Whether the table holds, or the talks collapse into something far worse, depends on how far the rivalry with Washington has already run."
+ efh.4.d: "The second Canadian summit on the disputed eastern territories is ready to convene. How it goes depends on how far the rivalry with Washington has already run."
  efh.4.a: "Convene the summit."
  efh.4.b: "Not yet. Hold on the frontier."
 
@@ -495,8 +495,8 @@
  EFH_summit_decision_unlocked_tt: "Summit diplomatic decisions are now available."
  EFH_intel_ops_unlocked_tt: "Intelligence operations against American interests are now authorised."
  EFH_canadian_divisions_deploy_tt: "Deploy Federation ground divisions to the Quebec and Newfoundland frontier."
- EFH_air_deploy_tt: "Commit Federation air wings to Canadian theater operations."
- EFH_laytheo_beckon_detection_tt: "Laytheo surveillance satellites provide increased Beckon construction detection in Federation-adjacent states."
+ EFH_air_deploy_tt: "Commit Federation air wings to Canadian theatre operations."
+ EFH_laytheo_beckon_detection_tt: "Laytheo satellites feed the intelligence picture: +20% Intel Network Gain through Operation Laytheo, and Beckon growth is detected in states bordering the Federation."
  EFH_laytheo_orbital_logistics_tt: "Cheap reusable launch capability. Unlocks the lunar programme and supports satellite-assisted research."
  EFH_war_deferred_tt: "Operations are held. The order can be issued later."
  EFH_canada_clearance_chain_tt: "Beckon clearance operation decisions for infested Canadian states will become available."
@@ -510,7 +510,7 @@
  EFH_summit_convene_desc: "The Federation has signalled its intent to negotiate. Formally convening the summit commits diplomatic capital and starts the clock."
 
  efh.10.t: "The Summit Convenes"
- efh.10.d: "Federation and American delegations have arrived. The agenda is long and the gaps are wide. Both sides believe the other will blink first."
+ efh.10.d: "Federation and American delegations have arrived. The agenda runs to forty items, and neither side has agreed on the order."
  efh.10.a: "Watch what develops."
 
  efh.11.t: "The Summit Has Failed"
@@ -522,18 +522,16 @@
  EFH_eter_completion_desc: "The European Thermonuclear Energy Reactor, Europe's answer to the international fusion programme, enters commercial operation at its primary facility near Amsterdam."
 
  EFH_industrial_surge: "Industrial Mobilisation"
- EFH_industrial_surge_desc: "Capitalising on the availability of cheap fusion energy, the Federation's core industrial regions accelerate factory expansion programmes across France, Germany, and the Rhineland."
+ EFH_industrial_surge_desc: "Cheap fusion power lets the core industrial regions in France, Germany and the Rhineland expand their factories faster."
 
  EFH_construction_acceleration: "Construction Priority Programme"
- EFH_construction_acceleration_desc: "A coordinated procurement framework reduces bureaucratic delays in capital construction projects across Federation member states, bringing new infrastructure online ahead of schedule."
+ EFH_construction_acceleration_desc: "Procurement for capital construction is handled centrally instead of by each member state, and new infrastructure comes online ahead of schedule."
 
  EFH_defense_conversion: "Dual-Use Industrial Capacity"
  EFH_defense_conversion_desc: "Several civilian manufacturing complexes in France and Germany are upgraded to dual-use status, enabling rapid conversion to defence production when required."
 
- EFH_fusion_regulatory_framework: "Fusion Regulatory Framework"
- EFH_fusion_regulatory_framework_desc: "With ETER online, the Federation establishes a regulatory framework governing the construction and operation of commercial fusion reactors across member states."
  EFH_fusion_licensing_act: "Commercial Fusion Licensing Act"
- EFH_fusion_licensing_act_desc: "The Licensing Act clears the way for private and state utilities to build and operate their own fusion reactors, years ahead of the rest of the world."
+ EFH_fusion_licensing_act_desc: "With ETER online, the Federation writes the regulatory framework for commercial fusion and, in the same act, clears the way for private and state utilities to build and operate their own reactors, years ahead of the rest of the world."
 
  EFH_research_coordination: "European Research Framework"
  EFH_research_coordination_desc: "The Federation consolidates its research funding under a unified European Research Council mandate, accelerating collaborative projects in electronics and advanced computing."
@@ -545,36 +543,36 @@
  EFH_doctrine_investment_desc: "A cross-service review board examines lessons from recent joint exercises and updates Federation land forces doctrine, incorporating advances in combined-arms coordination."
 
  EFH_parasite_early_research: "Anomalous Biology Programme"
- EFH_parasite_early_research_desc: "A small number of European research institutions, alarmed by early reports from sub-Saharan Africa, begin formal investigation into the biological mechanisms behind the spreading outbreak. Most officials dismiss their findings as alarmist. Most."
+ EFH_parasite_early_research_desc: "A few European research institutes open formal studies of the outbreak in sub-Saharan Africa, working from samples and field reports."
 
  EFH_joint_training_command: "Joint Defence Academy Network"
- EFH_joint_training_command_desc: "The Doctrine Review Board's recommendations are turned into permanent infrastructure. Federation member states agree to share military academies and embed common doctrine at the officer level. Within a generation of field commanders, the member-state armies will have stopped being separate armies."
+ EFH_joint_training_command_desc: "The Doctrine Review Board's recommendations become permanent. Member states share their military academies and teach one doctrine at officer level."
 
  EFH_xenobiology_directorate: "Federal Xenobiology Directorate"
- EFH_xenobiology_directorate_desc: "The Anomalous Biology Programme is nationalised and expanded. Brussels does not like what the universities have been finding. The Directorate is given classified clearance, federal funding, and a mandate to understand what is spreading across the continent."
+ EFH_xenobiology_directorate_desc: "The Anomalous Biology Programme is nationalised and expanded. Amsterdam does not like what the universities have been finding. The Directorate is given classified clearance, federal funding, and a mandate to understand what is spreading across the continent."
 
  EFH_federal_research_institute: "Federal Research Institute"
- EFH_federal_research_institute_desc: "The Federation formalises its wartime science programme. An independent agency answering directly to the Council of Ministers coordinates research across member states, allocates security clearances, and ensures the Federation's intellectual resources are deployed where they are needed most. A third research division opens."
+ EFH_federal_research_institute_desc: "The Federation formalises its wartime science programme. An agency answering to the Council of Ministers coordinates research across member states and handles security clearances. A third research division opens."
 
 
 
  EFH_federal_mandate: "Federal Governing Mandate"
- EFH_federal_mandate_desc: "The Federation government renews its mandate with a broad package of administrative reforms, reinforcing institutional legitimacy and giving Brussels expanded fiscal coordination authority."
+ EFH_federal_mandate_desc: "The government renews its mandate with a package of administrative reforms, and Amsterdam gets more say over member-state budgets."
 
  EFH_centralize_emergency_powers: "Centralise Emergency Powers"
- EFH_centralize_emergency_powers_desc: "Brussels invokes its emergency coordination authority, overriding member-state prerogatives to mobilise the Federation as a single body. Decisive, and resented in the periphery."
+ EFH_centralize_emergency_powers_desc: "Amsterdam invokes its emergency coordination authority and overrides the member states to mobilise the Federation as one body. The periphery resents it."
 
  EFH_member_state_compact: "Member-State Compact"
- EFH_member_state_compact_desc: "Rather than impose from the centre, the Federation governs by negotiated consent. Member states accept federal coordination because they helped write it. Slower, but the periphery stays loyal."
+ EFH_member_state_compact_desc: "Member states write the terms of federal coordination alongside Amsterdam, so they have less reason to fight it. It takes longer."
 
  EFH_parliamentary_consolidation: "Parliamentary Consolidation"
- EFH_parliamentary_consolidation_desc: "Whichever path the Federation took, the Federal Parliament now codifies it, streamlining procedure so the executive can act without asking twice."
+ EFH_parliamentary_consolidation_desc: "The Federal Parliament writes the new arrangement into procedure, so the executive can act without asking twice."
 
  EFH_arsenal_of_regulation: "Arsenal of Regulation"
  EFH_arsenal_of_regulation_desc: "The Federal Parliament adopts a unified compliance framework consolidating thirty-one separate national regulatory codes into a single harmonised standard, covering everything from industrial emissions to the permissible curvature of agricultural produce. Implementation across member state ministries is expected to proceed steadily, pending review."
 
  EFH_modernization_program: "Armed Forces Modernisation"
- EFH_modernization_program_desc: "A five-year modernisation roadmap for the European Defence Force sets new standards for training, equipment, and doctrinal consistency, aligning national contingents under a unified command framework."
+ EFH_modernization_program_desc: "A five-year plan for the European Defence Force: common training, common equipment, and national contingents under one command."
 
 
 
@@ -583,13 +581,13 @@
 
 
  EFH_parasite_threat_assessment: "Anomaly Assessment Programme"
- EFH_parasite_threat_assessment_desc: "Field reports describe soil contamination, unexplained organism behaviour, and atmospheric anomalies across three continents. Intelligence divisions have been tasked to compile and cross-reference. Officially, it is a precautionary measure."
+ EFH_parasite_threat_assessment_desc: "Reports of contaminated soil and unfamiliar organisms are coming in from three continents. Federation intelligence is tasked with putting them in one place and working out what is spreading where."
 
  EFH_continental_monitoring_network: "Continental Monitoring Network"
  EFH_continental_monitoring_network_desc: "A joint signals and ground observation network spanning Federation territory. Designed for early warning of infestation spread."
 
  EFH_federal_emergency_protocols: "Federal Emergency Protocols"
- EFH_federal_emergency_protocols_desc: "Parliament passes emergency legislation granting the federal government expanded authority to coordinate the civilian response. The public is not told how serious the situation has become. The government believes this is prudent."
+ EFH_federal_emergency_protocols_desc: "Parliament passes emergency legislation giving the federal government wider authority over the civilian response."
 
  EFH_joint_anti_parasite_command: "Joint Anti-Parasite Command"
  EFH_joint_anti_parasite_command_desc: "A unified command structure for all military assets engaged in parasite response. Doctrine and logistics are standardised across Federation member states for the first time."
@@ -598,7 +596,7 @@
 
 
  EFH_joint_parasite_command_standing: "Federal Parasite Response Directorate"
- EFH_joint_parasite_command_standing_desc: "The response programmes have been consolidated into a single permanent directorate under federal authority. Assessment, monitoring, emergency mandate, and joint command answer to one body in Brussels. The continent's defence has an administration now."
+ EFH_joint_parasite_command_standing_desc: "Assessment, monitoring, the emergency mandate and joint command are merged into one permanent directorate in Amsterdam."
 
  EFH_threat_briefing_data: "Continental Threat Briefing"
  EFH_threat_briefing_data_desc: "The latest monitoring case data is circulating through the laboratories and the intelligence directorates."
@@ -607,13 +605,13 @@
  EFH_joint_command_ready_desc: "Recent multi-state exercises have left Federation forces rehearsed and coordinated against the current threat picture."
 
  EFH_naval_modernization: "Naval Modernisation"
- EFH_naval_modernization_desc: "The Atlantic remains the Federation's strategic lifeline. Modernising the fleet ensures that sea-lane access cannot be severed by parasite activity or a hostile third power."
+ EFH_naval_modernization_desc: "The fleet is refitted for Atlantic work: newer escorts, longer patrols, and ports that can service both."
 
  EFH_blue_water_doctrine: "Blue-Water Doctrine"
- EFH_blue_water_doctrine_desc: "The Federation builds toward an independent blue-water fleet, projecting Atlantic power on national terms. Doctrine is overhauled for extended-range operations, submarine threats, and contaminated shipping lanes."
+ EFH_blue_water_doctrine_desc: "The Federation builds toward a blue-water fleet of its own. Doctrine is rewritten for long-range operations, submarines and contaminated shipping lanes."
 
  EFH_ha_naval_integration: "H&A Naval Integration"
- EFH_ha_naval_integration_desc: "Rather than expand state yards, the Federation hands naval procurement to H&A. The corporation's shipbuilding division accelerates the programme, at the price of further corporate leverage over the state."
+ EFH_ha_naval_integration_desc: "The Federation hands naval procurement to H&A instead of expanding the state yards. H&A's shipbuilders move faster, and H&A gains more leverage over the state."
 
 
 
@@ -624,7 +622,7 @@
  EFH_ha_aerospace_integration_desc: "The Federation contracts H&A's aerospace division to lead air procurement. Development accelerates on corporate terms, deepening H&A's hold over the Federation's military supply."
 
  EFH_strategic_air_doctrine: "Strategic Air Doctrine"
- EFH_strategic_air_doctrine_desc: "Strategic bombing doctrine is overhauled, incorporating stealth profiles and extended-range operations. The Federation's air power can now reach deep behind any adversary's lines."
+ EFH_strategic_air_doctrine_desc: "Strategic bombing doctrine is rewritten for stealth profiles and longer range."
 
 
 
@@ -635,7 +633,7 @@
  EFH_fissile_foundation_desc: "Building slots are prepared across Holland and Germany for the next phase of industrial investment, whether that means fissile production or expanded civilian capacity."
 
  EFH_fissile_plant_program: "Fissile Plant Programme"
- EFH_fissile_plant_program_desc: "Dedicated fissile extraction plants are constructed at ETER-adjacent sites in Holland and the Rhineland. Federation access to fissile material becomes strategic rather than marginal."
+ EFH_fissile_plant_program_desc: "Fissile extraction plants are built next to the ETER sites in Holland and the Rhineland, giving the Federation a steady supply of its own."
 
  EFH_civil_expansion: "Civil Industrial Expansion"
  EFH_civil_expansion_desc: "Prioritizing the economy of our biggest internal nations, in lieu of a single material. Seems like a much better use of administrative time."
@@ -654,7 +652,7 @@
 
 
  EFH_end_of_long_peace: "End of the Long Peace"
- EFH_end_of_long_peace_desc: "The Federation enters its fourth decade as the settled power of the Atlantic world. The institutions hold, the rivalry with Washington is managed, and the long peace has made the public comfortable. Federal planners are asked to take stock of where the Federation stands while the quiet still holds."
+ EFH_end_of_long_peace_desc: "The Federation enters its fourth decade as the settled power of the Atlantic. Washington restless as usual, but the public has stopped paying attention to it. Federal planners are asked to prepare for the worst."
 
  EFH_federal_state_of_the_union: "State of the Federation"
  EFH_federal_state_of_the_union_desc: "A formal accounting before the federal parliament: budgets, member-state grievances, the standing of the parties, and the condition of the armed forces. Routine work, for now."
@@ -663,19 +661,19 @@
  EFH_consolidate_federal_authority_desc: "Quiet pressure through the federal machinery to strengthen the governing coalition and the technocratic centre at the expense of the sovereigntist bloc. Amsterdam prefers its federation governed from the middle, and the parliament is reminded of it."
 
  EFH_member_state_accord: "Member-State Accord"
- EFH_member_state_accord_desc: "A negotiated settlement with the old national capitals of Paris, Berlin, Rome, Madrid, and Warsaw. Concessions on local autonomy in exchange for renewed commitment to the federal compact. It buys cohesion, which the Federation will need before the decade is out."
+ EFH_member_state_accord_desc: "A negotiated settlement with the old capitals in Paris, Berlin, Rome, Madrid and Warsaw. They get more local autonomy and recommit to the federal compact in return. Warsaw asked for the most and got most of it."
 
  EFH_industrial_procurement_strategy: "Industrial Procurement Strategy"
- EFH_industrial_procurement_strategy_desc: "The Federation has resources and needs. H&A has infrastructure and expertise. A structured approach to procurement coordination opens doors, but also creates leverage points. H&A will have opinions about how the Federation spends."
+ EFH_industrial_procurement_strategy_desc: "A structured procurement arrangement with H&A: the Federation brings the budget, H&A brings the infrastructure and expertise. H&A will have opinions about how the budget is spent."
 
  EFH_ha_research_consortium: "H&A Research Consortium"
- EFH_ha_research_consortium_desc: "A formal research partnership with H&A's finest scientific divisions. Expensive in political capital, but the Federation gains direct access to breakthroughs in hyperbiological systems and materials science. By 2024, H&A becomes irreplaceable."
+ EFH_ha_research_consortium_desc: "A formal research partnership with H&A's scientific divisions. It costs political capital and gives H&A a say in what the Federation researches."
 
  EFH_ha_supply_dominance: "H&A Supply Dominance"
- EFH_ha_supply_dominance_desc: "The Federation wagers on controlling H&A's vast supply networks rather than becoming dependent on H&A's research. A tighter grip on logistics and procurement. More stable, less flexible, but the Federation retains real authority over industrial allocation."
+ EFH_ha_supply_dominance_desc: "The Federation takes control of H&A's supply networks and leaves the research to H&A. Logistics and procurement answer to the state, and industrial allocation stays a federal decision."
 
  EFH_market_resource_agreements: "Market Resource Agreements"
- EFH_market_resource_agreements_desc: "Locking in strategic resource contracts through H&A's international supplier networks. Markets are volatile. Early commitments from reliable suppliers mean less scrambling when the crisis deepens."
+ EFH_market_resource_agreements_desc: "Long-term resource contracts through H&A's supplier networks. Markets are volatile, and a contract signed early is cheaper than one signed in a hurry."
  EFH_market_resource_agreements_tt: "Secures +100 £resources_strip|5, +50 £resources_strip|6, and +50 £resources_strip|2 from locked-in supplier contracts."
 
 
@@ -689,17 +687,17 @@
  EFH_standing_force_reform_desc: "Professionalise the standing army through the long peace: better training pipelines, harmonised doctrine across the member-state contingents, and a faster path from recruit to deployable formation."
 
  EFH_alignment_initiative: "Alignment Initiative"
- EFH_alignment_initiative_desc: "A coordinated diplomatic effort to draw the world's undecided powers into the Federation's orbit and away from Washington's. The contest for allies is fought in trade terms and technical cooperation long before it is fought anywhere else."
+ EFH_alignment_initiative_desc: "A coordinated diplomatic effort to draw undecided powers toward the Federation and away from Washington, mostly through trade and technical cooperation."
 
  EFH_eastern_outreach: "Eastern Outreach"
- EFH_eastern_outreach_desc: "Open parallel channels east of Washington's reach: capital and trade missions into the South American Confederation's markets, and discreet contact with Beijing. Neither relationship is romantic, but both suit the Federation where they serve its interests and unsettle Washington where they do not."
+ EFH_eastern_outreach_desc: "Trade missions into the South American Confederation's markets, and a discreet line to Beijing. Both suit the Federation, and both annoy Washington."
  EFH_eastern_outreach_tt: "Opens early contact with the South American Confederation and China, and deepens technical cooperation."
 
  EFH_atlantic_rivalry_doctrine: "Atlantic Rivalry Doctrine"
- EFH_atlantic_rivalry_doctrine_desc: "Codify what every federal planner already assumes: that the United States is the Federation's defining strategic adversary. The doctrine sets the terms of a contest that need not turn hot, but is never far from it."
+ EFH_atlantic_rivalry_doctrine_desc: "Codify what every federal planner already assumes: the United States is the Federation's main strategic rival."
 
  EFH_northern_intelligence_posture: "Northern Intelligence Posture"
- EFH_northern_intelligence_posture_desc: "Establish the intelligence groundwork along the northern approaches and the Canadian frontier, the ground over which any open break with Washington would first be fought."
+ EFH_northern_intelligence_posture_desc: "Intelligence groundwork along the northern approaches and the Canadian frontier, where the Federation and the United States already share a disputed border."
  EFH_northern_intelligence_posture_tt: "Establishes federal intelligence groundwork on the northern frontier."
 
  EFH_canal_zone_watch: "Canal Zone Watch"
@@ -712,7 +710,7 @@
 
 
  EFH_the_federal_question: "The Federal Question"
- EFH_the_federal_question_desc: "Every decade the Federation asks itself the same question in a different voice: how much of itself should belong to the centre, and how much to the old nations. The coming federal contest will answer it again."
+ EFH_the_federal_question_desc: "The coming federal contest decides, again, how much power sits in Amsterdam and how much in the old national capitals."
 
  EFH_federalist_coalition: "A Federalist Mandate"
  EFH_federalist_coalition_desc: "Throw the Federation's weight behind the technocratic-federalist bloc. A stronger centre, and the sovereigntist argument pushed back to the margins where Amsterdam prefers it."
@@ -721,7 +719,7 @@
  EFH_sovereigntist_bloc_desc: "Let the sovereigntist-nationalist wing carry the contest. Power flows back toward the old capitals and their flags. It plays well in Paris and Warsaw, and it raises the pressure the Federation was built to contain."
 
  EFH_govern_the_federation: "Govern the Federation"
- EFH_govern_the_federation_desc: "Whatever mandate the contest produced, the Federation must now be governed. The machinery turns over, the new coalition takes its seats, and the work of holding twenty-odd nations together resumes."
+ EFH_govern_the_federation_desc: "The new coalition takes its seats and gets on with holding twenty-odd nations together."
 
  EFH_force_structure_debate: "The Force Structure Debate"
  EFH_force_structure_debate_desc: "The defence review forces a question the long peace let the Federation defer: what kind of army a continental federation actually needs. The general staff is divided, and a decision can no longer be postponed."
@@ -730,28 +728,28 @@
  EFH_professional_army_desc: "Build a smaller, highly trained professional federal force. Quality over mass: better-led, better-drilled formations that can be relied on without calling up a generation."
 
  EFH_mass_mobilization_base: "Mass Mobilisation Base"
- EFH_mass_mobilization_base_desc: "Build the reserves, the depots, and the call-up machinery for an army that can grow quickly when it has to. Breadth over polish: the Federation trades peacetime quality for the ability to field numbers."
+ EFH_mass_mobilization_base_desc: "Build the reserves, depots and call-up machinery for an army that can grow quickly. Peacetime polish is traded for numbers."
 
  EFH_modern_federal_army: "A Modern Federal Army"
- EFH_modern_federal_army_desc: "Whichever path the staff chose, the Federation's land forces come out of it on current equipment and a command structure built for this decade rather than the last."
+ EFH_modern_federal_army_desc: "The Federation's land forces come out of the debate on current equipment, with a command structure built for this decade."
 
  EFH_combined_arms_command: "Combined Arms Command"
  EFH_combined_arms_command_desc: "Stand up a unified combined-arms command to bind the member-state contingents into something that fights as one army rather than several."
 
  EFH_the_standoff: "The Standoff"
- EFH_the_standoff_desc: "The rivalry with Washington has a shape, even in peace: forces watching forces across the Atlantic and the pole. The Federation formalises how it intends to stand in that standoff."
+ EFH_the_standoff_desc: "Federation and American forces watch each other across the Atlantic and the pole. The Federation writes down how it intends to hold that standoff."
 
  EFH_nuclear_brinkmanship: "Nuclear Brinkmanship"
- EFH_nuclear_brinkmanship_desc: "Make the deterrent the centrepiece of the standoff. The Federation's warheads do the talking, and both capitals learn to live closer to the edge than either will admit."
+ EFH_nuclear_brinkmanship_desc: "Make the deterrent the centrepiece of the standoff: warheads, delivery systems, and a doctrine that says when they would be used."
 
  EFH_conventional_primacy: "Conventional Primacy"
  EFH_conventional_primacy_desc: "Build the conventional forces to win the contest without the warheads. If it comes to a fight, the Federation intends to bring the larger and better-prepared army to the field."
 
  EFH_brinkmanship_posture: "Brinkmanship Posture"
- EFH_brinkmanship_posture_desc: "The Federation settles into a stable posture toward the United States: pressure without war, deterrence without provocation, for as long as it chooses to hold it there."
+ EFH_brinkmanship_posture_desc: "The Federation settles into a fixed posture toward the United States and can hold it there as long as it likes."
 
  EFH_war_readiness_directive: "War Readiness Directive"
- EFH_war_readiness_directive_desc: "Quietly raise the Federation's readiness for a conflict it hopes not to fight. Stockpiles, mobilisation plans, and command exercises, all kept just short of alarming the public."
+ EFH_war_readiness_directive_desc: "Stockpiles, mobilisation plans and command exercises for a war with the United States, kept low-key enough not to make the news."
 
  EFH_tokyo_dialogue: "The Tokyo Dialogue"
  EFH_tokyo_dialogue_desc: "Open and formalise the conversation with Tokyo in one step. Japan is the Federation's natural partner across the Pacific rivalry, and both governments would rather build the relationship before they need it."
@@ -761,10 +759,10 @@
  EFH_pacific_security_cooperation_desc: "Deepen the partnership into the military domain: joint exercises, basing arrangements, and shared intelligence. Washington will read it as encirclement, which is not entirely wrong."
 
  EFH_techno_industrial_compact: "Techno-Industrial Compact"
- EFH_techno_industrial_compact_desc: "Bind the Federation and Japan through technology and industry rather than arms. Shared research and integrated supply, which are harder to see and harder to undo."
+ EFH_techno_industrial_compact_desc: "Tie the Federation and Japan together through shared research and integrated supply chains instead of arms."
 
  EFH_efh_japan_axis: "The Pacific Axis"
- EFH_efh_japan_axis_desc: "The Federation and Japan formalise what the decade will come to depend on: a standing partnership between Europe and its closest ally across the world."
+ EFH_efh_japan_axis_desc: "The Federation and Japan formalise a standing partnership. Japan becomes Europe's closest ally on the far side of the world."
  EFH_efh_japan_axis_tt: "Establishes the formal EF-Japan partnership."
 
  EFH_groundwork_japan_axis_tt: "The pre-crisis EF-Japan axis makes this a formality: +25 Political Power."
@@ -778,12 +776,25 @@
  EFH_groundwork_civil_society_tt: "The home front braced in peacetime absorbs the shock: a further reduction in public panic and +3% Stability."
  EFH_groundwork_procurement_tt: "The standing procurement framework gives H&A's reorientation a running start: H&A Logistics MIO funding."
  EFH_groundwork_procurement_ha_tt: "Built around the H&A consortium, the framework pays double: further H&A Logistics MIO funding and +25 Political Power."
- EFH_groundwork_doctrine_professional_tt: "The professional-army build deploys a sharper cadre to the northern theater: +25 Army Experience and a lasting organisation and morale edge."
- EFH_groundwork_doctrine_mass_tt: "The mass-mobilisation base puts more trained bodies in the northern theater: +20,000 Manpower."
+ EFH_groundwork_doctrine_professional_tt: "The professional-army build deploys a sharper cadre to the northern theatre: +25 Army Experience and a lasting organisation and morale edge."
+ EFH_groundwork_doctrine_mass_tt: "The mass-mobilisation base puts more trained bodies in the northern theatre: +20,000 Manpower."
  EFH_groundwork_standoff_nuclear_tt: "The nuclear-centred standoff gives the deterrence posture a warhead-programme head start: further H&A Thermonuclear MIO funding."
  EFH_groundwork_standoff_conventional_tt: "The conventional standoff hands the posture hardened command and readiness instead: +50 Command Power and +20 Army Experience."
  EFH_groundwork_japan_security_tt: "The early security-led partnership matures into a hardened military pact: +25 Navy and +25 Air Experience."
  EFH_groundwork_japan_techno_tt: "The early techno-industrial partnership matures into shared R&D: an electronics research bonus."
+ EFH_later_doctrine_professional_tt: "§YLater§!: §YThe Northern Theatre§! adds +25 Army Experience and a lasting organisation and morale edge on this path."
+ EFH_later_doctrine_mass_tt: "§YLater§!: §YThe Northern Theatre§! adds +20,000 Manpower on this path."
+ EFH_later_standoff_nuclear_tt: "§YLater§!: §YNuclear Deterrence Posture§! adds H&A Thermonuclear MIO funding on this path."
+ EFH_later_standoff_conventional_tt: "§YLater§!: §YNuclear Deterrence Posture§! adds +50 Command Power and +20 Army Experience on this path."
+ EFH_later_japan_security_tt: "§YLater§!: §YPacific Defence Pact§! adds +25 Navy and +25 Air Experience on this path."
+ EFH_later_japan_techno_tt: "§YLater§!: §YPacific Defence Pact§! adds an electronics research bonus on this path."
+ EFH_later_civic_demos_tt: "§YLater§!: §YA Society on the Eve§! adds +3% War Support on this path."
+ EFH_later_civic_homelands_tt: "§YLater§!: §YA Society on the Eve§! adds +3% Stability on this path."
+ EFH_later_procurement_framework_tt: "§YLater§!: §YThe Board Reorients§! adds H&A Logistics MIO funding."
+ EFH_later_procurement_ha_tt: "§YLater§!: if the §YStanding Procurement Framework§! is in place, §YThe Board Reorients§! pays its H&A Logistics MIO funding twice and adds +25 Political Power."
+ EFH_later_cordon_tt: "§YLater§!: §YContinental Containment Exercise§! adds §G+2%§! Stability on this path."
+ EFH_later_contracted_tt: "§YLater§!: §YContinental Containment Exercise§! adds H&A land division MIO funding on this path."
+ EFH_later_biosecurity_tt: "§YLater§!: §YContinental Monitoring Network§! adds +25 Political Power and a parasite research bonus, and the 2019 contamination scare is caught on the second day instead of the forty-third."
 
 
 
@@ -794,37 +805,37 @@
 
 
  efh.60.t: "End of the Long Peace"
- efh.60.d: "For most of a generation the worst thing the Federation had to fear was the United States, and that fear had become a kind of furniture, always there, rarely thought about. The maps have not changed. The briefings have not changed. And yet the people whose job is to feel these things have begun, quietly, to feel that the long quiet is running out, and that whatever ends it will not be Washington. There is no headline for this yet."
- efh.60.a: "The decade begins."
+ efh.60.d: "For most of a generation the worst thing the Federation had to fear was the United States. The maps have not changed and neither have the briefings. The planners asked to prepare for the worst have not been told what the worst is."
+ efh.60.a: "Business as usual."
  efh.50.t: "The Federal Question"
- efh.50.d: "The Federation enters a federal contest that is, as ever, about itself: how much power belongs to Amsterdam and how much to the old national capitals. The campaign is quiet by the standards of the century, but the stakes are the shape of the federation."
+ efh.50.d: "The Federation goes into a federal election about the usual thing: how much power sits in Amsterdam and how much in the old capitals. By the standards of the century it is a quiet campaign."
  efh.50.a: "Let the contest decide."
 
  efh.51.t: "A Federalist Mandate"
- efh.51.d: "The technocratic-federalist bloc carries the contest. The centre holds and grows, and the sovereigntist argument recedes for now. Brussels exhales. The work of federation continues, a little easier than before."
+ efh.51.d: "The technocratic-federalist bloc wins. The centre gets stronger, and the sovereigntists go quiet for now."
  efh.51.a: "The centre holds."
 
  efh.52.t: "The Nations Reassert"
- efh.52.d: "The sovereigntist-nationalist wing wins its case. Power tilts back toward the old capitals and their older loyalties. The flags come out in Paris and Warsaw. The Federation will hold, but the pressure it was built to contain is closer to the surface now."
+ efh.52.d: "The sovereigntist wing wins its case and power tilts back toward the old capitals. The old flags come out in Paris and Warsaw."
  efh.52.a: "The nations have spoken."
 
  efh.53.t: "Nuclear Close Call"
- efh.53.d: "A misread exercise, a tracking error, a warning that propagated further up both chains of command than anyone intended. For a few hours the Atlantic standoff was closer to the edge than the public will ever be told. Then it passed, as it has before."
+ efh.53.d: "A misread exercise and a tracking error sent a warning further up both chains of command than anyone meant it to go. For about three hours the Atlantic standoff was closer to a launch than ever. Then someone checked the tracking data again."
  efh.53.a: "We held our nerve."
  efh.53.b: "The deterrent did its work."
 
  efh.54.t: "The Pacific Axis"
- efh.54.d: "In a signing that both governments keep deliberately modest, the European Federation and Japan formalise a standing partnership. It is the relationship the coming decade will lean on hardest, though no one in the room yet knows how hard."
+ efh.54.d: "In a signing both governments keep deliberately modest, the European Federation and Japan formalise a standing partnership. The point of it is that Japan sits on the other side of the United States."
  efh.54.a: "An ally worth keeping."
 
  EFH_federation_on_the_eve: "The Federation on the Eve"
- EFH_federation_on_the_eve_desc: "Whatever the long peace made of it, the Federation enters the new decade as consolidated as it is going to get. The institutions are as ready as institutions ever are for something they cannot yet name."
+ EFH_federation_on_the_eve_desc: "The Federation enters the new decade about as consolidated as it is going to get."
 
  EFH_federal_war_college: "The Federal War College"
  EFH_federal_war_college_desc: "Codify what the modernised army has learned into doctrine and pass it on. The Federation enters the decade with a professional officer corps and a way of fighting it can actually teach."
 
  EFH_continental_war_plan: "The Continental War Plan"
- EFH_continental_war_plan_desc: "The general staff completes the contingency it has circled for years: the plan for a war with the United States across the northern approaches. Filed, rehearsed, and waiting for an order no one admits to expecting."
+ EFH_continental_war_plan_desc: "The general staff finishes its plan for a war with the United States across the northern approaches. It is filed and rehearsed."
 
  EFH_pacific_framework: "The Pacific Framework"
  EFH_pacific_framework_desc: "Set the partnership with Japan on a standing institutional footing that will outlast any single government."
@@ -836,66 +847,66 @@
 
 
  EFH_the_brittle_hegemon: "The Brittle Hegemon"
- EFH_the_brittle_hegemon_desc: "On paper the Federation is the closest thing the world has to a hegemon. Up close it is a settlement of compromises, held together over older loyalties and leaning a little harder each year on the firms that actually keep the lights on. The Long Peace is ending, and the question is how much the Federation can take."
+ EFH_the_brittle_hegemon_desc: "On paper the Federation is the closest thing the world has to a hegemon. Up close it is a stack of compromises between old nations, leaning a little harder each year on the firms that keep the lights on."
  EFH_a_continental_demos: "A Continental Demos"
- EFH_a_continental_demos_desc: "Treat the Federation as one people rather than a treaty between capitals. A shared civic identity, taught and funded from the centre, that the old national feeling cannot easily pull apart. It cuts deepest into separatist pressure, and it moves the federalist parties up with it."
+ EFH_a_continental_demos_desc: "Treat the Federation as one people instead of a treaty between capitals: a shared civic identity, taught and funded from the centre. It cuts hardest into separatist pressure and lifts the federalist parties."
  EFH_a_union_of_homelands: "A Union of Homelands"
- EFH_a_union_of_homelands_desc: "Do not pretend the nations away. Govern the Federation as what it is, a union of homelands that keep their own languages, capitals, and pride, and that consent to be governed because consent is cheaper than coercion. It eases the periphery without forcing the question, and the old parliamentary families approve."
+ EFH_a_union_of_homelands_desc: "Govern the Federation as a union of homelands that keep their own languages, capitals and pride, and consent to be governed because consent is cheaper than coercion. It eases the periphery without forcing the question, and the old parliamentary families approve."
  EFH_the_prosperity_dividend: "The Prosperity Dividend"
- EFH_the_prosperity_dividend_desc: "Decades without a great war have left the Federation rich in the unglamorous ways: efficient supply, full shelves, quiet streets. Spend some of that peace on the civilian base now, while it is still there to spend, and put real industry into the continental core."
+ EFH_the_prosperity_dividend_desc: "Decades without a great war have left the Federation rich in the unglamorous ways: efficient supply, full shelves, quiet streets. Spend some of it on the civilian base and put real industry into the continental core."
  EFH_public_institutions_first: "Public Institutions First"
- EFH_public_institutions_first_desc: "Keep the commons in the hands of the state. Schools, clinics, transit, and the records that hold a federation together stay public and federal, even where a contractor could run them cheaper. It costs efficiency, but legitimacy and reach stay where votes can reach them."
+ EFH_public_institutions_first_desc: "Schools, clinics, transit and public records stay federal, even where a contractor could run them cheaper. It costs money, and it keeps them answerable to voters."
  EFH_the_corporate_commons: "The Corporate Commons"
- EFH_the_corporate_commons_desc: "Let the firms do what they already do better. H&A logistics moves the freight, H&A networks carry the data, H&A labs do the science, and the line between a public service and a corporate one quietly stops mattering to the people using it. The Federation gets capability it could not build alone, and hands away a little more of the ground it stands on."
+ EFH_the_corporate_commons_desc: "H&A logistics moves the freight, H&A networks carry the data, H&A labs do the science. The Federation gets capability it could not build alone, and people stop noticing which services are public."
  EFH_a_society_on_the_eve: "A Society on the Eve"
- EFH_a_society_on_the_eve_desc: "Whatever the Federation has chosen to be, this is the society that the coming decade will land on. Take its measure honestly, shore up where it is thin, and let the people understand, without alarming them, that the Long Peace was always going to end."
+ EFH_a_society_on_the_eve_desc: "Take stock of the home front and shore up where it is thin, without alarming anyone."
 
  EFH_civic_echo_demos_tt: "One continental people braces as a single will: +3% War Support."
  EFH_civic_echo_homelands_tt: "A union held together by consent braces as a durable settlement: +3% Stability."
 
  efh.55.t: "The State of the Union"
- efh.55.d: "The address is sober by design. Growth is fine, the borders are quiet, the firms are thriving. And yet every honest briefing arrives at the same place: the Federation is strong the way old bridges are strong, until the day a load it was never tested for crosses it. The work this year is the part no speech mentions, the quiet shoring up of the structure underneath."
- efh.55.a: "Take the Federation's measure."
+ efh.55.d: "The State of the Federation address is sober by design: growth is fine, the borders are quiet. The reviews behind it found reserves that only exist on paper and a civil defence plan last updated in 2004."
+ efh.55.a: "Get to work on the list."
  efh.56.t: "One People"
  efh.56.d: "The new civic programme asks the nations to belong to something larger first, and lets them keep everything else. It is taught in the schools and printed on the documents and, slowly, it takes. For the first time in a generation the separatist argument is the one having to explain itself."
  efh.56.a: "One Federation, one people."
  efh.57.t: "A Union of Homelands"
- efh.57.d: "Brussels stops pretending the capitals are an administrative inconvenience. The languages, the holidays, the old pride are written into how the Federation governs rather than around it, and the periphery, asked rather than told, mostly says yes."
+ efh.57.d: "Amsterdam stops pretending the capitals are an administrative inconvenience. The languages, the holidays, the old pride are written into how the Federation governs rather than around it, and the periphery, asked rather than told, mostly says yes."
  efh.57.a: "Held together by consent."
  efh.58.t: "The Corporate Commons"
- efh.58.d: "It happens without a single decisive vote. A transit authority renews with an H&A subsidiary. A regional health network moves to H&A systems. A ministry finds the corporate lab simply faster. Each step is reasonable on its own. Taken together, the question of where the Federation ends and H&A begins becomes one that fewer and fewer people can answer, and fewer still think to ask."
+ efh.58.d: "It happens without a single decisive vote. A transit authority renews with an H&A subsidiary. A regional health network moves to H&A systems. A ministry finds the corporate lab simply faster. Each step is reasonable on its own, and nobody in Amsterdam was asked to add them up."
  efh.58.a: "Whatever works."
  efh.59.t: "A Society on the Eve"
- efh.59.d: "The reviews are filed, the gaps noted, the reserves checked. No one in the room can say what is coming, only that something is, and that the Federation will meet it as the society these years have made. The Federation has been stronger. It has rarely had a clearer picture of itself, which will have to do."
- efh.59.a: "Quiet confidence."
- efh.59.b: "A people told it is ready."
+ efh.59.d: "The home-front reviews are done. Most of the gaps they found have a budget line now. The rest have a working group."
+ efh.59.a: "Good enough for now."
+ efh.59.b: "Tell them we're ready."
 
  EFH_standing_procurement_framework: "Standing Procurement Framework"
- EFH_standing_procurement_framework_desc: "Whatever the Federation has decided about who keeps the books, make it permanent. A standing framework that the firms, the ministries, and the member states can all plan around. The arrangement stops being temporary."
+ EFH_standing_procurement_framework_desc: "Make the procurement arrangement permanent, so the firms, the ministries and the member states can all plan around it."
  EFH_procurement_framework_ha_tt: "Built around the H&A consortium, the framework deepens the corporation's hold on the federal supply chain."
  EFH_procurement_framework_ef_tt: "Kept in federal hands, the framework anchors procurement to the state rather than the firms."
  efh.61.t: "The Firms Come Calling"
- efh.61.d: "The Federation lets it be known that it is ready to talk about long-term supply, and the conglomerates answer before the ink is dry. H&A arrives best prepared, as it always does, with the studies already done and the numbers already favourable. The question facing Brussels is how much of the work to hand them."
+ efh.61.d: "The Federation lets it be known that it is ready to talk about long-term supply, and the conglomerates answer before the ink is dry. H&A arrives best prepared, as it always does, with the studies already done and the numbers already favourable. The question facing Amsterdam is how much of the work to hand them."
  efh.61.a: "Hear the offers."
  efh.62.t: "The Consortium"
  efh.62.d: "The Federation buys into a joint research consortium on H&A's terms. It is expensive in political capital, and it gets the corporation a seat at tables it had never sat at before. The laboratories it opens are real, and so is the talent they pull in."
  efh.62.a: "Worth what it costs."
  efh.63.t: "Federal Hands on the Supply"
- efh.63.d: "Brussels keeps the commanding heights of procurement for itself. The firms still build, still bid, still profit, but the contracts are written in the federal interest and the supply chains answer, in the end, to the state. It is slower and it is more expensive, and it leaves the Federation owning the thing it depends on."
+ efh.63.d: "Amsterdam keeps procurement for itself. The firms still build, bid and profit, but the contracts are written in the federal interest. It is slower and more expensive, and the Federation ends up owning the thing it depends on."
  efh.63.a: "The state keeps the keys."
  efh.64.t: "The Resource Compacts"
- efh.64.d: "A run of quiet bilateral agreements secures the metals and feedstock the coming decade will burn through. None of it makes the news. It is the difference between an industry that keeps running under strain and one that seizes up the first time a supply line is cut."
+ efh.64.d: "A run of quiet bilateral agreements secures metals and feedstock on long contracts. None of it makes the news."
  efh.64.a: "Stockpile while it is cheap."
  efh.65.t: "A Standing Arrangement"
- efh.65.d: "The framework is signed and the arrangement becomes, simply, how the Federation procures. Years from now, when the war economy is improvised on top of it under fire, no one will remember signing this. They will only know that the structure was already there, and that the hands it answered to were settled long before it mattered."
+ efh.65.d: "The framework is signed and becomes, simply, how the Federation procures. The question left is whose hands it answers to."
  efh.65.a: "H&A built the spine of it."
  efh.65.b: "The Federation kept the spine of it."
 
  efh.66.t: "The Atlantic Rivalry"
- efh.66.d: "Two generations after the war that made them rivals, the European Federation and the United States still measure each other across the ocean like men who once fought and never shook hands. The doctrine the Federation adopts now does not invent the hostility. It only writes down, in plain institutional language, what every officer already assumes: that the contest with Washington is the axis the rest of the world turns on, and that it is going nowhere."
+ efh.66.d: "The European Federation and the United States have been rivals for two generations. The new doctrine puts in writing what every officer already assumes: the contest with Washington comes first, and everything else is arranged around it."
  efh.66.a: "Name the rival."
  efh.67.t: "Primacy by Other Means"
- efh.67.d: "The Federation chooses to win the standoff with steel rather than fire. Where the nuclear road courts the close call, this one courts the long buildup: divisions, doctrine, the patient industrial edge that decides a war once the bluffs are spent."
+ efh.67.d: "The Federation takes the conventional route: more divisions, better doctrine and a bigger industrial base, so a war with the United States could be won without warheads."
  efh.67.a: "Win it on the ground."
  efh.68.t: "The War Footing"
  efh.68.d: "The directive is signed. From this point the Federation is scheduling a conflict with the United States and calling it readiness. Mobilisation timetables, requisition authorities, the legal scaffolding of a war economy all move quietly from the contingency drawer to the active file. The only open question is how much of this the public is told."
@@ -903,135 +914,135 @@
  efh.68.b: "Keep the directive quiet."
 
  efh.69.t: "The Alignment Initiative"
- efh.69.d: "The Federation stops treating its diplomacy as a series of separate transactions and starts treating it as a board. The aim is simple to state and hard to do: pull the powers that matter into the European orbit before Washington does, and make the pull look like partnership rather than capture. The first and most important name on the list is in Tokyo."
+ efh.69.d: "The Federation starts running its diplomacy as one campaign instead of separate deals. The aim is to pull the powers that matter toward Europe before Washington does. First on the list is Tokyo."
  efh.69.a: "Play the board."
  efh.70.t: "Tokyo Answers"
- efh.70.d: "The reply from Tokyo is warmer than the protocol required, and everyone who reads it understands why. Japan has spent the same decades the Federation has, measuring the United States across an ocean, and it has reached the same private conclusion: that the safer bet is the partner who needs you rather than the one who took you for granted. A long relationship begins here, quietly, the way the ones that matter usually do."
+ efh.70.d: "Tokyo's reply is warmer than protocol requires. Japan has watched the United States across an ocean for as long as the Federation has, and it would rather partner with Europe than depend on Washington."
  efh.70.a: "The most important door opens."
  efh.71.t: "The Eastern Lane"
- efh.71.d: "While the Pacific takes the headlines, the Federation opens quieter channels south and east, to the South American Confederation and to Beijing. Neither is courtship in the way the Japan relationship is. They are insurance, options held open, lines kept warm against a decade in which the Federation may need every friend it can name and a few it would rather not."
+ efh.71.d: "The Federation opens quieter channels to the South American Confederation and to Beijing. Neither is a partnership like Japan's. They are options, kept open in case the Federation needs them."
  efh.71.a: "Keep every line open."
 
  efh.72.t: "The Force-Structure Debate"
- efh.72.d: "The general staff splits, politely and completely. One school wants a lean professional force, expensively trained and always ready, the kind of army that wins the first month of a war. The other wants the broad mobilisation base, the millions who can be called up and equipped, the kind of army that wins the last year of one. Both are right. The Federation can only build one of them first."
+ efh.72.d: "The general staff splits. One school wants a lean professional force, expensively trained and always ready. The other wants a broad mobilisation base, millions who can be called up and equipped. The Federation can afford one of them."
  efh.72.a: "Settle the doctrine."
  efh.73.t: "One Army, One Command"
- efh.73.d: "The reforms converge into a single modern instrument: the member-state contingents folded under one federal command, one doctrine, one chain of orders that does not stop at a national border. It is the army the Federation was always supposed to have and never quite trusted itself to build. It exists now, and it answers to Brussels."
+ efh.73.d: "The member-state contingents are folded under one federal command, one doctrine and one chain of orders that does not stop at a national border. It answers to Amsterdam."
  efh.73.a: "The Federation has an army."
 
  efh.74.t: "The Second Space Race"
- efh.74.d: "The first space race was a contest between two states for the prestige of getting there. This one is different. The Federation and its rivals are racing for the high ground itself, for the orbits that watch, relay, and someday launch, and the firm best placed to win it for Europe is H&A, with a reusable spaceplane already on the drawing board. Brussels supplies the ambition and the flag. H&A supplies the vehicle, and quietly, the lead."
+ efh.74.d: "The Federation enters a second space race, this time for the orbits themselves: surveillance, relay, and eventually launch. H&A already has a reusable spaceplane on the drawing board. Amsterdam supplies the money and the flag, H&A supplies the vehicle and, quietly, the lead."
  efh.74.a: "To orbit, on H&A's wings."
  efh.75.t: "Eyes Above the Weather"
- efh.75.d: "The surveillance constellation comes online, and the Federation's picture of its own continent and its neighbours sharpens overnight. Movements that used to vanish under cloud cover no longer do. Anomalies that used to be reported late are flagged as they form."
+ efh.75.d: "The surveillance constellation comes online. Movements that used to vanish under cloud cover no longer do, and anomalies are flagged as they form instead of reported late."
  efh.75.a: "Keep watching."
  efh.76.t: "A Road to Orbit"
- efh.76.d: "Reusable launch turns orbit from a destination into a logistics line. What cost a fortune and a year of planning now costs a turnaround and a flight schedule. Satellites, supply, and eventually the lunar programme all become matters of throughput rather than miracles. The Federation has built the road to orbit, and H&A owns the trucks that run on it."
+ efh.76.d: "Reusable launch turns orbit into a flight schedule. Satellites, supply runs and eventually the lunar programme become a question of throughput. The Federation built the road to orbit, and H&A owns the trucks."
  efh.76.a: "Orbit is open for business."
 
  efh.77.t: "The Government Governs"
- efh.77.d: "Whatever bloc won the federal question now has to do the unglamorous part: govern. The coalition holds, the budgets pass, the member states grumble and comply. It is the Federation proving, one ordinary session at a time, that it can be a government rather than an agreement, which is the only thing that will matter when the agreements start to fail."
+ efh.77.d: "The winning bloc now has to govern. The coalition holds, the budgets pass, and the member states grumble and comply."
  efh.77.a: "Do the work."
  efh.78.t: "The Federation on the Eve"
- efh.78.d: "The consolidation is done. The federal settlement is as solid as patience and political capital can make it, the member states bound in as tightly as consent allows. Those who arranged it tell themselves it was overdue housekeeping. A few of them, in private, admit they did it because some instinct said the Federation would soon be tested in ways no peacetime constitution was written for, and they wanted the house in order before the knock came."
- efh.78.a: "Let it come, then."
+ efh.78.d: "The consolidation is done. The member states are bound in as tightly as the constitution allows, and the federal settlement should survive the next election."
+ efh.78.a: "Overdue housekeeping"
 
  efh.79.t: "The Federal War College"
- efh.79.d: "The Federation opens a single staff college for the whole federal army, and in doing so quietly decides whose doctrine the next generation of officers will learn. Not France's, not Germany's, not any one capital's, but the Federation's own. It is a small institution with an outsized purpose: to make sure that when the orders come, every commander who receives them was taught to read them the same way."
+ efh.79.d: "The Federation opens one staff college for the whole federal army, and the next generation of officers learns one doctrine instead of five national ones."
  efh.79.a: "Teach them to think as one."
  efh.80.t: "The Plan in the Safe"
- efh.80.d: "It is never spoken of in public and rarely in private, but it exists now: a complete, current, war plan against the United States, kept in a safe and updated quarterly. No one in the building wants to use it. Everyone in the building sleeps a little better knowing it is there. The plan is only the refusal to be caught without one."
+ efh.80.d: "Internally we have a complete, current war plan against the United States, kept in a safe and updated every quarter. Washington almost certainly keeps the same thing about us, and updates it more often."
  efh.80.a: "Keep it current."
  efh.81.t: "The Pacific Framework"
- efh.81.d: "The understanding with Japan hardens into an institution: shared standards, joint planning cells, an economic framework that ties the two industrial bases closer than any treaty language admits. It is the most durable thing the Federation builds in these years, and the one whose loss, when the decade finally takes it, will hurt the most."
+ efh.81.d: "The understanding with Japan becomes an institution: shared standards, joint planning cells and an economic framework tying the two industrial bases together."
  efh.81.a: "Build it to last."
 
  efh.82.t: "Listening to the North"
- efh.82.d: "The Federation quietly stands up its listening posture against the northern approaches, the long border where the American hemisphere comes closest. It is patient work, mostly antennas and analysts and the cultivation of people who would rather not be cultivated. None of it is dramatic. All of it is the difference between learning what Washington intends a week early and learning it on the news."
+ efh.82.d: "The Federation sets up listening posts along the northern approaches, where the American hemisphere comes closest. Mostly antennas and analysts, and a few people who would rather not be cultivated."
  efh.82.a: "Set the antennas listening."
  efh.83.t: "Watching the Canal"
- efh.83.d: "The Federation puts eyes on Panama. The canal is the artery of the hemisphere, and whoever can watch it can read American intentions in the traffic alone, which hulls move, which way, how fast. The watch is established without a single declaration, the way these things are, and the Federation's picture of the southern sea gets a great deal clearer."
+ efh.83.d: "The Federation puts eyes on Panama. Canal traffic says a lot about American intentions: which hulls move, which way, how fast. The watch goes up without a single declaration."
  efh.83.a: "Watch the water."
 
  efh.84.t: "The Kaltkrieg Begins"
- efh.84.d: "There is no declaration, because there never is. There is only the moment the Federation's posture toward the United States stops being a doctrine on paper and becomes the organising fact of its statecraft. The Long Peace ended with a posture, adopted in a quiet room, that every ministry now plans around. The decade the Federation half-expected has arrived on schedule. From here, the only questions are how cold it stays, and for how long."
+ efh.84.d: "The Federation's posture toward the United States stops being a document and becomes what every ministry plans around. There is no declaration."
  efh.84.a: "Into the cold, then."
 
  efh.85.t: "The Trade Bloc as a Weapon"
- efh.85.d: "The Federation stops pretending its common market is only an economy. Tariff schedules become leverage, standards become walls, and access to the largest consumer bloc on Earth becomes something nations must qualify for by leaning the Federation's way. Washington calls it coercion. Brussels calls it the price of admission. Both are right, and both know the other is too."
+ efh.85.d: "The Federation starts using its common market as leverage. Tariff schedules and standards are set so that access favours the countries leaning its way. Washington calls it coercion. Amsterdam calls it the price of admission."
  efh.85.a: "Make access a privilege."
  efh.86.t: "Squeezing the Market"
- efh.86.d: "The Federation tightens the screws on American commerce in earnest, shutting US firms out of European-aligned markets they had treated as their own. It is the kind of pressure that does not draw blood and does not stop hurting, felt in quarterly reports and idled plants rather than in casualties. Washington feels every turn of it, and files every grievance, against a day the ledger can be settled in a harder currency."
+ efh.86.d: "The Federation shuts American firms out of European-aligned markets they had treated as their own. The damage shows up in quarterly reports and idled plants, and Washington files every grievance."
  efh.86.a: "Let them feel the cost."
 
  efh.87.t: "Into the Backyard"
- efh.87.d: "The Federation extends its hand to the South American Confederation, and does so in the one place Washington has always considered settled: its own hemisphere. The approach is all economics and infrastructure and warm communiques, and not one word of it is innocent. Every road the Federation funds south of the equator is a road the United States did not, and everyone in three capitals understands the arithmetic."
+ efh.87.d: "The Federation courts the South American Confederation with money, infrastructure and warm communiques, in the hemisphere Washington considers its own. Every road the Federation funds there is one the United States did not."
  efh.87.a: "Money talks loudest here."
  efh.88.t: "The Beijing Channel"
  efh.88.d: "The Federation opens a serious channel to Beijing, careful and unsentimental on both sides. China is a counterweight, a market, and a problem the Federation would rather have leaning its way than the other. The talks are conducted by people who trust each other exactly as far as the interests align, which, for now, is far enough."
  efh.88.a: "Useful is enough."
 
  efh.89.t: "The Isthmus Claimed"
- efh.89.d: "The Federation makes its presence on the isthmus permanent. What began as economic pressure and basing rights becomes, on the maps that matter, federal soil. The canal that the United States once held as the key to two oceans now has a European hand on it. It is the boldest thing the Federation has done in the hemisphere, and there will be a bill for it, payable on a date Washington gets to choose."
+ efh.89.d: "The Federation makes its presence on the isthmus permanent. What began as economic pressure and basing rights is now federal soil, and the canal the United States held for a century has a European hand on it. Washington will send the bill."
  efh.89.a: "The canal is ours now."
  efh.90.t: "Holding the Canal"
- efh.90.d: "Occupation is easier to declare than to keep. The isthmus does not want the Federation, and Washington is happy to fund every grievance into a grenade. The local resistance is real, organised, and quietly supplied from the north. The Federation can hold Panama with a fist or with a hand, but it cannot hold it for free, and it must choose now which kind of occupier it intends to be."
+ efh.90.d: "Occupation is easier to declare than to keep. The isthmus does not want the Federation, and Washington is happy to supply anyone who agrees. The local resistance is organised and armed from the north. The Federation has to decide how it intends to hold Panama."
  efh.90.a: "An iron grip."
  efh.90.b: "Win the isthmus over."
 
  EFH_federal_health_security: "Federal Health Security"
- EFH_federal_health_security_desc: "The Federation pulls its tangle of national health ministries into a single federal directorate. The case is unglamorous and unanswerable: a continent that moves as one needs to be able to see sickness coming as one."
+ EFH_federal_health_security_desc: "The Federation merges its tangle of national health ministries into a single federal directorate."
  EFH_continental_disease_surveillance: "Continental Disease Surveillance"
- EFH_continental_disease_surveillance_desc: "A standing early-warning network for outbreaks: sentinel laboratories, shared reporting, the dull infrastructure of watching for the unusual across an entire continent. It is built for influenza and the next coronavirus and the food-borne scare. It will, in time, be watching for something the textbooks do not have a chapter for, and it will be watching before anyone tells it to."
+ EFH_continental_disease_surveillance_desc: "A standing early-warning network for outbreaks: sentinel laboratories and shared reporting across the continent. It is built for influenza, the next coronavirus and the food-borne scare."
  EFH_strategic_biocontainment: "Strategic Biocontainment"
- EFH_strategic_biocontainment_desc: "Quarantine law, stockpiles, isolation capacity, and a containment doctrine the Federation hopes never to use at scale. It is prudence dressed as bureaucracy. When the decade finally needs it, the people who wrote these protocols for a bad flu season will find that they wrote, by accident, the first draft of how a continent survives."
+ EFH_strategic_biocontainment_desc: "Quarantine law, stockpiles, isolation capacity, and a containment doctrine the Federation hopes never to use at scale. Written with a bad flu season in mind."
 
  EFH_groundwork_biosecurity_tt: "The pre-crisis disease-surveillance network was already watching, and folds straight into parasite monitoring: +25 Political Power and a parasite-research bonus."
 
  efh.91.t: "Federal Health Security"
- efh.91.d: "The new directorate opens its doors to almost no notice. Public health is the kind of thing that is invisible when it works and a scandal when it fails, and the Federation, for now, intends for it to work. Budgets are signed, laboratories are linked, and a quiet competence settles over a corner of the federal government that the decade has not yet given a reason to thank."
+ efh.91.d: "The new health directorate opens to almost no notice. Budgets are signed, laboratories are linked, and a corner of the federal government starts working quietly."
  efh.91.a: "Let them do their work unnoticed."
- efh.92.t: "The Watch That Does Not Sleep"
- efh.92.d: "The surveillance network goes live across the continent. From now on, an unusual cluster of illness anywhere in the Federation surfaces in a federal office within days, often within hours. It is built to catch the ordinary horrors, the new flu, the tainted shipment, the hospital outbreak. That it might one day catch something that was never ill in any sense a doctor would recognise is a thought no one in the building has had yet."
+ efh.92.t: "The Network Goes Live"
+ efh.92.d: "The surveillance network goes live. An unusual cluster of illness anywhere in the Federation now reaches a federal office within days, often within hours."
  efh.92.a: "Keep the watch."
  efh.93.t: "Containment as Doctrine"
- efh.93.d: "The Federation writes down how it would seal a region off, hold a line against a spreading thing, and keep a continent functioning while part of it is quarantined. The authors think they are planning for a pandemic. They are not wrong. They simply do not yet know how literally the word will come to apply, or that the doctrine they are drafting for a virus will be read, a few years on, by officers fighting something with roots."
+ efh.93.d: "The Federation writes down how it would seal off a region, hold a quarantine line, and keep the rest of the continent running. The authors are planning for a pandemic."
  efh.93.a: "Hope never to use it."
 
  efh.94.t: "The Fleet Goes Corporate"
- efh.94.d: "The Federation hands the modernisation of its navy to H&A. The argument is unanswerable on the spreadsheet: the corporation builds faster, cheaper, and better than any federal yard, and a fleet is too expensive to build out of pride. So the warships of the European Federation will be H&A hulls, maintained on H&A contracts, sailing on H&A terms. Somewhere in the admiralty, an old officer notes that a navy you do not build is a navy you do not entirely own, and is told, politely, that the budget disagrees."
+ efh.94.d: "The Federation hands naval modernisation to H&A. The corporation builds faster and cheaper than any federal yard, so the Federation's warships will be H&A hulls on H&A maintenance contracts."
  efh.94.a: "Let the corporation build it."
  efh.95.t: "The Air Arm Goes Corporate"
- efh.95.d: "The same logic that took the navy now takes the air force. H&A aerospace is simply ahead, in engines, in avionics, in the unglamorous business of keeping aircraft flying, and the Federation chooses capability over control. The federal air arm becomes, in everything but the flag on the tail, a corporate fleet on loan to the state. It is the best air force the Federation could field. It is also one more thing the Federation no longer makes for itself."
+ efh.95.d: "The air force goes the same way as the navy. H&A is ahead in engines, avionics and keeping aircraft flying, and the federal air arm becomes a corporate fleet in everything but the flag on the tail."
  efh.95.a: "Capability over control."
 
  efh.96.t: "The Assessment"
- efh.96.d: "The report lands on the right desks with the worst kind of clarity: this is real, it is not going away, and the institutions built for every previous emergency are the wrong size and shape for this one. The Federation has faced wars and recessions and the long shadow of the United States, and it has a playbook for each. For this it has only the assessment itself."
+ efh.96.d: "The assessment reaches the right desks. The outbreak is real, it is spreading, and nothing in the Federation's emergency planning was built for it."
  efh.96.a: "Begin from the truth."
  efh.97.t: "The Federal Emergency"
- efh.97.d: "The Federation declares the emergency it has been quietly preparing for and loudly hoping to avoid. Emergency authorities move from the statute books to the operations rooms. The federal government becomes, overnight, the thing it was designed to be only in the worst case. The public is told enough to cooperate and not enough to panic, a line the Federation will walk for the rest of the decade. The machinery built in the quiet years is switched on. Now it will be discovered whether it was built well."
+ efh.97.d: "The Federation declares a federal emergency. Emergency authorities move from the statute books into the operations rooms, and people are told enough to cooperate."
  efh.97.a: "Hold the line at home."
  efh.98.t: "One Command Against It"
- efh.98.d: "Every federal service that touches the crisis is folded under a single command: army, civil defence, the health directorate, the contractors, the intelligence cells, all answering to one chain of orders for the first time. The bureaucratic turf wars are suspended for the duration, which everyone privately understands means forever. The Federation has organised itself for survival."
+ efh.98.d: "Army, civil defence, the health directorate, the contractors and the intelligence cells all answer to one command. The turf wars are suspended for the duration, which everyone understands means forever."
  efh.98.a: "One command, one fight."
 
  efh.99.t: "The Board Becomes the State"
- efh.99.d: "It is done by emergency memorandum, and that is what makes it permanent. Federal governance is suspended for the duration of the crisis, and the duration of the crisis has no end date. The decisions that matter now are made where the logistics, the science, and the survival infrastructure actually sit, which is to say in an H&A boardroom. No flag comes down. No anthem changes. The European Federation still exists on every document and in every ceremony. It simply no longer governs itself, and the people who signed the memorandum tell themselves, correctly, that there was no other way to survive."
+ efh.99.d: "It is done by emergency memorandum. Federal governance is suspended for the duration of the crisis, and the crisis has no end date. Decisions now get made where the logistics and the science sit, in an H&A boardroom. No flag comes down. No anthem changes. The European Federation still exists on every document and in every ceremony. It simply no longer governs itself."
  efh.99.a: "Whatever it takes to last."
 
  efh.100.t: "A Weapon for the Enemy"
- efh.100.d: "Nothing in the Federation's arsenal was designed for what it now has to kill. So H&A's weapons people start over, building a round around the one thing the enemy cannot shrug off, and pairing it with the corporation's nuclear expertise to make it carry. It is an ugly, specialised, expensive answer to an ugly problem, and the first field reports say it works. The Federation finally has a weapon made for this war rather than borrowed from the last one."
+ efh.100.d: "Nothing in the Federation's arsenal was built for this enemy. H&A's weapons division designs a round around the one thing the organisms cannot shrug off, and uses its nuclear expertise to make it carry. The first field reports say it works."
  efh.100.a: "Put it into production."
  efh.101.t: "Lines That Hold"
- efh.101.d: "The early doctrine of meeting the enemy everywhere at once is quietly retired. It cost too much ground and too many people to learn. In its place comes something humbler and more durable: choose the lines that can be held, fortify them in depth, and make the enemy pay for every metre of the ones that cannot. It is a doctrine of not losing faster than the Federation can adapt, and for now that is the only kind worth having."
+ efh.101.d: "The doctrine of meeting the enemy everywhere at once is retired. It cost too much ground. The army now picks the lines it can hold, fortifies them in depth, and makes the enemy pay for the rest."
  efh.101.a: "Hold what can be held."
 
  efh.102.t: "The Quiet Years"
- efh.102.d: "Years from now, people will describe these as the good years, and they will be right, and they will not have known it at the time. The Federation is prosperous and at peace, its biggest arguments are about budgets, and the worst headline of the week is a dull one. The Federation spends this one the way it spends them all, on the small business of a continent that does not yet know it is living in the last calm it will get."
+ efh.102.d: "The Federation is prosperous and at peace. Its biggest arguments are about budgets, and the worst headline of the week is a dull one."
  efh.102.a: "Make the most of the calm."
 
  efh.103.t: "The Summit Collapses"
- efh.103.d: "Whatever the summit was meant to be, it is over, and it has failed in the way these things fail: a slow souring of every room until there was nothing left to sign. The brief warmth between the Federation and the United States cools back to the familiar chill, harder now for having been interrupted. Both sides go home and tell their publics the same story with the names reversed. The Federation draws the obvious conclusion, dusts off the harder posture, and quietly turns its attention north, to the long cold border."
+ efh.103.d: "The summit is over. Every room soured slowly until there was nothing left to sign. Both delegations go home and tell the same story with the names reversed."
  efh.103.a: "Back to the cold, and ready this time."
 
  EFH_long_peace_public_works: "Long Peace Public Works"
@@ -1054,11 +1065,11 @@
  EFH_joint_exercise_readiness_desc: "Formations that have drilled the containment playbook dig faster and hold together longer. The effect fades as postings rotate."
 
  EFH_federal_cordon_doctrine: "Federal Cordon Doctrine"
- EFH_federal_cordon_doctrine_desc: "The Federation holds the line with its own troops and its own rules. Cordon a contaminated zone, dig in behind it, and do not move until the ground is clean. It is slow, manpower-heavy, and legible: the public can see federal formations standing between them and the ecology, and that visibility is worth as much as the ground it holds."
+ EFH_federal_cordon_doctrine_desc: "Hold the line with federal troops and federal rules: cordon a contaminated zone, dig in behind it, and do not move until the ground is clean. It is slow and manpower-heavy, and people can see federal soldiers standing between them and the infestation."
  EFH_contracted_field_response: "Contracted Field Response"
- EFH_contracted_field_response_desc: "H&A already has the equipment, the specialists, and the willingness to go where federal troops will not. Hand the forward clearance work to contracted teams and keep the army for the lines that matter. It is faster and it hits harder, but a clearing force that answers to a board rather than a parliament is a thing the Federation will have to explain later."
+ EFH_contracted_field_response_desc: "H&A already has the equipment, the specialists, and the willingness to go where federal troops will not. Contracted teams take the forward clearance work and the army keeps the lines. It is faster, and the teams answer to H&A's board."
  EFH_continental_containment_exercise: "Continental Containment Exercise"
- EFH_continental_containment_exercise_desc: "Whichever doctrine the Federation chose, it has never been run at scale under real conditions. Authorise a full continental exercise: live organisms, real terrain, the whole command chain from field team to joint headquarters. The reports will be honest whether the Federation wants them to be or not, and the option to run the exercise again, on demand, becomes a standing tool."
+ EFH_continental_containment_exercise_desc: "Neither doctrine has been run at scale. Authorise a full continental exercise: live organisms, real terrain, and the whole command chain from field team to joint headquarters."
  EFH_containment_exercise_unlock_tt: "Unlocks the repeatable §YRun a Live Containment Exercise§! decision in Containment Operations."
  EFH_exercise_cordon_echo_tt: "The cordon doctrine steadies the home front: §G+0.02 Stability§!."
  EFH_exercise_contracted_echo_tt: "The contracted teams bill for the exercise: H&A land division gains funds."
@@ -1077,33 +1088,33 @@
  efh.109.a: "Sign it. We will read the annex later."
 
  efh.110.t: "The Exercise Holds"
- efh.110.d: "The exercise runs clean. Cordons close on schedule, the clearance teams meet their timelines, and the joint command watches the whole chain function under real load and finds only the ordinary friction. The footage is cleared for release. For one news cycle the Federation looks like a state that knows what it is doing, and the men and women who drilled for this get to see it work."
+ efh.110.d: "The exercise runs clean. Cordons close on schedule, the clearance teams meet their timelines, and the footage is cleared for release. For one news cycle the Federation looks like it knows what it is doing."
  efh.110.a: "Log it and do it again next quarter."
  efh.111.t: "In Front of Everyone"
- efh.111.d: "It goes wrong at the worst possible moment, in front of the observers, on the record. A cordon opens where it should have closed. A clearance team pulls back through a checkpoint that was supposed to be behind them. Nobody is hurt, which is the only mercy, but the confusion is total and it is filmed. By evening the question in every ministry is the same: does the Federation publish what happened, or does it spend to keep the footage in a drawer."
- efh.111.a: "Publish it. The army learns. The public can handle the truth."
- efh.111.b: "Bury the coverage. This is not the week for it."
+ efh.111.d: "It goes wrong in front of the observers. A cordon opens where it should have closed, and a clearance team retreats through a checkpoint that was supposed to be behind it. Nobody is hurt, and all of it is filmed. The ministries have to decide whether to publish it."
+ efh.111.a: "Publish it. The army learns."
+ efh.111.b: "Bury it. Not this week."
 
  efh.112.t: "The Cycle Delivers"
- efh.112.d: "The accelerated cycle closes on time and intact. The directorate hands up a folder of results that would have taken a year at the old pace: a genuine advance, bought with a quarter of hard work and a controlled level of risk that, this time, stayed controlled. The division asks for the next cycle before this one is fully written up."
+ efh.112.d: "The accelerated cycle closes on time with nothing escaped. The directorate hands up a year's worth of results and asks for the next cycle before this one is written up."
  efh.112.a: "Approve the findings. Keep the pace."
  efh.113.t: "A Cell Block Fails"
- efh.113.d: "The incident report is thin in the way that means it is still being written. A containment cell failed during the accelerated cycle. The site went to lockdown, the response teams did what they were drilled to do, and the immediate danger was ended inside the perimeter. What did not stay inside the perimeter was the news of it. The staff are shaken, the public is frightened, and the directorate is waiting to be told whether it still has a mandate."
- efh.113.a: "The work continues. Reinforce the cells and carry on."
- efh.113.b: "Suspend the block. We cannot afford another one."
+ efh.113.d: "A containment cell failed during the accelerated cycle. The site went into lockdown and the response teams contained it inside the perimeter. The news got out anyway."
+ efh.113.a: "Reinforce the cells and carry on."
+ efh.113.b: "Suspend the block."
 
- EFH_gate_escalation_rivalry_tt: "The standoff with the United States has hardened into open rivalry."
- EFH_gate_escalation_coldwar_tt: "Relations with the United States have reached the cold war footing."
- EFH_gate_panic_elevated_tt: "Public confidence has fallen far enough that Parliament will consider it."
- EFH_gate_panic_high_tt: "The public no longer believes ordinary government is sufficient."
+ EFH_gate_escalation_rivalry_tt: "The standoff with the United States has hardened into open rivalry. EF-US Escalation: [?EFH_USA_escalation|0] / 100, requires 50+"
+ EFH_gate_escalation_coldwar_tt: "Relations with the United States have reached the cold war footing. EF-US Escalation: [?EFH_USA_escalation|0] / 100, requires 65+"
+ EFH_gate_panic_elevated_tt: "Public confidence has fallen far enough that Parliament will consider it. Public Panic: [?ROOT.public_panic|0] / 1000, requires 150+"
+ EFH_gate_panic_high_tt: "The public no longer believes ordinary government is sufficient. Public Panic: [?ROOT.public_panic|0] / 1000, requires 200+"
  EFH_military_focus: "European Military Focus"
- EFH_military_focus_desc: "The accumulated weight of every reform, exercise and mobilisation order the Federation has put its army through. No single measure did much. Together they are the difference between a standing force and a paper one."
+ EFH_military_focus_desc: "The accumulated weight of every reform, exercise and mobilisation order the Federation has put its army through. No single measure did much."
  EFH_military_focus_tt: "§GEuropean Military Focus improves§!"
  EFH_industrial_base: "Federal Industrial Base"
- EFH_industrial_base_desc: "Construction capacity, factory throughput and the trade arrangements that keep both fed. Built up one appropriation at a time across the member states, and now the thing the war economy will be poured into."
+ EFH_industrial_base_desc: "Construction capacity, factory throughput and the trade arrangements that keep both fed. Built up one appropriation at a time across the member states."
  EFH_industrial_base_tt: "§GFederal Industrial Base improves§!"
  EFH_federal_authority: "Federal Authority"
- EFH_federal_authority_desc: "How much the Federation can actually ask of its member states, and how much they will grant without argument. Every compact signed, every emergency power taken, every partner reassured. It is the difference between a government and a committee."
+ EFH_federal_authority_desc: "How much the Federation can ask of its member states before they argue. Every compact signed, every emergency power taken and every partner reassured adds to it."
  EFH_federal_authority_tt: "§GFederal Authority improves§!"
  EFH_nuclear_program: "Federal Nuclear Programme"
  EFH_nuclear_program_desc: "Fissile extraction, warhead assembly and the posture built around them. Maintained through the long peace on the argument that it would be needed eventually, by people who did not expect to be right."
@@ -1132,7 +1143,7 @@
  EFH_parasite_warfare_5: "Anti-Parasite Doctrine (5/7)"
  EFH_parasite_warfare_5_desc: "Biological findings feed back into tactics rather than sitting in a directorate report. What the laboratory learns on Monday is in an order by Friday."
  EFH_parasite_warfare_6: "Anti-Parasite Doctrine (6/7)"
- EFH_parasite_warfare_6_desc: "A settled body of practice. The Federation no longer improvises against beckons. It applies a procedure and expects it to hold."
+ EFH_parasite_warfare_6_desc: "A settled body of practice. The Federation no longer improvises against Beckons. It applies a procedure and expects it to hold."
  EFH_parasite_warfare_7: "Anti-Parasite Doctrine (7/7)"
  EFH_parasite_warfare_7_desc: "Everything the Federation has learned about killing the Iris's organisms, written down and drilled. It makes each engagement survivable rather than the war winnable, which is the only thing on offer."
 
@@ -1147,14 +1158,14 @@
  EFH_rtg_penetrator_program: "RTG Penetrator Rounds"
  EFH_rtg_penetrator_program_desc: "The Beckon membrane is a non-Newtonian gel. It rigidifies on impact and deforms conventional rounds. The RTG penetrator directs thermal energy into the membrane microseconds before contact, preventing the gel from setting. Above Rupter tier, nothing else works."
  EFH_integration_agreement: "The Integration Agreement"
- EFH_integration_agreement_desc: "By Day 812 the Federation can no longer fund the parasite war and the war with America on its own procurement. The Agreement transfers operational authority to a joint H&A-EF command. The civilian government will be retained. Whether anyone still answers to it is the open question."
+ EFH_integration_agreement_desc: "By Day 812 the Federation can no longer fund the parasite war and the war with America on its own procurement. The Agreement transfers operational authority to a joint H&A-EF command. The civilian government stays in place, with less to do."
 
  EFH_board_reorientation_spirit: "The Board Reorients"
  EFH_board_reorientation_spirit_desc: "The board authorises what was already underway. Capability rises. The legitimacy of the federal state stays where it was."
  EFH_integration_agreement_full: "Integration Agreement (Full)"
  EFH_integration_agreement_full_desc: "Operational authority held by joint H&A-EF command, openly. Research and logistics improve. Political power drains as the federal state is delegitimised."
  EFH_integration_agreement_oversight: "Integration Agreement (Oversight)"
- EFH_integration_agreement_oversight_desc: "Operational authority shared, with the federal government retained in name and in some real measure. The gains are smaller. The state survives a little longer."
+ EFH_integration_agreement_oversight_desc: "Operational authority shared, with the federal government retained in name and in some real measure. The gains are smaller, and the federal state keeps more of its authority."
 
  efh.31.t: "The Board Reorients"
  efh.31.d: "Day 60. The Thermonuclear division is designated Priority-1. Hyperbiology is fast-tracked. Standard corporate governance is suspended. None of these are proposals. The board is authorising work that began the week the Iris was confirmed biological. The projections on the table are three years old and accurate."
@@ -1162,7 +1173,7 @@
 
  efh.30.t: "The Integration Agreement"
  efh.30.d: "The Federation cannot fund the parasite war, the war with the United States, and its own civilian state at once. H&A can run two of the three. The Agreement transfers operational authority to joint H&A-EF command. The civilian government stays on paper. Signed openly, it costs the Federation what remains of its independence. Signed quietly, it costs the same and pretends otherwise."
- efh.30.a: "Sign it in full. The institution that works is the one that survives."
+ efh.30.a: "Sign it in full, openly."
  efh.30.b: "Retain nominal federal oversight."
 
  EFH_dispatcher_identified: "The First Dispatcher"
@@ -1170,18 +1181,18 @@
  EFH_root_network_revision: "Sixty-Eight Hours"
  EFH_root_network_revision_desc: "Cleared zones reinfest within roughly sixty-eight hours. Nobody had accounted for the root systems, which extend metres underground and survive surface clearance. The doctrine that worked last year is rewritten: clear the surface, then burn the roots, or do not bother clearing at all."
  EFH_defensible_lines: "Defensible Lines"
- EFH_defensible_lines_desc: "Not every position can be held with the personnel that remain. The Federation consolidates onto terrain it can actually defend and supply. The decision is described as prudence. It is also the first quiet admission that ground will be given up on purpose."
+ EFH_defensible_lines_desc: "Not every position can be held with the personnel that remain. The Federation consolidates onto terrain it can defend and supply, and gives up the rest on purpose."
 
  EFH_first_beckon_confidence: "Fire Works"
  EFH_first_beckon_confidence_desc: "The 2021 organisms burn. Soldiers learn to trust fire. They are right, for now."
 
  efh.32.t: "The Dispatcher"
- efh.32.d: "A new organism is catalogued: a chrysanthemum-like flower above ground, a network of tentacles below. It receives radio. Over weeks it learns the languages spoken across it. In any zone where one is active, encryption is not security. Every attempt to hide a message teaches the organism more about how humans hide things. Communications doctrine has to change, and there is no good version of the change."
+ efh.32.d: "A new organism is catalogued: a chrysanthemum-like flower above ground, a network of tentacles below. It receives radio and, over weeks, learns the languages spoken across it. Where one is active, encrypting a message only teaches it more about how humans hide things. Communications doctrine has to change."
  efh.32.a: "Encrypt everything and hope."
  efh.32.b: "Go dark. Couriers and hard lines only."
 
  efh.33.t: "Sixty-Eight Hours"
- efh.33.d: "A cleared sector is declared secure on a Tuesday. By Friday it is reinfested. The pattern repeats across every theater until it can no longer be denied: the Beckons grow from root systems metres underground, and surface clearance accomplishes nothing. The Fire Protocol that bought a year of confidence was treating the symptom. The doctrine is revised. The confidence does not come back."
+ efh.33.d: "A cleared sector is declared secure on a Tuesday. By Friday it is reinfested. The Beckons grow back from root systems metres underground, and surface clearance does nothing to them. The doctrine is revised."
  efh.33.a: "Burn the roots."
 
  EFH_terms_of_appointment: "Terms of Appointment"
@@ -1209,6 +1220,118 @@
  EFH_ha_voss_entrenched: "Signs Off On Everything"
  EFH_ha_voss_entrenched_desc: "The directorate approves its own scope. Requests that would change that reach his desk and are not forwarded."
 
+ EFH_carsten_breuer: "Carsten Breuer"
+ EFH_carsten_breuer_desc: "German general and head of the Federation's crisis staff. Shelters, evacuation timetables and emergency logistics report to one office, and the office answers its phone."
+ EFH_crisis_staff_general: "Crisis Staff General"
+ EFH_crisis_staff_general_desc: "Treats a continental emergency as a staffing problem with a schedule. So far the schedule has held."
+
+ EFH_christian_drosten: "Christian Drosten"
+ EFH_christian_drosten_desc: "Berlin virologist who spent his career on outbreaks nobody else was watching. The Federation has asked him to brief the cabinet on this one with considerably less to go on."
+ EFH_outbreak_virologist: "Outbreak Virologist"
+ EFH_outbreak_virologist_desc: "Publishes the preliminary numbers along with how uncertain they are. The cabinet would prefer the numbers on their own."
+
+ EFH_kaja_kallas: "Kaja Kallas"
+ EFH_kaja_kallas_desc: "Estonian, and the loudest voice for defence spending in every room she has sat in. The rooms agree with her now."
+ EFH_baltic_hawk: "Baltic Hawk"
+ EFH_baltic_hawk_desc: "Argued for rearmament for a decade before anyone needed it. Nobody asks her to argue any more."
+
+ EFH_mark_rutte: "Mark Rutte"
+ EFH_mark_rutte_desc: "Dutch, and a fixture of Amsterdam politics who outlasted every scandal of his career by turning up to the next meeting. The Federation has asked him to keep turning up."
+ EFH_teflon: "Teflon"
+ EFH_teflon_desc: "Nothing sticks. The Federation's stability figures have started to borrow the quality."
+
+ EFH_olaf_scholz: "Olaf Scholz"
+ EFH_olaf_scholz_desc: "Hamburg's contribution to federal politics, brought into the cabinet when public panic stopped responding to anything else. His briefings contain no information, and people leave them calmer."
+ EFH_scholzomat: "Scholzomat"
+ EFH_scholzomat_desc: "Answers every question with the same three sentences. It works on the public and on nobody in the cabinet."
+
+ EFH_christine_lagarde: "Christine Lagarde"
+ EFH_christine_lagarde_desc: "Head of the Federation's central bank, seconded to run the war economy. Monetary policy now includes how many shells a month the continent can afford."
+
+ EFH_boris_johnson: "Boris Johnson"
+ EFH_boris_johnson_desc: "The Federation's best-known sovereigntist, who spent a career arguing that London should answer to London. He now sits in Amsterdam for the part of Britain still standing, and describes the situation as eminently manageable."
+ LD_blustering_optimist: "Blustering Optimist"
+ LD_blustering_optimist_desc: "Morale rises in every room he enters. Nobody can quite account for where the stability went."
+
+ EFH_matthias_kroger: "Matthias Kröger"
+ EFH_matthias_kroger_desc: "H&A's liaison to the federal cabinet, seated once Hyperbiology's work grew too large to brief from outside the room. He minutes the meetings H&A needs minuted."
+ EFH_ha_liaison: "Corporate Liaison"
+ EFH_ha_liaison_desc: "Brings H&A's research into the cabinet, and H&A's priorities with it."
+
+ EFH_tomasz_wrona: "Tomasz Wrona"
+ EFH_tomasz_wrona_desc: "Polish Army engineer and author of the Federation's cordon doctrine: dig first, hold the line, give up nothing that would have to be retaken. It has held everywhere it was built in time."
+
+ EFH_mikkel_aasen: "Mikkel Aasen"
+ EFH_mikkel_aasen_desc: "Norwegian general appointed to run a war of positions. His staff report progress in kilometres of trench completed per week."
+
+ EFH_pieter_janssens: "Pieter Janssens"
+ EFH_pieter_janssens_desc: "Belgian vice admiral, appointed after the Atlantic showed how exposed the Federation's shipping was. Every convoy now sails with an escort, and every escort commander has his direct line."
+ EFH_convoy_escort_chief: "Convoy Escort Chief"
+ EFH_convoy_escort_chief_desc: "Measures the navy by how many cargo ships arrive. The figure is up this quarter."
+
+ EFH_rob_bauer: "Rob Bauer"
+ EFH_rob_bauer_desc: "Dutch admiral and the Federation's senior military coordinator. He keeps the member states' high commands working to one plan, which mostly means getting them into the same room."
+
+ EFH_liz_truss: "Liz Truss"
+ EFH_liz_truss_desc: "Runs the Federation's growth programme off a plan that fits on one page. Nobody has costed the page."
+ EFH_bold_fiscal_vision: "Bold Fiscal Vision"
+ EFH_bold_fiscal_vision_desc: "Output rises at once and the bill comes later. Someone has put a lettuce on her desk to see which lasts longer."
+ EFH_market_confidence_collapse: "Market Confidence Collapse"
+ EFH_market_confidence_collapse_desc: "Lenders have stopped taking the Federation's word on its own budget. It will take months to win it back."
+ efh_advisor.1.t: "Forty-Nine Days"
+ efh_advisor.1.d: "The author of the growth programme has resigned after forty-nine days. The programme stays on the books, and so do the bills it ran up. The lettuce is still fresh."
+ efh_advisor.1.a: "Show her out."
+
+ EFH_larry_the_cat: "Larry"
+ EFH_larry_the_cat_desc: "Chief Mouser to the Cabinet. He has watched every one of them leave and has not moved from the doorstep."
+ LD_chief_mouser: "Chief Mouser"
+ LD_chief_mouser_desc: "Keeps the cabinet office mostly free of mice. His tenure is the most stable thing in the government."
+ efh_advisor.2.t: "The Cat Stays"
+ efh_advisor.2.d: "With London back in Federation hands, staff returning to the old cabinet office found a cat on the doorstep, well fed and unbothered. He was there under the last three ministers as well. He is on the payroll now."
+ efh_advisor.2.a: "Somebody feed him."
+
+ EFH_palmerston_the_cat: "Palmerston"
+ EFH_palmerston_the_cat_desc: "The foreign ministry's cat, and Larry's neighbour. The two have not been on speaking terms for years."
+ LD_foreign_office_mouser: "Diplomatic Mouser"
+ LD_foreign_office_mouser_desc: "Visiting delegations like him. Larry does not."
+ EFH_cat_feud: "The Cats Are Fighting"
+ EFH_cat_feud_desc: "Both cats sit in the cabinet now. Meetings get interrupted."
+
+ EFH_emmanuel_macron: "Emmanuel Macron"
+ EFH_emmanuel_macron_desc: "French, and the cabinet's chosen voice for the war. His addresses run long and move the public every time."
+ EFH_jupiter: "Jupiter"
+ EFH_jupiter_desc: "Governs from above and explains it at length. The speeches work, and they take up most of the cabinet's week."
+
+ EFH_karl_lauterbach: "Karl Lauterbach"
+ EFH_karl_lauterbach_desc: "German epidemiologist, brought into the cabinet once panic started climbing. He is on television most nights, warning about the next thing."
+ EFH_perpetual_warning: "Perpetual Warning"
+ EFH_perpetual_warning_desc: "People report infestation sooner when he is on the air, and sleep worse. Public panic cannot fall as far while he sits in the cabinet."
+
+ EFH_david_attenborough: "David Attenborough"
+ EFH_david_attenborough_desc: "Naturalist, recruited to explain the parasites on the Federation's broadcasts. He describes them the way he has described everything else, and people find they can listen."
+ EFH_calm_narrator: "Calm Narrator"
+ EFH_calm_narrator_desc: "Public panic rises more slowly while he is on the air."
+
+ EFH_jeremy_clarkson: "Jeremy Clarkson"
+ EFH_jeremy_clarkson_desc: "Farmer, of a kind, put in charge of the Federation's food supply. Output is up. Nobody in the ministry can say by how much."
+ EFH_agricultural_commissioner: "Agricultural Commissioner"
+ EFH_agricultural_commissioner_desc: "The food keeps arriving. So do the repair bills for the machinery."
+ EFH_tractor_incident: "Tractor Incident"
+ EFH_tractor_incident_desc: "A ministry building is being repaired. Again."
+ efh_advisor.3.t: "A Tractor Incident"
+ efh_advisor.3.d: "The Agricultural Commissioner has driven a tractor into a building again, this time one the ministry needed. He says the tractor did it. Repairs will take about a month."
+ efh_advisor.3.a: "Take his keys away."
+
+ EFH_viktor_orban: "Viktor Orbán"
+ EFH_viktor_orban_desc: "Hungarian, and the cabinet's most reliable veto. Nothing passes without his signature and his signature always costs something. His own region never seems to come out behind."
+ EFH_serial_vetoer: "Serial Vetoer"
+ EFH_serial_vetoer_desc: "Slows everything down and charges for it. The factories under his watch somehow run better than anyone else's."
+
+ EFH_gunther_fehlinger_jahn: "Gunther Fehlinger-Jahn"
+ EFH_gunther_fehlinger_jahn_desc: "Austrian, and a fixture of the Federation's foreign policy debates. Posts a new map of Russia divided into smaller countries most mornings."
+ EFH_dissolve_russia: "Dissolve Russia"
+ EFH_dissolve_russia_desc: "Always has a case for war ready. It is usually the same case."
+
  efh_directorate.1.t: "Terms of Appointment"
  efh_directorate.1.d: "The paperwork is thin for something this permanent. Two names, two seats, and a clause specifying that neither appointment is subject to the ordinary review process. Voss drafted it himself, which is the only register he has ever been good in, and filed it before anyone upstairs could ask what problem it was meant to solve. Woods was informed afterwards. She read it, said it did not change anything, and went back to work. She is not wrong. The Federation has written down what was already true: there is no version of the Hyperbiology programme that continues without her, and no successor who could be handed it, because almost none of it exists outside her head."
  efh_directorate.1.a: "File it."
@@ -1220,42 +1343,146 @@
  efh_directorate.2.a: "Noted."
 
  EFH_expand_hyperbiology: "Expand Hyperbiology"
- EFH_expand_hyperbiology_desc: "The division has outgrown its founding remit. What began as a lawsuit annex is now the only body in the Federation producing usable results on the organisms. Fold the loose research groups into a single directorate, commit the budget the work already requires in practice, and let Hyperbiology grow into the institution the situation demands."
+ EFH_expand_hyperbiology_desc: "The division has outgrown its founding remit. What began as a lawsuit annex is now the only body in the Federation getting usable results on the organisms. Fold the loose research groups into one directorate and fund it properly."
  EFH_expand_hyperbiology_tt: "Unlocks the enhanced Hyperbiology funding cycle. Payoff scales with the terms of the 2022 Integration Agreement."
  EFH_hyperbiology_facilities: "Facilities and Staffing"
  EFH_hyperbiology_facilities_desc: "Laboratory space, containment cells, and a hiring surge across three campuses. The division stops borrowing capacity from other H&A branches and stands up its own."
  EFH_live_specimen_acquisition: "Live Specimen Acquisition"
- EFH_live_specimen_acquisition_desc: "Field teams stop burning what they find and start bringing it back intact. Containment is expensive and the loss rate among handlers is not published. But a dead organism answers few of the questions that matter, and the ones that do get asked are getting more specific."
+ EFH_live_specimen_acquisition_desc: "Field teams stop burning what they find and start bringing it back intact. Containment is expensive, and the loss rate among handlers is not published."
+ EFH_declare_on_the_hive: "War on the Hive"
+ EFH_declare_on_the_hive_desc: "Hyperbiology's specimen reports reach the Council with a single recommendation attached. The organisms in Africa are not a regional outbreak and will not stop at a coastline. The Federation formally enters the war against the hive, and asks its partners to do the same."
  EFH_branch_parasite_study: "Branch Parasite Study"
- EFH_branch_parasite_study_desc: "The newer field organisms are not the primitive Beckon growths of 2021. They arrive already shaped against the tactics used on the last ones. The division formalises what the front already suspects: standard countermeasures have a shelf life, and doctrine must be rotated before it is compromised rather than after."
+ EFH_branch_parasite_study_desc: "The newer field organisms are not the primitive Beckon growths of 2021. They arrive already shaped against the tactics used on the last ones, so the division starts rotating doctrine on a schedule."
 
 
  EFH_fund_hyperbiology_major: "Fund Hyperbiology Directorate"
  EFH_fund_hyperbiology_major_desc: "Commit a major share of industrial output to a full research cycle at the expanded directorate. Larger than the founding grant, and it shows in the results."
 
  efh.104.t: "The Directorate"
- efh.104.d: "Hyperbiology now reports as its own directorate. The founding lawsuit is a footnote in its charter. Where the Federation once had a handful of researchers with an unusual sample set, it now has an institution with a budget line, a security classification, and a waiting list of questions from every other H&A division. The organisms are more interesting than anyone admitted, and now there is somewhere to study them properly."
+ efh.104.d: "Hyperbiology now reports as its own directorate, and the founding lawsuit is a footnote in its charter. It has a budget line, a security classification, and a waiting list of questions from every other H&A division."
  efh.104.a: "Give them what they need."
  efh.105.t: "Three Campuses"
  efh.105.d: "Containment cells, cold storage, and a hiring surge. The division stops borrowing microscopes from the aerospace labs and stands up its own. Staff are told the work is important and not told much else."
  efh.105.a: "Approved."
  efh.106.t: "Bring It Back Intact"
- efh.106.d: "The order goes out to the field teams: stop burning specimens, start capturing them. Handlers are issued containment gear and a procedure. The loss rate is not in the briefing. What the division learns from a living organism in a week outpaces a year of autopsies, and the questions being asked upstairs no longer accept a year."
+ efh.106.d: "The order goes out to the field teams: stop burning specimens, start capturing them. Handlers get containment gear and a procedure. The loss rate is not in the briefing."
  efh.106.a: "The data justifies it."
  efh.107.t: "A Shelf Life"
- efh.107.d: "The analysis is blunt. The organisms now arriving at the front are shaped against the tactics used on the last generation. Whatever coordinates them is watching how the Federation fights and answering. A countermeasure works for a season and then it does not. The directorate recommends rotating doctrine on a schedule, before the current one stops working, and accepts that this means never fully understanding why the last one failed."
+ efh.107.d: "The organisms now arriving at the front are shaped against the tactics used on the last generation. Whatever coordinates them is watching how the Federation fights. A countermeasure works for a season, so the directorate recommends rotating doctrine on a schedule."
  efh.107.a: "Rotate ahead of the loss."
 
  efh.22.t: "The Summit Holds"
- efh.22.d: "The second Canadian summit ends the way the first did. The Americans will not put the Eastern territories to a referendum, and the Federation will not concede them. The delegations leave with a communique, a photograph, and nothing settled. The frontier holds. For now."
+ efh.22.d: "The second Canadian summit ends the way the first did. The Americans will not put the Eastern territories to a referendum, and the Federation will not concede them. The delegations leave with a communique, a photograph, and nothing settled."
  efh.22.a: "A cold peace will do."
- efh.22.b: "Let them remember our faces. This is not over."
+ efh.22.b: "This is not over."
 
  efh.40.t: "The Canal Liberated"
- efh.40.d: "The Canal Zone has slipped American control. Federation advisors, and the resistance they armed, hold the locks now. In Brussels it is called a liberation. In Washington it is called theft. Both are correct."
+ efh.40.d: "The Canal Zone has slipped American control. Federation advisors, and the resistance they armed, hold the locks now. In Amsterdam it is called a liberation. In Washington it is called theft. Both are correct."
  efh.40.a: "The canal answers to Europe now."
  EFH_bolster_panama_resistance: "Bolster the Canal Zone Resistance"
  EFH_bolster_panama_resistance_desc: "Arm and fund the resistance to American rule in the Canal Zone. The state's own resistance climbs. When it boils over, the Federation moves to liberate Panama."
  USA_suppress_panama_resistance: "Suppress the Canal Zone"
  USA_suppress_panama_resistance_desc: "Crack down on the unrest in the Canal Zone to keep the locks in American hands. The methods are ugly, and Europe is watching."
 
+ EFH_Ryland: "Conscript Ryland into Laytheo"
+ EFH_HNA_independence: "H&A Independence"
+ EFH_HNA_independence_desc: "H&A has grown beyond a simple contractor. Granting the company room to operate on its own terms opens doors the Federation government could never open directly."
+ EFH_HNA_independence_tt: "H&A begins acting on its own authority. Their first independent initiative will conclude shortly."
+ EFH_HNA_autonomous_placeholder: "H&A: Lunar Architecture Office"
+ EFH_HNA_autonomous_placeholder_desc: "H&A's first autonomous office begins designing the industrial, legal, and launch framework for a sustained lunar programme."
+ EFH_HNA_ORIGINATOR: "H&A"
+ EFH_HNA_working_on_focus_tt: "§YH&A§! is working on this focus.\nProgress: §Y$FLAG_DAYS$§!/[?temp_focus_days] days"
+ EFH_HNA_focus_not_started_tt: "This initiative belongs to H&A. Grant them independence first."
+ EFH_HNA_lunar_programme_approved_tt: "Unlocks the §YMoon Base Programme§! once Laytheo has completed its first flight."
+ EFH_HNA_lunar_policy_public_tt: "H&A adopts a supervised public mandate for lunar work."
+ EFH_HNA_lunar_policy_corporate_tt: "H&A adopts an aggressive corporate acceleration model for lunar work."
+ EFH_HNA_lunar_policy_procurement_tt: "H&A creates a deniable procurement office. Several launch vehicles should consider becoming less unattended."
+ EFH_northern_establishment: "Northern Establishment"
+ EFH_northern_establishment_desc: "Federation doctrine was written for the ground it holds. Cold weather equipment is standard issue to the line, and the northern garrisons rotate through winter exercises regardless of the threat picture. The same formations acclimatise poorly below the Mediterranean."
+ EFH_fusion_economy: "Commercial Fusion Power"
+ EFH_fusion_economy_desc: "The first grid-scale tokamak facilities went online in 2017. Energy scarcity is effectively solved. Industrial output decoupled from fossil fuel supply chains."
+ EFH_RTG_ideas: "Parasite Countertechnology"
+ EFH_RTG_ideas_desc: "Early development of technologies to counter the Parasite threat. Detection systems, incendiary compounds, and containment protocols, in that order of urgency."
+ EFH_TAD_idea: "Total American Death"
+ EFH_TAD_idea_desc: "The United States has been the primary source of anti-EF propaganda and subversion. The Federation has committed itself to the complete eradication of the United States as a geopolitical entity."
+ EFH_first_vagrant_info: "Knox County Research"
+ EFH_first_vagrant_info_desc: "Classified files on Vagrant and parasite biology, with notes on the American military. Written by the 1st Vagrant."
+
+
+ EFH_global_positioning: "Global Positioning"
+ EFH_global_positioning_desc: "The European Federation wants to be more than a regional power. The Pacific, East Asia and South America are all in play."
+
+ EFH_pacific_partnership: "Pacific Partnership"
+ EFH_pacific_partnership_desc: "Japan has long sat in the Federation's sphere of influence. Now the Federation formalises that relationship, deepening economic and strategic ties against American encroachment."
+
+ EFH_japan_tech_exchange: "Japan Technology Exchange"
+ EFH_japan_tech_exchange_desc: "The Federation and Japan open a joint technology corridor."
+
+ EFH_pacific_defense_pact: "Pacific Defence Pact"
+ EFH_pacific_defense_pact_desc: "The Federation formally guarantees Japan's security, in public, where Washington has to respond to it."
+
+ EFH_south_american_outreach: "South American Outreach"
+ EFH_south_american_outreach_desc: "The Federation begins a quiet economic campaign in South America. Infrastructure investment, trade credits, and diplomatic personnel establish a foothold in what the United States considers its backyard."
+
+ EFH_SAC_infrastructure_program: "South American Infrastructure Programme"
+ EFH_SAC_infrastructure_program_desc: "The Federation's construction contracts in the South American Confederation become impossible to hide, and Washington notices."
+
+ EFH_hemispheric_challenge: "Hemispheric Challenge"
+ EFH_hemispheric_challenge_desc: "The Federation formally asserts an interest in the Western Hemisphere's stability. The Monroe Doctrine has a challenger for the first time in a century."
+
+ EFH_beijing_channel: "Beijing Back-Channel"
+ EFH_beijing_channel_desc: "Away from public scrutiny, the Federation opens a diplomatic channel with Beijing. Both sides have reasons to want a counterweight to Washington's global presence."
+
+ EFH_trade_normalization: "Trade Normalisation"
+ EFH_trade_normalization_desc: "The Federation and China normalise trade relations. New contracts flow through European ports. The United States takes note with considerable displeasure."
+
+ EFH_eurasian_buffer_doctrine: "Eurasian Buffer Doctrine"
+ EFH_eurasian_buffer_doctrine_desc: "The Federation signals that China is a natural buffer against American influence in Eurasia. The question is whether Beijing agrees, and how far it is willing to lean."
+
+
+
+ EFH_japan_sphere_tt: "Japan is drawn deeper into the Federation's security and economic sphere."
+
+
+
+
+
+
+
+
+
+
+ EFH_sino_efh_partnership: "Sino-European Partnership"
+ EFH_sino_efh_partnership_desc: "Beijing has agreed to the buffer doctrine. Trade runs both ways, research is shared, and both sides are in it for as long as it pays."
+
+ EFH_sino_research_exchange_active: "Sino-European Research Exchange"
+ EFH_sino_research_exchange_active_desc: "Joint laboratories and shared findings on parasite biology and containment. The exchange is temporary by design, renewed only while both governments find it useful."
+
+
+ EFH_eurasian_coordination: "Eurasian Coordination"
+
+ EFH_sino_logistics_corridor: "Open a Sino-European Logistics Corridor"
+ EFH_sino_logistics_corridor_desc: "Route Chinese industrial output through the partnership to reinforce European production. Renewable while the corridor stays open."
+ EFH_sino_logistics_corridor_tt: "Adds steel to the capital region for 180 days."
+ EFH_sino_trade_groundwork_tt: "Trade normalisation keeps the corridor cheap to run: additional political power."
+
+ EFH_sino_research_exchange: "Convene a Sino-European Research Exchange"
+ EFH_sino_research_exchange_desc: "Stand up joint laboratories on parasite biology and containment. Grants a temporary research bonus while the exchange runs."
+
+ EFH_sino_eastern_intelligence: "Share the Eastern Infestation Picture"
+ EFH_sino_eastern_intelligence_desc: "Pool what Beijing and Amsterdam each know about the parasite advance across the Asian landmass. A one-time intelligence hand-off on the Iris."
+ EFH_sino_contact_groundwork_tt: "The Beijing back-channel makes the first hand-off larger: additional intelligence on the Iris."
+
+
+ EFH_establish_atlantic_network: "Establish the Atlantic Network"
+ EFH_establish_atlantic_network_desc: "Intelligence operations against American interests are authorised. A permanent collection network inside the United States requires money, patience, and people willing to disappear into American life for years. The federal services have all three."
+ EFH_atlantic_network_groundwork_tt: "The pre-crisis northern intelligence groundwork shortens the build-up: 25 Political Power recovered and additional intelligence on American forces."
+
+ EFH_intel_procurement_espionage: "Procurement Espionage"
+ EFH_intel_procurement_espionage_desc: "American defence procurement leaks like any other bureaucracy. Contract documents, test data, and supplier specifications can be bought, copied, or photographed. Each operation carries a risk of exposure."
+ EFH_procurement_espionage_risk_tt: "75% chance of clean extraction (+10 Political Power). 25% chance of exposure (EF-US escalation rises, American war support rises)."
+
+ EFH_intel_canadian_listening_posts: "Canadian Listening Posts"
+ EFH_intel_canadian_listening_posts_desc: "The intelligence groundwork laid on the northern frontier before the crisis makes a permanent signals presence possible. Listening stations along the Canadian border watch American military traffic around the clock. Washington will eventually notice."
+ EFH_canadian_listening_posts_idea: "Canadian Listening Posts"
+ EFH_canadian_listening_posts_idea_desc: "Signals stations on the northern frontier track American military traffic."

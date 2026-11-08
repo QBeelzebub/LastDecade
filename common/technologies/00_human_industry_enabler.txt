@@ -30,7 +30,7 @@ technologies = {
 		}
 		enable_building = {
 			building = synthetic_refinery
-			level = 3
+			level = 1
 		}
 		enable_building = {
 			building = fuel_silo
@@ -38,7 +38,7 @@ technologies = {
 		}
 		enable_building = {
 			building = radar_station
-			level = 6
+			level = 1
 		}
 		enable_building = {
 			building = mega_gun_emplacement
@@ -91,6 +91,18 @@ technologies = {
 		enable_building = {
 			building = srp_fissile_extractor
 			level = 1
+		}
+		enable_building = {
+			building = bunker
+			level = 2
+		}
+		enable_building = {
+			building = coastal_bunker
+			level = 2
+		}
+		enable_building = {
+			building = anti_air_building
+			level = 2
 		}
 		enable_building = {
 			building = srp_containment_node

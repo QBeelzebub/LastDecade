@@ -6,3 +6,30 @@ IRS_grant_scaled_ep = {
 	}
 	add_to_variable = { var = IRS_evolution_points value = IRS_ep_gain_tmp }
 }
+
+IRS_monthly_absorbed_state_income = {
+	set_variable = { IRS_absorbed_state_count = 0 }
+	every_owned_state = {
+		limit = { has_state_flag = irs_state_consumed }
+		PREV = { add_to_variable = { IRS_absorbed_state_count = 1 } }
+	}
+	if = {
+		limit = { check_variable = { IRS_absorbed_state_count > 0 } }
+		set_variable = { IRS_absorbed_state_rate = 1 }
+		if = {
+			limit = { has_country_flag = IRS_phase_1_active }
+			set_variable = { IRS_absorbed_state_rate = 3 }
+		}
+		if = {
+			limit = { has_country_flag = IRS_phase_2_active }
+			set_variable = { IRS_absorbed_state_rate = 6 }
+		}
+		if = {
+			limit = { has_country_flag = IRS_phase_3_active }
+			set_variable = { IRS_absorbed_state_rate = 12 }
+		}
+		set_variable = { var = IRS_ep_gain_tmp value = IRS_absorbed_state_count }
+		multiply_variable = { var = IRS_ep_gain_tmp value = IRS_absorbed_state_rate }
+		IRS_grant_scaled_ep = yes
+	}
+}

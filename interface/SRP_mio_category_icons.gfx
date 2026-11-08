@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mio_cat_eq_all_infantry_and_support_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_infantry_technology.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mio_cat_eq_all_artillery"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mio_cat_eq_srp_nuclear"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery_technology.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mio_cat_eq_srp_rtg"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_support_technology.dds"
+	}
+}

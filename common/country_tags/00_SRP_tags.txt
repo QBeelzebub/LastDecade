@@ -17,6 +17,8 @@ KNX = "countries/KNX.txt"
 TET = "countries/TET.txt"
 RSF = "countries/RSF.txt"
 SWR = "countries/SWR.txt"
+IND = "countries/IND.txt"
+ARU = "countries/ARU.txt"
 
 SOV = "countries/SOV.txt"
 CZE = "countries/CZE.txt"

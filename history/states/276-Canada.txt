@@ -11,12 +11,35 @@ state = {
 		add_core_of = EFH
 
 		buildings = {
+			722 = { bunker = 3 }
+			779 = { bunker = 3 }
+			3605 = { bunker = 3 }
+			3640 = { bunker = 3 }
+			3763 = { bunker = 3 }
+			3775 = { bunker = 3 }
+			4270 = { bunker = 3 }
+			6607 = { bunker = 3 }
+			6610 = { bunker = 3 }
+			6625 = { bunker = 3 }
+			6676 = { bunker = 3 }
+			6797 = { bunker = 3 }
+			9580 = { bunker = 3 }
+			9585 = { bunker = 3 }
+			9667 = { bunker = 3 }
+			9711 = { bunker = 3 }
+			9743 = { bunker = 3 }
+			11567 = { bunker = 3 }
+			11602 = { bunker = 3 }
+			11695 = { bunker = 3 }
+			11725 = { bunker = 3 }
+			11728 = { bunker = 3 }
+			13156 = { bunker = 3 }
 			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 4
 			air_base = 5
 
-			749 = { dam = 1 }
+			749 = { dam = 1 bunker = 3 }
 
 		}
 		

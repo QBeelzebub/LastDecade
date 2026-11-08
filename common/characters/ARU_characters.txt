@@ -1,0 +1,37 @@
+characters = {
+
+
+	ARU_Leader = {
+		name = "Ghassan Hawat"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			desc = ARU_Leader_DESC
+			expire = "2035.1.1"
+			id = -1
+		}
+	}
+
+	ARU_layla_nuaimi = {
+		name = "Layla Al-Nuaimi"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_generic_arabia_female_05"
+				small = "GFX_idea_generic_political_advisor_female_arab"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ARU_layla_nuaimi_token
+			allowed = { original_tag = ARU }
+			traits = { financial_expert }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+}

@@ -75,6 +75,7 @@ focus_tree = {
 
 	focus = {
 		id = KNX_hive_construction_phase_1
+		ai_will_do = { base = 50 modifier = { factor = 0 NOT = { has_completed_focus = KNX_ef_formal_recognition } } }
 		icon = GFX_focus_SRPLogo
 		relative_position_id = KNX_silent_emergence
 		x = 0
@@ -117,7 +118,6 @@ focus_tree = {
 		prerequisite = { focus = KNX_read_the_perimeter }
 		completion_reward = {
 			add_ideas = KNX_us_invisibility
-			set_country_flag = KNX_us_invisibility_extended
 		}
 	}
 
@@ -164,7 +164,6 @@ focus_tree = {
 		cost = 1.5
 		prerequisite = { focus = KNX_resource_exchange_terms }
 		completion_reward = {
-			set_country_flag = KNX_price_of_silence_set
 			add_political_power = 50
 		}
 		ai_will_do = { base = 100 }
@@ -189,6 +188,7 @@ focus_tree = {
 
 	focus = {
 		id = KNX_loyal_strain_cultivation
+		ai_will_do = { base = 20 modifier = { factor = 0 NOT = { has_completed_focus = KNX_ef_formal_recognition } } }
 		icon = GFX_focus_KNX_loyal_strain
 		relative_position_id = KNX_dispatcher_inheritance
 		x = -2
@@ -203,6 +203,7 @@ focus_tree = {
 
 	focus = {
 		id = KNX_personal_guard
+		ai_will_do = { base = 20 modifier = { factor = 0 NOT = { has_completed_focus = KNX_ef_formal_recognition } } }
 		icon = GFX_focus_KNX_personal_guard
 		relative_position_id = KNX_loyal_strain_cultivation
 		x = 0
@@ -216,6 +217,7 @@ focus_tree = {
 
 	focus = {
 		id = KNX_brood_expansion
+		ai_will_do = { base = 30 modifier = { factor = 0 NOT = { has_completed_focus = KNX_ef_formal_recognition } } }
 		icon = GFX_focus_SRPLogo
 		relative_position_id = KNX_personal_guard
 		x = 0
@@ -231,6 +233,7 @@ focus_tree = {
 
 	focus = {
 		id = KNX_hive_construction_phase_2
+		ai_will_do = { base = 40 modifier = { factor = 0 NOT = { has_completed_focus = KNX_ef_formal_recognition } } }
 		icon = GFX_focus_SRPLogo
 		relative_position_id = KNX_hive_construction_phase_1
 		x = 0
@@ -275,6 +278,7 @@ focus_tree = {
 
 	focus = {
 		id = KNX_appalachian_claim
+		ai_will_do = { base = 45 modifier = { factor = 0 NOT = { has_completed_focus = KNX_ef_formal_recognition } } }
 		icon = GFX_focus_KNX_appalachian_claim
 		relative_position_id = KNX_hive_construction_phase_2
 		x = 1
@@ -283,7 +287,6 @@ focus_tree = {
 		prerequisite = { focus = KNX_hive_construction_phase_2 }
 		completion_reward = {
 			add_ideas = KNX_appalachian_claim_ns
-			set_country_flag = KNX_appalachian_expansion_unlocked
 			custom_effect_tooltip = KNX_appalachian_claim_tt
 		}
 	}
@@ -331,7 +334,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			set_country_flag = KNX_vagrant_deployed_to_canada
 			country_event = { id = knx.4 days = 1 }
 		}
 		ai_will_do = { base = 100 }
@@ -385,8 +387,8 @@ focus_tree = {
 					limit = { NOT = { KNX = { is_guaranteed_by = EFH } } }
 					give_guarantee = KNX
 				}
+				add_to_faction = ROOT
 			}
-			add_to_faction = EFH
 		}
 		ai_will_do = { base = 100 }
 	}

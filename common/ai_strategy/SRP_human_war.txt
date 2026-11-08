@@ -22,6 +22,7 @@ JAP_contested_seas = {
 	ai_strategy = { type = naval_dominance  id = 90   value = 100 }
 	ai_strategy = { type = naval_dominance  id = 79   value = 100 }
 	ai_strategy = { type = naval_dominance  id = 76   value = 80  }
+	ai_strategy = { type = strike_force_home_base id = 90 value = 200 }
 	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
 }
 
@@ -47,6 +48,37 @@ CHN_contested_seas = {
 	ai_strategy = { type = naval_dominance  id = 76   value = 90  }
 	ai_strategy = { type = naval_dominance  id = 75   value = 90  }
 	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
+}
+
+CHN_canal_war = {
+	allowed = { original_tag = CHN }
+	enable = {
+		has_country_flag = CHN_canal_war
+		has_country_flag = CHN_efh_aligned
+		NOT = { has_country_flag = CHN_usa_aligned }
+		NOT = { is_in_faction_with = USA }
+		has_war_with = USA
+		NOT = { has_war_with = EFH }
+		NOT = { has_war_with = IRS }
+		NOT = { has_war_with = KNX }
+		NOT = { has_war_with = TET }
+		is_subject = no
+		has_capitulated = no
+		country_exists = EFH
+		EFH = { has_war_with = USA is_subject = no has_capitulated = no }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		NOT = { has_global_flag = LD_first_atlantic_war_ended }
+		NOT = { has_global_flag = LD_second_atlantic_war_open }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = send_lend_lease_desire id = EFH value = 150 }
+	ai_strategy = { type = support id = EFH value = 80 }
+	ai_strategy = { type = befriend id = EFH value = 150 }
+	ai_strategy = { type = invade id = USA value = -200 }
+	ai_strategy = { type = air_factory_balance value = 20 }
+	ai_strategy = { type = unit_ratio id = cas value = 20 }
 }
 
 
@@ -97,8 +129,7 @@ SAC_contested_seas = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = { type = naval_dominance  id = 108  value = 100 }
-	ai_strategy = { type = naval_dominance  id = 66   value = 90  }
-	ai_strategy = { type = naval_dominance  id = 61   value = 70  }
+	ai_strategy = { type = naval_dominance  id = 66   value = 50  }
 	ai_strategy = { type = naval_dominance  id = 53   value = 70  }
 	ai_strategy = { type = naval_avoid_region id = 109 value = 150 }
 	ai_strategy = { type = naval_mission_threshold id = MISSION_CONVOY_ESCORT value = -100 }
@@ -140,6 +171,8 @@ SRP_human_marine_corps = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -162,6 +195,8 @@ SRP_human_amphibious_counterattack = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -225,6 +260,8 @@ SRP_human_last_ditch = {
 	allowed = {
 		OR = {
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = JAP
 			original_tag = OCE
@@ -252,4 +289,21 @@ SRP_human_last_ditch = {
 	ai_strategy = { type = force_concentration_factor value = -40 }
 	ai_strategy = { type = spare_unit_factor value = 60 }
 
+}
+
+SRP_human_fear_eaten_ground = {
+	allowed = { NOT = { is_full_parasite = yes } }
+	enable = {
+		OR = {
+			has_war_with = IRS
+			has_war_with = KNX
+			has_war_with = TET
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_unit_request  tag = IRS  state_trigger = { check_variable = { iris_infestation_level > 49 } }  value = -20 }
+	ai_strategy = { type = front_unit_request  tag = KNX  state_trigger = { check_variable = { iris_infestation_level > 49 } }  value = -20 }
+	ai_strategy = { type = force_concentration_target_weight  tag = IRS  state_trigger = { check_variable = { iris_infestation_level > 49 } }  value = -40 }
+	ai_strategy = { type = force_concentration_target_weight  tag = KNX  state_trigger = { check_variable = { iris_infestation_level > 49 } }  value = -40 }
 }

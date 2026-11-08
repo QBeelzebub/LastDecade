@@ -6,6 +6,8 @@ SRP_human_airforce_peacetime = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -37,6 +39,8 @@ SRP_human_airforce_wartime = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -69,6 +73,8 @@ SRP_human_air_answers_the_swarm = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -96,6 +102,8 @@ SRP_human_air_contested = {
 	allowed = {
 		OR = {
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -163,6 +171,8 @@ SRP_human_navy_strategy = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -199,6 +209,8 @@ SRP_human_navy_wartime = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -257,6 +269,8 @@ SRP_human_unit_training = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -271,12 +285,12 @@ SRP_human_unit_training = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = { type = ai_wanted_divisions_factor value = 150 }
-	ai_strategy = { type = force_build_armies value = 70 }
+	ai_strategy = { type = force_build_armies value = 100 }
 
-	ai_strategy = { type = build_army id = infantry  value = 120 }
-	ai_strategy = { type = build_army id = armor     value = 40  }
-	ai_strategy = { type = build_army id = motorized value = 25  }
-	ai_strategy = { type = build_army id = garrison  value = 30  }
+	ai_strategy = { type = build_army id = infantry  value = 180 }
+	ai_strategy = { type = build_army id = armor     value = 60  }
+	ai_strategy = { type = build_army id = motorized value = 40  }
+	ai_strategy = { type = build_army id = garrison  value = 45  }
 }
 
 SRP_human_unit_training_emergency = {
@@ -284,6 +298,8 @@ SRP_human_unit_training_emergency = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -298,13 +314,13 @@ SRP_human_unit_training_emergency = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = { type = ai_wanted_divisions_factor value = 260 }
-	ai_strategy = { type = force_build_armies value = 90 }
+	ai_strategy = { type = force_build_armies value = 100 }
 
-	ai_strategy = { type = build_army id = infantry    value = 200 }
-	ai_strategy = { type = build_army id = armor       value = 55  }
-	ai_strategy = { type = build_army id = motorized   value = 40  }
-	ai_strategy = { type = build_army id = garrison    value = 60  }
-	ai_strategy = { type = build_army id = suppression value = 20  }
+	ai_strategy = { type = build_army id = infantry    value = 340 }
+	ai_strategy = { type = build_army id = armor       value = 90  }
+	ai_strategy = { type = build_army id = motorized   value = 70  }
+	ai_strategy = { type = build_army id = garrison    value = 90  }
+	ai_strategy = { type = build_army id = suppression value = 30  }
 }
 
 
@@ -356,7 +372,7 @@ SAC_personality = {
 	enable = { always = yes }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = ai_wanted_divisions_factor value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 70 }
 	ai_strategy = { type = area_priority id = south_america value = 500 }
 	ai_strategy = { type = area_priority id = north_america value = 80  }
 	ai_strategy = { type = area_priority id = europe        value = -150 }
@@ -374,15 +390,14 @@ SAC_pernambuco_defence = {
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = area_priority id = irs_pernambuco_landing value = 700 }
-	ai_strategy = { type = front_unit_request area = irs_pernambuco_landing value = 260 }
-	ai_strategy = { type = garrison value = 450 }
-	ai_strategy = { type = garrison_reinforcement_priority value = 250 }
+	ai_strategy = { type = area_priority id = irs_pernambuco_landing value = 550 }
+	ai_strategy = { type = front_unit_request area = irs_pernambuco_landing value = 150 }
+	ai_strategy = { type = garrison value = 300 }
+	ai_strategy = { type = garrison_reinforcement_priority value = 150 }
 	ai_strategy = { type = strategic_air_importance id = 286 value = 30000 }
 	ai_strategy = { type = strategic_air_importance id = 125 value = 24000 }
 	ai_strategy = { type = strategic_air_importance id = 285 value = 20000 }
-	ai_strategy = { type = naval_dominance id = 61 value = 90 }
-	ai_strategy = { type = naval_dominance id = 66 value = 90 }
+	ai_strategy = { type = naval_dominance id = 66 value = 50 }
 }
 
 OCE_personality = {

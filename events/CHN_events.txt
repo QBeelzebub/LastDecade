@@ -1,0 +1,299 @@
+add_namespace = chn_diplomacy
+
+country_event = {
+	id = chn_diplomacy.1
+	title = chn_diplomacy.1.t
+	desc = chn_diplomacy.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	immediate = {
+		log = "CHNDIPL chn_diplomacy.1 FIRED on [This.GetTag]"
+	}
+	option = {
+		name = chn_diplomacy.1.a
+		ai_chance = { base = 70 }
+		log = "CHNDIPL chn_diplomacy.1 option A (accept) chosen by [This.GetTag]"
+		if = {
+			limit = { country_exists = CHN }
+			CHN = {
+				CHN_accept_efh_partnership_effect = yes
+				clr_country_flag = CHN_efh_offer_pending
+				if = {
+					limit = { has_country_flag = CHN_efh_aligned }
+					log = "CHNDIPL CHN_efh_aligned is SET"
+				}
+				country_event = { id = chn_diplomacy.5 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = chn_diplomacy.1.b
+		ai_chance = {
+			base = 30
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		log = "CHNDIPL chn_diplomacy.1 option B (refuse) chosen by [This.GetTag]"
+		CHN = {
+			clr_country_flag = CHN_efh_offer_pending
+			country_event = { id = chn_diplomacy.5 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = chn_diplomacy.2
+	title = chn_diplomacy.2.t
+	desc = chn_diplomacy.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = USA country_exists = CHN }
+	option = {
+		name = chn_diplomacy.2.a
+		ai_chance = { base = 70 }
+		if = {
+			limit = {
+				country_exists = CHN
+				is_subject = no
+				has_capitulated = no
+				NOT = { has_war_with = CHN }
+				CHN = {
+					is_subject = no
+					has_capitulated = no
+					NOT = { is_in_faction_with = EFH }
+					NOT = { has_country_flag = CHN_efh_aligned }
+					NOT = { has_country_flag = CHN_efh_offer_pending }
+					NOT = { has_country_flag = CHN_usa_aligned }
+				}
+			}
+			CHN = {
+				set_country_flag = CHN_usa_aligned
+				clr_country_flag = CHN_efh_offer_pending
+				clr_country_flag = CHN_canal_initiative
+				if = {
+					limit = { NOT = { has_idea = CHN_usa_partnership } }
+					add_ideas = CHN_usa_partnership
+				}
+			}
+			if = {
+				limit = { CHN = { NOT = { is_guaranteed_by = USA } } }
+				give_guarantee = CHN
+			}
+			USA_trust_very_low_gain_effect = yes
+			if = {
+				limit = { country_exists = EFH }
+				EFH = {
+					clr_country_flag = EFH_china_leaning_efh
+					set_country_flag = EFH_china_neutral
+				}
+			}
+		}
+		CHN = {
+			clr_country_flag = CHN_usa_offer_pending
+			country_event = { id = chn_diplomacy.5 days = 1 }
+		}
+	}
+	option = {
+		name = chn_diplomacy.2.b
+		ai_chance = { base = 30 }
+		CHN = {
+			clr_country_flag = CHN_usa_offer_pending
+			country_event = { id = chn_diplomacy.5 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = chn_diplomacy.3
+	title = chn_diplomacy.3.t
+	desc = chn_diplomacy.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = EFH country_exists = CHN }
+	option = {
+		name = chn_diplomacy.3.a
+		ai_chance = { base = 70 }
+		if = {
+			limit = {
+				has_tech = srp_fusion_reactor_1
+				is_subject = no
+				has_capitulated = no
+				NOT = { has_war_with = CHN }
+				CHN = {
+					has_country_flag = CHN_efh_aligned
+					is_subject = no
+					has_capitulated = no
+					NOT = { is_in_faction_with = USA }
+					NOT = { has_country_flag = CHN_usa_aligned }
+					NOT = { has_tech = srp_fusion_reactor_1 }
+				}
+			}
+			CHN = {
+				set_technology = { srp_fusion_reactor_1 = 1 }
+				set_country_flag = CHN_fusion_licensed
+				clr_country_flag = CHN_fusion_offer_pending
+				country_event = { id = chn_diplomacy.6 days = 1 }
+			}
+			EFH_bop_very_low_ef_effect = yes
+		}
+		CHN = {
+			if = {
+				limit = { has_country_flag = CHN_fusion_offer_pending }
+				clr_country_flag = CHN_fusion_offer_pending
+				add_political_power = 25
+				country_event = { id = chn_diplomacy.6 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = chn_diplomacy.3.b
+		ai_chance = {
+			base = 30
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		CHN = {
+			if = {
+				limit = { has_country_flag = CHN_fusion_offer_pending }
+				clr_country_flag = CHN_fusion_offer_pending
+				add_political_power = 25
+				country_event = { id = chn_diplomacy.6 days = 1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = chn_diplomacy.4
+	title = chn_diplomacy.4.t
+	desc = chn_diplomacy.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = EFH country_exists = CHN }
+	immediate = {
+		log = "CHNDIPL chn_diplomacy.4 FIRED on [This.GetTag]"
+	}
+	option = {
+		name = chn_diplomacy.4.a
+		ai_chance = { base = 70 }
+		log = "CHNDIPL chn_diplomacy.4 option A (approve trade) chosen by [This.GetTag]"
+		CHN = {
+			CHN_accept_efh_trade_effect = yes
+			clr_country_flag = CHN_efh_trade_pending
+		}
+	}
+	option = {
+		name = chn_diplomacy.4.b
+		ai_chance = {
+			base = 30
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		log = "CHNDIPL chn_diplomacy.4 option B (refuse trade) chosen by [This.GetTag]"
+		CHN = { clr_country_flag = CHN_efh_trade_pending }
+	}
+}
+
+country_event = {
+	id = chn_diplomacy.5
+	title = chn_diplomacy.5.t
+	desc = {
+		trigger = { has_country_flag = CHN_efh_aligned }
+		text = chn_diplomacy.5.efh
+	}
+	desc = {
+		trigger = { has_country_flag = CHN_usa_aligned }
+		text = chn_diplomacy.5.usa
+	}
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = CHN_efh_aligned }
+			NOT = { has_country_flag = CHN_usa_aligned }
+		}
+		text = chn_diplomacy.5.no
+	}
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = CHN }
+	option = { name = chn_diplomacy.5.a }
+}
+
+country_event = {
+	id = chn_diplomacy.6
+	title = chn_diplomacy.6.t
+	desc = {
+		trigger = { has_country_flag = CHN_fusion_licensed }
+		text = chn_diplomacy.6.yes
+	}
+	desc = {
+		trigger = { NOT = { has_country_flag = CHN_fusion_licensed } }
+		text = chn_diplomacy.6.no
+	}
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = CHN }
+	option = { name = chn_diplomacy.6.a }
+}
+
+country_event = {
+	id = chn_diplomacy.7
+	title = chn_diplomacy.7.t
+	desc = chn_diplomacy.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = CHN has_country_flag = CHN_efh_offer_pending }
+	option = {
+		name = chn_diplomacy.7.a
+		ai_chance = { base = 60 }
+		log = "CHNDIPL chn_diplomacy.7 option A (sign) chosen by [This.GetTag]"
+		CHN_accept_efh_partnership_effect = yes
+		clr_country_flag = CHN_efh_offer_pending
+	}
+	option = {
+		name = chn_diplomacy.7.b
+		ai_chance = {
+			base = 40
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		if = {
+			limit = {
+				has_country_flag = CHN_efh_offer_pending
+				NOT = { has_country_flag = CHN_efh_aligned }
+				country_exists = EFH
+			}
+			EFH = {
+				set_country_flag = EFH_china_neutral
+				clr_country_flag = EFH_china_leaning_efh
+				if = {
+					limit = { NOT = { has_country_flag = EFH_china_neutral_rewarded } }
+					set_country_flag = EFH_china_neutral_rewarded
+					add_political_power = 15
+				}
+			}
+		}
+		clr_country_flag = CHN_efh_offer_pending
+	}
+}
+
+country_event = {
+	id = chn_diplomacy.8
+	title = chn_diplomacy.8.t
+	desc = chn_diplomacy.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = CHN }
+	option = {
+		name = chn_diplomacy.8.a
+		ai_chance = { base = 100 }
+		log = "CHNDIPL chn_diplomacy.8 option A (join) chosen by [This.GetTag]"
+		if = {
+			limit = {
+				country_exists = IRS
+				NOT = { has_war_with = IRS }
+			}
+			declare_war_on = { target = IRS type = annex_everything }
+		}
+	}
+	option = {
+		name = chn_diplomacy.8.b
+		ai_chance = { base = 0 }
+		log = "CHNDIPL chn_diplomacy.8 option B (stay out) chosen by [This.GetTag]"
+	}
+}

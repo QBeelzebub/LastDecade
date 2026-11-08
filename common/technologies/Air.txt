@@ -113,8 +113,7 @@ technologies = {
 	srp_fighter_gen5 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 3.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -149,7 +148,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 0 }
+			position = { x = 3 y = 0 }
 		}
 
 		enable_equipment_modules = {
@@ -182,12 +181,14 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 2 }
+			position = { x = 3 y = 4 }
 		}
 
 		enable_equipment_modules = {
 			srp_anti_ship_missile
 		}
+
+		enable_equipments = { srp_ucav_equipment_1 }
 
 		categories = { srp_air_tech srp_cas_tech }
 
@@ -208,7 +209,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 0 }
+			position = { x = 6 y = 0 }
 		}
 
 		enable_equipments = {
@@ -246,11 +247,10 @@ technologies = {
 	srp_bomber_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 2 }
+			position = { x = 6 y = 6 }
 		}
 
 		categories = { srp_air_tech srp_bomber_tech }
@@ -271,7 +271,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 6 y = 0 }
+			position = { x = 9 y = 0 }
 		}
 
 		categories = { srp_air_tech }
@@ -279,9 +279,38 @@ technologies = {
 		transport_capacity = 0.05
 		air_range_factor = 0.03
 
+		enable_equipments = { transport_plane_equipment_1 }
+
+		path = {
+			leads_to_tech = srp_transport_2
+			research_cost_coeff = 1
+		}
+
 		ai_will_do = {
 			base = 1
 		}
+	}
+
+	srp_transport_2 = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2023
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 9 y = 6 }
+		}
+
+		categories = { srp_air_tech transport_planes_cat }
+
+		dependencies = { srp_helicopter_3 = 1 }
+
+		enable_equipments = { transport_plane_equipment_2 }
+
+		transport_capacity = 0.10
+		paradrop_organization_factor = 0.10
+
+		ai_will_do = { base = 2 }
 	}
 
 
@@ -292,7 +321,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 8 y = 0 }
+			position = { x = 12 y = 0 }
 		}
 
 		enable_equipments = {
@@ -331,7 +360,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 8 y = 2 }
+			position = { x = 12 y = 2 }
 		}
 
 		enable_equipments = {
@@ -364,11 +393,10 @@ technologies = {
 	srp_helicopter_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.5
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 8 y = 4 }
+			position = { x = 12 y = 6 }
 		}
 
 		enable_equipments = {

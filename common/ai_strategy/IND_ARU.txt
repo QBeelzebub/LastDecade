@@ -1,0 +1,63 @@
+
+IND_ARU_wary_of_china = {
+	allowed = {
+		OR = {
+			original_tag = IND
+			original_tag = ARU
+		}
+	}
+	enable = { country_exists = CHN }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = CHN value = 60   }
+	ai_strategy = { type = befriend   id = CHN value = 40   }
+	ai_strategy = { type = alliance   id = CHN value = -400 }
+	ai_strategy = { type = conquer    id = CHN value = -650 }
+	ai_strategy = { type = protect    id = CHN value = -50  }
+}
+
+CHN_and_the_south = {
+	allowed = { original_tag = CHN }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = antagonize id = IND value = 40   }
+	ai_strategy = { type = antagonize id = ARU value = 40   }
+	ai_strategy = { type = befriend   id = IND value = 40   }
+	ai_strategy = { type = befriend   id = ARU value = 40   }
+	ai_strategy = { type = conquer    id = IND value = -650 }
+	ai_strategy = { type = conquer    id = ARU value = -650 }
+}
+
+IND_ARU_and_the_federation = {
+	allowed = {
+		OR = {
+			original_tag = IND
+			original_tag = ARU
+		}
+	}
+	enable = { country_exists = EFH }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = befriend id = EFH value = 60   }
+	ai_strategy = { type = alliance id = EFH value = -300 }
+	ai_strategy = { type = conquer  id = EFH value = -650 }
+}
+
+IND_leaves_aru_alone = {
+	allowed = { original_tag = IND }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = conquer  id = ARU value = -650 }
+	ai_strategy = { type = befriend id = ARU value = 30   }
+}
+
+ARU_leaves_ind_alone = {
+	allowed = { original_tag = ARU }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = conquer  id = IND value = -650 }
+	ai_strategy = { type = befriend id = IND value = 30   }
+}

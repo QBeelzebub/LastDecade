@@ -150,21 +150,21 @@ units = {
 	}
 	division = {
 		name = "Sixth Nest"
-		division_template = "Knox Irregular"
+		division_template = "Knox Striker"
 		location = 6696
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Seventh Nest"
-		division_template = "Knox Irregular"
+		division_template = "Knox Striker"
 		location = 6696
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Eighth Nest"
-		division_template = "Knox Irregular"
+		division_template = "Knox Striker"
 		location = 6696
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
@@ -186,6 +186,62 @@ units = {
 	division = {
 		name = "Knox Stalker Pack"
 		division_template = "Knox Phantom"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Ninth Nest"
+		division_template = "Knox Striker"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Tenth Nest"
+		division_template = "Knox Striker"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Eleventh Nest"
+		division_template = "Knox Striker"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Twelfth Nest"
+		division_template = "Knox Striker"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Epsilon"
+		division_template = "Knox Vanguard"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Zeta"
+		division_template = "Knox Vanguard"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Eta"
+		division_template = "Knox Vanguard"
+		location = 6696
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Knox Assault Theta"
+		division_template = "Knox Vanguard"
 		location = 6696
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9

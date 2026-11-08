@@ -17,6 +17,52 @@ on_actions = {
 					country_event = { id = geo_volunteers.1 days = 2 }
 				}
 			}
+
+			if = {
+				limit = {
+					ROOT = { tag = IRS }
+					FROM = { tag = ARU }
+				}
+				ARU = { country_event = { id = aru.1 days = 1 } }
+				if = {
+					limit = {
+						country_exists = IND
+						IND = { NOT = { has_war_with = ARU } }
+					}
+					IND = { country_event = { id = ind.1 days = 3 } }
+				}
+			}
+
+			if = {
+				limit = {
+					OR = {
+						AND = { ROOT = { tag = CHN } FROM = { OR = { tag = IRS is_puppet_of = IRS } } }
+						AND = { FROM = { tag = CHN } ROOT = { OR = { tag = IRS is_puppet_of = IRS } } }
+					}
+					country_exists = IRS
+					country_exists = ARU
+					IRS = { NOT = { has_war_with = ARU } }
+				}
+				IRS = { country_event = { id = aru.3 days = 1 } }
+			}
+
+			if = {
+				limit = {
+					OR = {
+						AND = { ROOT = { tag = EFH } FROM = { tag = IRS } }
+						AND = { ROOT = { tag = IRS } FROM = { tag = EFH } }
+					}
+					country_exists = CHN
+					CHN = {
+						NOT = { has_war_with = IRS }
+						NOT = { has_war_with = EFH }
+						is_subject = no
+						has_capitulated = no
+					}
+				}
+				log = "CHNDIPL [GetDateText]: EFH-IRS war opened, China gets chn_diplomacy.8"
+				CHN = { country_event = { id = chn_diplomacy.8 days = 1 } }
+			}
 		}
 	}
 }

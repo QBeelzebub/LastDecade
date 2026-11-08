@@ -1,4 +1,4 @@
-﻿#Scape & Run: The Last Decade
+﻿Overwinter: The Last Decade
 
 #A total conversion for Hearts of Iron IV
 
@@ -17,6 +17,10 @@ Rotch Gwylt
 #TYPOGRAPHY
 Faustina, by Omnibus-Type
 SIL Open Font License 1.1
+
+
+#PORTRAITS
+Donald J. Trump, from The Fire Rises
 
 
 #BUILT ON

@@ -1,0 +1,12 @@
+CHN_development = {
+	icon = generic_political_actions
+	allowed = { original_tag = CHN }
+	visible = {
+		tag = CHN
+		OR = {
+			has_completed_focus = CHN_align_EFH
+			has_completed_focus = CHN_align_USA
+			has_completed_focus = CHN_chip_dominance
+		}
+	}
+}

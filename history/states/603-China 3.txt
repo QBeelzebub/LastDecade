@@ -14,10 +14,10 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 4
+				industrial_complex = 5
 				infrastructure = 2
 				air_base = 1
-				arms_factory = 2
+				arms_factory = 3
 
 			}
 
@@ -37,7 +37,7 @@ state={
 		coal = 3
 	}
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 
 	local_supplies=3.0 
 }

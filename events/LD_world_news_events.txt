@@ -1,0 +1,202 @@
+add_namespace = ldnews
+
+
+news_event = {
+	id = ldnews.1
+	title = ldnews.1.t
+	desc = ldnews.1.d
+	picture = GFX_news_event_generic_rally2
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.1.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.1.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.1.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.2
+	title = ldnews.2.t
+	desc = ldnews.2.d
+	picture = GFX_news_event_generic_research_lab
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.2.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.2.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.2.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.3
+	title = ldnews.3.t
+	desc = ldnews.3.d
+	picture = GFX_news_event_generic_rally
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.3.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.3.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.3.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.4
+	title = ldnews.4.t
+	desc = ldnews.4.d
+	picture = GFX_news_event_generic_research_lab
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.4.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.4.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.4.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.5
+	title = ldnews.5.t
+	desc = ldnews.5.d
+	picture = GFX_news_event_generic_rally2
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.5.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.5.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.5.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.6
+	title = ldnews.6.t
+	desc = ldnews.6.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.6.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.6.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.6.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.7
+	title = ldnews.7.t
+	desc = ldnews.7.d
+	picture = GFX_news_event_generic_rally
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.7.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.7.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.7.c
+		trigger = { is_full_parasite = yes }
+	}
+}
+
+news_event = {
+	id = ldnews.8
+	title = ldnews.8.t
+	desc = ldnews.8.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ldnews.8.a
+		trigger = {
+			NOT = { tag = USA }
+			NOT = { is_full_parasite = yes }
+		}
+	}
+	option = {
+		name = ldnews.8.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = ldnews.8.c
+		trigger = { is_full_parasite = yes }
+	}
+}

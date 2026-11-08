@@ -11,6 +11,9 @@ state = {
 		add_core_of = EFH
 
 		buildings = {
+			634 = { bunker = 3 }
+			4342 = { bunker = 3 }
+			4362 = { bunker = 3 }
 			infrastructure = 3
 			industrial_complex = 2
 			4285 = {

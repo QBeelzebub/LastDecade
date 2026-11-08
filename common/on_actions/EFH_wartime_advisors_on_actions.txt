@@ -1,0 +1,82 @@
+
+on_actions = {
+	on_monthly_EFH = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = EFH_wartime_kallas_unlocked }
+					has_war_with = IRS
+				}
+				set_country_flag = EFH_wartime_kallas_unlocked
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = EFH_wartime_rutte_unlocked }
+					has_global_flag = parasites_emerged
+					has_stability < 0.40
+				}
+				set_country_flag = EFH_wartime_rutte_unlocked
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = EFH_wartime_scholz_unlocked }
+					check_variable = { public_panic > 299 }
+				}
+				set_country_flag = EFH_wartime_scholz_unlocked
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = EFH_wartime_boris_unlocked }
+					has_global_flag = parasites_emerged
+					126 = { NOT = { is_controlled_by = EFH } }
+				}
+				set_country_flag = EFH_wartime_boris_unlocked
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = EFH_wartime_lauterbach_unlocked }
+					check_variable = { public_panic > 149 }
+				}
+				set_country_flag = EFH_wartime_lauterbach_unlocked
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = EFH_larry_unlocked }
+					has_country_flag = EFH_larry_saw_boris_go
+					has_country_flag = EFH_larry_saw_truss_go
+					has_country_flag = EFH_larry_saw_politician_go
+					126 = { is_controlled_by = EFH }
+				}
+				set_country_flag = EFH_larry_unlocked
+				country_event = { id = efh_advisor.2 days = 3 }
+			}
+			if = {
+				limit = { has_country_flag = EFH_clarkson_in_office }
+				random_list = {
+					88 = { }
+					12 = { country_event = efh_advisor.3 }
+				}
+			}
+		}
+	}
+
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = USA_wartime_jones_unlocked }
+					check_variable = { public_panic > 199 }
+				}
+				set_country_flag = USA_wartime_jones_unlocked
+			}
+			if = {
+				limit = { has_country_flag = USA_jones_in_office }
+				random_list = {
+					40 = { USA_trust_low_gain_effect = yes }
+					40 = { USA_trust_low_loss_effect = yes }
+					20 = { }
+				}
+			}
+		}
+	}
+}

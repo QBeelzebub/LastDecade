@@ -11,8 +11,8 @@ state={
 		2017 2062 2078 1948 2101
 	}
 	history={
-		owner = CHN
-		add_core_of = CHN
+		owner = ARU
+		add_core_of = ARU
 		buildings = {
 			infrastructure = 0
 		}

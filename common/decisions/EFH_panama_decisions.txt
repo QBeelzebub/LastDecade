@@ -27,7 +27,7 @@ SRP_escalation_category = {
 					occupier = USA
 					occupied = EFH
 				}
-				start_resistance = EFH
+				if = { limit = { NOT = { has_resistance = yes } } start_resistance = EFH }
 				if = {
 					limit = { resistance < 1 }
 					set_resistance = 30

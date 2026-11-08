@@ -482,6 +482,13 @@ areas = {
 		}
 	}
 
+	irs_central_america_landing = {
+		strategic_regions = {
+			34
+			205
+		}
+	}
+
 	irs_gulf_of_guinea_landing = {
 		strategic_regions = {
 			62
@@ -493,6 +500,17 @@ areas = {
 			181
 			185
 			139
+		}
+	}
+	irs_red_sea_landing = {
+		strategic_regions = {
+			236
+			237
+		}
+	}
+	irs_anatolia = {
+		strategic_regions = {
+			129
 		}
 	}
 	human_africa_landing = {

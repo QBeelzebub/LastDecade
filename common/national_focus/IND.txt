@@ -1,0 +1,438 @@
+focus_tree = {
+	id = IND_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = IND
+		}
+	}
+
+	continuous_focus_position = { x = 10 y = 1200 }
+
+
+	focus = {
+		id = IND_the_delhi_cabinet
+		icon = GFX_focus_IND_the_delhi_cabinet
+		x = 14
+		y = 0
+		cost = 5
+		ai_will_do = { base = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+
+	focus = {
+		id = IND_the_five_year_plan
+		icon = GFX_focus_IND_the_five_year_plan
+		prerequisite = { focus = IND_the_delhi_cabinet }
+		x = 4
+		y = 1
+		cost = 7
+		ai_will_do = { base = 5 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = IND_the_five_year_plan
+				bonus = 0.5
+				uses = 2
+				category = srp_industry_tech
+			}
+			if = {
+				limit = { 439 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = no } } }
+				439 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_bombay_and_calcutta
+		icon = GFX_focus_IND_bombay_and_calcutta
+		prerequisite = { focus = IND_the_five_year_plan }
+		x = 2
+		y = 2
+		cost = 7
+		ai_will_do = { base = 5 }
+		completion_reward = {
+			if = {
+				limit = { 429 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				429 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
+			}
+			if = {
+				limit = { 431 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				431 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_grand_trunk_road
+		icon = GFX_focus_IND_the_grand_trunk_road
+		prerequisite = { focus = IND_the_five_year_plan }
+		x = 6
+		y = 2
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 439 state = 438 state = 435 state = 431 state = 440 state = 986 }
+					is_controlled_by = ROOT
+					free_building_slots = { building = infrastructure size > 0 }
+				}
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_steel_belt
+		icon = GFX_focus_IND_the_steel_belt
+		prerequisite = { focus = IND_bombay_and_calcutta }
+		x = 2
+		y = 3
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			if = {
+				limit = { 435 = { is_owned_by = ROOT is_controlled_by = ROOT } }
+				435 = {
+					add_resource = { type = steel amount = 12 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IND_power_for_the_plains
+		icon = GFX_focus_IND_power_for_the_plains
+		prerequisite = { focus = IND_the_grand_trunk_road }
+		x = 6
+		y = 3
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 438 state = 430 }
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_union_works
+		icon = GFX_focus_IND_the_union_works
+		prerequisite = { focus = IND_the_steel_belt }
+		prerequisite = { focus = IND_power_for_the_plains }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = { base = 5 }
+		completion_reward = {
+			swap_ideas = { remove_idea = IND_one_india add_idea = IND_one_india_2 }
+			add_political_power = 50
+		}
+	}
+
+
+	focus = {
+		id = IND_the_karakoram_ledger
+		icon = GFX_focus_IND_the_karakoram_ledger
+		prerequisite = { focus = IND_the_delhi_cabinet }
+		x = 10
+		y = 1
+		cost = 5
+		ai_will_do = { base = 5 }
+		available = {
+			country_exists = CHN
+			NOT = { has_war_with = CHN }
+		}
+		completion_reward = {
+			add_ideas = IND_the_karakoram_ledger
+			CHN = { add_opinion_modifier = { target = ROOT modifier = IND_CHN_trade } }
+			add_opinion_modifier = { target = CHN modifier = IND_CHN_trade }
+			set_country_flag = IND_china_trade_open
+		}
+	}
+
+	focus = {
+		id = IND_machine_tools_from_beijing
+		icon = GFX_focus_IND_machine_tools_from_beijing
+		prerequisite = { focus = IND_the_karakoram_ledger }
+		x = 10
+		y = 2
+		cost = 7
+		ai_will_do = { base = 4 }
+		available = {
+			country_exists = CHN
+			NOT = { has_war_with = CHN }
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = IND_machine_tools_from_beijing
+				bonus = 0.5
+				uses = 2
+				category = srp_construction_tech
+			}
+			add_tech_bonus = {
+				name = IND_machine_tools_from_beijing
+				bonus = 0.5
+				uses = 1
+				category = srp_electronics_tech
+			}
+		}
+	}
+
+	focus = {
+		id = IND_no_bases_for_anyone
+		icon = GFX_focus_IND_no_bases_for_anyone
+		prerequisite = { focus = IND_machine_tools_from_beijing }
+		x = 10
+		y = 3
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.02
+			CHN = { add_opinion_modifier = { target = ROOT modifier = IND_CHN_no_bases } }
+		}
+	}
+
+
+	focus = {
+		id = IND_the_northern_command
+		icon = GFX_focus_IND_the_northern_command
+		prerequisite = { focus = IND_the_delhi_cabinet }
+		x = 16
+		y = 1
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = IND_the_northern_command
+				bonus = 0.5
+				uses = 1
+				category = srp_land_tech
+			}
+		}
+	}
+
+	focus = {
+		id = IND_mountain_divisions
+		icon = GFX_focus_IND_mountain_divisions
+		prerequisite = { focus = IND_the_northern_command }
+		x = 14
+		y = 2
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			army_experience = 15
+			every_owned_state = {
+				limit = {
+					OR = { state = 441 state = 442 state = 987 state = 434 }
+					is_controlled_by = ROOT
+				}
+				add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_artillery_board
+		icon = GFX_focus_IND_the_artillery_board
+		prerequisite = { focus = IND_mountain_divisions }
+		x = 14
+		y = 3
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = IND_the_artillery_board
+				bonus = 0.75
+				uses = 1
+				category = srp_artillery_tech
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_air_arm
+		icon = GFX_focus_IND_the_air_arm
+		prerequisite = { focus = IND_the_northern_command }
+		x = 18
+		y = 2
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			air_experience = 15
+			add_tech_bonus = {
+				name = IND_the_air_arm
+				bonus = 0.5
+				uses = 1
+				category = srp_fighter_tech
+			}
+			if = {
+				limit = { 439 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = air_base size > 1 } } }
+				439 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_western_fleet
+		icon = GFX_focus_IND_the_western_fleet
+		prerequisite = { focus = IND_the_air_arm }
+		x = 18
+		y = 3
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			navy_experience = 15
+			if = {
+				limit = { 429 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = dockyard size > 0 include_locked = no } } }
+				429 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_reserve_lists
+		icon = GFX_focus_IND_reserve_lists
+		prerequisite = { focus = IND_the_artillery_board }
+		x = 14
+		y = 4
+		cost = 7
+		ai_will_do = { base = 3 }
+		completion_reward = {
+			add_manpower = 100000
+			add_war_support = 0.03
+		}
+	}
+
+
+	focus = {
+		id = IND_the_africa_reports
+		icon = GFX_focus_IND_the_africa_reports
+		prerequisite = { focus = IND_the_delhi_cabinet }
+		x = 22
+		y = 1
+		cost = 5
+		ai_will_do = { base = 6 }
+		available = { has_global_flag = parasites_emerged }
+		completion_reward = {
+			add_war_support = 0.03
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = IND_quarantine_the_ports
+		icon = GFX_focus_IND_quarantine_the_ports
+		prerequisite = { focus = IND_the_africa_reports }
+		x = 22
+		y = 2
+		cost = 7
+		ai_will_do = { base = 5 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 429 state = 431 state = 443 state = 423 }
+					is_controlled_by = ROOT
+				}
+				add_building_construction = { type = coastal_bunker level = 1 province = { all_provinces = yes limit_to_coastal = yes } instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = IND_the_java_watch
+		icon = GFX_focus_IND_the_java_watch
+		prerequisite = { focus = IND_quarantine_the_ports }
+		x = 22
+		y = 3
+		cost = 7
+		ai_will_do = { base = 5 }
+		available = {
+			country_exists = IRS
+			IRS = { has_country_flag = IRS_tethysic_discovered }
+		}
+		completion_reward = {
+			add_ideas = IND_the_coast_watch
+			navy_experience = 10
+		}
+	}
+
+	focus = {
+		id = IND_the_bengal_coast
+		icon = GFX_focus_IND_the_bengal_coast
+		prerequisite = { focus = IND_the_java_watch }
+		x = 22
+		y = 4
+		cost = 7
+		ai_will_do = { base = 4 }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = { state = 430 state = 431 state = 426 }
+					is_controlled_by = ROOT
+				}
+				add_building_construction = { type = coastal_bunker level = 1 province = { all_provinces = yes limit_to_coastal = yes } instant_build = yes }
+				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			}
+		}
+	}
+
+
+	focus = {
+		id = IND_letters_to_amsterdam
+		icon = GFX_focus_IND_letters_to_amsterdam
+		prerequisite = { focus = IND_the_delhi_cabinet }
+		x = 26
+		y = 1
+		cost = 5
+		ai_will_do = { base = 3 }
+		available = {
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+		completion_reward = {
+			add_political_power = 25
+			EFH = { add_opinion_modifier = { target = ROOT modifier = IND_EFH_correspondence } }
+			add_opinion_modifier = { target = EFH modifier = IND_EFH_correspondence }
+		}
+	}
+
+	focus = {
+		id = IND_the_colombo_question
+		icon = GFX_focus_IND_the_colombo_question
+		prerequisite = { focus = IND_letters_to_amsterdam }
+		x = 26
+		y = 2
+		cost = 5
+		ai_will_do = { base = 2 }
+		available = {
+			country_exists = EFH
+			NOT = { has_war_with = EFH }
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+}

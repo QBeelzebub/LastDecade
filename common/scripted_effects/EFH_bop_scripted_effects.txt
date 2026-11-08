@@ -22,7 +22,7 @@ EFH_bop_low_ha_effect = {
 }
 
 EFH_bop_very_low_ha_effect = {
-	add_power_balance_value = { id = EFH_power_balance value = 0.05 }
+	add_power_balance_value = { id = EFH_power_balance value = 0.025 }
 }
 
 
@@ -39,5 +39,5 @@ EFH_bop_low_ef_effect = {
 }
 
 EFH_bop_very_low_ef_effect = {
-	add_power_balance_value = { id = EFH_power_balance value = -0.05 }
+	add_power_balance_value = { id = EFH_power_balance value = -0.025 }
 }

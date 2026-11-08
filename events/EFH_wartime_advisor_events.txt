@@ -1,0 +1,43 @@
+add_namespace = efh_advisor
+
+country_event = {
+	id = efh_advisor.1
+	title = efh_advisor.1.t
+	desc = efh_advisor.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	trigger = { has_country_flag = EFH_truss_in_office }
+
+	option = {
+		name = efh_advisor.1.a
+		deactivate_advisor = EFH_liz_truss
+	}
+}
+
+country_event = {
+	id = efh_advisor.2
+	title = efh_advisor.2.t
+	desc = efh_advisor.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = efh_advisor.2.a
+	}
+}
+
+country_event = {
+	id = efh_advisor.3
+	title = efh_advisor.3.t
+	desc = efh_advisor.3.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	trigger = { has_country_flag = EFH_clarkson_in_office }
+
+	option = {
+		name = efh_advisor.3.a
+		add_timed_idea = { idea = EFH_tractor_incident days = 30 }
+	}
+}

@@ -1,0 +1,20 @@
+
+units = {
+	fleet = {
+		name = "Western Fleet"
+		naval_base = 1349
+		task_force = {
+			name = "Western Surface Group"
+			location = 1349
+			ship = { name = "INS Kolkata" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = IND version_name = "Kolkata Class" } } }
+			ship = { name = "INS Kochi" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = IND version_name = "Kolkata Class" } } }
+			ship = { name = "INS Chennai" definition = destroyer start_experience_factor = 0.2 equipment = { srp_destroyer_hull_1 = { amount = 1 owner = IND version_name = "Kolkata Class" } } }
+		}
+		task_force = {
+			name = "Submarine Squadron"
+			location = 1349
+			ship = { name = "INS Kalvari" definition = submarine start_experience_factor = 0.2 equipment = { srp_submarine_hull_1 = { amount = 1 owner = IND version_name = "Kalvari Class" } } }
+			ship = { name = "INS Khanderi" definition = submarine start_experience_factor = 0.2 equipment = { srp_submarine_hull_1 = { amount = 1 owner = IND version_name = "Kalvari Class" } } }
+		}
+	}
+}

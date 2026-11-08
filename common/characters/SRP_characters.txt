@@ -1,22 +1,22 @@
 characters = {
-    EFH_ursula_von_der_leyen = {
-        name = EFH_URSULA
+    EFH_lukas_brenner = {
+        name = EFH_LUKAS_BRENNER
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_generic_europe_male_02"
             }
         }
         country_leader = {
             ideology = socialism
             traits = {}
-            desc = EFH_URSULA_DESC
+            desc = EFH_LUKAS_BRENNER_DESC
         }
     }
     Iris_Leader = {
         name = "The Iris"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_iris"
             }
         }
         country_leader = {
@@ -25,15 +25,27 @@ characters = {
             traits = { IRS_Leader_Trait }
         }
     }
+    TET_root_beckon = {
+        name = "The Tethysic Root Beckon"
+        portraits = {
+            civilian = {
+                large = "GFX_portrait_LD_tethys"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            traits = {}
+        }
+    }
     KNX_vagrant_one = {
         name = KNX_VAGRANT_ONE
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_purple"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_purple"
             }
         }
         country_leader = {
@@ -61,10 +73,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_purple"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_purple"
             }
         }
         country_leader = {
@@ -92,10 +104,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_yellow"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_yellow"
             }
         }
         advisor = {
@@ -118,10 +130,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_yellow"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_yellow"
             }
         }
         advisor = {
@@ -144,10 +156,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_pink"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_pink"
             }
         }
         advisor = {
@@ -171,10 +183,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_pink"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_pink"
             }
         }
         advisor = {
@@ -199,10 +211,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_red"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_red"
             }
         }
         advisor = {
@@ -225,10 +237,10 @@ characters = {
         can_be_captured = no
         portraits = {
             army = {
-                small = "GFX_portrait_europe_generic_4"
+                small = "GFX_idea_LD_vagrant_red"
             }
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_LD_vagrant_red"
             }
         }
         advisor = {
@@ -260,10 +272,10 @@ characters = {
         }
     }
     AFR_Leader = {
-        name = "John Africa"
+        name = "Samuel Okafor"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_Portrait_Africa_Generic_3"
             }
         }
         country_leader = {
@@ -273,10 +285,10 @@ characters = {
         }
     }
     CHN_Leader = {
-        name = "Xi Jin Penis"
+        name = "Wei Zhenhua"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_Portrait_Asia_Generic_1"
             }
         }
         country_leader = {
@@ -286,10 +298,10 @@ characters = {
         }
     }
     OCE_Leader = {
-        name = "John Ocena"
+        name = "Henare Walker"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_generic_australia_male_01"
             }
         }
         country_leader = {
@@ -299,10 +311,10 @@ characters = {
         }
     }
     SAC_Leader = {
-        name = "John South Murica"
+        name = "Rafael Moreira"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_Portrait_South_America_Generic_2"
             }
         }
         country_leader = {
@@ -315,7 +327,7 @@ characters = {
         name = "Donald J. Trump"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_USA_donald_trump"
             }
         }
         country_leader = {
@@ -325,10 +337,10 @@ characters = {
         }
     }
     JAP_Leader = {
-        name = "Japane Jane"
+        name = "Koji Saeki"
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_generic_asia_male_05"
             }
         }
         country_leader = {
@@ -341,7 +353,7 @@ characters = {
         name = FRA_RESTORATION_COUNCIL
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_Portrait_Europe_Generic_2"
             }
         }
         country_leader = {
@@ -354,7 +366,7 @@ characters = {
         name = GER_RESTORATION_COUNCIL
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_europe_generic_8"
             }
         }
         country_leader = {
@@ -380,7 +392,7 @@ characters = {
         name = ESP_RESTORATION_COUNCIL
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_south_america_generic_7"
             }
         }
         country_leader = {
@@ -393,7 +405,7 @@ characters = {
         name = POL_RESTORATION_COUNCIL
         portraits = {
             civilian = {
-                large = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_europe_generic_6"
             }
         }
         country_leader = {
@@ -408,8 +420,8 @@ characters = {
         name = "Dr. Robert Hayes"
         portraits = {
             army = {
-                large = "GFX_portrait_europe_generic_4"
-                small = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_generic_europe_male_12"
+                small = "GFX_portrait_generic_europe_male_12"
             }
         }
         scientist = {
@@ -425,8 +437,8 @@ characters = {
         gender = female
         portraits = {
             army = {
-                large = "GFX_portrait_europe_generic_4"
-                small = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_generic_europe_female_16"
+                small = "GFX_portrait_generic_europe_female_16"
             }
         }
         scientist = {
@@ -441,8 +453,8 @@ characters = {
         name = "Dr. Walter Greene"
         portraits = {
             army = {
-                large = "GFX_portrait_europe_generic_4"
-                small = "GFX_portrait_europe_generic_4"
+                large = "GFX_portrait_generic_europe_male_11"
+                small = "GFX_portrait_generic_europe_male_11"
             }
         }
         scientist = {

@@ -1,0 +1,19 @@
+SRP_moon_base_security_roll_effect = {
+	set_temp_variable = { moon_sabotage_blocked = 0 }
+	if = {
+		limit = { check_variable = { SRP_moon_base_security = 1 } }
+		random = { chance = 10 set_temp_variable = { moon_sabotage_blocked = 1 } }
+	}
+	if = {
+		limit = { check_variable = { SRP_moon_base_security = 2 } }
+		random = { chance = 20 set_temp_variable = { moon_sabotage_blocked = 1 } }
+	}
+	if = {
+		limit = { check_variable = { SRP_moon_base_security = 3 } }
+		random = { chance = 30 set_temp_variable = { moon_sabotage_blocked = 1 } }
+	}
+	if = {
+		limit = { check_variable = { SRP_moon_base_security > 3 } }
+		random = { chance = 40 set_temp_variable = { moon_sabotage_blocked = 1 } }
+	}
+}

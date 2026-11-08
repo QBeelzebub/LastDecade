@@ -5,7 +5,7 @@ set_air_oob = "EFH_2020_air"
 set_naval_oob = "EFH_2020_naval"
 set_research_slots = 4
 
-recruit_character = EFH_ursula_von_der_leyen
+recruit_character = EFH_lukas_brenner
 
 recruit_character = EFH_ashley_woods
 recruit_character = EFH_reinhard_voss
@@ -50,6 +50,28 @@ recruit_character = EFH_vagrant_2
 recruit_character = EFH_vagrant_2_reborn
 recruit_character = EFH_vagrant_3
 recruit_character = EFH_vagrant_3_reborn
+
+recruit_character = EFH_carsten_breuer
+recruit_character = EFH_christian_drosten
+recruit_character = EFH_kaja_kallas
+recruit_character = EFH_mark_rutte
+recruit_character = EFH_olaf_scholz
+recruit_character = EFH_christine_lagarde
+recruit_character = EFH_boris_johnson
+recruit_character = EFH_matthias_kroger
+recruit_character = EFH_tomasz_wrona
+recruit_character = EFH_mikkel_aasen
+recruit_character = EFH_pieter_janssens
+recruit_character = EFH_rob_bauer
+recruit_character = EFH_liz_truss
+recruit_character = EFH_larry_the_cat
+recruit_character = EFH_palmerston_the_cat
+recruit_character = EFH_emmanuel_macron
+recruit_character = EFH_karl_lauterbach
+recruit_character = EFH_david_attenborough
+recruit_character = EFH_jeremy_clarkson
+recruit_character = EFH_viktor_orban
+recruit_character = EFH_gunther_fehlinger_jahn
 
 create_field_marshal = {
 	name = "Henrik Brauner"
@@ -155,6 +177,7 @@ set_popularities = {
 
 
 add_ideas = EFH_fusion_economy
+add_ideas = EFH_northern_establishment
 add_ideas = EFH_bop_ef_low_idea
 SRP_initiate_escalation_effect = yes
 

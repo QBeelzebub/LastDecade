@@ -200,7 +200,7 @@ EFH_party_check_separatist_thresholds_effect = {
 		}
 		set_country_flag = EFH_separatist_unrest_warned
 		add_ideas = EFH_separatist_unrest
-		country_event = { id = efh_party.20 days = 1 }
+		news_event = { id = efh_party.20 days = 1 }
 	}
 	if = {
 		limit = {
@@ -209,7 +209,7 @@ EFH_party_check_separatist_thresholds_effect = {
 		}
 		set_country_flag = EFH_restoration_referendum_warned
 		add_ideas = EFH_restoration_referendum_crisis
-		country_event = { id = efh_party.21 days = 1 }
+		news_event = { id = efh_party.21 days = 1 }
 	}
 	if = {
 		limit = {
@@ -227,7 +227,7 @@ EFH_party_check_separatist_thresholds_effect = {
 		}
 		clr_country_flag = EFH_separatist_unrest_warned
 		remove_ideas = EFH_separatist_unrest
-		country_event = { id = efh_party.22 days = 1 }
+		news_event = { id = efh_party.22 days = 1 }
 	}
 	if = {
 		limit = {
@@ -236,7 +236,7 @@ EFH_party_check_separatist_thresholds_effect = {
 		}
 		clr_country_flag = EFH_restoration_referendum_warned
 		remove_ideas = EFH_restoration_referendum_crisis
-		country_event = { id = efh_party.23 days = 1 }
+		news_event = { id = efh_party.23 days = 1 }
 	}
 }
 

@@ -12,5 +12,105 @@ ideas = {
 			}
 		}
 
+		CHN_usa_partnership = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+			}
+		}
+
+		CHN_continuity_policy = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = 0.3
+			}
+		}
+
+		CHN_assertive_policy = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				offensive_war_stability_factor = 0.3
+			}
+		}
+
+		CHN_semiconductor_industry_1 = {
+			picture = generic_industry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		CHN_semiconductor_industry_2 = {
+			picture = generic_industry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		CHN_semiconductor_industry_3 = {
+			picture = generic_industry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.08
+				research_speed_factor = 0.03
+			}
+		}
+
+		CHN_army_supply_1 = {
+			picture = generic_army_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.04
+			}
+		}
+
+		CHN_army_supply_2 = {
+			picture = generic_army_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.08
+				army_org_factor = 0.03
+			}
+		}
+
+		CHN_compute_export_capacity = {
+			picture = generic_industry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.03
+				research_speed_factor = -0.02
+				political_power_gain = 0.15
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		CHN_compute_export_customer = {
+			picture = generic_research
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+
 	}
 }

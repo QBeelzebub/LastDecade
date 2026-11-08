@@ -34,13 +34,18 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = 2 }
 		}
 
 		categories = { srp_industry_tech srp_construction_tech }
 
 		production_speed_buildings_factor = 0.10
 		global_building_slots = 1
+
+		enable_building = {
+			building = srp_fabrication_yard
+			level = 2
+		}
 
 		path = {
 			leads_to_tech = srp_modular_industry
@@ -59,7 +64,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 6 }
 		}
 
 		categories = { srp_industry_tech srp_construction_tech }
@@ -86,11 +91,10 @@ technologies = {
 	srp_dispersed_industry = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 3 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = { srp_industry_tech srp_construction_tech }
@@ -116,40 +120,15 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 16 }
 		}
 
 		categories = { srp_industry_tech srp_construction_tech }
 
-		industrial_capacity_factory = 0.10
+		industrial_capacity_factory = 0.16
 		consumer_goods_factor = -0.03
-		production_speed_buildings_factor = 0.05
-
-		path = {
-			leads_to_tech = srp_crisis_construction
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_crisis_construction = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.5
-		start_year = 2031
-
-		folder = {
-			name = industry_folder
-			position = { x = 0 y = 5 }
-		}
-
-		categories = { srp_industry_tech srp_construction_tech }
-
-		production_speed_buildings_factor = 0.12
+		production_speed_buildings_factor = 0.17
 		global_building_slots = 2
-		industrial_capacity_factory = 0.06
 
 		ai_will_do = {
 			base = 2
@@ -164,7 +143,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 0 }
+			position = { x = 2 y = 2 }
 		}
 
 		categories = { srp_industry_tech }
@@ -189,7 +168,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 1 }
+			position = { x = 2 y = 6 }
 		}
 
 		categories = { srp_industry_tech }
@@ -210,43 +189,18 @@ technologies = {
 	srp_full_automation = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 2 y = 8 }
 		}
 
 		categories = { srp_industry_tech }
 
-		industrial_capacity_factory = 0.12
-		consumer_goods_factor = -0.02
+		industrial_capacity_factory = 0.22
+		consumer_goods_factor = -0.04
 		production_speed_buildings_factor = 0.05
 
-		path = {
-			leads_to_tech = srp_crisis_automation
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_crisis_automation = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.5
-		start_year = 2028
-
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 3 }
-		}
-
-		categories = { srp_industry_tech }
-
-		industrial_capacity_factory = 0.10
-		consumer_goods_factor = -0.02
 		production_lack_of_resource_penalty_factor = -0.05
 
 		ai_will_do = {
@@ -262,13 +216,18 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = 2 }
 		}
 
 		categories = { srp_industry_tech }
 
 		land_reinforce_rate = 0.05
 		supply_node_range = 0.05
+
+		enable_building = {
+			building = srp_distribution_hub
+			level = 2
+		}
 
 		path = {
 			leads_to_tech = srp_logistics_2
@@ -287,7 +246,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 1 }
+			position = { x = 4 y = 8 }
 		}
 
 		categories = { srp_industry_tech }
@@ -314,45 +273,18 @@ technologies = {
 	srp_logistics_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2026
-
+		start_year = 2023
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 10 }
 		}
 
 		categories = { srp_industry_tech }
 
-		land_reinforce_rate = 0.04
-		supply_node_range = 0.08
-		out_of_supply_factor = -0.05
-
-		path = {
-			leads_to_tech = srp_logistics_4
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_logistics_4 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2029
-
-		folder = {
-			name = industry_folder
-			position = { x = 4 y = 3 }
-		}
-
-		categories = { srp_industry_tech }
-
-		land_reinforce_rate = 0.05
-		supply_node_range = 0.08
+		land_reinforce_rate = 0.09
+		supply_node_range = 0.16
+		out_of_supply_factor = -0.11
 		supply_consumption_factor = -0.04
-		out_of_supply_factor = -0.06
 
 		ai_will_do = {
 			base = 2
@@ -367,7 +299,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 0 }
+			position = { x = 6 y = 8 }
 		}
 
 		categories = { srp_industry_tech }
@@ -412,11 +344,10 @@ technologies = {
 	srp_fissile_extraction_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2026
-
+		start_year = 2023
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 1 }
+			position = { x = 6 y = 10 }
 		}
 
 		categories = { srp_industry_tech }
@@ -451,7 +382,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 2 }
+			position = { x = 6 y = 18 }
 		}
 
 		categories = { srp_industry_tech }
@@ -482,7 +413,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 0 }
+			position = { x = 8 y = 10 }
 		}
 
 		categories = { srp_industry_tech }
@@ -511,7 +442,7 @@ technologies = {
 
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 1 }
+			position = { x = 8 y = 12 }
 		}
 
 		categories = { srp_industry_tech }
@@ -531,11 +462,10 @@ technologies = {
 	srp_fusion_reactor_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 3.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 2 }
+			position = { x = 8 y = 14 }
 		}
 
 		categories = { srp_industry_tech }
@@ -546,5 +476,27 @@ technologies = {
 		ai_will_do = {
 			base = 2
 		}
+	}
+
+	srp_synthetic_fuel = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2021
+
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 4 }
+		}
+
+		categories = { srp_industry_tech synth_resources }
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+
+		fuel_gain_factor = 0.10
+
+		ai_will_do = { base = 2 }
 	}
 }

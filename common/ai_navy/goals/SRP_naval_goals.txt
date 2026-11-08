@@ -3,7 +3,7 @@ SRP_naval_dominance = {
 	objective_type = naval_dominance
 
 	available_for = {
-		AFR ASI CHN EFH IRS KNX OCE RSF SAC SWR USA JAP
+		AFR ARU ASI CHN IND EFH IRS KNX OCE RSF SAC SWR USA JAP
 	}
 
 	min_priority = 50
@@ -14,7 +14,7 @@ SRP_naval_invasion_support = {
 	objective_type = naval_invasion_support
 
 	available_for = {
-		AFR ASI CHN EFH IRS KNX OCE RSF SAC SWR USA JAP
+		AFR ARU ASI CHN IND EFH IRS KNX OCE RSF SAC SWR USA JAP
 	}
 
 	min_priority = 60
@@ -36,7 +36,7 @@ SRP_coast_defense = {
 	objective_type = coast_defense
 
 	available_for = {
-		AFR ASI CHN EFH OCE RSF SAC SWR USA JAP
+		AFR ARU ASI CHN IND EFH OCE RSF SAC SWR USA JAP
 	}
 
 	min_priority = 15
@@ -47,7 +47,7 @@ SRP_convoy_protection = {
 	objective_type = convoy_protection
 
 	available_for = {
-		AFR ASI CHN EFH OCE RSF SAC SWR USA JAP
+		AFR ARU ASI CHN IND EFH OCE RSF SAC SWR USA JAP
 	}
 
 	min_priority = 12

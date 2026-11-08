@@ -1013,4 +1013,25 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_radio_module.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_EMI_srp_dozer_blade"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_dozer_blade.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_srp_flame_projector"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flamethrower.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_srp_remote_weapon_station"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_autoloader.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_srp_sealed_crew_compartment"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_nbc_sealing.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -8,6 +8,22 @@ country_event = {
 	desc = ldwar.1.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
+	trigger = {
+		tag = EFH
+		country_exists = USA
+		country_exists = CHN
+		NOT = { has_war_with = USA }
+		NOT = { has_war_with = CHN }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_panama_war_opened }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		685 = { is_owned_by = USA is_controlled_by = USA }
+		CHN = {
+			has_country_flag = CHN_efh_trade_accepted
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_war_with = USA }
+		}
+	}
 
 	option = {
 		name = ldwar.1.a
@@ -33,12 +49,33 @@ country_event = {
 	desc = ldwar.2.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
+	trigger = {
+		tag = USA
+		country_exists = EFH
+		country_exists = CHN
+		NOT = { has_war_with = EFH }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_panama_war_opened }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		685 = { is_owned_by = USA is_controlled_by = USA }
+		CHN = {
+			has_country_flag = CHN_efh_trade_accepted
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_war_with = EFH }
+			NOT = { has_war_with = USA }
+		}
+	}
 
 	option = {
 		name = ldwar.2.a
 		ai_chance = { base = 65 }
 		add_war_support = 0.03
-		685 = { add_resistance = -10 }
+		685 = {
+			if = {
+				limit = { has_resistance = yes }
+				add_resistance = -10
+			}
+		}
 		SRP_escalate_medium_effect = yes
 	}
 
@@ -117,7 +154,10 @@ country_event = {
 
 	option = {
 		name = ldwar.20.b
-		ai_chance = { base = 40 }
+		ai_chance = {
+			base = 20
+			modifier = { factor = 0 has_war_with = IRS }
+		}
 		set_country_flag = { flag = LD_white_peace_cd value = 1 days = 120 }
 		add_war_support = 0.05
 		add_ideas = LD_war_before_the_ground
@@ -139,6 +179,7 @@ country_event = {
 		}
 		white_peace = EFH
 		set_global_flag = LD_first_atlantic_war_ended
+		add_named_threat = { threat = -8 name = SRP_threat_armed_truce }
 		add_ideas = LD_armed_truce
 		EFH = {
 			add_ideas = LD_armed_truce
@@ -154,7 +195,10 @@ country_event = {
 
 	option = {
 		name = ldwar.21.b
-		ai_chance = { base = 40 }
+		ai_chance = {
+			base = 20
+			modifier = { factor = 0 EFH = { has_war_with = IRS } }
+		}
 		add_war_support = 0.05
 		set_country_flag = { flag = LD_white_peace_cd value = 1 days = 120 }
 		EFH = {
@@ -205,9 +249,12 @@ country_event = {
 			modifier = { factor = 2 check_variable = { EFH_USA_escalation > 49 } }
 			modifier = { factor = 0.2 check_variable = { EFH_USA_escalation < 25 } }
 		}
-		declare_war_on = {
-			target = USA
-			type = annex_everything
+		if = {
+			limit = { NOT = { has_war_with = USA } }
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
 		}
 		add_ideas = LD_joint_offensive
 		set_global_flag = LD_second_atlantic_war_open
@@ -251,9 +298,12 @@ country_event = {
 			base = 40
 			modifier = { factor = 2 check_variable = { EFH_USA_escalation > 49 } }
 		}
-		declare_war_on = {
-			target = USA
-			type = annex_everything
+		if = {
+			limit = { NOT = { has_war_with = USA } }
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
 		}
 		add_ideas = LD_joint_offensive
 		set_global_flag = LD_second_atlantic_war_open
@@ -302,6 +352,15 @@ country_event = {
 		name = ldwar.33.a
 		add_war_support = 0.08
 		add_ideas = LD_second_war_mobilisation
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = EFH
+					NOT = { EFH = { has_idea = LD_federation_air_offensive } }
+				}
+				EFH = { add_ideas = LD_federation_air_offensive }
+			}
+		}
 	}
 }
 
@@ -315,5 +374,135 @@ news_event = {
 
 	option = {
 		name = ldwar.34.a
+	}
+}
+
+
+country_event = {
+	id = ldwar.40
+	title = ldwar.40.t
+	desc = ldwar.40.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = {
+		tag = EFH
+		country_exists = CHN
+		country_exists = USA
+		NOT = { has_war_with = USA }
+		NOT = { has_war_with = CHN }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_panama_war_opened }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		NOT = { has_country_flag = LD_panama_summit_active }
+		685 = { is_owned_by = USA is_controlled_by = USA }
+		CHN = {
+			has_country_flag = CHN_efh_aligned
+			has_country_flag = CHN_efh_trade_accepted
+			has_country_flag = CHN_canal_initiative
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_war_with = USA }
+		}
+	}
+
+	option = {
+		name = ldwar.40.a
+		ai_chance = {
+			base = 70
+			modifier = { factor = 2 check_variable = { EFH_USA_escalation > 64 } }
+		}
+		if = {
+			limit = {
+				country_exists = CHN
+				country_exists = USA
+				is_subject = no
+				has_capitulated = no
+				NOT = { has_war_with = USA }
+				NOT = { has_war_with = CHN }
+				NOT = { is_in_faction_with = USA }
+				NOT = { has_global_flag = LD_panama_settled }
+				NOT = { has_global_flag = LD_panama_war_opened }
+				NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+				685 = { is_owned_by = USA is_controlled_by = USA }
+				CHN = {
+					has_country_flag = CHN_efh_aligned
+					has_country_flag = CHN_efh_trade_accepted
+			has_country_flag = CHN_canal_initiative
+					NOT = { has_country_flag = CHN_usa_aligned }
+					NOT = { has_war_with = USA }
+					NOT = { is_in_faction_with = USA }
+					is_subject = no
+					has_capitulated = no
+				}
+			}
+			set_country_flag = { flag = LD_panama_summit_active value = 1 days = 60 }
+			add_ideas = LD_canal_accord
+			SRP_escalate_high_effect = yes
+			EFH_bop_medium_ef_effect = yes
+			USA = { country_event = { id = ldwar.41 days = 6 } }
+			custom_effect_tooltip = LD_panama_summit_convened_tt
+		}
+	}
+
+	option = {
+		name = ldwar.40.b
+		ai_chance = { base = 30 }
+		add_political_power = 50
+		SRP_deescalate_low_effect = yes
+	}
+}
+
+country_event = {
+	id = ldwar.41
+	title = ldwar.41.t
+	desc = ldwar.41.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+		country_exists = EFH
+		country_exists = CHN
+		NOT = { has_war_with = EFH }
+		NOT = { has_war_with = CHN }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_panama_war_opened }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		685 = { is_owned_by = USA is_controlled_by = USA }
+		EFH = { has_country_flag = LD_panama_summit_active NOT = { has_war_with = CHN } }
+		CHN = {
+			has_country_flag = CHN_efh_aligned
+			has_country_flag = CHN_efh_trade_accepted
+			has_country_flag = CHN_canal_initiative
+			NOT = { has_country_flag = CHN_usa_aligned }
+		}
+	}
+
+	option = {
+		name = ldwar.41.a
+		ai_chance = {
+			base = 80
+			modifier = { factor = 2 check_variable = { EFH_USA_escalation > 64 } }
+		}
+		set_country_flag = CHN_canal_refusal
+		CHN_resolve_canal_effect = yes
+	}
+
+	option = {
+		name = ldwar.41.b
+		ai_chance = { base = 20 }
+		add_named_threat = { threat = -4 name = SRP_threat_canal_conceded }
+		CHN_resolve_canal_effect = yes
+	}
+}
+
+news_event = {
+	id = ldwar.42
+	title = ldwar.42.t
+	desc = ldwar.42.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ldwar.42.a
 	}
 }

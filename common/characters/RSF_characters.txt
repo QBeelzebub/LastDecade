@@ -5,12 +5,13 @@ characters = {
 		name = RSF_Leader
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_europe_generic_1"
+				large = "GFX_portrait_europe_generic_7"
 			}
 		}
 		country_leader = {
 			ideology = despotism
 			traits = { }
+			desc = RSF_Leader_DESC
 			expire = "2030.1.1"
 			id = -1
 		}

@@ -45,6 +45,10 @@ technologies = {
 			leads_to_tech = srp_destroyer_hull_tech_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = srp_littoral_patrol
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = {
 			base = 3
@@ -70,7 +74,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 0 }
+			position = { x = 4 y = 0 }
 		}
 
 		categories = {
@@ -81,6 +85,36 @@ technologies = {
 
 		path = {
 			leads_to_tech = srp_destroyer_hull_tech_3
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	srp_littoral_patrol = {
+		allow = { NOT = { is_full_parasite = yes } }
+
+		research_cost = 1.0
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			srp_naval_tech
+			dd_tech
+		}
+
+		enable_equipments = { srp_destroyer_hull_littoral }
+
+		convoy_escort_efficiency = 0.05
+
+		path = {
+			leads_to_tech = srp_destroyer_hull_tech_2
 			research_cost_coeff = 1
 		}
 
@@ -104,7 +138,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 4 y = 0 }
+			position = { x = 6 y = 0 }
 		}
 
 		categories = {
@@ -379,8 +413,7 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 0 }

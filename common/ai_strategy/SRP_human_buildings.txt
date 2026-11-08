@@ -4,6 +4,8 @@ SRP_human_build_peacetime = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -17,11 +19,8 @@ SRP_human_build_peacetime = {
 	enable = { has_war = no }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target  id = industrial_complex  value = 6  }
-	ai_strategy = { type = building_target  id = arms_factory        value = 6  }
 	ai_strategy = { type = building_target  id = infrastructure      value = 4  }
 	ai_strategy = { type = building_target  id = radar_station       value = 2  }
-	ai_strategy = { type = building_target  id = dockyard            value = 4  }
 	ai_strategy = { type = building_target  id = air_base            value = 3 }
 }
 
@@ -30,6 +29,8 @@ SRP_human_build_wartime = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -43,11 +44,8 @@ SRP_human_build_wartime = {
 	enable = { has_war = yes }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target  id = arms_factory        value = 20 }
 	ai_strategy = { type = building_target  id = anti_air_building   value = 8  }
 	ai_strategy = { type = building_target  id = infrastructure      value = 3  }
-	ai_strategy = { type = building_target  id = industrial_complex  value = 4  }
-	ai_strategy = { type = building_target  id = dockyard            value = 6  }
 	ai_strategy = { type = building_target  id = air_base            value = 10 }
 }
 
@@ -63,11 +61,8 @@ SRP_major_power_build_peacetime = {
 	enable = { has_war = no }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target  id = industrial_complex  value = 16 }
-	ai_strategy = { type = building_target  id = arms_factory        value = 12 }
 	ai_strategy = { type = building_target  id = radar_station       value = 3  }
 	ai_strategy = { type = building_target  id = infrastructure      value = 6  }
-	ai_strategy = { type = building_target  id = dockyard            value = 10 }
 	ai_strategy = { type = building_target  id = air_base            value = 5 }
 	ai_strategy = { type = building_target  id = srp_fusion_reactor  value = 1  }
 	ai_strategy = { type = building_target  id = anti_air_building   value = 4 }
@@ -85,12 +80,203 @@ SRP_major_power_build_wartime = {
 	enable = { has_war = yes }
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = building_target  id = arms_factory        value = 38 }
 	ai_strategy = { type = building_target  id = anti_air_building   value = 12 }
 	ai_strategy = { type = building_target  id = radar_station       value = 3  }
-	ai_strategy = { type = building_target  id = industrial_complex  value = 8  }
 	ai_strategy = { type = building_target  id = infrastructure      value = 6  }
-	ai_strategy = { type = building_target  id = dockyard            value = 12 }
 	ai_strategy = { type = building_target  id = srp_fusion_reactor  value = 2  }
 	ai_strategy = { type = building_target  id = air_base            value = 5  }
+}
+
+
+
+EFH_build_peacetime = {
+	allowed = { original_tag = EFH }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 380 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 178 }
+	ai_strategy = { type = building_target  id = dockyard            value = 92  }
+}
+EFH_build_wartime = {
+	allowed = { original_tag = EFH }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 195 }
+	ai_strategy = { type = building_target  id = dockyard            value = 92  }
+}
+
+USA_build_peacetime = {
+	allowed = { original_tag = USA }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 366 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 188 }
+	ai_strategy = { type = building_target  id = dockyard            value = 88  }
+}
+USA_build_wartime = {
+	allowed = { original_tag = USA }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 206 }
+	ai_strategy = { type = building_target  id = dockyard            value = 88  }
+}
+
+CHN_build_peacetime = {
+	allowed = { original_tag = CHN }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 106 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 53  }
+	ai_strategy = { type = building_target  id = dockyard            value = 8   }
+}
+CHN_build_wartime = {
+	allowed = { original_tag = CHN }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 58  }
+	ai_strategy = { type = building_target  id = dockyard            value = 8   }
+}
+
+SAC_build_peacetime = {
+	allowed = { original_tag = SAC }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 104 }
+	ai_strategy = { type = building_target  id = arms_factory        value = 27  }
+	ai_strategy = { type = building_target  id = dockyard            value = 10  }
+}
+SAC_build_wartime = {
+	allowed = { original_tag = SAC }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 29  }
+	ai_strategy = { type = building_target  id = dockyard            value = 10  }
+}
+
+
+RSF_build_peacetime = {
+	allowed = { original_tag = RSF }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 50  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 42  }
+	ai_strategy = { type = building_target  id = dockyard            value = 6   }
+}
+RSF_build_wartime = {
+	allowed = { original_tag = RSF }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 48  }
+	ai_strategy = { type = building_target  id = dockyard            value = 6   }
+}
+
+JAP_build_peacetime = {
+	allowed = { original_tag = JAP }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 34  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 22  }
+	ai_strategy = { type = building_target  id = dockyard            value = 18  }
+}
+JAP_build_wartime = {
+	allowed = { original_tag = JAP }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 26  }
+	ai_strategy = { type = building_target  id = dockyard            value = 18  }
+}
+
+AFR_build_peacetime = {
+	allowed = { original_tag = AFR }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 36  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 14   }
+	ai_strategy = { type = building_target  id = dockyard            value = 2   }
+}
+AFR_build_wartime = {
+	allowed = { original_tag = AFR }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 18  }
+	ai_strategy = { type = building_target  id = dockyard            value = 2   }
+}
+
+IND_build_peacetime = {
+	allowed = { original_tag = IND }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 30  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 12   }
+	ai_strategy = { type = building_target  id = dockyard            value = 4   }
+}
+IND_build_wartime = {
+	allowed = { original_tag = IND }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 16  }
+	ai_strategy = { type = building_target  id = dockyard            value = 4   }
+}
+
+ARU_build_peacetime = {
+	allowed = { original_tag = ARU }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 22  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 16  }
+	ai_strategy = { type = building_target  id = dockyard            value = 2   }
+}
+ARU_build_wartime = {
+	allowed = { original_tag = ARU }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 18  }
+	ai_strategy = { type = building_target  id = dockyard            value = 2   }
+}
+
+OCE_build_peacetime = {
+	allowed = { original_tag = OCE }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 25  }
+	ai_strategy = { type = building_target  id = arms_factory        value = 11   }
+	ai_strategy = { type = building_target  id = dockyard            value = 4   }
+}
+OCE_build_wartime = {
+	allowed = { original_tag = OCE }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 14   }
+	ai_strategy = { type = building_target  id = dockyard            value = 4   }
+}
+
+SWR_build_peacetime = {
+	allowed = { original_tag = SWR }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 4   }
+	ai_strategy = { type = building_target  id = arms_factory        value = 6   }
+}
+SWR_build_wartime = {
+	allowed = { original_tag = SWR }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 7   }
+}
+
+ASI_build_peacetime = {
+	allowed = { original_tag = ASI }
+	enable = { has_war = no }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = industrial_complex  value = 6   }
+	ai_strategy = { type = building_target  id = arms_factory        value = 6   }
+	ai_strategy = { type = building_target  id = dockyard            value = 4   }
+}
+ASI_build_wartime = {
+	allowed = { original_tag = ASI }
+	enable = { has_war = yes }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = building_target  id = arms_factory        value = 20  }
+	ai_strategy = { type = building_target  id = industrial_complex  value = 4   }
+	ai_strategy = { type = building_target  id = dockyard            value = 6   }
 }

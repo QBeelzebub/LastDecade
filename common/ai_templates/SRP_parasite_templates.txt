@@ -3,6 +3,7 @@ parasite_infantry = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = infantry
@@ -112,6 +113,7 @@ parasite_swarm_flood = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = militias
@@ -139,6 +141,7 @@ parasite_garrison = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = garrison
@@ -204,6 +207,7 @@ parasite_armor = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = armor
@@ -293,6 +297,7 @@ parasite_rangers = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = rangers_role
@@ -372,6 +377,7 @@ parasite_landing_swarm = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = marines
@@ -469,6 +475,7 @@ parasite_hq = {
 	available_for = {
 		IRS
 		KNX
+		TET
 	}
 
 	role = hq_role

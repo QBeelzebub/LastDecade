@@ -34,7 +34,7 @@ buildings = {
 		hide_if_missing_tech = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 30
 		}
 	}
 
@@ -49,7 +49,7 @@ buildings = {
 		hide_if_missing_tech = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 30
 		}
 	}
 
@@ -209,7 +209,7 @@ buildings = {
 		hide_if_missing_tech = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 30
 		}
 	}
 

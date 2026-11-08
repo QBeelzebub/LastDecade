@@ -41,6 +41,10 @@ technologies = {
 			leads_to_tech = srp_mbt_chassis2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = srp_dozer_blade_tech
+			research_cost_coeff = 1
+		}
 	}
 
 	srp_mbt_chassis2 = {
@@ -55,13 +59,19 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 
 		categories = {
 			srp_armor_tech
 		}
 		special_project_specialization = { specialization_land }
+
+		army_armor_attack_factor = 0.08
+
+		army_armor_defence_factor = 0.04
+
+		army_speed_factor = 0.03
 
 		path = {
 			leads_to_tech = srp_mbt_chassis3
@@ -85,11 +95,15 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 6 y = 4 }
 		}
 
 		path = {
 			leads_to_tech = srp_howitzer_module
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srp_sealed_compartment_tech
 			research_cost_coeff = 1
 		}
 
@@ -119,7 +133,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 6 y = 6 }
 		}
 
 		categories = {
@@ -151,11 +165,19 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 12 y = 0 }
 		}
+
+		motorized_attack_factor = 0.05
+
+		mechanized_attack_factor = 0.03
 
 		path = {
 			leads_to_tech = srp_ifv_chassis_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srp_apc_tech
 			research_cost_coeff = 1
 		}
 
@@ -178,11 +200,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 12 y = 4 }
 		}
 
 		categories = {
@@ -190,6 +211,14 @@ technologies = {
 			srp_land_tech
 		}
 		special_project_specialization = { specialization_land }
+
+		motorized_attack_factor = 0.05
+
+		mechanized_attack_factor = 0.05
+
+		motorized_defence_factor = 0.04
+
+		mechanized_defence_factor = 0.04
 
 		ai_will_do = {
 			base = 2
@@ -204,11 +233,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = {
@@ -238,7 +266,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 12 }
 		}
 
 		categories = {
@@ -263,11 +291,15 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 18 y = 8 }
 		}
 
 		path = {
 			leads_to_tech = srp_aps
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srp_rws_tech
 			research_cost_coeff = 1
 		}
 
@@ -290,11 +322,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 18 y = 10 }
 		}
 
 		categories = {
@@ -320,8 +351,10 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 20 }
 		}
+
+		land_night_attack = 0.2
 
 		path = {
 			leads_to_tech = srp_autoloader_module
@@ -347,11 +380,10 @@ technologies = {
 		}
 
 		research_cost = 1.3
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 22 }
 		}
 
 		categories = {
@@ -379,7 +411,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 3 y = 16 }
 		}
 
 		path = {
@@ -406,11 +438,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 3 y = 20 }
 		}
 
 		path = {
@@ -442,7 +473,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 4 }
+			position = { x = 3 y = 30 }
 		}
 
 		categories = {
@@ -469,8 +500,12 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 6 y = 18 }
 		}
+
+		army_armor_defence_factor = 0.06
+
+		army_defence_factor = 0.02
 
 		path = {
 			leads_to_tech = srp_composite_armor_tech
@@ -500,7 +535,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 6 y = 24 }
 		}
 
 		path = {
@@ -527,11 +562,10 @@ technologies = {
 		}
 
 		research_cost = 1.8
-		start_year = 2026
-
+		start_year = 2023
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 4 }
+			position = { x = 9 y = 26 }
 		}
 
 		categories = {
@@ -559,11 +593,19 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 12 y = 16 }
 		}
+
+		army_armor_attack_factor = 0.05
+
+		breakthrough_factor = 0.03
 
 		path = {
 			leads_to_tech = srp_next_gen_armament
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = srp_flame_projector_tech
 			research_cost_coeff = 1
 		}
 
@@ -587,11 +629,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 12 y = 20 }
 		}
 
 		path = {
@@ -622,7 +663,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 4 }
+			position = { x = 12 y = 28 }
 		}
 
 		categories = {
@@ -647,5 +688,95 @@ technologies = {
 
 		research_cost = 1
 		start_year = 2035
+	}
+
+	srp_dozer_blade_tech = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2020
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = 2 }
+		}
+
+		categories = { srp_armor_tech srp_land_tech }
+		special_project_specialization = { specialization_land }
+
+		enable_equipment_modules = { srp_dozer_blade }
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_flame_projector_tech = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2021
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 15 y = 18 }
+		}
+
+		categories = { srp_armor_tech srp_land_tech srp_incendiary }
+		special_project_specialization = { specialization_land }
+
+		enable_equipment_modules = { srp_flame_projector }
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_rws_tech = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 21 y = 10 }
+		}
+
+		categories = { srp_armor_tech srp_land_tech }
+		special_project_specialization = { specialization_land }
+
+		enable_equipment_modules = { srp_remote_weapon_station }
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_sealed_compartment_tech = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.5
+		start_year = 2022
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 9 y = 6 }
+		}
+
+		categories = { srp_armor_tech srp_land_tech }
+		special_project_specialization = { specialization_land }
+
+		enable_equipment_modules = { srp_sealed_crew_compartment }
+
+		ai_will_do = { base = 2 }
+	}
+
+	srp_apc_tech = {
+		allow = { NOT = { is_full_parasite = yes } }
+		research_cost = 1.0
+		start_year = 2020
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 15 y = 2 }
+		}
+
+		categories = { srp_motorized_tech srp_land_tech cat_mechanized_equipment }
+		special_project_specialization = { specialization_land }
+
+		enable_equipments = { srp_ifv_equipment_apc }
+
+		ai_will_do = { base = 2 }
 	}
 }

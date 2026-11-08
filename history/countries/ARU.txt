@@ -1,0 +1,64 @@
+capital = 291
+SRP_enable_starting_human_division_techs_effect = yes
+oob = "ARU_2018"
+set_research_slots = 2
+recruit_character = ARU_Leader
+recruit_character = ARU_layla_nuaimi
+add_ideas = ARU_nine_seats
+
+create_corps_commander = {
+	name = "Zaid Al-Qahtani"
+	gfx = "GFX_Portrait_Arabia_Generic_land_1"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Rebin Barzani"
+	gfx = "GFX_Portrait_Arabia_Generic_land_2"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+set_politics = {
+    ruling_party = neutrality
+    last_election = "2016.3.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+starting_train_buffer = 1
+set_technology = {
+    tech_support = 1
+    srp_incendiary = 1
+    srp_mbt_chassis = 1
+    srp_artillery_1 = 1
+    srp_aa_1 = 1
+    srp_fighter_gen4 = 1
+    ld_civilian_train = 1
+    ld_military_train = 1
+}
+set_popularities = {
+    neutrality = 80
+    democratic = 20
+}
+
+create_equipment_variant = {
+    name = "Babylon Mk2"
+    type = srp_mbt_chassis1
+    parent_version = 0
+    modules = {
+        turret_type_slot = srp_armored_mbt_turret
+        main_armament_slot = srp_120mm_smoothbore
+        suspension_type_slot = srp_hydropneumatic
+        armor_type_slot = srp_composite_armor
+        engine_type_slot = srp_hybrid_drive
+        special_type_slot_1 = tank_nbc_sealing
+    }
+}

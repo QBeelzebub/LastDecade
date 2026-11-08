@@ -43,7 +43,14 @@ IRS_devourer_operations = {
 			any_controlled_state = {
 				is_coastal = yes
 				beckon_cluster > 0
+				OR = {
+					is_on_continent = asia
+					is_on_continent = australia
+					is_on_continent = north_america
+					is_on_continent = south_america
+				}
 			}
+			IRS_sea_colony_coast_count_met = yes
 		}
 
 		cost = 100
@@ -52,20 +59,24 @@ IRS_devourer_operations = {
 		complete_effect = {
 			set_country_flag = IRS_sea_colony_pacific
 			if = {
-				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
-				add_ideas = IRS_sea_colony_tier_1
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
-			}
-			if = {
-				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				limit = { has_idea = IRS_sea_colony_tier_2 }
 				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_3 }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+				limit = { has_idea = IRS_sea_colony_tier_1 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = IRS_sea_colony_tier_2 }
+					NOT = { has_idea = IRS_sea_colony_tier_3 }
+					NOT = { has_idea = IRS_sea_colony_tier_4 }
+				}
+				add_ideas = IRS_sea_colony_tier_1
 			}
 		}
 
@@ -87,7 +98,14 @@ IRS_devourer_operations = {
 			any_controlled_state = {
 				is_coastal = yes
 				beckon_cluster > 0
+				OR = {
+					is_on_continent = africa
+					is_on_continent = asia
+					is_on_continent = australia
+					is_on_continent = middle_east
+				}
 			}
+			IRS_sea_colony_coast_count_met = yes
 		}
 
 		cost = 100
@@ -96,20 +114,24 @@ IRS_devourer_operations = {
 		complete_effect = {
 			set_country_flag = IRS_sea_colony_indian_ocean
 			if = {
-				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
-				add_ideas = IRS_sea_colony_tier_1
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
-			}
-			if = {
-				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				limit = { has_idea = IRS_sea_colony_tier_2 }
 				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_3 }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+				limit = { has_idea = IRS_sea_colony_tier_1 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = IRS_sea_colony_tier_2 }
+					NOT = { has_idea = IRS_sea_colony_tier_3 }
+					NOT = { has_idea = IRS_sea_colony_tier_4 }
+				}
+				add_ideas = IRS_sea_colony_tier_1
 			}
 		}
 
@@ -131,7 +153,13 @@ IRS_devourer_operations = {
 			any_controlled_state = {
 				is_coastal = yes
 				beckon_cluster > 0
+				OR = {
+					is_on_continent = europe
+					is_on_continent = africa
+					is_on_continent = middle_east
+				}
 			}
+			IRS_sea_colony_coast_count_met = yes
 		}
 
 		cost = 100
@@ -140,20 +168,24 @@ IRS_devourer_operations = {
 		complete_effect = {
 			set_country_flag = IRS_sea_colony_mediterranean
 			if = {
-				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
-				add_ideas = IRS_sea_colony_tier_1
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
-			}
-			if = {
-				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				limit = { has_idea = IRS_sea_colony_tier_2 }
 				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_3 }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+				limit = { has_idea = IRS_sea_colony_tier_1 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = IRS_sea_colony_tier_2 }
+					NOT = { has_idea = IRS_sea_colony_tier_3 }
+					NOT = { has_idea = IRS_sea_colony_tier_4 }
+				}
+				add_ideas = IRS_sea_colony_tier_1
 			}
 		}
 
@@ -175,7 +207,13 @@ IRS_devourer_operations = {
 			any_controlled_state = {
 				is_coastal = yes
 				beckon_cluster > 0
+				OR = {
+					is_on_continent = europe
+					is_on_continent = north_america
+					is_on_continent = africa
+				}
 			}
+			IRS_sea_colony_coast_count_met = yes
 		}
 
 		cost = 100
@@ -184,20 +222,24 @@ IRS_devourer_operations = {
 		complete_effect = {
 			set_country_flag = IRS_sea_colony_north_atlantic
 			if = {
-				limit = { NOT = { has_idea = IRS_sea_colony_tier_1 } }
-				add_ideas = IRS_sea_colony_tier_1
+				limit = { has_idea = IRS_sea_colony_tier_3 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_1 NOT = { has_idea = IRS_sea_colony_tier_2 } }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
-			}
-			if = {
-				limit = { has_idea = IRS_sea_colony_tier_2 NOT = { has_idea = IRS_sea_colony_tier_3 } }
+				limit = { has_idea = IRS_sea_colony_tier_2 }
 				swap_ideas = { remove_idea = IRS_sea_colony_tier_2 add_idea = IRS_sea_colony_tier_3 }
 			}
 			if = {
-				limit = { has_idea = IRS_sea_colony_tier_3 }
-				swap_ideas = { remove_idea = IRS_sea_colony_tier_3 add_idea = IRS_sea_colony_tier_4 }
+				limit = { has_idea = IRS_sea_colony_tier_1 }
+				swap_ideas = { remove_idea = IRS_sea_colony_tier_1 add_idea = IRS_sea_colony_tier_2 }
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = IRS_sea_colony_tier_2 }
+					NOT = { has_idea = IRS_sea_colony_tier_3 }
+					NOT = { has_idea = IRS_sea_colony_tier_4 }
+				}
+				add_ideas = IRS_sea_colony_tier_1
 			}
 		}
 
@@ -234,8 +276,7 @@ IRS_devourer_operations = {
 		}
 
 		visible = {
-			original_tag = IRS
-			has_country_flag = IRS_sac_breach_unlocked
+			always = no
 		}
 
 		available = {

@@ -30,8 +30,6 @@ country_event = {
 		ai_chance = { base = 10 }
 		add_ideas = EFH_airbus_contract
 		set_country_flag = EFH_laytheo_contractor_selected
-		set_country_flag = EFH_contractor_airbus
-		set_country_flag = EFH_airbus_quality_control_active
 	}
 
 	option = {
@@ -43,19 +41,17 @@ country_event = {
 			days = 200
 		}
 		set_country_flag = EFH_laytheo_contractor_selected
-		set_country_flag = EFH_contractor_esa
-		set_country_flag = EFH_esa_fissile_reduction_active
 		custom_effect_tooltip = EFH_esa_fissile_reduction_tt
 		add_political_power = 150
 	}
 }
 
 
-country_event = {
+news_event = {
 	id = efh.2
 	title = efh.2.t
 	desc = efh.2.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_airplane_factory
 	is_triggered_only = yes
 
 	option = {
@@ -64,11 +60,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.3
 	title = efh.3.t
 	desc = efh.3.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_fighters
 	is_triggered_only = yes
 
 	option = {
@@ -130,16 +126,34 @@ news_event = {
 	immediate = {
 		set_global_flag = LD_second_summit_convened
 		if = {
+			limit = { original_tag = EFH }
+			set_country_flag = { flag = LD_summit_cd value = 1 days = 120 }
+		}
+		if = {
 			limit = {
 				original_tag = EFH
-				check_variable = { EFH_USA_escalation > 79 }
+				OR = {
+					check_variable = { EFH_USA_escalation > 79 }
+					AND = {
+						has_country_flag = EFH_northern_war_authorized
+						check_variable = { EFH_USA_escalation > 64 }
+					}
+				}
 			}
 			country_event = { id = efh.20 days = 1 }
 		}
 		if = {
 			limit = {
 				original_tag = EFH
-				check_variable = { EFH_USA_escalation < 80 }
+				NOT = {
+					OR = {
+						check_variable = { EFH_USA_escalation > 79 }
+						AND = {
+							has_country_flag = EFH_northern_war_authorized
+							check_variable = { EFH_USA_escalation > 64 }
+						}
+					}
+				}
 			}
 			country_event = { id = efh.22 days = 1 }
 		}
@@ -156,6 +170,11 @@ country_event = {
 	desc = efh.22.d
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
+
+	immediate = {
+		add_to_variable = { EFH_summit_holds = 1 }
+		SRP_escalate_summit_ratchet_effect = yes
+	}
 
 	option = {
 		name = efh.22.a
@@ -214,11 +233,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.40
 	title = efh.40.t
 	desc = efh.40.d
-	picture = GFX_report_event_generic_sign_treaty1
+	picture = GFX_news_event_generic_sign_treaty1
 	is_triggered_only = yes
 
 	immediate = {
@@ -273,6 +292,17 @@ country_event = {
 	desc = efh.20.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
+	trigger = {
+		tag = EFH
+		country_exists = USA
+		NOT = { has_war_with = USA }
+		NOT = { is_in_faction_with = USA }
+		NOT = { has_country_flag = LD_panama_summit_active }
+		NOT = { has_global_flag = LD_panama_war_opened }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+	}
+	immediate = { set_global_flag = LD_atlantic_nuclear_opened }
 	option = {
 		name = efh.20.a
 		declare_war_on = {
@@ -285,7 +315,6 @@ country_event = {
 		add_ideas = EFH_nuclear_war_blowback
 		USA = { add_ideas = USA_nuclear_war_shock }
 		CHN = { country_event = { id = world.1 days = 1 } }
-		JAP = { country_event = { id = world.1 days = 1 } }
 		SAC = { country_event = { id = world.1 days = 1 } }
 		IRS = { country_event = { id = irs.1 days = 1 } }
 	}
@@ -343,11 +372,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.31
 	title = efh.31.t
 	desc = efh.31.d
-	picture = GFX_report_event_generic_sign_treaty1
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -414,11 +443,11 @@ news_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.60
 	title = efh.60.t
 	desc = efh.60.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_military_planning
 	is_triggered_only = yes
 
 	option = {
@@ -427,11 +456,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.61
 	title = efh.61.t
 	desc = efh.61.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_handshake
 	is_triggered_only = yes
 
 	option = {
@@ -439,11 +468,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.62
 	title = efh.62.t
 	desc = efh.62.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {
@@ -451,11 +480,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.63
 	title = efh.63.t
 	desc = efh.63.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_tank_factory
 	is_triggered_only = yes
 
 	option = {
@@ -463,11 +492,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.64
 	title = efh.64.t
 	desc = efh.64.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty2
 	is_triggered_only = yes
 
 	option = {
@@ -506,11 +535,11 @@ news_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.67
 	title = efh.67.t
 	desc = efh.67.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_army
 	is_triggered_only = yes
 
 	option = {
@@ -538,11 +567,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.69
 	title = efh.69.t
 	desc = efh.69.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty3
 	is_triggered_only = yes
 
 	option = {
@@ -550,11 +579,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.70
 	title = efh.70.t
 	desc = efh.70.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_handshake
 	is_triggered_only = yes
 
 	option = {
@@ -562,11 +591,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.71
 	title = efh.71.t
 	desc = efh.71.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty1
 	is_triggered_only = yes
 
 	option = {
@@ -575,11 +604,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.72
 	title = efh.72.t
 	desc = efh.72.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_military_planning
 	is_triggered_only = yes
 
 	option = {
@@ -587,11 +616,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.73
 	title = efh.73.t
 	desc = efh.73.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_soldiers_marching
 	is_triggered_only = yes
 
 	option = {
@@ -600,11 +629,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.74
 	title = efh.74.t
 	desc = efh.74.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {
@@ -612,11 +641,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.75
 	title = efh.75.t
 	desc = efh.75.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -624,11 +653,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.76
 	title = efh.76.t
 	desc = efh.76.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_airplane_factory
 	is_triggered_only = yes
 
 	option = {
@@ -637,11 +666,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.77
 	title = efh.77.t
 	desc = efh.77.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_parliament
 	is_triggered_only = yes
 
 	option = {
@@ -649,11 +678,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.78
 	title = efh.78.t
 	desc = efh.78.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -662,11 +691,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.79
 	title = efh.79.t
 	desc = efh.79.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_military_planning
 	is_triggered_only = yes
 
 	option = {
@@ -674,11 +703,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.80
 	title = efh.80.t
 	desc = efh.80.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -699,11 +728,11 @@ news_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.82
 	title = efh.82.t
 	desc = efh.82.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -737,11 +766,11 @@ news_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.85
 	title = efh.85.t
 	desc = efh.85.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty2
 	is_triggered_only = yes
 
 	option = {
@@ -749,11 +778,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.86
 	title = efh.86.t
 	desc = efh.86.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_strike
 	is_triggered_only = yes
 
 	option = {
@@ -762,11 +791,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.87
 	title = efh.87.t
 	desc = efh.87.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_handshake
 	is_triggered_only = yes
 
 	option = {
@@ -774,11 +803,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.88
 	title = efh.88.t
 	desc = efh.88.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty3
 	is_triggered_only = yes
 
 	option = {
@@ -787,11 +816,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.89
 	title = efh.89.t
 	desc = efh.89.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_destroyers
 	is_triggered_only = yes
 
 	option = {
@@ -832,11 +861,11 @@ news_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.92
 	title = efh.92.t
 	desc = efh.92.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {
@@ -844,11 +873,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.93
 	title = efh.93.t
 	desc = efh.93.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_military_planning
 	is_triggered_only = yes
 
 	option = {
@@ -857,11 +886,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.94
 	title = efh.94.t
 	desc = efh.94.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_destroyers
 	is_triggered_only = yes
 
 	option = {
@@ -869,11 +898,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.95
 	title = efh.95.t
 	desc = efh.95.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_fighters
 	is_triggered_only = yes
 
 	option = {
@@ -882,11 +911,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.96
 	title = efh.96.t
 	desc = efh.96.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -894,11 +923,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.97
 	title = efh.97.t
 	desc = efh.97.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_journalists_speech
 	is_triggered_only = yes
 
 	option = {
@@ -906,11 +935,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.98
 	title = efh.98.t
 	desc = efh.98.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_army
 	is_triggered_only = yes
 
 	option = {
@@ -918,11 +947,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.99
 	title = efh.99.t
 	desc = efh.99.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_parliament
 	is_triggered_only = yes
 
 	option = {
@@ -931,11 +960,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.100
 	title = efh.100.t
 	desc = efh.100.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {
@@ -943,11 +972,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.101
 	title = efh.101.t
 	desc = efh.101.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_soldiers_marching
 	is_triggered_only = yes
 
 	option = {
@@ -955,11 +984,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.50
 	title = efh.50.t
 	desc = efh.50.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_election_vote
 	is_triggered_only = yes
 
 	option = {
@@ -967,11 +996,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.51
 	title = efh.51.t
 	desc = efh.51.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_parliament
 	is_triggered_only = yes
 
 	option = {
@@ -979,11 +1008,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.52
 	title = efh.52.t
 	desc = efh.52.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally
 	is_triggered_only = yes
 
 	option = {
@@ -1009,11 +1038,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.54
 	title = efh.54.t
 	desc = efh.54.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty1
 	is_triggered_only = yes
 
 	option = {
@@ -1022,11 +1051,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = efh.55
 	title = efh.55.t
 	desc = efh.55.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_journalists_speech
 	is_triggered_only = yes
 
 	option = {
@@ -1034,11 +1063,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.56
 	title = efh.56.t
 	desc = efh.56.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally2
 	is_triggered_only = yes
 
 	option = {
@@ -1046,11 +1075,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.57
 	title = efh.57.t
 	desc = efh.57.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally
 	is_triggered_only = yes
 
 	option = {
@@ -1058,11 +1087,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.58
 	title = efh.58.t
 	desc = efh.58.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_factory
 	is_triggered_only = yes
 
 	option = {
@@ -1088,57 +1117,57 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = efh.102
 	title = efh.102.t
 	desc = efh.102.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally2
 	is_triggered_only = yes
 	option = { name = efh.102.a }
 }
 
-country_event = {
+news_event = {
 	id = efh.103
 	title = efh.103.t
 	desc = efh.103.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = { name = efh.103.a }
 }
 
 
-country_event = {
+news_event = {
 	id = efh.104
 	title = efh.104.t
 	desc = efh.104.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 	option = { name = efh.104.a }
 }
 
-country_event = {
+news_event = {
 	id = efh.105
 	title = efh.105.t
 	desc = efh.105.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 	option = { name = efh.105.a }
 }
 
-country_event = {
+news_event = {
 	id = efh.106
 	title = efh.106.t
 	desc = efh.106.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_army
 	is_triggered_only = yes
 	option = { name = efh.106.a }
 }
 
-country_event = {
+news_event = {
 	id = efh.107
 	title = efh.107.t
 	desc = efh.107.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 	option = { name = efh.107.a }
 }
@@ -1153,11 +1182,11 @@ news_event = {
 	option = { name = efh.108.a }
 }
 
-country_event = {
+news_event = {
 	id = efh.109
 	title = efh.109.t
 	desc = efh.109.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_soldiers_marching
 	is_triggered_only = yes
 	option = { name = efh.109.a }
 }

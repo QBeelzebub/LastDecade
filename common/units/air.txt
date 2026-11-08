@@ -98,4 +98,21 @@ sub_units = {
 		categories = { category_cas }
 		land_air_wing_size = 100
 	}
+	transport_plane = {
+		sprite = heavy_plane
+		priority = 6
+		active = yes
+		type = { air_transport }
+		need = { transport_plane_equipment = 1 }
+		land_air_wing_size = 100
+	}
+	srp_ucav = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = { cas }
+		need = { srp_ucav_equipment = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 100
+	}
 }

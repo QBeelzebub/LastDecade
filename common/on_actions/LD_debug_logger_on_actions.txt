@@ -1,0 +1,229 @@
+
+on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|---|logger_on|debug"
+			}
+		}
+	}
+
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|war_declared|on [From.GetTag]"
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|war_pair|[Root.GetTag] vs [From.GetTag]"
+			}
+		}
+	}
+
+	on_join_allies = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|war_join|joined [From.GetTag]'s war"
+			}
+		}
+	}
+
+	on_call_allies = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|allies_called|[From.GetTag] answered"
+			}
+		}
+	}
+
+	on_peace = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|peace|"
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|capitulated|to [From.GetTag]"
+			}
+		}
+	}
+
+	on_annex = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|annexed|[From.GetTag]"
+			}
+		}
+	}
+
+
+	on_create_faction = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|faction_created|[Root.GetFactionName] with [From.GetTag]"
+			}
+		}
+	}
+
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|faction_join|[From.GetTag]'s faction"
+			}
+		}
+	}
+
+	on_offer_join_faction = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|faction_invite|[From.GetTag] into [Root.GetFactionName]"
+			}
+		}
+	}
+
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|state_taken|[From.From.GetName] from [From.GetTag]"
+			}
+		}
+	}
+
+
+
+	on_monthly_EFH = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_human_laws_effect = yes LD_log_efh_canada_effect = yes LD_log_diplomacy_EFH_effect = yes LD_log_focuses_EFH_effect = yes LD_log_country_flags_effect = yes LD_log_global_flags_effect = yes
+		log = "LDLOG|[GetDate]|EFH|escalation|usa=[?EFH_USA_escalation|0] summit_holds=[?EFH_summit_holds|0]"
+	} } }
+	on_monthly_USA = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_human_laws_effect = yes LD_log_usa_canada_effect = yes LD_log_diplomacy_USA_effect = yes LD_log_focuses_USA_effect = yes LD_log_country_flags_effect = yes } } }
+	on_monthly_CHN = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_human_laws_effect = yes LD_log_diplomacy_CHN_effect = yes LD_log_focuses_CHN_effect = yes LD_log_country_flags_effect = yes } } }
+	on_monthly_JAP = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_human_laws_effect = yes LD_log_diplomacy_JAP_effect = yes LD_log_focuses_JAP_effect = yes LD_log_country_flags_effect = yes } } }
+	on_monthly_SAC = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_human_laws_effect = yes LD_log_diplomacy_SAC_effect = yes LD_log_focuses_SAC_effect = yes LD_log_country_flags_effect = yes } } }
+	on_monthly_RSF = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_human_laws_effect = yes LD_log_diplomacy_RSF_effect = yes LD_log_focuses_RSF_effect = yes LD_log_country_flags_effect = yes } } }
+	on_monthly_IRS = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_hive_production_effect = yes LD_log_diplomacy_IRS_effect = yes LD_log_focuses_IRS_effect = yes LD_log_country_flags_effect = yes } } }
+	on_monthly_KNX = { effect = { if = { limit = { is_debug = yes } LD_log_monthly_snapshot_effect = yes LD_log_diplomacy_KNX_effect = yes LD_log_focuses_KNX_effect = yes LD_log_country_flags_effect = yes } } }
+
+
+	on_send_volunteers = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|volunteers|to [From.GetTag]"
+			}
+		}
+	}
+
+	on_liberate = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|liberated|by [From.GetTag]"
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|puppeted|by [From.GetTag]"
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|released_puppet|by [From.GetTag]"
+			}
+		}
+	}
+
+	on_release_as_free = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|released_free|by [From.GetTag]"
+			}
+		}
+	}
+
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|subject_freed|from [From.GetTag]"
+			}
+		}
+	}
+
+	on_subject_autonomy_level_change = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|autonomy_change|under [From.GetTag]"
+			}
+		}
+	}
+
+	on_justifying_wargoal_pulse = {
+		effect = {
+			if = {
+				limit = { is_debug = yes NOT = { has_country_flag = LD_log_justify_cd } }
+				set_country_flag = { flag = LD_log_justify_cd value = 1 days = 30 }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|justifying|against [From.GetTag]"
+			}
+		}
+	}
+
+
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|ruling_party|[Root.GetRulingIdeology]"
+			}
+		}
+	}
+
+	on_coup_succeeded = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|coup|from=[From.GetTag]"
+			}
+		}
+	}
+
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = { is_debug = yes }
+				log = "LDLOG|[GetDate]|[Root.GetTag]|faction_leave|[From.GetTag]'s faction"
+			}
+		}
+	}
+}

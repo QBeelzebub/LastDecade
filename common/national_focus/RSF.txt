@@ -194,7 +194,7 @@ focus_tree = {
 		id = RSF_parasite_shock
 		icon = GFX_focus_RSF_parasite_shock
 		relative_position_id = RSF_eastern_deployment
-		x = -4  y = 2
+		x = -1  y = 2
 		cost = 7.5
 		prerequisite = { focus = RSF_eastern_deployment }
 		prerequisite = { focus = RSF_pivot_east focus = RSF_autarky }

@@ -313,7 +313,7 @@ EFH_tkms_naval_mio = {
 	trait = {
 		token = EFH_tkms_root
 		name = EFH_tkms_root
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 
@@ -334,7 +334,7 @@ EFH_tkms_naval_mio = {
 	trait = {
 		token = EFH_tkms_t2a
 		name = EFH_tkms_t2a
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_tkms_root
@@ -350,7 +350,7 @@ EFH_tkms_naval_mio = {
 	trait = {
 		token = EFH_tkms_t2b
 		name = EFH_tkms_t2b
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_tkms_root
@@ -367,7 +367,7 @@ EFH_tkms_naval_mio = {
 	trait = {
 		token = EFH_tkms_t3a
 		name = EFH_tkms_t3a
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_tkms_t2a
@@ -387,7 +387,7 @@ EFH_tkms_naval_mio = {
 	trait = {
 		token = EFH_tkms_t3b
 		name = EFH_tkms_t3b
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_tkms_t2b
@@ -407,7 +407,7 @@ EFH_tkms_naval_mio = {
 	trait = {
 		token = EFH_tkms_t4
 		name = EFH_tkms_t4
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_tkms_t3a
@@ -447,7 +447,7 @@ EFH_naval_group_mio = {
 	trait = {
 		token = EFH_naval_group_root
 		name = EFH_naval_group_root
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 2 y = 0 }
 
@@ -468,7 +468,7 @@ EFH_naval_group_mio = {
 	trait = {
 		token = EFH_naval_group_t2a
 		name = EFH_naval_group_t2a
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = -1 y = 1 }
 		relative_position_id = EFH_naval_group_root
@@ -484,7 +484,7 @@ EFH_naval_group_mio = {
 	trait = {
 		token = EFH_naval_group_t2b
 		name = EFH_naval_group_t2b
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_naval_group_root
@@ -500,7 +500,7 @@ EFH_naval_group_mio = {
 	trait = {
 		token = EFH_naval_group_t3a
 		name = EFH_naval_group_t3a
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_naval_group_t2a
@@ -520,7 +520,7 @@ EFH_naval_group_mio = {
 	trait = {
 		token = EFH_naval_group_t3b
 		name = EFH_naval_group_t3b
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 0 y = 1 }
 		relative_position_id = EFH_naval_group_t2b
@@ -540,7 +540,7 @@ EFH_naval_group_mio = {
 	trait = {
 		token = EFH_naval_group_t4
 		name = EFH_naval_group_t4
-		icon = GFX_generic_mio_department_icon_ship_capital_ship
+		icon = GFX_srp_mio_department_icon_ship_capital_ship
 
 		position = { x = 1 y = 1 }
 		relative_position_id = EFH_naval_group_t3a

@@ -11,7 +11,7 @@ buildings = {
 		military_production = 2
 		naval_production = 1
 		level_cap = {
-			state_max = 6
+			state_max = 12
 			shares_slots = yes
 		}
 		local_resources_parasite_biomass = 1

@@ -11,7 +11,7 @@ IRS_mio_funding = {
 			tag = IRS
 			NOT = { has_country_flag = IRS_beckon_funding_cooldown }
 			check_variable = { IRS_evolution_points > 49 }
-			has_equipment = { basic_parasite_equipment > 99 }
+			has_equipment = { rupter_equipment > 99 }
 		}
 
 		cost = 0
@@ -20,12 +20,24 @@ IRS_mio_funding = {
 		complete_effect = {
 			add_to_variable = { IRS_evolution_points = -50 }
 			add_equipment_to_stockpile = {
-				type = basic_parasite_equipment
+				type = rupter_equipment
 				amount = -100
 				producer = IRS
 			}
 			mio:IRS_iris_beckon_mio = {
 				add_mio_funds = 150
+			}
+			if = {
+				limit = { has_completed_focus = IRS_vitreous_contact }
+				mio:IRS_vitreous_beckon_mio = { add_mio_funds = 100 }
+			}
+			if = {
+				limit = { has_completed_focus = IRS_tromos_contact }
+				mio:IRS_tromos_beckon_mio = { add_mio_funds = 100 }
+			}
+			if = {
+				limit = { has_country_flag = IRS_tethysic_discovered }
+				mio:IRS_tethysic_mio = { add_mio_funds = 100 }
 			}
 			set_country_flag = { flag = IRS_beckon_funding_cooldown value = 1 days = 60 }
 		}
@@ -35,7 +47,7 @@ IRS_mio_funding = {
 			modifier = {
 				add = 30
 				check_variable = { IRS_evolution_points > 99 }
-				has_equipment = { basic_parasite_equipment > 200 }
+				has_equipment = { rupter_equipment > 200 }
 			}
 		}
 	}

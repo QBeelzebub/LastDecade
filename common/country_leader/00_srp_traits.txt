@@ -132,4 +132,178 @@ leader_traits = {
 
 		ai_will_do = { base = 0 }
 	}
+
+
+	EFH_crisis_staff_general = {
+		sprite = 13
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		required_garrison_factor = -0.10
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_outbreak_virologist = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.06
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_baltic_hawk = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.10
+		conscription_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_teflon = {
+		sprite = 13
+		random = no
+		stability_factor = 0.10
+		political_power_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_scholzomat = {
+		sprite = 13
+		random = no
+		stability_factor = 0.08
+		political_power_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	USA_institutional_scientist = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.05
+		stability_factor = 0.03
+
+		ai_will_do = { base = 0 }
+	}
+
+
+	EFH_bold_fiscal_vision = {
+		sprite = 13
+		random = no
+		industrial_capacity_factory = 0.15
+		production_speed_buildings_factor = 0.15
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_chief_mouser = {
+		sprite = 13
+		random = no
+		stability_factor = 0.02
+		political_power_gain = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_foreign_office_mouser = {
+		sprite = 13
+		random = no
+		opinion_gain_monthly_factor = 0.10
+		trade_opinion_factor = 0.10
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_jupiter = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.15
+		political_power_factor = -0.10
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_perpetual_warning = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.03
+		stability_factor = -0.03
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_calm_narrator = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_agricultural_commissioner = {
+		sprite = 13
+		random = no
+		consumer_goods_factor = -0.04
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_serial_vetoer = {
+		sprite = 13
+		random = no
+		political_power_cost = 0.25
+		production_factory_max_efficiency_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_dissolve_russia = {
+		sprite = 13
+		random = no
+		justify_war_goal_time = -0.20
+		war_support_factor = 0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	USA_frogs_were_right = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.08
+		stability_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_ha_liaison = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.04
+		political_power_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	LD_blustering_optimist = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.12
+		political_power_factor = 0.05
+		stability_factor = -0.05
+
+		ai_will_do = { base = 0 }
+	}
+
+	EFH_convoy_escort_chief = {
+		sprite = 3
+		random = no
+		convoy_escort_efficiency = 0.15
+		navy_submarine_detection_factor = 0.10
+		experience_gain_navy = 0.30
+		command_cap_increase = 20
+
+		ai_will_do = { base = 0 }
+	}
 }

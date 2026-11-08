@@ -19,19 +19,22 @@ country_event = {
 		hidden_effect = {
 			KNX = {
 				set_country_flag = KNX_emerged
+				add_named_threat = { threat = 3 name = SRP_threat_knox_emergence }
 				add_ideas = KNX_anomalous_infestation
 				add_ideas = KNX_civilization_project
 				add_ideas = KNX_dug_in_homeland
 				set_technology = {
 					knx_vagrant_one_manifestation = 1
 					nexus_flesh_refinement = 1
+					early_preeminent_parasites = 1
 					popup = no
 				}
+				add_research_slot = 1
 				add_equipment_to_stockpile = {
 					type = preeminent_parasite_equipment_1
 					amount = 10
 				}
-				add_manpower = 50000
+				add_manpower = 100000
 				add_political_power = 100
 			}
 			369 = {
@@ -56,7 +59,16 @@ country_event = {
 				add_dynamic_modifier = {
 					modifier = knx_root_stronghold
 				}
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = beckon_cluster
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = { type = supply_node level = 1 province = 6696 instant_build = yes }
+				add_building_construction = { type = supply_node level = 1 province = 10586 instant_build = yes }
 			}
+			build_railway = { level = 1 path = { 4402 10586 } }
 			KNX = {
 				set_capital = { state = 369 }
 				KNX_grow_hive_forts_effect = yes
@@ -68,11 +80,11 @@ country_event = {
 				}
 				add_equipment_to_stockpile = {
 					type = rupter_equipment_1
-					amount = 8000
+					amount = 25000
 				}
 				add_equipment_to_stockpile = {
 					type = vigilante_battery_equipment_1
-					amount = 1000
+					amount = 2500
 				}
 				add_equipment_to_stockpile = {
 					type = primitive_manducater_equipment_1
@@ -192,5 +204,96 @@ country_event = {
 		ai_chance = { base = 2 }
 		set_country_flag = EFH_knox_guarantee_refused
 		KNX = { set_country_flag = KNX_efh_guarantee_refused }
+	}
+}
+
+
+country_event = {
+	id = knx.7
+	title = knx.7.t
+	desc = knx.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = knx.7.a
+		ai_chance = { base = 100 }
+		if = {
+			limit = { is_government_in_exile = no }
+			become_exiled_in = { target = EFH legitimacy = 50 }
+		}
+		set_global_flag = KNX_in_exile
+		set_global_flag = { flag = KNX_exile_first_year days = 365 value = 1 }
+	}
+}
+
+
+country_event = {
+	id = knx.8
+	title = knx.8.t
+	desc = knx.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = knx.8.a
+		ai_chance = { base = 100 }
+		369 = {
+			if = {
+				limit = {
+					NOT = { is_owned_by = KNX }
+					NOT = { is_owned_by = EFH }
+					NOT = { owner = { is_in_faction_with = EFH } }
+				}
+				owner = { country_event = { id = knx.9 } }
+			}
+			transfer_state_to = KNX
+			add_core_of = KNX
+			if = {
+				limit = { NOT = { has_dynamic_modifier = { modifier = knx_root_stronghold } } }
+				add_dynamic_modifier = { modifier = knx_root_stronghold }
+			}
+		}
+		if = {
+			limit = { KNX = { is_government_in_exile = yes } }
+			EFH = { end_exile = KNX }
+		}
+		KNX = {
+			set_capital = { state = 369 }
+			if = {
+				limit = { NOT = { has_idea = KNX_anomalous_infestation } }
+				add_ideas = KNX_anomalous_infestation
+			}
+			if = {
+				limit = { NOT = { has_idea = KNX_civilization_project } }
+				add_ideas = KNX_civilization_project
+			}
+			if = {
+				limit = { NOT = { has_idea = KNX_dug_in_homeland } }
+				add_ideas = KNX_dug_in_homeland
+			}
+			if = {
+				limit = { has_army_size = { size < 10 } }
+				add_manpower = 50000
+				add_equipment_to_stockpile = { type = rupter_equipment_1 amount = 6000 }
+				load_oob = "KNX_initial_army"
+			}
+			KNX_grow_hive_forts_effect = yes
+		}
+		clr_global_flag = KNX_in_exile
+		clr_global_flag = KNX_return_pending
+	}
+}
+
+
+country_event = {
+	id = knx.9
+	title = knx.9.t
+	desc = knx.9.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = knx.9.a
 	}
 }

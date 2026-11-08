@@ -7,7 +7,7 @@ recruit_character = CHN_Leader
 
 create_corps_commander = {
 	name = "Wei Jianguo"
-	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	gfx = "GFX_Portrait_Asia_Generic_land_1"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 3
@@ -17,12 +17,52 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Liu Mei"
-	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	gfx = "GFX_Portrait_Asia_Generic_land_2"
 	traits = { armor_officer }
 	skill = 3
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Zhao Lihua"
+	gfx = "GFX_Portrait_Asia_Generic_land_1"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Sun Wenbo"
+	gfx = "GFX_Portrait_Asia_Generic_land_2"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Huang Zhiqiang"
+	gfx = "GFX_Portrait_Asia_Generic_land_1"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Gao Jianmin"
+	gfx = "GFX_Portrait_Asia_Generic_land_2"
+	traits = { career_officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
 	logistics_skill = 3
 }
 

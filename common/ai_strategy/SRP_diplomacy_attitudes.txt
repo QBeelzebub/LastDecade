@@ -6,6 +6,8 @@ SRP_humans_hate_the_hive = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = EFH
 			original_tag = JAP
@@ -32,6 +34,8 @@ SRP_humans_hate_knox = {
 		OR = {
 			original_tag = AFR
 			original_tag = ASI
+			original_tag = IND
+			original_tag = ARU
 			original_tag = CHN
 			original_tag = JAP
 			original_tag = OCE
@@ -61,6 +65,8 @@ IRS_hates_humans = {
 
 	ai_strategy = { type = befriend id = AFR value = -900 }
 	ai_strategy = { type = befriend id = ASI value = -900 }
+	ai_strategy = { type = befriend id = IND value = -900 }
+	ai_strategy = { type = befriend id = ARU value = -900 }
 	ai_strategy = { type = befriend id = CHN value = -900 }
 	ai_strategy = { type = befriend id = EFH value = -900 }
 	ai_strategy = { type = befriend id = JAP value = -900 }
@@ -71,6 +77,8 @@ IRS_hates_humans = {
 	ai_strategy = { type = befriend id = USA value = -900 }
 	ai_strategy = { type = alliance id = AFR value = -2000 }
 	ai_strategy = { type = alliance id = ASI value = -2000 }
+	ai_strategy = { type = alliance id = IND value = -2000 }
+	ai_strategy = { type = alliance id = ARU value = -2000 }
 	ai_strategy = { type = alliance id = CHN value = -2000 }
 	ai_strategy = { type = alliance id = EFH value = -2000 }
 	ai_strategy = { type = alliance id = JAP value = -2000 }
@@ -88,6 +96,8 @@ KNX_hates_humans = {
 
 	ai_strategy = { type = befriend id = AFR value = -900 }
 	ai_strategy = { type = befriend id = ASI value = -900 }
+	ai_strategy = { type = befriend id = IND value = -900 }
+	ai_strategy = { type = befriend id = ARU value = -900 }
 	ai_strategy = { type = befriend id = CHN value = -900 }
 	ai_strategy = { type = befriend id = JAP value = -900 }
 	ai_strategy = { type = befriend id = OCE value = -900 }
@@ -97,6 +107,8 @@ KNX_hates_humans = {
 	ai_strategy = { type = befriend id = USA value = -900 }
 	ai_strategy = { type = alliance id = AFR value = -2000 }
 	ai_strategy = { type = alliance id = ASI value = -2000 }
+	ai_strategy = { type = alliance id = IND value = -2000 }
+	ai_strategy = { type = alliance id = ARU value = -2000 }
 	ai_strategy = { type = alliance id = CHN value = -2000 }
 	ai_strategy = { type = alliance id = JAP value = -2000 }
 	ai_strategy = { type = alliance id = OCE value = -2000 }
@@ -131,24 +143,69 @@ SRP_hive_schism = {
 CHN_backs_the_federation = {
 	allowed = { original_tag = CHN }
 	enable = {
+		has_country_flag = CHN_efh_aligned
+		NOT = { has_country_flag = CHN_usa_aligned }
+		NOT = { is_in_faction_with = USA }
+		has_war = no
+		is_subject = no
+		has_capitulated = no
 		country_exists = EFH
-		EFH = { has_country_flag = EFH_china_trade_active }
+		country_exists = USA
+		EFH = {
+			has_country_flag = EFH_china_trade_active
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = USA }
+			OR = {
+				has_country_flag = LD_panama_summit_active
+				has_war_with = USA
+				check_variable = { EFH_summit_holds > 0 }
+			}
+		}
+		USA = { is_subject = no has_capitulated = no }
+		NOT = { has_global_flag = LD_panama_settled }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		NOT = { has_global_flag = LD_first_atlantic_war_ended }
+		NOT = { has_global_flag = LD_second_atlantic_war_open }
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = support               id = EFH value = 200  }
-	ai_strategy = { type = send_lend_lease_desire id = EFH value = 300 }
-	ai_strategy = { type = send_volunteers_desire id = EFH value = 150 }
-	ai_strategy = { type = protect    id = EFH value = 60    }
-	ai_strategy = { type = antagonize id = EFH value = -1200 }
-	ai_strategy = { type = conquer    id = EFH value = -650  }
-	ai_strategy = { type = befriend   id = EFH value = -450  }
-	ai_strategy = { type = alliance   id = EFH value = -900  }
-	ai_strategy = { type = contain    id = EFH value = -300  }
+	ai_strategy = { type = support id = EFH value = 80 }
+	ai_strategy = { type = send_lend_lease_desire id = EFH value = 150 }
+	ai_strategy = { type = send_volunteers_desire id = EFH value = 100 }
+	ai_strategy = { type = contain id = EFH value = -100 }
+	ai_strategy = { type = antagonize id = USA value = 300 }
+	ai_strategy = { type = conquer id = USA value = -650 }
+	ai_strategy = { type = alliance id = USA value = -600 }
+	ai_strategy = { type = dont_join_wars_with id = EFH target_country = USA value = 100 }
+}
 
-	ai_strategy = { type = antagonize id = USA value = 400  }
-	ai_strategy = { type = conquer    id = USA value = -900 }
-	ai_strategy = { type = alliance   id = USA value = -900 }
+CHN_backs_the_united_states = {
+	allowed = { original_tag = CHN }
+	enable = {
+		has_country_flag = CHN_usa_aligned
+		NOT = { has_country_flag = CHN_efh_aligned }
+		NOT = { is_in_faction_with = EFH }
+		has_war = no
+		is_subject = no
+		has_capitulated = no
+		country_exists = USA
+		country_exists = EFH
+		USA = { has_war_with = EFH is_subject = no has_capitulated = no }
+		EFH = { is_subject = no has_capitulated = no }
+		NOT = { has_global_flag = LD_atlantic_nuclear_opened }
+		NOT = { has_global_flag = LD_first_atlantic_war_ended }
+		NOT = { has_global_flag = LD_second_atlantic_war_open }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = support id = USA value = 80 }
+	ai_strategy = { type = send_lend_lease_desire id = USA value = 150 }
+	ai_strategy = { type = send_volunteers_desire id = USA value = 100 }
+	ai_strategy = { type = contain id = USA value = -100 }
+	ai_strategy = { type = conquer id = EFH value = -650 }
+	ai_strategy = { type = alliance id = EFH value = -600 }
+	ai_strategy = { type = dont_join_wars_with id = USA target_country = EFH value = 100 }
 }
 
 RSF_opportunist_offensive = {

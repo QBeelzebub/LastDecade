@@ -1,0 +1,105 @@
+
+LD_log_monthly_snapshot_effect = {
+	log = "LDLOG|[GetDate]|[Root.GetTag]|territory|owned=[?num_owned_states|0] held_own=[?num_owned_controlled_states|0] occupying=[?num_occupied_states|0]"
+	log = "LDLOG|[GetDate]|[Root.GetTag]|snapshot|mil=[?num_of_military_factories|0] civ=[?num_of_civilian_factories|0] nav=[?num_of_naval_factories|0] div=[?num_divisions|0] mp_k=[?manpower_k|0] pp=[?has_political_power|0] stab=[?has_stability|%0] ws=[?has_war_support|%0] panic=[?public_panic|0] faction=[Root.GetFactionName]"
+	log = "LDLOG|[GetDate]|[Root.GetTag]|panic|panic=[?public_panic|0] floor=[?public_panic_floor|0] own=[?public_panic_own_floor|0] tension_mult=[?public_panic_tension_mult|1]"
+	log = "LDLOG|[GetDate]|[Root.GetTag]|navy|ships=[?num_ships|0] capital=[?num_ships_with_type@capital|0] sub=[?num_ships_with_type@submarine|0] bat=[?num_battalions|0] built_cap=[?total_equipment_produced_capital_ship|0] built_sub=[?total_equipment_produced_submarine|0]"
+}
+
+LD_log_human_laws_effect = {
+	set_temp_variable = { ld_econ = -1 }
+	if = { limit = { has_idea = srp_peacetime_economy } set_temp_variable = { ld_econ = 0 } }
+	if = { limit = { has_idea = srp_crisis_mobilization } set_temp_variable = { ld_econ = 1 } }
+	if = { limit = { has_idea = srp_wartime_direction } set_temp_variable = { ld_econ = 2 } }
+	if = { limit = { has_idea = srp_total_war_production } set_temp_variable = { ld_econ = 3 } }
+	if = { limit = { has_idea = srp_emergency_command_economy } set_temp_variable = { ld_econ = 4 } }
+	set_temp_variable = { ld_trade = -1 }
+	if = { limit = { has_idea = srp_open_global_market } set_temp_variable = { ld_trade = 0 } }
+	if = { limit = { has_idea = srp_managed_imports } set_temp_variable = { ld_trade = 1 } }
+	if = { limit = { has_idea = srp_strategic_protectionism } set_temp_variable = { ld_trade = 2 } }
+	if = { limit = { has_idea = srp_emergency_rationing } set_temp_variable = { ld_trade = 3 } }
+	if = { limit = { has_idea = srp_total_supply_lockdown } set_temp_variable = { ld_trade = 4 } }
+	set_temp_variable = { ld_mob = -1 }
+	if = { limit = { has_idea = srp_professional_force } set_temp_variable = { ld_mob = 0 } }
+	if = { limit = { has_idea = srp_selective_service } set_temp_variable = { ld_mob = 1 } }
+	if = { limit = { has_idea = srp_national_service_requirement } set_temp_variable = { ld_mob = 2 } }
+	if = { limit = { has_idea = srp_universal_conscription } set_temp_variable = { ld_mob = 3 } }
+	if = { limit = { has_idea = srp_desperate_enlistment } set_temp_variable = { ld_mob = 4 } }
+	set_temp_variable = { ld_tier = 0 }
+	if = { limit = { SRP_ai_law_tier_1 = yes } set_temp_variable = { ld_tier = 1 } }
+	if = { limit = { SRP_ai_law_tier_2 = yes } set_temp_variable = { ld_tier = 2 } }
+	if = { limit = { SRP_ai_law_tier_3 = yes } set_temp_variable = { ld_tier = 3 } }
+	if = { limit = { SRP_ai_law_tier_4 = yes } set_temp_variable = { ld_tier = 4 } }
+	log = "LDLOG|[GetDate]|[Root.GetTag]|laws|econ=[?ld_econ|0] trade=[?ld_trade|0] mob=[?ld_mob|0] tier=[?ld_tier|0]"
+}
+
+LD_log_efh_canada_effect = {
+	set_temp_variable = { ld_can = 0 }
+	if = { limit = { num_divisions_in_states = { count > 0 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 1 } }
+	if = { limit = { num_divisions_in_states = { count > 4 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 5 } }
+	if = { limit = { num_divisions_in_states = { count > 9 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 10 } }
+	if = { limit = { num_divisions_in_states = { count > 19 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 20 } }
+	if = { limit = { num_divisions_in_states = { count > 29 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 30 } }
+	if = { limit = { num_divisions_in_states = { count > 44 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 45 } }
+	if = { limit = { num_divisions_in_states = { count > 59 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 60 } }
+	if = { limit = { num_divisions_in_states = { count > 89 states = { 276 862 466 465 464 } } } set_temp_variable = { ld_can = 90 } }
+	log = "LDLOG|[GetDate]|EFH|canada|divs_at_least=[?ld_can|0] of div=[?num_divisions|0]"
+	set_temp_variable = { ld_west = 0 }
+	if = { limit = { num_divisions_in_states = { count > 0 states = { 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 1 } }
+	if = { limit = { num_divisions_in_states = { count > 9 states = { 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 10 } }
+	if = { limit = { num_divisions_in_states = { count > 19 states = { 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 20 } }
+	if = { limit = { num_divisions_in_states = { count > 39 states = { 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 40 } }
+	if = { limit = { num_divisions_in_states = { count > 59 states = { 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 60 } }
+	log = "LDLOG|[GetDate]|EFH|canada_west|divs_at_least=[?ld_west|0]"
+	set_temp_variable = { ld_nf = 0 }
+	if = { limit = { num_divisions_in_states = { count > 0 states = { 331 332 } } } set_temp_variable = { ld_nf = 1 } }
+	if = { limit = { num_divisions_in_states = { count > 9 states = { 331 332 } } } set_temp_variable = { ld_nf = 10 } }
+	if = { limit = { num_divisions_in_states = { count > 19 states = { 331 332 } } } set_temp_variable = { ld_nf = 20 } }
+	if = { limit = { num_divisions_in_states = { count > 39 states = { 331 332 } } } set_temp_variable = { ld_nf = 40 } }
+	log = "LDLOG|[GetDate]|EFH|newfoundland|divs_at_least=[?ld_nf|0]"
+}
+
+LD_log_usa_canada_effect = {
+	set_temp_variable = { ld_can = 0 }
+	if = { limit = { num_divisions_in_states = { count > 0 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 1 } }
+	if = { limit = { num_divisions_in_states = { count > 9 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 10 } }
+	if = { limit = { num_divisions_in_states = { count > 19 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 20 } }
+	if = { limit = { num_divisions_in_states = { count > 39 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 40 } }
+	if = { limit = { num_divisions_in_states = { count > 59 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 60 } }
+	if = { limit = { num_divisions_in_states = { count > 89 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 90 } }
+	if = { limit = { num_divisions_in_states = { count > 129 states = { 357 358 360 393 276 862 466 465 464 } } } set_temp_variable = { ld_can = 130 } }
+	log = "LDLOG|[GetDate]|USA|canada|divs_at_least=[?ld_can|0] of div=[?num_divisions|0]"
+	set_temp_variable = { ld_west = 0 }
+	if = { limit = { num_divisions_in_states = { count > 0 states = { 391 389 388 387 386 394 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 1 } }
+	if = { limit = { num_divisions_in_states = { count > 9 states = { 391 389 388 387 386 394 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 10 } }
+	if = { limit = { num_divisions_in_states = { count > 19 states = { 391 389 388 387 386 394 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 20 } }
+	if = { limit = { num_divisions_in_states = { count > 39 states = { 391 389 388 387 386 394 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 40 } }
+	if = { limit = { num_divisions_in_states = { count > 59 states = { 391 389 388 387 386 394 682 866 467 469 470 473 } } } set_temp_variable = { ld_west = 60 } }
+	log = "LDLOG|[GetDate]|USA|canada_west|divs_at_least=[?ld_west|0]"
+}
+
+LD_log_hive_production_effect = {
+	log = "LDLOG|[GetDate]|[Root.GetTag]|hive|rupter_stock=[?num_equipment@rupter_equipment|0] rupter_fielded=[?num_equipment_in_armies@rupter_equipment|0] carrier_stock=[?num_equipment@carrier_equipment|0] mp_queue=[?amount_manpower_in_deployment_queue|0] casualties_k=[?casualties_k|0] wants_div=[?ai_wants_divisions|0] bat=[?num_battalions|0]"
+	log = "LDLOG|[GetDate]|[Root.GetTag]|ep|ep=[?IRS_evolution_points|0] absorbed=[?IRS_absorbed_state_count|0]"
+	log = "LDLOG|[GetDate]|[Root.GetTag]|air|planes=[?num_deployed_planes|0]"
+	if = { limit = { has_idea = IRS_passive_accumulation } log = "LDLOG|[GetDate]|[Root.GetTag]|econ_law|passive" }
+	if = { limit = { has_idea = IRS_cultivation_focus } log = "LDLOG|[GetDate]|[Root.GetTag]|econ_law|cultivation" }
+	if = { limit = { has_idea = IRS_surge_directive } log = "LDLOG|[GetDate]|[Root.GetTag]|econ_law|surge" }
+	if = { limit = { has_idea = IRS_apex_consumption } log = "LDLOG|[GetDate]|[Root.GetTag]|econ_law|apex" }
+	if = { limit = { has_tech = early_primitive_parasites NOT = { has_country_flag = LD_log_t1 } } set_country_flag = LD_log_t1 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|early_primitive_parasites" }
+	if = { limit = { has_tech = late_primitive_parasites NOT = { has_country_flag = LD_log_t2 } } set_country_flag = LD_log_t2 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|late_primitive_parasites" }
+	if = { limit = { has_tech = early_pure_parasites NOT = { has_country_flag = LD_log_t3 } } set_country_flag = LD_log_t3 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|early_pure_parasites" }
+	if = { limit = { has_tech = advanced_pure_parasites NOT = { has_country_flag = LD_log_t4 } } set_country_flag = LD_log_t4 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|advanced_pure_parasites" }
+	if = { limit = { has_tech = late_preeminent_parasites NOT = { has_country_flag = LD_log_t5 } } set_country_flag = LD_log_t5 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|late_preeminent_parasites" }
+	if = { limit = { has_tech = apex_preeminent_parasites NOT = { has_country_flag = LD_log_t6 } } set_country_flag = LD_log_t6 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|apex_preeminent_parasites" }
+	if = { limit = { has_tech = primitive_yelloweye_tech NOT = { has_country_flag = LD_log_t7 } } set_country_flag = LD_log_t7 log = "LDLOG|[GetDate]|[Root.GetTag]|tech|primitive_yelloweye_tech" }
+	if = {
+		limit = { NOT = { has_country_flag = LD_log_archetype_done } }
+		if = { limit = { has_idea = IRS_archetype_iris_spirit } set_country_flag = LD_log_archetype_done log = "LDLOG|[GetDate]|[Root.GetTag]|archetype|iris" }
+		if = { limit = { has_idea = IRS_archetype_vitreous_spirit } set_country_flag = LD_log_archetype_done log = "LDLOG|[GetDate]|[Root.GetTag]|archetype|vitreous" }
+		if = { limit = { has_idea = IRS_archetype_tromos_spirit } set_country_flag = LD_log_archetype_done log = "LDLOG|[GetDate]|[Root.GetTag]|archetype|tromos" }
+		if = { limit = { has_idea = IRS_archetype_adaptive_spirit } set_country_flag = LD_log_archetype_done log = "LDLOG|[GetDate]|[Root.GetTag]|archetype|adaptive" }
+		if = { limit = { has_idea = IRS_archetype_unchecked_spirit } set_country_flag = LD_log_archetype_done log = "LDLOG|[GetDate]|[Root.GetTag]|archetype|unchecked" }
+		if = { limit = { has_idea = IRS_archetype_telotic_spirit } set_country_flag = LD_log_archetype_done log = "LDLOG|[GetDate]|[Root.GetTag]|archetype|telotic" }
+	}
+}

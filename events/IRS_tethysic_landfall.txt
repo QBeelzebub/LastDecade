@@ -1,0 +1,153 @@
+add_namespace = irs_tethys
+
+
+country_event = {
+	id = irs_tethys.1
+	title = irs_tethys.1.t
+	desc = irs_tethys.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = irs_tethys.1.a
+	}
+}
+
+country_event = {
+	id = irs_tethys.2
+	title = irs_tethys.2.t
+	desc = irs_tethys.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = irs_tethys.2.a
+		ai_chance = { base = 100 }
+		custom_effect_tooltip = irs_tethys.2.a_tt
+		hidden_effect = {
+			335 = { transfer_state_to = IRS }
+			IRS = { IRS_tethysic_landfall = yes }
+			if = {
+				limit = {
+					country_exists = TET
+					NOT = { has_war_with = TET }
+				}
+				TET = {
+					declare_war_on = {
+						target = ROOT
+						type = annex_everything
+					}
+				}
+			}
+			IRS = { country_event = { id = irs_tethys.3 days = 1 } }
+		}
+	}
+
+	option = {
+		name = irs_tethys.2.b
+		ai_chance = { base = 0 }
+		if = {
+			limit = { 335 = { check_variable = { IRS_java_burns < 1 } } }
+			add_political_power = -75
+			add_stability = -0.05
+			custom_effect_tooltip = irs_tethys.2.b_tt
+		}
+		if = {
+			limit = { 335 = { check_variable = { IRS_java_burns = 1 } } }
+			add_political_power = -125
+			add_stability = -0.08
+			custom_effect_tooltip = irs_tethys.2.b_tt_2
+		}
+		if = {
+			limit = { 335 = { check_variable = { IRS_java_burns > 1 } } }
+			add_political_power = -175
+			add_stability = -0.12
+			custom_effect_tooltip = irs_tethys.2.b_tt_3
+		}
+		hidden_effect = {
+			335 = {
+				if = {
+					limit = { check_variable = { IRS_java_burns < 1 } }
+					set_variable = { var = iris_infestation_level value = 40 }
+				}
+				if = {
+					limit = { check_variable = { IRS_java_burns = 1 } }
+					set_variable = { var = iris_infestation_level value = 60 }
+				}
+				if = {
+					limit = { check_variable = { IRS_java_burns > 1 } }
+					set_variable = { var = iris_infestation_level value = 80 }
+				}
+				add_to_variable = { var = IRS_java_burns value = 1 }
+				SRP_refresh_infestation_state = yes
+				if = {
+					limit = { infrastructure > 0 }
+					remove_building = { type = infrastructure level = 1 }
+				}
+				if = {
+					limit = { has_dynamic_modifier = { modifier = IRS_scorched_coast } }
+					remove_dynamic_modifier = { modifier = IRS_scorched_coast }
+				}
+				add_dynamic_modifier = { modifier = IRS_scorched_coast days = 365 }
+			}
+			IRS = { country_event = { id = irs_tethys.100 days = 7 } }
+		}
+	}
+}
+
+country_event = {
+	id = irs_tethys.3
+	title = irs_tethys.3.t
+	desc = irs_tethys.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = irs_tethys.3.a
+	}
+}
+
+country_event = {
+	id = irs_tethys.100
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { country_exists = TET }
+				335 = {
+					has_state_flag = IRS_tethysic_tide_state
+					NOT = { owner = { is_full_parasite = yes } }
+				}
+			}
+			if = {
+				limit = { 335 = { check_variable = { iris_infestation_level > 99 } } }
+				335 = { owner = { country_event = { id = irs_tethys.2 } } }
+			}
+			if = {
+				limit = { 335 = { NOT = { check_variable = { iris_infestation_level > 99 } } } }
+				country_event = { id = irs_tethys.100 days = 7 }
+			}
+		}
+		if = {
+			limit = {
+				335 = { has_state_flag = IRS_tethysic_tide_state }
+				OR = {
+					country_exists = TET
+					335 = { owner = { is_full_parasite = yes } }
+				}
+			}
+			335 = {
+				clr_state_flag = IRS_tethysic_tide_state
+				if = {
+					limit = { has_dynamic_modifier = { modifier = IRS_tethysic_tide_modifier } }
+					remove_dynamic_modifier = { modifier = IRS_tethysic_tide_modifier }
+				}
+			}
+		}
+	}
+}

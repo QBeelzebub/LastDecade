@@ -1,0 +1,181 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_srp_title_bg"
+		texturefile = "gfx/loadingscreens/load_srp_title.dds"
+		borderSize = { x=0 y=0 }
+		size = { x=1920 y=1440 }
+		tilingCenter = no
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+	spriteType = {
+		name = "GFX_srp_menu_button_green"
+		textureFile = "gfx/interface/frontend/srp_menu_button_green.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_menu_button_blue"
+		textureFile = "gfx/interface/frontend/srp_menu_button_blue.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_menu_button_grey"
+		textureFile = "gfx/interface/frontend/srp_menu_button_grey.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_menu_button_amber"
+		textureFile = "gfx/interface/frontend/srp_menu_button_amber.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_menu_button_teal"
+		textureFile = "gfx/interface/frontend/srp_menu_button_teal.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_menu_button_purple"
+		textureFile = "gfx/interface/frontend/srp_menu_button_purple.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_menu_button_red"
+		textureFile = "gfx/interface/frontend/srp_menu_button_red.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_srp_icon_overwinter"
+		texturefile = "gfx/interface/frontend/srp_icon_overwinter.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_icon_hona"
+		texturefile = "gfx/interface/frontend/srp_icon_hona.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_srp_menu_panel"
+		texturefile = "gfx/interface/frontend/srp_menu_panel.dds"
+		size = { x = 64 y = 64 }
+		borderSize = { x = 2 y = 2 }
+		tilingCenter = no
+	}
+
+	spriteType = {
+		name = "GFX_srp_ha_logo"
+		texturefile = "gfx/interface/frontend/srp_ha_logo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_srp_blank"
+		texturefile = "gfx/interface/frontend/srp_blank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_srp_scenario_bg"
+		texturefile = "gfx/interface/frontend/srp_scenario_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_bookmark_entry"
+		texturefile = "gfx/interface/frontend/srp_bookmark_entry.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_setup_button_green_221"
+		textureFile = "gfx/interface/frontend/srp_setup_button_green_221.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_setup_button_red_221"
+		textureFile = "gfx/interface/frontend/srp_setup_button_red_221.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_lobby_button_red_221"
+		textureFile = "gfx/interface/frontend/srp_lobby_button_red_221.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_lobby_button_green_221"
+		textureFile = "gfx/interface/frontend/srp_lobby_button_green_221.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_srp_country_bg"
+		texturefile = "gfx/interface/frontend/srp_country_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_country_entry"
+		texturefile = "gfx/interface/frontend/srp_country_entry.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_country_minor_entry"
+		texturefile = "gfx/interface/frontend/srp_country_minor_entry.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_mini_country_selector"
+		texturefile = "gfx/interface/frontend/srp_mini_country_selector.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_minor_portrait_overlay"
+		texturefile = "gfx/interface/frontend/srp_minor_portrait_overlay.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_country_filter_entry"
+		texturefile = "gfx/interface/frontend/srp_country_filter_entry.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_setup_button_green_148"
+		texturefile = "gfx/interface/frontend/srp_setup_button_green_148.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_setup_button_red_148"
+		texturefile = "gfx/interface/frontend/srp_setup_button_red_148.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_lobby_button_red_148"
+		textureFile = "gfx/interface/frontend/srp_lobby_button_red_148.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_lobby_button_green_148"
+		textureFile = "gfx/interface/frontend/srp_lobby_button_green_148.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_srp_lobby_filter_entry"
+		textureFile = "gfx/interface/frontend/srp_lobby_filter_entry.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

@@ -25,6 +25,8 @@ TET_hates_humans = {
 
 	ai_strategy = { type = befriend id = AFR value = -900 }
 	ai_strategy = { type = befriend id = ASI value = -900 }
+	ai_strategy = { type = befriend id = IND value = -900 }
+	ai_strategy = { type = befriend id = ARU value = -900 }
 	ai_strategy = { type = befriend id = CHN value = -900 }
 	ai_strategy = { type = befriend id = EFH value = -900 }
 	ai_strategy = { type = befriend id = JAP value = -900 }
@@ -66,6 +68,17 @@ TET_brood_expansion = {
 
 
 
+TET_root_the_archipelago = {
+	allowed = { original_tag = TET }
+	enable = { always = yes }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = beckon_cluster value = 60 }
+	ai_strategy = { type = building_target id = naval_base     value = 6  }
+}
+
+
+
 TET_devourer_swarm = {
 	allowed = { original_tag = TET }
 	enable = { always = yes }
@@ -100,6 +113,19 @@ TET_devourer_swarm = {
 	ai_strategy = { type = convoy_raiding_target id = CHN value = 250 }
 	ai_strategy = { type = convoy_raiding_target id = JAP value = 250 }
 	ai_strategy = { type = convoy_raiding_target id = EFH value = 200 }
+}
+
+TET_java_war = {
+	allowed = { original_tag = TET }
+	enable = { has_war_with = CHN }
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = front_unit_request tag = CHN value = 300 }
+	ai_strategy = { type = naval_invasion_focus     value = 300 }
+	ai_strategy = { type = invade id = CHN          value = 375 }
+
+	ai_strategy = { type = unit_ratio id = capital_ship value = 60 }
+	ai_strategy = { type = equipment_production_min_factories_archetype id = IRS_colossant_hull value = 1 }
 }
 
 TET_abyssal_landings = {

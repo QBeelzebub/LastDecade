@@ -1,0 +1,132 @@
+capital = 439
+SRP_enable_starting_human_division_techs_effect = yes
+oob = "IND_2018"
+set_naval_oob = "IND_2018_naval"
+set_research_slots = 3
+recruit_character = IND_Leader
+recruit_character = IND_meera_raghavan
+recruit_character = IND_harish_menon
+add_ideas = IND_one_india
+
+create_corps_commander = {
+	name = "Randhir Kohli"
+	gfx = "GFX_Portrait_The_Raj_Army_Generic"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Farhan Qureshi"
+	gfx = "GFX_Portrait_The_Raj_Army_Generic_2"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gurpreet Sandhu"
+	gfx = "GFX_Portrait_The_Raj_Army_Generic"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Arindam Bose"
+	gfx = "GFX_Portrait_The_Raj_Generic_navy_1"
+	traits = { navy_career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+set_politics = {
+    ruling_party = democratic
+    last_election = "2014.5.16"
+    election_frequency = 60
+    elections_allowed = yes
+}
+starting_train_buffer = 2
+set_technology = {
+    tech_support = 1
+    srp_incendiary = 1
+    srp_mbt_chassis = 1
+    srp_artillery_1 = 1
+    srp_aa_1 = 1
+    srp_fighter_gen4 = 1
+    srp_destroyer_hull_tech_1 = 1
+    srp_submarine_hull_tech_1 = 1
+    ld_civilian_train = 1
+    ld_military_train = 1
+}
+set_popularities = {
+    democratic = 70
+    neutrality = 30
+}
+
+create_equipment_variant = {
+    name = "Arjun Mk1"
+    type = srp_mbt_chassis1
+    parent_version = 0
+    modules = {
+        turret_type_slot = srp_armored_mbt_turret
+        main_armament_slot = srp_120mm_smoothbore
+        suspension_type_slot = srp_hydropneumatic
+        armor_type_slot = srp_composite_armor
+        engine_type_slot = srp_hybrid_drive
+        special_type_slot_1 = tank_nbc_sealing
+        special_type_slot_2 = srp_advanced_optics
+    }
+}
+create_equipment_variant = {
+    name = "Tejas"
+    type = srp_fighter_gen4_airframe
+    parent_version = 0
+    modules = {
+        fixed_main_weapon_slot = IRMissile
+        fixed_auxiliary_weapon_slot_1 = IRMissile
+        fixed_auxiliary_weapon_slot_2 = IRMissile
+        fixed_auxiliary_weapon_slot_3 = bomb_locks
+        fixed_auxiliary_weapon_slot_4 = bomb_locks
+        engine_type_slot = srp_afterburner
+        special_type_slot_1 = srp_wing_canard_delta
+        special_type_slot_2 = srp_aesa_radar
+    }
+}
+create_equipment_variant = {
+    name = "Kolkata Class"
+    type = srp_destroyer_hull_1
+    parent_version = 0
+    modules = {
+        fixed_ship_battery_slot = dp_light_battery_4
+        fixed_ship_anti_air_slot = srp_naval_sam_md
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+        fixed_ship_radar_slot = ship_radar_3
+        fixed_ship_torpedo_slot = ship_torpedo_4
+        fixed_ship_engine_slot = light_ship_engine_4
+        mid_1_custom_slot = ship_anti_air_3
+        rear_1_custom_slot = ship_depth_charge_1
+    }
+}
+create_equipment_variant = {
+    name = "Kalvari Class"
+    type = srp_submarine_hull_1
+    parent_version = 0
+    modules = {
+        fixed_ship_torpedo_slot = ship_torpedo_sub_4
+        fixed_ship_engine_slot = sub_ship_nuclear_engine_1
+        front_1_custom_slot = ship_torpedo_sub_4
+        mid_1_custom_slot = ship_anechoic_tile
+        rear_1_custom_slot = ship_torpedo_sub_4
+    }
+}

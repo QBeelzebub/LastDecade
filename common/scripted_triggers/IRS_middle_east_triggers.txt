@@ -1,0 +1,37 @@
+IRS_middle_east_state = {
+	OR = {
+		state = 454
+		state = 455
+		state = 553
+		state = 554
+		state = 677
+		state = 291
+		state = 676
+		state = 1011
+		state = 675
+		state = 656
+		state = 292
+		state = 679
+		state = 856
+		state = 858
+		state = 678
+		state = 293
+		state = 992
+		state = 294
+		state = 1015
+		state = 1016
+		state = 659
+		state = 765
+		state = 1014
+	}
+}
+
+IRS_suez_war_target = {
+	NOT = { original_tag = IRS }
+	NOT = { is_subject_of = IRS }
+	NOT = { has_war_with = IRS }
+	OR = {
+		owns_state = 446
+		any_owned_state = { IRS_middle_east_state = yes }
+	}
+}

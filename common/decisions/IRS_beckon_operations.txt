@@ -105,6 +105,23 @@ irs_beckon_operations = {
 				add = 200
 				has_war = yes
 			}
+
+
+			modifier = {
+				factor = 3
+				FROM = { controller = { has_war_with = ROOT } }
+			}
+
+			modifier = {
+				factor = 3
+				FROM = { check_variable = { iris_infestation_level > 29 } }
+				FROM = { NOT = { check_variable = { iris_infestation_level > 49 } } }
+			}
+
+			modifier = {
+				factor = 0.1
+				FROM = { check_variable = { iris_infestation_level > 49 } }
+			}
 		}
 	}
 }

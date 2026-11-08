@@ -47,9 +47,62 @@ SRP_absorb_state_for_IRS = {
 		limit = { industrial_infrastructure > 0 }
 		remove_building = { type = industrial_infrastructure level = 1 }
 	}
-	add_building_construction = {
-		type = beckon_cluster
-		level = 1
+	set_temp_variable = { irs_cluster_target = 1 }
+	if = {
+		limit = { OR = { has_state_category = rural has_state_category = large_island } }
+		set_temp_variable = { irs_cluster_target = 2 }
+	}
+	if = {
+		limit = { has_state_category = town }
+		set_temp_variable = { irs_cluster_target = 3 }
+	}
+	if = {
+		limit = { has_state_category = large_town }
+		set_temp_variable = { irs_cluster_target = 4 }
+	}
+	if = {
+		limit = { has_state_category = city }
+		set_temp_variable = { irs_cluster_target = 5 }
+	}
+	if = {
+		limit = { has_state_category = large_city }
+		set_temp_variable = { irs_cluster_target = 6 }
+	}
+	if = {
+		limit = { has_state_category = metropolis }
+		set_temp_variable = { irs_cluster_target = 8 }
+	}
+	if = {
+		limit = { has_state_category = megalopolis }
+		set_temp_variable = { irs_cluster_target = 10 }
+	}
+	if = {
+		limit = { has_state_category = srp_megaregion }
+		set_temp_variable = { irs_cluster_target = 12 }
+	}
+	if = {
+		limit = { IRS = { num_of_military_factories > 249 } }
+		divide_temp_variable = { irs_cluster_target = 2 }
+	}
+	if = {
+		limit = { IRS = { num_of_military_factories > 399 } }
+		divide_temp_variable = { irs_cluster_target = 2 }
+	}
+	set_temp_variable = { irs_cluster_added = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { irs_cluster_added < irs_cluster_target }
+			free_building_slots = {
+				building = beckon_cluster
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = beckon_cluster
+			level = 1
+			instant_build = yes
+		}
+		add_to_temp_variable = { irs_cluster_added = 1 }
 	}
 	IRS = {
 		set_variable = { var = IRS_ep_gain_tmp value = 25 }
@@ -59,7 +112,10 @@ SRP_absorb_state_for_IRS = {
 
 SRP_absorb_state_for_KNX = {
 	remove_core_of = IRS
-	remove_dynamic_modifier = { modifier = irs_consumed_state }
+	if = {
+		limit = { has_dynamic_modifier = { modifier = irs_consumed_state } }
+		remove_dynamic_modifier = { modifier = irs_consumed_state }
+	}
 	clr_state_flag = irs_state_consumed
 	add_core_of = KNX
 	every_country = {

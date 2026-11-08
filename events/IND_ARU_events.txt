@@ -1,0 +1,115 @@
+add_namespace = aru
+add_namespace = ind
+
+
+country_event = {
+	id = aru.1
+	title = aru.1.t
+	desc = {
+		text = aru.1.d
+		trigger = { NOT = { has_global_flag = IRS_aru_war_from_china } }
+	}
+	desc = {
+		text = aru.1.d_east
+		trigger = { has_global_flag = IRS_aru_war_from_china }
+	}
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = ARU }
+
+	option = {
+		name = aru.1.a
+		ai_chance = { base = 100 }
+		add_timed_idea = { idea = ARU_the_red_sea_watch days = 365 }
+		if = {
+			limit = {
+				country_exists = CHN
+				CHN = { NOT = { has_war_with = ROOT } }
+			}
+			CHN = { country_event = { id = aru.2 days = 2 } }
+		}
+	}
+	option = {
+		name = aru.1.b
+		ai_chance = { base = 0 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = aru.2
+	title = aru.2.t
+	desc = aru.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = CHN }
+
+	option = {
+		name = aru.2.a
+		ai_chance = { base = 100 }
+		set_country_flag = CHN_hive_in_arabia
+		if = {
+			limit = { country_exists = ARU }
+			send_equipment = { equipment = infantry_equipment amount = 2000 target = ARU }
+			send_equipment = { equipment = support_equipment amount = 200 target = ARU }
+			ARU = { add_opinion_modifier = { target = ROOT modifier = ARU_CHN_arms } }
+		}
+	}
+	option = {
+		name = aru.2.b
+		ai_chance = { base = 0 }
+		set_country_flag = CHN_hive_in_arabia
+	}
+}
+
+country_event = {
+	id = aru.3
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				tag = IRS
+				country_exists = ARU
+				NOT = { has_war_with = ARU }
+			}
+			set_global_flag = IRS_aru_war_from_china
+			declare_war_on = { target = ARU type = annex_everything }
+		}
+	}
+}
+
+country_event = {
+	id = ind.1
+	title = ind.1.t
+	desc = ind.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = { tag = IND }
+
+	option = {
+		name = ind.1.a
+		ai_chance = { base = 100 }
+		if = {
+			limit = {
+				country_exists = IRS
+				NOT = { has_war_with = IRS }
+			}
+			declare_war_on = { target = IRS type = annex_everything }
+		}
+		if = {
+			limit = { country_exists = ARU }
+			send_equipment = { equipment = infantry_equipment amount = 1000 target = ARU }
+		}
+	}
+	option = {
+		name = ind.1.b
+		ai_chance = { base = 0 }
+		if = {
+			limit = { country_exists = ARU }
+			send_equipment = { equipment = infantry_equipment amount = 1000 target = ARU }
+		}
+		add_war_support = 0.03
+	}
+}

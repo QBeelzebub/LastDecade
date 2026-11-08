@@ -1,0 +1,22 @@
+SRP_nogov_record_start_effect = {
+	set_variable = { srp_original_capital = capital }
+	set_variable = { srp_starting_states = num_owned_controlled_states }
+	set_variable = { srp_nogov_scraps_line = srp_starting_states }
+	multiply_variable = { srp_nogov_scraps_line = 0.15 }
+	set_variable = { srp_nogov_recover_line = srp_starting_states }
+	multiply_variable = { srp_nogov_recover_line = 0.25 }
+}
+
+SRP_nogov_collapse_effect = {
+	add_ideas = SRP_no_functioning_government
+	add_ideas = srp_nogov_every_hand_armed
+	add_ideas = srp_nogov_salvage_economy
+	add_ideas = srp_nogov_no_exports
+}
+
+SRP_nogov_reform_effect = {
+	remove_ideas = SRP_no_functioning_government
+	add_ideas = srp_national_service_requirement
+	add_ideas = srp_wartime_direction
+	add_ideas = srp_strategic_protectionism
+}

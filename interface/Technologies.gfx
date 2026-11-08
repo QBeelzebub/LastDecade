@@ -8999,4 +8999,197 @@ spriteTypes = {
 		name = "GFX_srp_rocket_3_medium"
 		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
 	}
+
+	spriteType = {
+		name = "GFX_srp_exoskeleton_loadout"
+		textureFile = "gfx/interface/technologies/infantry_weapons3.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_exoskeleton_loadout_medium"
+		textureFile = "gfx/interface/technologies/infantry_weapons3.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_rtg_contact_kit"
+		textureFile = "gfx/interface/technologies/fra_advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_rtg_contact_kit_medium"
+		textureFile = "gfx/interface/technologies/fra_advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_hardened_perimeter_1"
+		textureFile = "gfx/interface/technologies/coastal_fort_1.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_hardened_perimeter_1_medium"
+		textureFile = "gfx/interface/technologies/coastal_fort_1.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_hardened_perimeter_2"
+		textureFile = "gfx/interface/technologies/coastal_fort_2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_hardened_perimeter_2_medium"
+		textureFile = "gfx/interface/technologies/coastal_fort_2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_marine_battalions"
+		textureFile = "gfx/interface/technologies/marines.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_marine_battalions_medium"
+		textureFile = "gfx/interface/technologies/marines.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_wheeled_recon"
+		textureFile = "gfx/interface/technologies/ger_armored_car_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_wheeled_recon_medium"
+		textureFile = "gfx/interface/technologies/ger_armored_car_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_quarantine_engineers"
+		textureFile = "gfx/interface/technologies/tech_field_hospital2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_quarantine_engineers_medium"
+		textureFile = "gfx/interface/technologies/tech_field_hospital2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_burn_teams"
+		textureFile = "gfx/interface/technologies/engineers2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_burn_teams_medium"
+		textureFile = "gfx/interface/technologies/engineers2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_root_burning_kits"
+		textureFile = "gfx/interface/technologies/engineers3.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_root_burning_kits_medium"
+		textureFile = "gfx/interface/technologies/engineers3.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_gendarmerie"
+		textureFile = "gfx/interface/technologies/tech_military_police.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_gendarmerie_medium"
+		textureFile = "gfx/interface/technologies/tech_military_police.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_radar_station_2"
+		textureFile = "gfx/interface/technologies/decimetric_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_radar_station_2_medium"
+		textureFile = "gfx/interface/technologies/decimetric_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_synthetic_fuel"
+		textureFile = "gfx/interface/technologies/synth_oil_experiments.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_synthetic_fuel_medium"
+		textureFile = "gfx/interface/technologies/synth_oil_experiments.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_point_defence_laser"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_point_defence_laser_medium"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_thermobaric_rockets"
+		textureFile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_thermobaric_rockets_medium"
+		textureFile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_dozer_blade_tech"
+		textureFile = "gfx/interface/technologies/engineers.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_dozer_blade_tech_medium"
+		textureFile = "gfx/interface/technologies/engineers.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_flame_projector_tech"
+		textureFile = "gfx/interface/technologies/fra_improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_flame_projector_tech_medium"
+		textureFile = "gfx/interface/technologies/fra_improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_rws_tech"
+		textureFile = "gfx/interface/technologies/antiair3.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_rws_tech_medium"
+		textureFile = "gfx/interface/technologies/antiair3.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_sealed_compartment_tech"
+		textureFile = "gfx/interface/technologies/advanced_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_sealed_compartment_tech_medium"
+		textureFile = "gfx/interface/technologies/advanced_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_apc_tech"
+		textureFile = "gfx/interface/technologies/mechanized_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_apc_tech_medium"
+		textureFile = "gfx/interface/technologies/mechanized_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_transport_2"
+		textureFile = "gfx/interface/technologies/generic_transport_plane_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_transport_2_medium"
+		textureFile = "gfx/interface/technologies/generic_transport_plane_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_littoral_patrol"
+		textureFile = "gfx/interface/technologies/early_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_littoral_patrol_medium"
+		textureFile = "gfx/interface/technologies/early_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_asw_drones"
+		textureFile = "gfx/interface/technologies/escort_patrols.dds"
+	}
+	spriteType = {
+		name = "GFX_srp_asw_drones_medium"
+		textureFile = "gfx/interface/technologies/escort_patrols.dds"
+	}
+	spriteType = {
+		name = "GFX_parasite_rail_swarm_2"
+		textureFile = "gfx/interface/technologies/train_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_parasite_rail_swarm_2_medium"
+		textureFile = "gfx/interface/technologies/train_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_parasite_dispatcher_fields"
+		textureFile = "gfx/interface/technologies/escort_relay_system.dds"
+	}
+	spriteType = {
+		name = "GFX_parasite_dispatcher_fields_medium"
+		textureFile = "gfx/interface/technologies/escort_relay_system.dds"
+	}
 }

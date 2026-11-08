@@ -1,10 +1,10 @@
 add_namespace = srp_consortium
 
-country_event = {
+news_event = {
 	id = srp_consortium.1
 	title = srp_consortium.1.t
 	desc = srp_consortium.1.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {

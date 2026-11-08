@@ -2,7 +2,7 @@ SRP_human_destroyers = {
 	category = naval
 
 	available_for = {
-		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+		AFR ARU ASI CHN IND EFH JAP OCE RSF SAC SWR USA
 	}
 
 	roles = {
@@ -59,7 +59,7 @@ SRP_human_submarines = {
 	category = naval
 
 	available_for = {
-		AFR ASI CHN EFH JAP OCE RSF SAC SWR USA
+		AFR ARU ASI CHN IND EFH JAP OCE RSF SAC SWR USA
 	}
 
 	roles = {
@@ -207,179 +207,6 @@ SRP_major_battleships = {
 			ship_radar_4
 			heavy_ship_engine_4
 			ship_armor_bb_1
-		}
-	}
-}
-IRS_colossant_line = {
-	category = naval
-
-	available_for = {
-		IRS
-	}
-
-	roles = {
-		naval_capital_bb
-	}
-
-	priority = {
-		factor = 250
-	}
-
-	IRS_colossant_prime = {
-		priority = {
-			factor = 200
-		}
-
-		enable = {
-			has_tech = devourer_emergence
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 100
-			type = IRS_colossant_hull_1
-			modules = {
-				fixed_ship_torpedo_slot = IRS_shredder_array
-				fixed_ship_engine_slot = IRS_burst_propulsor
-				front_1_custom_slot = IRS_hunting_call_pheromone
-				mid_1_custom_slot = IRS_regenerative_tissue
-				rear_1_custom_slot = IRS_depth_tolerance
-			}
-		}
-
-		allowed_modules = {
-			IRS_acid_mantle
-			IRS_shredder_array
-			IRS_fin_cluster
-			IRS_current_channeling
-			IRS_burst_propulsor
-			IRS_schooling_pheromone
-			IRS_hunting_call_pheromone
-			IRS_alarm_response_pheromone
-			IRS_exoskeletal_carapace
-			IRS_regenerative_tissue
-			IRS_depth_tolerance
-		}
-	}
-}
-
-IRS_devourer_swarms = {
-	category = naval
-
-	available_for = {
-		IRS
-	}
-
-	roles = {
-		naval_submarine
-	}
-
-	priority = {
-		factor = 200
-	}
-
-	IRS_devourer_alpha = {
-		priority = {
-			factor = 100
-		}
-
-		enable = {
-			has_tech = devourer_emergence
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 100
-			type = IRS_devourer_hull_1
-			modules = {
-				fixed_ship_torpedo_slot = IRS_shredder_array
-				fixed_ship_engine_slot = IRS_fin_cluster
-				front_1_custom_slot = IRS_schooling_pheromone
-				mid_1_custom_slot = IRS_hunting_call_pheromone
-				rear_1_custom_slot = IRS_exoskeletal_carapace
-			}
-		}
-
-		allowed_modules = {
-			IRS_acid_mantle
-			IRS_shredder_array
-			IRS_fin_cluster
-			IRS_current_channeling
-			IRS_burst_propulsor
-			IRS_schooling_pheromone
-			IRS_hunting_call_pheromone
-			IRS_alarm_response_pheromone
-			IRS_exoskeletal_carapace
-			IRS_regenerative_tissue
-			IRS_depth_tolerance
-		}
-	}
-
-	IRS_devourer_beta = {
-		priority = {
-			factor = 150
-		}
-
-		enable = {
-			has_tech = adapted_devourer_strain
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 120
-			type = IRS_devourer_hull_2
-			modules = {
-				fixed_ship_torpedo_slot = IRS_shredder_array
-				fixed_ship_engine_slot = IRS_burst_propulsor
-				front_1_custom_slot = IRS_alarm_response_pheromone
-				mid_1_custom_slot = IRS_hunting_call_pheromone
-				rear_1_custom_slot = IRS_regenerative_tissue
-			}
-		}
-
-		allowed_modules = {
-			IRS_acid_mantle
-			IRS_shredder_array
-			IRS_fin_cluster
-			IRS_current_channeling
-			IRS_burst_propulsor
-			IRS_schooling_pheromone
-			IRS_hunting_call_pheromone
-			IRS_alarm_response_pheromone
-			IRS_exoskeletal_carapace
-			IRS_regenerative_tissue
-			IRS_depth_tolerance
-		}
-	}
-
-	IRS_abyssant_prime = {
-		priority = {
-			factor = 180
-		}
-
-		enable = {
-			has_tech = abyssant_genesis
-		}
-
-		history = yes
-		target_variant = {
-			match_value = 140
-			type = IRS_abyssant_hull_1
-			modules = {
-				fixed_ship_torpedo_slot = IRS_crushing_maw
-				fixed_ship_engine_slot = IRS_abyssant_jet_locomotion
-				front_1_custom_slot = IRS_abyssant_dense_carapace
-				mid_1_custom_slot = IRS_abyssant_vibration_array
-				rear_1_custom_slot = IRS_abyssant_echolocation_sac
-			}
-		}
-
-		allowed_modules = {
-			IRS_crushing_maw
-			IRS_abyssant_jet_locomotion
-			IRS_abyssant_dense_carapace
-			IRS_abyssant_vibration_array
-			IRS_abyssant_echolocation_sac
 		}
 	}
 }

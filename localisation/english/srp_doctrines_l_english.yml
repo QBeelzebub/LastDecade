@@ -452,7 +452,7 @@
  ld_deep_strike_package_ld_bridge_and_chokepoint_packages: "Bridge and Chokepoint Packages"
  ld_deep_strike_package_ld_deep_strike_routing: "Deep Strike Routing"
 
- LD_SUBDOCTRINE_THEATER_RECONNAISSANCE: "Theater Reconnaissance"
+ LD_SUBDOCTRINE_THEATER_RECONNAISSANCE: "Theatre Reconnaissance"
  LD_SUBDOCTRINE_THEATER_RECONNAISSANCE_DESC: "Medium aircraft maintain persistent ISR coverage across the theatre. Radar pickets, ELINT collection, and battle damage assessment are continuous."
  ld_theater_reconnaissance_ld_radar_picket_patterns: "Radar Picket Patterns"
  ld_theater_reconnaissance_ld_bda_procedures: "BDA Procedures"
@@ -568,15 +568,15 @@
  srp_chemical_suppression_desc: "Standardised military doctrine for the use of defoliants and toxic agents to halt parasite tissue spread in contested terrain. Unlocks the Chemical Suppression emergency response doctrine."
 
  infestation_crisis.1.t: "The Line Is Breaking"
- infestation_crisis.1.d: "Infestation in [event_target:infestation_crisis_state.GetName] has reached the tipping point. What remains of our forces report biomass in the streets, the water, the air. There are still people down there, pockets of them, holding in cellars and stairwells and waiting for an evacuation that may never come.\n\nWe have perhaps a month before [event_target:infestation_crisis_state.GetName] is lost outright. If we cannot drive the infestation back in that time, the parasites will simply walk in and take what is left."
- infestation_crisis.1.a: "We will hold this ground."
- infestation_crisis.1.b: "Prepare the population for the worst."
+ infestation_crisis.1.d: "Infestation in [event_target:infestation_crisis_state.GetName] has passed the point where it spreads on its own. Our forces report biomass in the streets and the water supply, and there are still civilians sheltering in cellars across the region.\n\nWe have about a month. If the infestation is not driven back by then, [event_target:infestation_crisis_state.GetName] is lost."
+ infestation_crisis.1.a: "Hold this ground."
+ infestation_crisis.1.b: "Prepare people for the loss."
 
  infestation_crisis.2.t: "A Region Consumed"
- infestation_crisis.2.d: "[event_target:infestation_crisis_state.GetName] is gone. The last transmissions cut out hours ago. The infestation has overrun every remaining position, and the survivors we could not reach are beyond reaching now.\n\nThe parasites hold the ground. We hold the grief."
- infestation_crisis.2.a: "We will remember them."
+ infestation_crisis.2.d: "[event_target:infestation_crisis_state.GetName] is gone. The last transmissions cut out hours ago, and the infestation has overrun every remaining position. Nobody left inside can be reached now."
+ infestation_crisis.2.a: "Record the loss."
 
  infestation_crisis.3.t: "There Will Be No Treaty"
- infestation_crisis.3.d: "Territory we had listed as occupied has been struck from the national register. Not contested, not administered under duress. Gone. The survey office has stopped printing maps that include it.\n\nThere is no negotiation that gives this ground back. No conference, no settlement, no line drawn on a table in some capital. What the parasites hold long enough, they keep, and the only instrument that reverses it is an army."
- infestation_crisis.3.a: "Then we take it back the only way left."
+ infestation_crisis.3.d: "Territory we had listed as occupied has been struck from the national register, and the survey office has stopped printing maps that include it.\n\nNo peace conference gives this ground back. What the parasites hold long enough, they keep, and the only way to reverse it is an army."
+ infestation_crisis.3.a: "Then we take it back."
 

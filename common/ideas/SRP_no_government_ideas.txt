@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		SRP_no_functioning_government = {
+			picture = generic_disjointed_gov
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -1
+				disabled_ideas = 1
+				stability_factor = -0.30
+				army_core_defence_factor = 0.15
+			}
+		}
+	}
+}

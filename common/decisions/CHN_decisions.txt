@@ -112,3 +112,198 @@ srp_public_confidence = {
         }
     }
 }
+
+CHN_development = {
+	CHN_retry_efh_partnership = {
+		icon = generic_political_actions
+		allowed = { tag = CHN }
+		visible = {
+			has_completed_focus = CHN_align_EFH
+			NOT = { has_country_flag = CHN_efh_aligned }
+		}
+		available = {
+			tag = CHN
+			country_exists = EFH
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			has_completed_focus = CHN_align_EFH
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_aligned }
+			NOT = { has_country_flag = CHN_efh_offer_pending }
+			NOT = { has_country_flag = CHN_usa_offer_pending }
+			NOT = { has_country_flag = CHN_efh_retry_cd }
+			EFH = { has_war = no is_subject = no has_capitulated = no }
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = { base = 1 }
+		complete_effect = {
+			CHN_request_efh_partnership_effect = yes
+			set_country_flag = { flag = CHN_efh_retry_cd days = 180 }
+		}
+	}
+
+	CHN_retry_usa_partnership = {
+		icon = generic_political_actions
+		allowed = { tag = CHN }
+		visible = {
+			has_completed_focus = CHN_align_USA
+			NOT = { has_country_flag = CHN_usa_aligned }
+		}
+		available = {
+			tag = CHN
+			country_exists = USA
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			has_completed_focus = CHN_align_USA
+			NOT = { is_in_faction_with = EFH }
+			NOT = { has_country_flag = CHN_efh_aligned }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_offer_pending }
+			NOT = { has_country_flag = CHN_usa_offer_pending }
+			NOT = { has_country_flag = CHN_usa_retry_cd }
+			USA = { has_war = no is_subject = no has_capitulated = no }
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {
+			base = 1
+			modifier = { factor = 0 is_historical_focus_on = yes }
+		}
+		complete_effect = {
+			CHN_request_usa_partnership_effect = yes
+			set_country_flag = { flag = CHN_usa_retry_cd days = 180 }
+		}
+	}
+
+	CHN_retry_efh_trade = {
+		icon = generic_political_actions
+		allowed = { tag = CHN }
+		visible = {
+			has_completed_focus = CHN_efh_trade
+			has_country_flag = CHN_efh_aligned
+			NOT = { has_country_flag = CHN_efh_trade_accepted }
+		}
+		available = {
+			country_exists = EFH
+			has_country_flag = CHN_efh_aligned
+			has_completed_focus = CHN_export_mentality
+			is_subject = no
+			has_capitulated = no
+			NOT = { has_war_with = EFH }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_efh_trade_pending }
+			EFH = { is_subject = no has_capitulated = no }
+		}
+		cost = 50
+		days_re_enable = 180
+		ai_will_do = { base = 1 }
+		complete_effect = { EFH = { CHN_request_efh_trade_effect = yes } }
+	}
+
+	CHN_retry_fusion_licence = {
+		icon = generic_political_actions
+		allowed = { tag = CHN }
+		visible = {
+			has_completed_focus = CHN_fusion_licence
+			NOT = { has_tech = srp_fusion_reactor_1 }
+		}
+		available = {
+			tag = CHN
+			country_exists = EFH
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			has_completed_focus = CHN_align_EFH
+			has_completed_focus = CHN_fusion_licence
+			has_country_flag = CHN_efh_aligned
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_usa_aligned }
+			NOT = { has_country_flag = CHN_fusion_licensed }
+			NOT = { has_country_flag = CHN_fusion_offer_pending }
+			NOT = { has_country_flag = CHN_fusion_retry_cd }
+			NOT = { has_tech = srp_fusion_reactor_1 }
+			EFH = { has_tech = srp_fusion_reactor_1 has_war = no is_subject = no has_capitulated = no }
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = { base = 1 }
+		complete_effect = {
+			CHN_request_fusion_licence_effect = yes
+			set_country_flag = { flag = CHN_fusion_retry_cd days = 180 }
+		}
+	}
+
+	CHN_export_compute_efh = {
+		icon = generic_political_actions
+		allowed = { tag = CHN }
+		visible = {
+			has_completed_focus = CHN_chip_dominance
+			has_country_flag = CHN_efh_aligned
+		}
+		available = {
+			tag = CHN
+			has_completed_focus = CHN_chip_dominance
+			has_completed_focus = CHN_export_mentality
+			has_country_flag = CHN_efh_aligned
+			NOT = { has_country_flag = CHN_usa_aligned }
+			has_tech = srp_compute_3
+			country_exists = EFH
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = USA }
+			NOT = { has_country_flag = CHN_compute_export_cd }
+			NOT = { has_idea = CHN_compute_export_capacity }
+			any_owned_state = { is_controlled_by = ROOT srp_data_center > 0 }
+			EFH = { has_war = no has_capitulated = no is_subject = no NOT = { has_idea = CHN_compute_export_customer } }
+			NOT = { USA = { has_idea = CHN_compute_export_customer } }
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = { base = 1 }
+		complete_effect = {
+			set_country_flag = { flag = CHN_compute_export_cd days = 210 }
+			add_timed_idea = { idea = CHN_compute_export_capacity days = 180 }
+			EFH = { add_timed_idea = { idea = CHN_compute_export_customer days = 180 } }
+		}
+	}
+
+	CHN_export_compute_usa = {
+		icon = generic_political_actions
+		allowed = { tag = CHN }
+		visible = {
+			has_completed_focus = CHN_chip_dominance
+			has_country_flag = CHN_usa_aligned
+		}
+		available = {
+			tag = CHN
+			has_completed_focus = CHN_chip_dominance
+			has_completed_focus = CHN_export_mentality
+			has_country_flag = CHN_usa_aligned
+			NOT = { has_country_flag = CHN_efh_aligned }
+			has_tech = srp_compute_3
+			country_exists = USA
+			has_war = no
+			is_subject = no
+			has_capitulated = no
+			NOT = { is_in_faction_with = EFH }
+			NOT = { has_country_flag = CHN_compute_export_cd }
+			NOT = { has_idea = CHN_compute_export_capacity }
+			any_owned_state = { is_controlled_by = ROOT srp_data_center > 0 }
+			USA = { has_war = no has_capitulated = no is_subject = no NOT = { has_idea = CHN_compute_export_customer } }
+			NOT = { EFH = { has_idea = CHN_compute_export_customer } }
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = { base = 1 }
+		complete_effect = {
+			set_country_flag = { flag = CHN_compute_export_cd days = 210 }
+			add_timed_idea = { idea = CHN_compute_export_capacity days = 180 }
+			USA = { add_timed_idea = { idea = CHN_compute_export_customer days = 180 } }
+		}
+	}
+}

@@ -7,15 +7,15 @@ EFH_canon_plan = {
 	enable  = { always = yes }
 	abort = { always = no }
 	research = {
-		srp_land_tech         = 20.0
-		srp_industry_tech     = 20.0
-		srp_air_tech          = 15.0
-		srp_electronics_tech  = 15.0
-		srp_naval_tech        = 10.0
+		srp_naval_tech        = 24.0
+		srp_air_tech          = 21.0
+		srp_electronics_tech  = 19.0
+		srp_land_tech         = 17.0
+		srp_industry_tech     = 16.0
 		nuclear               = 10.0
-		srp_construction_tech = 10.0
+		srp_construction_tech = 8.0
 		srp_artillery_tech    = 8.0
-		srp_incendiary        = 8.0
+		srp_incendiary        = 6.0
 	}
 
 	ai_national_focuses = {

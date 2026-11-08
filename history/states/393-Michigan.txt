@@ -10,10 +10,11 @@ state={
 
 	history={
 		owner = USA
+		add_extra_state_shared_building_slots = 28
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 6
+			arms_factory = 18
+			industrial_complex = 18
 			air_base = 4
 
 		}
@@ -23,7 +24,6 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 7
 				6710 = {
 					land_facility = 1
 				}

@@ -34,7 +34,7 @@ SRP_consortium = {
 					NOT = { has_country_flag = SRP_consortium_member }
 					exists = yes
 				}
-				country_event = { id = srp_consortium.1 days = 1 }
+				news_event = { id = srp_consortium.1 days = 1 }
 			}
 		}
 

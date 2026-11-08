@@ -60,6 +60,22 @@ ideas = {
 			}
 		}
 
+		LD_federation_air_offensive = {
+			picture = generic_air_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				air_superiority_efficiency = 0.15
+				air_attack_factor = 0.10
+				air_defence_factor = 0.10
+				air_mission_efficiency = 0.10
+				air_ace_generation_chance_factor = 0.25
+				industrial_capacity_factory = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
 		LD_second_war_mobilisation = {
 			picture = generic_production_bonus
 			allowed = { always = no }
@@ -79,6 +95,45 @@ ideas = {
 				stability_factor = -0.05
 				political_power_gain = -0.10
 				war_support_factor = -0.05
+			}
+		}
+
+
+		LD_canal_accord = {
+			picture = generic_political_support
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.15
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		LD_canal_expeditionary = {
+			picture = generic_air_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				air_accidents_factor = -0.20
+				air_mission_efficiency = 0.10
+				production_speed_air_base_factor = 0.20
+				industrial_capacity_factory = 0.10
+				navy_max_range_factor = -0.25
+				war_support_factor = 0.05
+			}
+		}
+
+		LD_canal_conceded = {
+			picture = generic_army_problems
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.10
+				political_power_gain = -0.15
+				trade_opinion_factor = -0.10
+				stability_factor = -0.05
 			}
 		}
 	}

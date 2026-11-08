@@ -13,33 +13,11 @@ technologies = {
 
 		categories = { srp_electronics_tech }
 
-		recon_factor = 0.05
+		recon_factor = 0.1
 		army_org_factor = 0.02
 
-		path = {
-			leads_to_tech = srp_comms_2
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_comms_2 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 1.5
-		start_year = 2021
-
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 2 }
-		}
-
-		categories = { srp_electronics_tech }
-
-		recon_factor = 0.05
 		planning_speed = 0.05
+
 		max_planning = 5
 
 		path = {
@@ -55,8 +33,7 @@ technologies = {
 	srp_comms_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 4 }
@@ -64,63 +41,11 @@ technologies = {
 
 		categories = { srp_electronics_tech }
 
-		recon_factor = 0.05
-		coordination_bonus = 0.04
-		army_org_factor = 0.02
-
-		path = {
-			leads_to_tech = srp_comms_4
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_comms_4 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2027
-
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 6 }
-		}
-
-		categories = { srp_electronics_tech }
-
-		recon_factor = 0.05
-		coordination_bonus = 0.05
-		planning_speed = 0.05
+		recon_factor = 0.15
+		coordination_bonus = 0.14
+		army_org_factor = 0.05
+		planning_speed = 0.1
 		max_planning = 5
-
-		path = {
-			leads_to_tech = srp_comms_5
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_comms_5 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.5
-		start_year = 2030
-
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 8 }
-		}
-
-		categories = { srp_electronics_tech }
-
-		recon_factor = 0.05
-		coordination_bonus = 0.05
-		planning_speed = 0.05
-		army_org_factor = 0.03
 
 		ai_will_do = {
 			base = 2
@@ -140,11 +65,17 @@ technologies = {
 
 		categories = { srp_electronics_tech srp_radar_tech }
 
-		air_interception_detect_factor = 0.05
-		recon_factor = 0.03
+		air_interception_detect_factor = 0.1
+		recon_factor = 0.08
+		air_superiority_detect_factor = 0.05
+
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
 
 		path = {
-			leads_to_tech = srp_radar_2
+			leads_to_tech = srp_radar_station_2
 			research_cost_coeff = 1
 		}
 
@@ -153,7 +84,7 @@ technologies = {
 		}
 	}
 
-	srp_radar_2 = {
+	srp_radar_station_2 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 1.5
 		start_year = 2021
@@ -165,9 +96,12 @@ technologies = {
 
 		categories = { srp_electronics_tech srp_radar_tech }
 
-		air_superiority_detect_factor = 0.05
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+
 		air_interception_detect_factor = 0.05
-		recon_factor = 0.05
 
 		path = {
 			leads_to_tech = srp_radar_3
@@ -182,8 +116,7 @@ technologies = {
 	srp_radar_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2024
-
+		start_year = 2022
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }
@@ -191,63 +124,15 @@ technologies = {
 
 		categories = { srp_electronics_tech srp_radar_tech }
 
-		air_superiority_detect_factor = 0.05
-		air_interception_detect_factor = 0.05
-		recon_factor = 0.05
-
-		path = {
-			leads_to_tech = srp_radar_4
-			research_cost_coeff = 1
+		enable_building = {
+			building = radar_station
+			level = 6
 		}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_radar_4 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.0
-		start_year = 2027
-
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 6 }
-		}
-
-		categories = { srp_electronics_tech srp_radar_tech }
-
-		air_superiority_detect_factor = 0.05
-		air_interception_detect_factor = 0.08
-		recon_factor = 0.06
-		army_core_attack_factor = 0.03
-
-		path = {
-			leads_to_tech = srp_radar_5
-			research_cost_coeff = 1
-		}
-
-		ai_will_do = {
-			base = 2
-		}
-	}
-
-	srp_radar_5 = {
-		allow = { NOT = { is_full_parasite = yes } }
-		research_cost = 2.5
-		start_year = 2030
-
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 8 }
-		}
-
-		categories = { srp_electronics_tech srp_radar_tech }
-
-		air_superiority_detect_factor = 0.06
-		air_interception_detect_factor = 0.08
-		recon_factor = 0.07
-		army_core_attack_factor = 0.04
+		air_superiority_detect_factor = 0.16
+		air_interception_detect_factor = 0.21
+		recon_factor = 0.18
+		army_core_attack_factor = 0.07
 
 		ai_will_do = {
 			base = 2
@@ -262,7 +147,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 0 }
+			position = { x = 4 y = 2 }
 		}
 
 		categories = { srp_electronics_tech srp_cyber_tech }
@@ -288,7 +173,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 4 }
 		}
 
 		categories = { srp_electronics_tech srp_cyber_tech }
@@ -310,11 +195,10 @@ technologies = {
 	srp_cyber_3 = {
 		allow = { NOT = { is_full_parasite = yes } }
 		research_cost = 2.0
-		start_year = 2025
-
+		start_year = 2023
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 4 }
+			position = { x = 4 y = 6 }
 		}
 
 		categories = { srp_electronics_tech srp_cyber_tech }
@@ -341,7 +225,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 12 }
 		}
 
 		categories = { srp_electronics_tech srp_cyber_tech }
@@ -374,7 +258,7 @@ technologies = {
 
 		enable_building = {
 			building = srp_data_center
-			level = 3
+			level = 1
 		}
 
 		path = {
@@ -403,6 +287,11 @@ technologies = {
 		intel_from_operatives_factor = 0.05
 		enemy_operative_detection_chance_factor = 0.05
 
+		enable_building = {
+			building = srp_data_center
+			level = 3
+		}
+
 		path = {
 			leads_to_tech = srp_compute_3
 			research_cost_coeff = 1
@@ -416,14 +305,14 @@ technologies = {
 	srp_compute_3 = {
 		allow = {
 			NOT = { is_full_parasite = yes }
-			has_tech = srp_fusion_reactor_1
 		}
+		dependencies = { srp_fusion_reactor_1 = 1 }
 		research_cost = 2.0
 		start_year = 2024
 
 		folder = {
 			name = electronics_folder
-			position = { x = 6 y = 4 }
+			position = { x = 6 y = 8 }
 		}
 
 		categories = { srp_electronics_tech srp_compute_tech }
@@ -454,7 +343,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = 6 y = 6 }
+			position = { x = 6 y = 10 }
 		}
 
 		categories = { srp_electronics_tech srp_compute_tech }
@@ -480,7 +369,7 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = 6 y = 8 }
+			position = { x = 6 y = 14 }
 		}
 
 		categories = { srp_electronics_tech srp_compute_tech }

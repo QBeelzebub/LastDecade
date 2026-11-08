@@ -11,7 +11,7 @@ on_actions = {
 						resistance > 79
 					}
 				}
-				country_event = { id = efh.40 days = 1 }
+				news_event = { id = efh.40 days = 1 }
 			}
 		}
 	}

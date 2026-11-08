@@ -16,6 +16,53 @@ IRS_lineage_tromos_plan = {
 		IRS_dorm_take_the_topsoil
 		IRS_dorm_hold_the_interior
 		IRS_dorm_die_back_regrow
+
+		IRS_phase_0_arrival
+		IRS_phase0_beckon_expansion
+		IRS_phase0_biomass_seeding
+		IRS_phase0_territory_consolidation
+		IRS_phase_1_proliferation
+		IRS_phase1_nocturnal_adaptation
+		IRS_phase1_rupter_aggression
+		IRS_phase1_adaptive_biology
+		IRS_phase1_spore_dispersal
+		IRS_phase1_hive_resonance
+		IRS_phase1_territorial_instinct
+		IRS_west_african_mobilization
+		IRS_continental_assault
+		IRS_phase_2_assimilation
+		IRS_phase2_tethysic_tide
+		IRS_phase2_african_surge
+		IRS_phase2_consumption_front
+		IRS_phase2_coastal_control
+		IRS_phase2_hive_signal
+		IRS_phase2_distributed_will
+		IRS_phase2_assimilation_directive
+		IRS_phase2_vector_mapping
+		IRS_phase2_dormant_transit
+		IRS_phase2_sac_emergence
+		IRS_phase_2_complete
+		IRS_phase_3_expansion
+		IRS_south_american_vectors
+		IRS_transoceanic_breach
+		IRS_phase3_full_assimilation
+		IRS_suez_crossing
+		IRS_turn_east
+		IRS_last_decade_threshold
+		IRS_release_tethysic_puppet
+		IRS_phase0_inland_root
+		IRS_phase0_northern_surge
+		IRS_phase0_western_anchor
+		IRS_phase1_root_expansion
+		IRS_daughters_awakening
+		IRS_tromos_contact
+		IRS_vitreous_contact
+		IRS_phase3_deep_inland
+		IRS_phase3_global_signal
+		IRS_phase3_predation_doctrine
+		IRS_phase3_dispatcher_surge
+		IRS_phase3_manifestation_primer
+		IRS_phase3_swarm_legend
 	}
 
 	research = {
@@ -51,6 +98,53 @@ IRS_lineage_vitreous_plan = {
 		IRS_dorm_overwinter
 		IRS_dorm_hold_the_interior
 		IRS_dorm_bury_the_circulation
+
+		IRS_phase_0_arrival
+		IRS_phase0_beckon_expansion
+		IRS_phase0_biomass_seeding
+		IRS_phase0_territory_consolidation
+		IRS_phase_1_proliferation
+		IRS_phase1_nocturnal_adaptation
+		IRS_phase1_rupter_aggression
+		IRS_phase1_adaptive_biology
+		IRS_phase1_spore_dispersal
+		IRS_phase1_hive_resonance
+		IRS_phase1_territorial_instinct
+		IRS_west_african_mobilization
+		IRS_continental_assault
+		IRS_phase_2_assimilation
+		IRS_phase2_tethysic_tide
+		IRS_phase2_african_surge
+		IRS_phase2_consumption_front
+		IRS_phase2_coastal_control
+		IRS_phase2_hive_signal
+		IRS_phase2_distributed_will
+		IRS_phase2_assimilation_directive
+		IRS_phase2_vector_mapping
+		IRS_phase2_dormant_transit
+		IRS_phase2_sac_emergence
+		IRS_phase_2_complete
+		IRS_phase_3_expansion
+		IRS_south_american_vectors
+		IRS_transoceanic_breach
+		IRS_phase3_full_assimilation
+		IRS_suez_crossing
+		IRS_turn_east
+		IRS_last_decade_threshold
+		IRS_release_tethysic_puppet
+		IRS_daughters_awakening
+		IRS_vitreous_contact
+		IRS_tromos_contact
+		IRS_phase0_inland_root
+		IRS_phase0_northern_surge
+		IRS_phase0_western_anchor
+		IRS_phase1_root_expansion
+		IRS_phase3_deep_inland
+		IRS_phase3_global_signal
+		IRS_phase3_predation_doctrine
+		IRS_phase3_dispatcher_surge
+		IRS_phase3_manifestation_primer
+		IRS_phase3_swarm_legend
 	}
 
 	research = {
@@ -86,6 +180,53 @@ IRS_lineage_iris_plan = {
 		IRS_dorm_hold_the_interior
 		IRS_dorm_bud_edge
 		IRS_dorm_rupters_run
+
+		IRS_phase_0_arrival
+		IRS_phase0_beckon_expansion
+		IRS_phase0_biomass_seeding
+		IRS_phase0_territory_consolidation
+		IRS_phase_1_proliferation
+		IRS_phase1_nocturnal_adaptation
+		IRS_phase1_rupter_aggression
+		IRS_phase1_adaptive_biology
+		IRS_phase1_spore_dispersal
+		IRS_phase1_hive_resonance
+		IRS_phase1_territorial_instinct
+		IRS_west_african_mobilization
+		IRS_continental_assault
+		IRS_phase_2_assimilation
+		IRS_phase2_tethysic_tide
+		IRS_phase2_african_surge
+		IRS_phase2_consumption_front
+		IRS_phase2_coastal_control
+		IRS_phase2_hive_signal
+		IRS_phase2_distributed_will
+		IRS_phase2_assimilation_directive
+		IRS_phase2_vector_mapping
+		IRS_phase2_dormant_transit
+		IRS_phase2_sac_emergence
+		IRS_phase_2_complete
+		IRS_phase_3_expansion
+		IRS_south_american_vectors
+		IRS_transoceanic_breach
+		IRS_phase3_full_assimilation
+		IRS_suez_crossing
+		IRS_turn_east
+		IRS_last_decade_threshold
+		IRS_release_tethysic_puppet
+		IRS_daughters_awakening
+		IRS_vitreous_contact
+		IRS_tromos_contact
+		IRS_phase0_inland_root
+		IRS_phase0_northern_surge
+		IRS_phase0_western_anchor
+		IRS_phase1_root_expansion
+		IRS_phase3_deep_inland
+		IRS_phase3_global_signal
+		IRS_phase3_predation_doctrine
+		IRS_phase3_dispatcher_surge
+		IRS_phase3_manifestation_primer
+		IRS_phase3_swarm_legend
 	}
 
 	research = {
@@ -118,6 +259,53 @@ IRS_lineage_unchecked_plan = {
 		IRS_dorm_tolerate_daylight
 		IRS_dorm_take_the_coast
 		IRS_dorm_host_left_walking
+
+		IRS_phase_0_arrival
+		IRS_phase0_beckon_expansion
+		IRS_phase0_biomass_seeding
+		IRS_phase0_territory_consolidation
+		IRS_phase_1_proliferation
+		IRS_phase1_nocturnal_adaptation
+		IRS_phase1_rupter_aggression
+		IRS_phase1_adaptive_biology
+		IRS_phase1_spore_dispersal
+		IRS_phase1_hive_resonance
+		IRS_phase1_territorial_instinct
+		IRS_west_african_mobilization
+		IRS_continental_assault
+		IRS_phase_2_assimilation
+		IRS_phase2_tethysic_tide
+		IRS_phase2_african_surge
+		IRS_phase2_consumption_front
+		IRS_phase2_coastal_control
+		IRS_phase2_hive_signal
+		IRS_phase2_distributed_will
+		IRS_phase2_assimilation_directive
+		IRS_phase2_vector_mapping
+		IRS_phase2_dormant_transit
+		IRS_phase2_sac_emergence
+		IRS_phase_2_complete
+		IRS_phase_3_expansion
+		IRS_south_american_vectors
+		IRS_transoceanic_breach
+		IRS_phase3_full_assimilation
+		IRS_suez_crossing
+		IRS_turn_east
+		IRS_last_decade_threshold
+		IRS_phase0_inland_root
+		IRS_phase0_northern_surge
+		IRS_phase0_western_anchor
+		IRS_phase1_root_expansion
+		IRS_phase3_deep_inland
+		IRS_phase3_predation_doctrine
+		IRS_phase3_swarm_legend
+		IRS_daughters_awakening
+		IRS_tromos_contact
+		IRS_vitreous_contact
+		IRS_release_tethysic_puppet
+		IRS_phase3_global_signal
+		IRS_phase3_dispatcher_surge
+		IRS_phase3_manifestation_primer
 	}
 
 	research = {
@@ -150,6 +338,53 @@ IRS_lineage_adaptive_plan = {
 		IRS_dorm_tolerate_daylight
 		IRS_dorm_take_the_coast
 		IRS_dorm_learn_the_radio
+
+		IRS_phase_0_arrival
+		IRS_phase0_beckon_expansion
+		IRS_phase0_biomass_seeding
+		IRS_phase0_territory_consolidation
+		IRS_phase_1_proliferation
+		IRS_phase1_nocturnal_adaptation
+		IRS_phase1_rupter_aggression
+		IRS_phase1_adaptive_biology
+		IRS_phase1_spore_dispersal
+		IRS_phase1_hive_resonance
+		IRS_phase1_territorial_instinct
+		IRS_west_african_mobilization
+		IRS_continental_assault
+		IRS_phase_2_assimilation
+		IRS_phase2_tethysic_tide
+		IRS_phase2_african_surge
+		IRS_phase2_consumption_front
+		IRS_phase2_coastal_control
+		IRS_phase2_hive_signal
+		IRS_phase2_distributed_will
+		IRS_phase2_assimilation_directive
+		IRS_phase2_vector_mapping
+		IRS_phase2_dormant_transit
+		IRS_phase2_sac_emergence
+		IRS_phase_2_complete
+		IRS_phase_3_expansion
+		IRS_south_american_vectors
+		IRS_transoceanic_breach
+		IRS_phase3_full_assimilation
+		IRS_suez_crossing
+		IRS_turn_east
+		IRS_last_decade_threshold
+		IRS_phase3_dispatcher_surge
+		IRS_phase3_global_signal
+		IRS_release_tethysic_puppet
+		IRS_daughters_awakening
+		IRS_vitreous_contact
+		IRS_tromos_contact
+		IRS_phase0_inland_root
+		IRS_phase0_northern_surge
+		IRS_phase0_western_anchor
+		IRS_phase1_root_expansion
+		IRS_phase3_deep_inland
+		IRS_phase3_predation_doctrine
+		IRS_phase3_manifestation_primer
+		IRS_phase3_swarm_legend
 	}
 
 	research = {
@@ -182,6 +417,53 @@ IRS_lineage_telotic_plan = {
 		IRS_dorm_deepen_the_mat
 		IRS_dorm_pheromone_sync
 		IRS_dorm_thicken
+
+		IRS_phase_0_arrival
+		IRS_phase0_beckon_expansion
+		IRS_phase0_biomass_seeding
+		IRS_phase0_territory_consolidation
+		IRS_phase_1_proliferation
+		IRS_phase1_nocturnal_adaptation
+		IRS_phase1_rupter_aggression
+		IRS_phase1_adaptive_biology
+		IRS_phase1_spore_dispersal
+		IRS_phase1_hive_resonance
+		IRS_phase1_territorial_instinct
+		IRS_west_african_mobilization
+		IRS_continental_assault
+		IRS_phase_2_assimilation
+		IRS_phase2_tethysic_tide
+		IRS_phase2_african_surge
+		IRS_phase2_consumption_front
+		IRS_phase2_coastal_control
+		IRS_phase2_hive_signal
+		IRS_phase2_distributed_will
+		IRS_phase2_assimilation_directive
+		IRS_phase2_vector_mapping
+		IRS_phase2_dormant_transit
+		IRS_phase2_sac_emergence
+		IRS_phase_2_complete
+		IRS_phase_3_expansion
+		IRS_release_tethysic_puppet
+		IRS_south_american_vectors
+		IRS_transoceanic_breach
+		IRS_phase3_full_assimilation
+		IRS_suez_crossing
+		IRS_turn_east
+		IRS_last_decade_threshold
+		IRS_daughters_awakening
+		IRS_vitreous_contact
+		IRS_tromos_contact
+		IRS_phase3_dispatcher_surge
+		IRS_phase3_global_signal
+		IRS_phase3_deep_inland
+		IRS_phase3_predation_doctrine
+		IRS_phase3_manifestation_primer
+		IRS_phase3_swarm_legend
+		IRS_phase0_inland_root
+		IRS_phase0_northern_surge
+		IRS_phase0_western_anchor
+		IRS_phase1_root_expansion
 	}
 
 	research = {

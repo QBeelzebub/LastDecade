@@ -7,7 +7,7 @@ recruit_character = JAP_Leader
 
 create_corps_commander = {
 	name = "Takashi Yamamoto"
-	gfx = "GFX_Portrait_Europe_Generic_land_1"
+	gfx = "GFX_Portrait_Asia_Generic_land_1"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 3
@@ -17,7 +17,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Keiko Tanaka"
-	gfx = "GFX_Portrait_Europe_Generic_land_2"
+	gfx = "GFX_Portrait_Asia_Generic_land_2"
 	traits = { urban_assault_specialist }
 	skill = 2
 	attack_skill = 3
@@ -28,7 +28,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Hiroshi Nakamura"
-	gfx = "GFX_Portrait_Europe_Generic_navy_1"
+	gfx = "GFX_Portrait_Asia_Generic_navy_1"
 	traits = { navy_career_officer }
 	skill = 3
 	attack_skill = 2
@@ -64,6 +64,8 @@ set_popularities = {
 }
 
 add_ideas = srp_managed_imports
+add_ideas = JAP_pacific_treaty_idea
+add_ideas = JAP_island_economy
 
 create_equipment_variant = {
     name = "Type 10"

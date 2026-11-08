@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	LD_beckon_globe = {
+		context_type = player_context
+		window_name = "LD_beckon_globe_window"
+		parent_window_token = top_bar
+
+		visible = { always = yes }
+
+		properties = {
+			LD_beckon_globe_icon = {
+				frame = global.LD_beckon_globe_frame
+			}
+		}
+
+		ai_enabled = { always = no }
+	}
+}

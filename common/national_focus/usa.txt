@@ -24,9 +24,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_american_century = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
-			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.54 days = 2 }
+			custom_effect_tooltip = USA_dom_american_century_tt
+			news_event = { id = usa.54 days = 2 }
 		}
 	}
 
@@ -43,8 +42,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			add_war_support = 0.03
-			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.55 days = 3 }
+			news_event = { id = usa.55 days = 3 }
 		}
 	}
 
@@ -84,7 +82,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_nuclear_superiority = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_nuclear_superiority_tt
 			set_country_flag = USA_standoff_nuclear
 			add_war_support = 0.05
 			USA_trust_very_low_gain_effect = yes
@@ -107,10 +105,10 @@ focus_tree = {
 			hidden_effect = {
 				USA_mil_conventional_overmatch = yes
 			}
-			custom_effect_tooltip = USA_armed_forces_tt
+			custom_effect_tooltip = USA_mil_conventional_overmatch_tt
 			set_country_flag = USA_standoff_conventional
 			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.56 days = 1 }
+			news_event = { id = usa.56 days = 1 }
 		}
 	}
 
@@ -142,7 +140,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 20
 			set_country_flag = USA_atlantic_intel_groundwork
-			USA_trust_very_low_gain_effect = yes
 		}
 	}
 
@@ -173,7 +170,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			add_war_support = 0.05
-			USA_trust_very_low_gain_effect = yes
 			if = {
 				limit = { has_country_flag = USA_standoff_nuclear }
 				custom_effect_tooltip = USA_groundwork_standoff_nuclear_tt
@@ -185,7 +181,7 @@ focus_tree = {
 				custom_effect_tooltip = USA_groundwork_standoff_conventional_tt
 				army_experience = 25
 			}
-			country_event = { id = usa.57 days = 1 }
+			news_event = { id = usa.57 days = 1 }
 		}
 	}
 
@@ -201,7 +197,6 @@ focus_tree = {
 		prerequisite = { focus = USA_american_century }
 		completion_reward = {
 			add_political_power = 40
-			USA_trust_very_low_gain_effect = yes
 		}
 	}
 
@@ -216,7 +211,7 @@ focus_tree = {
 		prerequisite = { focus = USA_state_of_the_union }
 		completion_reward = {
 			add_political_power = 25
-			country_event = { id = usa.50 days = 1 }
+			news_event = { id = usa.50 days = 1 }
 		}
 	}
 
@@ -237,10 +232,10 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_populist_surge = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_populist_surge_tt
 			set_country_flag = USA_populist_ascendant
 			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.51 days = 1 }
+			news_event = { id = usa.51 days = 1 }
 		}
 	}
 
@@ -260,10 +255,10 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_establishment_consensus = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_establishment_consensus_tt
 			set_country_flag = USA_establishment_ascendant
 			USA_trust_low_gain_effect = yes
-			country_event = { id = usa.52 days = 1 }
+			news_event = { id = usa.52 days = 1 }
 		}
 	}
 
@@ -280,7 +275,7 @@ focus_tree = {
 			add_political_power = 40
 			add_stability = 0.03
 			USA_trust_low_gain_effect = yes
-			country_event = { id = usa.58 days = 2 }
+			news_event = { id = usa.58 days = 2 }
 		}
 	}
 
@@ -296,7 +291,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 30
 			add_stability = 0.03
-			USA_trust_very_low_gain_effect = yes
 		}
 	}
 
@@ -327,7 +321,6 @@ focus_tree = {
 		prerequisite = { focus = USA_american_century }
 		completion_reward = {
 			army_experience = 40
-			USA_trust_very_low_gain_effect = yes
 		}
 	}
 
@@ -358,7 +351,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 25
 			add_political_power = 25
-			country_event = { id = usa.60 days = 2 }
+			news_event = { id = usa.60 days = 2 }
 		}
 	}
 
@@ -376,7 +369,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_res_technological_edge = yes
 			}
-			custom_effect_tooltip = USA_technical_directorate_tt
+			custom_effect_tooltip = USA_res_technological_edge_tt
 			set_country_flag = USA_procurement_tech
 			add_tech_bonus = {
 				name = USA_technological_edge
@@ -402,7 +395,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_arsenal_of_democracy = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_arsenal_of_democracy_tt
 			set_country_flag = USA_procurement_mass
 			USA_trust_very_low_gain_effect = yes
 		}
@@ -456,7 +449,7 @@ focus_tree = {
 				custom_effect_tooltip = USA_groundwork_procurement_mass_tt
 				add_manpower = 20000
 			}
-			country_event = { id = usa.61 days = 1 }
+			news_event = { id = usa.61 days = 1 }
 		}
 	}
 
@@ -475,8 +468,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_peace_dividend = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
-			country_event = { id = usa.75 days = 5 }
+			custom_effect_tooltip = USA_ind_peace_dividend_tt
+			news_event = { id = usa.75 days = 5 }
 		}
 	}
 
@@ -510,9 +503,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_mil_war_college = yes
 			}
-			custom_effect_tooltip = USA_armed_forces_tt
-			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.62 days = 2 }
+			custom_effect_tooltip = USA_mil_war_college_tt
+			news_event = { id = usa.62 days = 2 }
 		}
 	}
 
@@ -529,8 +521,7 @@ focus_tree = {
 			army_experience = 25
 			add_ideas = USA_war_plan_north_spirit
 			set_country_flag = USA_war_plan_north_drawn
-			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.63 days = 1 }
+			news_event = { id = usa.63 days = 1 }
 		}
 	}
 
@@ -549,10 +540,9 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_prepared_union = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_prepared_union_tt
 			set_country_flag = USA_union_consolidated
-			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.59 days = 1 }
+			news_event = { id = usa.59 days = 1 }
 		}
 	}
 
@@ -570,10 +560,10 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_cold_war_posture = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_cold_war_posture_tt
 			set_country_flag = USA_continental_sovereignty_reaffirmed
 			add_political_power = 25
-			country_event = { id = usa.76 days = 2 }
+			news_event = { id = usa.76 days = 2 }
 		}
 	}
 
@@ -587,13 +577,9 @@ focus_tree = {
 		prerequisite = { focus = USA_continental_sovereignty }
 		mutually_exclusive = { focus = USA_summit_acceptance }
 		completion_reward = {
-			set_country_flag = USA_summit_skeptical_posture
 			add_political_power = 15
 			add_war_support = 0.03
-			EFH = {
-				set_country_flag = USA_summit_skeptical_posture
-			}
-			country_event = { id = usa.66 days = 1 }
+			news_event = { id = usa.66 days = 1 }
 		}
 		ai_will_do = { base = 30 }
 	}
@@ -614,7 +600,7 @@ focus_tree = {
 			EFH = {
 				set_country_flag = USA_summit_cooperative_posture
 			}
-			country_event = { id = usa.67 days = 1 }
+			news_event = { id = usa.67 days = 1 }
 		}
 		ai_will_do = { base = 2 }
 	}
@@ -634,7 +620,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_domestic_continuity = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_domestic_continuity_tt
 			if = {
 				limit = { has_country_flag = USA_union_consolidated }
 				custom_effect_tooltip = USA_groundwork_union_tt
@@ -664,7 +650,6 @@ focus_tree = {
 			check_variable = { EFH_USA_escalation > 49 }
 		}
 		completion_reward = {
-			set_country_flag = USA_cold_war_extended
 			add_war_support = 0.05
 			army_experience = 15
 			custom_effect_tooltip = USA_canadian_theater_future_tt
@@ -706,7 +691,7 @@ focus_tree = {
 				uses = 1
 				category = srp_incendiary
 			}
-			country_event = { id = usa.64 days = 1 }
+			news_event = { id = usa.64 days = 1 }
 		}
 	}
 
@@ -725,9 +710,9 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_security_incident_framing = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_security_incident_framing_tt
 			custom_effect_tooltip = USA_anomalous_infestation_tt
-			country_event = { id = usa.65 days = 1 }
+			news_event = { id = usa.65 days = 1 }
 		}
 	}
 
@@ -777,14 +762,13 @@ focus_tree = {
 		ai_will_do = { base = 10 }
 		prerequisite = { focus = USA_cold_war_extension }
 		completion_reward = {
-			set_country_flag = USA_canadian_theater_pre_positioned
 			hidden_effect = {
 				USA_mil_canadian_theater_posture = yes
 			}
-			custom_effect_tooltip = USA_armed_forces_tt
+			custom_effect_tooltip = USA_mil_canadian_theater_posture_tt
 			army_experience = 25
 			custom_effect_tooltip = USA_canadian_theater_preposition_tt
-			country_event = { id = usa.70 days = 2 }
+			news_event = { id = usa.70 days = 2 }
 			if = {
 				limit = { has_country_flag = USA_war_plan_north_drawn }
 				custom_effect_tooltip = USA_groundwork_war_plan_tt
@@ -827,7 +811,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_fossil_economy = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_fossil_economy_tt
 		}
 	}
 
@@ -847,10 +831,10 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_war_economy = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_war_economy_tt
 			add_timed_idea = { idea = USA_manufacturing_surge days = 365 }
 			USA_trust_very_low_loss_effect = yes
-			country_event = { id = usa.68 days = 1 }
+			news_event = { id = usa.68 days = 1 }
 		}
 	}
 
@@ -871,10 +855,10 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_industrial_capacity = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_industrial_capacity_tt
 			add_stability = 0.05
 			USA_trust_very_low_gain_effect = yes
-			country_event = { id = usa.69 days = 1 }
+			news_event = { id = usa.69 days = 1 }
 		}
 	}
 
@@ -895,7 +879,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_fissile_energy = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_fissile_energy_tt
 		}
 	}
 
@@ -953,7 +937,7 @@ focus_tree = {
 				uses = 1
 				category = srp_cyber_tech
 			}
-			country_event = { id = usa.71 days = 1 }
+			news_event = { id = usa.71 days = 1 }
 		}
 	}
 
@@ -974,7 +958,7 @@ focus_tree = {
 				uses = 1
 				category = srp_incendiary
 			}
-			country_event = { id = usa.72 days = 1 }
+			news_event = { id = usa.72 days = 1 }
 		}
 	}
 
@@ -1007,8 +991,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_economic_nationalism = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
-			country_event = { id = usa.73 days = 1 }
+			custom_effect_tooltip = USA_dom_economic_nationalism_tt
+			news_event = { id = usa.73 days = 1 }
 			if = {
 				limit = { has_country_flag = USA_populist_ascendant }
 				add_political_power = 50
@@ -1035,8 +1019,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_economic_freedom = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
-			country_event = { id = usa.74 days = 1 }
+			custom_effect_tooltip = USA_ind_economic_freedom_tt
+			news_event = { id = usa.74 days = 1 }
 			if = {
 				limit = { has_country_flag = USA_establishment_ascendant }
 				add_political_power = 50
@@ -1079,13 +1063,13 @@ focus_tree = {
 			hidden_effect = {
 				USA_ind_defense_spending = yes
 			}
-			custom_effect_tooltip = USA_industrial_might_tt
+			custom_effect_tooltip = USA_ind_defense_spending_tt
 			378 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 			362 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 			hidden_effect = {
 				USA_mil_mil_standard = yes
 			}
-			custom_effect_tooltip = USA_armed_forces_tt
+			custom_effect_tooltip = USA_mil_mil_standard_tt
 			USA_trust_very_low_gain_effect = yes
 		}
 	}
@@ -1105,8 +1089,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_for_hemispheric_primacy = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
-			country_event = { id = usa.3 days = 1 }
+			custom_effect_tooltip = USA_for_hemispheric_primacy_tt
+			news_event = { id = usa.3 days = 1 }
 		}
 	}
 
@@ -1142,7 +1126,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_pan_american_bloc = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_pan_american_bloc_tt
 		}
 	}
 
@@ -1167,8 +1151,8 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_domestic_containment_doctrine = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
-			country_event = { id = usa.2 days = 1 }
+			custom_effect_tooltip = USA_dom_domestic_containment_doctrine_tt
+			news_event = { id = usa.2 days = 1 }
 			hidden_effect = {
 				add_to_variable = { var = public_panic value = -120 }
 				SRP_recalculate_public_panic_effect = yes
@@ -1190,7 +1174,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_quarantine_authority = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_quarantine_authority_tt
 			set_country_flag = USA_quarantine_authority_active
 		}
 	}
@@ -1210,7 +1194,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_mil_continental_defense_command = yes
 			}
-			custom_effect_tooltip = USA_armed_forces_tt
+			custom_effect_tooltip = USA_mil_continental_defense_command_tt
 		}
 	}
 
@@ -1231,12 +1215,12 @@ focus_tree = {
 			hidden_effect = {
 				USA_for_doctrine_reckoning = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_for_doctrine_reckoning_tt
 			create_intelligence_agency = {
 				name = "Office of Special Threat Intelligence"
 				icon = GFX_intelligence_agency_logo_usa
 			}
-			country_event = { id = usa.4 days = 1 }
+			news_event = { id = usa.4 days = 1 }
 		}
 	}
 
@@ -1254,7 +1238,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_res_dispatcher_blindspot = yes
 			}
-			custom_effect_tooltip = USA_technical_directorate_tt
+			custom_effect_tooltip = USA_res_dispatcher_blindspot_tt
 			add_tech_bonus = {
 				name = USA_own_the_failure
 				bonus = 0.75
@@ -1350,7 +1334,7 @@ focus_tree = {
 				custom_effect_tooltip = USA_knox_buried_record_tt
 				USA_trust_very_low_loss_effect = yes
 			}
-			country_event = { id = usa.77 days = 1 }
+			news_event = { id = usa.77 days = 1 }
 		}
 	}
 
@@ -1368,9 +1352,9 @@ focus_tree = {
 			hidden_effect = {
 				USA_mil_appalachian_cordon = yes
 			}
-			custom_effect_tooltip = USA_armed_forces_tt
+			custom_effect_tooltip = USA_mil_appalachian_cordon_tt
 			army_experience = 25
-			country_event = { id = usa.79 days = 1 }
+			news_event = { id = usa.79 days = 1 }
 		}
 		ai_will_do = { base = 100 }
 	}
@@ -1393,7 +1377,7 @@ focus_tree = {
 				add_to_faction = KNX
 			}
 			add_political_power = 50
-			country_event = { id = usa.78 days = 1 }
+			news_event = { id = usa.78 days = 1 }
 		}
 		ai_will_do = { base = 0 }
 	}
@@ -1414,7 +1398,7 @@ focus_tree = {
 				category = srp_incendiary
 			}
 			add_ideas = USA_incendiary_clearance_spirit
-			country_event = { id = usa.80 days = 1 }
+			news_event = { id = usa.80 days = 1 }
 		}
 		ai_will_do = { base = 100 }
 	}
@@ -1428,7 +1412,7 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = USA_incendiary_clearance_push }
 		available = {
-			date > 2023.9.1
+			date > 2024.6.1
 			country_exists = KNX
 		}
 		completion_reward = {
@@ -1444,7 +1428,7 @@ focus_tree = {
 			}
 			add_ideas = USA_knox_offensive_doctrine
 			add_war_support = 0.05
-			country_event = { id = usa.81 days = 1 }
+			news_event = { id = usa.81 days = 1 }
 		}
 		ai_will_do = { base = 100 }
 	}
@@ -1462,7 +1446,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_for_great_power_doctrine = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_for_great_power_doctrine_tt
 			add_war_support = 0.05
 		}
 	}
@@ -1480,7 +1464,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_country_flag = EFH_SAC_sphere_detected
-				has_country_flag = EFH_SAC_sphere
+				EFH = { has_country_flag = EFH_SAC_sphere }
 			}
 		}
 		completion_reward = {
@@ -1489,7 +1473,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_for_monroe_doctrine = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_for_monroe_doctrine_tt
 			country_event = { id = usa_efh_war.1 days = 1 }
 		}
 	}
@@ -1507,7 +1491,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_dom_efh_exclusion = yes
 			}
-			custom_effect_tooltip = USA_domestic_order_tt
+			custom_effect_tooltip = USA_dom_efh_exclusion_tt
 			EFH = { add_timed_idea = { idea = USA_efh_market_exclusion days = 730 } }
 			add_political_power = 25
 		}
@@ -1528,7 +1512,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_for_western_hemisphere_bloc = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_for_western_hemisphere_bloc_tt
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1555,7 +1539,7 @@ focus_tree = {
 			hidden_effect = {
 				USA_for_pacific_containment = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_for_pacific_containment_tt
 			custom_effect_tooltip = USA_pacific_containment_tt
 		}
 	}
@@ -1570,11 +1554,10 @@ focus_tree = {
 		ai_will_do = { base = 2 }
 		prerequisite = { focus = USA_pacific_containment }
 		completion_reward = {
-			set_country_flag = USA_china_embargo_active
 			hidden_effect = {
 				USA_for_beijing_confrontation = yes
 			}
-			custom_effect_tooltip = USA_hemispheric_posture_tt
+			custom_effect_tooltip = USA_for_beijing_confrontation_tt
 			add_war_support = 0.05
 		}
 	}
@@ -1592,7 +1575,6 @@ focus_tree = {
 			EFH = { has_country_flag = EFH_japan_aligned }
 		}
 		completion_reward = {
-			set_country_flag = USA_pacific_war_authorized
 			add_war_support = 0.10
 			hidden_effect = {
 				country_event = { id = usa_efh_war.3 days = 3 }

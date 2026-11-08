@@ -18,3 +18,5 @@ set_popularities = {
 	communism = 0
 	neutrality = 100
 }
+
+recruit_character = TET_root_beckon

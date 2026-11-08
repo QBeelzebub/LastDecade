@@ -367,6 +367,7 @@ srp_public_confidence = {
         complete_effect = {
             custom_effect_tooltip = EFH_armageddon_irreversible_tt
             set_country_flag = EFH_armageddon_declared
+            add_named_threat = { threat = 10 name = SRP_threat_armageddon }
             set_variable = { var = public_panic value = 1000 }
             add_ideas = EFH_armageddon_state
             hidden_effect = { SRP_recalculate_public_panic_effect = yes }

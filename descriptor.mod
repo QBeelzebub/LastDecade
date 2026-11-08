@@ -1,9 +1,8 @@
-name="Scape & Run: The Last Decade"
+name="Overwinter: The Last Decade"
 tags={
 	"Total Conversion"
 }
-version="0.13.0-indev"
-supported_version="1.19.*"
+version="0.15.0"
 replace_path="common/military_industrial_organization"
 replace_path="common/military_industrial_organization/policies"
 replace_path="common/military_industrial_organization/organizations"
@@ -80,5 +79,6 @@ replace_path="common/doctrines/subdoctrines/sea"
 replace_path="common/doctrines/tracks"
 replace_path="common/game_rules"
 replace_path="common/difficulty_settings"
+supported_version="1.19.*"
 path="C:/Users/Honaaa/Documents/Paradox Interactive/Hearts of Iron IV/mod/LastDecade"
 remote_file_id="3786427391"

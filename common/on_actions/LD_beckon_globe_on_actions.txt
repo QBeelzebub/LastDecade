@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			IRS = { LD_update_beckon_globe = yes }
+		}
+	}
+	on_monthly_IRS = {
+		effect = {
+			LD_update_beckon_globe = yes
+		}
+	}
+}

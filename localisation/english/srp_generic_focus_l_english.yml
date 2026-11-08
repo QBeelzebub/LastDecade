@@ -1,0 +1,170 @@
+﻿l_english:
+
+ JAP_mobilize_the_nation: "Mobilise the Nation"
+ JAP_mobilize_the_nation_desc: "With the worsening outlook of the world, we have no choice but to prepare our nation for conflict, whatever it is."
+
+ JAP_crisis_governance: "Crisis Governance"
+ JAP_crisis_governance_desc: "There is always a crisis somewhere in the country, and emergency administration handles it faster. Which crisis depends on who you ask."
+
+ JAP_popular_mandate: "Popular Mandate"
+ JAP_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
+
+ JAP_wartime_mandate: "Wartime Mandate"
+ JAP_wartime_mandate_desc: "The emergency powers get written into law. Unclear end date."
+
+ JAP_industrial_base: "Expand the Industrial Base"
+ JAP_industrial_base_desc: "Civilian factory construction accelerates."
+
+ JAP_arms_manufacture: "Arms Manufacture"
+ JAP_arms_manufacture_desc: "New military plants, lest we fall behind."
+
+ JAP_war_economy: "War Economy"
+ JAP_war_economy_desc: "The economy converts to war production in full. Supposedly temporary."
+
+ JAP_infrastructure_push: "Infrastructure Push"
+ JAP_infrastructure_push_desc: "Infrastructure is a requirement for any national growth, and we want national growth."
+
+ JAP_resource_extraction: "Resource Extraction"
+ JAP_resource_extraction_desc: "Our natural riches lie unexploited. We could use a little push for our economy."
+
+ JAP_logistics_network: "Logistics Network"
+ JAP_logistics_network_desc: "Depots, rail sidings and trucks. An army only goes as far as its supply does."
+
+ JAP_university_funding: "University Funding"
+ JAP_university_funding_desc: "An educated population is a productive population. We should partake in the rapid expansion of human knowledge."
+
+ JAP_applied_sciences: "Applied Sciences"
+ JAP_applied_sciences_desc: "While maths, hypotheses and theories are all well and good, we need to put them to use."
+
+ JAP_tech_acceleration: "Technology Acceleration"
+ JAP_tech_acceleration_desc: "A massive round of funding towards our scientific bodies, staffed by the brightest in our nation."
+
+
+ OCE_mobilize_the_nation: "Mobilise the Nation"
+ OCE_mobilize_the_nation_desc: "With the worsening outlook of the world, we have no choice but to prepare our nation for conflict, whatever it is."
+
+ OCE_crisis_governance: "Crisis Governance"
+ OCE_crisis_governance_desc: "There is always a crisis somewhere in the country, and emergency administration handles it faster. Which crisis depends on who you ask."
+
+ OCE_popular_mandate: "Popular Mandate"
+ OCE_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
+
+ OCE_wartime_mandate: "Wartime Mandate"
+ OCE_wartime_mandate_desc: "The emergency powers get written into law. Unclear end date."
+
+ OCE_industrial_base: "Expand the Industrial Base"
+ OCE_industrial_base_desc: "Civilian factory construction accelerates."
+
+ OCE_arms_manufacture: "Arms Manufacture"
+ OCE_arms_manufacture_desc: "New military plants, lest we fall behind."
+
+ OCE_war_economy: "War Economy"
+ OCE_war_economy_desc: "The economy converts to war production in full. Supposedly temporary."
+
+ OCE_infrastructure_push: "Infrastructure Push"
+ OCE_infrastructure_push_desc: "Infrastructure is a requirement for any national growth, and we want national growth."
+
+ OCE_resource_extraction: "Resource Extraction"
+ OCE_resource_extraction_desc: "Our natural riches lie unexploited. We could use a little push for our economy."
+
+ OCE_logistics_network: "Logistics Network"
+ OCE_logistics_network_desc: "Depots, rail sidings and trucks. An army only goes as far as its supply does."
+
+ OCE_university_funding: "University Funding"
+ OCE_university_funding_desc: "An educated population is a productive population. We should partake in the rapid expansion of human knowledge."
+
+ OCE_applied_sciences: "Applied Sciences"
+ OCE_applied_sciences_desc: "While maths, hypotheses and theories are all well and good, we need to put them to use."
+
+ OCE_tech_acceleration: "Technology Acceleration"
+ OCE_tech_acceleration_desc: "A massive round of funding towards our scientific bodies, staffed by the brightest in our nation."
+
+
+ SAC_mobilize_the_nation: "Mobilise the Nation"
+ SAC_mobilize_the_nation_desc: "With the worsening outlook of the world, we have no choice but to prepare our nation for conflict, whatever it is."
+
+ SAC_crisis_governance: "Crisis Governance"
+ SAC_crisis_governance_desc: "There is always a crisis somewhere in the country, and emergency administration handles it faster. Which crisis depends on who you ask."
+
+ SAC_popular_mandate: "Popular Mandate"
+ SAC_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
+
+ SAC_wartime_mandate: "Wartime Mandate"
+ SAC_wartime_mandate_desc: "The emergency powers get written into law. Unclear end date."
+
+ SAC_industrial_base: "Expand the Industrial Base"
+ SAC_industrial_base_desc: "Civilian factory construction accelerates."
+
+ SAC_arms_manufacture: "Arms Manufacture"
+ SAC_arms_manufacture_desc: "New military plants, lest we fall behind."
+
+ SAC_war_economy: "War Economy"
+ SAC_war_economy_desc: "The economy converts to war production in full. Supposedly temporary."
+
+ SAC_infrastructure_push: "Infrastructure Push"
+ SAC_infrastructure_push_desc: "Infrastructure is a requirement for any national growth, and we want national growth."
+
+ SAC_resource_extraction: "Resource Extraction"
+ SAC_resource_extraction_desc: "Our natural riches lie unexploited. We could use a little push for our economy."
+
+ SAC_logistics_network: "Logistics Network"
+ SAC_logistics_network_desc: "Depots, rail sidings and trucks. An army only goes as far as its supply does."
+
+ SAC_university_funding: "University Funding"
+ SAC_university_funding_desc: "An educated population is a productive population. We should partake in the rapid expansion of human knowledge."
+
+ SAC_applied_sciences: "Applied Sciences"
+ SAC_applied_sciences_desc: "While maths, hypotheses and theories are all well and good, we need to put them to use."
+
+ SAC_tech_acceleration: "Technology Acceleration"
+ SAC_tech_acceleration_desc: "A massive round of funding towards our scientific bodies, staffed by the brightest in our nation."
+
+
+ AFR_mobilize_the_nation: "Mobilise the Nation"
+ AFR_mobilize_the_nation_desc: "With the worsening outlook of the world, we have no choice but to prepare our nation for conflict, whatever it is."
+
+ AFR_crisis_governance: "Crisis Governance"
+ AFR_crisis_governance_desc: "There is always a crisis somewhere in the country, and emergency administration handles it faster. Which crisis depends on who you ask."
+
+ AFR_popular_mandate: "Popular Mandate"
+ AFR_popular_mandate_desc: "We ask the public to accept what is coming and to keep believing we can manage it. So far they have."
+
+ AFR_wartime_mandate: "Wartime Mandate"
+ AFR_wartime_mandate_desc: "The emergency powers get written into law. Unclear end date."
+
+ AFR_industrial_base: "Expand the Industrial Base"
+ AFR_industrial_base_desc: "Civilian factory construction accelerates."
+
+ AFR_arms_manufacture: "Arms Manufacture"
+ AFR_arms_manufacture_desc: "New military plants, lest we fall behind."
+
+ AFR_war_economy: "War Economy"
+ AFR_war_economy_desc: "The economy converts to war production in full. Supposedly temporary."
+
+ AFR_infrastructure_push: "Infrastructure Push"
+ AFR_infrastructure_push_desc: "Infrastructure is a requirement for any national growth, and we want national growth."
+
+ AFR_resource_extraction: "Resource Extraction"
+ AFR_resource_extraction_desc: "Our natural riches lie unexploited. We could use a little push for our economy."
+
+ AFR_logistics_network: "Logistics Network"
+ AFR_logistics_network_desc: "Depots, rail sidings and trucks. An army only goes as far as its supply does."
+
+ AFR_university_funding: "University Funding"
+ AFR_university_funding_desc: "An educated population is a productive population. We should partake in the rapid expansion of human knowledge."
+
+ AFR_applied_sciences: "Applied Sciences"
+ AFR_applied_sciences_desc: "While maths, hypotheses and theories are all well and good, we need to put them to use."
+
+ AFR_tech_acceleration: "Technology Acceleration"
+ AFR_tech_acceleration_desc: "A massive round of funding towards our scientific bodies, staffed by the brightest in our nation."
+
+ liberty_ethos_focus_desc: "Civil institutions hold their shape under pressure. Harder to push the country somewhere it does not want to go, and easier to spend political capital when it counts."
+ militarism_focus_desc: "The armed forces are treated as an instrument of policy rather than a last resort. Wars are justified faster and provoke less alarm abroad."
+ volunteer_corps_focus_desc: "A standing framework for sending troops to other people's wars, and a lower bar for doing it."
+ foreign_expeditions_focus_desc: "Expeditionary deployments are treated as training. Larger contingents go out, and the army learns from what happens to them."
+ why_we_fight_focus_desc: "The public has been told what the war is for, in terms it accepts. The country absorbs losses that would otherwise end it."
+ military_youth_focus_desc: "Military instruction begins before conscription age. Recruits arrive already knowing the basics, and there are more of them."
+ paramilitarism_focus_desc: "Armed organisations outside the regular chain of command. Useful manpower, and formations that hold together under strain."
+ political_commissars_focus_desc: "Political officers attached to units. Morale is maintained and the home front stays quiet, by whichever means the posting requires."
+ ideological_fanaticism_focus_desc: "Belief substituted for calculation. The country will keep fighting well past the point where it should have stopped."

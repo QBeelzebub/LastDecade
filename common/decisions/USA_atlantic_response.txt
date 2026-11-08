@@ -159,6 +159,8 @@ SRP_political_interference_category = {
 		visible = {
 			original_tag = USA
 			has_country_flag = EFH_china_trade_detected
+			country_exists = CHN
+			CHN = { has_country_flag = CHN_efh_trade_accepted }
 			country_exists = EFH
 		}
 

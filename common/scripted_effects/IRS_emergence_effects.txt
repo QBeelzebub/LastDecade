@@ -8,6 +8,12 @@ SRP_recompute_infestation_derived = {
 	set_variable = { var = iris_infestation_supply value = iris_infestation_level }
 	multiply_variable = { var = iris_infestation_supply value = 0.02 }
 
+	set_variable = { var = iris_infestation_supply_factor value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_supply_factor value = 0.01 }
+
+	set_variable = { var = iris_infestation_enemy_supply value = iris_infestation_level }
+	multiply_variable = { var = iris_infestation_enemy_supply value = -0.005 }
+
 	set_variable = { var = iris_infestation_biomass value = iris_infestation_level }
 	multiply_variable = { var = iris_infestation_biomass value = 0.05 }
 
@@ -119,6 +125,51 @@ IRS_refresh_dormancy_adaptation = {
 	add_dynamic_modifier = { modifier = IRS_dormancy_adaptation }
 }
 
+IRS_stamp_lineage_by_difficulty = {
+	if = {
+		limit = { NOT = { difficulty > 0 } }
+		set_country_flag = IRS_archetype_tromos
+		add_ideas = IRS_archetype_tromos_spirit
+	}
+	if = {
+		limit = { difficulty > 0  NOT = { difficulty > 1 } }
+		set_country_flag = IRS_archetype_vitreous
+		add_ideas = IRS_archetype_vitreous_spirit
+	}
+	if = {
+		limit = { difficulty > 1  NOT = { difficulty > 2 } }
+		set_country_flag = IRS_archetype_iris
+		add_ideas = IRS_archetype_iris_spirit
+	}
+	if = {
+		limit = {
+			difficulty > 2  NOT = { difficulty > 3 }
+			has_country_flag = IRS_collapse_unchecked
+		}
+		set_country_flag = IRS_archetype_unchecked
+		add_ideas = IRS_archetype_unchecked_spirit
+	}
+	if = {
+		limit = {
+			difficulty > 2  NOT = { difficulty > 3 }
+			has_country_flag = IRS_collapse_adaptive
+		}
+		set_country_flag = IRS_archetype_adaptive
+		add_ideas = IRS_archetype_adaptive_spirit
+	}
+	if = {
+		limit = { difficulty > 3 }
+		set_country_flag = IRS_archetype_telotic
+		add_ideas = IRS_archetype_telotic_spirit
+	}
+	set_country_flag = IRS_lineage_resolved
+
+	if = {
+		limit = { has_country_flag = IRS_archetype_telotic }
+		load_oob = "IRS_telotic_navy"
+	}
+}
+
 IRS_resolve_lineage = {
 	set_variable = { var = IRS_net_coord value = IRS_lean_held }
 	subtract_from_variable = { var = IRS_net_coord value = IRS_lean_loose }
@@ -220,7 +271,13 @@ IRS_perform_emergence = {
 
 		load_oob = "IRS_2020"
 
+		if = {
+			limit = { has_country_flag = IRS_archetype_telotic }
+			load_oob = "IRS_telotic_navy"
+		}
+
 		add_ideas = IRS_active_emergence
+		add_research_slot = 1
 
 		if = {
 			limit = { OR = { has_country_flag = IRS_archetype_tromos has_country_flag = IRS_archetype_unchecked } }
@@ -277,6 +334,7 @@ IRS_perform_emergence = {
 		}
 
 		news_event = { id = world.30 days = 1 }
+		add_named_threat = { threat = 5 name = SRP_threat_iris_arrival }
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -293,10 +351,10 @@ IRS_perform_emergence = {
 
 		EFH = {
 			set_country_flag = EFH_sf6_lawsuit_active
-			country_event = { id = efh_hna.3 days = 14 }
+			news_event = { id = efh_hna.3 days = 14 }
 
 			set_country_flag = EFH_prologue_closed
-			country_event = { id = ldpro.10 days = 1 }
+			news_event = { id = ldpro.10 days = 1 }
 		}
 	}
 }

@@ -14,7 +14,7 @@
  knx_override_iris_state: "Override Iris Root Network in [FROM.GetName]"
  knx_override_iris_state_desc: "The Iris has already consumed [FROM.GetName]. VAGRANT-01 can still unmake its root pattern, but the work is slower and costlier. The old root pattern fights back the whole way."
  knx_nexus_relocation: "Knox Nexus Relocation"
- knx_nexus_relocation_desc: "The Knox hive can shift its active center to already-integrated ground."
+ knx_nexus_relocation_desc: "The Knox hive can shift its active centre to already-integrated ground."
  knx_relocate_nexus: "Relocate Knox Nexus to [FROM.GetName]"
  knx_relocate_nexus_desc: "The local nexus can be re-anchored in [FROM.GetName]. The movement is slow and hard to reverse."
 
@@ -51,7 +51,7 @@
  KNX_hive_construction_phase_1_desc: "The early structures are cultivated to hive specification. Root depth increases. Receiver density improves. Redundancy is grown in place."
  KNX_us_invisibility_continued: "Continue Invisibility"
  KNX_us_invisibility_continued_desc: "The United States has a category for anomalous infestation. It does not yet have a category for this. That gap remains useful."
- KNX_unacknowledged_efh_channel: "Unacknowledged EF Channel"
+ KNX_unacknowledged_efh_channel: "Unacknowledged Federation Channel"
  KNX_unacknowledged_efh_channel_desc: "The Federation receives what Knox sends. Nothing about the channel is written down."
  KNX_resource_exchange_terms: "Resource Exchange Terms"
  KNX_resource_exchange_terms_desc: "Information has value. So does silence. The exchange rate is adjusted accordingly."
@@ -106,7 +106,7 @@
  KNX_human_diplomacy_unlocked_tt: "Knox County may now conduct diplomacy with human states, including lend-lease, guarantees and faction membership."
 
 
- KNX_loyal_strain_cultivation: "Loyal Strain Program"
+ KNX_loyal_strain_cultivation: "Loyal Strain Programme"
  KNX_loyal_strain_cultivation_desc: "Vagrant 1 has spent two years understanding the Beckon network from inside it. The next step is to cultivate organisms carrying the vagrant's own biological signature, which answer to nobody else."
  KNX_personal_guard: "The Personal Guard"
  KNX_personal_guard_desc: "The first loyal parasite brood is small enough to lose in an afternoon. They fight differently, following one signal with none of the panic found in Iris-directed organisms."
@@ -165,6 +165,15 @@
  knx.6.d: "The accord as drafted covers resource transfers, disclosure limits and a schedule of contacts. Knox County has added a clause at the end asking the Federation to state publicly that an attack on the county would be treated as an attack on the Federation.\n\nThe cost of saying so is five points of political capital. The cost of the Americans reading it is not estimated."
  knx.6.a: "Sign the clause as written."
  knx.6.b: "Strike it. The rest stands."
+ knx.7.t: "Across the Border"
+ knx.7.d: "Knox County has fallen. The county is still infested and the growth under Louisville is still alive, but there is nobody left in Kentucky to direct it.\n\nThe Federation has agreed to host what remains of the county's leadership in Canada until there is ground to go back to."
+ knx.7.a: "Go north."
+ knx.8.t: "Knox Goes Home"
+ knx.8.d: "Kentucky is back within reach. The county's leadership, hosted in Canada since the collapse, has asked for transport south.\n\nThe growth under Louisville never stopped. It has been waiting for them."
+ knx.8.a: "Send them home."
+ knx.9.t: "Kentucky Lost Again"
+ knx.9.d: "Knox County has returned. The state is under its control again, run by the same organisation that held it before the collapse.\n\nThe Federation arranged the transport."
+ knx.9.a: "Not again."
 
 
  KNX_vagrant_genome_mio: "1st Vagrant Genome"

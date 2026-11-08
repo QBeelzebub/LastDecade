@@ -1,0 +1,15 @@
+
+on_actions = {
+
+	on_weekly_EFH = {
+		effect = {
+			LD_world_news_tick_effect = yes
+		}
+	}
+
+	on_weekly_USA = {
+		effect = {
+			LD_world_news_tick_effect = yes
+		}
+	}
+}

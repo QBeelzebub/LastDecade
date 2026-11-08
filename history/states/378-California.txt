@@ -13,11 +13,12 @@ state={
 
 	history={
 		owner = USA
+		add_extra_state_shared_building_slots = 45
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 6
-			dockyard = 2
+			arms_factory = 15
+			industrial_complex = 28
+			dockyard = 12
 			air_base = 10
 			1562 = {
 				naval_base = 10
@@ -44,11 +45,6 @@ state={
 		}
 		victory_points = {
 			9713 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-			}
 		}
 	}
 

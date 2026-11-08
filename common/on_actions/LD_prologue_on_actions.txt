@@ -62,7 +62,7 @@ on_actions = {
 					NOT = { has_country_flag = EFH_prologue_closed }
 				}
 				set_country_flag = EFH_prologue_closed
-				country_event = { id = ldpro.10 days = 1 }
+				news_event = { id = ldpro.10 days = 1 }
 			}
 
 			if = {
@@ -72,8 +72,8 @@ on_actions = {
 				}
 				set_global_flag = LD_prologue_drift_1
 				SRP_escalate_drift_effect = yes
-				country_event = { id = ldpro.1 days = 2 }
-				USA = { country_event = { id = ldpro.1 days = 2 } }
+				news_event = { id = ldpro.1 days = 2 }
+				USA = { news_event = { id = ldpro.1 days = 2 } }
 			}
 
 			if = {
@@ -83,8 +83,8 @@ on_actions = {
 				}
 				set_global_flag = LD_prologue_drift_2
 				SRP_escalate_drift_effect = yes
-				country_event = { id = ldpro.2 days = 2 }
-				USA = { country_event = { id = ldpro.2 days = 2 } }
+				news_event = { id = ldpro.2 days = 2 }
+				USA = { news_event = { id = ldpro.2 days = 2 } }
 			}
 
 			if = {
@@ -94,8 +94,8 @@ on_actions = {
 				}
 				set_global_flag = LD_prologue_drift_3
 				SRP_escalate_drift_effect = yes
-				country_event = { id = ldpro.3 days = 2 }
-				USA = { country_event = { id = ldpro.3 days = 2 } }
+				news_event = { id = ldpro.3 days = 2 }
+				USA = { news_event = { id = ldpro.3 days = 2 } }
 			}
 
 			if = {
@@ -105,8 +105,8 @@ on_actions = {
 				}
 				set_global_flag = LD_prologue_drift_4
 				SRP_escalate_drift_effect = yes
-				country_event = { id = ldpro.4 days = 2 }
-				USA = { country_event = { id = ldpro.4 days = 2 } }
+				news_event = { id = ldpro.4 days = 2 }
+				USA = { news_event = { id = ldpro.4 days = 2 } }
 			}
 
 			if = {
@@ -116,8 +116,8 @@ on_actions = {
 				}
 				set_global_flag = LD_prologue_drift_5
 				SRP_escalate_drift_effect = yes
-				country_event = { id = ldpro.5 days = 2 }
-				USA = { country_event = { id = ldpro.5 days = 2 } }
+				news_event = { id = ldpro.5 days = 2 }
+				USA = { news_event = { id = ldpro.5 days = 2 } }
 			}
 
 			if = {

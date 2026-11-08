@@ -17,23 +17,97 @@ IRS_release_tethysic_puppet = {
 		autonomy_state = autonomy_srp_integrated_brood
 	}
 
-	TET = {
-		set_country_flag = is_parasite_nation
-		set_country_flag = TET_tethysic_lineage
+	TET = { TET_brood_baseline = yes }
+}
 
-		set_technology = {
-			parasite_buildings = 1
-			inborn_parasites = 1
-			tethysic_devourer_genome = 1
-			devourer_emergence = 1
-			adapted_devourer_strain = 1
-			popup = no
-		}
+TET_brood_baseline = {
+	set_country_flag = is_parasite_nation
+	set_country_flag = TET_tethysic_lineage
 
-		add_ideas = {
-			TET_brood_husbandry
-			TET_bound_supply
-			TET_brood_spawning
+	set_technology = {
+		parasite_buildings = 1
+		inborn_parasites = 1
+		tethysic_devourer_genome = 1
+		devourer_emergence = 1
+		adapted_devourer_strain = 1
+		popup = no
+	}
+
+	add_ideas = {
+		TET_brood_husbandry
+		TET_bound_supply
+		TET_brood_spawning
+	}
+
+	create_equipment_variant = {
+		name = "Devourer Alpha-Type"
+		type = IRS_devourer_hull_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = IRS_shredder_array
+			fixed_ship_engine_slot = IRS_fin_cluster
+			front_1_custom_slot = IRS_schooling_pheromone
+			mid_1_custom_slot = IRS_hunting_call_pheromone
+			rear_1_custom_slot = IRS_exoskeletal_carapace
 		}
 	}
+	create_equipment_variant = {
+		name = "Devourer Beta-Type"
+		type = IRS_devourer_hull_2
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = IRS_shredder_array
+			fixed_ship_engine_slot = IRS_burst_propulsor
+			front_1_custom_slot = IRS_alarm_response_pheromone
+			mid_1_custom_slot = IRS_hunting_call_pheromone
+			rear_1_custom_slot = IRS_regenerative_tissue
+		}
+	}
+
+	promote_character = TET_root_beckon
+
+	set_stability = 0.8
+	set_war_support = 0.8
+	add_timed_idea = { idea = TET_tidal_rooting days = 365 }
+}
+
+IRS_tethysic_landfall = {
+	335 = {
+		if = {
+			limit = { has_dynamic_modifier = { modifier = IRS_tethysic_tide_modifier } }
+			remove_dynamic_modifier = { modifier = IRS_tethysic_tide_modifier }
+		}
+		clr_state_flag = IRS_tethysic_tide_state
+		add_core_of = TET
+		if = {
+			limit = { industrial_complex > 0 }
+			remove_building = { type = industrial_complex level = 20 }
+		}
+		if = {
+			limit = { arms_factory > 0 }
+			remove_building = { type = arms_factory level = 20 }
+		}
+		add_extra_state_shared_building_slots = 4
+		add_building_construction = { type = beckon_cluster level = 4 instant_build = yes }
+		add_building_construction = { type = naval_base level = 2 province = 1398 instant_build = yes }
+	}
+
+	release_puppet = TET
+	335 = { transfer_state_to = TET }
+	set_autonomy = {
+		target = TET
+		autonomy_state = autonomy_srp_integrated_brood
+	}
+
+	TET = {
+		TET_brood_baseline = yes
+		set_country_flag = TET_landed_from_the_sea
+		set_technology = { early_primitive_parasites = 1 popup = no }
+		add_equipment_to_stockpile = { type = rupter_equipment_1 amount = 6000 producer = IRS }
+		add_equipment_to_stockpile = { type = primitive_reeker_equipment_1 amount = 400 producer = IRS }
+		load_oob = "TET_landfall"
+	}
+
+	set_country_flag = IRS_tethysic_discovered
+	set_technology = { tethysic_devourer_genome = 1 popup = no }
 }

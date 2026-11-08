@@ -64,11 +64,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = usa.3
 	title = usa.3.t
 	desc = usa.3.d
-	picture = GFX_report_event_usa_destroyers
+	picture = GFX_news_event_destroyers
 	is_triggered_only = yes
 
 	option = {
@@ -77,11 +77,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = usa.2
 	title = usa.2.t
 	desc = usa.2.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 
 	option = {
@@ -90,11 +90,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = usa.4
 	title = usa.4.t
 	desc = usa.4.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 
 	option = {
@@ -103,11 +103,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = usa.50
 	title = usa.50.t
 	desc = usa.50.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_journalists_speech
 	is_triggered_only = yes
 
 	option = {
@@ -115,11 +115,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = usa.51
 	title = usa.51.t
 	desc = usa.51.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally
 	is_triggered_only = yes
 
 	option = {
@@ -127,11 +127,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = usa.52
 	title = usa.52.t
 	desc = usa.52.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_parliament
 	is_triggered_only = yes
 
 	option = {
@@ -158,11 +158,11 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = usa.54
 	title = usa.54.t
 	desc = usa.54.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_usa_treaty
 	is_triggered_only = yes
 
 	option = {
@@ -170,11 +170,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = usa.55
 	title = usa.55.t
 	desc = usa.55.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_destroyers
 	is_triggered_only = yes
 
 	option = {
@@ -182,11 +182,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = usa.56
 	title = usa.56.t
 	desc = usa.56.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_army
 	is_triggered_only = yes
 
 	option = {
@@ -194,11 +194,11 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = usa.57
 	title = usa.57.t
 	desc = usa.57.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_fighters
 	is_triggered_only = yes
 
 	option = {
@@ -207,224 +207,224 @@ country_event = {
 }
 
 
-country_event = {
+news_event = {
 	id = usa.58
 	title = usa.58.t
 	desc = usa.58.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_parliament
 	is_triggered_only = yes
 	option = { name = usa.58.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.59
 	title = usa.59.t
 	desc = usa.59.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_election_vote
 	is_triggered_only = yes
 	option = { name = usa.59.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.60
 	title = usa.60.t
 	desc = usa.60.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_tank_factory
 	is_triggered_only = yes
 	option = { name = usa.60.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.61
 	title = usa.61.t
 	desc = usa.61.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_lend_lease
 	is_triggered_only = yes
 	option = { name = usa.61.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.62
 	title = usa.62.t
 	desc = usa.62.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_military_planning
 	is_triggered_only = yes
 	option = { name = usa.62.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.63
 	title = usa.63.t
 	desc = usa.63.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 	option = { name = usa.63.a }
 }
 
 
-country_event = {
+news_event = {
 	id = usa.64
 	title = usa.64.t
 	desc = usa.64.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_ruins
 	is_triggered_only = yes
 	option = { name = usa.64.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.65
 	title = usa.65.t
 	desc = usa.65.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_riot
 	is_triggered_only = yes
 	option = { name = usa.65.a }
 }
 
 
-country_event = {
+news_event = {
 	id = usa.66
 	title = usa.66.t
 	desc = usa.66.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = { name = usa.66.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.67
 	title = usa.67.t
 	desc = usa.67.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_handshake
 	is_triggered_only = yes
 	option = { name = usa.67.a }
 }
 
 
-country_event = {
+news_event = {
 	id = usa.68
 	title = usa.68.t
 	desc = usa.68.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_tank_factory
 	is_triggered_only = yes
 	option = { name = usa.68.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.69
 	title = usa.69.t
 	desc = usa.69.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_factory
 	is_triggered_only = yes
 	option = { name = usa.69.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.70
 	title = usa.70.t
 	desc = usa.70.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_soldiers_marching
 	is_triggered_only = yes
 	option = { name = usa.70.a }
 }
 
 
-country_event = {
+news_event = {
 	id = usa.71
 	title = usa.71.t
 	desc = usa.71.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_research_lab
 	is_triggered_only = yes
 	option = { name = usa.71.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.72
 	title = usa.72.t
 	desc = usa.72.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_bombers
 	is_triggered_only = yes
 	option = { name = usa.72.a }
 }
 
 
-country_event = {
+news_event = {
 	id = usa.73
 	title = usa.73.t
 	desc = usa.73.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_worker_protests
 	is_triggered_only = yes
 	option = { name = usa.73.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.74
 	title = usa.74.t
 	desc = usa.74.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_sign_treaty3
 	is_triggered_only = yes
 	option = { name = usa.74.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.75
 	title = usa.75.t
 	desc = usa.75.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_rally2
 	is_triggered_only = yes
 	option = { name = usa.75.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.76
 	title = usa.76.t
 	desc = usa.76.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_journalists_speech
 	is_triggered_only = yes
 	option = { name = usa.76.a }
 }
 
 
-country_event = {
+news_event = {
 	id = usa.77
 	title = usa.77.t
 	desc = usa.77.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_military_planning
 	is_triggered_only = yes
 	option = { name = usa.77.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.78
 	title = usa.78.t
 	desc = usa.78.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_read_write
 	is_triggered_only = yes
 	option = { name = usa.78.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.79
 	title = usa.79.t
 	desc = usa.79.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_army
 	is_triggered_only = yes
 	option = { name = usa.79.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.80
 	title = usa.80.t
 	desc = usa.80.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_ruins
 	is_triggered_only = yes
 	option = { name = usa.80.a }
 }
 
-country_event = {
+news_event = {
 	id = usa.81
 	title = usa.81.t
 	desc = usa.81.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_news_event_generic_bombers
 	is_triggered_only = yes
 	option = { name = usa.81.a }
 }
