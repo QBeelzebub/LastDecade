@@ -1,5 +1,3 @@
-# Overwinter OST station. I Like It Here is Ashley's theme, so it stays rare.
-
 music_station = "ost"
 
 music = {

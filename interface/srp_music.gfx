@@ -5,4 +5,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/musicplayer/srp_album_art.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_ost_album_art"
+		texturefile = "gfx/interface/musicplayer/ost_album_art.dds"
+		noOfFrames = 2
+	}
 }

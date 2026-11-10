@@ -124,7 +124,6 @@ guiTypes = {
 		}
 	}
 
-	# Overwinter OST station. Same bar, same album art until it gets its own.
 	containerWindowType = {
 		name = "ost_faceplate"
 		position = { x = 0 y = 0 }
@@ -243,7 +242,7 @@ guiTypes = {
 		checkBoxType = {
 			name = "select_station_button"
 			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_srp_album_art"
+			quadTextureSprite = "GFX_ost_album_art"
 			clicksound = decisions_ui_button
 		}
 	}

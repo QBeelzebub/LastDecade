@@ -1,5 +1,3 @@
-# The Overwinter OST station's songs. Paths are relative to this folder.
-
 music = {
 	name = "ow_by_any_means"
 	file = "ow_by_any_means.ogg"
