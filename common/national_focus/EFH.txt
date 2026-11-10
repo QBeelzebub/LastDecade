@@ -1888,6 +1888,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = EFH_terms_of_appointment_tt
+			hidden_effect = { play_song = "ow_i_like_it_here" }
 			EFH_bop_medium_ha_effect = yes
 			hidden_effect = {
 				set_country_flag = EFH_directorate_formed

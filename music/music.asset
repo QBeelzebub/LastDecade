@@ -2,7 +2,7 @@
 
 music = {
 	name = "maintheme"
-	file = "srp/dominion.ogg"
+	file = "ost/ow_by_any_means.ogg"
 	volume = 0.65
 }
 

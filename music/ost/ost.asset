@@ -1,0 +1,19 @@
+# The Overwinter OST station's songs. Paths are relative to this folder.
+
+music = {
+	name = "ow_by_any_means"
+	file = "ow_by_any_means.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ow_green_dot"
+	file = "ow_green_dot.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "ow_i_like_it_here"
+	file = "ow_i_like_it_here.ogg"
+	volume = 0.65
+}

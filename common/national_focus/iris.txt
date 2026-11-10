@@ -387,7 +387,7 @@ focus_tree = {
 			date > 2020.1.1
 		}
 		completion_reward = {
-			hidden_effect = { play_song = "coagulation" }
+			hidden_effect = { play_song = "ow_green_dot" }
 			IRS_perform_emergence = yes
 			set_country_flag = IRS_phase_0_active
 			add_ideas = IRS_evolution_0

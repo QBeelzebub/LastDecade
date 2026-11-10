@@ -1,0 +1,24 @@
+# Overwinter OST station. I Like It Here is Ashley's theme, so it stays rare.
+
+music_station = "ost"
+
+music = {
+	song = "ow_by_any_means"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "ow_green_dot"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "ow_i_like_it_here"
+	chance = {
+		factor = 0.25
+	}
+}
